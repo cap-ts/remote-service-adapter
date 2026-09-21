@@ -1,0 +1,3 @@
+[submodule "build"]
+	path = build
+	url = git@github.com:cap-ts/remote-service-adapter.build.git

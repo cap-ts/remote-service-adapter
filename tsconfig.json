@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "NodeNext",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "checkJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": false,
+    "skipLibCheck": true,
+    "declarationDir": "./types",
+    "outDir": "./build/src",
+    "rootDir": "./build/src",
+    "resolveJsonModule": true,
+    "types": [
+      "@cap-js/cds-types",
+      "@cap-ts/soap-adapter"
+    ],
+    "moduleResolution": "nodenext"
+  },
+  "include": [
+    "build/src/**/*.ts",
+    "build/types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build/test",
+    "build/*.*"
+  ]
+}
