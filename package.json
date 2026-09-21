@@ -23,15 +23,6 @@
     "SOAP",
     "Plugin"
   ],
-  "dependencies": {
-    "@sap-cloud-sdk/connectivity": "^4.7.0",
-    "@sap-cloud-sdk/http-client": "^4.7.0",
-    "cors": "^2.8.6",
-    "express-rate-limit": "^7.5.1",
-    "helmet": "^7.2.0",
-    "p-limit": "^3.1.0",
-    "soap": "^1.10.0"
-  },
   "peerDependencies": {
     "@cap-js/cds-types": "^0.18.0",
     "@sap/cds": "^9.9.1",
@@ -40,11 +31,10 @@
   "devDependencies": {
     "@cap-js/cds-types": "^0.18.0",
     "@sap/cds": "^9.9.1",
-    "@types/cors": "^2.8.19",
-    "cross-var": "^1.1.0",
     "fs-extra": "^11.3.0",
     "javascript-obfuscator": "^5.7.0",
-    "rimraf": "^6.0.1",
+    "minimatch": "^3.1.5",
+    "minimist": "^1.2.8",
     "typescript": "^5.9.3",
     "uglify-js": "^3.19.3"
   },
@@ -64,16 +54,12 @@
     "unpublish": "node build/index.js --unpublish"
   },
   "files": [
-    "index.cds",
     "cds-plugin.js",
     "src",
     "types/index.d.ts",
     "types/lib/index.d.ts",
     "src/lib/**/*"
   ],
-  "cds": {
-    "file": "index.cds"
-  },
   "bugs": {
     "url": "https://github.com/cap-ts/remote-service-adapter/issues"
   },
