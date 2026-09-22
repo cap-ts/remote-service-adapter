@@ -1,1 +1,67 @@
-var _0x233fcc=_0x585d;(function(_0x89cc0f,_0x533d32){var _0x2f01a9=_0x585d,_0x13c94a=_0x89cc0f();while(!![]){try{var _0x12d69d=-parseInt(_0x2f01a9(0xae,'S$@@'))/0x1*(parseInt(_0x2f01a9(0xb1,'chTY'))/0x2)+parseInt(_0x2f01a9(0xb4,'Dp(l'))/0x3+parseInt(_0x2f01a9(0x96,'jl2@'))/0x4*(-parseInt(_0x2f01a9(0xb0,'zyGy'))/0x5)+parseInt(_0x2f01a9(0xab,'PKf4'))/0x6+parseInt(_0x2f01a9(0x8c,'MCAs'))/0x7+parseInt(_0x2f01a9(0x90,'B7iS'))/0x8*(-parseInt(_0x2f01a9(0xa0,'zyGy'))/0x9)+parseInt(_0x2f01a9(0x89,'PKf4'))/0xa;if(_0x12d69d===_0x533d32)break;else _0x13c94a['push'](_0x13c94a['shift']());}catch(_0x5f1a42){_0x13c94a['push'](_0x13c94a['shift']());}}}(_0x5bd4,0x68d5b),(Object[_0x233fcc(0x8a,'B0gt')](exports,'__esModule',{'value':!0x0}),exports[_0x233fcc(0x83,'bPAT')]=exports[_0x233fcc(0xaf,'x!7w')]=void 0x0));let where_eval_1=require(_0x233fcc(0xb5,'Qzgo')),isKeyword=(_0x464015,_0xd97c22)=>_0x233fcc(0xa7,'Dp(l')==typeof _0x464015&&_0x464015[_0x233fcc(0x82,'(Zsd')]()===_0xd97c22,isCaseExpression=_0x4139c5=>Array[_0x233fcc(0xaa,'chTY')](_0x4139c5)&&isKeyword(_0x4139c5[0x0],_0x233fcc(0xad,'Dp(l')),operand=(exports['isCaseExpression']=isCaseExpression,(_0x43124e,_0x214478)=>{var _0x3656c0=_0x233fcc,_0x4958ba={'PkXpk':function(_0xbcb5a5,_0x4b759f){return _0xbcb5a5!==_0x4b759f;},'iDlwz':_0x3656c0(0x85,'bPAT')};if(_0x4958ba[_0x3656c0(0xb2,'n3Vx')](0x0,_0x43124e[_0x3656c0(0xa5,'Qzgo')]))return(_0x43124e=_0x43124e[0x0])&&_0x4958ba[_0x3656c0(0x95,'MCAs')]==typeof _0x43124e&&(0x0,exports[_0x3656c0(0xb7,'B7iS')])(_0x43124e['xpr'])?(0x0,exports[_0x3656c0(0x9c,'n3Vx')])(_0x43124e[_0x3656c0(0x9e,'XXSw')],_0x214478):(0x0,where_eval_1[_0x3656c0(0xa6,'g[g2')])(_0x43124e,_0x214478);}),evaluateCaseExpression=(_0x4ba28c,_0x32fbb4)=>{var _0x1ebf45=_0x233fcc,_0x164c9f={'gbJrn':function(_0x326de6,_0x5b6913){return _0x326de6<_0x5b6913;},'RdAYH':function(_0x5761c9,_0x11c1fd,_0x4c93bc){return _0x5761c9(_0x11c1fd,_0x4c93bc);},'UTjFI':_0x1ebf45(0x99,'7*6t'),'ozdxn':function(_0x42736a,_0x326c41,_0x3bde83){return _0x42736a(_0x326c41,_0x3bde83);},'cnXGr':function(_0x247fe4,_0x35c47b,_0x2f2acc){return _0x247fe4(_0x35c47b,_0x2f2acc);},'HHctr':function(_0xb4b002,_0x28bdde){return _0xb4b002(_0x28bdde);},'Yesih':_0x1ebf45(0x87,'(Zsd'),'AMCrE':_0x1ebf45(0x86,'9d#w'),'MXgcw':function(_0x3fb81f,_0x3988f1,_0x2efcb4){return _0x3fb81f(_0x3988f1,_0x2efcb4);},'xSQzj':function(_0x58862d,_0x24bd65){return _0x58862d(_0x24bd65);},'PuCto':_0x1ebf45(0x88,'9sGY')};let _0x3f7a76=0x1,_0x2c398c;_0x164c9f[_0x1ebf45(0xa2,'Uv%a')](isKeyword,_0x4ba28c[_0x3f7a76],_0x164c9f[_0x1ebf45(0x92,'zv!W')])||(_0x2c398c=[_0x4ba28c[_0x3f7a76]],_0x3f7a76++);for(var _0xd4a659=_0x20091b=>{var _0x42177f=_0x1ebf45;for(var _0xc06c99=[];_0x164c9f[_0x42177f(0xa8,'Q4d!')](_0x3f7a76,_0x4ba28c['length'])&&!_0x20091b['some'](_0x47fdb0=>isKeyword(_0x4ba28c[_0x3f7a76],_0x47fdb0));)_0xc06c99[_0x42177f(0xa9,'B0gt')](_0x4ba28c[_0x3f7a76++]);return _0xc06c99;},_0x2d4366=_0x2c398c?_0x164c9f[_0x1ebf45(0xac,')J!^')](operand,_0x2c398c,_0x32fbb4):void 0x0;_0x164c9f[_0x1ebf45(0x9f,'XXSw')](_0x3f7a76,_0x4ba28c[_0x1ebf45(0x84,'bPAT')])&&_0x164c9f[_0x1ebf45(0x8e,'U9Mx')](isKeyword,_0x4ba28c[_0x3f7a76],_0x164c9f[_0x1ebf45(0x94,'oQ4x')]);){_0x3f7a76++;var _0x3fd91b=_0x164c9f[_0x1ebf45(0xa1,'XXSw')](_0xd4a659,[_0x164c9f['Yesih']]),_0x156645=(_0x3f7a76++,_0x164c9f[_0x1ebf45(0x93,'kmUQ')](_0xd4a659,[_0x164c9f[_0x1ebf45(0x8f,'76$O')],_0x164c9f[_0x1ebf45(0x9d,'jl2@')],_0x1ebf45(0x8b,'7*6t')]));if(_0x2c398c?(0x0,where_eval_1['compareValues'])(_0x2d4366,_0x164c9f['RdAYH'](operand,_0x3fd91b,_0x32fbb4),'='):(0x0,where_eval_1['evaluateWhereOnRecord'])(_0x3fd91b,_0x32fbb4))return _0x164c9f[_0x1ebf45(0x8d,'zlu9')](operand,_0x156645,_0x32fbb4)??null;}return _0x164c9f[_0x1ebf45(0xb6,'9sGY')](isKeyword,_0x4ba28c[_0x3f7a76],_0x164c9f[_0x1ebf45(0x97,'chTY')])?(_0x3f7a76++,operand(_0x164c9f[_0x1ebf45(0xb3,'gj^U')](_0xd4a659,[_0x164c9f[_0x1ebf45(0xa3,'PKf4')]]),_0x32fbb4)??null):null;};function _0x585d(_0x4aed71,_0x334e4c){_0x4aed71=_0x4aed71-0x81;var _0x5bd443=_0x5bd4();var _0x585dec=_0x5bd443[_0x4aed71];if(_0x585d['InAJBy']===undefined){var _0xb159d=function(_0x240ae5){var _0xaf16da='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x372eac='',_0x22db08='';for(var _0x201776=0x0,_0x45c9b5,_0xd4fe20,_0x30f244=0x0;_0xd4fe20=_0x240ae5['charAt'](_0x30f244++);~_0xd4fe20&&(_0x45c9b5=_0x201776%0x4?_0x45c9b5*0x40+_0xd4fe20:_0xd4fe20,_0x201776++%0x4)?_0x372eac+=String['fromCharCode'](0xff&_0x45c9b5>>(-0x2*_0x201776&0x6)):0x0){_0xd4fe20=_0xaf16da['indexOf'](_0xd4fe20);}for(var _0x3678f9=0x0,_0x415ec2=_0x372eac['length'];_0x3678f9<_0x415ec2;_0x3678f9++){_0x22db08+='%'+('00'+_0x372eac['charCodeAt'](_0x3678f9)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x22db08);};var _0x25ddfd=function(_0x2e68f0,_0x4b51d0){var _0x127e30=[],_0x5aedca=0x0,_0x1d0856,_0x12a7e3='';_0x2e68f0=_0xb159d(_0x2e68f0);var _0x56d020;for(_0x56d020=0x0;_0x56d020<0x100;_0x56d020++){_0x127e30[_0x56d020]=_0x56d020;}for(_0x56d020=0x0;_0x56d020<0x100;_0x56d020++){_0x5aedca=(_0x5aedca+_0x127e30[_0x56d020]+_0x4b51d0['charCodeAt'](_0x56d020%_0x4b51d0['length']))%0x100,_0x1d0856=_0x127e30[_0x56d020],_0x127e30[_0x56d020]=_0x127e30[_0x5aedca],_0x127e30[_0x5aedca]=_0x1d0856;}_0x56d020=0x0,_0x5aedca=0x0;for(var _0x62b712=0x0;_0x62b712<_0x2e68f0['length'];_0x62b712++){_0x56d020=(_0x56d020+0x1)%0x100,_0x5aedca=(_0x5aedca+_0x127e30[_0x56d020])%0x100,_0x1d0856=_0x127e30[_0x56d020],_0x127e30[_0x56d020]=_0x127e30[_0x5aedca],_0x127e30[_0x5aedca]=_0x1d0856,_0x12a7e3+=String['fromCharCode'](_0x2e68f0['charCodeAt'](_0x62b712)^_0x127e30[(_0x127e30[_0x56d020]+_0x127e30[_0x5aedca])%0x100]);}return _0x12a7e3;};_0x585d['vmQnzy']=_0x25ddfd,_0x585d['qsfyaX']={},_0x585d['InAJBy']=!![];}var _0x2e858d=_0x5bd443[0x0];_0x585d['KsUCWE']!==_0x2e858d&&(_0x585d['qsfyaX']={},_0x585d['KsUCWE']=_0x2e858d);var _0x42b3a7=_0x585d['qsfyaX'][_0x4aed71];return _0x42b3a7===undefined?(_0x585d['jePyVl']===undefined&&(_0x585d['jePyVl']=!![]),_0x585dec=_0x585d['vmQnzy'](_0x585dec,_0x334e4c),_0x585d['qsfyaX'][_0x4aed71]=_0x585dec):_0x585dec=_0x42b3a7,_0x585dec;}function _0x5bd4(){var _0x2bb020=['qCkmWQ4iW6xcImoT','WPODq8kadG','sxZdOmoKW50','WReoi1tdLa','jmkynmkJgvddJmoGnYqQWRC','W7hdTCoMAICE','W6LonspdUSo1Cu4zWOZdNCocWPxdKIK','DeVdVmkODCkQ','WPCHWQpdLK4','WRxcN8oYxG','WO10WORcN1izWPu','W5blvrJcI8oeWQm2thiBW4/dGa','W5T4pe/dHa','zf7dVCkK','WQG+vSk+WPVdNsyhWQT6sa','k8oVbcWwi8ojW4Txb8kDW6VcSmoodSk8','tCoJW5GxW7pcS8o9z8o+','W5C/WQFcJKGuWOtcTq','CezLrCkd','W5NcSmoOcCoG','ma/cVmo4lCo+xfDaWPxdSmk8','WRpcV8o/ztyepLPVeXJdLa','W49DsCoXW6C','WR7dRIFcQqeTWPn1W7C7WO8upM7dUhm','WQG7vCkXWPRcNxeuWQDYuCkKeq','WP5+kfTKvYPknGpcIW','W73cVCo3W5FdJCkmW64EgSkdfmksESkvtCoEbI0/WO/dRCoV','W7tcRSo4W5ZdJmkf','W7FcQCo8W57dM8kz','EgZdJ8kW','WP55avO','W6DRsG','W5DjubdcJCoeWQmbv3yZW4pdOG','WQhcJ8oNx2tdUuHgWPZcPCkTWPVcTCkp','W7/cLCkJ','sCo2W6CFBuKxW5/dTSkPWQNcVYK','z8kgW5lcJCkI','WPfUAZBcHq','n8o4E8kUdq','W6tcPv3dVeT+WRLjW6ikWRKY','WQG8vCk9WPRdMZuyWQHruG','fxmtW4ZcSW','WRpdSSkVte0','DwvhfGG','eCkeWRnCja','bYrZW7RcLsNcL8o4DSkwiW','WQvkWOJcN2u','WQ/dJCoYWQ4gW7SrW6JcMa','W63cK8kIWO4','heriWPefW4nz','kI3cL8kkWQtdPbVdN8kuW7tdOW','rvTCwCkDW53dH8oix8koWOFcS8k6pmoujf7dJxypiSov','D14fWRZdOa','WQOLuG','WRu3ASkgeG'];_0x5bd4=function(){return _0x2bb020;};return _0x5bd4();}exports['evaluateCaseExpression']=evaluateCaseExpression;
+"use strict";
+/**
+ * @file case-expression.ts
+ * @description In-memory evaluation of CQN `CASE` expressions used by
+ * projection columns:
+ *
+ *   `CASE T WHEN 'E' THEN 'Employee' ELSE 'Unknown' END`        (simple form)
+ *   `CASE WHEN Amount > 15 THEN 'big' ELSE 'small' END`         (searched form)
+ *
+ * CQN shape: `xpr: ['case', [subject], 'when', <cond|value…>, 'then', <result>, …, 'else', <result>, 'end']`.
+ * Branches are evaluated top-down; no matching branch and no ELSE yields `null`.
+ * Results may be nested CASE expressions.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.evaluateCaseExpression = exports.isCaseExpression = void 0;
+const where_eval_1 = require("./where-eval");
+const isKeyword = (t, kw) => typeof t === 'string' && t.toLowerCase() === kw;
+/** `true` when `xpr` is a CASE expression. */
+const isCaseExpression = (xpr) => Array.isArray(xpr) && isKeyword(xpr[0], 'case');
+exports.isCaseExpression = isCaseExpression;
+const operand = (tokens, row) => {
+    if (tokens.length === 0)
+        return undefined;
+    const t = tokens[0];
+    if (t && typeof t === 'object' && (0, exports.isCaseExpression)(t.xpr))
+        return (0, exports.evaluateCaseExpression)(t.xpr, row);
+    return (0, where_eval_1.evaluateOperand)(t, row);
+};
+/**
+ * Evaluates a CASE expression against a (mapped, local) record.
+ *
+ * @param xpr  CQN `xpr` array starting with `'case'`.
+ * @param row  Record providing field values.
+ * @returns    Result of the first matching branch, the ELSE result, or `null`.
+ */
+const evaluateCaseExpression = (xpr, row) => {
+    let i = 1;
+    let subject;
+    if (!isKeyword(xpr[i], 'when')) {
+        subject = [xpr[i]];
+        i++;
+    }
+    const until = (stops) => {
+        const out = [];
+        while (i < xpr.length && !stops.some((s) => isKeyword(xpr[i], s)))
+            out.push(xpr[i++]);
+        return out;
+    };
+    const subjectValue = subject ? operand(subject, row) : undefined;
+    while (i < xpr.length && isKeyword(xpr[i], 'when')) {
+        i++;
+        const whenTokens = until(['then']);
+        i++; // 'then'
+        const resultTokens = until(['when', 'else', 'end']);
+        const matched = subject
+            ? (0, where_eval_1.compareValues)(subjectValue, operand(whenTokens, row), '=')
+            : (0, where_eval_1.evaluateWhereOnRecord)(whenTokens, row);
+        if (matched)
+            return operand(resultTokens, row) ?? null;
+    }
+    if (isKeyword(xpr[i], 'else')) {
+        i++;
+        return operand(until(['end']), row) ?? null;
+    }
+    return null;
+};
+exports.evaluateCaseExpression = evaluateCaseExpression;

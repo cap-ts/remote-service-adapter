@@ -1,1 +1,144 @@
-var _0x5c1885=_0x5ddb;(function(_0x2085d4,_0x2d440a){var _0x86adc6=_0x5ddb,_0x40ce44=_0x2085d4();while(!![]){try{var _0xa3f1c8=parseInt(_0x86adc6(0x135,'3nS$'))/0x1+parseInt(_0x86adc6(0x120,'En*n'))/0x2*(parseInt(_0x86adc6(0x11b,'v0Y*'))/0x3)+-parseInt(_0x86adc6(0x159,'iOto'))/0x4+parseInt(_0x86adc6(0x163,'5@%s'))/0x5*(parseInt(_0x86adc6(0x130,'VhTS'))/0x6)+parseInt(_0x86adc6(0x137,'6wA['))/0x7*(-parseInt(_0x86adc6(0x143,'v0Y*'))/0x8)+-parseInt(_0x86adc6(0x10a,'ZDVV'))/0x9+-parseInt(_0x86adc6(0x140,'FGzj'))/0xa*(-parseInt(_0x86adc6(0x162,'v0Y*'))/0xb);if(_0xa3f1c8===_0x2d440a)break;else _0x40ce44['push'](_0x40ce44['shift']());}catch(_0x190e71){_0x40ce44['push'](_0x40ce44['shift']());}}}(_0x37a9,0x8c863),(Object[_0x5c1885(0x14f,'FWk$')](exports,_0x5c1885(0x102,'En*n'),{'value':!0x0}),exports[_0x5c1885(0x132,'l0qt')]=exports['findRemoteAssociationName']=exports[_0x5c1885(0x109,'3nS$')]=exports[_0x5c1885(0x122,'VhTS')]=exports[_0x5c1885(0x13f,'%%WS')]=void 0x0));function _0x5ddb(_0xe37c1d,_0xdf852f){_0xe37c1d=_0xe37c1d-0x100;var _0x37a94f=_0x37a9();var _0x5ddb28=_0x37a94f[_0xe37c1d];if(_0x5ddb['IVQdhw']===undefined){var _0x5f3586=function(_0x309c04){var _0x2563ce='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x15f131='',_0xcec87c='';for(var _0x2c7848=0x0,_0x4bd9b9,_0x164971,_0x122ad2=0x0;_0x164971=_0x309c04['charAt'](_0x122ad2++);~_0x164971&&(_0x4bd9b9=_0x2c7848%0x4?_0x4bd9b9*0x40+_0x164971:_0x164971,_0x2c7848++%0x4)?_0x15f131+=String['fromCharCode'](0xff&_0x4bd9b9>>(-0x2*_0x2c7848&0x6)):0x0){_0x164971=_0x2563ce['indexOf'](_0x164971);}for(var _0x1b3c94=0x0,_0x52ef96=_0x15f131['length'];_0x1b3c94<_0x52ef96;_0x1b3c94++){_0xcec87c+='%'+('00'+_0x15f131['charCodeAt'](_0x1b3c94)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xcec87c);};var _0x50d02a=function(_0x14adc8,_0x3313cd){var _0x3441df=[],_0x1d8e5f=0x0,_0x14b7db,_0x4d8215='';_0x14adc8=_0x5f3586(_0x14adc8);var _0x130f95;for(_0x130f95=0x0;_0x130f95<0x100;_0x130f95++){_0x3441df[_0x130f95]=_0x130f95;}for(_0x130f95=0x0;_0x130f95<0x100;_0x130f95++){_0x1d8e5f=(_0x1d8e5f+_0x3441df[_0x130f95]+_0x3313cd['charCodeAt'](_0x130f95%_0x3313cd['length']))%0x100,_0x14b7db=_0x3441df[_0x130f95],_0x3441df[_0x130f95]=_0x3441df[_0x1d8e5f],_0x3441df[_0x1d8e5f]=_0x14b7db;}_0x130f95=0x0,_0x1d8e5f=0x0;for(var _0x5f4798=0x0;_0x5f4798<_0x14adc8['length'];_0x5f4798++){_0x130f95=(_0x130f95+0x1)%0x100,_0x1d8e5f=(_0x1d8e5f+_0x3441df[_0x130f95])%0x100,_0x14b7db=_0x3441df[_0x130f95],_0x3441df[_0x130f95]=_0x3441df[_0x1d8e5f],_0x3441df[_0x1d8e5f]=_0x14b7db,_0x4d8215+=String['fromCharCode'](_0x14adc8['charCodeAt'](_0x5f4798)^_0x3441df[(_0x3441df[_0x130f95]+_0x3441df[_0x1d8e5f])%0x100]);}return _0x4d8215;};_0x5ddb['MfkDry']=_0x50d02a,_0x5ddb['MsCxHG']={},_0x5ddb['IVQdhw']=!![];}var _0x382955=_0x37a94f[0x0];_0x5ddb['hjqIEW']!==_0x382955&&(_0x5ddb['MsCxHG']={},_0x5ddb['hjqIEW']=_0x382955);var _0x4b565b=_0x5ddb['MsCxHG'][_0xe37c1d];return _0x4b565b===undefined?(_0x5ddb['JKIQLe']===undefined&&(_0x5ddb['JKIQLe']=!![]),_0x5ddb28=_0x5ddb['MfkDry'](_0x5ddb28,_0xdf852f),_0x5ddb['MsCxHG'][_0xe37c1d]=_0x5ddb28):_0x5ddb28=_0x4b565b,_0x5ddb28;}function _0x37a9(){var _0xc2a6c=['tKz5','BCkhWRhcJSklxxzZW7WInNZdTmkY','Eg5fc8oT','lSo7WPfQWRtcHbRcKSoPC8o9sLVdVw0','ACkVm8kHW6JdHSkGlYtcK1rsySkHy8o4A8kjzMiAWOekbG','W4xcMKNcR1tdImkr','lXlcPG','FgldLGDLW7SxdSoSw0C','WOVdV8kOW6ZdOxVdKhWlWR/cHa','W5RdL8o8W7FcIG','WQKtWRHNfa','W4WEmXbvWP/cMmkfs8kU','WO8nWRLFFSkVW7xdHCkGWRtcVSkFvHm','W5lcRmoR','W7OYfXbRWP/cN8kzrSk/WOxcIW7cTMj6WOvRDcu','imohWQ3cMSkswYG','tdTCfJG','W6zruSkbWOXvWOmO','W7dcSsRdJ8o/W5usW7S3g8oCwW','D8oUW57cP8oBWQNdKIKEt09hymkw','C8kml8oOcq','WPBdHCorWPLM','B8kaW582W7S','nCoAgc1mWQpcP8kC','iLHZF8oBWONcISkf','l8klW77dQq','junvWO7cUa','WQhcPdJdU8ov','FaBcIwBdKW','WP3cVCkmWRfOW4y','W4ZcQgu','mmo3w8kEcSorEZHTzG','WONdL8kWW4RdKSoLW4HN','zSkLmCkQW7NdJq','AJnnW6bGWOhcUmo7WO55W513W79Y','AmkuW5yXW6C','F23dKGLJWP5OlSoaB2eXWPy','WQrdhq','kJW9WPb1WQGDBCogtHSOW4e','WQtcTtJdP8oe','W6hdLmoiW5RcP8kXDa3dLqmNWRjH','WQe1itLcWRVcNG','k2ikWRGR','lSoWWO4OWPdcLb3cRCo4DCo2w1hdPMRdSX1oWQldOq3dLuff','W5NdLCkSbKRdP8k/WOqSaSoiedZdLSkYgCkbCq1OW4X5EvjQ','WRddOCoRWR1+EmkfuSoguYdcHW','qg/cL1XJ','w0zRW4xdHCogyZhdNaaLAq','W4/cUgzQWPa','WRPdfCkoW5rV','utTi','CSkIW5RdQ8otW63dKMrZFZHIbmkaWOu','W6xcStG','W7dcSsO','WPpdHHZdUbhcKCoDuCoEcSoZzSkx','DCoNWRuZWOtcHWS','kSo6WPyfWOBcHaBcNSoJE8oOv13dVeldSbPSWR7dGbNdIfW','FmkMW5r2WOxcSs7cLSojxW','uCorChiZWRHlC8kcW7fBW73cLcBcPq','pConbqTwWR7cQCkty8oGiCk5pJtdPfmLWPyie8oCWOtcGa','WPeua34','WRVcOdRdQCoeuq','WQhdOgJcUSkIWO0hW70jdmobxW','EmkLoq','BCknW6FdIWLqW5DTxSo3WR1Nwa','W4BcJq3dHG','iCo6WOWJWOhcNW','WQb4yLeSW4hdISkBBmkgWQ3cHtO','nSonhY1rWQu','DSktW5OKW7Cyjea','WRhdGSoQW4NcKLRcJW','WQ3cL8kSWPHoW7hcKCkTWP3dGSosimk4cCoaASotxMn/W5FcVgNdPa','WPOgmwJdHmk6mmkmt8oqfSojWRNcH8oiAHKXimoi','DmkBW7ldN8kEwWf2W7C5','idZdJGe','W7BcUdFdR8oGW7esW7Gj','DsZcTKGIW5SY','BmkPmCkPW5/dGmk5eclcMx9eCSk6ACo+zmk+ygebWQifgbC','W4NcUCoQWRdcUMG','W5DznCkf','kmoxWOr7WQGMaMCNW63dJW','k8kvW4qzW4q9jW','W5n4BCkhWPK','qx/dVG','yctcT3hdL8kk','natcGCkzl8kpW4Cahe8bWPZcH8kDW4HFWRpdT8k6rq','W6/dGSo4W5JcGa','WQldICk2W5dcTq','sqpcR3dcKmk0WRBdICocdmo8p1qg','WRZcNCkM','WQrxW7DWyMtdJYi5W6lcOCkuW75FsG5gW7ddIue','jtJdIsuGmSoDWQnTWPtcKmk8','kmonfW','pmo0ACo5WRZcLmkGcIxcILna','WRHhfSkm','ityQWRj2WPahuSonCXG9W4O','lmoBWQlcLfWw','W5lcJ0pcP1u','kSoyWODXWQPhC0C6W5xdQCouW4W','W7vCw8kzWOW'];_0x37a9=function(){return _0xc2a6c;};return _0x37a9();}let cds_1=require(_0x5c1885(0x117,'9G*A')),path_columns_1=require(_0x5c1885(0x15c,'FGzj')),isAssociationElement=_0x45a94f=>_0x5c1885(0x15e,'VhTS')===_0x45a94f?.[_0x5c1885(0x138,'5nyh')]||_0x5c1885(0x131,'%rfU')===_0x45a94f?.[_0x5c1885(0x146,'Eyi[')],collectProjectionColumns=(exports[_0x5c1885(0x105,'En*n')]=isAssociationElement,_0x285353=>_0x285353?.[_0x5c1885(0x127,'5bkJ')]?.[_0x5c1885(0x14b,'jk8^')]?.[_0x5c1885(0x106,'FGzj')]||cds_1[_0x5c1885(0x160,'KDm7')][_0x5c1885(0x107,'(KV[')]?.['definitions']?.[_0x285353?.[_0x5c1885(0x155,'4NpI')]]?.[_0x5c1885(0x11a,'iOto')]?.[_0x5c1885(0x114,'%mzz')]?.[_0x5c1885(0x13d,'Rlx8')]||[]),getAliasMaps=(exports[_0x5c1885(0x15f,'dIs@')]=collectProjectionColumns,(_0x11ffb4,_0x435f07)=>{var _0x4aeb18=_0x5c1885,_0x2f177a={'WlWLA':_0x4aeb18(0x12a,'ZDVV'),'PEZkp':function(_0x6aa916,_0x2ea1be){return _0x6aa916<_0x2ea1be;},'kmgjH':function(_0x1f396b,_0x7a4baa){return _0x1f396b-_0x7a4baa;}},_0x2600cd=_0x2f177a[_0x4aeb18(0x100,'5$%l')][_0x4aeb18(0x158,'KDm7')]('|'),_0x48f8cc=0x0;while(!![]){switch(_0x2600cd[_0x48f8cc++]){case'0':if(_0x5301ca)return _0x5301ca;continue;case'1':return _0x435f07['aliasMaps']['set'](_0x11ffb4,_0x5301ca),_0x5301ca;case'2':_0x5301ca={'localToRemote':_0x527797,'remoteToLocal':_0x3352f2};continue;case'3':for(_0x215f79 of Object[_0x4aeb18(0x110,'#Qzc')](_0x11ffb4[_0x4aeb18(0x108,'py%y')]||{}))_0x31b84f['has'](_0x215f79)||(_0x527797[_0x215f79]||(_0x527797[_0x215f79]=_0x215f79),_0x3352f2[_0x215f79])||(_0x3352f2[_0x215f79]=_0x215f79);continue;case'4':if(!_0x11ffb4)return{'localToRemote':{},'remoteToLocal':{}};continue;case'5':for(_0x42f164 of(0x0,exports[_0x4aeb18(0x13e,'%mzz')])(_0x11ffb4))!_0x42f164?.[_0x4aeb18(0x136,'dIs@')]||_0x2f177a[_0x4aeb18(0x149,'py%y')](0x1,_0x42f164[_0x4aeb18(0x12b,'3nS$')][_0x4aeb18(0x128,'4NpI')])&&_0x31b84f[_0x4aeb18(0x104,'5@%s')](_0x42f164['as']||_0x42f164[_0x4aeb18(0x150,'%mzz')][_0x42f164[_0x4aeb18(0x15b,'*^)i')][_0x4aeb18(0x13b,'l0qt')]-0x1])||(_0x4ba27d=_0x42f164[_0x4aeb18(0x15b,'*^)i')][_0x2f177a[_0x4aeb18(0x14e,'9G*A')](_0x42f164[_0x4aeb18(0x161,'^l4R')][_0x4aeb18(0x139,'VhTS')],0x1)],_0x3352f2[_0x527797[_0x5dc86e=_0x42f164['as']||_0x4ba27d]=_0x4ba27d]=_0x5dc86e);continue;case'6':var _0x42f164,_0x4ba27d,_0x5dc86e,_0x215f79,_0x527797={},_0x3352f2={},_0x31b84f=(0x0,path_columns_1[_0x4aeb18(0x11d,'dTYw')])(_0x11ffb4,_0x435f07)[_0x4aeb18(0x121,'g4c8')];continue;case'7':var _0x5301ca=_0x435f07[_0x4aeb18(0x142,'3nS$')][_0x4aeb18(0x12c,'3nS$')](_0x11ffb4);continue;}break;}}),findRemoteAssociationName=(exports[_0x5c1885(0x124,']h(4')]=getAliasMaps,(_0x3c7944,_0x180e7a,_0x292cf8,_0x504eda)=>{var _0x3c4e53=_0x5c1885,_0x553ea5={'byScK':function(_0x3ca367,_0x83c30a){return _0x3ca367!==_0x83c30a;},'tHGFb':function(_0x229c82,_0xed7557){return _0x229c82-_0xed7557;},'ubnvD':function(_0xc1c42c,_0x2b6c17){return _0xc1c42c==_0x2b6c17;},'OgrRG':_0x3c4e53(0x145,'5@%s'),'gvBoO':function(_0x1db322,_0x5a4fae){return _0x1db322!==_0x5a4fae;}},_0x265d50=_0x3c7944?.['elements']||{},_0x504eda=_0x504eda||_0x265d50[_0x180e7a];if(_0x504eda&&(0x0,exports[_0x3c4e53(0x151,'sum%')])(_0x504eda)&&_0x504eda[_0x3c4e53(0x157,'6wA[')])return(_0x265d50=(0x0,exports[_0x3c4e53(0x126,'*^)i')])(_0x3c7944,_0x292cf8)[_0x3c4e53(0x11f,'5$%l')][_0x180e7a])&&_0x553ea5[_0x3c4e53(0x14d,'5$%l')](_0x265d50,_0x180e7a)?_0x265d50:(_0x3c7944=_0x504eda[_0x3c4e53(0x10e,'l0qt')]||_0x504eda[_0x3c4e53(0x15a,'py%y')]?.[_0x3c4e53(0x14a,'7IPt')]?.[_0x553ea5[_0x3c4e53(0x10b,'Hxw!')](_0x504eda[_0x3c4e53(0x101,'$*Kn')][_0x3c4e53(0x11c,'4NpI')][_0x3c4e53(0x134,'C@%*')],0x1)]||(_0x553ea5['ubnvD'](_0x553ea5[_0x3c4e53(0x113,'jk8^')],typeof _0x504eda[_0x3c4e53(0x141,'v69G')])?_0x504eda[_0x3c4e53(0x133,'%%WS')][_0x3c4e53(0x11e,'C@%*')]('/')[_0x3c4e53(0x129,'(KV[')]():void 0x0))&&_0x553ea5['gvBoO'](_0x3c7944,_0x180e7a)?_0x3c7944:void 0x0;}),getAssociationAliasMaps=(exports[_0x5c1885(0x123,'Ji@5')]=findRemoteAssociationName,(_0x301f0b,_0x42510d)=>{var _0x11cbd8=_0x5c1885,_0x9b5017={'AANet':function(_0x17a6be,_0x598edb){return _0x17a6be!==_0x598edb;},'sowlH':function(_0x5f3d21,_0x1b4c5a){return _0x5f3d21-_0x1b4c5a;}};if(!_0x301f0b)return{'localToRemote':{},'remoteToLocal':{}};var _0x3e6671=_0x42510d[_0x11cbd8(0x103,'s!a&')]['get'](_0x301f0b);if(_0x3e6671)return _0x3e6671;var _0x1b3610,_0x43d735,_0x468275,_0x5b84f7={},_0x3d4355={},_0x3fe356=(0x0,exports[_0x11cbd8(0x152,'v69G')])(_0x301f0b,_0x42510d);for([_0x1b3610,_0x43d735]of Object['entries'](_0x301f0b[_0x11cbd8(0x10f,'OAJN')]||{}))(0x0,exports[_0x11cbd8(0x14c,'^l4R')])(_0x43d735)&&((_0x468275=_0x3fe356[_0x11cbd8(0x156,'dTYw')][_0x1b3610])&&_0x9b5017[_0x11cbd8(0x111,'yN01')](_0x468275,_0x1b3610)&&(_0x3d4355[_0x5b84f7[_0x1b3610]=_0x468275]=_0x1b3610),(_0x468275=_0x43d735[_0x11cbd8(0x13c,'iOto')]||_0x43d735[_0x11cbd8(0x10d,'iOto')]?.[_0x11cbd8(0x153,'l0qt')]?.[_0x43d735['value']?.[_0x11cbd8(0x115,'5bkJ')]?.[_0x9b5017[_0x11cbd8(0x125,'uEwL')](_0x43d735[_0x11cbd8(0x112,'C@%*')]?.[_0x11cbd8(0x161,'^l4R')]?.[_0x11cbd8(0x118,'dIs@')],0x1)]])&&_0x9b5017[_0x11cbd8(0x15d,'2IfK')](_0x468275,_0x1b3610)&&(_0x5b84f7[_0x1b3610]||=_0x468275,_0x3d4355[_0x468275]=_0x1b3610),_0x468275=(0x0,exports[_0x11cbd8(0x144,'dIs@')])(_0x301f0b,_0x1b3610,_0x42510d,_0x43d735))&&_0x9b5017[_0x11cbd8(0x10c,']h(4')](_0x468275,_0x1b3610)&&(_0x5b84f7[_0x1b3610]||=_0x468275,_0x3d4355[_0x468275]=_0x1b3610);return _0x3e6671={'localToRemote':_0x5b84f7,'remoteToLocal':_0x3d4355},(_0x42510d['assocAliasMaps']['set'](_0x301f0b,_0x3e6671),_0x3e6671);});exports[_0x5c1885(0x12f,'VhTS')]=getAssociationAliasMaps;
+"use strict";
+/**
+ * @file alias-maps.ts
+ * @description Field-name alias resolution and caching. Every helper that
+ * needs to translate between local CAP names and remote backend names uses
+ * these functions.
+ *
+ * Alias maps are memoised against the immutable CDS entity definition object
+ * (see {@link MetadataCache}) so we compute them at most once per entity for
+ * the lifetime of the loaded CDS model.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getAssociationAliasMaps = exports.findRemoteAssociationName = exports.getAliasMaps = exports.collectProjectionColumns = exports.isAssociationElement = void 0;
+const cds_1 = require("@sap/cds");
+const path_columns_1 = require("./path-columns");
+/**
+ * Returns `true` when the element is a CDS Association or Composition.
+ *
+ * @param element  CDS element descriptor.
+ */
+const isAssociationElement = (element) => element?.type === 'cds.Association' || element?.type === 'cds.Composition';
+exports.isAssociationElement = isAssociationElement;
+/**
+ * Returns the projection columns for the given entity definition, falling
+ * back to the corresponding model-level definition when the runtime entity
+ * is a lightweight clone.
+ *
+ * @param entityDef  CDS entity definition.
+ */
+const collectProjectionColumns = (entityDef) => entityDef?.query?.SELECT?.columns
+    || cds_1.default.model?.definitions?.[entityDef?.name]?.query?.SELECT?.columns
+    || [];
+exports.collectProjectionColumns = collectProjectionColumns;
+/**
+ * Returns the {@link AliasMaps} for an entity, building them lazily from
+ * projection columns + element metadata and caching per-definition.
+ *
+ * @param entityDef  CDS entity definition.
+ * @param cache      Per-service metadata cache.
+ */
+const getAliasMaps = (entityDef, cache) => {
+    if (!entityDef)
+        return { localToRemote: {}, remoteToLocal: {} };
+    const cached = cache.aliasMaps.get(entityDef);
+    if (cached)
+        return cached;
+    const localToRemote = {};
+    const remoteToLocal = {};
+    // Association-path columns (`_A._B.Field as X`) do not exist on the main remote entity:
+    // mapping `X -> Field` there would request/route a wrong field. They are resolved separately.
+    const pathAliases = (0, path_columns_1.getColumnPlan)(entityDef, cache).paths;
+    for (const col of (0, exports.collectProjectionColumns)(entityDef)) {
+        if (!col?.ref)
+            continue;
+        if (col.ref.length > 1 && pathAliases.has(col.as || col.ref[col.ref.length - 1]))
+            continue;
+        const remote = col.ref[col.ref.length - 1];
+        const local = col.as || remote;
+        localToRemote[local] = remote;
+        remoteToLocal[remote] = local;
+    }
+    for (const key of Object.keys(entityDef.elements || {})) {
+        if (pathAliases.has(key))
+            continue;
+        if (!localToRemote[key])
+            localToRemote[key] = key;
+        if (!remoteToLocal[key])
+            remoteToLocal[key] = key;
+    }
+    const maps = { localToRemote, remoteToLocal };
+    cache.aliasMaps.set(entityDef, maps);
+    return maps;
+};
+exports.getAliasMaps = getAliasMaps;
+/**
+ * Attempts to resolve the remote-side association name for a locally-named
+ * association. Checks (in order): projection alias, `element.original`,
+ * `element.value.ref`, `element.base`. Deliberately does *not* infer from
+ * sibling associations — that would risk aliasing one expand to another.
+ *
+ * @param sourceDef  Local entity definition.
+ * @param assocName  Local association name.
+ * @param cache      Per-service metadata cache.
+ * @param assocEl    Optional element (defaults to `sourceDef.elements[assocName]`).
+ * @returns          Remote name, or `undefined` when no explicit mapping exists.
+ */
+const findRemoteAssociationName = (sourceDef, assocName, cache, assocEl) => {
+    const elements = sourceDef?.elements || {};
+    const current = assocEl || elements[assocName];
+    if (!current || !(0, exports.isAssociationElement)(current) || !current.target)
+        return undefined;
+    const byProjection = (0, exports.getAliasMaps)(sourceDef, cache).localToRemote[assocName];
+    if (byProjection && byProjection !== assocName)
+        return byProjection;
+    const byMetadata = current.original ||
+        current.value?.ref?.[current.value.ref.length - 1] ||
+        (typeof current.base === 'string' ? current.base.split('/').pop() : undefined);
+    if (byMetadata && byMetadata !== assocName)
+        return byMetadata;
+    // Deliberately no sibling-based inference.
+    return undefined;
+};
+exports.findRemoteAssociationName = findRemoteAssociationName;
+/**
+ * Like {@link getAliasMaps}, but restricted to association elements only.
+ * Union of aliases derived from projection, `element.original`,
+ * `element.value.ref`, and structural inference.
+ *
+ * @param entityDef  CDS entity definition.
+ * @param cache      Per-service metadata cache.
+ */
+const getAssociationAliasMaps = (entityDef, cache) => {
+    if (!entityDef)
+        return { localToRemote: {}, remoteToLocal: {} };
+    const cached = cache.assocAliasMaps.get(entityDef);
+    if (cached)
+        return cached;
+    const localToRemote = {};
+    const remoteToLocal = {};
+    const aliasMaps = (0, exports.getAliasMaps)(entityDef, cache);
+    for (const [localName, el] of Object.entries(entityDef.elements || {})) {
+        if (!(0, exports.isAssociationElement)(el))
+            continue;
+        const byProjection = aliasMaps.localToRemote[localName];
+        if (byProjection && byProjection !== localName) {
+            localToRemote[localName] = byProjection;
+            remoteToLocal[byProjection] = localName;
+        }
+        const byMetadata = el.original || el.value?.ref?.[el.value?.ref?.[el.value?.ref?.length - 1]];
+        if (byMetadata && byMetadata !== localName) {
+            localToRemote[localName] ||= byMetadata;
+            remoteToLocal[byMetadata] = localName;
+        }
+        const inferred = (0, exports.findRemoteAssociationName)(entityDef, localName, cache, el);
+        if (inferred && inferred !== localName) {
+            localToRemote[localName] ||= inferred;
+            remoteToLocal[inferred] = localName;
+        }
+    }
+    const maps = { localToRemote, remoteToLocal };
+    cache.assocAliasMaps.set(entityDef, maps);
+    return maps;
+};
+exports.getAssociationAliasMaps = getAssociationAliasMaps;

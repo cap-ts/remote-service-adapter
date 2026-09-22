@@ -1,1 +1,24 @@
-const _0x5a9fcd=_0x4f94;(function(_0x1a70af,_0x31335b){const _0x227418=_0x4f94,_0x1740ca=_0x1a70af();while(!![]){try{const _0xad866b=parseInt(_0x227418(0x138,']F^e'))/0x1*(-parseInt(_0x227418(0x12e,'iQER'))/0x2)+parseInt(_0x227418(0x13d,'#Kdx'))/0x3*(parseInt(_0x227418(0x13b,'H$OS'))/0x4)+parseInt(_0x227418(0x135,'m5k&'))/0x5*(parseInt(_0x227418(0x130,'lsOP'))/0x6)+parseInt(_0x227418(0x12c,'@rsl'))/0x7*(parseInt(_0x227418(0x126,'lsOP'))/0x8)+-parseInt(_0x227418(0x13c,'cg9@'))/0x9*(parseInt(_0x227418(0x134,'JOvq'))/0xa)+parseInt(_0x227418(0x136,'tzP]'))/0xb*(parseInt(_0x227418(0x143,'H$OS'))/0xc)+parseInt(_0x227418(0x133,'tzP]'))/0xd*(-parseInt(_0x227418(0x142,'pnry'))/0xe);if(_0xad866b===_0x31335b)break;else _0x1740ca['push'](_0x1740ca['shift']());}catch(_0xc62815){_0x1740ca['push'](_0x1740ca['shift']());}}}(_0x1f6c,0xe7403),(Object[_0x5a9fcd(0x13f,'oC6&')](exports,_0x5a9fcd(0x139,'gtlg'),{'value':!0x0}),exports[_0x5a9fcd(0x132,'^xQA')]=void 0x0));function _0x4f94(_0x24f8d8,_0x142554){_0x24f8d8=_0x24f8d8-0x126;const _0x1f6c77=_0x1f6c();let _0x4f940d=_0x1f6c77[_0x24f8d8];if(_0x4f94['ihHzQX']===undefined){var _0x2ada10=function(_0x31aec9){const _0x195626='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x59c5fe='',_0x145456='';for(let _0x4d3918=0x0,_0x4aad43,_0x32d0c4,_0x14de6d=0x0;_0x32d0c4=_0x31aec9['charAt'](_0x14de6d++);~_0x32d0c4&&(_0x4aad43=_0x4d3918%0x4?_0x4aad43*0x40+_0x32d0c4:_0x32d0c4,_0x4d3918++%0x4)?_0x59c5fe+=String['fromCharCode'](0xff&_0x4aad43>>(-0x2*_0x4d3918&0x6)):0x0){_0x32d0c4=_0x195626['indexOf'](_0x32d0c4);}for(let _0x5d063a=0x0,_0x30c7f1=_0x59c5fe['length'];_0x5d063a<_0x30c7f1;_0x5d063a++){_0x145456+='%'+('00'+_0x59c5fe['charCodeAt'](_0x5d063a)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x145456);};const _0xfa5e9a=function(_0x371bc7,_0x41323e){let _0x3e7637=[],_0x44db15=0x0,_0x475c9a,_0x3cbb4f='';_0x371bc7=_0x2ada10(_0x371bc7);let _0x411328;for(_0x411328=0x0;_0x411328<0x100;_0x411328++){_0x3e7637[_0x411328]=_0x411328;}for(_0x411328=0x0;_0x411328<0x100;_0x411328++){_0x44db15=(_0x44db15+_0x3e7637[_0x411328]+_0x41323e['charCodeAt'](_0x411328%_0x41323e['length']))%0x100,_0x475c9a=_0x3e7637[_0x411328],_0x3e7637[_0x411328]=_0x3e7637[_0x44db15],_0x3e7637[_0x44db15]=_0x475c9a;}_0x411328=0x0,_0x44db15=0x0;for(let _0x44c348=0x0;_0x44c348<_0x371bc7['length'];_0x44c348++){_0x411328=(_0x411328+0x1)%0x100,_0x44db15=(_0x44db15+_0x3e7637[_0x411328])%0x100,_0x475c9a=_0x3e7637[_0x411328],_0x3e7637[_0x411328]=_0x3e7637[_0x44db15],_0x3e7637[_0x44db15]=_0x475c9a,_0x3cbb4f+=String['fromCharCode'](_0x371bc7['charCodeAt'](_0x44c348)^_0x3e7637[(_0x3e7637[_0x411328]+_0x3e7637[_0x44db15])%0x100]);}return _0x3cbb4f;};_0x4f94['huOBnE']=_0xfa5e9a,_0x4f94['eABfti']={},_0x4f94['ihHzQX']=!![];}const _0x245ed7=_0x1f6c77[0x0];_0x4f94['RlLvKG']!==_0x245ed7&&(_0x4f94['eABfti']={},_0x4f94['RlLvKG']=_0x245ed7);const _0x14c473=_0x4f94['eABfti'][_0x24f8d8];return _0x14c473===undefined?(_0x4f94['ubdVcL']===undefined&&(_0x4f94['ubdVcL']=!![]),_0x4f940d=_0x4f94['huOBnE'](_0x4f940d,_0x142554),_0x4f94['eABfti'][_0x24f8d8]=_0x4f940d):_0x4f940d=_0x14c473,_0x4f940d;}function _0x1f6c(){const _0x3cc8b2=['g8ktBb3dUGuhWQJcSa','WPTFW6WNW53cLeWYWRtcVmk9nbO','h8k1hZ8mW4hcJmku','W7GuW6ldNthdHWGYW43cOCotd8o4lSkSWOZcO8kmWP0','WPZdL8kWzmkrEhqUp1u0','z3VdQfxcRmkudNldHWakAa','W4/cRCoYW4hcJGnUWOi','WPVdNSkWz8ksmGbwbgyHW4RcSMC','dmkGWO/dSCoyWRr1','vCktz8odxCo2WQS','WOfkWRhdNLJdGmkTWPrVna','dmoSW77cKCkaW50wW6e8W54IuCkVqW','WOVdIg1Sd8oWnCkqimocs3y','xSkcdmk3WQ4cWPpcGSko','WQlcILddTriWWOKP','u8kKA8kWjSoCt8oFW5VdGCopWQHLWR7cQmoLeSkhWQS','f8kkwtdcKmoZW6CJvY4JWRddQIC','lCktgG1ZvCoMCCkAzq','C8ofs3ldT3ldPadcRmknW7/dJa','g0lcUmk6rq3cNh/cQf0','WOJdIJWvCCkabCkr','WP9yW6WLWQtdSZCkWPZcLq','faxcRSkymCkjWQWV','WQxcJSkEW5hcHCkrW4RcNmoqxHyUya','ESory2VdLZFcVZiDhmoXWQ0','W7mkW5FdTSkmbfutFmo4qaddJa','W40YW6pcOCo1WRNcRmolWO/cLa','W6rKW7ZdLSkGx8kgxX3cGa','W4NcJtzDWOznsbJcQSkJmG','d8oKW7hcLmkeW5CFWRqcW44/tCkz'];_0x1f6c=function(){return _0x3cc8b2;};return _0x1f6c();}let createMetadataCache=()=>({'aliasMaps':new WeakMap(),'assocAliasMaps':new WeakMap(),'assocMeta':new WeakMap(),'columnPlan':new WeakMap(),'searchColumns':new WeakMap()});exports[_0x5a9fcd(0x13e,'OQsQ')]=createMetadataCache;
+"use strict";
+/**
+ * @file types.ts
+ * @description Shared type definitions for the RemoteApplicationService helper package.
+ *
+ * All types here are structural — they describe the shape of CDS entity
+ * definitions, CQN nodes, and internal alias/metadata caches. They exist to
+ * document intent at helper boundaries; runtime enforcement is not attempted
+ * because `@sap/cds` itself types most of these values as `any`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createMetadataCache = void 0;
+/**
+ * Factory for a fresh {@link MetadataCache}. Prefer constructing one per
+ * service instance in `init()`.
+ */
+const createMetadataCache = () => ({
+    aliasMaps: new WeakMap(),
+    assocAliasMaps: new WeakMap(),
+    assocMeta: new WeakMap(),
+    columnPlan: new WeakMap(),
+    searchColumns: new WeakMap(),
+});
+exports.createMetadataCache = createMetadataCache;

@@ -1,1 +1,178 @@
-var _0x54d0c2=_0x35e3;(function(_0x335a56,_0x216703){var _0x3d8afe=_0x35e3,_0x568db7=_0x335a56();while(!![]){try{var _0x313202=-parseInt(_0x3d8afe(0x23a,'pngB'))/0x1+parseInt(_0x3d8afe(0x279,'U70J'))/0x2+parseInt(_0x3d8afe(0x23b,'F!dy'))/0x3*(parseInt(_0x3d8afe(0x226,'4@Ke'))/0x4)+parseInt(_0x3d8afe(0x26f,')Y9M'))/0x5+-parseInt(_0x3d8afe(0x299,'ubX0'))/0x6+-parseInt(_0x3d8afe(0x263,'S]R4'))/0x7*(-parseInt(_0x3d8afe(0x280,'tAI0'))/0x8)+-parseInt(_0x3d8afe(0x22a,'PCbt'))/0x9*(parseInt(_0x3d8afe(0x28d,'PCbt'))/0xa);if(_0x313202===_0x216703)break;else _0x568db7['push'](_0x568db7['shift']());}catch(_0x35d2b2){_0x568db7['push'](_0x568db7['shift']());}}}(_0x2978,0xe3f59),(Object[_0x54d0c2(0x27a,'y)SH')](exports,_0x54d0c2(0x24a,'eOAI'),{'value':!0x0}),exports[_0x54d0c2(0x262,'qr(W')]=void 0x0));function _0x35e3(_0xfff13d,_0x286221){_0xfff13d=_0xfff13d-0x1e6;var _0x2978d1=_0x2978();var _0x35e3e5=_0x2978d1[_0xfff13d];if(_0x35e3['AGjmAt']===undefined){var _0x4a451e=function(_0x4f36ee){var _0x117d98='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x1337ba='',_0x46c2ca='';for(var _0x3c4b4d=0x0,_0x1ca8a3,_0x1e739e,_0xce937e=0x0;_0x1e739e=_0x4f36ee['charAt'](_0xce937e++);~_0x1e739e&&(_0x1ca8a3=_0x3c4b4d%0x4?_0x1ca8a3*0x40+_0x1e739e:_0x1e739e,_0x3c4b4d++%0x4)?_0x1337ba+=String['fromCharCode'](0xff&_0x1ca8a3>>(-0x2*_0x3c4b4d&0x6)):0x0){_0x1e739e=_0x117d98['indexOf'](_0x1e739e);}for(var _0x513dfe=0x0,_0x35fb9e=_0x1337ba['length'];_0x513dfe<_0x35fb9e;_0x513dfe++){_0x46c2ca+='%'+('00'+_0x1337ba['charCodeAt'](_0x513dfe)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x46c2ca);};var _0x2b3f8e=function(_0x2c9161,_0x1931c3){var _0x152865=[],_0x5657ce=0x0,_0x14e21c,_0x402893='';_0x2c9161=_0x4a451e(_0x2c9161);var _0x47954f;for(_0x47954f=0x0;_0x47954f<0x100;_0x47954f++){_0x152865[_0x47954f]=_0x47954f;}for(_0x47954f=0x0;_0x47954f<0x100;_0x47954f++){_0x5657ce=(_0x5657ce+_0x152865[_0x47954f]+_0x1931c3['charCodeAt'](_0x47954f%_0x1931c3['length']))%0x100,_0x14e21c=_0x152865[_0x47954f],_0x152865[_0x47954f]=_0x152865[_0x5657ce],_0x152865[_0x5657ce]=_0x14e21c;}_0x47954f=0x0,_0x5657ce=0x0;for(var _0x160490=0x0;_0x160490<_0x2c9161['length'];_0x160490++){_0x47954f=(_0x47954f+0x1)%0x100,_0x5657ce=(_0x5657ce+_0x152865[_0x47954f])%0x100,_0x14e21c=_0x152865[_0x47954f],_0x152865[_0x47954f]=_0x152865[_0x5657ce],_0x152865[_0x5657ce]=_0x14e21c,_0x402893+=String['fromCharCode'](_0x2c9161['charCodeAt'](_0x160490)^_0x152865[(_0x152865[_0x47954f]+_0x152865[_0x5657ce])%0x100]);}return _0x402893;};_0x35e3['RGwLDO']=_0x2b3f8e,_0x35e3['HuCLzQ']={},_0x35e3['AGjmAt']=!![];}var _0x43ce10=_0x2978d1[0x0];_0x35e3['ZncuBI']!==_0x43ce10&&(_0x35e3['HuCLzQ']={},_0x35e3['ZncuBI']=_0x43ce10);var _0x14f479=_0x35e3['HuCLzQ'][_0xfff13d];return _0x14f479===undefined?(_0x35e3['ntxVNk']===undefined&&(_0x35e3['ntxVNk']=!![]),_0x35e3e5=_0x35e3['RGwLDO'](_0x35e3e5,_0x286221),_0x35e3['HuCLzQ'][_0xfff13d]=_0x35e3e5):_0x35e3e5=_0x14f479,_0x35e3e5;}function _0x2978(){var _0x118c66=['AX/dJ8oK','WOHRwSk/WQ7cOZLzWQvt','ygxcK00UdSoLwmorW7dcQmkFWQ9h','W4eqsmkhgLKB','FcTdW4VdTsra','W4TwqG','fKFdG8o6WOZdIW','pvbL','W5/dVXVdKfm','W403lW','WQxdH8olv8kQ','W5FdOCo7WPW','W5CqwCkubKekWP4vW4qaW4XVm20','DcBdSMVdPmk8WQG7','nMv2W6/cGqFdIq','W512yhC5udZcS0tcU8kZWRZcGmofACk6W4FcOmoIW7mWWPrHnvBcIMRcI8k8omoKW70YWONdKIFcNda','WQ3dIbHeWPDJ','uIddGmoBbG','yZLU','W6FcS8ovDmoC','Amk9sSo1xJFcHW','W6j0W7hdNCkeWOC','WQddMXDBWPztWQZcUftcKqFdHCkxxSoiBSo7p8kMWP3dG8oKW4VcLSoc','rq7dGNiz','WO13ot3dT8kCWQFdKmkJASomzG','c1FdImoVWOe','uSkWb8klp8kjW5tcMqVdTCohw8k+WRHk','i1dcQY4w','WPldNbDAWPnLWRddVKFcGqRdLCoLx8okB8oQ','aSksW6xdSLC','WR5aySktWPNcJG','W63dISorWRBcJCk8','zIHUW5ddSXzCi0nLW5jrcLldUSk3W5ZcSIr7nW','mJldUhi','u8oHWQFdRSoUiq','BchdSLRdQ8kHWOi','pM/dN1ldPYfNa8oNy8k2zCkXW4VcTmoYWQ9IW7xcQW','iYJdSM3dOG','W6RcMvKwiJmWW4K','DXWbfetcTmkGW7S','W4O2pJ4','WRuypCoHW63cTG','WRddIW1yWP5HWQZcM03cLaRdN8kHDCokzCoQkq','W7j1kxaL','W7K+W7FdQSkMW4m','d8kEW7uUzG','W7yShhJdHmkmzv7cRG','BfNcQXKFWQWQ','fepdGmo4','BqTInshcUge','W7WMafldN8ka','cuFdSCoZW6FdGLO','W6zaz8kQWQu','WOJdOtD5W5jKWR3cU0xdHa','WRVdSSoaq8oOWQW+CJRcKq','W4jfW7ddOmk/','zrtdNCokjCoZWRSdrmoYaSkx','dmo+fSkxnSk5W4hcH0FdUCowzSkGWRLkcJW','WR9oWQWIWOy','C2zNW7tcKHVdVComoCoA','WObQsSkZWRy','WPBdMmo9tmkKWRyRzaFdKmkUW4O','qSoccCkCW4ZcQtlcImo2ifSOW68','WOhdL8oT','W4xdTshdT1SFDCo8W4PnW5/cRmoz','WQmLfmohW5VcLSoeW5WWjCo1qtVcKKf+abaky0X0','W5xcNYrCWOLjFW94smkqlqT7WO8ykX8Bh0FdLX48CmoUWRu2iNXSoCoUW7OIl3BcMCodl0hcQSko','m0tcNCk4ESkVW6O7u8o5jmkisG','FSoJW6P1e8kLxYpdQmkecCkbyG','W7/cNbDhWP4nFbr4sCoE','W6BdKr/dGx0b','W7KTcfO','sxtcLgZdUq','k2zfW65H','WOO4h8odW5RcIG','WP/dKSo+','jCk0W7ecsZ1sW5tcH8klAW','DrNdJmo5la','rYtdJvWmWR4','zSo3WQtdUmoV','kCk3WOP7W4u','ov0/D3VdPsFcRCoThhTUWPy','gSkmWO05zZqVW5f/xMVdTtLsWRxcVSoaDetcQIy','nCkrWR15W4rcWRCPWPZcPq','vczYW6xcUW','WOdcO2FcVqHGkSo7W7nsW6lcU8oL','ofhcOZuh','nsZdVN7dTa','Ct1KW5ddQsXnofPIW4i','W5iuxmki','p8oljN1FW4SZW5VcHZiRWQzLWPZdLmkyAmogW6NdPSopWRpdRq','WQhdVCklW7lcVG','AcX8vqagW4ddUmkQt8k5d0ldHdjTWR7cLdVdRdzcWQu','ha8+WPxcPW','wwFdSmoU','cSkEW6RdRKq','lmood8khWOlcRG','BqCoibK','uIK8WPxcR0S4','E8ocfCkaWO/cVXhcKmoMkve','oshdPW','hKFdI8o8WO3dJWm','eezaW6vK','jYtcLLm','WPqOhW','Dq3dQhG8','WP85wbjD','FaddR30JWO/dLCkxySoik8kFcSoXnr7cRCo9W6DYWQ/dGCov','n8o9x8otrItcIZS','Ct1GW4ZdOa','rHOffHi','nY/dU2RdQSk6WR4','WPhdQZjYWRfd','W5/dO8o0WPlcVq','WQFdGaPEWOzUWPNcV0hcJa','eCkgWPOiEq8QW6z5r23dRJi','uZDWW5ZdRIjxCv5PW4HhA1/dSCkEW57cOY57k1G','W5ZcISouwq','W4LwvSk6WOujE8kFqSo1pmoqW5C','eKpdG8o5WPtdHJrAW4/cOhFcNSoYWP0eWPfxW6VcRmo6FMyF','afzru1ZdPmoXW4xcQ8occmk/WO4','bSkHWRTRW6v5WRWoWPxcRxhcR8o7','bmoVbfXWW7O','W7a1W63dPmkMW5jbWPrUW4S','W5nfW6hdI8k/','WPXYWPCk','W5ZcHmoo','WPdcUmohW6JcSY3dOSoEWRdcMq','WQ58FmkNWPy','W6yYW6pdQa','sG/cPdpdVZ8Ygmoyzmk9aSkX','Ct1KW5ddQsbPi1P8W5rgp0u','W4bCdfqvDG','EXDRmWdcUxhcGCochxjeWOS0y8olW5xdU8odWR3dNCklwu9c','ce3dMSoU','W7tcLZjbWP4ayqL+smod','W73dTSopWOlcGG','W43dP8kcWRpdTMldQ8oVWORcTSkjW6K','C3ddHmoWW4y','xZDRW5FcPY5CkeySW4fvou/dU8kw','jmogixPw','W4ZdOGldIMC','W7W1W7/dOG','EatdR347WOi','W6hcHZfAWOK','oKXtW6zAW5Go','W7ZcLZPpWOqb','W4Car8kkc3ekWQKbW5qEW4fGlwbrfbKFlq3dVmoDW6e','vxfbW6ZcQG','Ft5GW6JcHL3cRYddRHO','cdJcPmkZWRZcVWBdLmo8FN7dNKm','C8ojj2XDW5O','WPJdK8oVyG','nSknW6/dNuC','W7BdRqhdTxi','W6yAw8kkcXubWQauWOecW5rEmwyqeJuzl1JdUSowW6VcVq7cSmoIdmojjM7cTmkSAe3dOuqjWQ8','W6ymFmkxiW','AIj7x0eoW6ldPmkVsSkLr0RdPY1HWRZcSdtdUG','nmofjgXEW4ad','W5NdQSoPWQdcQ8kAWPhdRSosW5qUnHzsySol','W49Ta0ywW5a3WQVcPCoEW5vzAa','h1ldSgFcSMv2','W483W4XEW6ldNJ7dKNSMwSojjq','WPldHs0NjJuSW4PGWPNcRHxdV3WknCogf8owWPtdImkofv7cJmont8oLvxlcLNPwagHQW4bgCSk8CCod','W4tdOtBdTKC','WOddN8oWW7z/','WPFdJ8oMya','ACokWO3dHa','WRJdJ283lW','W5nfW7JdKmkMx8oK','W7GIafhdH8knu13cPN7cGCkTW4VdVh80gmkap8oQpCk+lq','WPDVWPWcWRG','F2z1W7i','W53dOmoOWP3cUG','j8kPW7hcJde','W7OOjMhdHG','W489nJBdQSkv','W4dcJ8k8oSo/W6H+rG7dK8kkW49S','zxH/W7tcKJhdImoFo8oBWQ1QW40CWQ/dUCklWPZdK8oBmq','udvCyIa','BSkGBG','AW4JWQyzWO8UocZdHXOm','uGeudr/cRSkuW6NcNmo4','DCoxWO7dMmoHgSoyWPmvWOOBeSoeW6aXWPFcSxtcVCkIW5hcKCkuWQZcHW'];_0x2978=function(){return _0x118c66;};return _0x2978();}let cds_1=require(_0x54d0c2(0x21e,')Y9M')),alias_maps_1=require(_0x54d0c2(0x20f,'@BNT')),column_builders_1=require(_0x54d0c2(0x230,'0FZL')),cqn_utils_1=require('./cqn-utils'),cqn_rewriter_1=require(_0x54d0c2(0x1f9,'LkEJ')),expand_materializer_1=require('./expand-materializer'),join_parser_1=require('./join-parser'),service_resolver_1=require('./service-resolver'),SELECT=cds_1[_0x54d0c2(0x298,'U70J')]['ql']['SELECT'],M=_0x54d0c2(0x294,'pOtG'),handleComplexJoinMashup=async(_0x66b3e8,_0x19e417,_0x5b2a67,_0x4e766b,_0x6bdd41,_0x587215,_0x3e578d)=>{var _0x5e8d72=_0x54d0c2,_0x3e5238={'CyRqL':'handleComplexJoinMashup','VEErI':_0x5e8d72(0x29a,'AGbP'),'ZhnDr':function(_0x4b855f){return _0x4b855f();},'jkHTm':function(_0x52e623,_0x2d14a6){return _0x52e623!==_0x2d14a6;},'KmiwX':_0x5e8d72(0x238,'Vd^G'),'UXlHT':_0x5e8d72(0x213,'zE2f'),'QoCkV':function(_0x3f5881,_0x1facbc){return _0x3f5881-_0x1facbc;},'YqQzb':function(_0x52bc20,_0x3bae45){return _0x52bc20===_0x3bae45;},'PxNSL':_0x5e8d72(0x21b,'U70J'),'heIqW':function(_0x395d8c,_0x5a5128){return _0x395d8c-_0x5a5128;},'PzhZw':function(_0x275e26,_0x5e0f24){return _0x275e26<_0x5e0f24;},'fSOSB':function(_0x17e2eb,_0x4f9b41){return _0x17e2eb+_0x4f9b41;},'xYWzI':_0x5e8d72(0x22c,'zE2f'),'rodEt':function(_0x27f20b,_0x1c787f){return _0x27f20b&&_0x1c787f;},'TzBZb':_0x5e8d72(0x282,'y)SH'),'EDGCC':_0x5e8d72(0x26b,'y)SH'),'yvQNY':_0x5e8d72(0x292,'TmYs'),'PQiPO':function(_0x2859ec,_0x3a1ef8){return _0x2859ec!==_0x3a1ef8;},'LvfdI':function(_0x58b3b3,_0x729c5c){return _0x58b3b3-_0x729c5c;}},_0x445e2e=_0x3e578d[_0x5e8d72(0x225,'r3@!')](M),_0x3e578d=Date['now']();if(!_0x4e766b)return _0x445e2e[_0x5e8d72(0x250,'TmYs')](_0x3e5238[_0x5e8d72(0x25d,'$y#k')],_0x3e5238['VEErI']),_0x3e5238[_0x5e8d72(0x258,')Y9M')](_0x5b2a67);_0x445e2e[_0x5e8d72(0x255,'PCbt')](_0x5e8d72(0x251,'6sIc'),_0x5e8d72(0x231,'ubX0'),{'entity':_0x4e766b[_0x5e8d72(0x26c,'[2cE')]});var _0x5465aa=(0x0,join_parser_1['flattenJoinStructure'])(_0x6bdd41[_0x5e8d72(0x29d,'eCdF')]);if(!_0x5465aa['length'])return _0x445e2e['warn'](_0x3e5238[_0x5e8d72(0x27f,'GtVl')],_0x5e8d72(0x239,'d)!h')),_0x19e417[_0x5e8d72(0x265,')Y9M')][_0x5e8d72(0x27b,'f9eK')]?.[_0x5e8d72(0x1f3,'S]R4')]?{}:[];_0x445e2e[_0x5e8d72(0x1e7,'AGbP')](_0x3e5238[_0x5e8d72(0x293,'TmYs')],_0x5e8d72(0x235,'msL)'),{'sources':_0x5465aa['map'](_0x5cb110=>({'path':_0x5cb110[_0x5e8d72(0x1f5,')Y9M')],'alias':_0x5cb110[_0x5e8d72(0x222,'f9eK')]}))});var _0x5b2a67=_0x5465aa[0x0],[_0x15c14f,_0x1c2894]=(0x0,service_resolver_1[_0x5e8d72(0x1f1,'AMFC')])(_0x5b2a67[_0x5e8d72(0x269,'zE2f')]),_0x2c9b5b=await(0x0,service_resolver_1['getServiceByName'])(_0x15c14f),_0x57a2e2=(0x0,service_resolver_1[_0x5e8d72(0x27c,'S^WR')])(_0x15c14f),_0x572fef=_0x57a2e2&&_0x3e5238[_0x5e8d72(0x1ff,'d)L8')](_0x15c14f,_0x66b3e8)?_0x5b2a67['entityPath']:_0x1c2894,_0x4b6c10=cds_1[_0x5e8d72(0x1fa,'TmYs')][_0x5e8d72(0x1ea,'ubX0')][_0x5e8d72(0x24f,'y)SH')][_0x5b2a67[_0x5e8d72(0x272,'fGCN')]],_0x250afb=(0x0,alias_maps_1[_0x5e8d72(0x234,'eCdF')])(_0x4b6c10,_0x587215),_0x572fef=SELECT[_0x5e8d72(0x218,'hE]U')](_0x572fef),_0x5b2a67=(_0x19e417['query'][_0x5e8d72(0x271,'6sIc')][_0x5e8d72(0x273,'LPpv')]&&(_0x572fef['SELECT'][_0x5e8d72(0x1ec,'GtVl')]=!0x0),_0x19e417[_0x5e8d72(0x23f,'483#')][_0x5e8d72(0x215,']6yg')][_0x5e8d72(0x21c,'hE]U')]&&(_0x5b2a67=(0x0,cqn_utils_1['filterWhereForTable'])(_0x19e417[_0x5e8d72(0x23f,'483#')][_0x5e8d72(0x267,'zE2f')][_0x5e8d72(0x254,'bCq(')],_0x5b2a67[_0x5e8d72(0x24e,'hE]U')]))&&_0x572fef[_0x5e8d72(0x212,'4@Ke')](_0x5b2a67),_0x19e417[_0x5e8d72(0x210,'ufXv')][_0x5e8d72(0x23d,'d)L8')][_0x5e8d72(0x29c,'6CAy')]&&_0x572fef[_0x5e8d72(0x24d,'4@Ke')](_0x19e417[_0x5e8d72(0x29b,'d)L8')][_0x5e8d72(0x219,'rz8Z')]['limit'][_0x5e8d72(0x27d,'ufXv')][_0x5e8d72(0x209,'y)SH')],_0x19e417['query'][_0x5e8d72(0x245,'qr(W')][_0x5e8d72(0x256,'3ONN')][_0x5e8d72(0x207,'zE2f')]),_0x19e417['query'][_0x5e8d72(0x216,'GtVl')]['orderBy']&&_0x572fef['orderBy'](_0x19e417[_0x5e8d72(0x287,'d)!h')][_0x5e8d72(0x220,'Vd^G')]['orderBy']),_0x57a2e2||(0x0,cqn_rewriter_1['rewriteQueryCqn'])(_0x572fef,_0x250afb[_0x5e8d72(0x26d,'v0O$')],_0x587215,_0x4b6c10),(0x0,join_parser_1[_0x5e8d72(0x211,'0FZL')])(_0x6bdd41[_0x5e8d72(0x266,'hE]U')]||[])),_0x57a2e2=(_0x3e5238[_0x5e8d72(0x1ff,'d)L8')](0x0,_0x5b2a67[_0x5e8d72(0x229,'r3@!')])||_0x6bdd41[_0x5e8d72(0x1e8,'LPpv')]?.[_0x5e8d72(0x20c,'Uc$q')]||_0x572fef[_0x5e8d72(0x295,'6sIc')](_0x57a2e2?(0x0,column_builders_1[_0x5e8d72(0x28a,'TmYs')])(_0x4b6c10):(0x0,column_builders_1[_0x5e8d72(0x20d,'zE2f')])(_0x4b6c10,_0x250afb[_0x5e8d72(0x26a,'ckJN')])),Date['now']()),_0x4b6c10=(_0x445e2e[_0x5e8d72(0x25e,'LkEJ')]('handleComplexJoinMashup',_0x3e5238[_0x5e8d72(0x252,'aIc@')],{'service':_0x15c14f,'entity':_0x1c2894}),await _0x2c9b5b['run'](_0x572fef));if(_0x445e2e[_0x5e8d72(0x28f,'eCdF')](_0x5e8d72(0x26e,'ufXv'),_0x3e5238[_0x5e8d72(0x20a,'[2cE')],{'elapsedMs':_0x3e5238[_0x5e8d72(0x1ed,'I1Xz')](Date[_0x5e8d72(0x200,'@BNT')](),_0x57a2e2),'rows':Array[_0x5e8d72(0x288,'$y#k')](_0x4b6c10)?_0x4b6c10[_0x5e8d72(0x241,'Vd^G')]:_0x4b6c10?0x1:0x0}),!_0x4b6c10||Array['isArray'](_0x4b6c10)&&_0x3e5238['YqQzb'](0x0,_0x4b6c10[_0x5e8d72(0x1ef,'@BNT')]))return _0x445e2e[_0x5e8d72(0x202,'GtVl')](_0x3e5238[_0x5e8d72(0x247,'eOAI')],_0x3e5238[_0x5e8d72(0x1f2,'pOtG')],{'elapsedMs':_0x3e5238['heIqW'](Date[_0x5e8d72(0x242,'eCdF')](),_0x3e578d)}),_0x4b6c10;var _0x250afb=Array[_0x5e8d72(0x20b,'S]R4')](_0x4b6c10),_0x5a0047=_0x250afb?_0x4b6c10:[_0x4b6c10],_0x15c14f=_0x4b6c10[_0x5e8d72(0x257,'msL)')];for(let _0x1fe14e=0x1;_0x3e5238[_0x5e8d72(0x290,'3ONN')](_0x1fe14e,_0x5465aa[_0x5e8d72(0x20c,'Uc$q')]);_0x1fe14e++){var _0x23f8ee=_0x5465aa[_0x1fe14e],_0x4cc694=Date[_0x5e8d72(0x1fe,'$y#k')](),[_0x562463,_0x2ce19b]=(_0x445e2e[_0x5e8d72(0x21f,'@BNT')](_0x3e5238['CyRqL'],_0x3e5238[_0x5e8d72(0x246,'rz8Z')](_0x3e5238[_0x5e8d72(0x240,'$y#k')],_0x1fe14e),{'source':_0x23f8ee[_0x5e8d72(0x1f8,']6yg')],'alias':_0x23f8ee[_0x5e8d72(0x260,'qr(W')]}),(0x0,service_resolver_1[_0x5e8d72(0x217,'y)SH')])(_0x23f8ee[_0x5e8d72(0x28c,'C]Ze')])),_0xb271de=(0x0,service_resolver_1[_0x5e8d72(0x1f6,'rz8Z')])(_0x562463),_0x2ce19b=_0xb271de&&_0x562463!==_0x66b3e8?_0x23f8ee[_0x5e8d72(0x232,'AMFC')]:_0x2ce19b,_0xa58871=cds_1[_0x5e8d72(0x25c,'ufXv')][_0x5e8d72(0x233,']6yg')][_0x5e8d72(0x27e,'d)!h')][_0x23f8ee[_0x5e8d72(0x276,'tAI0')]],_0xb40670=(0x0,alias_maps_1[_0x5e8d72(0x22f,'pngB')])(_0xa58871,_0x587215);let {leftKey:_0x4c503c,rightKey:_0xa6c606}=(0x0,join_parser_1[_0x5e8d72(0x237,'d)L8')])(_0x23f8ee[_0x5e8d72(0x23c,'d)!h')],_0x5465aa[_0x3e5238[_0x5e8d72(0x20e,'qr(W')](_0x1fe14e,0x1)][_0x5e8d72(0x268,'GtVl')],_0x23f8ee[_0x5e8d72(0x24e,'hE]U')]);if(_0x3e5238[_0x5e8d72(0x22e,'LPpv')](_0x4c503c,_0xa6c606)){_0x445e2e[_0x5e8d72(0x214,'3ONN')](_0x3e5238[_0x5e8d72(0x247,'eOAI')],_0x3e5238[_0x5e8d72(0x201,'eCdF')],{'leftKey':_0x4c503c,'rightKey':_0xa6c606});var _0x563968=[...new Set(_0x5a0047['map'](_0x40ce27=>_0x40ce27[_0x4c503c])['filter'](_0x484ade=>null!=_0x484ade))];if(_0x563968['length']){_0x445e2e[_0x5e8d72(0x214,'3ONN')](_0x3e5238[_0x5e8d72(0x277,']6yg')],_0x3e5238[_0x5e8d72(0x224,']uR*')],{'unique':_0x563968['length'],'sample':_0x563968[_0x5e8d72(0x283,'6sIc')](0x0,0x3)});var _0xa81634,_0x562463=await(0x0,service_resolver_1[_0x5e8d72(0x296,'GtVl')])(_0x562463),_0x2ce19b=SELECT[_0x5e8d72(0x274,'ubX0')](_0x2ce19b)[_0x5e8d72(0x244,'pngB')]({[_0xa6c606]:{'in':_0x563968}}),_0x563968=(_0xb271de||(0x0,cqn_rewriter_1[_0x5e8d72(0x203,'TmYs')])(_0x2ce19b,_0xb40670[_0x5e8d72(0x270,'eOAI')],_0x587215,_0xa58871),await _0x562463[_0x5e8d72(0x25f,'Vd^G')](_0x2ce19b)),_0xb271de=Array[_0x5e8d72(0x1fb,'y)SH')](_0x563968)?_0x563968:[_0x563968],_0x3da988=new Map(_0xb271de[_0x5e8d72(0x25b,'hE]U')](_0xfc3dea=>[_0xfc3dea[_0xa6c606],_0xfc3dea])),_0x164122=(_0x445e2e[_0x5e8d72(0x1f7,'pngB')](_0x3e5238['CyRqL'],_0x5e8d72(0x22d,'eCdF')+_0x1fe14e+_0x5e8d72(0x204,'hE]U'),{'elapsedMs':Date[_0x5e8d72(0x275,'[2cE')]()-_0x4cc694,'joinedRows':_0xb271de[_0x5e8d72(0x1fd,'ufXv')],'uniqueKeys':_0x3da988[_0x5e8d72(0x278,'fGCN')]}),(0x0,join_parser_1[_0x5e8d72(0x249,'ckJN')])(_0x6bdd41[_0x5e8d72(0x228,'S^WR')],_0x23f8ee[_0x5e8d72(0x261,']j&y')]));let _0x371d74=0x0;for(_0xa81634 of _0x5a0047){var _0x372729=_0x3da988['get'](_0xa81634[_0x4c503c]);if(_0x372729){for(var _0x2c4f9f of _0x164122)_0xa81634[_0x2c4f9f['projectedAs']]=_0x372729[_0x2c4f9f[_0x5e8d72(0x25a,'msL)')]];_0x371d74++;}}_0x445e2e[_0x5e8d72(0x264,'y)SH')](_0x3e5238[_0x5e8d72(0x28b,'AMFC')],'JOIN\x20step\x20'+_0x1fe14e+_0x5e8d72(0x205,'AMFC'),{'projectedFields':_0x164122[_0x5e8d72(0x289,'d)!h')],'recordsMerged':_0x371d74});}else _0x445e2e[_0x5e8d72(0x285,'fGCN')](_0x3e5238[_0x5e8d72(0x281,'PCbt')],_0x5e8d72(0x206,'f9eK'),{'step':_0x1fe14e});}else _0x445e2e['warn'](_0x3e5238[_0x5e8d72(0x291,'d)L8')],_0x3e5238[_0x5e8d72(0x284,'d)L8')],{'step':_0x1fe14e,'onCondition':_0x23f8ee[_0x5e8d72(0x243,']uR*')]});}return 0x0<_0x5b2a67[_0x5e8d72(0x223,'fGCN')]?(_0x445e2e[_0x5e8d72(0x23e,'r3@!')](_0x3e5238[_0x5e8d72(0x22b,'v0O$')],'Resolving\x20$expand\x20tree\x20on\x20merged\x20records',{'expands':_0x5b2a67[_0x5e8d72(0x236,'6CAy')](_0x4536d8=>_0x4536d8['as']||_0x4536d8[_0x5e8d72(0x227,'ufXv')]),'rows':_0x5a0047['length']}),_0x1c2894=await(0x0,expand_materializer_1[_0x5e8d72(0x221,'zE2f')])(_0x19e417,_0x4e766b,_0x5a0047,_0x5b2a67,_0x587215,_0x445e2e),_0x3e5238[_0x5e8d72(0x208,'pngB')](void 0x0,_0x15c14f)&&(_0x1c2894['$count']=_0x15c14f),_0x445e2e[_0x5e8d72(0x1eb,'AMFC')](_0x5e8d72(0x1e9,'r3@!'),'EXIT',{'elapsedMs':_0x3e5238['heIqW'](Date['now'](),_0x3e578d),'rows':_0x1c2894[_0x5e8d72(0x286,'qr(W')]}),_0x250afb?_0x1c2894:_0x1c2894[0x0]):(_0x3e5238[_0x5e8d72(0x1ee,'r3@!')](void 0x0,_0x15c14f)&&(_0x5a0047[_0x5e8d72(0x28e,'6sIc')]=_0x15c14f),_0x445e2e[_0x5e8d72(0x1e6,'rz8Z')](_0x3e5238['CyRqL'],'EXIT',{'elapsedMs':_0x3e5238[_0x5e8d72(0x24b,'C]Ze')](Date[_0x5e8d72(0x1fc,'v0O$')](),_0x3e578d),'rows':_0x5a0047['length']}),_0x250afb?_0x5a0047:_0x5a0047[0x0]);};exports[_0x54d0c2(0x253,'pOtG')]=handleComplexJoinMashup;
+"use strict";
+/**
+ * @file join-mashup-pipeline.ts
+ * @description Handles a READ that maps to a CDS view whose FROM clause is
+ * a JOIN of two or more remote entities.
+ *
+ * Strategy: query the *primary* (left-most) entity first, then batched
+ * lookups keyed on the join keys for each subsequent joined table. Results
+ * from later tables are merged into the primary rows using the projected
+ * column mapping in the view.
+ *
+ * ## Logging
+ * The primary fetch and each secondary JOIN emit `INFO` boundary logs with
+ * timing. Foreign-key extraction and the join map size are logged at `DEBUG`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.handleComplexJoinMashup = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+const column_builders_1 = require("./column-builders");
+const cqn_utils_1 = require("./cqn-utils");
+const cqn_rewriter_1 = require("./cqn-rewriter");
+const expand_materializer_1 = require("./expand-materializer");
+const join_parser_1 = require("./join-parser");
+const service_resolver_1 = require("./service-resolver");
+const { SELECT } = cds_1.default.ql;
+const M = 'join-mashup-pipeline';
+/**
+ * Executes the complex-join-mashup pipeline for a JOIN-based view.
+ */
+const handleComplexJoinMashup = async (serviceName, req, next, entityDef, selectSpec, cache, parentLog) => {
+    const log = parentLog.forModule(M);
+    const t0 = Date.now();
+    if (!entityDef) {
+        log.warn('handleComplexJoinMashup', 'No entity definition; delegating to next()');
+        return next();
+    }
+    log.info('handleComplexJoinMashup', 'ENTER', { entity: entityDef.name });
+    const joinSequence = (0, join_parser_1.flattenJoinStructure)(selectSpec.from);
+    if (!joinSequence.length) {
+        log.warn('handleComplexJoinMashup', 'Empty join sequence; returning empty result');
+        return req.query.SELECT?.one ? {} : [];
+    }
+    log.debug('handleComplexJoinMashup', 'Join sequence', {
+        sources: joinSequence.map((j) => ({ path: j.entityPath, alias: j.alias })),
+    });
+    // ------------------------------------------------------------------
+    // Primary source
+    // ------------------------------------------------------------------
+    const primarySource = joinSequence[0];
+    const [primarySrvName, primaryEntity] = (0, service_resolver_1.splitServiceAndEntity)(primarySource.entityPath);
+    const primarySrv = await (0, service_resolver_1.getServiceByName)(primarySrvName);
+    const primaryUsesLocalSemantics = (0, service_resolver_1.usesLocalServiceSemantics)(primarySrvName);
+    const primaryQueryEntity = primaryUsesLocalSemantics && primarySrvName !== serviceName ? primarySource.entityPath : primaryEntity;
+    const primaryEntityDef = cds_1.default.model.definitions[primarySource.entityPath];
+    const primaryAliasMaps = (0, alias_maps_1.getAliasMaps)(primaryEntityDef, cache);
+    const primaryQuery = SELECT.from(primaryQueryEntity);
+    if (req.query.SELECT.count)
+        primaryQuery.SELECT.count = true;
+    if (req.query.SELECT.where) {
+        const cleanWhere = (0, cqn_utils_1.filterWhereForTable)(req.query.SELECT.where, primarySource.alias);
+        if (cleanWhere)
+            primaryQuery.where(cleanWhere);
+    }
+    if (req.query.SELECT.limit)
+        primaryQuery.limit(req.query.SELECT.limit.rows.val, req.query.SELECT.limit.offset);
+    if (req.query.SELECT.orderBy)
+        primaryQuery.orderBy(req.query.SELECT.orderBy);
+    if (!primaryUsesLocalSemantics) {
+        (0, cqn_rewriter_1.rewriteQueryCqn)(primaryQuery, primaryAliasMaps.localToRemote, cache, primaryEntityDef);
+    }
+    const expandTree = (0, join_parser_1.parseExpandTree)(selectSpec.columns || []);
+    if (expandTree.length === 0 && !selectSpec.columns?.length) {
+        primaryQuery.columns(primaryUsesLocalSemantics
+            ? (0, column_builders_1.buildDefaultLocalColumns)(primaryEntityDef)
+            : (0, column_builders_1.buildDefaultRemoteColumns)(primaryEntityDef, primaryAliasMaps.localToRemote));
+    }
+    const tPrimary = Date.now();
+    log.info('handleComplexJoinMashup', 'Executing primary read', {
+        service: primarySrvName,
+        entity: primaryEntity,
+    });
+    const primaryRecords = await primarySrv.run(primaryQuery);
+    log.info('handleComplexJoinMashup', 'Primary read done', {
+        elapsedMs: Date.now() - tPrimary,
+        rows: Array.isArray(primaryRecords) ? primaryRecords.length : (primaryRecords ? 1 : 0),
+    });
+    if (!primaryRecords || (Array.isArray(primaryRecords) && primaryRecords.length === 0)) {
+        log.info('handleComplexJoinMashup', 'EXIT (empty primary)', { elapsedMs: Date.now() - t0 });
+        return primaryRecords;
+    }
+    const isArray = Array.isArray(primaryRecords);
+    const records = isArray ? primaryRecords : [primaryRecords];
+    const remoteCount = primaryRecords.$count;
+    // ------------------------------------------------------------------
+    // Secondary joins
+    // ------------------------------------------------------------------
+    for (let i = 1; i < joinSequence.length; i++) {
+        const joinInfo = joinSequence[i];
+        const tJoin = Date.now();
+        log.info('handleComplexJoinMashup', `JOIN step ${i}`, {
+            source: joinInfo.entityPath,
+            alias: joinInfo.alias,
+        });
+        const [joinSrvName, joinEntity] = (0, service_resolver_1.splitServiceAndEntity)(joinInfo.entityPath);
+        const joinUsesLocalSemantics = (0, service_resolver_1.usesLocalServiceSemantics)(joinSrvName);
+        const joinQueryEntity = joinUsesLocalSemantics && joinSrvName !== serviceName ? joinInfo.entityPath : joinEntity;
+        const joinEntityDef = cds_1.default.model.definitions[joinInfo.entityPath];
+        const joinAliasMaps = (0, alias_maps_1.getAliasMaps)(joinEntityDef, cache);
+        const { leftKey, rightKey } = (0, join_parser_1.parseJoinKeys)(joinInfo.onCondition, joinSequence[i - 1].alias, joinInfo.alias);
+        if (!leftKey || !rightKey) {
+            log.warn('handleComplexJoinMashup', 'Could not parse join keys; skipping join', {
+                step: i,
+                onCondition: joinInfo.onCondition,
+            });
+            continue;
+        }
+        log.debug('handleComplexJoinMashup', 'Join keys parsed', { leftKey, rightKey });
+        const foreignKeys = [...new Set(records.map((r) => r[leftKey]).filter((v) => v != null))];
+        if (!foreignKeys.length) {
+            log.info('handleComplexJoinMashup', 'No foreign keys to join; skipping step', { step: i });
+            continue;
+        }
+        log.debug('handleComplexJoinMashup', 'Foreign keys collected', {
+            unique: foreignKeys.length,
+            sample: foreignKeys.slice(0, 3),
+        });
+        const joinSrv = await (0, service_resolver_1.getServiceByName)(joinSrvName);
+        const joinedQuery = SELECT.from(joinQueryEntity).where({ [rightKey]: { in: foreignKeys } });
+        if (!joinUsesLocalSemantics) {
+            (0, cqn_rewriter_1.rewriteQueryCqn)(joinedQuery, joinAliasMaps.localToRemote, cache, joinEntityDef);
+        }
+        const joinedRecords = await joinSrv.run(joinedQuery);
+        const joinedList = Array.isArray(joinedRecords) ? joinedRecords : [joinedRecords];
+        const joinedMap = new Map(joinedList.map((item) => [item[rightKey], item]));
+        log.info('handleComplexJoinMashup', `JOIN step ${i} fetched`, {
+            elapsedMs: Date.now() - tJoin,
+            joinedRows: joinedList.length,
+            uniqueKeys: joinedMap.size,
+        });
+        const projectionMappings = (0, join_parser_1.getProjectionMappings)(selectSpec.columns, joinInfo.alias);
+        let merged = 0;
+        for (const record of records) {
+            const matched = joinedMap.get(record[leftKey]);
+            if (!matched)
+                continue;
+            for (const mapping of projectionMappings)
+                record[mapping.projectedAs] = matched[mapping.sourceField];
+            merged++;
+        }
+        log.debug('handleComplexJoinMashup', `JOIN step ${i} merged`, {
+            projectedFields: projectionMappings.length,
+            recordsMerged: merged,
+        });
+    }
+    if (expandTree.length > 0) {
+        log.info('handleComplexJoinMashup', 'Resolving $expand tree on merged records', {
+            expands: expandTree.map((e) => e.as || e.name),
+            rows: records.length,
+        });
+        const mapped = await (0, expand_materializer_1.resolveExpandNodes)(req, entityDef, records, expandTree, cache, log);
+        if (remoteCount !== undefined)
+            mapped.$count = remoteCount;
+        log.info('handleComplexJoinMashup', 'EXIT', {
+            elapsedMs: Date.now() - t0,
+            rows: mapped.length,
+        });
+        return isArray ? mapped : mapped[0];
+    }
+    if (remoteCount !== undefined)
+        records.$count = remoteCount;
+    log.info('handleComplexJoinMashup', 'EXIT', {
+        elapsedMs: Date.now() - t0,
+        rows: records.length,
+    });
+    return isArray ? records : records[0];
+};
+exports.handleComplexJoinMashup = handleComplexJoinMashup;

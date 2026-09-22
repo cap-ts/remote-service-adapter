@@ -1,1 +1,92 @@
-var _0x1b1444=_0x2be4;(function(_0x58b09c,_0x589cb9){var _0x4e11f5=_0x2be4,_0xda2af7=_0x58b09c();while(!![]){try{var _0x235cb1=-parseInt(_0x4e11f5(0x180,'9ozB'))/0x1+parseInt(_0x4e11f5(0x186,'pcEJ'))/0x2+parseInt(_0x4e11f5(0x18a,'ooGk'))/0x3*(-parseInt(_0x4e11f5(0x18e,'bn@H'))/0x4)+-parseInt(_0x4e11f5(0x1a6,'yyht'))/0x5+parseInt(_0x4e11f5(0x194,'@QbW'))/0x6+parseInt(_0x4e11f5(0x191,'kiCr'))/0x7*(parseInt(_0x4e11f5(0x192,'iYfe'))/0x8)+parseInt(_0x4e11f5(0x181,'fL9A'))/0x9;if(_0x235cb1===_0x589cb9)break;else _0xda2af7['push'](_0xda2af7['shift']());}catch(_0x5d9bab){_0xda2af7['push'](_0xda2af7['shift']());}}}(_0x3387,0x48419),(Object[_0x1b1444(0x183,'zOAD')](exports,_0x1b1444(0x19b,'SBLa'),{'value':!0x0}),exports[_0x1b1444(0x1a0,'@bX4')]=exports[_0x1b1444(0x17e,'I0yc')]=exports[_0x1b1444(0x1ad,'nIg0')]=exports[_0x1b1444(0x19c,'gIIW')]=exports[_0x1b1444(0x17f,'9aN8')]=exports[_0x1b1444(0x19d,'H$52')]=void 0x0));function _0x2be4(_0x232283,_0x5c1779){_0x232283=_0x232283-0x17e;var _0x338751=_0x3387();var _0x2be465=_0x338751[_0x232283];if(_0x2be4['lwFcVq']===undefined){var _0x3586ff=function(_0x2b04a9){var _0x5ec225='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x87f3a6='',_0x106169='';for(var _0x13e8c4=0x0,_0x3ae661,_0x235bb3,_0x54af2c=0x0;_0x235bb3=_0x2b04a9['charAt'](_0x54af2c++);~_0x235bb3&&(_0x3ae661=_0x13e8c4%0x4?_0x3ae661*0x40+_0x235bb3:_0x235bb3,_0x13e8c4++%0x4)?_0x87f3a6+=String['fromCharCode'](0xff&_0x3ae661>>(-0x2*_0x13e8c4&0x6)):0x0){_0x235bb3=_0x5ec225['indexOf'](_0x235bb3);}for(var _0x245e5e=0x0,_0x8d1128=_0x87f3a6['length'];_0x245e5e<_0x8d1128;_0x245e5e++){_0x106169+='%'+('00'+_0x87f3a6['charCodeAt'](_0x245e5e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x106169);};var _0x485c37=function(_0x93ba01,_0x5d6a9f){var _0x5d67d4=[],_0xa71d6e=0x0,_0x3da2ee,_0x363ade='';_0x93ba01=_0x3586ff(_0x93ba01);var _0x19f08e;for(_0x19f08e=0x0;_0x19f08e<0x100;_0x19f08e++){_0x5d67d4[_0x19f08e]=_0x19f08e;}for(_0x19f08e=0x0;_0x19f08e<0x100;_0x19f08e++){_0xa71d6e=(_0xa71d6e+_0x5d67d4[_0x19f08e]+_0x5d6a9f['charCodeAt'](_0x19f08e%_0x5d6a9f['length']))%0x100,_0x3da2ee=_0x5d67d4[_0x19f08e],_0x5d67d4[_0x19f08e]=_0x5d67d4[_0xa71d6e],_0x5d67d4[_0xa71d6e]=_0x3da2ee;}_0x19f08e=0x0,_0xa71d6e=0x0;for(var _0x26ce77=0x0;_0x26ce77<_0x93ba01['length'];_0x26ce77++){_0x19f08e=(_0x19f08e+0x1)%0x100,_0xa71d6e=(_0xa71d6e+_0x5d67d4[_0x19f08e])%0x100,_0x3da2ee=_0x5d67d4[_0x19f08e],_0x5d67d4[_0x19f08e]=_0x5d67d4[_0xa71d6e],_0x5d67d4[_0xa71d6e]=_0x3da2ee,_0x363ade+=String['fromCharCode'](_0x93ba01['charCodeAt'](_0x26ce77)^_0x5d67d4[(_0x5d67d4[_0x19f08e]+_0x5d67d4[_0xa71d6e])%0x100]);}return _0x363ade;};_0x2be4['lzfOIZ']=_0x485c37,_0x2be4['oOZzDH']={},_0x2be4['lwFcVq']=!![];}var _0x19d5db=_0x338751[0x0];_0x2be4['FxsNhG']!==_0x19d5db&&(_0x2be4['oOZzDH']={},_0x2be4['FxsNhG']=_0x19d5db);var _0x2a7a0b=_0x2be4['oOZzDH'][_0x232283];return _0x2a7a0b===undefined?(_0x2be4['LHwxOf']===undefined&&(_0x2be4['LHwxOf']=!![]),_0x2be465=_0x2be4['lzfOIZ'](_0x2be465,_0x5c1779),_0x2be4['oOZzDH'][_0x232283]=_0x2be465):_0x2be465=_0x2a7a0b,_0x2be465;}let cds_1=require('@sap/cds'),resolveOwningServiceName=_0x48533b=>{var _0x3f97b4=_0x1b1444,_0x3cbd0b={'ovRzz':function(_0x461ae8,_0x287f26){return _0x461ae8===_0x287f26;},'cTcrn':function(_0x5dc303,_0x2246c5){return _0x5dc303+_0x2246c5;},'NRHJG':function(_0x5e12c7,_0x3ec87e){return _0x5e12c7>_0x3ec87e;}},_0x4437f8,_0x1ff768,_0x1761b7=cds_1[_0x3f97b4(0x1a2,'pcEJ')][_0x3f97b4(0x1a9,'kiCr')]?.[_0x3f97b4(0x1a5,'meif')]||{};let _0x14734f;for([_0x4437f8,_0x1ff768]of Object[_0x3f97b4(0x1a8,'I0yc')](_0x1761b7))_0x3cbd0b[_0x3f97b4(0x1a7,'ooGk')]('service',_0x1ff768?.['kind'])&&_0x48533b[_0x3f97b4(0x185,'xpJ9')](_0x3cbd0b[_0x3f97b4(0x18f,'hFk5')](_0x4437f8,'.'))&&(!_0x14734f||_0x3cbd0b[_0x3f97b4(0x18d,'dJL)')](_0x4437f8['length'],_0x14734f['length']))&&(_0x14734f=_0x4437f8);return _0x14734f;},splitServiceAndEntity=(exports[_0x1b1444(0x18c,'@QbW')]=resolveOwningServiceName,_0x3da7aa=>{var _0x3a0e1e=_0x1b1444,_0x448d95={'iykCm':function(_0xac555f,_0x496609){return _0xac555f+_0x496609;}},_0x277294=(0x0,exports[_0x3a0e1e(0x19a,'3PX%')])(_0x3da7aa);return _0x277294?[_0x277294,_0x3da7aa['slice'](_0x448d95['iykCm'](_0x277294[_0x3a0e1e(0x182,'dJL)')],0x1))]:['db',_0x3da7aa];}),resolveServiceNameFromTarget=(exports['splitServiceAndEntity']=splitServiceAndEntity,_0x1a45f2=>(0x0,exports[_0x1b1444(0x1ac,']cm@')])(_0x1a45f2)||'db'),getServedLocalService=(exports[_0x1b1444(0x1a3,'*gT1')]=resolveServiceNameFromTarget,_0x5b7b3c=>(cds_1[_0x1b1444(0x1aa,'bY6l')][_0x1b1444(0x1af,'zOAD')]?.['providers']||[])[_0x1b1444(0x18b,'9aN8')](_0x15a77c=>_0x15a77c?.[_0x1b1444(0x184,'I0yc')]===_0x5b7b3c)),usesLocalServiceSemantics=(exports[_0x1b1444(0x199,'yyht')]=getServedLocalService,_0x32a9b0=>!(!_0x32a9b0||'db'===_0x32a9b0||!(0x0,exports[_0x1b1444(0x19e,'gIIW')])(_0x32a9b0))),getServiceByName=(exports[_0x1b1444(0x1a4,'Jx27')]=usesLocalServiceSemantics,async _0x246358=>{var _0x1ca500=_0x1b1444,_0x4aced0=(0x0,exports[_0x1ca500(0x190,'6IiW')])(_0x246358);return _0x4aced0||('db'===_0x246358&&cds_1[_0x1ca500(0x1ae,'ETO8')]['db']?cds_1['default']['db']:cds_1[_0x1ca500(0x196,'6Dln')][_0x1ca500(0x1ab,']YF5')]['to'](_0x246358));});exports[_0x1b1444(0x188,'ETO8')]=getServiceByName;function _0x3387(){var _0x45cca4=['j8k/WOz6W7RdJxvSW71etCkGrSo9j2O','bd9+WR/cIcaTjH8VW5PvDa','W4yDB8osWQxcUCoR','tcZcUNSNDSo8WPj8EH4UWQ3dVCoGW5BcSCoRWOHEWPBdP8kRs1uNzw4','q3KJW7NdVhX+dZu/W7fjACoBE8kDWPrsoCoXt0NdOJtcIq','WOW3dSoOlCoith7cOWldRa','fgdcL8otWOu5W4TWtSkCWONdJCkY','W47dL8owW6qV','WRBcL8omW5akWRNdUW','W68DW74OWOK','o8oeF8kTWRRdQLK','W7TCW7CKiLNcKq','l8oBcrNdNmo6hMpdLCkkyhRdQrP5W4NcPWf1o0VcKcaN','qW4OjLe0kCk+l2C1E8kJj8kjAgTgCCooW5m','jmkABu5oFKO','dmkpWPddISokuCoU','WQBcISoDW5eVWRpdQ8kpu2TmpL5hW6ldGaxdSK/cQSk7bcG2zW','WQxdISoJWOn8W4WWWO7cH8ogyb8gc0JdLSkuWRxcGr/cVq','W7hcVmo7WQuAp8owWOFdIufwpW','a2SgWOPbxSoaj3FdOSkLpge','WPSPAYpdVh4','g8kpWOtdLConv8oBWOXWW7/dOmocuMi','WR3cMmovW4C','WPpcPJpcIZpcNZbmvwm','WPnipmkdW6tdPSkPW7e9v8k0CmkQ','uCoCWRv+wmoQuSkFpCkYW5ldU8oh','j8kAF3XEyeJdUYvibSo8i8kklCkR','bt10WR/cGIaKabOUW6zcta','WPlcKSk9W60hW4apWQNcQG','WRddK8oHWO4','oSokcmoBs1RdKZNdRConW7OLWQdcUmkRhCkWW5tdRmoXW5XUWQ/dJG','WRKEtq7dJW','tL9ZW6bSWPBdRCkOoSoL','hSkBFmoRqa','FvZcLIeeWOTMWP4jWO7cUdj4W7/dSwdcJqFdVCojBG','WRffWQH4W5Chfmoormk+a8o+W68','W4hdRCkgzYHRBq','CCkCs8kmtxRdGIhdOSog','ESkFtmkafHVcGbJdV8o3W6etWRe','t8o/kmkTh2tcICoklmk1eZ16','W7/cJCoAWOVdM8o+rq','sCkHWRe6pwnu','BSoCy8osqmkVWQ55WOD0nri','qtddM8k1W5H4WO1DBmktWQJdGmk4W4BcKK8UWRmnW6/cRW','tbhcTgi+W7rHW5iJWPOEWP/dISkbpmotW4xdGhRcJgH4a0O','af/cKIrGWPFcOqbVma','kCkjkCkogSoHWOrKWO5ioqebW4aOWP7dUfD6WONcTmkdEN/cMqzDW6e','D0aAW4XYhmoQmmkzh8kxWQdcQqeJW5CkisxcR8kgW7a+W5a','pmkjlSkYe8oLWPDsWO92iaSdW4K1WPRdP0rvWPJcVG','qmosW4PkAdSvoComDmk2dCk2'];_0x3387=function(){return _0x45cca4;};return _0x3387();}
+"use strict";
+/**
+ * @file service-resolver.ts
+ * @description Resolves CDS service names / instances from fully qualified
+ * entity paths. Uses `cds.model.definitions` to find the longest-prefix
+ * service that owns a given path, and prefers locally-served providers over
+ * remote services.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getServiceByName = exports.usesLocalServiceSemantics = exports.getServedLocalService = exports.resolveServiceNameFromTarget = exports.splitServiceAndEntity = exports.resolveOwningServiceName = void 0;
+const cds_1 = require("@sap/cds");
+/**
+ * Finds the longest-prefix service in `cds.model.definitions` that owns the
+ * given path. Longest-prefix wins so nested service naming works correctly
+ * (e.g. `A.B` beats `A` for `A.B.Entity`).
+ *
+ * @param path  Fully qualified entity path.
+ * @returns     Owning service name, or `undefined` when none applies.
+ */
+const resolveOwningServiceName = (path) => {
+    const definitions = cds_1.default.model?.definitions || {};
+    let owningService;
+    for (const [name, def] of Object.entries(definitions)) {
+        if (def?.kind !== 'service')
+            continue;
+        if (!path.startsWith(`${name}.`))
+            continue;
+        if (!owningService || name.length > owningService.length)
+            owningService = name;
+    }
+    return owningService;
+};
+exports.resolveOwningServiceName = resolveOwningServiceName;
+/**
+ * Splits a fully qualified entity path into `[serviceName, entityName]`.
+ * Falls back to `['db', path]` when no service owns the path.
+ *
+ * @param path  Fully qualified path like `MyService.MyEntity`.
+ */
+const splitServiceAndEntity = (path) => {
+    const serviceName = (0, exports.resolveOwningServiceName)(path);
+    return serviceName ? [serviceName, path.slice(serviceName.length + 1)] : ['db', path];
+};
+exports.splitServiceAndEntity = splitServiceAndEntity;
+/**
+ * Returns the service that owns the given entity path, or `'db'` when
+ * no service owns it.
+ *
+ * @param target  Fully qualified entity or type name.
+ */
+const resolveServiceNameFromTarget = (target) => (0, exports.resolveOwningServiceName)(target) || 'db';
+exports.resolveServiceNameFromTarget = resolveServiceNameFromTarget;
+/**
+ * Returns the locally-served service instance with the given name, or
+ * `undefined` when the service is provided by a remote backend.
+ *
+ * @param serviceName  Service name.
+ */
+const getServedLocalService = (serviceName) => {
+    const providers = (cds_1.default.service?.providers || []);
+    return providers.find((provider) => provider?.name === serviceName);
+};
+exports.getServedLocalService = getServedLocalService;
+/**
+ * Returns `true` when the named service is served locally by this process,
+ * meaning queries against it should target local (CAP) projections rather
+ * than remote physical entity names.
+ *
+ * @param serviceName  Service name.
+ */
+const usesLocalServiceSemantics = (serviceName) => {
+    if (!serviceName || serviceName === 'db')
+        return false;
+    return !!(0, exports.getServedLocalService)(serviceName);
+};
+exports.usesLocalServiceSemantics = usesLocalServiceSemantics;
+/**
+ * Returns a connected service instance for the given name. Prefers
+ * locally-served providers, then `cds.db`, then remote services via
+ * `cds.connect.to`.
+ *
+ * @param serviceName  Service name.
+ */
+const getServiceByName = async (serviceName) => {
+    const localService = (0, exports.getServedLocalService)(serviceName);
+    if (localService)
+        return localService;
+    if (serviceName === 'db' && cds_1.default.db)
+        return cds_1.default.db;
+    return await cds_1.default.connect.to(serviceName);
+};
+exports.getServiceByName = getServiceByName;

@@ -1,1 +1,185 @@
-var _0x36b2b2=_0x592c;(function(_0x3f0b71,_0x28b529){var _0x718fb1=_0x592c,_0x25ba27=_0x3f0b71();while(!![]){try{var _0x193cd3=-parseInt(_0x718fb1(0x148,'D8cI'))/0x1+parseInt(_0x718fb1(0x165,'6I5m'))/0x2+parseInt(_0x718fb1(0x12a,'ABXp'))/0x3+parseInt(_0x718fb1(0x103,'eNgH'))/0x4+parseInt(_0x718fb1(0x170,'D8cI'))/0x5*(parseInt(_0x718fb1(0x15a,'JTde'))/0x6)+-parseInt(_0x718fb1(0x162,'Lp34'))/0x7*(-parseInt(_0x718fb1(0x115,'bJuX'))/0x8)+-parseInt(_0x718fb1(0x129,'CBYC'))/0x9;if(_0x193cd3===_0x28b529)break;else _0x25ba27['push'](_0x25ba27['shift']());}catch(_0x2ce680){_0x25ba27['push'](_0x25ba27['shift']());}}}(_0x938a,0x8dc46),(Object['defineProperty'](exports,_0x36b2b2(0x12c,'JTde'),{'value':!0x0}),exports[_0x36b2b2(0x136,'D8cI')]=exports[_0x36b2b2(0x14b,'TDyt')]=void 0x0));let cds_1=require(_0x36b2b2(0x143,'y[F!')),alias_maps_1=require(_0x36b2b2(0x13a,'DTI)')),parseOnCondition=(_0x3783ae,_0x1b5a4e)=>{var _0x2a8e9d=_0x36b2b2,_0x4831d5={'CgkoI':_0x2a8e9d(0x113,'OqR8'),'llaCB':function(_0x38e0a4,_0x49aa6c){return _0x38e0a4===_0x49aa6c;},'lmYLW':function(_0x48325a,_0x479f9d){return _0x48325a<_0x479f9d;},'RTuHi':function(_0x5f5263,_0x4c5b51){return _0x5f5263===_0x4c5b51;},'wyJYf':function(_0x4e8aae,_0x4b4a43){return _0x4e8aae-_0x4b4a43;},'GJeEA':function(_0x1d1af5,_0x5d0389){return _0x1d1af5+_0x5d0389;},'YdKLW':function(_0xd94a1b,_0x382b5a){return _0xd94a1b!==_0x382b5a;},'yzVsJ':function(_0x166d7f,_0x3fe56f){return _0x166d7f!==_0x3fe56f;},'iJNbj':function(_0x215da4,_0x43678d){return _0x215da4!==_0x43678d;},'bCkgv':function(_0x53b87c,_0x3d85ea){return _0x53b87c(_0x3d85ea);},'eiKuh':function(_0x2017fc,_0x92cb10,_0x17b7af){return _0x2017fc(_0x92cb10,_0x17b7af);},'CuShR':function(_0x2c6497,_0x3d72ba,_0x4d1835){return _0x2c6497(_0x3d72ba,_0x4d1835);},'yKEEd':function(_0x4a07bb,_0x519dd5){return _0x4a07bb&&_0x519dd5;},'owecx':function(_0x584556,_0x113888){return _0x584556(_0x113888);},'PxaAl':function(_0x344de3,_0x13a9af){return _0x344de3(_0x13a9af);},'NGaBZ':function(_0x3876dc,_0x48d480){return _0x3876dc&&_0x48d480;},'ulDRy':_0x2a8e9d(0x118,'y[F!'),'maiOT':function(_0x49eaa8,_0x71670b){return _0x49eaa8===_0x71670b;},'wXzuF':function(_0x27c3d6,_0x2ae419){return _0x27c3d6===_0x2ae419;},'EbEls':_0x2a8e9d(0x104,'N^nY'),'bnhdI':function(_0x94a026,_0x33ed19){return _0x94a026(_0x33ed19);},'sXISo':function(_0x5b6090,_0x3b3971){return _0x5b6090(_0x3b3971);}};let _0x18cb2e=new Set(),_0x364b44=new Set(),_0x448cf8=[],_0x268c30=_0x14e3ef=>null==_0x14e3ef?{'isLiteral':!0x1}:_0x2a8e9d(0x135,'h1BI')!=typeof _0x14e3ef?{'isLiteral':!0x0,'value':_0x14e3ef}:void 0x0!==_0x14e3ef[_0x2a8e9d(0x142,'jOQu')]?{'isLiteral':!0x0,'value':_0x14e3ef['val']}:{'isLiteral':!0x1},_0x513f2a=(_0x556b88,_0x14f7ee)=>{var _0x222c09=_0x2a8e9d;(_0x4831d5[_0x222c09(0x112,'nsbZ')]===_0x556b88[0x0]&&_0x556b88[0x1]||0x1!==_0x556b88[_0x222c09(0x179,'N^nY')]&&_0x4831d5[_0x222c09(0x16d,'bJuX')](_0x556b88[0x0],_0x1b5a4e)&&_0x556b88[0x1])&&_0x448cf8[_0x222c09(0x11e,'O0bh')]({[_0x556b88[0x1]]:_0x14f7ee});},_0x1f7ba0=_0x1dd172=>_0x2a8e9d(0x137,'$Dmc')===_0x1dd172[0x0]&&_0x1dd172[0x1]?{'type':_0x2a8e9d(0x175,'eeuB'),'key':_0x1dd172[0x1]}:0x1===_0x1dd172['length']?{'type':_0x2a8e9d(0x117,'OqR8'),'key':_0x1dd172[0x0]}:_0x1dd172[0x0]===_0x1b5a4e&&_0x1dd172[0x1]?{'type':_0x2a8e9d(0x16f,'6I5m'),'key':_0x1dd172[0x1]}:null,_0x4f4fb0=_0x4f0b2c=>{var _0x2493dc=_0x2a8e9d;if(_0x4f0b2c){var _0x8dffc0=_0x4f0b2c['xpr']||(Array[_0x2493dc(0x150,'GPiS')](_0x4f0b2c)?_0x4f0b2c:null);if(_0x8dffc0){for(let _0xce03d7=0x0;_0x4831d5[_0x2493dc(0x164,'O0bh')](_0xce03d7,_0x8dffc0[_0x2493dc(0x10c,'Kxjx')]);_0xce03d7++){var _0x192de4=_0x8dffc0[_0xce03d7];if(_0x4831d5[_0x2493dc(0x159,'GwQV')]('=',_0x192de4)||'=='===_0x192de4||_0x4831d5[_0x2493dc(0x15d,'GwQV')]('=',_0x192de4?.['op'])||_0x4831d5[_0x2493dc(0x12b,'GPiS')]('==',_0x192de4?.['op'])){var _0x192de4=_0x8dffc0[_0x4831d5[_0x2493dc(0x123,'n@0J')](_0xce03d7,0x1)],_0x4bfe96=_0x8dffc0[_0x4831d5[_0x2493dc(0x124,'$Dmc')](_0xce03d7,0x1)];if(_0x192de4&&_0x4831d5[_0x2493dc(0x132,'1m5j')](void 0x0,_0x4bfe96)){var _0x45d912=_0x4831d5[_0x2493dc(0x14c,'W*aU')](void 0x0,_0x192de4[_0x2493dc(0x121,'eeuB')]),_0x150b16=_0x4831d5['iJNbj'](void 0x0,_0x4bfe96?.[_0x2493dc(0x172,'n@0J')]),_0x40009e=_0x4831d5[_0x2493dc(0x158,'h1BI')](_0x268c30,_0x192de4),_0x4bf334=_0x268c30(_0x4bfe96);if(_0x45d912&&_0x4bf334[_0x2493dc(0x144,'zQQt')])_0x4831d5[_0x2493dc(0x154,'zQQt')](_0x513f2a,_0x192de4[_0x2493dc(0x156,'M6#c')],_0x4bf334[_0x2493dc(0x12f,'Lp34')]);else{if(_0x40009e[_0x2493dc(0x177,'#0y#')]&&_0x150b16)_0x4831d5[_0x2493dc(0x153,'D8cI')](_0x513f2a,_0x4bfe96[_0x2493dc(0x166,'DTI)')],_0x40009e[_0x2493dc(0x163,']Hpp')]);else{if(_0x4831d5[_0x2493dc(0x111,'M6#c')](_0x45d912,_0x150b16)){_0x4bf334=_0x4831d5[_0x2493dc(0x105,'hL^q')](_0x1f7ba0,_0x192de4[_0x2493dc(0x149,'2C17')]),_0x40009e=_0x4831d5[_0x2493dc(0x14e,'zQQt')](_0x1f7ba0,_0x4bfe96[_0x2493dc(0x156,'M6#c')]);if(_0x4831d5[_0x2493dc(0x108,'h1BI')](_0x4bf334,_0x40009e))(_0x4831d5[_0x2493dc(0x116,'UIiW')]===_0x4bf334[_0x2493dc(0x140,'hL^q')]?_0x18cb2e:_0x364b44)[_0x2493dc(0x10f,'2L5w')](_0x4bf334[_0x2493dc(0x11b,'ABXp')]),(_0x4831d5[_0x2493dc(0x126,'rrG%')](_0x4831d5[_0x2493dc(0x176,'nsbZ')],_0x40009e[_0x2493dc(0x139,'zQQt')])?_0x18cb2e:_0x364b44)['add'](_0x40009e[_0x2493dc(0x147,'JTde')]);else{for(var _0x11d94b of[_0x192de4[_0x2493dc(0x16c,'eNgH')],_0x4bfe96['ref']])_0x4831d5[_0x2493dc(0x146,'lAEQ')](_0x4831d5[_0x2493dc(0x178,'Tml]')],_0x11d94b[0x0])&&_0x11d94b[0x1]?_0x18cb2e[_0x2493dc(0x13c,'Kxjx')](_0x11d94b[0x1]):_0x4831d5[_0x2493dc(0x138,'Kxjx')](0x1,_0x11d94b[_0x2493dc(0x11f,'zQQt')])?_0x18cb2e['add'](_0x11d94b[0x0]):_0x4831d5[_0x2493dc(0x10e,'kl^u')](_0x11d94b[0x0],_0x1b5a4e)&&_0x11d94b[0x1]&&_0x364b44[_0x2493dc(0x125,'GwQV')](_0x11d94b[0x1]);}}}}}}}for(var _0xbf471f of _0x8dffc0)_0x2493dc(0x151,'jOQu')==typeof _0xbf471f&&_0x4831d5[_0x2493dc(0x10b,'44bF')](_0x4f4fb0,_0xbf471f);}else{if(_0x4831d5[_0x2493dc(0x13f,'y[F!')]==typeof _0x4f0b2c){for(var _0x4c3d5b of Object['values'](_0x4f0b2c))_0x4831d5[_0x2493dc(0x134,'2C17')](_0x4f4fb0,_0x4c3d5b);}}}};return _0x4831d5[_0x2a8e9d(0x17a,'#rp3')](_0x4f4fb0,_0x3783ae),{'localKeys':[..._0x18cb2e],'targetKeys':[..._0x364b44],'constantFilters':_0x448cf8};},resolveAssociationMeta=(exports['parseOnCondition']=parseOnCondition,(_0x411ba9,_0x452006,_0x3b05a7,_0x1f2a5e,_0x49f7c5)=>{var _0x15c6fb=_0x36b2b2,_0x12971d={'JhfUG':function(_0x59affa,_0x1b76b8){return _0x59affa!==_0x1b76b8;},'NPJIo':function(_0x30084c,_0x136db3){return _0x30084c<_0x136db3;},'fdJVG':function(_0x11f3d5,_0x3d5467){return _0x11f3d5-_0x3d5467;},'UPyKP':function(_0x50e9d5,_0x46860c){return _0x50e9d5<_0x46860c;},'tQoAm':function(_0x57f516,_0x2ba097){return _0x57f516<_0x2ba097;},'wcIeT':function(_0x43d3b4,_0x16c245){return _0x43d3b4<_0x16c245;}};if(!_0x1f2a5e)return null;var _0x47322=_0x49f7c5[_0x15c6fb(0x12d,'CBYC')][_0x15c6fb(0x155,'bJuX')](_0x1f2a5e);if(_0x12971d[_0x15c6fb(0x168,'kl^u')](void 0x0,_0x47322))return _0x47322;var _0x5d07d3,_0x4ae822,_0x47322=_0x1f2a5e[_0x15c6fb(0x11a,'nsbZ')]||{},_0x57b90e='*'===_0x47322[_0x15c6fb(0x131,'ZAm(')]||_0x12971d[_0x15c6fb(0x14f,'h1BI')](0x1,_0x47322[_0x15c6fb(0x152,'Tml]')]);let _0x42a847=_0x411ba9,{localKeys:_0x1e2928,targetKeys:_0x1ee6d3,constantFilters:_0x19466c}=(_0x1f2a5e[_0x15c6fb(0x10a,'2C17')]?_0x42a847=_0x1f2a5e[_0x15c6fb(0x11d,'TtzH')]:_0x1f2a5e['value']?.[_0x15c6fb(0x173,'Lp34')]?.[_0x15c6fb(0x11f,'zQQt')]?_0x42a847=_0x1f2a5e[_0x15c6fb(0x110,'TDyt')]['ref'][_0x12971d[_0x15c6fb(0x106,'#0y#')](_0x1f2a5e[_0x15c6fb(0x15e,'lAEQ')][_0x15c6fb(0x107,'rNpk')][_0x15c6fb(0x114,'CBYC')],0x1)]:_0x1f2a5e[_0x15c6fb(0x109,'DTI)')]&&(_0x42a847=_0x1f2a5e[_0x15c6fb(0x171,'#rp3')]['split']('/')[_0x15c6fb(0x15c,'eeuB')]()),_0x42a847&&_0x12971d[_0x15c6fb(0x133,'rrG%')](_0x42a847,_0x411ba9)||(_0x5d07d3=(0x0,alias_maps_1['getAliasMaps'])(_0x452006,_0x49f7c5)['localToRemote'][_0x411ba9])&&(_0x42a847=_0x5d07d3),(0x0,exports[_0x15c6fb(0x13b,'DTI)')])(_0x1f2a5e['on'],_0x411ba9)),_0x23badf=!0x1;if(!_0x1f2a5e['on']||0x0===_0x1e2928[_0x15c6fb(0x14a,'TtzH')]&&0x0===_0x1ee6d3['length']){_0x23badf=!0x0;let _0x290241=cds_1['default'][_0x15c6fb(0x167,'M6#c')]['definitions'][_0x3b05a7];_0x1ee6d3=_0x290241?(_0x5d07d3=Object[_0x15c6fb(0x128,'M6#c')](_0x290241[_0x15c6fb(0x160,'2e%U')]||{})[_0x15c6fb(0x15f,'GPiS')](_0x18583d=>_0x290241['elements'][_0x18583d][_0x15c6fb(0x16b,'eNgH')]),_0x4ae822=Object[_0x15c6fb(0x122,'1m5j')](_0x452006?.['elements']||{})['filter'](_0x3379a9=>_0x452006['elements'][_0x3379a9][_0x15c6fb(0x14d,'L9p2')]),_0x12971d[_0x15c6fb(0x141,'2C17')](0x0,(_0x48ca1d=_0x5d07d3[_0x15c6fb(0x11c,'UIiW')](_0x580db2=>{var _0x330112=_0x15c6fb;return _0x580db2=_0x452006[_0x330112(0x10d,'1m5j')]?.[_0x580db2],void 0x0!==_0x580db2&&!(0x0,alias_maps_1['isAssociationElement'])(_0x580db2);}))[_0x15c6fb(0x119,'bJuX')])?(_0x1e2928=[..._0x48ca1d],[..._0x48ca1d]):(_0x1e2928=_0x12971d[_0x15c6fb(0x120,'GwQV')](0x0,_0x4ae822[_0x15c6fb(0x16a,'OwN3')])?_0x4ae822:['ID'],_0x12971d[_0x15c6fb(0x174,'CBYC')](0x0,_0x5d07d3[_0x15c6fb(0x169,'Tml]')])?_0x5d07d3:['ID'])):(_0x1e2928=['ID'],['ID']);}var _0x48ca1d={'name':_0x411ba9,'originalName':_0x42a847,'target':_0x3b05a7,'isToMany':_0x57b90e,'localKeys':_0x1e2928,'targetKeys':_0x1ee6d3,'constantFilters':_0x19466c,'cardinality':_0x47322,'element':_0x1f2a5e,'isManaged':_0x23badf};return _0x49f7c5['assocMeta'][_0x15c6fb(0x12e,'M6#c')](_0x1f2a5e,_0x48ca1d),_0x48ca1d;});function _0x938a(){var _0x2c4447=['WQCVvG','WOFcLqf1WRO','W53cMmkwfmkR','W6VcVG9yW6i','W7qxWPzbW7/dOa','W7KUWOJdU8oUjq/cP3/dLmoXW5X1z8oMWP7dQrRcR8oQjwa','cCkDsSoWCa','W5tdRWrMWQ8','WOiXACoN','W7VdSmkAkIldKCkPnCktFe5T','WQxcVSkjns7dV8k0w8krC1P3qhldUs0','W5JdQGK','wCkax8ksox4AhvldSd44','WQ7cG8oQiCk5suGsWOjUWPXkdG','b8k3W6q1pG','ECkSW5mY','W5ZcGb53W7S','ACoBWPW','aSkMW4aPyHxdRCo6','WP87vCoRW5beFfOg','W6LzW4BcRCkPhcdcJuRdLWyizmkhd8oeW7GnfvBdRsK','W5L6WPf/WOO','urjN','WR1/W4ZcPSkXycdcIupdNCo4W5C','W7VcTqe','uc1ngb0W','a8ozuCkXWOWXBNJdLZfMWQOLASkVwa','h1NcSe8h','m8oZWQO','WQyWEmodW4G','W5uLWRzTW7m','W6ldHKhdGwmcza','CmoyWPRcVSkJkW','W6LgWOW','W4G+WQJdVmoq','WPmHuSo3W4W','WQpcIZy','hSoudG','WRP9WORdUmosjqpcSW','W7K2WPDdW6O','WRldRL8IWRW','cumUjmkUW6b8BCowDCotW7BdIq','xmk6cJXCtrJdI8kwlSk2gW','W7BdL0K','WOZdLKSPWPC','W4n3WPXjWQ0','W63dNgZdH3qr','BZtdPmk6CtlcLmkL','WRtcIWddH8oEW5tcTCoYWROrW6RdHMZcVG','W7vAWPZcT8kCW680W7ucrSkNW7G','WPWvW7RdJmkN','W7DYWOf8oG','W5BcOSkkW7hcImksA8kgWQhcGSkjra','WQFcUSkD','aCoEdmohza','W7ZcKfWAsq','W6HcWPOul8ow','kK/dPmkLEmo/','dSoSrW','f8oSwa','WQJcGIpdI8k5','W4j+k8kZWPitnKG9dKZcSeu','WPVdSmomWQ7dNSoE','WRP7WRBdU8oWcIxcHW','CmoxWP5K','CWpcOa','WRioW40','D8ovoh1U','W6RdL1RcLCka','W54sWP/cPZm','WR3cSSkyzaX5WQy+CG','W4DaWP8CeG','vv/dNmk1WQDB','yCoUWQrsW7K','uCk/ddvzr2ldI8kGcmkNjmoL','vLJdMmk3WRbh','ySkIW4y0CW','WRlcPCkEwZ8','dCoOrG','W5uYWP1MW4y','WRFcVSkiiW','W6BcOG5BW4lcULtdNG','DmkYWOpcUmoG','W5xdQWnoWO/dTa','WRVcNs9uWOGlW5f+','W4hcOea6sa','hJTh','bCozt8k3WOW','fCo6lCoNBa','W6GzWRdcMGm','W4/dG8odvCk9','Bmoth39oWOa','W7xdMdpdPmkRwCo+W5y','jrOhbqi','WOFdN8ofwmk3','lSk6W4i4iq','WQJcIYZdR8kprW','W4GFWQNcKspdImo4C8k/h0e','W7BdKSkJ','nH8ViX45','uZPkgaa2w8oi','W6TQWQTy','WPOTD8oLW5bj','WQRdK1eGWPm','W7tdNv8','WRxcLdnk','DH/cJaHF','ASkKsSozvW','WR/dPLO','W7RcKCkzdSk4','W6/dGqDwWP88W6PS','b8oueCor','mSkfscSiW5JcNSokpmoiWQreaSkz','WQ/cJSoUkCk0se8NWR5tWOztiW','W5NdOxxdU3G','zsH7z8oBWRKOD8ovxa','yCofaNDzWQxdI8kgbW','h8ouha','WRykW4FdSSoi','lCkdW4tdO8o1AmoYeI/cIdfcW4S'];_0x938a=function(){return _0x2c4447;};return _0x938a();}function _0x592c(_0x4486db,_0x38507d){_0x4486db=_0x4486db-0x103;var _0x938a8f=_0x938a();var _0x592cef=_0x938a8f[_0x4486db];if(_0x592c['JKwGSs']===undefined){var _0x14dd6e=function(_0x57e1f6){var _0x558390='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x420fce='',_0x3095a7='';for(var _0x476911=0x0,_0x10238e,_0x49b82d,_0x3303b6=0x0;_0x49b82d=_0x57e1f6['charAt'](_0x3303b6++);~_0x49b82d&&(_0x10238e=_0x476911%0x4?_0x10238e*0x40+_0x49b82d:_0x49b82d,_0x476911++%0x4)?_0x420fce+=String['fromCharCode'](0xff&_0x10238e>>(-0x2*_0x476911&0x6)):0x0){_0x49b82d=_0x558390['indexOf'](_0x49b82d);}for(var _0x1afe13=0x0,_0x17b8d9=_0x420fce['length'];_0x1afe13<_0x17b8d9;_0x1afe13++){_0x3095a7+='%'+('00'+_0x420fce['charCodeAt'](_0x1afe13)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3095a7);};var _0x27f115=function(_0x5d7044,_0x5d7c88){var _0xade7a3=[],_0x5edf07=0x0,_0x3b5f0a,_0xd27f4c='';_0x5d7044=_0x14dd6e(_0x5d7044);var _0x33d71f;for(_0x33d71f=0x0;_0x33d71f<0x100;_0x33d71f++){_0xade7a3[_0x33d71f]=_0x33d71f;}for(_0x33d71f=0x0;_0x33d71f<0x100;_0x33d71f++){_0x5edf07=(_0x5edf07+_0xade7a3[_0x33d71f]+_0x5d7c88['charCodeAt'](_0x33d71f%_0x5d7c88['length']))%0x100,_0x3b5f0a=_0xade7a3[_0x33d71f],_0xade7a3[_0x33d71f]=_0xade7a3[_0x5edf07],_0xade7a3[_0x5edf07]=_0x3b5f0a;}_0x33d71f=0x0,_0x5edf07=0x0;for(var _0xc47e19=0x0;_0xc47e19<_0x5d7044['length'];_0xc47e19++){_0x33d71f=(_0x33d71f+0x1)%0x100,_0x5edf07=(_0x5edf07+_0xade7a3[_0x33d71f])%0x100,_0x3b5f0a=_0xade7a3[_0x33d71f],_0xade7a3[_0x33d71f]=_0xade7a3[_0x5edf07],_0xade7a3[_0x5edf07]=_0x3b5f0a,_0xd27f4c+=String['fromCharCode'](_0x5d7044['charCodeAt'](_0xc47e19)^_0xade7a3[(_0xade7a3[_0x33d71f]+_0xade7a3[_0x5edf07])%0x100]);}return _0xd27f4c;};_0x592c['ibTqOJ']=_0x27f115,_0x592c['iRHUYG']={},_0x592c['JKwGSs']=!![];}var _0x55765a=_0x938a8f[0x0];_0x592c['QRMuwZ']!==_0x55765a&&(_0x592c['iRHUYG']={},_0x592c['QRMuwZ']=_0x55765a);var _0x2a8eff=_0x592c['iRHUYG'][_0x4486db];return _0x2a8eff===undefined?(_0x592c['pLfMTU']===undefined&&(_0x592c['pLfMTU']=!![]),_0x592cef=_0x592c['ibTqOJ'](_0x592cef,_0x38507d),_0x592c['iRHUYG'][_0x4486db]=_0x592cef):_0x592cef=_0x2a8eff,_0x592cef;}exports[_0x36b2b2(0x145,'w^[#')]=resolveAssociationMeta;
+"use strict";
+/**
+ * @file association-meta.ts
+ * @description Resolves and caches association metadata (join keys, cardinality,
+ * constant filters) for CDS associations.
+ *
+ * The heavy lifting is in {@link parseOnCondition}, which turns an unmanaged
+ * association's `ON` expression into the three parts that the expand
+ * materialiser needs.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.resolveAssociationMeta = exports.parseOnCondition = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+/**
+ * Parses an unmanaged association's `ON` condition into three parts:
+ * - **localKeys**       — fields on the parent (`$self.<field>` or bare `<field>`).
+ * - **targetKeys**      — fields on the target (`<side>.<field>`).
+ * - **constantFilters** — predicates comparing an association field to a
+ *                         literal value (`ON x.status = 'A'`), applied
+ *                         as-is when fetching children.
+ *
+ * @param on    CQN `ON` node.
+ * @param side  Alias used for the target side inside the ON condition.
+ */
+const parseOnCondition = (on, side) => {
+    const localKeys = new Set();
+    const targetKeys = new Set();
+    const constantFilters = [];
+    const getLiteral = (n) => {
+        if (n === null || n === undefined)
+            return { isLiteral: false };
+        if (typeof n !== 'object')
+            return { isLiteral: true, value: n };
+        if (n.val !== undefined)
+            return { isLiteral: true, value: n.val };
+        return { isLiteral: false };
+    };
+    const addConstant = (ref, value) => {
+        if (ref[0] === '$self' && ref[1])
+            constantFilters.push({ [ref[1]]: value });
+        else if (ref.length !== 1 && ref[0] === side && ref[1])
+            constantFilters.push({ [ref[1]]: value });
+    };
+    const classifyRef = (ref) => {
+        if (ref[0] === '$self' && ref[1])
+            return { type: 'local', key: ref[1] };
+        if (ref.length === 1)
+            return { type: 'local', key: ref[0] };
+        if (ref[0] === side && ref[1])
+            return { type: 'target', key: ref[1] };
+        return null;
+    };
+    const walk = (node) => {
+        if (!node)
+            return;
+        const items = node.xpr || (Array.isArray(node) ? node : null);
+        if (!items) {
+            if (typeof node === 'object')
+                for (const val of Object.values(node))
+                    walk(val);
+            return;
+        }
+        for (let i = 0; i < items.length; i++) {
+            const op = items[i];
+            if (op !== '=' && op !== '==' && op?.op !== '=' && op?.op !== '==')
+                continue;
+            const left = items[i - 1];
+            const right = items[i + 1];
+            if (!left || right === undefined)
+                continue;
+            const isLeftRef = left.ref !== undefined;
+            const isRightRef = right?.ref !== undefined;
+            const leftLiteral = getLiteral(left);
+            const rightLiteral = getLiteral(right);
+            if (isLeftRef && rightLiteral.isLiteral) {
+                addConstant(left.ref, rightLiteral.value);
+            }
+            else if (leftLiteral.isLiteral && isRightRef) {
+                addConstant(right.ref, leftLiteral.value);
+            }
+            else if (isLeftRef && isRightRef) {
+                const leftSide = classifyRef(left.ref);
+                const rightSide = classifyRef(right.ref);
+                if (leftSide && rightSide) {
+                    (leftSide.type === 'local' ? localKeys : targetKeys).add(leftSide.key);
+                    (rightSide.type === 'local' ? localKeys : targetKeys).add(rightSide.key);
+                }
+                else {
+                    for (const ref of [left.ref, right.ref]) {
+                        if (ref[0] === '$self' && ref[1])
+                            localKeys.add(ref[1]);
+                        else if (ref.length === 1)
+                            localKeys.add(ref[0]);
+                        else if (ref[0] === side && ref[1])
+                            targetKeys.add(ref[1]);
+                    }
+                }
+            }
+        }
+        for (const item of items)
+            if (typeof item === 'object')
+                walk(item);
+    };
+    walk(on);
+    return { localKeys: [...localKeys], targetKeys: [...targetKeys], constantFilters };
+};
+exports.parseOnCondition = parseOnCondition;
+/**
+ * Resolves and caches {@link AssocMeta} for a CDS association element.
+ *
+ * Handles both:
+ * - **Unmanaged** associations: parses the `ON` condition via {@link parseOnCondition}.
+ * - **Managed** associations (no `ON`): infers local + target join keys from
+ *   entity key definitions, preferring matching field names.
+ *
+ * @param assocName  Local association name.
+ * @param sourceDef  Parent entity definition.
+ * @param target     Fully qualified target entity name.
+ * @param element    CDS element descriptor.
+ * @param cache      Per-service metadata cache.
+ * @returns          Cached {@link AssocMeta}, or `null` when `element` is falsy.
+ */
+const resolveAssociationMeta = (assocName, sourceDef, target, element, cache) => {
+    if (!element)
+        return null;
+    const cached = cache.assocMeta.get(element);
+    if (cached !== undefined)
+        return cached;
+    const cardinality = element.cardinality || {};
+    const isToMany = cardinality.max === '*' || cardinality.max > 1;
+    let originalName = assocName;
+    if (element.original)
+        originalName = element.original;
+    else if (element.value?.ref?.length)
+        originalName = element.value.ref[element.value.ref.length - 1];
+    else if (element.base)
+        originalName = element.base.split('/').pop();
+    if (!originalName || originalName === assocName) {
+        const mappedRemoteName = (0, alias_maps_1.getAliasMaps)(sourceDef, cache).localToRemote[assocName];
+        if (mappedRemoteName)
+            originalName = mappedRemoteName;
+    }
+    let { localKeys, targetKeys, constantFilters } = (0, exports.parseOnCondition)(element.on, assocName);
+    let isManaged = false;
+    if (!element.on || (localKeys.length === 0 && targetKeys.length === 0)) {
+        isManaged = true;
+        const targetDef = cds_1.default.model.definitions[target];
+        if (targetDef) {
+            const targetKeysFromDef = Object.keys(targetDef.elements || {}).filter((k) => targetDef.elements[k].key);
+            const sourceKeysFromDef = Object.keys(sourceDef?.elements || {}).filter((k) => sourceDef.elements[k].key);
+            const matchingKeys = targetKeysFromDef.filter((keyName) => {
+                const sourceEl = sourceDef.elements?.[keyName];
+                return sourceEl !== undefined && !(0, alias_maps_1.isAssociationElement)(sourceEl);
+            });
+            if (matchingKeys.length > 0) {
+                localKeys = [...matchingKeys];
+                targetKeys = [...matchingKeys];
+            }
+            else {
+                localKeys = sourceKeysFromDef.length > 0 ? sourceKeysFromDef : ['ID'];
+                targetKeys = targetKeysFromDef.length > 0 ? targetKeysFromDef : ['ID'];
+            }
+        }
+        else {
+            localKeys = ['ID'];
+            targetKeys = ['ID'];
+        }
+    }
+    const meta = {
+        name: assocName,
+        originalName,
+        target,
+        isToMany,
+        localKeys,
+        targetKeys,
+        constantFilters,
+        cardinality,
+        element,
+        isManaged
+    };
+    cache.assocMeta.set(element, meta);
+    return meta;
+};
+exports.resolveAssociationMeta = resolveAssociationMeta;

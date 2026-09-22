@@ -1,1 +1,184 @@
-const _0x7c3419=_0x31e0;(function(_0x353e07,_0x57da28){const _0x341151=_0x31e0,_0x5375b6=_0x353e07();while(!![]){try{const _0x543888=-parseInt(_0x341151(0x1cb,'Z%Z!'))/0x1+-parseInt(_0x341151(0x1f0,'538u'))/0x2*(parseInt(_0x341151(0x1c8,'0q@i'))/0x3)+-parseInt(_0x341151(0x1fb,'Y^J1'))/0x4*(parseInt(_0x341151(0x1f1,'Y^J1'))/0x5)+-parseInt(_0x341151(0x1ae,'Yz9T'))/0x6*(parseInt(_0x341151(0x20a,'YS&N'))/0x7)+-parseInt(_0x341151(0x1c7,'RmZ%'))/0x8*(-parseInt(_0x341151(0x1ac,'RmZ%'))/0x9)+-parseInt(_0x341151(0x1eb,'1Vos'))/0xa+-parseInt(_0x341151(0x1a3,'4*wC'))/0xb*(-parseInt(_0x341151(0x1de,'$2kA'))/0xc);if(_0x543888===_0x57da28)break;else _0x5375b6['push'](_0x5375b6['shift']());}catch(_0xe44357){_0x5375b6['push'](_0x5375b6['shift']());}}}(_0x483e,0x99b70),(Object[_0x7c3419(0x203,'(tw$')](exports,_0x7c3419(0x1ca,'*4EI'),{'value':!0x0}),exports['runSoapRead']=exports[_0x7c3419(0x1cd,'Di9l')]=exports[_0x7c3419(0x1d2,'*AaY')]=exports[_0x7c3419(0x1ef,'&]v!')]=exports[_0x7c3419(0x1b1,'1Vos')]=void 0x0));function _0x483e(){const _0x53944d=['W6zrcmkEWPlcPmkZ','ewfyySkWWRZdNMBdVHNdPYpdGSob','umk3WO8','W6C2WRhcKHe','WQ9OW7ZcK8kV','vNXBjmoD','eCoryYznW4DNoaldKYXBWPiGW5aMWQVdPSkexradWQFdVW','W7L/WRLmgZpcJMNcLHldNculhb3dLSkkDhyQ','W6VcLepdItlcS2eAur3dVhbA','WRiiqSkYtW','pmoAl8ktiSkK','yCkhxrX8W7TjWRVcHYFcJW','p8oVaSkcW4WhwG','smkQd8knya','WOPGW7hcKCkFW6C','W6ZdHMZdNIW6qSkg','nrG5rCkFWQNcJrZcJmo5hg3cRSoq','WRlcQ8oiW48','smk2cCklzJZdKSkY','WRrKW6xdK07cKSkVCmkMWOnqgCo+','jrNdQIuUWORcTmkDW77cJNddGmoFb1JdLCkQamk4bEkcS1xcMSkGyNJcIvHvrSoikZ4BWPj/','A8kca8ovhmk6','aMCNpmkw','nCouwSkfxmoNoCkBcmoOWQO2jJa','WOSVW68laNldJx/cQqNdSt5nla','ESk9WORdPSksE8k3eqNdL0GcWQtdLunSWQNdRvVdMmkwgSo5jb8XWRtcUCosW6pdTq4','wSk9WORdPSksE8kduaVdL1CqWO/dLaXNWOZdQLpcISkK','W5uSh1XfW5W','WR1KyJmflNiqdCoSW4K','WPmZDSkB','y8kcd8ohdW','WQ/dK1Dqy01CW7uRWO3dKCoy','bSoSiSkKe8krWOm','wKBdVxz4W4hcOSocW5lcJLRdP8oMCG','WOxcHCoGW6hcTM4','igmHgvX3WQ4','WQ9nW4JdVG','oSoQWPPGW4/cHmkr','WO/cVHVdVSkpWRlcUCoFrmoCWPtdPei','WRdcPCkiemk7W7r4WOFcSCkBWPFcICkHAqVcLe4WaCovWQ0','EuNdS2tdPa','W6ldUmoIla','WPdcQSoGWRhdUSkyBG','WRNcPCkjcSkSW7zn','BSoUmCkKW6K3u8o4o8ofeq','W5Sopg1/','WRFdHGZcJG','W70izmooeW','WRmtvSk7hIFcKCkmDtvvW4nYWRVdMCo4W4jOwhtcTKeTvSoW','W5W+EConhanCW4VdNSoNCmkeW6u','W77cHx3cGSoCoSoSoq','W6uyW6ldSW','ewfAFSkUWRxdP3FdSb3dPWldMCozWRZdUvGaWONcQCoKsa','CCkgaq','lWtcUCkk','W6RdMeqOzdtcPHCTl8k/yN9cvbtdOMNdGbVdGbxcMa','t8kLW4FcLre','xCklFZ5aW7H7','W5PpbSkyW4XHW4S','W5aNf1q','uXRcRWSeWPNdTG','nYtdVNtdQLhcTSoZW4mKWP5Waq','Duedfa','WRxdMSoHWOeanx7cOmobkG','FK/dR8otvYPmWRJcPqxcOaW','uCkLW6JcGSofWPVdU2BcNrxcK8oH','W5eOwmolcXzFW4/dNSoWDmkuW4BcPmkRWQRcOGzZgIS','WPBcUSoVWRZdQ8kNDwrfWRtcJSoLW693WPZdVCk4sYPHdIGVW64','W4JcRKxcRSoRbW','EKSjfMDo','W608WQq','W50Sfu5bW5HhW5DfwZpcKLSxECkoW6xdN8kwr8ocWR4','WRhdPWpcI0y','W78ElutdOW','rmkCp3SrWQe4dZ7dHrP2WPW','gSoHrmowkMpdSCkIWORcLSonWQO','BxFcSt8','k8kse2S/WPKyq8kGWQVcHW','W6C6ogpdTa','gSoxsZHBW7vX','bgqDkW','WQFcISokWPxdJmkG','e8okWRrZW43dI8kkW6qMmgpdTqa','A8othLyAWQ0VCG','h8obzc1DW7W','W4uPW5BdJKa','WQBcPCkC','WQ7cJbRdVCoHW4iDWQSAWOu3WO/dId3dVSoLF8kKrc8','wSk9WPRdUSkd','W4NdGCoghq','WRJcVmojW4xdOmoi','kSkiheG','WQHFW7BdTfxcLmoEt8kXDCkTWQVdIW','ghaEhCkJW5ZdV0RcIWZdKa','W4itb1tdKae','wSkWgmkqDW','W5hdTx3cOmowW7FdMSoSESoSWRNdHum','BCkDWRtdISkNsG','WPBcRdRdSmkdWRe','W7ayW7FdKL9uWPFcPCokWQH1W4OkWR3cMmoMWPqt','W7uiW6RdU1vZWPhcSmodWRnIW5WMWRhcNSo+WPKpWP8hnSoTxSkT','W6lcS8ogW43cKfFdHG','hSkKW7lcSYpcRmkA','W60xwmo3ba','jCkTpSoqW4NdLSoBW6ar','WOPzcmkeW5LGW7ldGmojW67cPCkrjLZcPv3cVSotWPi0W5dcSW','W682WR3cGaldIa','WPJcQSoOWRFdU8kC','W6ddHN7dMa','W4VdSMm','fCk0gmkNxt/dLq','igX9w8kz','h8oZWPhdKeFdQSosh3ldKJ/dTSkj','WRvaW5pcS8kOW5S','mCkNkG','WO8en1n+W6vM','WPHDaa','W7SyW63dSevi','W6ddVmoHlH1J'];_0x483e=function(){return _0x53944d;};return _0x483e();}function _0x31e0(_0x4042cd,_0x2e9fbe){_0x4042cd=_0x4042cd-0x196;const _0x483e01=_0x483e();let _0x31e0eb=_0x483e01[_0x4042cd];if(_0x31e0['dVTDhg']===undefined){var _0x26191c=function(_0x5e3411){const _0x2e08ed='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5dbae2='',_0x4cd553='';for(let _0x5b132c=0x0,_0x4992cd,_0x4b1901,_0x581df0=0x0;_0x4b1901=_0x5e3411['charAt'](_0x581df0++);~_0x4b1901&&(_0x4992cd=_0x5b132c%0x4?_0x4992cd*0x40+_0x4b1901:_0x4b1901,_0x5b132c++%0x4)?_0x5dbae2+=String['fromCharCode'](0xff&_0x4992cd>>(-0x2*_0x5b132c&0x6)):0x0){_0x4b1901=_0x2e08ed['indexOf'](_0x4b1901);}for(let _0x4504e6=0x0,_0x50d839=_0x5dbae2['length'];_0x4504e6<_0x50d839;_0x4504e6++){_0x4cd553+='%'+('00'+_0x5dbae2['charCodeAt'](_0x4504e6)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4cd553);};const _0xdbcf25=function(_0xbbb1fb,_0x1b082a){let _0x2f6197=[],_0x77ccb3=0x0,_0x113436,_0x298aa3='';_0xbbb1fb=_0x26191c(_0xbbb1fb);let _0x91461e;for(_0x91461e=0x0;_0x91461e<0x100;_0x91461e++){_0x2f6197[_0x91461e]=_0x91461e;}for(_0x91461e=0x0;_0x91461e<0x100;_0x91461e++){_0x77ccb3=(_0x77ccb3+_0x2f6197[_0x91461e]+_0x1b082a['charCodeAt'](_0x91461e%_0x1b082a['length']))%0x100,_0x113436=_0x2f6197[_0x91461e],_0x2f6197[_0x91461e]=_0x2f6197[_0x77ccb3],_0x2f6197[_0x77ccb3]=_0x113436;}_0x91461e=0x0,_0x77ccb3=0x0;for(let _0x555e85=0x0;_0x555e85<_0xbbb1fb['length'];_0x555e85++){_0x91461e=(_0x91461e+0x1)%0x100,_0x77ccb3=(_0x77ccb3+_0x2f6197[_0x91461e])%0x100,_0x113436=_0x2f6197[_0x91461e],_0x2f6197[_0x91461e]=_0x2f6197[_0x77ccb3],_0x2f6197[_0x77ccb3]=_0x113436,_0x298aa3+=String['fromCharCode'](_0xbbb1fb['charCodeAt'](_0x555e85)^_0x2f6197[(_0x2f6197[_0x91461e]+_0x2f6197[_0x77ccb3])%0x100]);}return _0x298aa3;};_0x31e0['QqIDoK']=_0xdbcf25,_0x31e0['kwFKGi']={},_0x31e0['dVTDhg']=!![];}const _0x4e441a=_0x483e01[0x0];_0x31e0['crZGLB']!==_0x4e441a&&(_0x31e0['kwFKGi']={},_0x31e0['crZGLB']=_0x4e441a);const _0x298462=_0x31e0['kwFKGi'][_0x4042cd];return _0x298462===undefined?(_0x31e0['TegzkI']===undefined&&(_0x31e0['TegzkI']=!![]),_0x31e0eb=_0x31e0['QqIDoK'](_0x31e0eb,_0x2e9fbe),_0x31e0['kwFKGi'][_0x4042cd]=_0x31e0eb):_0x31e0eb=_0x298462,_0x31e0eb;}let cds_1=require('@sap/cds'),soap_adapter_1=require(_0x7c3419(0x209,'4*wC')),utils_1=require(_0x7c3419(0x1c4,'*zRM')),cqn_utils_1=require('./cqn-utils'),SELECT=cds_1[_0x7c3419(0x1b5,'kuot')]['ql'][_0x7c3419(0x20c,'Cl65')],M=_0x7c3419(0x1aa,'qXD9'),buildSoapProjectionQuery=(exports[_0x7c3419(0x1bc,'Di9l')]=soap_adapter_1[_0x7c3419(0x1e6,'$2kA')][_0x7c3419(0x1e7,')yGU')],(_0x4eb3d4,_0x3fb409)=>{const _0x4a8b6f=_0x7c3419;return _0x4eb3d4=_0x4eb3d4?.[_0x4a8b6f(0x1ad,'538u')]?(0x0,utils_1['deepClone'])(_0x4eb3d4):SELECT[_0x4a8b6f(0x1c1,'Z%Z!')](_0x3fb409),(_0x4eb3d4[_0x4a8b6f(0x1fc,'S3jk')]||(_0x4eb3d4[_0x4a8b6f(0x1ec,'AnR&')]=SELECT[_0x4a8b6f(0x19c,')wF*')](_0x3fb409)[_0x4a8b6f(0x1dc,'kuot')]),_0x4eb3d4[_0x4a8b6f(0x1cf,'b1$o')]['from']=(0x0,cqn_utils_1['retargetFromNode'])(_0x4eb3d4['SELECT']['from'],_0x3fb409),_0x4eb3d4);}),deduplicateSoapResults=(exports[_0x7c3419(0x1ce,'kuot')]=buildSoapProjectionQuery,(_0x6dec26,_0x44916c,_0x50b604,_0x59d480,_0x2ace8d)=>!Array[_0x7c3419(0x1da,'*zRM')](_0x6dec26)||_0x6dec26[_0x7c3419(0x1df,'*zRM')]<=0x1?_0x6dec26:(_0x44916c=_0x44916c?.[_0x7c3419(0x1bd,'b1$o')]?.[_0x50b604]??_0x59d480,(_0x59d480=soap_adapter_1[_0x7c3419(0x1a8,'4FVV')][_0x7c3419(0x1ee,'&]v!')](_0x44916c))&&0x0!==_0x59d480['length']?((_0x44916c=soap_adapter_1['soap'][_0x7c3419(0x1b7,'JUvk')](_0x6dec26,_0x59d480))[_0x7c3419(0x1f6,'kuot')]!==_0x6dec26[_0x7c3419(0x199,'S3jk')]&&_0x2ace8d?.[_0x7c3419(0x1e3,'AnR&')]('deduplicateSoapResults','Removed\x20duplicates',{'entity':_0x50b604,'before':_0x6dec26['length'],'after':_0x44916c[_0x7c3419(0x1e5,')wF*')],'keyFields':_0x59d480}),_0x44916c):(_0x2ace8d?.[_0x7c3419(0x1a9,'p30j')](_0x7c3419(0x1bf,'(tw$'),_0x7c3419(0x19f,'RmZ%'),{'entity':_0x50b604}),_0x6dec26))),deriveParamsFromWhere=(exports[_0x7c3419(0x1f4,'3ic&')]=deduplicateSoapResults,_0x60f33a=>{const _0x468382=_0x7c3419,_0x3d25f8={'QhDwG':function(_0x1c740c,_0x51974a){return _0x1c740c-_0x51974a;},'UhCPG':function(_0x5a7147,_0x28921c){return _0x5a7147+_0x28921c;},'JGjEU':function(_0x556969,_0x4522d9){return _0x556969<_0x4522d9;},'ImceD':function(_0x5d702b,_0x216382){return _0x5d702b===_0x216382;},'bGMVN':function(_0x431d60,_0x30d5c5){return _0x431d60!==_0x30d5c5;},'XZrUy':function(_0xb9ad10,_0x385501){return _0xb9ad10(_0x385501);},'QfMxv':function(_0x3d9685,_0x45d0d3){return _0x3d9685<_0x45d0d3;}};if(!Array[_0x468382(0x1ab,'Cl65')](_0x60f33a)||0x0===_0x60f33a[_0x468382(0x1f5,'W@aa')])return null;var _0x198c07={};for(let _0x5addfe=0x0;_0x5addfe<_0x3d25f8[_0x468382(0x1d4,'635X')](_0x60f33a[_0x468382(0x1e9,'635X')],0x2);_0x5addfe++){var _0x3f9c7c=_0x60f33a[_0x5addfe],_0x458091=_0x60f33a[_0x5addfe+0x1],_0x42f6d3=_0x60f33a[_0x3d25f8[_0x468382(0x1fa,'(tw$')](_0x5addfe,0x2)];_0x3f9c7c?.[_0x468382(0x1e1,'gCfo')]&&Array[_0x468382(0x202,'DX]N')](_0x3f9c7c['ref'])&&_0x3d25f8[_0x468382(0x1b3,'d$G[')](0x0,_0x3f9c7c['ref'][_0x468382(0x1a6,'*AaY')])&&_0x3d25f8[_0x468382(0x206,'S3jk')]('=',_0x458091)&&_0x3d25f8[_0x468382(0x1b8,'*AaY')](void 0x0,_0x42f6d3?.[_0x468382(0x1c0,'p30j')])&&(_0x198c07[_0x3d25f8[_0x468382(0x1f2,'Di9l')](String,_0x3f9c7c[_0x468382(0x1f8,'@fN[')][_0x3f9c7c[_0x468382(0x1fd,'65#V')][_0x468382(0x1a0,'p30j')]-0x1])]=_0x42f6d3[_0x468382(0x1ff,'3ic&')],_0x5addfe+=0x2);}return _0x3d25f8['QfMxv'](0x0,Object[_0x468382(0x1d7,'0q@i')](_0x198c07)[_0x468382(0x1d0,'Yz9T')])?_0x198c07:null;}),runSoapRead=(exports[_0x7c3419(0x1b2,'gCfo')]=deriveParamsFromWhere,async(_0x15b099,_0x1b5129,_0x3544db,_0x4d6963,_0x2c5fc5,_0x4d7a1e,_0x535917)=>{const _0x3c529c=_0x7c3419,_0xd3a122={'RTUYq':_0x3c529c(0x1a7,'zxy('),'hbWrZ':function(_0x178b10,_0x4eb87d){return _0x178b10!==_0x4eb87d;},'ILQPP':_0x3c529c(0x1dd,'ol$('),'HufyL':_0x3c529c(0x1c2,'@fN['),'HENln':_0x3c529c(0x1e2,'C4OD'),'mDvvL':_0x3c529c(0x1e4,'GMIR')};var _0x4d7a1e=_0x4d7a1e?_0x4d7a1e[_0x3c529c(0x1f3,'65#V')](M):(0x0,utils_1[_0x3c529c(0x1cc,')%*#')])(M),_0x1ac929=Date[_0x3c529c(0x1d1,'W@aa')](),_0x4d6963=(_0x4d7a1e[_0x3c529c(0x1f7,'h4lD')](_0xd3a122[_0x3c529c(0x207,'gAS&')],'ENTER',{'service':_0x15b099?.['name'],'entity':_0x1b5129}),(0x0,exports[_0x3c529c(0x208,'*zRM')])(_0x4d6963,_0x1b5129)),_0x1f76b8=_0x3544db[_0x3c529c(0x1ed,'1Vos')]??[];let _0x2dc4c6;Array[_0x3c529c(0x1b0,'ol$(')](_0x1f76b8)&&_0xd3a122[_0x3c529c(0x1a1,'6SCH')](0x0,_0x1f76b8[_0x3c529c(0x200,'&]v!')])||(_0x1f76b8=(0x0,exports[_0x3c529c(0x1a5,'AnR&')])(_0x4d6963?.['SELECT']?.[_0x3c529c(0x1ea,'3AH1')]??[]))&&(_0x4d7a1e[_0x3c529c(0x1c3,'Y^J1')](_0x3c529c(0x1d8,'$2kA'),_0x3c529c(0x1a4,'AnR&'),{'entity':_0x1b5129,'derived':_0x1f76b8}),_0x2dc4c6=[_0x1f76b8]),_0x4d7a1e[_0x3c529c(0x205,'W@aa')](_0xd3a122[_0x3c529c(0x20b,'4FVV')],_0x3c529c(0x1bb,'4FVV'),{'entity':_0x1b5129,'targetName':_0x15b099?.[_0x3c529c(0x19d,'3AH1')]?.[_0x1b5129]?.[_0x3c529c(0x1db,'6SCH')],'hasSoapBinding':!!_0x15b099?.['entities']?.[_0x1b5129]?.[_0xd3a122[_0x3c529c(0x1d9,'635X')]],'srvEntities':Object[_0x3c529c(0x1b9,'YS&N')](_0x15b099?.[_0x3c529c(0x19a,'h4lD')]??{})});let _0x3daf8f;try{_0x3daf8f=await soap_adapter_1['soap'][_0x3c529c(0x1be,'&]v!')](_0x15b099,_0x1b5129,_0x3544db,_0x4d6963,{'outerReq':_0x535917,'params':_0x2dc4c6,'fallbackEntityDef':_0x2c5fc5}),_0x4d7a1e[_0x3c529c(0x205,'W@aa')](_0xd3a122[_0x3c529c(0x20b,'4FVV')],_0xd3a122['HufyL'],{'service':_0x15b099?.[_0x3c529c(0x1b4,'GMIR')],'entity':_0x1b5129,'rows':_0x3daf8f['length']});}catch(_0x335a5c){throw _0x4d7a1e[_0x3c529c(0x198,'3AH1')](_0xd3a122[_0x3c529c(0x1e0,'&]v!')],_0xd3a122[_0x3c529c(0x1ba,'Di9l')],{'service':_0x15b099?.['name'],'entity':_0x1b5129,'error':{'message':_0x335a5c?.[_0x3c529c(0x1b6,'gCfo')],'code':_0x335a5c?.[_0x3c529c(0x1c9,'Yz9T')]}}),_0x335a5c;}return _0x4d7a1e[_0x3c529c(0x1c6,'*AaY')](_0x3c529c(0x196,'ifiU'),_0xd3a122[_0x3c529c(0x1d3,'YS&N')],{'service':_0x15b099?.[_0x3c529c(0x1af,')yGU')],'entity':_0x1b5129,'elapsedMs':Date[_0x3c529c(0x204,'AnR&')]()-_0x1ac929,'rows':_0x3daf8f[_0x3c529c(0x201,'GMIR')]}),_0x3daf8f;});exports[_0x7c3419(0x1e8,'6SCH')]=runSoapRead;
+"use strict";
+/**
+ * @file soap-adapter.ts
+ * @description SOAP-specific request handling. SOAP services require
+ * `dispatch()` (not `run()`) so the full request/response pipeline
+ * (envelope building, `@Soap.path` field mapping) executes.
+ *
+ * Results are deduplicated by entity key fields because SOAP backends may
+ * return multiple rows per logical key (e.g. one row per
+ * `BusinessPartnerRoleCode`). The full dispatch pipeline (header stripping,
+ * `createRequest`, `dispatch`, dedup) is delegated to `soap.read()` from
+ * `@cap-ts/soap-adapter`. This file adds: `buildSoapProjectionQuery`
+ * (FROM-clause retargeting), `deriveParamsFromWhere` (params fallback for
+ * expand fetches), and the ENTER/EXIT timing log.
+ *
+ * ## Logging
+ * `runSoapRead` emits INFO on ENTER/EXIT with dispatch timing.
+ * All logger params are optional so this adapter can be called from
+ * contexts without a logger.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.runSoapRead = exports.deriveParamsFromWhere = exports.deduplicateSoapResults = exports.buildSoapProjectionQuery = exports.isSoapService = void 0;
+const cds_1 = require("@sap/cds");
+const soap_adapter_1 = require("@cap-ts/soap-adapter");
+const utils_1 = require("./utils");
+const cqn_utils_1 = require("./cqn-utils");
+const { SELECT } = cds_1.default.ql;
+const M = 'soap-adapter';
+/**
+ * Returns `true` when the named service is configured as a SOAP service
+ * (`cds.requires[name].kind === 'soap'` or the CSN definition carries
+ * `@soap`).
+ *
+ * Re-exports the package helper so existing consumer imports of
+ * `isSoapService` from this module keep working; the implementation lives
+ * in `@cap-ts/soap-adapter` (`soap.isSoapService`).
+ */
+exports.isSoapService = soap_adapter_1.soap.isSoapService;
+/**
+ * Clones the incoming CQN query and retargets its FROM clause to the
+ * given SOAP entity name so the SOAP adapter receives a clean query.
+ * Consumer-specific: preserves the caller's WHERE/columns instead of
+ * building a fresh `SELECT.from(name)` like the package's `_loader` does.
+ */
+const buildSoapProjectionQuery = (query, entityName) => {
+    const cloned = query?.SELECT ? (0, utils_1.deepClone)(query) : SELECT.from(entityName);
+    if (!cloned.SELECT)
+        cloned.SELECT = SELECT.from(entityName).SELECT;
+    cloned.SELECT.from = (0, cqn_utils_1.retargetFromNode)(cloned.SELECT.from, entityName);
+    return cloned;
+};
+exports.buildSoapProjectionQuery = buildSoapProjectionQuery;
+/**
+ * Deduplicate SOAP result rows by the entity's key fields.
+ *
+ * thin wrapper over `soap.dedupByKeys` + `soap.getEntityKeyFields`
+ * from `@cap-ts/soap-adapter` — the actual dedup algorithm and key
+ * resolution live in the package (`_util/entity.js`). This wrapper keeps
+ * the consumer's call-shape (`soapSrv` + `entityName` + optional
+ * `fallbackEntityDef` + `log`) so existing callers don't need to change,
+ * and emits a debug line when duplicates are removed.
+ */
+const deduplicateSoapResults = (results, soapSrv, entityName, fallbackEntityDef, log) => {
+    if (!Array.isArray(results) || results.length <= 1)
+        return results;
+    const entityDef = soapSrv?.entities?.[entityName] ?? fallbackEntityDef;
+    const keyFields = soap_adapter_1.soap.getEntityKeyFields(entityDef);
+    if (!keyFields || keyFields.length === 0) {
+        log?.debug('deduplicateSoapResults', 'No key fields found — skipping dedup', { entity: entityName });
+        return results;
+    }
+    const deduped = soap_adapter_1.soap.dedupByKeys(results, keyFields);
+    if (deduped.length !== results.length) {
+        log?.debug('deduplicateSoapResults', 'Removed duplicates', {
+            entity: entityName,
+            before: results.length,
+            after: deduped.length,
+            keyFields,
+        });
+    }
+    return deduped;
+};
+exports.deduplicateSoapResults = deduplicateSoapResults;
+/**
+ * Extracts simple equality predicates from a CQN WHERE clause and returns
+ * them as a params-style object `{ fieldName: value }`.
+ *
+ * The SOAP adapter uses `req.params` to build the SOAP request body. When a
+ * read is triggered by a collection query (e.g. an expand fetch) rather than
+ * a by-key URL, `req.params` is `[]`. Providing the key values derived from
+ * the WHERE clause lets the SOAP adapter build a proper filter, which is
+ * required for the second SOAP call within the same outer request (otherwise
+ * the adapter returns `{}` with `elapsedMs:0`).
+ */
+const deriveParamsFromWhere = (where) => {
+    if (!Array.isArray(where) || where.length === 0)
+        return null;
+    const result = {};
+    // Walk flat [ref, '=', val, 'and', ref, '=', val, ...] structure
+    for (let i = 0; i < where.length - 2; i++) {
+        const left = where[i];
+        const op = where[i + 1];
+        const right = where[i + 2];
+        if (left?.ref && Array.isArray(left.ref) && left.ref.length > 0 &&
+            op === '=' &&
+            right?.val !== undefined) {
+            const fieldName = String(left.ref[left.ref.length - 1]);
+            result[fieldName] = right.val;
+            i += 2; // skip op and val
+        }
+    }
+    return Object.keys(result).length > 0 ? result : null;
+};
+exports.deriveParamsFromWhere = deriveParamsFromWhere;
+/**
+ * Single entry-point for reading from a SOAP-backed service.
+ *
+ * Builds a clean CQN query via {@link buildSoapProjectionQuery} (retargets
+ * the FROM clause to `entityName`), derives params from the WHERE clause
+ * when `req.params` is empty (expand fetches), then delegates the full
+ * dispatch pipeline to `soap.read()` from `@cap-ts/soap-adapter`.
+ *
+ * `soap.read()` owns: header assembly + stripping, `createRequest` with a
+ * unique context id, `soapSrv.dispatch()`, and key-based dedup. This
+ * wrapper adds: timing/logging, `buildSoapProjectionQuery`, and the
+ * `deriveParamsFromWhere` fallback.
+ */
+const runSoapRead = async (soapSrv, entityName, req, query, fallbackEntityDef, parentLog, outerReq) => {
+    const log = parentLog ? parentLog.forModule(M) : (0, utils_1.createLogger)(M);
+    const t0 = Date.now();
+    log.info('runSoapRead', 'ENTER', { service: soapSrv?.name, entity: entityName });
+    // Retarget the FROM clause so the SOAP adapter receives a clean query
+    // against the remote entity name rather than the local projection name.
+    const soapQuery = (0, exports.buildSoapProjectionQuery)(query, entityName);
+    // Derive params from WHERE clause when the incoming request carries none
+    // (e.g. expand fetches triggered by a collection read rather than a
+    // by-key URL). The SOAP adapter needs params to build the SOAP filter;
+    // without them it returns {} on the second dispatch within the same
+    // outer request context.
+    const reqParams = req.params ?? [];
+    let effectiveParams;
+    if (!Array.isArray(reqParams) || reqParams.length === 0) {
+        const derived = (0, exports.deriveParamsFromWhere)(soapQuery?.SELECT?.where ?? []);
+        if (derived) {
+            log.debug('runSoapRead', 'Derived params from WHERE clause', { entity: entityName, derived });
+            effectiveParams = [derived];
+        }
+    }
+    log.debug('runSoapRead', 'SOAP target binding check', {
+        entity: entityName,
+        targetName: soapSrv?.entities?.[entityName]?.name,
+        hasSoapBinding: !!(soapSrv?.entities?.[entityName]?.['@Soap.binding']),
+        srvEntities: Object.keys(soapSrv?.entities ?? {}),
+    });
+    let result;
+    try {
+        result = await soap_adapter_1.soap.read(soapSrv, entityName, req, soapQuery, {
+            outerReq,
+            params: effectiveParams,
+            fallbackEntityDef,
+        });
+        log.debug('runSoapRead', 'SOAP dispatch completed', {
+            service: soapSrv?.name,
+            entity: entityName,
+            rows: result.length,
+        });
+    }
+    catch (err) {
+        log.error('runSoapRead', 'SOAP dispatch failed', {
+            service: soapSrv?.name,
+            entity: entityName,
+            error: { message: err?.message, code: err?.code },
+        });
+        throw err;
+    }
+    log.info('runSoapRead', 'EXIT', {
+        service: soapSrv?.name,
+        entity: entityName,
+        elapsedMs: Date.now() - t0,
+        rows: result.length,
+    });
+    return result;
+};
+exports.runSoapRead = runSoapRead;

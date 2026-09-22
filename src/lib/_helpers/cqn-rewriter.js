@@ -1,1 +1,298 @@
-var _0x461525=_0x83a0;(function(_0x2fc826,_0x411485){var _0xbb13fd=_0x83a0,_0x437658=_0x2fc826();while(!![]){try{var _0x15eedd=parseInt(_0xbb13fd(0x87,'3HTJ'))/0x1*(-parseInt(_0xbb13fd(0x13a,'8Tsf'))/0x2)+parseInt(_0xbb13fd(0xec,'H[Y3'))/0x3+parseInt(_0xbb13fd(0x130,'Rvf2'))/0x4+parseInt(_0xbb13fd(0x9c,'ozBP'))/0x5*(parseInt(_0xbb13fd(0xed,'9)t*'))/0x6)+parseInt(_0xbb13fd(0xdc,'y)9K'))/0x7*(-parseInt(_0xbb13fd(0x120,'mQC9'))/0x8)+-parseInt(_0xbb13fd(0xe5,'8Tsf'))/0x9*(parseInt(_0xbb13fd(0x11a,'Ti0z'))/0xa)+parseInt(_0xbb13fd(0x11f,'Mj7i'))/0xb;if(_0x15eedd===_0x411485)break;else _0x437658['push'](_0x437658['shift']());}catch(_0x806579){_0x437658['push'](_0x437658['shift']());}}}(_0x2c85,0xbee49),(Object[_0x461525(0xba,'9)t*')](exports,_0x461525(0xa1,'uDva'),{'value':!0x0}),exports[_0x461525(0x90,'wbfK')]=exports[_0x461525(0xbc,'Uo6i')]=exports[_0x461525(0x99,'icJ%')]=exports[_0x461525(0xb4,'uDva')]=exports[_0x461525(0xc5,'UEZJ')]=exports[_0x461525(0x72,'9)t*')]=void 0x0));let cds_1=require(_0x461525(0xa7,'#TCZ')),alias_maps_1=require('./alias-maps'),column_builders_1=require(_0x461525(0x7b,'(UQB')),rewriteRefArray=(_0x4eba53,_0x41c6d9)=>{var _0xc314d2=_0x461525,_0x1b6f03={'AYNDf':function(_0x5159a8,_0xb1b51b){return _0x5159a8!==_0xb1b51b;},'IUbfm':function(_0x25315f,_0x27a772){return _0x25315f-_0x27a772;},'XGhGQ':function(_0x16c289,_0x3421d4){return _0x16c289-_0x3421d4;}},_0x249e33;return Array[_0xc314d2(0x127,'lv^l')](_0x4eba53)&&_0x1b6f03['AYNDf'](0x0,_0x4eba53[_0xc314d2(0x71,'9)t*')])&&_0x41c6d9[_0x249e33=_0x4eba53[_0x1b6f03[_0xc314d2(0xaf,'ozBP')](_0x4eba53[_0xc314d2(0xcb,'lMaZ')],0x1)]]&&(_0x4eba53[_0x1b6f03['XGhGQ'](_0x4eba53[_0xc314d2(0x12a,'&!SC')],0x1)]=_0x41c6d9[_0x249e33]),_0x4eba53;},rewriteCqnNode=(exports['rewriteRefArray']=rewriteRefArray,(_0x3fe8d0,_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a=new Set())=>{var _0x8673ef=_0x461525,_0x5995f2={'qdXFd':_0x8673ef(0xa6,'au$v'),'CRONM':function(_0x398177,_0x32af22){return _0x398177-_0x32af22;}},_0x450ccb,_0x18ddeb;return Array[_0x8673ef(0xc7,'Ti0z')](_0x3fe8d0)?_0x3fe8d0[_0x8673ef(0x134,'AaJe')](_0x5f3c9a=>(0x0,exports['rewriteCqnNode'])(_0x5f3c9a,_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)):(_0x3fe8d0&&_0x5995f2[_0x8673ef(0x139,'&d8N')]==typeof _0x3fe8d0&&!_0x3a3e0a[_0x8673ef(0x131,'oWyA')](_0x3fe8d0)&&(_0x3a3e0a[_0x8673ef(0x95,'3HTJ')](_0x3fe8d0),_0x3fe8d0[_0x8673ef(0xbb,'uW0K')]&&(_0x450ccb=_0x3fe8d0['ref'][_0x5995f2[_0x8673ef(0x7d,'#TCZ')](_0x3fe8d0[_0x8673ef(0x140,'4jxX')][_0x8673ef(0x11e,'uDva')],0x1)],_0x3fe8d0[_0x8673ef(0xfd,'sQ3W')]=(0x0,exports[_0x8673ef(0xc4,'UEZJ')])(_0x3fe8d0[_0x8673ef(0xbe,'%luX')],_0x351b7a),_0x3fe8d0[_0x8673ef(0x74,'au$v')])&&_0x3b9273?.[_0x8673ef(0xb9,'au$v')]?.[_0x450ccb]?.[_0x8673ef(0xfa,'In5z')]&&(_0x450ccb=cds_1[_0x8673ef(0x10e,'C1GW')][_0x8673ef(0x124,'AaJe')][_0x8673ef(0x10a,'Yap7')][_0x3b9273[_0x8673ef(0x8d,'76gD')][_0x450ccb][_0x8673ef(0x128,'ozBP')]])&&(_0x18ddeb=(0x0,alias_maps_1[_0x8673ef(0xd9,'xH7@')])(_0x450ccb,_0x145486)[_0x8673ef(0xb2,'H[Y3')],_0x3fe8d0[_0x8673ef(0x79,'IHel')]=stripAliasesInternal((0x0,exports[_0x8673ef(0x84,'76gD')])(_0x3fe8d0[_0x8673ef(0xf5,'&!SC')],_0x18ddeb,_0x450ccb,_0x145486,_0x3a3e0a))),_0x3fe8d0[_0x8673ef(0x7a,'Ti0z')]&&(_0x3fe8d0[_0x8673ef(0xc9,'Ez5%')]=(0x0,exports['rewriteCqnNode'])(_0x3fe8d0[_0x8673ef(0x7a,'Ti0z')],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0[_0x8673ef(0x123,'mAWS')]&&(_0x3fe8d0[_0x8673ef(0xc3,'ciTK')]=(0x0,exports['rewriteCqnNode'])(_0x3fe8d0[_0x8673ef(0x85,'Uo6i')],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0[_0x8673ef(0xa3,'icJ%')]&&(_0x3fe8d0[_0x8673ef(0x10d,'#TCZ')]=(0x0,exports[_0x8673ef(0x80,'ozBP')])(_0x3fe8d0[_0x8673ef(0xf0,'rNm[')],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0[_0x8673ef(0xcc,'9)t*')]&&(_0x3fe8d0[_0x8673ef(0x103,'AaJe')]=(0x0,exports[_0x8673ef(0x112,'YoR9')])(_0x3fe8d0[_0x8673ef(0x135,'&!SC')],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0[_0x8673ef(0xa8,'(UQB')]&&(_0x3fe8d0[_0x8673ef(0xea,'E29)')]=(0x0,exports['rewriteCqnNode'])(_0x3fe8d0[_0x8673ef(0xe8,'xH7@')],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0['on']&&(_0x3fe8d0['on']=(0x0,exports[_0x8673ef(0xe1,'IHel')])(_0x3fe8d0['on'],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0['args'])&&(_0x3fe8d0[_0x8673ef(0xb3,'UEZJ')]=(0x0,exports[_0x8673ef(0x10f,'lMaZ')])(_0x3fe8d0[_0x8673ef(0xd8,'&vA!')],_0x351b7a,_0x3b9273,_0x145486,_0x3a3e0a)),_0x3fe8d0);}),stripAliasesInternal=(exports[_0x461525(0xd3,'&!SC')]=rewriteCqnNode,_0x3c818b=>Array[_0x461525(0xf9,'H[Y3')](_0x3c818b)?_0x3c818b['map'](_0x3e8ee3=>{var _0xb8b8bf=_0x461525,_0x39d9c8={'dhKTp':function(_0x25c35d,_0x2046b9){return _0x25c35d==_0x2046b9;},'wckYY':_0xb8b8bf(0xe3,'#F]L')};if(_0x3e8ee3&&_0x39d9c8['dhKTp'](_0x39d9c8[_0xb8b8bf(0xa0,'9)t*')],typeof _0x3e8ee3)){let {as:_0x4f18d0,..._0xbb184d}=_0x3e8ee3;return _0xbb184d;}return _0x3e8ee3;}):_0x3c818b),rewriteFromNode=(_0x2436f9,_0xedacac,_0x192ef9,_0x5f0985)=>(_0x2436f9&&'object'==typeof _0x2436f9&&(_0x2436f9[_0x461525(0xd7,'[zRK')]&&(_0x2436f9[_0x461525(0xe9,'IHel')]=(0x0,exports[_0x461525(0x104,'jQOd')])(_0x2436f9[_0x461525(0xe9,'IHel')],_0xedacac),_0x2436f9[_0x461525(0x106,'icJ%')])&&(_0x2436f9[_0x461525(0xe0,'rNm[')]=(0x0,exports[_0x461525(0x73,'rNm[')])(_0x2436f9[_0x461525(0xde,'C1GW')],_0xedacac,_0x192ef9,_0x5f0985)),_0x2436f9[_0x461525(0xc1,'E29)')]&&(_0x2436f9[_0x461525(0xe4,'Uo6i')]=_0x2436f9[_0x461525(0xc0,'Ti0z')][_0x461525(0xb5,'#TCZ')](_0xf0efdc=>(0x0,exports['rewriteFromNode'])(_0xf0efdc,_0xedacac,_0x192ef9,_0x5f0985))),_0x2436f9['on']&&(_0x2436f9['on']=(0x0,exports[_0x461525(0x83,'Uo6i')])(_0x2436f9['on'],_0xedacac,_0x192ef9,_0x5f0985)),_0x2436f9[_0x461525(0x79,'IHel')])&&(_0x2436f9[_0x461525(0x108,'AaJe')]=(0x0,exports['rewriteCqnNode'])(_0x2436f9[_0x461525(0xb0,'H[Y3')],_0xedacac,_0x192ef9,_0x5f0985)),_0x2436f9),rewriteQueryCqn=(exports[_0x461525(0xab,'iU^K')]=rewriteFromNode,(_0x58d2c0,_0x5ccead,_0x33f83f,_0x33fc97)=>{var _0x1c68c4=_0x461525,_0x2cb93b,_0x58d2c0=_0x58d2c0?.[_0x1c68c4(0x78,'#F]L')];_0x58d2c0&&(_0x2cb93b=new Set(),_0x58d2c0[_0x1c68c4(0xb7,'mQC9')]&&(_0x58d2c0[_0x1c68c4(0xa4,'WZY^')]=(0x0,exports[_0x1c68c4(0xff,'(UQB')])(_0x58d2c0['columns'],_0x5ccead,_0x33fc97,_0x33f83f,_0x2cb93b)),_0x58d2c0[_0x1c68c4(0x13e,'Yap7')]&&(_0x58d2c0[_0x1c68c4(0x8f,'3HTJ')]=(0x0,exports[_0x1c68c4(0xb8,'au$v')])(_0x58d2c0[_0x1c68c4(0xdd,'&!SC')],_0x5ccead,_0x33fc97,_0x33f83f,_0x2cb93b)),_0x58d2c0[_0x1c68c4(0x109,'Ti0z')]&&(_0x58d2c0[_0x1c68c4(0x75,'wbfK')]=(0x0,exports[_0x1c68c4(0xae,'Mj7i')])(_0x58d2c0[_0x1c68c4(0x136,'oWyA')],_0x5ccead,_0x33fc97,_0x33f83f,_0x2cb93b)),_0x58d2c0[_0x1c68c4(0xcc,'9)t*')]&&(_0x58d2c0[_0x1c68c4(0x135,'&!SC')]=(0x0,exports[_0x1c68c4(0xae,'Mj7i')])(_0x58d2c0[_0x1c68c4(0x77,'&vA!')],_0x5ccead,_0x33fc97,_0x33f83f,_0x2cb93b)),_0x58d2c0[_0x1c68c4(0xf6,'#F]L')]&&(_0x58d2c0[_0x1c68c4(0x12c,'Ez5%')]=(0x0,exports['rewriteCqnNode'])(_0x58d2c0[_0x1c68c4(0x93,'mAWS')],_0x5ccead,_0x33fc97,_0x33f83f,_0x2cb93b)),_0x58d2c0[_0x1c68c4(0x8b,'Ez5%')])&&(_0x58d2c0[_0x1c68c4(0x89,'YoR9')]=(0x0,exports[_0x1c68c4(0xab,'iU^K')])(_0x58d2c0[_0x1c68c4(0xbf,'E29)')],_0x5ccead,_0x33fc97,_0x33f83f));}),sanitizeCqnWhere=(exports[_0x461525(0x88,'#TCZ')]=rewriteQueryCqn,(_0x2d62d6,_0x578fe4,_0x1b296e)=>{var _0x3c2caa=_0x461525,_0x3ae59f={'BaLQW':function(_0x5b067b,_0x5743c8){return _0x5b067b===_0x5743c8;},'fydeQ':function(_0x56f97a,_0x2ade5b){return _0x56f97a<_0x2ade5b;},'mooyx':function(_0x3fb951,_0x2f0920){return _0x3fb951==_0x2f0920;},'vrdaS':_0x3c2caa(0x119,'ozBP'),'piAAK':function(_0x21889e,_0x4533c7){return _0x21889e<_0x4533c7;},'Llcxt':_0x3c2caa(0x141,'ozBP'),'gbcYx':function(_0xeb8399,_0x3fd444){return _0xeb8399<_0x3fd444;},'yXvKG':function(_0x261d16,_0x585c91){return _0x261d16-_0x585c91;},'fkauW':function(_0x3e42ca,_0x47002e){return _0x3e42ca!=_0x47002e;},'lJNsg':function(_0x2f7163,_0x1666db){return _0x2f7163<_0x1666db;}};if(!Array[_0x3c2caa(0x7c,'y)9K')](_0x2d62d6)||_0x3ae59f[_0x3c2caa(0x8e,'Rvf2')](0x0,_0x2d62d6[_0x3c2caa(0xd5,'4jxX')]))return null;var _0x4417bd=[];let _0x2234bd=0x0;for(;_0x3ae59f[_0x3c2caa(0x11d,'Uo6i')](_0x2234bd,_0x2d62d6[_0x3c2caa(0xdf,'Ez5%')]);){var _0x52ea24,_0x42c2b7,_0x2849f8=_0x2d62d6[_0x2234bd];_0x3ae59f[_0x3c2caa(0xd4,'icJ%')](_0x3ae59f[_0x3c2caa(0xf7,'YoR9')],typeof _0x2849f8)?(_0x4417bd[_0x3c2caa(0x105,'UEZJ')](_0x2849f8),_0x2234bd++):Array['isArray'](_0x2849f8)?((_0x52ea24=(0x0,exports[_0x3c2caa(0xd2,'Ti0z')])(_0x2849f8,_0x578fe4,_0x1b296e))&&_0x3ae59f[_0x3c2caa(0xb1,'mAWS')](0x0,_0x52ea24[_0x3c2caa(0xd0,'y)9K')])&&_0x4417bd[_0x3c2caa(0xcf,'mQC9')](_0x52ea24),_0x2234bd++):_0x2849f8&&_0x3ae59f['mooyx'](_0x3ae59f[_0x3c2caa(0x126,'y)9K')],typeof _0x2849f8)&&_0x2849f8['ref']?(_0x52ea24=_0x2849f8[_0x3c2caa(0x102,'&vA!')][0x0],!(_0x42c2b7=_0x578fe4[_0x3c2caa(0x121,'YoR9')]?.[_0x52ea24])||_0x42c2b7[_0x3c2caa(0xfe,'mQC9')]||_0x42c2b7[_0x3c2caa(0x13d,'%luX')]||!_0x1b296e[_0x52ea24]?_0x2234bd+=0x3:(_0x4417bd[_0x3c2caa(0xb6,'[zRK')]({'ref':[_0x1b296e[_0x52ea24]]}),_0x2234bd++)):(_0x4417bd[_0x3c2caa(0xfc,'lv^l')](_0x2849f8),_0x2234bd++);}for(;_0x3ae59f[_0x3c2caa(0x97,'8Tsf')](0x0,_0x4417bd['length']);){var _0x395efe=_0x4417bd[_0x3ae59f[_0x3c2caa(0xd6,'UEZJ')](_0x4417bd[_0x3c2caa(0xc8,'H[Y3')],0x1)];if(_0x3ae59f[_0x3c2caa(0xbd,'#F]L')](_0x3c2caa(0x9e,'Mj7i'),typeof _0x395efe)||_0x3ae59f[_0x3c2caa(0x133,'lv^l')](')',_0x395efe))break;_0x4417bd['pop']();}var _0x30e1e3=dropDanglingLogic(_0x4417bd);return _0x3ae59f[_0x3c2caa(0x98,'mAWS')](0x0,_0x30e1e3[_0x3c2caa(0x91,'76gD')])?_0x30e1e3:null;}),isLogicOp=(exports['sanitizeCqnWhere']=sanitizeCqnWhere,_0x38d3ec=>_0x461525(0x114,'Ti0z')==typeof _0x38d3ec&&(_0x461525(0x86,'YoR9')===_0x38d3ec[_0x461525(0x12d,'wbfK')]()||'or'===_0x38d3ec[_0x461525(0x12f,'lP!8')]())),dropDanglingLogic=_0x484787=>{var _0x43b239=_0x461525,_0x54247e={'EXUxa':function(_0x5b2c7c,_0x176a0b){return _0x5b2c7c<_0x176a0b;},'gXiZN':function(_0x1f11eb,_0xd39839){return _0x1f11eb===_0xd39839;},'oHPPn':function(_0x72d4d4,_0x11e755){return _0x72d4d4-_0x11e755;},'IHQcR':function(_0x534117,_0x477a61){return _0x534117!==_0x477a61;},'gsUzD':function(_0x31d312,_0x4b8d92){return _0x31d312-_0x4b8d92;},'pFOpv':function(_0x472fa8,_0x1b6eb9){return _0x472fa8!==_0x1b6eb9;},'ZnytA':function(_0x938f87,_0x217827){return _0x938f87!==_0x217827;},'yGFQp':function(_0xdfd40c,_0x462168){return _0xdfd40c+_0x462168;},'LSzBT':function(_0x595f03,_0x30b603){return _0x595f03(_0x30b603);},'ZYLAO':function(_0x2a54e9,_0x57c73e){return _0x2a54e9(_0x57c73e);},'LNnYh':function(_0x50c848,_0x128998){return _0x50c848+_0x128998;},'quUtH':function(_0x369005,_0x9cf5cd){return _0x369005-_0x9cf5cd;}},_0x308948=[..._0x484787];for(let _0x5e235a=0x0;_0x54247e[_0x43b239(0x9b,'H[Y3')](_0x5e235a,_0x308948['length']);){var _0x4ad889=_0x308948[_0x5e235a];_0x54247e['gXiZN']('(',_0x4ad889)&&')'===_0x308948[_0x5e235a+0x1]?(_0x308948[_0x43b239(0xeb,'3HTJ')](_0x5e235a,0x2),_0x5e235a=Math[_0x43b239(0x117,'#TCZ')](0x0,_0x54247e['oHPPn'](_0x5e235a,0x1))):!isLogicOp(_0x4ad889)||_0x54247e['IHQcR'](0x0,_0x5e235a)&&_0x54247e[_0x43b239(0x7f,'oWyA')](_0x5e235a,_0x54247e[_0x43b239(0xc2,'lP!8')](_0x308948[_0x43b239(0xa5,'uW0K')],0x1))&&_0x54247e[_0x43b239(0x13f,'lMaZ')]('(',_0x308948[_0x5e235a-0x1])&&_0x54247e[_0x43b239(0xe7,'&!SC')](')',_0x308948[_0x54247e[_0x43b239(0xaa,'rNm[')](_0x5e235a,0x1)])?_0x54247e[_0x43b239(0x9f,'y)9K')](isLogicOp,_0x4ad889)&&_0x54247e[_0x43b239(0xf2,'3HTJ')](isLogicOp,_0x308948[_0x5e235a+0x1])?_0x308948['splice'](_0x54247e[_0x43b239(0xa9,'Mj7i')](_0x5e235a,0x1),0x1):_0x5e235a++:(_0x308948[_0x43b239(0x92,'wbfK')](_0x5e235a,0x1),_0x5e235a=Math[_0x43b239(0x94,'y)9K')](0x0,_0x54247e['quUtH'](_0x5e235a,0x1)));}return _0x308948;},sanitizeAndRewriteQuery=(_0x32b6cb,_0x3276d9,_0x30ca5e)=>{var _0x36da20=_0x461525,_0xb7654f={'wEAFj':function(_0x3999b9,_0x56cdcd){return _0x3999b9<_0x56cdcd;},'ScgUI':function(_0x58b3ed,_0x507b2f){return _0x58b3ed-_0x507b2f;}};if(_0x32b6cb&&_0x32b6cb[_0x36da20(0x11c,'au$v')]){var _0x3e737e,_0x418aa4=_0x32b6cb['SELECT'];if(Array['isArray'](_0x418aa4[_0x36da20(0x7e,'YoR9')])&&_0xb7654f[_0x36da20(0x138,'#F]L')](0x0,_0x418aa4[_0x36da20(0x113,'Rvf2')][_0x36da20(0x12b,'YoR9')])){var _0x4630bf,_0x5a5217,_0xfc2ed,_0x87b66b,_0x21dfbb=[];for(_0x4630bf of _0x418aa4[_0x36da20(0x10b,'#F]L')])_0x4630bf[_0x36da20(0xf1,'WZY^')]?_0x21dfbb[_0x36da20(0x111,'Rvf2')](_0x4630bf):(_0x5a5217=_0x4630bf[_0x36da20(0xdb,'Rvf2')]?_0x4630bf[_0x36da20(0x96,'au$v')][_0xb7654f[_0x36da20(0xee,'&vA!')](_0x4630bf[_0x36da20(0x9d,'3HTJ')][_0x36da20(0x8a,'WZY^')],0x1)]:_0x4630bf,_0xfc2ed=_0x4630bf['as']||_0x30ca5e[_0x36da20(0xf8,'C1GW')][_0x5a5217]||_0x5a5217,(_0x87b66b=_0x3276d9[_0x36da20(0x115,'ciTK')]?.[_0xfc2ed])&&(_0x87b66b[_0x36da20(0xa2,'&vA!')]||_0x87b66b[_0x36da20(0xad,'lv^l')])||(_0x87b66b=_0x30ca5e[_0x36da20(0xac,'mQC9')][_0xfc2ed]||_0x5a5217)&&_0x21dfbb[_0x36da20(0x118,'C1GW')]((0x0,column_builders_1[_0x36da20(0xc6,']#Sm')])(_0x3276d9,_0xfc2ed,_0x87b66b,!0x0)));_0x418aa4[_0x36da20(0x76,'&!SC')]=0x0<_0x21dfbb[_0x36da20(0x82,'^T[y')]?_0x21dfbb:['*'];}if(_0x418aa4[_0x36da20(0xdd,'&!SC')]&&((_0x3e737e=(0x0,exports[_0x36da20(0xef,'&vA!')])(_0x418aa4[_0x36da20(0xda,'uW0K')],_0x3276d9,_0x30ca5e[_0x36da20(0x12e,'ozBP')]))&&_0xb7654f[_0x36da20(0xf3,'lMaZ')](0x0,_0x3e737e[_0x36da20(0xf4,'wbfK')])?_0x418aa4[_0x36da20(0xa8,'(UQB')]=_0x3e737e:delete _0x418aa4[_0x36da20(0x9a,'AaJe')]),Array[_0x36da20(0x13c,'76gD')](_0x418aa4[_0x36da20(0xe6,'jQOd')])){var _0x15b4d9,_0x24f35b=[];for(_0x15b4d9 of _0x418aa4[_0x36da20(0x75,'wbfK')]){var _0x4c358e,_0x5d948f=_0x15b4d9[_0x36da20(0x129,'y)9K')]?_0x15b4d9[_0x36da20(0xfd,'sQ3W')][0x0]:null;_0x5d948f&&(_0x4c358e=_0x3276d9[_0x36da20(0xce,'[zRK')]?.[_0x5d948f],_0x5d948f=_0x30ca5e[_0x36da20(0xfb,'iU^K')][_0x5d948f],_0x4c358e)&&!_0x4c358e[_0x36da20(0x137,'ciTK')]&&!_0x4c358e[_0x36da20(0xd1,'&vA!')]&&_0x5d948f&&_0x24f35b[_0x36da20(0xcd,'uW0K')]({'ref':[_0x5d948f],'sort':_0x15b4d9[_0x36da20(0xca,'lP!8')]||_0x36da20(0x125,'8Tsf')});}_0xb7654f[_0x36da20(0x13b,'YoR9')](0x0,_0x24f35b[_0x36da20(0x81,'E29)')])?_0x418aa4[_0x36da20(0x107,'E29)')]=_0x24f35b:delete _0x418aa4[_0x36da20(0x8c,'[zRK')];}}return _0x32b6cb;};exports[_0x461525(0x100,'oWyA')]=sanitizeAndRewriteQuery;function _0x83a0(_0x3d47a2,_0x11bdc4){_0x3d47a2=_0x3d47a2-0x71;var _0x2c852f=_0x2c85();var _0x83a0d2=_0x2c852f[_0x3d47a2];if(_0x83a0['ywWjRL']===undefined){var _0x458f7a=function(_0x5ce709){var _0x48b455='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x42c082='',_0x5cec44='';for(var _0x185976=0x0,_0x4c2d65,_0x3eec8e,_0x389716=0x0;_0x3eec8e=_0x5ce709['charAt'](_0x389716++);~_0x3eec8e&&(_0x4c2d65=_0x185976%0x4?_0x4c2d65*0x40+_0x3eec8e:_0x3eec8e,_0x185976++%0x4)?_0x42c082+=String['fromCharCode'](0xff&_0x4c2d65>>(-0x2*_0x185976&0x6)):0x0){_0x3eec8e=_0x48b455['indexOf'](_0x3eec8e);}for(var _0x4b5ad2=0x0,_0x5aa14e=_0x42c082['length'];_0x4b5ad2<_0x5aa14e;_0x4b5ad2++){_0x5cec44+='%'+('00'+_0x42c082['charCodeAt'](_0x4b5ad2)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5cec44);};var _0x16c595=function(_0x9c33b2,_0x210fab){var _0x4055b9=[],_0x426896=0x0,_0x357ad4,_0x2fc63b='';_0x9c33b2=_0x458f7a(_0x9c33b2);var _0x5d28ea;for(_0x5d28ea=0x0;_0x5d28ea<0x100;_0x5d28ea++){_0x4055b9[_0x5d28ea]=_0x5d28ea;}for(_0x5d28ea=0x0;_0x5d28ea<0x100;_0x5d28ea++){_0x426896=(_0x426896+_0x4055b9[_0x5d28ea]+_0x210fab['charCodeAt'](_0x5d28ea%_0x210fab['length']))%0x100,_0x357ad4=_0x4055b9[_0x5d28ea],_0x4055b9[_0x5d28ea]=_0x4055b9[_0x426896],_0x4055b9[_0x426896]=_0x357ad4;}_0x5d28ea=0x0,_0x426896=0x0;for(var _0x47c12b=0x0;_0x47c12b<_0x9c33b2['length'];_0x47c12b++){_0x5d28ea=(_0x5d28ea+0x1)%0x100,_0x426896=(_0x426896+_0x4055b9[_0x5d28ea])%0x100,_0x357ad4=_0x4055b9[_0x5d28ea],_0x4055b9[_0x5d28ea]=_0x4055b9[_0x426896],_0x4055b9[_0x426896]=_0x357ad4,_0x2fc63b+=String['fromCharCode'](_0x9c33b2['charCodeAt'](_0x47c12b)^_0x4055b9[(_0x4055b9[_0x5d28ea]+_0x4055b9[_0x426896])%0x100]);}return _0x2fc63b;};_0x83a0['JWDxjX']=_0x16c595,_0x83a0['lkcFob']={},_0x83a0['ywWjRL']=!![];}var _0x3a4188=_0x2c852f[0x0];_0x83a0['XWJDfZ']!==_0x3a4188&&(_0x83a0['lkcFob']={},_0x83a0['XWJDfZ']=_0x3a4188);var _0x47a2f0=_0x83a0['lkcFob'][_0x3d47a2];return _0x47a2f0===undefined?(_0x83a0['MraDlZ']===undefined&&(_0x83a0['MraDlZ']=!![]),_0x83a0d2=_0x83a0['JWDxjX'](_0x83a0d2,_0x11bdc4),_0x83a0['lkcFob'][_0x3d47a2]=_0x83a0d2):_0x83a0d2=_0x47a2f0,_0x83a0d2;}function _0x2c85(){var _0x394dcb=['WQqOnCoigqW','W6e6k8oqWQyq','oqFdTCooW5LJ','pmoJWP4','WPfOWQjKB0FcSCocWOddRWtcJXDqWPtdRau','lCkoW7VdUCkMc8kQ','lMrSW5dcLW','baS9W7vJkSkS','cSkWjCogDq','eYhdQ8kTWRRcQNZdLSk2F2ldU8oWWOO','trxdMCkbas8','nvL1u2qt','W6VcScxdMmoUoalcHIOpW4XQWPrv','i3DeW4hdRSkBk3Pyx1b0W7dcQq','W7xcVchdNG','bGO1','DCkug1eCWQPXWROhfSkHWRq','h1nuW6ZcS13cIW15W6H9hXCeW5q','ary+W60','kSkdWOWIWQZcNa','pCkeWO40','WRJcJLfxEgfV','nh5wW57dOSkboKO','WQ/cTmohW7FcGW','n8ootHTb','WQRcKCo1u8oGc17dLKpcUmkxBKRcH8kmWRJcKmk1WP/cNmoFBSoG','pxDDW5tdS8kh','WQRcGmo3u8o3bW','WOVdQ8oBW7xcUSkGlG','kCkCW4i','iCoctW','W4ymW5m','kbzgqXW','WOddK8o6W7pcRq','m8ojW5yjW4fLWQldICobW5BdLSkZFmk/uq','W4z1W5FdO04','WQddLLuXW7i','uhFcQ8oRW6ddQYZdNSkLrK7dKSoE','mSodtq','W5/dJK/cMuhcJa','cmkUW4ddICka','W6xdT296Fq','W6nBAfVdSmkqn8oWgLO','WROGmCovaGON','jmouW5eAW4z1','jCkjWO4WWRxcMSoC','W4RdQrnWWPeJ','W5SlW58sWQpdQq','luvcW67dTuRcII8','W4GVWQr5zG','W6ddTfpcQuC','W6XAW6TkmG','WQ8wnSoLa8kTW7ldQSoIWOyeqaGzW5C','jNpcG2RcICkYf2hdGCkvE8kcjW','h0PiWOaY','W57dN0RcGKBcN8omWRZdHr97FSkkWPW','kbhdVSk5WR4','WOddTNaOW73cUW','WPZdSmo1W4hcGq','WONdOwmOW7/cIXNdVmoufcpdU8kZ','WR1TWPr9','W45HELRdLmklnSodbfbIWO3cPd3cOa','afDt','WQFcIuzA','kxpcJh7cImkicW','W4ymW4ifWQNdQt80W57dJCkMemo7sW','W5efW5aAWQxdSY4e','W7BdSwjksSolwrqhWRNcP2enWQu','W5tdQrS','W6RcTdZdG8oZjr3cObGqW6XsWPHvW4/cMa','W5qubSoGWRi','WRtdNSoc','rWldMmkl','jCoHWOT6','qaldKmkv','zSopaq8f','f0RdTsC','WQ56WOr8kMidWQNdS8oYdmoXlCkgrG','WQ56WOr8kMidWRJdP8o6a8oSo8kc','WOpcH8kRWRpdR8ofwmkVWQhdHCkFu8o2WOxdLSoAW6u','lCoGWQ17sxVdSW','WONdQ24UW6FcTW','i8kgWPm','CSotjGe','kt3dMtBcNJW','W7RdTxjksSoj','W5BdUq5/','WRlcKfbFB01Iuq','oMNcK2m','kmkyW5tdRmkGaG','W6GQiSonfa','n8oYWOjGt3pdSmo8W4m0zSk2sSoZW68O','CmkqzSkYqCoKwZ8lWQNcRXpdUSke','lmodW44cW5a','W4JcPGTuW5Kq','WQvhWOvfba','WQxcMvm','WQ07jmos','WOz8xCkilbRcRwrvxSkAWQy','W5hdPbHLWOa','WP/cSmoT','FComWO3dJ8k7gCkzWRpdQa','DCkDDmkYtq','WRObyCoSta','n8ktWO8+W6/dGG','W6j1W4HPjW','lHRdSSoDW55ZWRNcHmkcmSkRsKhdOq','WO03pXRcHmony8onhMLlWQxcMa','W50DdCoWWOyW','W7JcPZxdMq','EKb2FqHmWObX','j8kGWOGKqSoxkq','wmkBAmk0Aq','WPzXtmk7jq','lHRdOW','vHJdKSkuea','m8owrWbhW7W','W5tcTJr9WQtdReBdOmo3eYxdOmkm','WQpcRenqsSoMyW0','WP8Qjmo0pG','WR8OlCoiaWiXW5/cUfpcR8ouWO5eF1u','W7bLW516lmow','i8kEWPiKWRBcKa','gSo/zYHR','mH3dTHFcGa','WRxcLCo1xCoGcG','z8knyCkHrSo0','W5uncmoGWPugWQK','ery1W6fD','WR8mACoXxCoRW6lcMarzW7pcMCkR','WOZdVue7W6hcVG8','oSkeWQRcOCkvW5C','WReCiSo2bSknW7JdVSo1WOqgEGi','s1XAWOq','WPhcINq','phxcKN/cKmkhfa','W40IWRz5AKBcUCoVW5ZdOZ/cIr9r','mmkzgSomuWpdImkHoKtdI0/dQJWfbX8Qimk7W5ZdSWG','W6BdHaegpraMBmolhc1Gna','WR4Sjq','W5L8W4tdUexdTG','oSk3WPSZwCoHnCkdWOxdHMu/WOFcNmoP','WQXQWObM','nSoeW4qjW40','tGldK8kdbWxdRG','W5rLW4ldSexdTq','k8oHWOHSsvJdSW','WQmVpJaBW7JdVSkvmSopfG','W5eqc8oGWOGQWQm','W5NcRCoNW6FcPSkqive','ce5tW7/cTe0','WQKmySo/xmoIW4i','nZ3dGcpcGYaIkxb6tCkhW6LR','WP/cVuPtWOO4ghbb','WP3cOmo4W44','fqeMW7jNmmk6kKXEW7Cag8oQ','WO7cUSoNW5pcUwK8','n8oNWP5Gvx0','hK/dOZ7cS8k/gmof','vLWwW7nGdmk1aG','afDB','WR0CD8o2','eJddRSk2WR3cUq','DCkGW547aIJcUSorW6GttmkhCq','WODnv8kTW513WPTCWOr2e8o7','W6CSW7KYWOpdIq','W7/cRdBdJ8ow','W5bHy0/dICkx','WP7cIGVdGHNdMSkFW4NdOqTZxmkTWRG','FcJdKt/dKCkRaepdOmktrq','aGG0W61RkSkRgG','W5hdNYqpWQKsWQFdRGLTcJpcImom','WOddSmohW7q','W5XYW5BdTeC','lGDg','cmkrW5NdS8kG','uLPOWP4JW4XQ','fsxdRSk4WRBcQG','nSkyW5W','BSkqF8kNxmo4','cWe/W6D6la','pmkeWO4SW6VdQbK','WQ3cN8oxvCoJb1BdSgpcPCkw','dsVdV8k+WR/cINBdH8kIFepdOmoX','DCotgbO2igtdICoPlCkA','W5ZdOCk6WPtdOtb5W68IW5BcJNxdOq','k8kzbW','WO50W7y/maFdQCoNW4/dMHpcOde','EuHLWR0g','W5X8W4i','ASkuz8kPrSo3','lmkkemoavsJdIW','duRdTcFcO8kWaa','W4u6jSotWO8','WROhufhcIG','EZX1uInQWOe','eceqW4zK','ogfYW4hdTCkonW','W6ldMmofW4ldGW','WRaIpsSq','nr7dUchcNa','W5BcPGm','dIBdTSk6WRdcQG','W77dSwPeumog','W6ddSxnrtCoABdqnWQ/cG2elWR3dVG','W6D4W5PPk8ogpZpdVxDXW5TNAq','W5erW4uwWQ7dUq','WRBcGSo/x8oMif0','yCkAFCk1rCo+tq'];_0x2c85=function(){return _0x394dcb;};return _0x2c85();}
+"use strict";
+/**
+ * @file cqn-rewriter.ts
+ * @description Rewrites CQN queries from local field names to remote field
+ * names, and sanitises them so they contain only fields that actually exist
+ * on the remote backend.
+ *
+ * Two entry points:
+ * - {@link rewriteQueryCqn}      — recursively translate every `ref` in a query.
+ * - {@link sanitizeAndRewriteQuery} — same, but also strips virtual / `$calc` /
+ *                                     unmapped fields (needed for expand
+ *                                     children where the incoming CQN may
+ *                                     contain fields the backend cannot handle).
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.sanitizeAndRewriteQuery = exports.sanitizeCqnWhere = exports.rewriteQueryCqn = exports.rewriteFromNode = exports.rewriteCqnNode = exports.rewriteRefArray = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+const column_builders_1 = require("./column-builders");
+/**
+ * Rewrites the terminal segment of a CQN `ref` array using the alias map.
+ * The array is mutated in place and also returned for chaining.
+ *
+ * @param ref  CQN ref array.
+ * @param map  Alias map.
+ */
+const rewriteRefArray = (ref, map) => {
+    if (!Array.isArray(ref) || ref.length === 0)
+        return ref;
+    const last = ref[ref.length - 1];
+    if (map[last])
+        ref[ref.length - 1] = map[last];
+    return ref;
+};
+exports.rewriteRefArray = rewriteRefArray;
+/**
+ * Recursively rewrites CQN nodes, applying the alias map to every `ref`
+ * array. Nested `$expand` nodes are rewritten against the target entity's
+ * own alias map (not the parent's).
+ *
+ * @param node       CQN node (array or object).
+ * @param map        Alias map for the current scope.
+ * @param entityDef  Current-scope entity definition.
+ * @param cache      Per-service metadata cache.
+ * @param seen       Cycle guard (do not pass explicitly at call sites).
+ */
+const rewriteCqnNode = (node, map, entityDef, cache, seen = new Set()) => {
+    if (Array.isArray(node))
+        return node.map((n) => (0, exports.rewriteCqnNode)(n, map, entityDef, cache, seen));
+    if (!node || typeof node !== 'object')
+        return node;
+    if (seen.has(node))
+        return node;
+    seen.add(node);
+    if (node.ref) {
+        const localName = node.ref[node.ref.length - 1];
+        node.ref = (0, exports.rewriteRefArray)(node.ref, map);
+        if (node.expand && entityDef?.elements?.[localName]?.target) {
+            const targetDef = cds_1.default.model.definitions[entityDef.elements[localName].target];
+            if (targetDef) {
+                const targetMap = (0, alias_maps_1.getAliasMaps)(targetDef, cache).localToRemote;
+                node.expand = (stripAliasesInternal((0, exports.rewriteCqnNode)(node.expand, targetMap, targetDef, cache, seen)));
+            }
+        }
+    }
+    if (node.xpr)
+        node.xpr = (0, exports.rewriteCqnNode)(node.xpr, map, entityDef, cache, seen);
+    if (node.list)
+        node.list = (0, exports.rewriteCqnNode)(node.list, map, entityDef, cache, seen);
+    if (node.expand)
+        node.expand = (0, exports.rewriteCqnNode)(node.expand, map, entityDef, cache, seen);
+    if (node.having)
+        node.having = (0, exports.rewriteCqnNode)(node.having, map, entityDef, cache, seen);
+    if (node.where)
+        node.where = (0, exports.rewriteCqnNode)(node.where, map, entityDef, cache, seen);
+    if (node.on)
+        node.on = (0, exports.rewriteCqnNode)(node.on, map, entityDef, cache, seen);
+    if (node.args)
+        node.args = (0, exports.rewriteCqnNode)(node.args, map, entityDef, cache, seen);
+    return node;
+};
+exports.rewriteCqnNode = rewriteCqnNode;
+// Internal duplicate of stripAliases to avoid a circular import with
+// column-builders (which imports from association-meta and thus everything
+// else). Small and identical to `column-builders.ts:stripAliases`.
+const stripAliasesInternal = (columns) => {
+    if (!Array.isArray(columns))
+        return columns;
+    return columns.map((col) => {
+        if (col && typeof col === 'object') {
+            const { as, ...rest } = col;
+            return rest;
+        }
+        return col;
+    });
+};
+/**
+ * Rewrites a CQN FROM node in-place, including nested JOIN args, inline
+ * key predicates (`where`), and expand columns.
+ *
+ * @param node       CQN FROM node.
+ * @param map        Alias map.
+ * @param entityDef  Optional entity definition.
+ * @param cache      Per-service metadata cache.
+ */
+const rewriteFromNode = (node, map, entityDef, cache) => {
+    if (!node || typeof node !== 'object')
+        return node;
+    if (node.ref) {
+        node.ref = (0, exports.rewriteRefArray)(node.ref, map);
+        if (node.where)
+            node.where = (0, exports.rewriteCqnNode)(node.where, map, entityDef, cache);
+    }
+    if (node.args)
+        node.args = node.args.map((a) => (0, exports.rewriteFromNode)(a, map, entityDef, cache));
+    if (node.on)
+        node.on = (0, exports.rewriteCqnNode)(node.on, map, entityDef, cache);
+    if (node.expand)
+        node.expand = (0, exports.rewriteCqnNode)(node.expand, map, entityDef, cache);
+    return node;
+};
+exports.rewriteFromNode = rewriteFromNode;
+/**
+ * Rewrites every `ref` node inside a CQN query (columns, where, orderBy,
+ * having, groupBy, from) using the given alias map.
+ *
+ * @param query      Mutable CQN query.
+ * @param map        Local→remote alias map for the query's target entity.
+ * @param cache      Per-service metadata cache.
+ * @param entityDef  Optional entity definition (enables nested-expand rewriting).
+ */
+const rewriteQueryCqn = (query, map, cache, entityDef) => {
+    const select = query?.SELECT;
+    if (!select)
+        return;
+    const seen = new Set();
+    if (select.columns)
+        select.columns = (0, exports.rewriteCqnNode)(select.columns, map, entityDef, cache, seen);
+    if (select.where)
+        select.where = (0, exports.rewriteCqnNode)(select.where, map, entityDef, cache, seen);
+    if (select.orderBy)
+        select.orderBy = (0, exports.rewriteCqnNode)(select.orderBy, map, entityDef, cache, seen);
+    if (select.having)
+        select.having = (0, exports.rewriteCqnNode)(select.having, map, entityDef, cache, seen);
+    if (select.groupBy)
+        select.groupBy = (0, exports.rewriteCqnNode)(select.groupBy, map, entityDef, cache, seen);
+    if (select.from)
+        select.from = (0, exports.rewriteFromNode)(select.from, map, entityDef, cache);
+};
+exports.rewriteQueryCqn = rewriteQueryCqn;
+/**
+ * Recursively filters and rewrites WHERE / HAVING clause tokens: drops any
+ * predicate that references a virtual / `$calc` / unmapped field, and cleans
+ * up dangling `AND`/`OR` operators left behind by removals.
+ *
+ * @param whereClause       CQN WHERE array.
+ * @param targetDef         Target entity definition.
+ * @param localToRemoteMap  Alias map.
+ * @returns                 Sanitised WHERE array, or `null` when nothing remains.
+ */
+const sanitizeCqnWhere = (whereClause, targetDef, localToRemoteMap) => {
+    if (!Array.isArray(whereClause) || whereClause.length === 0)
+        return null;
+    const rewritten = [];
+    let i = 0;
+    while (i < whereClause.length) {
+        const token = whereClause[i];
+        if (typeof token === 'string') {
+            // and/or/parentheses are kept here; operators left dangling by a removed predicate are cleaned up below
+            rewritten.push(token);
+            i++;
+            continue;
+        }
+        if (Array.isArray(token)) {
+            const groupRes = (0, exports.sanitizeCqnWhere)(token, targetDef, localToRemoteMap);
+            if (groupRes && groupRes.length > 0)
+                rewritten.push(groupRes);
+            i++;
+            continue;
+        }
+        if (token && typeof token === 'object' && token.ref) {
+            const localField = token.ref[0];
+            const element = targetDef.elements?.[localField];
+            if (!element || element.virtual || element.$calc || !localToRemoteMap[localField]) {
+                // Skip the entire "ref op val" triple
+                i += 3;
+                continue;
+            }
+            rewritten.push({ ref: [localToRemoteMap[localField]] });
+            i++;
+            continue;
+        }
+        rewritten.push(token);
+        i++;
+    }
+    // Clean up trailing operators (e.g. dangling 'and' after a removed predicate); a closing parenthesis stays
+    while (rewritten.length > 0) {
+        const last = rewritten[rewritten.length - 1];
+        if (typeof last !== 'string' || last === ')')
+            break;
+        rewritten.pop();
+    }
+    const cleaned = dropDanglingLogic(rewritten);
+    return cleaned.length > 0 ? cleaned : null;
+};
+exports.sanitizeCqnWhere = sanitizeCqnWhere;
+const isLogicOp = (t) => typeof t === 'string' && (t.toLowerCase() === 'and' || t.toLowerCase() === 'or');
+/**
+ * Removes what a dropped predicate leaves behind: empty `( )` groups, and
+ * `and`/`or` operators that are leading, trailing, next to a parenthesis or
+ * directly after another operator (the FIRST of two adjacent operators wins).
+ */
+const dropDanglingLogic = (tokens) => {
+    const out = [...tokens];
+    for (let i = 0; i < out.length;) {
+        const t = out[i];
+        if (t === '(' && out[i + 1] === ')') {
+            out.splice(i, 2);
+            i = Math.max(0, i - 1);
+            continue;
+        }
+        if (isLogicOp(t) && (i === 0 || i === out.length - 1 || out[i - 1] === '(' || out[i + 1] === ')')) {
+            out.splice(i, 1);
+            i = Math.max(0, i - 1);
+            continue;
+        }
+        if (isLogicOp(t) && isLogicOp(out[i + 1])) {
+            out.splice(i + 1, 1);
+            continue;
+        }
+        i++;
+    }
+    return out;
+};
+/**
+ * Sanitises and rewrites CQN query parameters (`$select`, `$filter`,
+ * `$orderby`) so they contain only fields that exist on the remote backend.
+ * Virtual, `$calc`, and unmapped elements are removed rather than translated —
+ * they would otherwise trigger 400 responses.
+ *
+ * @param cqn        Mutable CQN query.
+ * @param targetDef  Target entity definition.
+ * @param aliasMaps  Target-side alias maps.
+ * @returns          The same CQN, mutated.
+ */
+const sanitizeAndRewriteQuery = (cqn, targetDef, aliasMaps) => {
+    if (!cqn || !cqn.SELECT)
+        return cqn;
+    const select = cqn.SELECT;
+    // 1. $select columns
+    if (Array.isArray(select.columns) && select.columns.length > 0) {
+        const validColumns = [];
+        for (const col of select.columns) {
+            if (col.expand) {
+                validColumns.push(col);
+                continue;
+            }
+            const remoteFieldName = col.ref ? col.ref[col.ref.length - 1] : col;
+            const fieldName = col.as || aliasMaps.remoteToLocal[remoteFieldName] || remoteFieldName;
+            const element = targetDef.elements?.[fieldName];
+            if (element && (element.virtual || element.$calc))
+                continue;
+            const remoteName = aliasMaps.localToRemote[fieldName] || remoteFieldName;
+            if (!remoteName)
+                continue;
+            validColumns.push((0, column_builders_1.buildRemoteColumn)(targetDef, fieldName, remoteName, true));
+        }
+        select.columns = validColumns.length > 0 ? validColumns : ['*'];
+    }
+    // 2. $filter
+    if (select.where) {
+        const sanitizedWhere = (0, exports.sanitizeCqnWhere)(select.where, targetDef, aliasMaps.localToRemote);
+        if (sanitizedWhere && sanitizedWhere.length > 0)
+            select.where = sanitizedWhere;
+        else
+            delete select.where;
+    }
+    // 3. $orderby
+    if (Array.isArray(select.orderBy)) {
+        const validOrderBy = [];
+        for (const order of select.orderBy) {
+            const fieldName = order.ref ? order.ref[0] : null;
+            if (!fieldName)
+                continue;
+            const element = targetDef.elements?.[fieldName];
+            const remoteName = aliasMaps.localToRemote[fieldName];
+            if (element && !element.virtual && !element.$calc && remoteName) {
+                validOrderBy.push({ ref: [remoteName], sort: order.sort || 'asc' });
+            }
+        }
+        if (validOrderBy.length > 0)
+            select.orderBy = validOrderBy;
+        else
+            delete select.orderBy;
+    }
+    return cqn;
+};
+exports.sanitizeAndRewriteQuery = sanitizeAndRewriteQuery;
