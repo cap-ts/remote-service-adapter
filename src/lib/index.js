@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RemoteService = void 0;
-const index_js_1 = require("./_RemoteService/index.js");
-Object.defineProperty(exports, "RemoteService", { enumerable: true, get: function () { return index_js_1.RemoteService; } });
+exports.RemoteApplicationService = void 0;
+const RemoteApplicationService_js_1 = require("./RemoteApplicationService.js");
+Object.defineProperty(exports, "RemoteApplicationService", { enumerable: true, get: function () { return RemoteApplicationService_js_1.RemoteApplicationService; } });

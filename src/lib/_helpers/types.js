@@ -1,7 +1,7 @@
 "use strict";
 /**
  * @file types.ts
- * @description Shared type definitions for the RemoteService helper package.
+ * @description Shared type definitions for the RemoteApplicationService helper package.
  *
  * All types here are structural — they describe the shape of CDS entity
  * definitions, CQN nodes, and internal alias/metadata caches. They exist to

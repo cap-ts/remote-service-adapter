@@ -3,7 +3,7 @@
  * @file index.ts
  * @description Barrel export for the `remote-service` helper package.
  *
- * The main `RemoteService.ts` orchestrates the READ dispatch flow and
+ * The main `RemoteApplicationService.ts` orchestrates the READ dispatch flow and
  * delegates all heavy-lifting (CQN rewriting, alias resolution, expand
  * materialisation, SOAP integration, in-memory filtering / sorting) to the
  * focused modules re-exported from this file.

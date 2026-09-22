@@ -1,3 +1,3 @@
-import { RemoteService } from './_RemoteService/index.js';
-export { RemoteService };
+import { RemoteApplicationService } from './RemoteApplicationService.js';
+export { RemoteApplicationService };
 //# sourceMappingURL=index.d.ts.map

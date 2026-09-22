@@ -49,7 +49,7 @@ const M = 'projection-pipeline';
 /**
  * Executes the simple-projection pipeline for a single remote entity.
  *
- * @param serviceName  The owning RemoteService's name (for local-service detection).
+ * @param serviceName  The owning RemoteApplicationService's name (for local-service detection).
  * @param req          Incoming CAP request.
  * @param next         CAP next-handler continuation.
  * @param entityDef    CDS entity definition.

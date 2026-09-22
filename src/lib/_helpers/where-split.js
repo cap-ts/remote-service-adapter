@@ -5,7 +5,7 @@
  * the remote backend from those that must be evaluated in memory.
  *
  * The split happens at the top-level AND boundary, keeping individual
- * sub-expressions intact. This is the cornerstone of `RemoteService`'s
+ * sub-expressions intact. This is the cornerstone of `RemoteApplicationService`'s
  * hybrid execution model.
  */
 Object.defineProperty(exports, "__esModule", { value: true });

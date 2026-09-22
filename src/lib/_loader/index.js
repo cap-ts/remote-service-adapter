@@ -3,35 +3,35 @@
  * @file index.ts
  * @description CAP plugin entry (`cds-plugin.js` -> `require('./src/lib/_loader')()`).
  *
- * Makes {@link RemoteService} the implementation of local CAP services that are projections on external OData / SOAP
- * services, without a handler file per service.
+ * Makes {@link RemoteApplicationService} the implementation of any local CAP service explicitly annotated `@remote`,
+ * without a handler file per service.
  *
  * ## Opt-in
- * Per external service, in the consuming project's `cds.requires`:
+ * Annotate the service itself:
  *
- * ```json
- * { "cds": { "requires": { "MyExternalService": {
- *     "kind": "odata",
- *     "model": "srv/external/MyExternalService",
- *     "credentials": { "url": "https://example.com" },
- *     "remoteService": true
- * } } } }
+ * ```cds
+ * @remote
+ * service MyService {
+ *     entity Foo as projection on SomeOtherService.Foo;
+ * }
  * ```
  *
- * Supported kinds: `odata`, `odata-v2`, `odata-v4`, `soap`. Any other kind with the flag is reported and ignored.
+ * `@remote` is the entire opt-in surface. This plugin does not inspect what the service's entities project on, and it
+ * does not look at `cds.requires` to decide who gets patched.
  *
  * ## What it does
- * On every `cds.on('loaded')` (raw CSN, before linking) every LOCAL service that has at least one entity selecting from an
- * opted-in external service gets `@impl` pointing at this package's `RemoteService`. CAP then instantiates it for the
- * service, and `RemoteService` reads through `cds.connect.to(<external>)`.
+ * On every `cds.on('loaded')` (raw CSN, before linking), every LOCAL service carrying `@remote` gets `@impl` pointing
+ * at this package's `RemoteApplicationService`. CAP then instantiates it for the service, and `RemoteApplicationService`
+ * reads through `cds.connect.to(<owning service of whatever the entity actually projects on>)`.
  *
  * ## What it never does
- * - It does not touch the external service itself. `cds.requires.<external>.impl` (your own client extension) keeps
- *   working. Pointing it at `RemoteService` would make the service call itself, because `RemoteService` reads through
- *   `cds.connect.to(<owning service>)`, which returns the same cached instance.
+ * - It does not touch a service marked external itself (`@cds.external`, `@external`, `requires.<name>.external`):
+ *   `RemoteApplicationService` reads through `cds.connect.to(<owning service>)`, which would return the same cached
+ *   instance and make the service call itself.
  * - It never replaces an implementation the project already has: an existing `@impl`, a `cds.requires.<local>.impl`,
  *   or a sibling handler file that CAP would pick up (`<name>.js` next to the `.cds`, or in `lib/` / `handlers/`).
- *   Such services can extend `RemoteService` themselves.
+ *   Such services can extend `RemoteApplicationService` themselves.
+ * - A service without `@remote` is left alone entirely, whatever its entities project on.
  *
  * See `.claude/docs/integration.md`.
  */
@@ -42,10 +42,6 @@ const fs = require("fs");
 const path = require("path");
 /** Name of the log channel (`DEBUG=remote-service` enables the debug lines). */
 const LOG_NAME = 'remote-service';
-/** Property of `cds.requires.<external>` that opts the external service in. */
-const OPT_IN_KEY = 'remoteService';
-/** External service kinds `RemoteService` can read from. */
-const SUPPORTED_KINDS = new Set(['odata', 'odata-v2', 'odata-v4', 'soap']);
 /**
  * Nearest `package.json` walking up from `startDir`: this module's own manifest. Not a fixed relative depth because the
  * compiled module runs one directory level deeper in the dev/test tree (under `build/`) than it does once installed in a
@@ -72,11 +68,11 @@ const PACKAGE_NAME = require(findPackageJson(__dirname)).name;
  * resolves it from `cds.root` (`node_modules`). It is only used when it resolves to the very same file; otherwise
  * (nested / linked installs that `cds.root` can not see) the absolute path is kept.
  *
- * @param moduleFile  Absolute path of this package's `_RemoteService` module.
+ * @param moduleFile  Absolute path of this package's `RemoteApplicationService` module.
  * @param root        `cds.root`.
  */
 const resolveImplSpecifier = (moduleFile, root) => {
-    const specifier = `${PACKAGE_NAME}/src/lib/_RemoteService`;
+    const specifier = `${PACKAGE_NAME}/src/lib/RemoteApplicationService`;
     try {
         return require.resolve(specifier, { paths: [root] }) === moduleFile ? specifier : moduleFile;
     }
@@ -86,49 +82,8 @@ const resolveImplSpecifier = (moduleFile, root) => {
 };
 /** Where CAP looks for a handler file next to the service's `.cds` file (see `@sap/cds/lib/srv/factory.js`). */
 const SIBLING_DIRS = ['/', '/lib/', '/handlers/'];
-/**
- * @param kind  `cds.requires.<name>.kind`.
- * @returns `true` for the kinds `RemoteService` supports.
- */
-const isSupportedKind = (kind) => SUPPORTED_KINDS.has(kind);
 /** Default file check: CAP's own (`cds.utils.isfile`, resolved against `cds.root`). */
 const defaultIsFile = (file) => !!cds_1.default.utils.isfile(file);
-const nameOf = (segment) => (typeof segment === 'string' ? segment : segment?.id);
-/**
- * Names of the entities a CSN `from` clause selects from, including all sides of a JOIN.
- *
- * @param from  `projection.from` / `query.SELECT.from` of a definition.
- * @param out   Accumulator (used by the recursion).
- * @returns The entity names in source order.
- */
-const collectSourceNames = (from, out = []) => {
-    if (!from || typeof from !== 'object')
-        return out;
-    if (Array.isArray(from.ref) && from.ref.length > 0) {
-        const name = nameOf(from.ref[0]);
-        if (name)
-            out.push(name);
-    }
-    for (const arg of from.args ?? [])
-        collectSourceNames(arg, out);
-    return out;
-};
-/**
- * Longest service definition whose name is a prefix of `entityName` (`Svc.Sub.Entity` -> `Svc.Sub`).
- *
- * @param definitions  `csn.definitions`.
- * @param entityName   Fully qualified entity name.
- */
-const owningServiceName = (definitions, entityName) => {
-    let owner;
-    for (const [name, def] of Object.entries(definitions)) {
-        if (def.kind !== 'service' || !entityName.startsWith(`${name}.`))
-            continue;
-        if (!owner || name.length > owner.length)
-            owner = name;
-    }
-    return owner;
-};
 /** `true` when the service is imported from an external model (`@cds.external`, `@external`, `requires.<name>.external`). */
 const isExternalService = (name, def, requires) => !!(def['@cds.external'] || def['@external'] || requires[name]?.external);
 /**
@@ -137,7 +92,7 @@ const isExternalService = (name, def, requires) => !!(def['@cds.external'] || de
  * A `.ts` handler counts even when `CDS_TYPESCRIPT` is not set. The CDS CLI sets it only for `cds serve` / `cds watch`, not
  * for `cds compile` / `cds build`; there the loader would not see `lib/X.ts`, write `@impl` into the CSN, and at runtime
  * (`gen/srv`, where the handler is compiled to `X.js`) CAP prefers the CSN's `@impl` over the sibling file: the project's own
- * implementation would be replaced by `RemoteService`.
+ * implementation would be replaced by `RemoteApplicationService`.
  *
  * @param def     CSN definition of the service.
  * @param isFile  File check, injectable for tests.
@@ -155,64 +110,32 @@ const hasSiblingImplementation = (def, isFile = defaultIsFile) => {
     }
     return false;
 };
-/** `true` for a `cds.requires` entry that opted in and has a supported kind. */
-const isOptedIn = (config) => config?.[OPT_IN_KEY] === true && isSupportedKind(config.kind);
 /**
- * Local services that select from an opted-in external service, with the external services they use.
- *
- * @param csn       Raw CSN.
- * @param requires  `cds.env.requires`.
- * @returns Map local service name -> external service names.
- */
-const findRemoteServiceTargets = (csn, requires) => {
-    const definitions = csn.definitions;
-    const targets = new Map();
-    for (const [name, def] of Object.entries(definitions)) {
-        if (def.kind !== 'entity')
-            continue;
-        const local = owningServiceName(definitions, name);
-        if (!local)
-            continue;
-        for (const source of collectSourceNames(def.projection?.from ?? def.query?.SELECT?.from)) {
-            const external = owningServiceName(definitions, source);
-            if (!external || external === local || !isOptedIn(requires[external]))
-                continue;
-            const used = targets.get(local) ?? new Set();
-            used.add(external);
-            targets.set(local, used);
-        }
-    }
-    return targets;
-};
-/**
- * Sets `@impl` on every eligible local service (see the file header) and reports opt-ins with an unsupported kind.
+ * Sets `@impl` on every local service annotated `@remote`. A service without `@remote` is left alone entirely,
+ * whatever its entities project on.
  *
  * @param csn       Raw CSN (mutated).
  * @param requires  `cds.env.requires`.
- * @param implPath  `@impl` value: specifier or absolute path of the module whose default export is `RemoteService`.
+ * @param implPath  `@impl` value: specifier or absolute path of the module whose default export is `RemoteApplicationService`.
  * @param log       Optional logger.
  * @param isFile    File check, injectable for tests.
  * @returns Names of the services that received `@impl`.
  */
 const applyRemoteServiceImpl = (csn, requires, implPath, log, isFile = defaultIsFile) => {
     const patched = [];
-    for (const [name, config] of Object.entries(requires)) {
-        if (config?.[OPT_IN_KEY] === true && !isSupportedKind(config.kind)) {
-            log?.warn(`cds.requires.${name}.${OPT_IN_KEY} is ignored: kind '${config.kind}' is not one of ${[...SUPPORTED_KINDS].join(', ')}`);
-        }
-    }
-    for (const [local, externals] of findRemoteServiceTargets(csn, requires)) {
-        const def = csn.definitions[local];
-        if (isExternalService(local, def, requires))
+    for (const [name, def] of Object.entries(csn.definitions)) {
+        if (def.kind !== 'service' || !def['@remote'])
             continue;
-        const reason = def['@impl'] ? '@impl' : requires[local]?.impl ? 'cds.requires impl' : hasSiblingImplementation(def, isFile) ? 'handler file' : undefined;
+        if (isExternalService(name, def, requires))
+            continue;
+        const reason = def['@impl'] ? '@impl' : requires[name]?.impl ? 'cds.requires impl' : hasSiblingImplementation(def, isFile) ? 'handler file' : undefined;
         if (reason) {
-            log?.debug(`${local}: keeps its own implementation (${reason})`);
+            log?.debug(`${name}: keeps its own implementation (${reason})`);
             continue;
         }
         def['@impl'] = implPath;
-        patched.push(local);
-        log?.info(`${local}: RemoteService implements it (reads from ${[...externals].join(', ')})`);
+        patched.push(name);
+        log?.info(`${name}: RemoteApplicationService implements it (@remote)`);
     }
     return patched;
 };
@@ -223,7 +146,7 @@ const applyRemoteServiceImpl = (csn, requires, implPath, log, isFile = defaultIs
  */
 function loadPlugin() {
     const log = cds_1.default.log(LOG_NAME);
-    const moduleFile = require.resolve('../_RemoteService');
+    const moduleFile = require.resolve('../RemoteApplicationService');
     cds_1.default.on('loaded', (csn) => {
         if (!csn?.definitions)
             return;
@@ -237,14 +160,9 @@ module.exports = loadPlugin;
  * helpers are only reachable here.
  */
 module.exports.__test = {
-    OPT_IN_KEY,
-    isSupportedKind,
-    collectSourceNames,
-    owningServiceName,
     isExternalService,
     hasSiblingImplementation,
     findPackageJson,
     resolveImplSpecifier,
-    findRemoteServiceTargets,
     applyRemoteServiceImpl,
 };

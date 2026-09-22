@@ -58,7 +58,7 @@
     "src",
     "types/index.d.ts",
     "types/lib/index.d.ts",
-    "types/lib/_RemoteService/index.d.ts",
+    "types/lib/RemoteApplicationService.d.ts",
     "src/lib/**/*",
     "!**/.DS_Store"
   ],
