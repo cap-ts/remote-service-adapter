@@ -1,1 +1,80 @@
-function _0x1eb4(){var _0x524f16=['W7KOt2HCrSo2uKnBhCod','aCo4tmo4WQT/W448F8kdW5/dM8k/D8kidSkf','ydmLagVdO8oFvW9otq4','kSolhaf0ue3cOG','WQNcGmkzoCo4','o8kqwXOkWRTT','zmkraIbGvNxcUSowvZpcPutcTmo8W6e2','WQeiWPZdK3CQWP0','xJBdHJvdW6FcRCk4W6ZdRmon','WPhdU8o1W4HWWPKUxgP9W63dMvZcGmobiZ1bECkkW6BcSa','WRBdVctcO3NcHq','pSkgDa8mWRi','W6SXWPVcTSofnIJcMupdSg0o','zCoBkf9mW652iCkSdWFcIW','dSkqWPDPWPvQWPZdSSo9afldSq','W7yVEHuOE2zsW71wW5KkoJKFWP4','WRLbW6pdT8kx','rSohWPfVW6xdUgRcRe3dN8k1dq','kSksWRmpW4O7','WQGskvOaW6eQW5FcQuqp','W7ldKCk8WRtcLr0','nZCx','W7tdOMO','l8oifLxdISkqCCoteZ00W6mIWO0CmW','zmogW4pcNH/cO05Tg13cLbZcHCknD0lcKmkuv8kEqSkv','iZSDW4JdLK8','WQzBpmkyt1ddK8oNW7SvW5BdKH1vqmoKuM7cSuFcNx/cTJK','fgLMWR8GwwFdV1PrWQHHWPT8WQVdLZG','W7/dKmk2','nJ0CW5K','a8kykq','smoeW4u','WQRcNSoIW63dQGldS8oeW6HskmoBpeazWODBgG','D0pdJIi','WQNcUatcN29bihWOW5hdPCoTW4xcNCkFs8kMw8oxW7NdTSksvsW','g8oWsa','aSkSDtLeWQ/dUmkkW5v/WRjF','W7RcNaC','nmksWRS','W7xdQ8oJoJddQa','WRxcQCkHy2JcUtiyutXabmoH','tmkNeZT+vMtcVCozvW','nmkkDHWDWQG','W6tdP1VdL1FcUa','kJaBW5NdKeK','WQVcSWW','WOOTW4ac','rmofWPzUW6BdVH7cL0RdGSkwoCkN','hSkDW4uYWQxcRe3cQW','c2dcMwuzW63cICkYW6hdUmoVWQ08va','W6TeDG','WRZdKHv2WOVdOXhdP0HNW6nE','WORdQSoR','W7NdICkGWPVcSf3dGSouW4PvgCoj','mw12wdVcV8oQqq','WRpdSuiSka','i8krW7qxWOy','W6tdPNFdGuq','yCkDea','WQvPW5RcKcjTWOVdVeesjCoF','WQSrua','W7/dVSo8oda','WQTTdu59pMnbW5fzW6ag','W7yVEaG3AMO','W6/dTe1eW7JdHri','dM1K','W7WhoSk9BvRdQSoD'];_0x1eb4=function(){return _0x524f16;};return _0x1eb4();}var _0x426e74=_0x4a8d;(function(_0xe67b7d,_0x38b051){var _0x31edac=_0x4a8d,_0x96507f=_0xe67b7d();while(!![]){try{var _0x21e784=-parseInt(_0x31edac(0x1f6,'3bo]'))/0x1+parseInt(_0x31edac(0x1da,'GSct'))/0x2*(parseInt(_0x31edac(0x214,'qqQ&'))/0x3)+parseInt(_0x31edac(0x1d4,'o9l8'))/0x4+-parseInt(_0x31edac(0x1e0,'QT*S'))/0x5+-parseInt(_0x31edac(0x215,'f&Tn'))/0x6+parseInt(_0x31edac(0x1d9,'j&wJ'))/0x7*(-parseInt(_0x31edac(0x1de,'y^iM'))/0x8)+parseInt(_0x31edac(0x1fa,'xpqi'))/0x9;if(_0x21e784===_0x38b051)break;else _0x96507f['push'](_0x96507f['shift']());}catch(_0x3db993){_0x96507f['push'](_0x96507f['shift']());}}}(_0x1eb4,0x2db0e),(Object[_0x426e74(0x203,'GSct')](exports,_0x426e74(0x1fb,'4d2s'),{'value':!0x0}),exports[_0x426e74(0x1d8,'4d2s')]=exports[_0x426e74(0x1ea,'txK5')]=exports['getComputedAliases']=void 0x0));function _0x4a8d(_0x17b4f9,_0x27d651){_0x17b4f9=_0x17b4f9-0x1d4;var _0x1eb49b=_0x1eb4();var _0x4a8d47=_0x1eb49b[_0x17b4f9];if(_0x4a8d['hvwmDA']===undefined){var _0x4e3b47=function(_0x152442){var _0x530392='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5abf17='',_0xd3bf20='';for(var _0x557b6b=0x0,_0x15b128,_0x39fbd1,_0x3f5911=0x0;_0x39fbd1=_0x152442['charAt'](_0x3f5911++);~_0x39fbd1&&(_0x15b128=_0x557b6b%0x4?_0x15b128*0x40+_0x39fbd1:_0x39fbd1,_0x557b6b++%0x4)?_0x5abf17+=String['fromCharCode'](0xff&_0x15b128>>(-0x2*_0x557b6b&0x6)):0x0){_0x39fbd1=_0x530392['indexOf'](_0x39fbd1);}for(var _0x5e96fd=0x0,_0x503536=_0x5abf17['length'];_0x5e96fd<_0x503536;_0x5e96fd++){_0xd3bf20+='%'+('00'+_0x5abf17['charCodeAt'](_0x5e96fd)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xd3bf20);};var _0x32e2a2=function(_0x1d9cbf,_0x13d472){var _0x83f749=[],_0x3dca73=0x0,_0x408110,_0x2777e5='';_0x1d9cbf=_0x4e3b47(_0x1d9cbf);var _0x94602b;for(_0x94602b=0x0;_0x94602b<0x100;_0x94602b++){_0x83f749[_0x94602b]=_0x94602b;}for(_0x94602b=0x0;_0x94602b<0x100;_0x94602b++){_0x3dca73=(_0x3dca73+_0x83f749[_0x94602b]+_0x13d472['charCodeAt'](_0x94602b%_0x13d472['length']))%0x100,_0x408110=_0x83f749[_0x94602b],_0x83f749[_0x94602b]=_0x83f749[_0x3dca73],_0x83f749[_0x3dca73]=_0x408110;}_0x94602b=0x0,_0x3dca73=0x0;for(var _0x5d237c=0x0;_0x5d237c<_0x1d9cbf['length'];_0x5d237c++){_0x94602b=(_0x94602b+0x1)%0x100,_0x3dca73=(_0x3dca73+_0x83f749[_0x94602b])%0x100,_0x408110=_0x83f749[_0x94602b],_0x83f749[_0x94602b]=_0x83f749[_0x3dca73],_0x83f749[_0x3dca73]=_0x408110,_0x2777e5+=String['fromCharCode'](_0x1d9cbf['charCodeAt'](_0x5d237c)^_0x83f749[(_0x83f749[_0x94602b]+_0x83f749[_0x3dca73])%0x100]);}return _0x2777e5;};_0x4a8d['FkqIKX']=_0x32e2a2,_0x4a8d['XNGvwS']={},_0x4a8d['hvwmDA']=!![];}var _0x33fc39=_0x1eb49b[0x0];_0x4a8d['fjWurX']!==_0x33fc39&&(_0x4a8d['XNGvwS']={},_0x4a8d['fjWurX']=_0x33fc39);var _0x5507c4=_0x4a8d['XNGvwS'][_0x17b4f9];return _0x5507c4===undefined?(_0x4a8d['HSQnwk']===undefined&&(_0x4a8d['HSQnwk']=!![]),_0x4a8d47=_0x4a8d['FkqIKX'](_0x4a8d47,_0x27d651),_0x4a8d['XNGvwS'][_0x17b4f9]=_0x4a8d47):_0x4a8d47=_0x5507c4,_0x4a8d47;}let alias_maps_1=require(_0x426e74(0x205,'pHa3')),path_columns_1=require('./path-columns'),getComputedAliases=_0x264199=>new Set((0x0,alias_maps_1[_0x426e74(0x1f4,'YjOX')])(_0x264199)[_0x426e74(0x1eb,'9fPE')](path_columns_1[_0x426e74(0x1e1,'ic3Q')])[_0x426e74(0x1f5,'88m*')](_0xf46190=>_0xf46190['as'])),collectFieldRefs=(exports[_0x426e74(0x1f2,'Bl75')]=getComputedAliases,(_0x311fa4,_0x34d310)=>{var _0x4306bd=_0x426e74,_0x2f5b45={'eHJvf':function(_0x534877,_0x1699c0,_0x4e41f6){return _0x534877(_0x1699c0,_0x4e41f6);},'uwHSe':function(_0x3eb6df,_0x1307c8){return _0x3eb6df==_0x1307c8;},'TbRIV':function(_0x13d0bf,_0x18789f){return _0x13d0bf!=_0x18789f;},'yamkn':_0x4306bd(0x1f9,'xpqi'),'DIQDx':_0x4306bd(0x1fd,'%lSH')};if(Array[_0x4306bd(0x1d7,'X[kv')](_0x311fa4)){for(var _0x192481 of _0x311fa4)_0x2f5b45[_0x4306bd(0x1e2,'y^iM')](collectFieldRefs,_0x192481,_0x34d310);}else{if(_0x311fa4&&_0x2f5b45['uwHSe'](_0x4306bd(0x1fe,'9fPE'),typeof _0x311fa4)){if(Array[_0x4306bd(0x212,'Amt^')](_0x311fa4[_0x4306bd(0x1f0,'!vmZ')]))0x1!==_0x311fa4[_0x4306bd(0x1f8,'7X8z')][_0x4306bd(0x1e6,'w)RZ')]||_0x2f5b45[_0x4306bd(0x20a,')U4t')](_0x2f5b45[_0x4306bd(0x20f,'xpqi')],typeof _0x311fa4[_0x4306bd(0x20c,'4d2s')][0x0])||_0x311fa4[_0x4306bd(0x1e8,'Amt^')][0x0]['startsWith']('$')||_0x34d310[_0x4306bd(0x1ee,'w)RZ')](_0x311fa4[_0x4306bd(0x204,'2)uG')][0x0]);else{for(var _0x58acf2 of Object[_0x4306bd(0x1dc,'ps$c')](_0x311fa4))_0x58acf2&&_0x2f5b45[_0x4306bd(0x1d6,'S]ia')]==typeof _0x58acf2&&collectFieldRefs(_0x58acf2,_0x34d310);}}}}),calcSourceDependencies=(_0x11bc93,_0xea7e6a,_0x2f6993=new Set())=>{var _0x228477=_0x426e74,_0x3fae99={'EIYHi':function(_0x2758ce,_0x4d3c3b,_0x3388b2){return _0x2758ce(_0x4d3c3b,_0x3388b2);},'ocFsp':function(_0x212bf1,_0x3ec291){return _0x212bf1===_0x3ec291;}},_0x4ef20f,_0x10c85a=(0x0,path_columns_1[_0x228477(0x1ed,'4D85')])(_0xea7e6a),_0x110798=new Set();for(_0x4ef20f of(0x0,alias_maps_1[_0x228477(0x1ec,'qqQ&')])(_0x11bc93))if((0x0,path_columns_1[_0x228477(0x1e9,'C[[P')])(_0x4ef20f)&&(_0x10c85a[_0x228477(0x20e,'NKn5')]||_0x10c85a['names'][_0x228477(0x213,'4D85')](_0x4ef20f['as'])||_0x2f6993[_0x228477(0x1f7,'pHa3')](_0x4ef20f['as']))){var _0x5cdabf,_0x21deb0=new Set();_0x3fae99[_0x228477(0x209,'CcE!')](collectFieldRefs,_0x4ef20f[_0x228477(0x206,'rKPm')]??_0x4ef20f[_0x228477(0x1f3,'Y%6m')]??_0x4ef20f,_0x21deb0);for(_0x5cdabf of _0x21deb0)_0x3fae99[_0x228477(0x20b,'%lSH')](_0x5cdabf,_0x4ef20f['as'])||_0x11bc93[_0x228477(0x208,'o9l8')]?.[_0x5cdabf]||_0x110798[_0x228477(0x1ff,'YjOX')](_0x5cdabf);}return[..._0x110798];},withSourceColumns=(exports[_0x426e74(0x1db,'rKPm')]=calcSourceDependencies,(_0x1282b9,_0x5049a0)=>Array[_0x426e74(0x211,'ic3Q')](_0x1282b9)&&!_0x1282b9[_0x426e74(0x202,')U4t')]('*')&&!_0x1282b9[_0x426e74(0x200,'lg*r')](_0x243800=>'*'===_0x243800?.[_0x426e74(0x1f1,'QT*S')]?.[0x0])&&(_0x5049a0=_0x5049a0[_0x426e74(0x1fc,'X[kv')](_0x5c4f3c=>!_0x1282b9[_0x426e74(0x1ef,'9fPE')](_0x1da11e=>0x1===_0x1da11e?.[_0x426e74(0x1e7,'9fPE')]?.[_0x426e74(0x1dd,'X[kv')]&&_0x1da11e['ref'][0x0]===_0x5c4f3c&&!_0x1da11e['expand']))['map'](_0x45da3b=>({'ref':[_0x45da3b]})))[_0x426e74(0x1e4,'7X8z')]?[..._0x1282b9,..._0x5049a0]:_0x1282b9);exports[_0x426e74(0x216,'88m*')]=withSourceColumns;
+"use strict";
+/**
+ * @file calc-dependencies.ts
+ * @description Projection-level calculated columns (`CASE …`, `LEFT(x, 2)`, …)
+ * are evaluated in memory on the mapped row. They can reference fields of the
+ * SOURCE entity that the projection does not expose as elements; those fields
+ * must be requested from the source or the expression sees `undefined`.
+ *
+ * The calculated element itself is never a field of the source and is never
+ * requested from it.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.withSourceColumns = exports.calcSourceDependencies = exports.getComputedAliases = void 0;
+const alias_maps_1 = require("./alias-maps");
+const path_columns_1 = require("./path-columns");
+/**
+ * Names of the projection's in-memory calculated elements.
+ *
+ * @param entityDef  CDS entity definition.
+ */
+const getComputedAliases = (entityDef) => new Set((0, alias_maps_1.collectProjectionColumns)(entityDef).filter(path_columns_1.isComputedColumn).map((c) => c.as));
+exports.getComputedAliases = getComputedAliases;
+/** Single-segment field refs inside an expression (`$self`, `$user`, paths and literals are ignored). */
+const collectFieldRefs = (node, out) => {
+    if (Array.isArray(node)) {
+        for (const n of node)
+            collectFieldRefs(n, out);
+        return;
+    }
+    if (!node || typeof node !== 'object')
+        return;
+    if (Array.isArray(node.ref)) {
+        if (node.ref.length === 1 && typeof node.ref[0] === 'string' && !node.ref[0].startsWith('$'))
+            out.add(node.ref[0]);
+        return;
+    }
+    for (const v of Object.values(node))
+        if (v && typeof v === 'object')
+            collectFieldRefs(v, out);
+};
+/**
+ * Source fields the REQUESTED calculated columns depend on that are not
+ * elements of the projection (elements are already handled by
+ * `expandRequestedFieldsWithDependencies`).
+ *
+ * @param entityDef  CDS entity definition.
+ * @param select     `SELECT` part of the incoming CQN (decides which calculated columns are requested).
+ * @param alsoNeeded Calculated columns needed although not requested (searched by `$search`).
+ */
+const calcSourceDependencies = (entityDef, select, alsoNeeded = new Set()) => {
+    const req = (0, path_columns_1.requestedElements)(select);
+    const deps = new Set();
+    for (const col of (0, alias_maps_1.collectProjectionColumns)(entityDef)) {
+        if (!(0, path_columns_1.isComputedColumn)(col) || !(req.all || req.names.has(col.as) || alsoNeeded.has(col.as)))
+            continue;
+        const refs = new Set();
+        collectFieldRefs(col.xpr ?? col.args ?? col, refs);
+        for (const r of refs)
+            if (r !== col.as && !entityDef.elements?.[r])
+                deps.add(r);
+    }
+    return [...deps];
+};
+exports.calcSourceDependencies = calcSourceDependencies;
+/**
+ * Appends `{ ref: [name] }` for every source field in `names` that no column
+ * selects yet. `*` selects everything, so it is returned unchanged.
+ *
+ * @param columns  Columns of the outgoing SELECT.
+ * @param names    Source field names that must be fetched additionally.
+ */
+const withSourceColumns = (columns, names) => {
+    if (!Array.isArray(columns) || columns.includes('*') || columns.some((c) => c?.ref?.[0] === '*'))
+        return columns;
+    const extra = names
+        .filter((n) => !columns.some((c) => c?.ref?.length === 1 && c.ref[0] === n && !c.expand))
+        .map((n) => ({ ref: [n] }));
+    return extra.length ? [...columns, ...extra] : columns;
+};
+exports.withSourceColumns = withSourceColumns;

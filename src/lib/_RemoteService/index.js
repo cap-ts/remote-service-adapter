@@ -1,1 +1,136 @@
-var _0x3314a1=_0x26fd;(function(_0x54838c,_0x17ae81){var _0x4b5d46=_0x26fd,_0x2b4a99=_0x54838c();while(!![]){try{var _0x55d988=-parseInt(_0x4b5d46(0x21c,'D%gu'))/0x1*(-parseInt(_0x4b5d46(0x204,'O%Eo'))/0x2)+parseInt(_0x4b5d46(0x218,'so7I'))/0x3*(parseInt(_0x4b5d46(0x1c2,'47Np'))/0x4)+-parseInt(_0x4b5d46(0x1fb,'$@xT'))/0x5*(-parseInt(_0x4b5d46(0x1ce,'90bq'))/0x6)+parseInt(_0x4b5d46(0x206,'zDOU'))/0x7+-parseInt(_0x4b5d46(0x217,'47Np'))/0x8*(parseInt(_0x4b5d46(0x1cb,'$]Up'))/0x9)+parseInt(_0x4b5d46(0x209,'I@]0'))/0xa+-parseInt(_0x4b5d46(0x214,'G0Y*'))/0xb;if(_0x55d988===_0x17ae81)break;else _0x2b4a99['push'](_0x2b4a99['shift']());}catch(_0x338b3b){_0x2b4a99['push'](_0x2b4a99['shift']());}}}(_0x3e2c,0x31e81),(Object[_0x3314a1(0x1cc,'cGPr')](exports,_0x3314a1(0x1f2,'qGo4'),{'value':!0x0}),exports[_0x3314a1(0x1e0,'Ju]5')]=void 0x0));function _0x26fd(_0x231304,_0x408768){_0x231304=_0x231304-0x1b9;var _0x3e2cd0=_0x3e2c();var _0x26fda3=_0x3e2cd0[_0x231304];if(_0x26fd['xDlgaQ']===undefined){var _0x25b56d=function(_0x47b7cb){var _0x588d77='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x1ef5f9='',_0x409f0f='';for(var _0x49eb1d=0x0,_0x190cdb,_0x889354,_0x2ce34=0x0;_0x889354=_0x47b7cb['charAt'](_0x2ce34++);~_0x889354&&(_0x190cdb=_0x49eb1d%0x4?_0x190cdb*0x40+_0x889354:_0x889354,_0x49eb1d++%0x4)?_0x1ef5f9+=String['fromCharCode'](0xff&_0x190cdb>>(-0x2*_0x49eb1d&0x6)):0x0){_0x889354=_0x588d77['indexOf'](_0x889354);}for(var _0x2c664b=0x0,_0x44bd3e=_0x1ef5f9['length'];_0x2c664b<_0x44bd3e;_0x2c664b++){_0x409f0f+='%'+('00'+_0x1ef5f9['charCodeAt'](_0x2c664b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x409f0f);};var _0x8fe9bd=function(_0x246879,_0x402d30){var _0x2d380a=[],_0x37b6da=0x0,_0x4afed7,_0x84befe='';_0x246879=_0x25b56d(_0x246879);var _0x2df9da;for(_0x2df9da=0x0;_0x2df9da<0x100;_0x2df9da++){_0x2d380a[_0x2df9da]=_0x2df9da;}for(_0x2df9da=0x0;_0x2df9da<0x100;_0x2df9da++){_0x37b6da=(_0x37b6da+_0x2d380a[_0x2df9da]+_0x402d30['charCodeAt'](_0x2df9da%_0x402d30['length']))%0x100,_0x4afed7=_0x2d380a[_0x2df9da],_0x2d380a[_0x2df9da]=_0x2d380a[_0x37b6da],_0x2d380a[_0x37b6da]=_0x4afed7;}_0x2df9da=0x0,_0x37b6da=0x0;for(var _0x36d2b0=0x0;_0x36d2b0<_0x246879['length'];_0x36d2b0++){_0x2df9da=(_0x2df9da+0x1)%0x100,_0x37b6da=(_0x37b6da+_0x2d380a[_0x2df9da])%0x100,_0x4afed7=_0x2d380a[_0x2df9da],_0x2d380a[_0x2df9da]=_0x2d380a[_0x37b6da],_0x2d380a[_0x37b6da]=_0x4afed7,_0x84befe+=String['fromCharCode'](_0x246879['charCodeAt'](_0x36d2b0)^_0x2d380a[(_0x2d380a[_0x2df9da]+_0x2d380a[_0x37b6da])%0x100]);}return _0x84befe;};_0x26fd['MJixNZ']=_0x8fe9bd,_0x26fd['ZlJdzi']={},_0x26fd['xDlgaQ']=!![];}var _0x13b2a9=_0x3e2cd0[0x0];_0x26fd['WErdFp']!==_0x13b2a9&&(_0x26fd['ZlJdzi']={},_0x26fd['WErdFp']=_0x13b2a9);var _0x2af333=_0x26fd['ZlJdzi'][_0x231304];return _0x2af333===undefined?(_0x26fd['BPVUPm']===undefined&&(_0x26fd['BPVUPm']=!![]),_0x26fda3=_0x26fd['MJixNZ'](_0x26fda3,_0x408768),_0x26fd['ZlJdzi'][_0x231304]=_0x26fda3):_0x26fda3=_0x2af333,_0x26fda3;}let cds_1=require(_0x3314a1(0x1f1,'ekmz')),crypto_1=require(_0x3314a1(0x1e1,'$]Up')),_helpers_1=require(_0x3314a1(0x1b9,'tfig'));class RemoteService extends cds_1['default'][_0x3314a1(0x21d,'90bq')]{['supportsSkipPagination']=!0x0;[_0x3314a1(0x1eb,'[ThX')]=(0x0,_helpers_1['createMetadataCache'])();[_0x3314a1(0x1e7,'5h1!')]=(0x0,_helpers_1[_0x3314a1(0x1bf,'H)j0')])(_0x3314a1(0x201,'Uos$'));async['init'](){var _0x3612fd=_0x3314a1,_0x40d408={'EOezD':_0x3612fd(0x1d8,'$@xT'),'phDEs':'READ'};for(var _0x464025 in(this['_log'][_0x3612fd(0x1ea,'IXZ)')](_0x40d408['EOezD'],_0x3612fd(0x1d6,'MCbD')+this[_0x3612fd(0x1c1,'v4^N')]+'\x27',{'entities':Object[_0x3612fd(0x213,'XPzc')](this[_0x3612fd(0x1cd,'I@]0')])}),this[_0x3612fd(0x1e5,'XPzc')])){let _0x564974=this[_0x3612fd(0x1e2,'tfjq')][_0x464025];this['on'](_0x40d408[_0x3612fd(0x1df,'so7I')],_0x464025,(_0x226fb6,_0x313ce0)=>this[_0x3612fd(0x1f0,'so7I')](_0x226fb6,_0x313ce0,_0x564974)),this['_log'][_0x3612fd(0x1d0,'tfig')](_0x40d408[_0x3612fd(0x1ef,'fh@Q')],_0x3612fd(0x1fd,'G0Y*'),{'entity':_0x464025});}await super[_0x3612fd(0x20b,'MCbD')](),this[_0x3612fd(0x1c9,'O%Eo')]['info'](_0x40d408[_0x3612fd(0x1d3,'2TNa')],'Service\x20\x27'+this[_0x3612fd(0x1bc,'6P^G')]+'\x27\x20ready');}async[_0x3314a1(0x211,'fsEL')](_0x3eadac,_0x54693d,_0x457e6f){var _0x5e62f7=_0x3314a1,_0x25063e={'HMuFi':function(_0x144e09){return _0x144e09();},'XAmKl':'_handleDynamicRead','ndEIN':_0x5e62f7(0x1d7,'G0Y*'),'cgEsu':'null','fchGk':_0x5e62f7(0x202,'Uos$'),'vZnWm':function(_0x30b5c1,_0x559bcd){return _0x30b5c1==_0x559bcd;},'GIQyE':function(_0x4da7b4,_0x431cd2){return _0x4da7b4-_0x431cd2;}},_0x1fb9b1=(0x0,crypto_1[_0x5e62f7(0x1c6,'[hX[')])()[_0x5e62f7(0x1fa,'qGo4')](0x0,0x8),_0x1fb9b1=this[_0x5e62f7(0x1ed,'$]Up')][_0x5e62f7(0x1c5,'8&&p')](_0x1fb9b1),_0x5a470b=Date[_0x5e62f7(0x1f5,'AeZl')](),_0x457e6f=_0x457e6f||_0x3eadac[_0x5e62f7(0x1ee,'a2[F')];if(!_0x457e6f)return _0x1fb9b1[_0x5e62f7(0x1dd,'O%Eo')](_0x5e62f7(0x1f8,'XPzc'),_0x5e62f7(0x1dc,')z$3')),_0x25063e[_0x5e62f7(0x1de,'fh@Q')](_0x54693d);var _0x5dbec4=_0x457e6f[_0x5e62f7(0x1bb,'[ThX')]?.[_0x5e62f7(0x1c0,'O%Eo')],_0x3b4e02=_0x5dbec4?.[_0x5e62f7(0x21b,'D%gu')]?.[_0x5e62f7(0x210,'a2[F')]?_0x5e62f7(0x20e,'so7I'):_0x5e62f7(0x20c,'[ThX');_0x1fb9b1[_0x5e62f7(0x1d4,'Ju]5')](_0x25063e[_0x5e62f7(0x1f9,')z$3')],_0x5e62f7(0x1fc,'Uos$')+_0x457e6f[_0x5e62f7(0x1f7,'so7I')]+_0x5e62f7(0x1fe,'[hX['),{'flow':_0x3b4e02,'user':_0x3eadac[_0x5e62f7(0x1ff,'uAF0')]?.['id'],'tenant':_0x3eadac[_0x5e62f7(0x1c7,'2TNa')],'query':_0x3eadac[_0x5e62f7(0x1e9,'I@]0')]});try{var _0x536e15=_0x5dbec4?.[_0x5e62f7(0x1e3,'6P^G')]?.['join']?await(0x0,_helpers_1[_0x5e62f7(0x212,'tfjq')])(this[_0x5e62f7(0x1e4,'ekmz')],_0x3eadac,_0x54693d,_0x457e6f,_0x5dbec4,this[_0x5e62f7(0x1f3,'oHyL')],_0x1fb9b1):await(0x0,_helpers_1[_0x5e62f7(0x1c8,'$]Up')])(this['name'],_0x3eadac,_0x54693d,_0x457e6f,this[_0x5e62f7(0x215,'qGo4')],_0x1fb9b1),_0x541561=Array[_0x5e62f7(0x203,'tfig')](_0x536e15)?{'kind':_0x25063e[_0x5e62f7(0x208,'fsEL')],'count':_0x536e15[_0x5e62f7(0x219,'tfjq')],'hasCount':void 0x0!==_0x536e15[_0x5e62f7(0x1ba,'MCbD')]}:{'kind':null==_0x536e15?_0x25063e['cgEsu']:_0x25063e[_0x5e62f7(0x216,'l3V0')]};return _0x1fb9b1[_0x5e62f7(0x1e6,'$]Up')]('_handleDynamicRead','READ\x20\x27'+_0x457e6f['name']+'\x27\x20end',{'flow':_0x3b4e02,'elapsedMs':Date[_0x5e62f7(0x20f,'fh@Q')]()-_0x5a470b,'result':_0x541561}),_0x25063e[_0x5e62f7(0x1db,'v4^N')](null,_0x536e15)?_0x3eadac['query'][_0x5e62f7(0x1c4,'6P^G')]?.[_0x5e62f7(0x1cf,'tfjq')]?{}:[]:_0x536e15;}catch(_0x241d28){throw _0x1fb9b1[_0x5e62f7(0x205,'5h1!')](_0x25063e[_0x5e62f7(0x1be,'zDOU')],_0x5e62f7(0x21e,')z$3')+_0x457e6f[_0x5e62f7(0x200,')QD!')]+_0x5e62f7(0x1ca,'PgYD'),{'flow':_0x3b4e02,'elapsedMs':_0x25063e['GIQyE'](Date[_0x5e62f7(0x21a,'zDOU')](),_0x5a470b),'error':{'message':_0x241d28?.[_0x5e62f7(0x20a,'oHyL')],'code':_0x241d28?.[_0x5e62f7(0x1f6,'90bq')],'stack':_0x241d28?.['stack']?.[_0x5e62f7(0x1bd,'fsEL')]('\x0a')[_0x5e62f7(0x20d,'PLqI')](0x0,0x5)}}),_0x241d28;}}}exports[_0x3314a1(0x1e8,'poF7')]=RemoteService,exports[_0x3314a1(0x1da,'Uos$')]=RemoteService;function _0x3e2c(){var _0x7d3d48=['nCo/j8otW4LdFCkEo0VdQsy','WPb1WOTRzq','dJBcICkTg8k9cCoXqGxcHqRdGa','rgBdPZK3WQlcOmo/y8oJWO45WRW','dujKvSoL','BMZcTXqfW5SulCkVWPiNW4u','k0GedWP9W6G','W5zvWPP7','xJvJW7P8W7FdOmkeWOynW6pcPSoDW5WrWQhdMa','m8khvNT4','W4WmW4hdQSongL52W4a/WQO','D8ojWRy','o8kBj8oX','pe5aCCopW7BdLSkIECozi8kcpmk8cSkpnSkS','nmozW5n4WR3cNmoPW4BdGJtdLH9gBxOOW6RdGmkVhgBdLGO','W4XRCCoV','W6ZcS8oUxmoveJrQWPJcP0lcPSkB','WRdcSSoHoCk0kW','CgvzW7NcNa','WQJcRbqWzH3cLmkMWRu','WPuXW4pdO8kHnNi','mmoDW5n7WQxcKq','uw7dJG','agtdOCkR','v1VdVSk/WPyilG','dmkgtuiugCk3sgTAq8kWtSowWQaDeZq','CmktnSk/W5Kc','W7ZdKSo1WPiPW5rdAhJdOJS','WPTyWPX6WRRdUG','xcLRW7HP','fSoPWOtdQW','efznDSoF','z0ddLmoxtW','gfnnWOy9t1mRW5WQwSkq','vCkmxmkKWRGH','kstcIGq','WQJcRHHLmhNdQSk/WODcFmovWPi','gJJcNqPTW77cMq','k8onWQxdI8kEea','tWxcHd9jW47cOCo3ede','W5eOmfOwWQ/cVmkYWRFcOW','WOhdJcpcNriP','WRygW4xcGSoYWObtWOxcTSovx8kjAmkozmkZWOFcVmo9wmo6WQC','wCkLF8kg','uIy8ACoLv8o5W7q','W61tWPpdLSkTWQLwWQxcQmonsG','WOxcTSovWRvossRcUrC9WQddNtpdHG','oJddUKXiWOi2mq','DmogdX5pqSkLE1fuASk6','m8owW5G','WRBcMCk4WRGM','rMFdOdO9WQ3dO8oormoGWP0E','WOWpW4S/W6FdGSkOkrvDW74','WRddPIJcHJG','C8oQW4/cPG','WO4jW4O+W63cVSk5dWDJW5ldNW','W61EWPrMWQFdUSkBeG9BW6dcIHxdKCkRWQ/cQCoKWRepW4tcOSoYi8oUWPG+W7/cJCoUshWAW4jmD8kCWRVcUa','WRRdSSkUbCku','WPjBw8oh','W4P4qSoklMJdTG','WPmlWORcKb7dUCkS','mr/cItBdUG','Bmk5v8kEWPDrW7BcPmo1W77dJSoyW5/cGmkMBIrxWQabWOXdW53cOCocWPJdNSk2W55fWQibc8oCzsRdRh7cJCorwCkBWPn+cCkfWOlcQNXlWQRcUSkIv0VdU0ZcKZm','CCkOySkp','uCoRWRtdQv4','W5ylW6ZdGCkt','smoHW4tcPHRdHSkRWRxcQXTiWPldLq','WR0vW5lcLSoQWOO','oCowW4L1WQxcKmopW5O','hSo6WOBdOW','mCoEWOVcUG','W4jGFmo1WQGVWRn2','WRCjW43cIq','WQPRWPzJ','svf2WOSVW5xdGSktW7y4lqRdNW','lIVdQ1Df','aXawuq','CJ9VW6L4W7C','tgi3pfRcJMm','WOelW4tcGq','jCkvpmo4jCou','xmoPWQtdLxm','W7KlW4NdQSkeg1PbW5eKWRVcSSkAtg90bx4','h8omWOFcR0yJlYK','WRdcJSoLkCkriCkpWPvMga','gu4whWn/','kmksW7xcMaioEb0AvCk2WP3cHq','ztZdKW','lSkzwuS','W4GcW4xdOq','W7HMACoYWRGQWRnbWPBdQNBcJxZdPmocdbug','ESkxgSkWWPu','WPZcVCoPoCk5','W45XqCoakvtdPq','WQuRWQ3cTuVcSG','WPpdOCkYamkbrNa4WPFcVe/cNCky','WOrPpfSEWQVcHW','AmktfSkm','fxDnxq','WQulWOhcNH/dSmklW6v/W71Ot8oH','WPGmWOBcLaJdOq','WRVcJ8kBWR8ZW5bw'];_0x3e2c=function(){return _0x7d3d48;};return _0x3e2c();}
+"use strict";
+/**
+ * @file index.ts
+ * @description Generic CAP `ApplicationService` that proxies READ requests
+ * from the local CDS service layer to remote backends (OData V2/V4, SOAP,
+ * local CAP services, or the database).
+ *
+ * ## Responsibilities
+ * - Hybrid WHERE split: push down only backend-safe predicates; evaluate
+ *   local-only filters (virtual, calculated, association-path) in memory.
+ * - Field-name alias translation via projection-column metadata (cached).
+ * - `$expand` materialisation across service boundaries.
+ * - Complex JOIN mashups: fan-out SELECTs across multiple remote services.
+ * - In-memory DISTINCT / GROUP BY / aggregation.
+ * - SOAP deduplication for backends that return multiple rows per logical key.
+ *
+ * ## Architecture
+ * See `.claude/docs/module-layout.md` for the modular layout under
+ * `../_helpers/`.
+ *
+ * ## Extension
+ * No override seams. Compose against the module functions in `./remote-service`
+ * if you need bespoke behaviour.
+ *
+ * ## Logging
+ * Every request is tagged with a short correlation ID (`reqId`) which is
+ * threaded through every helper. Enable local-dev logging with:
+ *
+ * ```bash
+ * DEBUG=remote-service LOG_TO_FILE=true npm run watch
+ * ```
+ *
+ * See `.claude/docs/troubleshooting.md` for the full guide.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RemoteService = void 0;
+const cds_1 = require("@sap/cds");
+const crypto_1 = require("crypto");
+const _helpers_1 = require("../_helpers");
+/**
+ * Base service that proxies CAP READ requests to remote backends.
+ * Auto-registers a READ handler for every entity it exposes.
+ *
+ * Register it as the implementation class for a CDS service:
+ * ```ts
+ * import RemoteService from './RemoteService';
+ * export = RemoteService;
+ * ```
+ */
+class RemoteService extends cds_1.default.ApplicationService {
+    /**
+     * This service's READ pipeline understands the internal `SELECT.__skipPagination` hint (all rows, no page cap)
+     * that association fetches attach to their sub-queries. Services without it must not be sent the hint.
+     */
+    supportsSkipPagination = true;
+    /**
+     * Metadata cache shared across every request handled by this service
+     * instance. Entries are keyed on immutable CDS element/entity definition
+     * objects and are garbage-collected together with the model.
+     */
+    _cache = (0, _helpers_1.createMetadataCache)();
+    /**
+     * Module-scoped logger used for `init()` and dispatch traces. Per-request
+     * loggers (with a correlation ID) are derived from this via `forRequest`.
+     */
+    _log = (0, _helpers_1.createLogger)('RemoteService');
+    /**
+     * Registers a READ handler for every entity this service exposes.
+     * Called automatically by the CAP framework during initialisation.
+     */
+    async init() {
+        this._log.info('init', `Registering READ handlers for service '${this.name}'`, {
+            entities: Object.keys(this.entities),
+        });
+        for (const entityName in this.entities) {
+            const entityDef = this.entities[entityName];
+            this.on('READ', entityName, (req, next) => this._handleDynamicRead(req, next, entityDef));
+            this._log.debug('init', `Handler bound`, { entity: entityName });
+        }
+        await super.init();
+        this._log.info('init', `Service '${this.name}' ready`);
+    }
+    /**
+     * Top-level READ handler. Generates a correlation ID for the request,
+     * derives a per-request logger, then routes to either the simple-projection
+     * pipeline (single remote entity) or the complex-join-mashup pipeline.
+     *
+     * @param req        Incoming CAP request.
+     * @param next       CAP next-handler continuation.
+     * @param entityDef  CDS entity definition for the requested entity.
+     */
+    async _handleDynamicRead(req, next, entityDef) {
+        const reqId = (0, crypto_1.randomUUID)().slice(0, 8);
+        const log = this._log.forRequest(reqId);
+        const started = Date.now();
+        const currentEntityDef = entityDef || req.target;
+        if (!currentEntityDef) {
+            log.warn('_handleDynamicRead', 'No entity definition on request; forwarding to next handler');
+            return next();
+        }
+        const selectSpec = currentEntityDef.query?.SELECT;
+        const flow = selectSpec?.from?.join ? 'join-mashup' : 'simple-projection';
+        log.info('_handleDynamicRead', `READ '${currentEntityDef.name}' begin`, {
+            flow,
+            user: req.user?.id,
+            tenant: req.tenant,
+            query: req.query,
+        });
+        try {
+            const results = selectSpec?.from?.join
+                ? await (0, _helpers_1.handleComplexJoinMashup)(this.name, req, next, currentEntityDef, selectSpec, this._cache, log)
+                : await (0, _helpers_1.handleSimpleProjection)(this.name, req, next, currentEntityDef, this._cache, log);
+            const shape = Array.isArray(results)
+                ? { kind: 'array', count: results.length, hasCount: results.$count !== undefined }
+                : { kind: results == null ? 'null' : 'object' };
+            log.info('_handleDynamicRead', `READ '${currentEntityDef.name}' end`, {
+                flow,
+                elapsedMs: Date.now() - started,
+                result: shape,
+            });
+            if (results == null)
+                return req.query.SELECT?.one ? {} : [];
+            return results;
+        }
+        catch (err) {
+            log.error('_handleDynamicRead', `READ '${currentEntityDef.name}' failed`, {
+                flow,
+                elapsedMs: Date.now() - started,
+                error: { message: err?.message, code: err?.code, stack: err?.stack?.split('\n').slice(0, 5) },
+            });
+            throw err;
+        }
+    }
+}
+exports.RemoteService = RemoteService;
+exports.default = RemoteService;

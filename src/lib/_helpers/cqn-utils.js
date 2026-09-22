@@ -1,1 +1,258 @@
-var _0xc3426e=_0x4e34;function _0x4e34(_0x421f54,_0x16467f){_0x421f54=_0x421f54-0x156;var _0x25f50e=_0x25f5();var _0x4e345c=_0x25f50e[_0x421f54];if(_0x4e34['IwNfrv']===undefined){var _0x4dc133=function(_0x26c382){var _0x418286='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0xc9bc7='',_0xb2ca46='';for(var _0x21800f=0x0,_0x3a3284,_0x589683,_0x52daa4=0x0;_0x589683=_0x26c382['charAt'](_0x52daa4++);~_0x589683&&(_0x3a3284=_0x21800f%0x4?_0x3a3284*0x40+_0x589683:_0x589683,_0x21800f++%0x4)?_0xc9bc7+=String['fromCharCode'](0xff&_0x3a3284>>(-0x2*_0x21800f&0x6)):0x0){_0x589683=_0x418286['indexOf'](_0x589683);}for(var _0x591f80=0x0,_0x29a52a=_0xc9bc7['length'];_0x591f80<_0x29a52a;_0x591f80++){_0xb2ca46+='%'+('00'+_0xc9bc7['charCodeAt'](_0x591f80)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xb2ca46);};var _0x20457e=function(_0x236a67,_0x336e26){var _0x257e64=[],_0x1352de=0x0,_0x2aae1c,_0x438c54='';_0x236a67=_0x4dc133(_0x236a67);var _0xc50e1f;for(_0xc50e1f=0x0;_0xc50e1f<0x100;_0xc50e1f++){_0x257e64[_0xc50e1f]=_0xc50e1f;}for(_0xc50e1f=0x0;_0xc50e1f<0x100;_0xc50e1f++){_0x1352de=(_0x1352de+_0x257e64[_0xc50e1f]+_0x336e26['charCodeAt'](_0xc50e1f%_0x336e26['length']))%0x100,_0x2aae1c=_0x257e64[_0xc50e1f],_0x257e64[_0xc50e1f]=_0x257e64[_0x1352de],_0x257e64[_0x1352de]=_0x2aae1c;}_0xc50e1f=0x0,_0x1352de=0x0;for(var _0x1b7f0e=0x0;_0x1b7f0e<_0x236a67['length'];_0x1b7f0e++){_0xc50e1f=(_0xc50e1f+0x1)%0x100,_0x1352de=(_0x1352de+_0x257e64[_0xc50e1f])%0x100,_0x2aae1c=_0x257e64[_0xc50e1f],_0x257e64[_0xc50e1f]=_0x257e64[_0x1352de],_0x257e64[_0x1352de]=_0x2aae1c,_0x438c54+=String['fromCharCode'](_0x236a67['charCodeAt'](_0x1b7f0e)^_0x257e64[(_0x257e64[_0xc50e1f]+_0x257e64[_0x1352de])%0x100]);}return _0x438c54;};_0x4e34['neihCI']=_0x20457e,_0x4e34['MHcVDK']={},_0x4e34['IwNfrv']=!![];}var _0x224741=_0x25f50e[0x0];_0x4e34['lXvDJi']!==_0x224741&&(_0x4e34['MHcVDK']={},_0x4e34['lXvDJi']=_0x224741);var _0x11f013=_0x4e34['MHcVDK'][_0x421f54];return _0x11f013===undefined?(_0x4e34['cZymOM']===undefined&&(_0x4e34['cZymOM']=!![]),_0x4e345c=_0x4e34['neihCI'](_0x4e345c,_0x16467f),_0x4e34['MHcVDK'][_0x421f54]=_0x4e345c):_0x4e345c=_0x11f013,_0x4e345c;}(function(_0x1b5a78,_0x326f4a){var _0x5b55cb=_0x4e34,_0x4313d7=_0x1b5a78();while(!![]){try{var _0x49578f=parseInt(_0x5b55cb(0x181,'^arH'))/0x1*(-parseInt(_0x5b55cb(0x194,'ux]D'))/0x2)+-parseInt(_0x5b55cb(0x1d1,'s[*H'))/0x3+parseInt(_0x5b55cb(0x1ad,'cen*'))/0x4*(parseInt(_0x5b55cb(0x1ca,'jLGN'))/0x5)+parseInt(_0x5b55cb(0x1f8,')M2q'))/0x6+parseInt(_0x5b55cb(0x156,'5op0'))/0x7+-parseInt(_0x5b55cb(0x1e5,'bNmI'))/0x8*(parseInt(_0x5b55cb(0x1ab,'F^Ff'))/0x9)+parseInt(_0x5b55cb(0x197,'E8Bw'))/0xa;if(_0x49578f===_0x326f4a)break;else _0x4313d7['push'](_0x4313d7['shift']());}catch(_0x32f92e){_0x4313d7['push'](_0x4313d7['shift']());}}}(_0x25f5,0x7ad93),(Object['defineProperty'](exports,'__esModule',{'value':!0x0}),exports['filterWhereForTable']=exports['applyInMemorySort']=exports[_0xc3426e(0x1b3,'M2xd')]=exports[_0xc3426e(0x1f7,'jLGN')]=exports[_0xc3426e(0x201,'lNw2')]=exports[_0xc3426e(0x158,'bNmI')]=exports[_0xc3426e(0x1bc,'9E(t')]=exports[_0xc3426e(0x1ee,'wuK9')]=exports[_0xc3426e(0x17e,'00#R')]=void 0x0));let cds_1=require(_0xc3426e(0x1ba,'YlEk')),alias_maps_1=require(_0xc3426e(0x198,'kLky')),SELECT=cds_1[_0xc3426e(0x1bf,'9E(t')]['ql'][_0xc3426e(0x15b,'Srz)')],retargetFromNode=(_0x59bbf5,_0x1fdec9)=>{var _0x967b7a=_0xc3426e,_0x1ccfb7={'ukxKg':function(_0x4daaa8,_0x43b8cd){return _0x4daaa8==_0x43b8cd;},'eGYIa':_0x967b7a(0x17d,'M2xd'),'Mwypy':function(_0x3e7a47,_0x275591){return _0x3e7a47<_0x275591;},'PSSzA':function(_0x531b8b,_0x49ed2c){return _0x531b8b!=_0x49ed2c;},'QTdNk':_0x967b7a(0x164,')M2q'),'YBEVu':function(_0x590ebc,_0x436cea){return _0x590ebc==_0x436cea;}},_0x4eb4e7,_0x1d80b5;return _0x59bbf5&&_0x1ccfb7[_0x967b7a(0x1f1,'s[*H')](_0x1ccfb7[_0x967b7a(0x184,']4t(')],typeof _0x59bbf5)?Array[_0x967b7a(0x16c,'s[*H')](_0x59bbf5[_0x967b7a(0x16d,'WZ&I')])&&_0x1ccfb7[_0x967b7a(0x1d8,'M2xd')](0x0,_0x59bbf5[_0x967b7a(0x1b8,'hsxD')][_0x967b7a(0x1a0,'wuK9')])?(_0x1d80b5=(_0x4eb4e7=[..._0x59bbf5['ref']])[0x0],_0x4eb4e7[0x0]=_0x1ccfb7['PSSzA'](_0x1ccfb7['QTdNk'],typeof _0x1d80b5)&&_0x1d80b5&&_0x1ccfb7[_0x967b7a(0x163,'fsPx')](_0x1ccfb7['eGYIa'],typeof _0x1d80b5)?{..._0x1d80b5,'id':_0x1fdec9}:_0x1fdec9,{..._0x59bbf5,'ref':_0x4eb4e7}):{..._0x59bbf5,'ref':[_0x1fdec9]}:{'ref':[_0x1fdec9]};},resolveTargetEntity=(exports[_0xc3426e(0x203,'[@dW')]=retargetFromNode,_0x4b3e8a=>{var _0xa9632a=_0xc3426e,_0x5e4262={'ihEhk':function(_0x5de009,_0x462233){return _0x5de009==_0x462233;},'sRvTQ':_0xa9632a(0x1bd,'&NlH')},_0x582f7c=_0x4b3e8a[_0xa9632a(0x176,'WZ&I')]?.['SELECT']?.[_0xa9632a(0x1ec,'zk@B')]?.['ref']||_0x4b3e8a[_0xa9632a(0x1e7,'5op0')]?.['from']?.[_0xa9632a(0x15e,'jLGN')];let _0x1515af=Array['isArray'](_0x582f7c)?_0x582f7c[0x0]:_0x4b3e8a[_0xa9632a(0x1c7,'RF76')];return _0x1515af=_0x1515af&&_0x5e4262[_0xa9632a(0x1af,'M2xd')](_0x5e4262[_0xa9632a(0x17b,'I%2^')],typeof _0x1515af)&&_0x1515af['id']?_0x1515af['id']:_0x1515af;}),containsAssociationPathInWhere=(exports[_0xc3426e(0x1c5,'shJC')]=resolveTargetEntity,(_0x4d2158,_0x52aec7)=>{var _0x5bdc67=_0xc3426e,_0xc2161d={'epNbc':function(_0x5cdbd5,_0x1eed3a){return _0x5cdbd5==_0x1eed3a;},'EtOlL':_0x5bdc67(0x180,'bdV9'),'qfBkk':function(_0x1efa3b,_0x15895f){return _0x1efa3b==_0x15895f;},'OzDUn':_0x5bdc67(0x178,'shJC'),'asZFv':function(_0x808a89,_0x49829a){return _0x808a89==_0x49829a;},'keqwU':_0x5bdc67(0x1ed,'C^e&'),'LsGKv':function(_0x109a2f,_0x35752d){return _0x109a2f!=_0x35752d;},'kJVai':function(_0x1fe21a,_0x1998e2){return _0x1fe21a!==_0x1998e2;},'QcAWo':function(_0x36487a,_0x4f2903){return _0x36487a<_0x4f2903;},'HDiVd':function(_0x4d7f6d,_0x5a9f35){return _0x4d7f6d==_0x5a9f35;},'lJmLA':function(_0x292ff5,_0x21b961){return _0x292ff5(_0x21b961);},'siiwP':function(_0x3a0e68,_0x3ef81f){return _0x3a0e68(_0x3ef81f);}};if(!_0x4d2158||!_0x52aec7?.[_0x5bdc67(0x1a4,'RF76')])return!0x1;let _0x244f74=_0x569302=>{var _0x47f8fa=_0x5bdc67;if(_0xc2161d[_0x47f8fa(0x15a,'F^Ff')](_0xc2161d[_0x47f8fa(0x1a2,'bdV9')],typeof _0x569302))return _0x569302;if(_0x569302&&_0xc2161d[_0x47f8fa(0x1c1,'ux]D')](_0xc2161d[_0x47f8fa(0x165,'00#R')],typeof _0x569302)){if(_0xc2161d[_0x47f8fa(0x1a6,'PS#J')](_0xc2161d[_0x47f8fa(0x1b2,'V5xm')],typeof _0x569302['id']))return _0x569302['id'];if(_0xc2161d[_0x47f8fa(0x167,'Srz)')](_0xc2161d['EtOlL'],typeof _0x569302[_0x47f8fa(0x171,'M2xd')]))return _0x569302['name'];}},_0x3bd78c=_0x9eda7d=>{var _0x50ebd5=_0x5bdc67,_0x419b2a=_0xc2161d[_0x50ebd5(0x189,'bNmI')][_0x50ebd5(0x1ae,'M2xd')]('|'),_0x255874=0x0;while(!![]){switch(_0x419b2a[_0x255874++]){case'0':if(!_0x9eda7d)return!0x1;continue;case'1':if(_0x9eda7d[_0x50ebd5(0x15c,'5op0')]&&Array[_0x50ebd5(0x206,'cen*')](_0x9eda7d[_0x50ebd5(0x1d5,'y!]R')])){for(var _0x1a8830 of _0x9eda7d['args'])if(_0xc2161d[_0x50ebd5(0x15f,'C^e&')](_0xc2161d[_0x50ebd5(0x161,'Z8L^')],typeof _0x1a8830)&&_0x1a8830[_0x50ebd5(0x182,'s[*H')]('/')){_0x1a8830=_0x1a8830[_0x50ebd5(0x183,'jLGN')]('/')[0x0],_0x1a8830=_0x1a8830?_0x52aec7[_0x50ebd5(0x1b6,'1Da!')]?.[_0x1a8830]:void 0x0;if(_0x1a8830&&(0x0,alias_maps_1[_0x50ebd5(0x18e,'ux]D')])(_0x1a8830))return!0x0;}}continue;case'2':var _0xa7c1ed,_0x44f2eb;continue;case'3':if(Array['isArray'](_0x9eda7d))return _0x9eda7d[_0x50ebd5(0x1c8,'PS#J')](_0x3bd78c);continue;case'4':if(_0xc2161d[_0x50ebd5(0x1fb,'&NlH')](_0xc2161d[_0x50ebd5(0x191,'ux]D')],typeof _0x9eda7d))return!0x1;continue;case'5':return Object['values'](_0x9eda7d)[_0x50ebd5(0x193,'I%2^')](_0x3bd78c);case'6':if(Array[_0x50ebd5(0x1c3,']M$y')](_0x9eda7d[_0x50ebd5(0x1e9,'D)RP')])&&(_0xa7c1ed=_0x9eda7d['ref'],!!(Array[_0x50ebd5(0x177,'XH3e')](_0xa7c1ed)&&_0xc2161d[_0x50ebd5(0x202,'bdV9')](0x0,_0xa7c1ed[_0x50ebd5(0x1c2,'hsxD')])&&(_0xc2161d[_0x50ebd5(0x1e3,'[@dW')](0x1,_0xa7c1ed[_0x50ebd5(0x19d,'yMcT')])?(_0x44f2eb=(_0x44f2eb=_0x244f74(_0xa7c1ed[0x0]))?_0x52aec7[_0x50ebd5(0x1ce,'[@dW')]?.[_0x44f2eb]:void 0x0)&&(0x0,alias_maps_1[_0x50ebd5(0x162,'lNw2')])(_0x44f2eb):_0xc2161d[_0x50ebd5(0x18f,'cen*')](_0xc2161d[_0x50ebd5(0x18d,'1Da!')],typeof(_0x44f2eb=_0xc2161d[_0x50ebd5(0x200,'bNmI')](_0x244f74,_0xa7c1ed[0x0])))&&_0x44f2eb[_0x50ebd5(0x204,'Q$rw')]('/')&&(_0x44f2eb=(_0xa7c1ed=_0x44f2eb[_0x50ebd5(0x1c0,'y!]R')]('/')[0x0])?_0x52aec7[_0x50ebd5(0x1d0,'Z8L^')]?.[_0xa7c1ed]:void 0x0)&&(0x0,alias_maps_1['isAssociationElement'])(_0x44f2eb)))))return!0x0;continue;}break;}};return _0xc2161d[_0x5bdc67(0x1a8,'5op0')](_0x3bd78c,_0x4d2158);}),containsAssociationPathString=(exports[_0xc3426e(0x157,']4t(')]=containsAssociationPathInWhere,(_0x35069f,_0x4df1ad)=>{var _0x440320=_0xc3426e,_0x22ffc2={'kqqlj':function(_0xe3744c,_0x56a294){return _0xe3744c+_0x56a294;}};if(_0x35069f&&_0x4df1ad?.[_0x440320(0x168,'YlEk')]){var _0x14463a=JSON['stringify'](_0x35069f);if(_0x14463a){for(var [_0x542fde,_0x2b6836]of Object[_0x440320(0x188,'M2xd')](_0x4df1ad[_0x440320(0x1df,'D)RP')]))if((0x0,alias_maps_1[_0x440320(0x17a,'TsXM')])(_0x2b6836)&&_0x14463a[_0x440320(0x1be,'J6vm')](_0x22ffc2['kqqlj'](_0x542fde,'/')))return!0x0;}}return!0x1;}),stripRemoteWhere=(exports[_0xc3426e(0x1ff,'b43T')]=containsAssociationPathString,_0x4c0646=>{var _0x358b0a=_0xc3426e,_0x38827e={'qBaLa':function(_0x408fa8,_0x48d7c1){return _0x408fa8==_0x48d7c1;}};_0x4c0646?.[_0x358b0a(0x175,'yMcT')]&&(_0x4c0646[_0x358b0a(0x1fe,'wuK9')][_0x358b0a(0x1a7,'Iv44')]=void 0x0,delete _0x4c0646[_0x358b0a(0x173,']M$y')][_0x358b0a(0x160,'sUz^')],(_0x4c0646=_0x4c0646[_0x358b0a(0x159,'RF76')][_0x358b0a(0x199,'F^Ff')])?.['where']&&(_0x4c0646[_0x358b0a(0x1f9,'F^Ff')]=void 0x0,delete _0x4c0646[_0x358b0a(0x18b,'M2xd')]),Array[_0x358b0a(0x1ea,'^arH')](_0x4c0646?.[_0x358b0a(0x1bb,'YlEk')]))&&_0x4c0646[_0x358b0a(0x1e9,'D)RP')][0x0]&&_0x38827e['qBaLa'](_0x358b0a(0x172,'G*da'),typeof _0x4c0646['ref'][0x0])&&(_0x4c0646=_0x4c0646[_0x358b0a(0x1f2,'ctFh')][0x0])[_0x358b0a(0x1a9,']4t(')]&&(_0x4c0646[_0x358b0a(0x1db,'E8Bw')]=void 0x0,delete _0x4c0646[_0x358b0a(0x1db,'E8Bw')]);}),replaceWithNonFilteredRemoteQuery=(exports[_0xc3426e(0x19e,'wuK9')]=stripRemoteWhere,(_0x2d1c34,_0x402a41)=>{var _0xaa1062=_0xc3426e,_0x40080d,_0x6b85ed;_0x2d1c34?.[_0xaa1062(0x166,'^arH')]&&(_0x402a41=SELECT[_0xaa1062(0x1e0,'M2xd')](_0x402a41),Array[_0xaa1062(0x1a5,'Q$rw')](_0x2d1c34[_0xaa1062(0x19b,'J6vm')][_0xaa1062(0x187,'C^e&')])&&_0x402a41[_0xaa1062(0x170,'WZ&I')](_0x2d1c34[_0xaa1062(0x186,'pHjE')][_0xaa1062(0x1f3,'zk@B')]),_0x2d1c34['SELECT'][_0xaa1062(0x1d7,'PS#J')]&&_0x402a41[_0xaa1062(0x196,'RF76')](_0x2d1c34[_0xaa1062(0x16a,'WZ&I')]['orderBy']),_0x2d1c34[_0xaa1062(0x1a1,'G*da')][_0xaa1062(0x1da,'TsXM')]&&(_0x40080d=_0x2d1c34[_0xaa1062(0x18a,'bdV9')]['limit'][_0xaa1062(0x1de,']4t(')]?.[_0xaa1062(0x1b7,'J6vm')]??_0x2d1c34['SELECT'][_0xaa1062(0x185,'F^Ff')][_0xaa1062(0x1c9,'XH3e')],_0x6b85ed=_0x2d1c34['SELECT'][_0xaa1062(0x1b4,'E8Bw')][_0xaa1062(0x1e6,'M2xd')]?.[_0xaa1062(0x19a,'E8Bw')]??_0x2d1c34[_0xaa1062(0x1f0,'I%2^')][_0xaa1062(0x1b9,')M2q')]['offset'],_0x402a41[_0xaa1062(0x18c,'V5xm')](_0x40080d,_0x6b85ed)),_0x2d1c34[_0xaa1062(0x15b,'Srz)')][_0xaa1062(0x1eb,'sUz^')]&&(_0x402a41[_0xaa1062(0x19f,'[@dW')][_0xaa1062(0x1e1,'9E(t')]=!0x0),_0x2d1c34[_0xaa1062(0x1b5,'C^e&')]['one']&&(_0x402a41[_0xaa1062(0x1f4,'D)RP')]['one']=!0x0),_0x2d1c34[_0xaa1062(0x190,'E8Bw')]=_0x402a41['SELECT']);}),isAssociationPathRemoteError=(exports[_0xc3426e(0x169,'F^Ff')]=replaceWithNonFilteredRemoteQuery,(_0x4ab525,_0x1db044)=>{var _0x47c58d=_0xc3426e,_0x1e2abc={'iVJBX':function(_0x1814e1,_0x156c4c){return _0x1814e1||_0x156c4c;},'xtHvv':_0x47c58d(0x17f,'kLky'),'YtSmx':'not\x20found\x20in\x20type'},_0x2b1982=String(_0x4ab525?.['message']||_0x4ab525?.[_0x47c58d(0x195,'WZ&I')]?.[_0x47c58d(0x1c6,'wuK9')]||_0x4ab525?.['response']?.[_0x47c58d(0x1fa,'zk@B')]?.[_0x47c58d(0x1cf,'wuK9')]?.[_0x47c58d(0x1dd,'00#R')]?.[_0x47c58d(0x1d6,'xM[4')]||_0x4ab525?.[_0x47c58d(0x1b1,'ux]D')]?.[_0x47c58d(0x1e4,'b43T')]?.[_0x47c58d(0x1cc,'fsPx')]?.['message']?.[_0x47c58d(0x16b,'lNw2')]||_0x4ab525?.[_0x47c58d(0x1cf,'wuK9')]?.[_0x47c58d(0x1ef,'C^e&')]||''),_0x3bc881=JSON[_0x47c58d(0x1e8,'Srz)')](_0x1e2abc[_0x47c58d(0x1a3,'TsXM')](_0x4ab525,{}));if(_0x2b1982[_0x47c58d(0x1fd,')M2q')](_0x1e2abc[_0x47c58d(0x192,'s[*H')])&&_0x2b1982[_0x47c58d(0x174,'zk@B')](_0x1e2abc[_0x47c58d(0x179,')M2q')])){for(var [_0x47beb8,_0x51053b]of Object[_0x47c58d(0x1aa,'shJC')](_0x1db044?.['elements']||{}))if((0x0,alias_maps_1['isAssociationElement'])(_0x51053b)&&(_0x2b1982[_0x47c58d(0x1c4,'G*da')](_0x47beb8)||_0x3bc881[_0x47c58d(0x1d9,'C^e&')](_0x47beb8)))return!0x0;}return!0x1;}),applyInMemorySort=(exports[_0xc3426e(0x15d,'fsPx')]=isAssociationPathRemoteError,(_0x10341a,_0xc56467)=>_0x10341a[_0xc3426e(0x1cb,'V5xm')]((_0x19e267,_0xcda25c)=>{var _0xe7f814=_0xc3426e,_0x306a7c={'gUPQD':function(_0x1cf53c,_0x4dbe35){return _0x1cf53c===_0x4dbe35;},'vmHHy':_0xe7f814(0x1f5,'fsPx'),'jVHWT':function(_0x1ff999,_0x4778f3){return _0x1ff999<_0x4778f3;}};for(var _0x43e7f0 of _0xc56467){var _0xd7e656=_0x43e7f0['ref']?_0x43e7f0['ref'][0x0]:null;if(_0xd7e656){_0x43e7f0=_0x306a7c[_0xe7f814(0x1f6,'F^Ff')](_0x306a7c['vmHHy'],_0x43e7f0[_0xe7f814(0x1cd,'1Da!')]?.[_0xe7f814(0x17c,'ux]D')]());if(_0x306a7c[_0xe7f814(0x1e2,'ctFh')](_0x19e267[_0xd7e656],_0xcda25c[_0xd7e656]))return _0x43e7f0?0x1:-0x1;if(_0xcda25c[_0xd7e656]<_0x19e267[_0xd7e656])return _0x43e7f0?-0x1:0x1;}}return 0x0;})),filterWhereForTable=(exports['applyInMemorySort']=applyInMemorySort,(_0x26cfdc,_0x471f71)=>_0x26cfdc);function _0x25f5(){var _0x5e02a2=['nIOwW7/cNa','WOzjiGBcUa','c8kdz8oeFW','W53dKSkLd8oTW6C','WRRdSfKywtpdHW','oCozyCo0a8oria','WOK7W7JdGqq','WRJcM8kPW4NdLSoJ','k8oFCmo0dW','WQ4CW5aklq','A8oczSkzWQS','W4FdRSoQm1JdNSoHuquhW7/dJxGIW542WQldTSoQW6e','umk6dmk1WOu','yMxcK0pcT0O','W6hdP8oVfuu','W4ZcVtldPIa','emkVWRxdLa','WPZcRmkyDLVdGSoVqHe3','s8oAWRBdTSkwW5q','W61OmmkvW4lcS1C','abddPZpdHINdQ8kcW5eclvddPmkD','W7FdLbzUEmo8W5qiiSo/vsW','aCkyzCoa','r0hcSW','CWu8W5D4WRa','WP1gW78ncSkTW6ucBZm','WQz0c8ooqYa','FsNdPZqndSk6WOlcGSksr3XiW4SzzG','F8kUWQb9u8kC','yJJdUZOjna','W4FcI8kiW6ldTmoi','WQ7cQSkQW6ddMq','W5nQW7jcrW','W6D2mCkDW5xcN1OQ','W4/cICkqB8o2WOat','k8k4W6hcLmoV','WPicW5OHoW','W7BcS0lcTmoh','WPrMhJ3cVa','W6HKuSkWW51NW5u','vSozoCkzpdilWPhcTCohW7fqka','x8owWRVdSCkCW4HjFqj5W6GdW6VdQ2KcW4FcJvS','kSojuCotWQ0yW6aIWRJdVa','l8ohECoVhG','nCoFumoUaq','W5bVWRRcGchcN11SW7NcLq','W5ZdUmoymetdN8oXxq','WOCbW7ipfq','nCoevmo1gCoBmmogoGjUWOf9WRqCWOmpFqiAhqzIefddIvxcGa','xuNcSM/cGa','WORdMNKODWK','s8oAtmkyWOj9jCoY','vIeC','BCobW4C','dsPuWQxdKG','W4VdGmk9WOldMSkrECoz','W7NdLSk6','dsrdWO7cKsyNWPDzWO4KW7nuD2tcKLfqtCkkWO5dWO1yWONdSXLHfmkp','W4atWQfyjCkj','ss4tW75oWOalW6y','cI5lWPVcHsm9','aN8FWPpcTG','W5/dU8oPk0a','C8obW49sWQej','AmoubSk+W6tcQ1G','W73cOmkNW4VdGSo4WPXq','W79VvCkTW5H0W4nJschdPCoxWQddTSoSW6ZcVf3cUG','yZJdPI4Co8k6','W6X7oCkv','pCkNW4lcKW','WQfDW43cOW','DgHkW5lcRxHRCX0','WReAW48x','ysBdGCkgAq','xCozw8kb','sCkhWOLvDCkMgSoz','AY/dPZip','x8k/WPRdHmoJgcJdIG','WOBdVeVcQwbAWPyaWQCUCSo5WO0','WPNcGCkwW4v2W6SwW6Wk','xh4CW4pdHN94WRrmWQ8UW6Xg','WPBdLqVdRaK5W7tcJty','eh0uWOK','W5hcHLFdNsK','iCk6W4VcK8o+W5iN','eCoaBmo2eW','WRddSvybqtNdKCo5','W5zvW5vPAW','rKJcUNtcKq','WPFdICoIkCkZW5rEwSkdnb5Yva','hSoBcK56W57dSW','WPfHddW','W5juj8oPW7eaW6v9','oSofESoR','dsryWPtcHa','wu/cNrpcVW','FCkiWQ1VFW','eCkXyMC','W5fSW7VdPHtcTxT8','m8orC8o1d8oa','W7xcQetcQCoYW7XmW6BdImkW','gmkEWPFcLSkVnregWR8','W4vDja','W7X4WQyrW6rteG','W6NdHqJcQSoN','WPVcVd7dLa','W6NdOWyrachcGSo2khPCf8oW','FdJdPJirkSk6WRVcJmkuru5uW6SfD8oHlrm','WRtdUKyEvtRdKq','mmkfWPtdTmoGlG','W4hcOGldMZe','qxZcSW','WP7cOt3dJhmKdq','W6r9dSobW5C6','ydhdGmkk','amk/wSo8tW','nZ8kW7RcIuP8qHOiF8k5WR/dKmkBtCkVDrVdPH/dRNS6WOZdStbYxhXddmkq','uNOaW7/cK1xdLmkEWPJcMSowgmob','emkcB8oFBG','WP/cOtxdGa','W6mcWOX2ma','wmoCW5ldHSo2AKaIWOLQWRZdPam','cc1AWQddKWBcH8kz','xrJdMrG+ca','fSk/Ehj6W7hdRNpdR8oAW6CUavpdQ8o2W4dcLSore8ogW6fWvqySu8otWRK','WO4uW6tdUHa','W5NdHSoqW7vGW6m8W4CeWRK3htTIx8kO','WOdcLmkZW63dVa','xSkoWPHzySkVc8oEW7iAabC5W6W7WPC','W4/cLmkYCCoXWOupxq','WPtdNGlcM3LFWRdcNY/cO8ktWPOK','CCknjmkrWPmPW7W','WRBdRbZdUSkGWQCaW43dQmk5W6ddMCkV','WObHftVcUeNdKCo8y3rbWOFdPq97WQ3dL3TKsmkkhCkZW5FcPYWXWQhdL8od','WOeXW6FdGJdcHv5LW43cOSkKr2RdJfdcJs15iJDJF8kRWQFdGNpcTCkrWPa','W5fFgmk1W7pcPq','aSkArmopAa','omkVWQNcUSkcbG','W6pcR0xcOa','BsFdSSkAAh7cUa8NpYRdImk4W6/dUY5uWOBcMCkTWP8pWODtnbz/WRC','nZ8C','WRZdR3SpvW','W73dGHJcTSo2','F8kNWRddHCok','W4pdGCoJW69JW546W4mkWRK7jt1cqCkOWQvqhIy','xrBdTSk/BG','eJDlWQxdIau','pmoepwH1','W4zoWQSMW5vM','cSkzWR/cUCk3','W67dN8k5WP/cKmkCACoz','fCkpESobAMrAWRlcU8oQW5H3bCkRW5vEomk4WQ9YW41uvN19dCoqg8o3W4hdUCotqG','ASo6WPVdGmk6W64','W5ZdK8ooW6L1','W53cUJVdOIqlW54','s8oAWRe','n2BdGCk5xKJcKaW','WOyiESkXWQzzWQe+WODrp2m6pW','wSoqWRVdSmkuW5rT','mSowEmoJ','W7VcRmkUW4ldLmoO','uSoIc8kjW5xcNG','WPtcOdldLwSUg8oz','WPLukCoSDbW','smokWRldT8ka','WRPbW7VcONRcI8kr','W6jOtmkNW5D2','odDQWQhdNG','W5npW7LZBmoLxbPikYhcQmo5EaK3W77dHSoDDq','emksWQ7dPCoY','W5RdSSoNl1ZdLmoWEWuaW7m','m8ovF8oJcCoa','aCoBdvXPW57dSXzRE8kbW7NcIMNdTGW','WONcIrHYDmoVW5nC','WPJcQSkxW6xdU8oq','WQy4W5m6W7bOjdig','W53cPXNdVcmoW4iJ'];_0x25f5=function(){return _0x5e02a2;};return _0x25f5();}exports[_0xc3426e(0x1ac,'WZ&I')]=filterWhereForTable;
+"use strict";
+/**
+ * @file cqn-utils.ts
+ * @description Pure CQN utilities: FROM-node retargeting, WHERE stripping,
+ * association-path detection, and remote-error inspection.
+ *
+ * None of these functions have side effects on external state — they operate
+ * only on the CQN node they are passed (mutating in place where documented)
+ * and the given entity definition.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.filterWhereForTable = exports.applyInMemorySort = exports.isAssociationPathRemoteError = exports.replaceWithNonFilteredRemoteQuery = exports.stripRemoteWhere = exports.containsAssociationPathString = exports.containsAssociationPathInWhere = exports.resolveTargetEntity = exports.retargetFromNode = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+const { SELECT } = cds_1.default.ql;
+/**
+ * Re-targets a SELECT.from node to a physical remote entity while preserving
+ * key predicates and aliases from the incoming request CQN.
+ *
+ * @param fromNode          Original CQN FROM node (may be `undefined`).
+ * @param targetEntityName  Physical entity name to substitute.
+ * @returns                 Updated CQN FROM node.
+ */
+const retargetFromNode = (fromNode, targetEntityName) => {
+    if (!fromNode || typeof fromNode !== 'object') {
+        return { ref: [targetEntityName] };
+    }
+    if (Array.isArray(fromNode.ref) && fromNode.ref.length > 0) {
+        const ref = [...fromNode.ref];
+        const head = ref[0];
+        if (typeof head === 'string') {
+            ref[0] = targetEntityName;
+        }
+        else if (head && typeof head === 'object') {
+            ref[0] = { ...head, id: targetEntityName };
+        }
+        else {
+            ref[0] = targetEntityName;
+        }
+        return { ...fromNode, ref };
+    }
+    return { ...fromNode, ref: [targetEntityName] };
+};
+exports.retargetFromNode = retargetFromNode;
+/**
+ * Resolves the physical target entity name from a CDS entity definition's
+ * projection or query FROM clause.
+ *
+ * @param entityDef  CDS entity definition.
+ * @returns          Fully qualified target entity name.
+ */
+const resolveTargetEntity = (entityDef) => {
+    const fromRef = entityDef.query?.SELECT?.from?.ref || entityDef.projection?.from?.ref;
+    let targetEntity = Array.isArray(fromRef) ? fromRef[0] : entityDef.name;
+    if (targetEntity && typeof targetEntity === 'object' && targetEntity.id)
+        targetEntity = targetEntity.id;
+    return targetEntity;
+};
+exports.resolveTargetEntity = resolveTargetEntity;
+/**
+ * Returns `true` when the WHERE clause contains association navigation paths
+ * (e.g. `to_Partner/Country`). Used to detect filters that cannot be forwarded
+ * to backends that do not support cross-entity navigation in `$filter`.
+ *
+ * @param where      CQN WHERE node.
+ * @param entityDef  Local entity definition.
+ */
+const containsAssociationPathInWhere = (where, entityDef) => {
+    if (!where || !entityDef?.elements)
+        return false;
+    const segmentId = (segment) => {
+        if (typeof segment === 'string')
+            return segment;
+        if (segment && typeof segment === 'object') {
+            if (typeof segment.id === 'string')
+                return segment.id;
+            if (typeof segment.name === 'string')
+                return segment.name;
+        }
+        return undefined;
+    };
+    const isAssocPath = (segments) => {
+        if (!Array.isArray(segments) || segments.length === 0)
+            return false;
+        if (segments.length > 1) {
+            const head = segmentId(segments[0]);
+            const element = head ? entityDef.elements?.[head] : undefined;
+            return !!(element && (0, alias_maps_1.isAssociationElement)(element));
+        }
+        const first = segmentId(segments[0]);
+        if (typeof first === 'string' && first.includes('/')) {
+            const head = first.split('/')[0];
+            const element = head ? entityDef.elements?.[head] : undefined;
+            return !!(element && (0, alias_maps_1.isAssociationElement)(element));
+        }
+        return false;
+    };
+    const walk = (node) => {
+        if (!node)
+            return false;
+        if (Array.isArray(node))
+            return node.some(walk);
+        if (typeof node !== 'object')
+            return false;
+        if (Array.isArray(node.ref) && isAssocPath(node.ref))
+            return true;
+        if (node.func && Array.isArray(node.args)) {
+            for (const arg of node.args) {
+                if (typeof arg === 'string' && arg.includes('/')) {
+                    const head = arg.split('/')[0];
+                    const element = head ? entityDef.elements?.[head] : undefined;
+                    if (element && (0, alias_maps_1.isAssociationElement)(element))
+                        return true;
+                }
+            }
+        }
+        return Object.values(node).some(walk);
+    };
+    return walk(where);
+};
+exports.containsAssociationPathInWhere = containsAssociationPathInWhere;
+/**
+ * Faster string-based heuristic: checks whether the serialised WHERE contains
+ * any association name followed by `/`. Used as a secondary guard.
+ *
+ * @param where      CQN WHERE node.
+ * @param entityDef  Local entity definition.
+ */
+const containsAssociationPathString = (where, entityDef) => {
+    if (!where || !entityDef?.elements)
+        return false;
+    const serialized = JSON.stringify(where);
+    if (!serialized)
+        return false;
+    for (const [name, element] of Object.entries(entityDef.elements)) {
+        if (!(0, alias_maps_1.isAssociationElement)(element))
+            continue;
+        if (serialized.includes(`${name}/`))
+            return true;
+    }
+    return false;
+};
+exports.containsAssociationPathString = containsAssociationPathString;
+/**
+ * Removes any WHERE clause from a remote query CQN object, including inline
+ * key predicates inside the FROM node.
+ *
+ * @param query  Mutable CQN query object.
+ */
+const stripRemoteWhere = (query) => {
+    if (!query?.SELECT)
+        return;
+    query.SELECT.where = undefined;
+    delete query.SELECT.where;
+    const fromNode = query.SELECT.from;
+    if (fromNode?.where) {
+        fromNode.where = undefined;
+        delete fromNode.where;
+    }
+    if (Array.isArray(fromNode?.ref) && fromNode.ref[0] && typeof fromNode.ref[0] === 'object') {
+        const head = fromNode.ref[0];
+        if (head.where) {
+            head.where = undefined;
+            delete head.where;
+        }
+    }
+};
+exports.stripRemoteWhere = stripRemoteWhere;
+/**
+ * Rebuilds a remote query without any top-level WHERE clause so that
+ * navigation-path filters are never forwarded to backends that don't
+ * support them on the root entity. Preserves `$select`, `$orderby`,
+ * `$top`, `$skip`, `$count`, and `$top=1` (one) flags.
+ *
+ * @param query             Mutable CQN query object.
+ * @param targetEntityName  Entity name to target.
+ */
+const replaceWithNonFilteredRemoteQuery = (query, targetEntityName) => {
+    if (!query?.SELECT)
+        return;
+    const rebuilt = SELECT.from(targetEntityName);
+    if (Array.isArray(query.SELECT.columns))
+        rebuilt.columns(query.SELECT.columns);
+    if (query.SELECT.orderBy)
+        rebuilt.orderBy(query.SELECT.orderBy);
+    if (query.SELECT.limit) {
+        const rows = query.SELECT.limit.rows?.val ?? query.SELECT.limit.rows;
+        const offset = query.SELECT.limit.offset?.val ?? query.SELECT.limit.offset;
+        rebuilt.limit(rows, offset);
+    }
+    if (query.SELECT.count)
+        rebuilt.SELECT.count = true;
+    if (query.SELECT.one)
+        rebuilt.SELECT.one = true;
+    query.SELECT = rebuilt.SELECT;
+};
+exports.replaceWithNonFilteredRemoteQuery = replaceWithNonFilteredRemoteQuery;
+/**
+ * Heuristically detects backend errors of the form
+ * *"Property <X> not found in type <Y>"* where `<X>` is an association name.
+ * Used to trigger the in-memory filter fallback path.
+ *
+ * @param error      Unknown error thrown by the remote service.
+ * @param entityDef  Local entity definition (used to enumerate association names).
+ */
+const isAssociationPathRemoteError = (error, entityDef) => {
+    const message = String(error?.message
+        || error?.reason?.message
+        || error?.response?.body?.error?.message?.value
+        || error?.response?.data?.error?.message?.value
+        || error?.error?.message
+        || '');
+    const serialized = JSON.stringify(error || {});
+    if (!message.includes('Property') || !message.includes('not found in type'))
+        return false;
+    for (const [name, element] of Object.entries(entityDef?.elements || {})) {
+        if (!(0, alias_maps_1.isAssociationElement)(element))
+            continue;
+        if (message.includes(name) || serialized.includes(name))
+            return true;
+    }
+    return false;
+};
+exports.isAssociationPathRemoteError = isAssociationPathRemoteError;
+/**
+ * Sorts `records` in-place according to a CQN `orderBy` specification.
+ * Used when the full sort must happen in memory (e.g. after local filtering).
+ *
+ * @param records  Mutable array of mapped result records.
+ * @param orderBy  CQN `orderBy` clause array.
+ * @returns        The same array, sorted.
+ */
+const applyInMemorySort = (records, orderBy) => {
+    return records.sort((a, b) => {
+        for (const clause of orderBy) {
+            const field = clause.ref ? clause.ref[0] : null;
+            if (!field)
+                continue;
+            const isDesc = clause.sort?.toLowerCase() === 'desc';
+            if (a[field] < b[field])
+                return isDesc ? 1 : -1;
+            if (a[field] > b[field])
+                return isDesc ? -1 : 1;
+        }
+        return 0;
+    });
+};
+exports.applyInMemorySort = applyInMemorySort;
+/**
+ * Placeholder hook: filter a JOIN mashup's WHERE clause down to predicates
+ * that reference only the given alias. Currently a pass-through because the
+ * primary query's WHERE is trusted; kept as an extension point.
+ *
+ * @param where   CQN WHERE clause.
+ * @param _alias  Table alias.
+ */
+const filterWhereForTable = (where, _alias) => where;
+exports.filterWhereForTable = filterWhereForTable;

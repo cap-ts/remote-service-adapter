@@ -1,1 +1,144 @@
-var _0x3b2456=_0x4bdb;(function(_0x4e41e3,_0xdc338){var _0x397b4e=_0x4bdb,_0x1a8b8b=_0x4e41e3();while(!![]){try{var _0x152dbd=-parseInt(_0x397b4e(0xcd,'XDB%'))/0x1+-parseInt(_0x397b4e(0xef,'l0^m'))/0x2+parseInt(_0x397b4e(0xee,'3@3&'))/0x3*(-parseInt(_0x397b4e(0xe4,'LmFp'))/0x4)+-parseInt(_0x397b4e(0xbc,'0IJj'))/0x5+-parseInt(_0x397b4e(0xcb,'2lW%'))/0x6*(-parseInt(_0x397b4e(0xda,'l0^m'))/0x7)+-parseInt(_0x397b4e(0xd9,'Re23'))/0x8+-parseInt(_0x397b4e(0xc5,'2lW%'))/0x9*(-parseInt(_0x397b4e(0xdb,'XDB%'))/0xa);if(_0x152dbd===_0xdc338)break;else _0x1a8b8b['push'](_0x1a8b8b['shift']());}catch(_0x5bb74d){_0x1a8b8b['push'](_0x1a8b8b['shift']());}}}(_0x360f,0x2fa7a),(Object[_0x3b2456(0xc4,'*Q4m')](exports,_0x3b2456(0xd3,'LmFp'),{'value':!0x0}),exports['buildChildJoinKey']=exports[_0x3b2456(0xe9,'Vz)8')]=exports[_0x3b2456(0xec,'4XIV')]=exports['getProjectionMappings']=exports[_0x3b2456(0xe7,'iy^@')]=exports[_0x3b2456(0xd4,'73Lc')]=void 0x0));function _0x4bdb(_0x3d8ff2,_0x55e2cf){_0x3d8ff2=_0x3d8ff2-0xb8;var _0x360f62=_0x360f();var _0x4bdb90=_0x360f62[_0x3d8ff2];if(_0x4bdb['DPZpAt']===undefined){var _0x50e806=function(_0x56a78d){var _0x38d26d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5d9ae3='',_0x289ba0='';for(var _0x446ad4=0x0,_0x26d96,_0x1c98d5,_0x5d0748=0x0;_0x1c98d5=_0x56a78d['charAt'](_0x5d0748++);~_0x1c98d5&&(_0x26d96=_0x446ad4%0x4?_0x26d96*0x40+_0x1c98d5:_0x1c98d5,_0x446ad4++%0x4)?_0x5d9ae3+=String['fromCharCode'](0xff&_0x26d96>>(-0x2*_0x446ad4&0x6)):0x0){_0x1c98d5=_0x38d26d['indexOf'](_0x1c98d5);}for(var _0x3fce38=0x0,_0xf3ea4c=_0x5d9ae3['length'];_0x3fce38<_0xf3ea4c;_0x3fce38++){_0x289ba0+='%'+('00'+_0x5d9ae3['charCodeAt'](_0x3fce38)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x289ba0);};var _0x3d2312=function(_0x1b72f8,_0x433a40){var _0x18da2a=[],_0x1050a7=0x0,_0x5c6e4b,_0x4c9634='';_0x1b72f8=_0x50e806(_0x1b72f8);var _0x5a700a;for(_0x5a700a=0x0;_0x5a700a<0x100;_0x5a700a++){_0x18da2a[_0x5a700a]=_0x5a700a;}for(_0x5a700a=0x0;_0x5a700a<0x100;_0x5a700a++){_0x1050a7=(_0x1050a7+_0x18da2a[_0x5a700a]+_0x433a40['charCodeAt'](_0x5a700a%_0x433a40['length']))%0x100,_0x5c6e4b=_0x18da2a[_0x5a700a],_0x18da2a[_0x5a700a]=_0x18da2a[_0x1050a7],_0x18da2a[_0x1050a7]=_0x5c6e4b;}_0x5a700a=0x0,_0x1050a7=0x0;for(var _0x2d5c0e=0x0;_0x2d5c0e<_0x1b72f8['length'];_0x2d5c0e++){_0x5a700a=(_0x5a700a+0x1)%0x100,_0x1050a7=(_0x1050a7+_0x18da2a[_0x5a700a])%0x100,_0x5c6e4b=_0x18da2a[_0x5a700a],_0x18da2a[_0x5a700a]=_0x18da2a[_0x1050a7],_0x18da2a[_0x1050a7]=_0x5c6e4b,_0x4c9634+=String['fromCharCode'](_0x1b72f8['charCodeAt'](_0x2d5c0e)^_0x18da2a[(_0x18da2a[_0x5a700a]+_0x18da2a[_0x1050a7])%0x100]);}return _0x4c9634;};_0x4bdb['nHXhKk']=_0x3d2312,_0x4bdb['sXLMXB']={},_0x4bdb['DPZpAt']=!![];}var _0x1a2fc2=_0x360f62[0x0];_0x4bdb['bElAlB']!==_0x1a2fc2&&(_0x4bdb['sXLMXB']={},_0x4bdb['bElAlB']=_0x1a2fc2);var _0x4517c0=_0x4bdb['sXLMXB'][_0x3d8ff2];return _0x4517c0===undefined?(_0x4bdb['RTKwAm']===undefined&&(_0x4bdb['RTKwAm']=!![]),_0x4bdb90=_0x4bdb['nHXhKk'](_0x4bdb90,_0x55e2cf),_0x4bdb['sXLMXB'][_0x3d8ff2]=_0x4bdb90):_0x4bdb90=_0x4517c0,_0x4bdb90;}let flattenJoinStructure=_0x16b497=>{var _0x5ba81e={'iYPdb':function(_0x128d35,_0x5dd701){return _0x128d35(_0x5dd701);},'MZXUr':function(_0x4660e5,_0x21a95e){return _0x4660e5(_0x21a95e);}};let _0x2caca3=[],_0xcac505=_0x594f0c=>{var _0x9995b2=_0x4bdb;_0x594f0c&&(_0x594f0c['join']?(_0x5ba81e[_0x9995b2(0xd7,'$Ksv')](_0xcac505,_0x594f0c[_0x9995b2(0xc0,'4XIV')][0x0]),_0x5ba81e['MZXUr'](_0xcac505,_0x594f0c[_0x9995b2(0xf1,'3@3&')][0x1]),_0x2caca3[_0x9995b2(0xdf,'UE#7')]({'entityPath':_0x594f0c[_0x9995b2(0xbf,'73Lc')][0x1]['ref'][0x0],'alias':_0x594f0c[_0x9995b2(0xbd,'6%NA')][0x1]['as']||_0x594f0c[_0x9995b2(0xf9,'ZtA[')][0x1][_0x9995b2(0xf6,'Vz)8')][0x0],'onCondition':_0x594f0c['on']})):_0x594f0c[_0x9995b2(0xd2,'E[Z0')]&&_0x2caca3[_0x9995b2(0xe3,'dOBX')]({'entityPath':_0x594f0c[_0x9995b2(0xdd,'TPAz')][0x0],'alias':_0x594f0c['as']||_0x594f0c[_0x9995b2(0xdc,'z2L6')][0x0]}));};return _0xcac505(_0x16b497),_0x2caca3;},parseJoinKeys=(exports[_0x3b2456(0xe5,'3@3&')]=flattenJoinStructure,(_0x19f7ba,_0x5fd650,_0x1b21b1)=>{var _0x531737=_0x3b2456,_0x5a8ff1={'ElAeP':function(_0x45fe8e,_0x32be26){return _0x45fe8e+_0x32be26;},'VwrhD':function(_0xc7b97e,_0x319fc1){return _0xc7b97e===_0x319fc1;}},_0x35a662={'leftKey':'','rightKey':''},_0x53a283=_0x19f7ba?.['xpr']||(Array['isArray'](_0x19f7ba)?_0x19f7ba:null);if(_0x53a283){for(let _0x3b93e1=0x0;_0x3b93e1<_0x53a283[_0x531737(0xed,'$Ksv')];_0x3b93e1++)if('='===_0x53a283[_0x3b93e1]){var _0x30261b=_0x53a283[_0x3b93e1-0x1],_0xcfbd9f=_0x53a283[_0x5a8ff1[_0x531737(0xc6,'kjoU')](_0x3b93e1,0x1)];if(_0x30261b?.[_0x531737(0xd6,'sHoo')]&&_0xcfbd9f?.[_0x531737(0xd5,'UE#7')]){for(var _0x35917d of[_0x30261b[_0x531737(0xde,'XDB%')],_0xcfbd9f[_0x531737(0xcf,'4XIV')]])_0x5a8ff1[_0x531737(0xd0,'6%NA')](_0x35917d[0x0],_0x5fd650)&&_0x35917d[0x1]?_0x35a662[_0x531737(0xc1,'E[Z0')]=_0x35917d[0x1]:_0x35917d[0x0]===_0x1b21b1&&_0x35917d[0x1]&&(_0x35a662[_0x531737(0xc3,'jQGu')]=_0x35917d[0x1]);}}}return _0x35a662;}),getProjectionMappings=(exports[_0x3b2456(0xce,'T@E^')]=parseJoinKeys,(_0x164ff6,_0x4ac8a9)=>{var _0x204a23=_0x3b2456,_0x1f04d9,_0x385fd4=[];for(_0x1f04d9 of _0x164ff6||[])_0x1f04d9[_0x204a23(0xd1,'YU[K')]&&_0x1f04d9[_0x204a23(0xea,'3)rg')][0x0]===_0x4ac8a9&&0x2===_0x1f04d9['ref']['length']&&_0x385fd4[_0x204a23(0xca,'ZmWk')]({'sourceField':_0x1f04d9['ref'][0x1],'projectedAs':_0x1f04d9['as']||_0x1f04d9['ref'][0x1]});return _0x385fd4;}),parseExpandTree=(exports[_0x3b2456(0xfa,'jQGu')]=getProjectionMappings,_0x330c38=>{var _0x267a7b=_0x3b2456,_0x54daa1={'zwGvy':function(_0x239a17,_0x33f54e){return _0x239a17-_0x33f54e;}},_0x3c4592,_0x41922f=[];for(_0x3c4592 of _0x330c38||[])_0x3c4592?.[_0x267a7b(0xf2,'iy^@')]&&_0x3c4592?.[_0x267a7b(0xe1,'lYE7')]&&_0x41922f['push']({'name':_0x3c4592[_0x267a7b(0xd2,'E[Z0')][_0x54daa1[_0x267a7b(0xb9,'eD0b')](_0x3c4592[_0x267a7b(0xe0,'!Ohm')][_0x267a7b(0xbb,'*Q4m')],0x1)],'as':_0x3c4592['as'],'columns':_0x3c4592[_0x267a7b(0xbe,'T@E^')],'orderBy':_0x3c4592[_0x267a7b(0xf7,'Z8$[')],'where':_0x3c4592['where'],'limit':_0x3c4592[_0x267a7b(0xf0,'3@3&')],'count':_0x3c4592[_0x267a7b(0xf8,'z2L6')]});return _0x41922f;}),buildParentJoinKey=(exports[_0x3b2456(0xec,'4XIV')]=parseExpandTree,(_0xfc3b8c,_0x14c00c)=>_0x14c00c?.[_0x3b2456(0xd8,'EMRT')]?0x1===_0x14c00c['length']?void 0x0!==_0xfc3b8c[_0x14c00c[0x0]]?String(_0xfc3b8c[_0x14c00c[0x0]]):'':JSON[_0x3b2456(0xe8,'T5C6')](_0x14c00c[_0x3b2456(0xf5,'5#iE')](_0x40315a=>_0xfc3b8c[_0x40315a]??'')):void 0x0!==_0xfc3b8c['ID']?String(_0xfc3b8c['ID']):JSON[_0x3b2456(0xf3,'jQGu')](_0xfc3b8c)),buildChildJoinKey=(exports['buildParentJoinKey']=buildParentJoinKey,(_0x3488de,_0x9fc84d)=>_0x9fc84d?.[_0x3b2456(0xe6,'lYE7')]?0x1===_0x9fc84d[_0x3b2456(0xfc,'ZtA[')]?void 0x0!==_0x3488de[_0x9fc84d[0x0]]?String(_0x3488de[_0x9fc84d[0x0]]):'':JSON[_0x3b2456(0xe2,'73Lc')](_0x9fc84d[_0x3b2456(0xc2,'ZtA[')](_0x17421d=>_0x3488de[_0x17421d]??'')):void 0x0!==_0x3488de['ID']?String(_0x3488de['ID']):JSON['stringify'](_0x3488de));exports[_0x3b2456(0xcc,'4XIV')]=buildChildJoinKey;function _0x360f(){var _0x45cf06=['yCoQCCkr','A8oXrNamEsjx','bCoNf2lcGmk8odrYW65Hj8oGW6/dPColjW','W7zDW5jzbCkOfN8mW4Su','su7cP8oTW54qWPXkv8ohCCo1bW','fCo3ga','WRiYF8odW7C','fCkxtW','l8k7W5G','WRldJSoRWQybt8o3gXmX','W77dQCo4WQyQWRBdTSk3E8kqySonWOeIW4xdTmoZteGw','Dwfm','WPRdImoN','rSk/rZ5K','W6lcHwjYW5eF','W7/dL0tcLIDVWRhdNfNdHCkFcmoC','uCkqWPpcLXyavaxcPsFdLWhcOa','W7jEW5nzESkucg8nW5q','WQzZAq','WOfLWPm','WRemWOm','D3fzpq','g8oqW5u','WRJcMCkW','W6VdSCoRWRSWWRtdSCkBBq','W6/cMhmVW4XCW54','W5ZcO8k4W6n0emowjYO6ySkN','W7uoyKhdTwWGuSkcW7RdNSobW4NdGmozW5W8dSoGW6m','WQBcMCk4DelcNG','W57dTqtcLr3dGu/dKeRcQ8kdWPbe','WQHQscbiW6HiWRKP','W4ZdKCoIWQ1YWOZcQHZcJtu1kMdcGdDwWQP4','y8opW5C','rsNdTmozdSk9W5OkW4PEW55vW78','f8oZdh3cGCk6kc1/W6rphmo7W6tdIW','q8kdEt1Yga','WQfttMpdGKqpuq','u8kxWPtcMXihaHJcJthdItm','W78lBLZdTq','W7iqzey','W4VdRaBcHXBdRW','zCkyW4CvbsVcLZ82','F8kQxgJcGSoBlvZdMbfMW5nr','CSo0W7e','W5ZdGCoT','WPyzkNxdScdcGa','WRD5ELn4','W43cJ2ddNW','CCkjW4eSgspcLdWSWQVdV8ohdWuckCkOW7BcHSk3ua','iSkzsConDxBdGCka','W4dcMgNdIZdcVW','rY7dS8ovcSk6WOWxW6jiW4bN','WPyzWPngca','gCoGjSodW4ilxYbmsq','sCocWRvXiwq','WOVcJ8kdDsOfp8kcbLNcQfdcLa','WOu3ASoy','xfFcPCo/W5u+','W7NdT8o+WQe','bSoGgx0','mCk7W5GTWRdcQ8ki','W4hcNhC','zmkfW5iuhWFcMYa','qCocWR1/o2K2fmkOWOrwl0/cMq','ACo7hrXxDYPxuNxcNW','qmkGmZTa','hSouiwW+qcjMfmkVWOFdVa','WPVcKmk8W7eMWQxcGGFcRISY','WP/cKSk6W7uUW6VdVGRcJIeregi'];_0x360f=function(){return _0x45cf06;};return _0x360f();}
+"use strict";
+/**
+ * @file join-parser.ts
+ * @description Parses JOIN and $expand structures out of incoming CQN.
+ *
+ * These helpers are pure syntax processors — they turn one AST shape into
+ * a more convenient one for the join-mashup and expand-materialiser pipelines.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.buildChildJoinKey = exports.buildParentJoinKey = exports.parseExpandTree = exports.getProjectionMappings = exports.parseJoinKeys = exports.flattenJoinStructure = void 0;
+/**
+ * Flattens a nested CQN JOIN tree into a linear sequence of
+ * `{ entityPath, alias, onCondition? }` entries in evaluation order.
+ * The first element is the primary source; subsequent elements each bring
+ * their own `ON` condition.
+ *
+ * @param from  CQN FROM node (with or without JOIN nodes).
+ */
+const flattenJoinStructure = (from) => {
+    const sequence = [];
+    const traverse = (node) => {
+        if (!node)
+            return;
+        if (node.join) {
+            traverse(node.args[0]);
+            traverse(node.args[1]);
+            sequence.push({
+                entityPath: node.args[1].ref[0],
+                alias: node.args[1].as || node.args[1].ref[0],
+                onCondition: node.on
+            });
+        }
+        else if (node.ref) {
+            sequence.unshift({ entityPath: node.ref[0], alias: node.as || node.ref[0] });
+        }
+    };
+    traverse(from);
+    return sequence;
+};
+exports.flattenJoinStructure = flattenJoinStructure;
+/**
+ * Extracts the pair of join keys (left / parent alias vs. this join alias)
+ * from a CQN `ON` condition. Only equi-joins are supported.
+ *
+ * @param on          CQN `ON` node.
+ * @param leftAlias   Alias of the left (parent) source.
+ * @param rightAlias  Alias of the right (current) source.
+ * @returns           `{ leftKey, rightKey }`; either may be empty when no match found.
+ */
+const parseJoinKeys = (on, leftAlias, rightAlias) => {
+    const result = { leftKey: '', rightKey: '' };
+    const items = on?.xpr || (Array.isArray(on) ? on : null);
+    if (!items)
+        return result;
+    for (let i = 0; i < items.length; i++) {
+        if (items[i] !== '=')
+            continue;
+        const left = items[i - 1];
+        const right = items[i + 1];
+        if (!left?.ref || !right?.ref)
+            continue;
+        for (const ref of [left.ref, right.ref]) {
+            if (ref[0] === leftAlias && ref[1])
+                result.leftKey = ref[1];
+            else if (ref[0] === rightAlias && ref[1])
+                result.rightKey = ref[1];
+        }
+    }
+    return result;
+};
+exports.parseJoinKeys = parseJoinKeys;
+/**
+ * Extracts projection-level `<alias>.<field> AS <name>` mappings out of a
+ * JOIN mashup's SELECT columns. Only 2-segment refs matching the given alias
+ * are considered, so predicates from other tables are ignored.
+ *
+ * @param columns  CQN columns.
+ * @param alias    Table alias to filter by.
+ * @returns        Array of `{ sourceField, projectedAs }` entries.
+ */
+const getProjectionMappings = (columns, alias) => {
+    const mappings = [];
+    for (const col of columns || []) {
+        if (col.ref && col.ref[0] === alias && col.ref.length === 2) {
+            mappings.push({ sourceField: col.ref[1], projectedAs: col.as || col.ref[1] });
+        }
+    }
+    return mappings;
+};
+exports.getProjectionMappings = getProjectionMappings;
+/**
+ * Parses `$expand` nodes out of an incoming CQN columns array.
+ *
+ * @param columns  CQN columns from the SELECT.
+ * @returns        Array of {@link ExpandNode}s (may be empty).
+ */
+const parseExpandTree = (columns) => {
+    const expands = [];
+    for (const col of columns || []) {
+        if (col?.expand && col?.ref) {
+            expands.push({
+                name: col.ref[col.ref.length - 1],
+                as: col.as,
+                columns: col.expand,
+                orderBy: col.orderBy,
+                where: col.where,
+                limit: col.limit,
+                count: col.count
+            });
+        }
+    }
+    return expands;
+};
+exports.parseExpandTree = parseExpandTree;
+/**
+ * Builds a stable string key from a parent record's join fields. Used to
+ * look up children in the map returned by the fetch helper.
+ *
+ * @param row        Parent record.
+ * @param localKeys  Parent-side join key names.
+ */
+const buildParentJoinKey = (row, localKeys) => {
+    if (!localKeys?.length)
+        return row.ID !== undefined ? String(row.ID) : JSON.stringify(row);
+    if (localKeys.length === 1)
+        return row[localKeys[0]] !== undefined ? String(row[localKeys[0]]) : '';
+    return JSON.stringify(localKeys.map((k) => row[k] ?? ''));
+};
+exports.buildParentJoinKey = buildParentJoinKey;
+/**
+ * Builds a stable string key from a child record's join fields. Matches the
+ * format produced by {@link buildParentJoinKey}.
+ *
+ * @param row         Child record.
+ * @param targetKeys  Target-side join key names.
+ */
+const buildChildJoinKey = (row, targetKeys) => {
+    if (!targetKeys?.length)
+        return row.ID !== undefined ? String(row.ID) : JSON.stringify(row);
+    if (targetKeys.length === 1)
+        return row[targetKeys[0]] !== undefined ? String(row[targetKeys[0]]) : '';
+    return JSON.stringify(targetKeys.map((k) => row[k] ?? ''));
+};
+exports.buildChildJoinKey = buildChildJoinKey;

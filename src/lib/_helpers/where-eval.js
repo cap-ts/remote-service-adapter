@@ -1,1 +1,320 @@
-function _0x24e8(_0x475e46,_0x2b9a54){_0x475e46=_0x475e46-0x198;const _0x1e0bd8=_0x1e0b();let _0x24e852=_0x1e0bd8[_0x475e46];if(_0x24e8['EFAKGY']===undefined){var _0x26f0ab=function(_0x15a9b8){const _0x5eccd9='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3fe41a='',_0x184cee='';for(let _0x16a1b9=0x0,_0x48c111,_0x216a07,_0x183843=0x0;_0x216a07=_0x15a9b8['charAt'](_0x183843++);~_0x216a07&&(_0x48c111=_0x16a1b9%0x4?_0x48c111*0x40+_0x216a07:_0x216a07,_0x16a1b9++%0x4)?_0x3fe41a+=String['fromCharCode'](0xff&_0x48c111>>(-0x2*_0x16a1b9&0x6)):0x0){_0x216a07=_0x5eccd9['indexOf'](_0x216a07);}for(let _0x54ec32=0x0,_0x126739=_0x3fe41a['length'];_0x54ec32<_0x126739;_0x54ec32++){_0x184cee+='%'+('00'+_0x3fe41a['charCodeAt'](_0x54ec32)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x184cee);};const _0xf3775a=function(_0x102102,_0x3550d9){let _0x1bd5c2=[],_0x59719d=0x0,_0x23e1a9,_0x1e8fdc='';_0x102102=_0x26f0ab(_0x102102);let _0x34b45f;for(_0x34b45f=0x0;_0x34b45f<0x100;_0x34b45f++){_0x1bd5c2[_0x34b45f]=_0x34b45f;}for(_0x34b45f=0x0;_0x34b45f<0x100;_0x34b45f++){_0x59719d=(_0x59719d+_0x1bd5c2[_0x34b45f]+_0x3550d9['charCodeAt'](_0x34b45f%_0x3550d9['length']))%0x100,_0x23e1a9=_0x1bd5c2[_0x34b45f],_0x1bd5c2[_0x34b45f]=_0x1bd5c2[_0x59719d],_0x1bd5c2[_0x59719d]=_0x23e1a9;}_0x34b45f=0x0,_0x59719d=0x0;for(let _0x59ee8d=0x0;_0x59ee8d<_0x102102['length'];_0x59ee8d++){_0x34b45f=(_0x34b45f+0x1)%0x100,_0x59719d=(_0x59719d+_0x1bd5c2[_0x34b45f])%0x100,_0x23e1a9=_0x1bd5c2[_0x34b45f],_0x1bd5c2[_0x34b45f]=_0x1bd5c2[_0x59719d],_0x1bd5c2[_0x59719d]=_0x23e1a9,_0x1e8fdc+=String['fromCharCode'](_0x102102['charCodeAt'](_0x59ee8d)^_0x1bd5c2[(_0x1bd5c2[_0x34b45f]+_0x1bd5c2[_0x59719d])%0x100]);}return _0x1e8fdc;};_0x24e8['QHFiQG']=_0xf3775a,_0x24e8['rEiPDl']={},_0x24e8['EFAKGY']=!![];}const _0x59ac1f=_0x1e0bd8[0x0];_0x24e8['qklKMR']!==_0x59ac1f&&(_0x24e8['rEiPDl']={},_0x24e8['qklKMR']=_0x59ac1f);const _0x1a67ce=_0x24e8['rEiPDl'][_0x475e46];return _0x1a67ce===undefined?(_0x24e8['BbZbZS']===undefined&&(_0x24e8['BbZbZS']=!![]),_0x24e852=_0x24e8['QHFiQG'](_0x24e852,_0x2b9a54),_0x24e8['rEiPDl'][_0x475e46]=_0x24e852):_0x24e852=_0x1a67ce,_0x24e852;}const _0x3079d6=_0x24e8;(function(_0x3e23a6,_0x3df7d4){const _0x56f947=_0x24e8,_0x2c0e07=_0x3e23a6();while(!![]){try{const _0x2119a7=parseInt(_0x56f947(0x1e3,'JJQV'))/0x1*(parseInt(_0x56f947(0x25a,'%YT5'))/0x2)+parseInt(_0x56f947(0x1a4,'b1ld'))/0x3*(-parseInt(_0x56f947(0x271,'xuRD'))/0x4)+parseInt(_0x56f947(0x1b3,'%q0F'))/0x5+parseInt(_0x56f947(0x230,'%*MK'))/0x6*(parseInt(_0x56f947(0x24d,'$wBr'))/0x7)+parseInt(_0x56f947(0x254,'9Vck'))/0x8+-parseInt(_0x56f947(0x1c8,'6yBv'))/0x9+parseInt(_0x56f947(0x1dd,'SL*8'))/0xa*(parseInt(_0x56f947(0x1cc,'b1ld'))/0xb);if(_0x2119a7===_0x3df7d4)break;else _0x2c0e07['push'](_0x2c0e07['shift']());}catch(_0x6f4b6c){_0x2c0e07['push'](_0x2c0e07['shift']());}}}(_0x1e0b,0x88e76),(Object[_0x3079d6(0x207,'imxu')](exports,_0x3079d6(0x238,'v6zY'),{'value':!0x0}),exports[_0x3079d6(0x19f,'M*mx')]=exports[_0x3079d6(0x1f1,']@HN')]=exports[_0x3079d6(0x26d,'HD(Z')]=exports[_0x3079d6(0x1a1,'Q$n$')]=exports['compareValues']=exports[_0x3079d6(0x266,'SL*8')]=exports[_0x3079d6(0x26c,'J^QC')]=void 0x0));function _0x1e0b(){const _0x17fe24=['WPn2bSo4W6K','W40+h3ar','xMFdTuX1n18','WQVcQ2SbW6O','WQ/cOmkNWO/dVG','wNxdHa','ErFcOahdQa','WRz2imoFW6HPW5fx','zmoHW78+FZ3cKG','W57dNcddIxPgb8kQW59GW5VcNh5yoW','caWMWQO','q3VdUffWm1tdKSkkuCkB','cZlcLcVdGCkyWQO','rtHuvxq','W5hdMc/dKNu','WQhdUYNcKXa','CSkQWQqxoq','vflcI355h0ddJSo8','W6WqndpcSW','cZTZzGy','FmowW6JcPSkVW63cUmoZWORdTq','ux3dMePIja','bmoTWO9/Bd4HW54','ECo9W7iJEJNcMqKkD8kq','WQRdJSokWPKU','ySojWRC+aComW5JcOgmqW4bmtmkhWRNdIs57W47cVa0','omoQpXiJ','WOy2W6iViSonFvfn','EmoCdmozfa','lN0tWPvP','ESoRW6PFW4K','WQddM8ohWOi','W4FcIWpcIebv','WQjzxd7cGW','W59MW4FcHIxcUSk1W7fHW7tcGvVcRG','i07dRwLmBmkptCkvWPhdOCooW4a9j8ovf8oJW7VcJmkPWOe0','uWXdF0e2kXddOmk9W7TaWPm','smklgSoCvmoHWOdcUmooWOZcRCkwd8oGW6G','W5rwW57cHHC','FfhdMe5v','W4hcHW3cIfToWPO','W4BcMCkyWQ53jrjrufztW5pcRW','eIr1zanPvW','afGMWPjoWOm1ua','v0bWWRZcUa','xmoHhG','ghrmW7a','W7VcG8kpWQxdR8k6mq','W7NdQSoZW7/cMCo5qCocWRZdU8k3zY0','rmkooSocu8oHWO0','z8kjdCoTW40','EhflWQFcPG','od08WQxcGa','WP7dM8oVW6u3D1O','fwhcOgvvkgm','WPyiW5yoka','ESkrWPT0qa','W4ddGw4hW5VdRa','WPSQW6eYp8oayq','AmoKW58GEd3cNY8TCCkBa0b5cLfWW4VcUCoRW59pnq','cgfbW67cSJVdK8oWcsu','a21VW7/cRa','WRlcS8k7WP4AhCkwja1kChldGcxdSG','tHBcQI/dRSkn','wxjZWQtcM8k5fG','BZ91ha','FCkwFmkfWRr4WP3cRSovpCovWRtdUJaPW6KvoCo3rq','lwaMWQ5Q','i8o2W63cU8otuG','W5LYW6xcUG8','u8oLW4RcPCkv','WPBcOCoqbLi8kH5Y','gSo3bbqCW4qhbCkEb8o5WR/dKW','W4H1W4FcJGdcUSk1W7XXW6dcG03cV29DW5BdU8kiW43dSbJcM8kY','DmodW67cR8kR','DGH3WQHKE2u','BSoKW68aBa','o8kQW44AFZNcMIu','tmkxCmkTWR8','W5BdM3GDW4ldOSkQqG','rCk3WPvjvdWfW5K5WOm+','vadcImoIhq','ymkEkCoT','xCooW4fqW4u','vfpcM2rJcG','W6j6WQ/cO8kFy8o6pSo1WQ1xjCkDWPlcJwFdMmohW5ZcQgS','FSkkvSke','egm9WPPz','n1/dMLD7','WPZdKfNdMHqqW47dJmkPWP/cR8oOyW','CJ5Da8kmBCol','B8kIWRO5hq','W7xcG8knaCow','uhhdGgTtfwddPmkhtSkNAKxcRG','tHlcTc/dTa','W7ldSMVcP2C9WPS','uKBcLCozzCkkWO0VASkhCvhcOa','i07dRwLmBmkptCkeWOZdQSoFW5eBjSoPpCoWW7hcJmkS','vWHo','W5FdOLT9tv7dTCoaW4u','WRtcKNWkW7O','W4xcU8kHdmojW6ZdIxG','sIixWQtdShZdR8otpIbIW74','D8kkxSkgWRX7WP/cUq','ymkuomo8W64','WRZcIuKDW4O','cXmPWQlcH0RdSrJdGCkFwSoTW418W4LiWQDVcCo4hq','WOZcP8oXgKS+iGj8W7FdSCovtCoUW7hcG8kXWOL5W74','s8kifCot','tLtcQh9/dfa','WQBcSSkqWOCo','W7ddRttdKK4','WR3cV8keWRJdMq','w8kQWRDrwq','htvGxsq','jhZdMfbT','nSkiW6fQqSkzW4FcJ3CvW6Dq','hmojqSkgfCk1WPpcP8oWWP7cMmkC','gSo7aHG4','vCodW5DaW4m','WPBdVmoHWPO0','evLcW6RcHq','B8o/W7RcMCkx','zcJcUt/dKW','vSoBW5/cSmk7','wCoCW4X5W7S','kL3dOMjnzq','W5b7WQhcQSkB','htTBEqm','W6fUWPRcHmk/','u0xdGNbI','yqH2WRDYBhi9EqpcHhpdLG','WRe0WR7cMCkyz8o/na','WOBdN8oKW6iK','dWhdPSkylSoyW4y','WPldUCotWOCB','FSo4W4yTxG','c8o3dbW','kSkWWPaeWRTUW7tcRaVdQmoDWPPA','cGaLWPBcVa','u8oiWRSkmW','W4LYegKY','tIb2W4xcIs/dKSoD','W6j6WQ/cO8kFy8o6pSoTWRvxjCkzWRpcHW','zmo9W6KlrG','W4SmkJdcTG','atulW6ddNCoTcmkhEmkIhG8','FfpdGuLg','WOJcIeWGW50','WQX3lSow','WRldJmoHWR0j','d8kjBa','sa9mBN07','smoMlmo5mW','A8kEo8omW4JdUCkmxSkoW60','quxcVuzy','AWHmWOby','DmoqWRS3','CmkGWQflqq','iCoDcCozW644WPJcJ8onj8o2WPu','FSkPlColW5S','q3vtWQtcNCkRomkuFCkO','mCoGW6W','EHrthmke','rSoGkCoxcq','W5O/bwRdK8k4W4hcOCkTq8kUWQS','WOpcVCoEaum8','rqFcPCoafq','nc/dLmogWQ9UtLpdPwVdVMVcRSoX','ctHbEbu','W6/cSqFcO1O','rxfcWRpcMW','uGzpFG','xCkiWRW4nG','rmoSW7NcGmk2W4hcKCoPWOJdPmoj','W7tdUh/cS0C5WP1BW5VcIqpcN8kV','W4xcNd7cRLS','qc1MDLi','W6VdGLTFEW','s8oYgCoEe8kfWRdcHbBcGx3cHNWnWQm','umkUvCo5jSk+W4W','cXpdLW','W68hf1Sg','W7lcGdhcI1u','tSoOW70','sSoLaq','qvlcH24','E8oQW4zeW5u0WRlcKq','WR/cVmk2WQBdIG','ASkzg8osW4K','W64PDCkkWQ8+WOvZqmo0g8oHWQa','u25CWRxcImkS','w3hdMLLZpG','WQT3d8oCW6POW4zNsSoXea','W5tcSSk2fSom','mb/dO8k+eW','W4j1W6/cIJC','W6GrosVcRIGvW6C','dGldI8oTWO4','xCoxW61UW4a','zmoqWRSIfCoFW4NcK1uuW5bBwG','WPy8W4yPi8oesejmW6VdLu3cL8oj','CSoTW5fd','uqJcSSobaq','WQSpW68HjW','vbnVuv4','Emk4WQyxdW','WOTVlSoRW5O','DCkxwmkz','WQxdVt/cOHOema','r8k5WRu','f21iW5VcLG','W5dcMrS','DmoRW4Tz','jeeoWPvI','WPtdH8oaW6mKF011','h0rwW5lcOW','gGOeWQhcHu7dTZ7dT8kewG','q3rqWQxcNCkQbSktBG','W4CPmh09','WPb5W6BcHSk0zHjV','WPtcHSkKWQhdVW','W4FdNg9CrW','wZfuWQz5','WOpdH8oSW7GQEKzNvq','WQ3dGJdcIrG','W7JdVZjDWQ/cPCo4zmoBn8kIxq','W5VdVwS','y8oUWQaCeq','WOtcTSob'];_0x1e0b=function(){return _0x17fe24;};return _0x1e0b();}let readPathValue=(_0x576f30,_0x22cd01)=>{const _0x1d7827=_0x3079d6,_0x20378c={'tqCXz':function(_0x1b9845,_0x4c99c6){return _0x1b9845===_0x4c99c6;},'GKVkR':function(_0x10c777,_0x5d1ed8){return _0x10c777==_0x5d1ed8;},'mQLmq':'string','LvwLu':function(_0x490731,_0x574e81){return _0x490731==_0x574e81;}};let _0x4a9ffd=_0x576f30;for(let _0x2eea25 of _0x20378c[_0x1d7827(0x269,'HD(Z')](0x1,_0x22cd01[_0x1d7827(0x1bc,'M*mx')])&&_0x20378c[_0x1d7827(0x241,'IN3e')](_0x20378c['mQLmq'],typeof _0x22cd01[0x0])&&_0x22cd01[0x0][_0x1d7827(0x1a3,'MCh9')]('/')?_0x22cd01[0x0][_0x1d7827(0x19c,'%*MK')]('/')[_0x1d7827(0x239,'FrCS')](Boolean):_0x22cd01){if(_0x20378c[_0x1d7827(0x1b8,'v6zY')](null,_0x4a9ffd))return;_0x4a9ffd=Array[_0x1d7827(0x259,'$wBr')](_0x4a9ffd)?_0x4a9ffd[_0x1d7827(0x1f3,'&*dm')](_0x2462dc=>_0x2462dc?.[_0x2eea25])[_0x1d7827(0x1e4,'Wx9G')](_0x476912=>null!=_0x476912):_0x4a9ffd[_0x2eea25];}return _0x4a9ffd;},isComparisonOperator=(exports[_0x3079d6(0x248,'EGEo')]=readPathValue,_0x23fd60=>_0x3079d6(0x278,'%YT5')==typeof _0x23fd60&&('='===(_0x23fd60=_0x23fd60[_0x3079d6(0x217,'gayl')]())||'=='===_0x23fd60||'eq'===_0x23fd60||'!='===_0x23fd60||'<>'===_0x23fd60||'ne'===_0x23fd60||'>'===_0x23fd60||'>='===_0x23fd60||'<'===_0x23fd60||'<='===_0x23fd60)),compareValues=(exports['isComparisonOperator']=isComparisonOperator,(_0x296f31,_0x53a6c0,_0x48e968)=>{const _0x4ea702=_0x3079d6,_0x516184={'DuxGh':function(_0x36d9a8,_0x5a88c9){return _0x36d9a8===_0x5a88c9;},'fbTKU':function(_0x46127e,_0x327fa7){return _0x46127e===_0x327fa7;},'CSOYB':function(_0x1ac5d7,_0x2b485d){return _0x1ac5d7==_0x2b485d;},'eAZrF':function(_0x1dc40a,_0x1174ff){return _0x1dc40a!=_0x1174ff;},'RLldV':function(_0x648fe9,_0x40a22e){return _0x648fe9>_0x40a22e;},'WJczI':function(_0x31eac5,_0x3d50ab){return _0x31eac5>=_0x3d50ab;},'ZiXfv':function(_0xe8c666,_0x2a5a34){return _0xe8c666<_0x2a5a34;}};var _0xbd7e24,_0x296f31=Array[_0x4ea702(0x198,'LZiP')](_0x296f31)?_0x296f31:[_0x296f31],_0x300b4c=Array[_0x4ea702(0x24e,'0Tr3')](_0x53a6c0)?_0x53a6c0:[_0x53a6c0],_0x7d41d=_0x48e968[_0x4ea702(0x22f,'FrCS')]();for(_0xbd7e24 of _0x296f31)for(var _0x508a43 of _0x300b4c)if(_0x516184[_0x4ea702(0x22a,'%*MK')]('=',_0x7d41d)||_0x516184[_0x4ea702(0x1bf,'l680')]('==',_0x7d41d)||_0x516184[_0x4ea702(0x1fb,'^Ag4')]('eq',_0x7d41d)){if(_0x516184[_0x4ea702(0x205,'6yBv')](_0xbd7e24,_0x508a43))return!0x0;}else{if(_0x516184['DuxGh']('!=',_0x7d41d)||_0x516184[_0x4ea702(0x1b0,'0Tr3')]('<>',_0x7d41d)||_0x516184[_0x4ea702(0x1d9,'%YT5')]('ne',_0x7d41d)){if(_0x516184[_0x4ea702(0x1e5,'^i#r')](_0xbd7e24,_0x508a43))return!0x0;}else{if('>'===_0x7d41d){if(_0x516184[_0x4ea702(0x204,'moie')](_0xbd7e24,_0x508a43))return!0x0;}else{if(_0x516184['DuxGh']('>=',_0x7d41d)){if(_0x516184[_0x4ea702(0x26e,'v6zY')](_0xbd7e24,_0x508a43))return!0x0;}else{if(_0x516184[_0x4ea702(0x1d7,']@HN')]('<',_0x7d41d)){if(_0x516184[_0x4ea702(0x1f5,'ZKeK')](_0xbd7e24,_0x508a43))return!0x0;}else{if('<='===_0x7d41d&&_0xbd7e24<=_0x508a43)return!0x0;}}}}}return!0x1;}),toBoolean=(exports[_0x3079d6(0x206,']s3b')]=compareValues,_0x283ca7=>Array[_0x3079d6(0x1ab,'%YT5')](_0x283ca7)?_0x283ca7[_0x3079d6(0x1d3,')aUz')](_0xd89925=>!!_0xd89925):!!_0x283ca7),evaluateFunctionOperand=(exports[_0x3079d6(0x21e,'$wBr')]=toBoolean,(_0x2428ec,_0x177200)=>{const _0x4a42de=_0x3079d6,_0x57486e={'plGpw':function(_0x1f4843,_0x36c5d7){return _0x1f4843(_0x36c5d7);},'AUwww':function(_0x1f3f4a,_0x1ebcfd){return _0x1f3f4a(_0x1ebcfd);},'MOACU':function(_0xd5c32b,_0x202dcb){return _0xd5c32b(_0x202dcb);},'qNMsR':function(_0x10367c,_0x7e39dc){return _0x10367c(_0x7e39dc);},'dQvNe':function(_0x134187,_0x5749c8){return _0x134187===_0x5749c8;},'bVAqg':'startswith','xgtvp':function(_0xc04e7f,_0xd1e6b){return _0xc04e7f(_0xd1e6b);},'ovIhB':function(_0x1626cf,_0x405cd2){return _0x1626cf??_0x405cd2;},'GXnNy':function(_0x538c25,_0x881634){return _0x538c25??_0x881634;},'qgVRB':_0x4a42de(0x215,'$wBr'),'qwJua':function(_0x16d403,_0x364f68){return _0x16d403!==_0x364f68;},'KElpR':_0x4a42de(0x273,'6i*y'),'DVcPQ':_0x4a42de(0x24c,'ZKeK'),'KGuwA':function(_0x2000c1,_0x3007ca){return _0x2000c1(_0x3007ca);},'ioWGK':function(_0x3c10e1,_0xfa86df){return _0x3c10e1(_0xfa86df);},'VOkYe':_0x4a42de(0x26f,'MEj!'),'bsdGP':function(_0x485b31,_0x40fceb){return _0x485b31(_0x40fceb);},'HpyqO':'length','jrnwz':function(_0x168f46,_0x43cbe2){return _0x168f46(_0x43cbe2);},'demXN':function(_0x2cd64b,_0x140516){return _0x2cd64b===_0x140516;},'ihqfl':'trim','HnBxi':function(_0x3c4821,_0x51c8a7){return _0x3c4821===_0x51c8a7;},'uPzrt':_0x4a42de(0x276,'^Ag4'),'uRReY':function(_0x4aa3b2,_0x46303b){return _0x4aa3b2<=_0x46303b;},'VXtkr':function(_0x4e62d3,_0x23b976){return _0x4e62d3===_0x23b976;},'LnEKt':_0x4a42de(0x218,'&#(9'),'gABjQ':function(_0x1aed0c,_0x1a3d16){return _0x1aed0c===_0x1a3d16;},'XrOGf':'substr','lMXOJ':function(_0x5bb74e,_0x5d5d84){return _0x5bb74e!==_0x5d5d84;},'YVOaj':function(_0x555d73,_0x10bc41){return _0x555d73+_0x10bc41;},'Jspwm':'replace','muWCx':function(_0x3577ad,_0x59dcc2){return _0x3577ad(_0x59dcc2);},'lxhGP':_0x4a42de(0x1a5,'SL*8'),'bDTUT':_0x4a42de(0x1d6,'EGEo'),'aLNYp':function(_0x6200da,_0x4459ec){return _0x6200da!=_0x4459ec;},'YJayS':function(_0x316467,_0x5ed120){return _0x316467(_0x5ed120);},'EOHNE':function(_0x50de72,_0x44adec){return _0x50de72(_0x44adec);},'TKMCy':function(_0x930505,_0x41a5eb){return _0x930505===_0x41a5eb;},'doHhK':_0x4a42de(0x1fa,'9Vck'),'PxZbo':function(_0x3e7d2d,_0x220658){return _0x3e7d2d(_0x220658);},'CJcgG':function(_0x3bdfba,_0x3a0601){return _0x3bdfba(_0x3a0601);},'TwmXG':function(_0x28f7d5,_0x568767){return _0x28f7d5+_0x568767;},'tFwPN':_0x4a42de(0x1be,'0Tr3'),'VdOsF':function(_0xa8ac6f,_0xe7be80){return _0xa8ac6f(_0xe7be80);},'aYOmz':function(_0x22972e,_0x25d5f3){return _0x22972e===_0x25d5f3;},'sjxaS':'ceil','QOiTp':function(_0xe59e0,_0x2bfd50){return _0xe59e0(_0x2bfd50);},'YUgiQ':_0x4a42de(0x1e0,'QfEh'),'HOBMY':function(_0x3f1aed,_0x52f5ac){return _0x3f1aed===_0x52f5ac;},'Wwoeq':function(_0x5c0e84,_0x1e9ccb){return _0x5c0e84(_0x1e9ccb);},'ASoai':function(_0x2799c6,_0x1ae137){return _0x2799c6===_0x1ae137;},'FGJNn':_0x4a42de(0x1f7,']@HN'),'OBGjn':function(_0x5bc6f3,_0x35312c){return _0x5bc6f3(_0x35312c);},'Axxmb':function(_0x5c2bf1,_0x3de433){return _0x5c2bf1(_0x3de433);},'uzMJO':function(_0x307c85,_0x4a1fbd){return _0x307c85(_0x4a1fbd);}};var _0xe7809e,_0x33a3bc=_0x57486e[_0x4a42de(0x209,'^i#r')](String,_0x2428ec[_0x4a42de(0x1f8,'%YT5')]||'')[_0x4a42de(0x23b,'xuRD')](),_0x2428ec=(_0x2428ec[_0x4a42de(0x20e,'SL*8')]||[])[_0x4a42de(0x229,'FrCS')](_0x3d65f1=>(0x0,exports[_0x4a42de(0x262,'I[v*')])(_0x3d65f1,_0x177200));let _0x101086=_0x3f8319=>_0x4a42de(0x268,'QfEh')==typeof _0x3f8319&&_0x3f8319[_0x4a42de(0x203,'QD&G')]('/')?(0x0,exports[_0x4a42de(0x1ed,'10NQ')])(_0x177200,[_0x3f8319]):_0x3f8319,_0x1a77b9=_0x12eaa6=>{const _0x52aaea=_0x4a42de;return _0x12eaa6=_0x57486e['plGpw'](_0x101086,_0x12eaa6),Array[_0x52aaea(0x20f,'w]#L')](_0x12eaa6)?_0x57486e[_0x52aaea(0x20c,'nWd$')](String,_0x12eaa6[0x0]??''):_0x57486e[_0x52aaea(0x225,'@SbL')](String,_0x12eaa6??'');};if(_0x57486e[_0x4a42de(0x231,'EGEo')](_0x57486e['bVAqg'],_0x33a3bc)){var _0x53b34a=_0x101086(_0x2428ec[0x0]);let _0x316439=_0x2428ec[0x1];return Array[_0x4a42de(0x255,'%q0F')](_0x53b34a)?_0x53b34a[_0x4a42de(0x1ea,'EGEo')](_0x236402=>String(_0x236402??'')[_0x4a42de(0x1df,'&#(9')](String(_0x316439??''))):_0x57486e['xgtvp'](String,_0x57486e[_0x4a42de(0x1f4,'@SbL')](_0x53b34a,''))[_0x4a42de(0x260,'b1ld')](_0x57486e['plGpw'](String,_0x57486e[_0x4a42de(0x1bb,'6yBv')](_0x316439,'')));}if(_0x57486e[_0x4a42de(0x27c,'M*mx')]===_0x33a3bc){var _0x53b34a=_0x101086(_0x2428ec[0x0]);let _0x478397=_0x2428ec[0x1];return Array[_0x4a42de(0x1c4,'&*dm')](_0x53b34a)?_0x53b34a[_0x4a42de(0x1db,']s3b')](_0x4bbdec=>String(_0x4bbdec??'')[_0x4a42de(0x22b,')aUz')](String(_0x478397??''))):_0x57486e[_0x4a42de(0x200,'MCh9')](String,_0x57486e['GXnNy'](_0x53b34a,''))[_0x4a42de(0x24f,'IN3e')](_0x57486e['AUwww'](String,_0x57486e[_0x4a42de(0x219,'@SbL')](_0x478397,'')));}if(_0x57486e[_0x4a42de(0x1c3,'$wBr')](_0x57486e[_0x4a42de(0x24b,'FrCS')],_0x33a3bc))return _0x57486e[_0x4a42de(0x25b,'imxu')](_0x57486e[_0x4a42de(0x267,'IN3e')],_0x33a3bc)?(_0x53b34a=_0x57486e[_0x4a42de(0x234,'nWd$')](_0x1a77b9,_0x2428ec[0x0]),_0xe7809e=_0x57486e[_0x4a42de(0x1da,'MEj!')](String,_0x2428ec[0x1]??''),_0x53b34a['indexOf'](_0xe7809e)):_0x57486e[_0x4a42de(0x1c0,'FrCS')](_0x57486e[_0x4a42de(0x199,'nWd$')],_0x33a3bc)||_0x4a42de(0x1a6,'^Ag4')===_0x33a3bc?_0x57486e[_0x4a42de(0x1a7,'j*Oh')](_0x1a77b9,_0x2428ec[0x0])[_0x4a42de(0x1ff,')aUz')]():_0x57486e[_0x4a42de(0x216,'b1ld')](_0x4a42de(0x19d,'10NQ'),_0x33a3bc)||_0x4a42de(0x1e9,'&#(9')===_0x33a3bc?_0x57486e[_0x4a42de(0x228,'9Vck')](_0x1a77b9,_0x2428ec[0x0])['toUpperCase']():_0x57486e[_0x4a42de(0x21c,'Q$n$')](_0x57486e[_0x4a42de(0x257,'&#(9')],_0x33a3bc)?_0x57486e[_0x4a42de(0x1af,'Vpoj')](_0x1a77b9,_0x2428ec[0x0])['length']:_0x57486e[_0x4a42de(0x1eb,'nWd$')](_0x57486e['ihqfl'],_0x33a3bc)?_0x1a77b9(_0x2428ec[0x0])[_0x4a42de(0x265,'LZiP')]():_0x57486e[_0x4a42de(0x1cb,'#SrZ')](_0x57486e['uPzrt'],_0x33a3bc)?(_0x53b34a=_0x1a77b9(_0x2428ec[0x0]),_0xe7809e=_0x57486e[_0x4a42de(0x232,'LS67')](Number,_0x2428ec[0x1]??0x0),_0x53b34a[_0x4a42de(0x26b,'Wx9G')](0x0,_0xe7809e)):_0x4a42de(0x1b4,'J^QC')===_0x33a3bc?(_0x53b34a=_0x1a77b9(_0x2428ec[0x0]),_0xe7809e=_0x57486e[_0x4a42de(0x1c5,'iloz')](Number,_0x2428ec[0x1]??0x0),_0x57486e[_0x4a42de(0x1ba,'v6zY')](_0x53b34a[_0x4a42de(0x1fe,'FrCS')],_0xe7809e)?_0x53b34a:_0x53b34a['slice'](-_0xe7809e)):_0x57486e[_0x4a42de(0x240,']@HN')](_0x57486e[_0x4a42de(0x224,')aUz')],_0x33a3bc)||_0x57486e[_0x4a42de(0x250,'&#(9')](_0x57486e[_0x4a42de(0x272,'SL*8')],_0x33a3bc)?(_0x53b34a=_0x57486e[_0x4a42de(0x1b5,'6yBv')](_0x1a77b9,_0x2428ec[0x0]),_0xe7809e=_0x57486e[_0x4a42de(0x1ae,'9Vck')](Number,_0x2428ec[0x1]??0x0),_0x57486e[_0x4a42de(0x1ac,'I[v*')](void 0x0,_0x9ebc3d=_0x57486e['lMXOJ'](void 0x0,_0x2428ec[0x2])?_0x57486e[_0x4a42de(0x237,'0Tr3')](Number,_0x2428ec[0x2]):void 0x0)?_0x53b34a[_0x4a42de(0x235,'%YT5')](_0xe7809e,_0x57486e[_0x4a42de(0x19a,'MCh9')](_0xe7809e,_0x9ebc3d)):_0x53b34a['substring'](_0xe7809e)):_0x4a42de(0x1fd,'&#(9')===_0x33a3bc?_0x2428ec[_0x4a42de(0x1d5,'fqp^')](_0x1f7851=>_0x1a77b9(_0x1f7851))[_0x4a42de(0x213,'6yBv')](''):_0x57486e[_0x4a42de(0x258,'gayl')](_0x57486e[_0x4a42de(0x1cf,'QD&G')],_0x33a3bc)?(_0x9ebc3d=_0x57486e[_0x4a42de(0x1ad,'LS67')](_0x1a77b9,_0x2428ec[0x0]),_0x53b34a=String(_0x2428ec[0x1]??''),_0xe7809e=_0x57486e[_0x4a42de(0x233,'w]#L')](String,_0x2428ec[0x2]??''),_0x9ebc3d[_0x4a42de(0x23c,'iloz')](_0x53b34a)[_0x4a42de(0x27a,'SL*8')](_0xe7809e)):_0x57486e[_0x4a42de(0x1c9,'gayl')](_0x57486e[_0x4a42de(0x211,'b1ld')],_0x33a3bc)?_0x2428ec['map'](_0x101086)[_0x4a42de(0x22e,'gayl')](_0x1a7c5b=>null!=_0x1a7c5b&&''!==_0x1a7c5b)??null:_0x57486e[_0x4a42de(0x1b1,'M*mx')]===_0x33a3bc?_0x57486e[_0x4a42de(0x21f,'w]#L')](null,_0x9ebc3d=_0x57486e[_0x4a42de(0x1b9,'%*MK')](_0x101086,_0x2428ec[0x0]))?_0x9ebc3d:_0x57486e[_0x4a42de(0x1d2,'j*Oh')](_0x101086,_0x2428ec[0x1]):_0x57486e['TKMCy'](_0x57486e[_0x4a42de(0x242,'6yBv')],_0x33a3bc)?(_0x53b34a=_0x57486e['PxZbo'](Number,_0x101086(_0x2428ec[0x0])??0x0),_0xe7809e=_0x57486e[_0x4a42de(0x277,'6yBv')](Number,_0x2428ec[0x1]??0x0),_0x57486e[_0x4a42de(0x1ce,'xuRD')](Number,_0x57486e['YVOaj'](_0x57486e[_0x4a42de(0x1ca,']s3b')](Math[_0x4a42de(0x1e7,'0Tr3')](_0x57486e['muWCx'](Number,_0x57486e[_0x4a42de(0x21d,'MEj!')](_0x57486e[_0x4a42de(0x20d,')aUz')](_0x53b34a,'e'),_0xe7809e))),'e-'),_0xe7809e))):_0x57486e[_0x4a42de(0x275,'^i#r')]===_0x33a3bc?Math[_0x4a42de(0x227,'j*Oh')](_0x57486e['VdOsF'](Number,_0x57486e[_0x4a42de(0x1d1,'FrCS')](_0x101086,_0x2428ec[0x0])??0x0)):_0x57486e[_0x4a42de(0x1e1,'LZiP')](_0x57486e[_0x4a42de(0x1c6,'xuRD')],_0x33a3bc)||_0x57486e[_0x4a42de(0x222,']s3b')]('ceiling',_0x33a3bc)?Math[_0x4a42de(0x1c7,'J^QC')](_0x57486e[_0x4a42de(0x23e,'J^QC')](Number,_0x57486e['QOiTp'](_0x101086,_0x2428ec[0x0])??0x0)):_0x57486e['gABjQ'](_0x57486e[_0x4a42de(0x21b,'9Vck')],_0x33a3bc)?Math[_0x4a42de(0x223,'Wx9G')](_0x57486e['ioWGK'](Number,_0x57486e[_0x4a42de(0x26a,'v6zY')](_0x101086,_0x2428ec[0x0])??0x0)):_0x57486e[_0x4a42de(0x1f0,'Q$n$')](_0x4a42de(0x243,'iloz'),_0x33a3bc)?(_0x9ebc3d=_0x101086(_0x2428ec[0x0]))?new Date(_0x9ebc3d)[_0x4a42de(0x19b,'FrCS')]():null:_0x4a42de(0x236,'QD&G')===_0x33a3bc?(_0x53b34a=_0x57486e[_0x4a42de(0x1bd,'l680')](_0x101086,_0x2428ec[0x0]))?_0x57486e[_0x4a42de(0x20a,'imxu')](new Date(_0x53b34a)[_0x4a42de(0x1ec,'v6zY')](),0x1):null:_0x57486e[_0x4a42de(0x245,'JJQV')](_0x57486e['FGJNn'],_0x33a3bc)?(_0xe7809e=_0x57486e[_0x4a42de(0x1b6,'iloz')](_0x101086,_0x2428ec[0x0]))?new Date(_0xe7809e)[_0x4a42de(0x1d8,'^Ag4')]():null:void 0x0;{var _0x9ebc3d=_0x57486e[_0x4a42de(0x1dc,'Vpoj')](_0x101086,_0x2428ec[0x0]);let _0x139e2a=_0x2428ec[0x1];return Array[_0x4a42de(0x264,'&#(9')](_0x9ebc3d)?_0x9ebc3d['some'](_0x5dadcb=>String(_0x5dadcb??'')[_0x4a42de(0x21a,'(pGn')](String(_0x139e2a??''))):_0x57486e[_0x4a42de(0x1ee,'ZKeK')](String,_0x57486e[_0x4a42de(0x1e8,'ZKeK')](_0x9ebc3d,''))[_0x4a42de(0x1f9,'6yBv')](_0x57486e[_0x4a42de(0x20b,'EGEo')](String,_0x57486e[_0x4a42de(0x202,'HD(Z')](_0x139e2a,'')));}}),evaluateOperand=(exports[_0x3079d6(0x247,'M*mx')]=evaluateFunctionOperand,(_0x120f93,_0x33005d)=>null==_0x120f93?_0x120f93:Array[_0x3079d6(0x22c,'xuRD')](_0x120f93)?(0x0,exports[_0x3079d6(0x23d,']s3b')])(_0x120f93,_0x33005d):_0x3079d6(0x244,'ZKeK')!=typeof _0x120f93?_0x120f93:Object['prototype'][_0x3079d6(0x1e6,'moie')][_0x3079d6(0x252,'b1ld')](_0x120f93,_0x3079d6(0x1a0,'EGEo'))?_0x120f93[_0x3079d6(0x210,'Vpoj')]:Array[_0x3079d6(0x226,'FrCS')](_0x120f93['ref'])?(0x0,exports[_0x3079d6(0x246,'HD(Z')])(_0x33005d,_0x120f93[_0x3079d6(0x251,']@HN')]):_0x120f93[_0x3079d6(0x1aa,'%q0F')]?(0x0,exports[_0x3079d6(0x25f,'xuRD')])(_0x120f93,_0x33005d):_0x120f93[_0x3079d6(0x212,'ZKeK')]?(0x0,exports[_0x3079d6(0x1a8,'gayl')])(_0x120f93[_0x3079d6(0x221,'Q$n$')],_0x33005d):Array[_0x3079d6(0x25e,'imxu')](_0x120f93[_0x3079d6(0x208,'6yBv')])?_0x120f93['list'][_0x3079d6(0x1f6,'v6zY')](_0x4c813d=>(0x0,exports['evaluateOperand'])(_0x4c813d,_0x33005d)):_0x120f93),evaluateWhereOnRecord=(exports['evaluateOperand']=evaluateOperand,(_0x58ba80,_0x3e3a70)=>{const _0x2557c8=_0x3079d6,_0x4e9072={'krBtQ':function(_0x16a020){return _0x16a020();},'krGMS':function(_0x22ef93){return _0x22ef93();},'jLbvC':function(_0x1c29b8,_0xd56219){return _0x1c29b8===_0xd56219;},'hdQeo':function(_0x3aa2e6){return _0x3aa2e6();},'yUxdb':function(_0x472e65){return _0x472e65();},'MwKkY':function(_0x11901b){return _0x11901b();},'IokbZ':function(_0x4810e3,_0x1923ba){return _0x4810e3==_0x1923ba;},'voBJK':function(_0x259719,_0x194787){return _0x259719===_0x194787;},'cvQLa':function(_0x2de4ef,_0x5c9905){return _0x2de4ef(_0x5c9905);},'VmDTO':_0x2557c8(0x263,'%*MK'),'xxOcj':function(_0x34c75d,_0x2b0d9e){return _0x34c75d(_0x2b0d9e);},'aDDmC':function(_0x4fc8e1){return _0x4fc8e1();},'KIBRc':function(_0x48e091){return _0x48e091();},'pfMQg':function(_0x21761f){return _0x21761f();},'rRbRG':function(_0x1cafd0){return _0x1cafd0();}};if(!Array['isArray'](_0x58ba80))return(0x0,exports[_0x2557c8(0x23f,'imxu')])((0x0,exports[_0x2557c8(0x1cd,'l680')])(_0x58ba80,_0x3e3a70));let _0x2d29ef=_0x58ba80,_0x5f4015=0x0,_0x5a8948=()=>_0x2d29ef[_0x5f4015],_0x329915=()=>_0x2d29ef[_0x5f4015++],_0x30bc17=()=>{const _0x15051d=_0x2557c8;var _0x2f432a,_0x13c3b7,_0x256a7e;return'('===_0x4e9072['krBtQ'](_0x5a8948)?(_0x4e9072[_0x15051d(0x256,'^Ag4')](_0x329915),_0x2f432a=_0x4e9072['krGMS'](_0x2440b7),_0x4e9072[_0x15051d(0x1b7,'b1ld')](')',_0x5a8948())&&_0x4e9072[_0x15051d(0x1d4,'iloz')](_0x329915),_0x2f432a):(_0x2f432a=(0x0,exports[_0x15051d(0x249,'%q0F')])(_0x4e9072['hdQeo'](_0x329915),_0x3e3a70),_0x13c3b7=_0x4e9072[_0x15051d(0x1a2,'j*Oh')](_0x5a8948),(0x0,exports[_0x15051d(0x1a9,'Wx9G')])(_0x13c3b7)?(_0x4e9072[_0x15051d(0x214,'IN3e')](_0x329915),_0x256a7e=(0x0,exports[_0x15051d(0x22d,'LS67')])(_0x4e9072[_0x15051d(0x27b,'IN3e')](_0x329915),_0x3e3a70),(0x0,exports[_0x15051d(0x1c1,'MEj!')])(_0x2f432a,_0x256a7e,_0x13c3b7)):(0x0,exports['toBoolean'])(_0x2f432a));},_0x239dae=()=>{const _0xd9a5e=_0x2557c8;let _0x4947aa=_0x30bc17();for(;_0x4e9072['IokbZ'](_0xd9a5e(0x25d,'6i*y'),typeof _0x5a8948())&&_0x4e9072['voBJK']('and',_0x4e9072[_0xd9a5e(0x270,'xuRD')](String,_0x4e9072[_0xd9a5e(0x1e2,']@HN')](_0x5a8948))[_0xd9a5e(0x22f,'FrCS')]());)_0x329915(),_0x4947aa=_0x4947aa&&_0x30bc17();return _0x4947aa;},_0x2440b7=()=>{const _0x4eda24=_0x2557c8;let _0x32994a=_0x239dae();for(;_0x4e9072[_0x4eda24(0x201,'&*dm')]==typeof _0x4e9072[_0x4eda24(0x24a,'HD(Z')](_0x5a8948)&&_0x4e9072['jLbvC']('or',_0x4e9072[_0x4eda24(0x261,'b1ld')](String,_0x4e9072[_0x4eda24(0x1ef,'EGEo')](_0x5a8948))[_0x4eda24(0x274,'Vpoj')]());)_0x4e9072[_0x4eda24(0x25c,'Vpoj')](_0x329915),_0x32994a=_0x32994a||_0x4e9072['pfMQg'](_0x239dae);return _0x32994a;};return _0x4e9072[_0x2557c8(0x1de,'^Ag4')](_0x2440b7);});exports[_0x3079d6(0x279,'l680')]=evaluateWhereOnRecord;
+"use strict";
+/**
+ * @file where-eval.ts
+ * @description In-memory evaluator for CQN WHERE expressions.
+ *
+ * A tiny recursive-descent parser (`parseOr` → `parseAnd` → `parsePrimary`)
+ * plus operand and OData-function evaluation. Used when predicates cannot be
+ * pushed to the remote backend (see {@link ./where-split.ts splitWhereClause}).
+ *
+ * ### Supported OData functions
+ * - **Search / logical**: `startswith`, `endswith`, `contains`, `indexof`
+ * - **String transforms**: `tolower`/`lower`, `toupper`/`upper`, `length`, `trim`
+ * - **String slicing**: `left`, `right`, `substring`/`substr`, `concat`, `replace`
+ * - **Null guards**: `coalesce`, `ifnull`
+ * - **Math**: `round`, `floor`, `ceil`/`ceiling`, `abs`
+ * - **Date parts**: `year`, `month`, `day`
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.evaluateWhereOnRecord = exports.evaluateOperand = exports.evaluateFunctionOperand = exports.toBoolean = exports.compareValues = exports.isComparisonOperator = exports.readPathValue = void 0;
+/**
+ * Reads a dotted / slash-separated navigation path from a record.
+ * When intermediate values are arrays, the read "fans out" and collects
+ * all non-null child values into an array.
+ *
+ * @param row  Source record.
+ * @param ref  CQN ref array (e.g. `['to_Partner', 'Country']`) or
+ *             a single slash-encoded path (`['to_Partner/Country']`).
+ * @returns    The resolved value (scalar or array).
+ */
+const readPathValue = (row, ref) => {
+    const expandedRef = ref.length === 1 && typeof ref[0] === 'string' && ref[0].includes('/')
+        ? ref[0].split('/').filter(Boolean)
+        : ref;
+    let current = row;
+    for (const segment of expandedRef) {
+        if (current === null || current === undefined)
+            return undefined;
+        if (Array.isArray(current)) {
+            current = current
+                .map((item) => item?.[segment])
+                .filter((v) => v !== undefined && v !== null);
+        }
+        else {
+            current = current[segment];
+        }
+    }
+    return current;
+};
+exports.readPathValue = readPathValue;
+/**
+ * Recognises CQN / OData comparison operators (`=`, `==`, `eq`, `!=`, `<>`,
+ * `ne`, `>`, `>=`, `<`, `<=`). Case-insensitive.
+ *
+ * @param op  Operator token candidate.
+ */
+const isComparisonOperator = (op) => {
+    if (typeof op !== 'string')
+        return false;
+    const normalized = op.toLowerCase();
+    return normalized === '='
+        || normalized === '=='
+        || normalized === 'eq'
+        || normalized === '!='
+        || normalized === '<>'
+        || normalized === 'ne'
+        || normalized === '>'
+        || normalized === '>='
+        || normalized === '<'
+        || normalized === '<=';
+};
+exports.isComparisonOperator = isComparisonOperator;
+/**
+ * Compares two values (or value arrays) with the given CQN operator.
+ * Array operands succeed if **any** left value matches **any** right value —
+ * required so array-fanned associations behave like OData `any()`.
+ *
+ * @param left   Left-hand operand (scalar or array).
+ * @param right  Right-hand operand (scalar or array).
+ * @param op     Comparison operator as returned by {@link isComparisonOperator}.
+ */
+const compareValues = (left, right, op) => {
+    const lhs = Array.isArray(left) ? left : [left];
+    const rhs = Array.isArray(right) ? right : [right];
+    const normalized = op.toLowerCase();
+    for (const l of lhs) {
+        for (const r of rhs) {
+            if (normalized === '=' || normalized === '==' || normalized === 'eq') {
+                if (l == r)
+                    return true;
+            }
+            else if (normalized === '!=' || normalized === '<>' || normalized === 'ne') {
+                if (l != r)
+                    return true;
+            }
+            else if (normalized === '>') {
+                if (l > r)
+                    return true;
+            }
+            else if (normalized === '>=') {
+                if (l >= r)
+                    return true;
+            }
+            else if (normalized === '<') {
+                if (l < r)
+                    return true;
+            }
+            else if (normalized === '<=') {
+                if (l <= r)
+                    return true;
+            }
+        }
+    }
+    return false;
+};
+exports.compareValues = compareValues;
+/**
+ * Coerces a value to boolean; arrays are truthy when any element is truthy.
+ */
+const toBoolean = (value) => {
+    if (Array.isArray(value))
+        return value.some((v) => !!v);
+    return !!value;
+};
+exports.toBoolean = toBoolean;
+/**
+ * Evaluates OData-style function calls against a record. See file JSDoc for
+ * the full function catalogue.
+ *
+ * @param token  CQN function node (`{ func, args }`).
+ * @param row    Record providing field values.
+ * @returns      Function result, or `undefined` for unsupported functions.
+ */
+const evaluateFunctionOperand = (token, row) => {
+    const func = String(token.func || '').toLowerCase();
+    const args = (token.args || []).map((a) => (0, exports.evaluateOperand)(a, row));
+    const normalizePathArg = (value) => {
+        if (typeof value === 'string' && value.includes('/')) {
+            return (0, exports.readPathValue)(row, [value]);
+        }
+        return value;
+    };
+    const getSingleString = (arg) => {
+        const val = normalizePathArg(arg);
+        if (Array.isArray(val))
+            return String(val[0] ?? '');
+        return String(val ?? '');
+    };
+    if (func === 'startswith') {
+        const value = normalizePathArg(args[0]);
+        const prefix = args[1];
+        if (Array.isArray(value))
+            return value.some((v) => String(v ?? '').startsWith(String(prefix ?? '')));
+        return String(value ?? '').startsWith(String(prefix ?? ''));
+    }
+    if (func === 'contains') {
+        const value = normalizePathArg(args[0]);
+        const part = args[1];
+        if (Array.isArray(value))
+            return value.some((v) => String(v ?? '').includes(String(part ?? '')));
+        return String(value ?? '').includes(String(part ?? ''));
+    }
+    if (func === 'endswith') {
+        const value = normalizePathArg(args[0]);
+        const suffix = args[1];
+        if (Array.isArray(value))
+            return value.some((v) => String(v ?? '').endsWith(String(suffix ?? '')));
+        return String(value ?? '').endsWith(String(suffix ?? ''));
+    }
+    if (func === 'indexof') {
+        const value = getSingleString(args[0]);
+        const part = String(args[1] ?? '');
+        return value.indexOf(part);
+    }
+    if (func === 'tolower' || func === 'lower')
+        return getSingleString(args[0]).toLowerCase();
+    if (func === 'toupper' || func === 'upper')
+        return getSingleString(args[0]).toUpperCase();
+    if (func === 'length')
+        return getSingleString(args[0]).length;
+    if (func === 'trim')
+        return getSingleString(args[0]).trim();
+    if (func === 'left') {
+        const value = getSingleString(args[0]);
+        const length = Number(args[1] ?? 0);
+        return value.substring(0, length);
+    }
+    if (func === 'right') {
+        const str = getSingleString(args[0]);
+        const len = Number(args[1] ?? 0);
+        return str.length <= len ? str : str.slice(-len);
+    }
+    if (func === 'substring' || func === 'substr') {
+        const str = getSingleString(args[0]);
+        const start = Number(args[1] ?? 0);
+        const length = args[2] !== undefined ? Number(args[2]) : undefined;
+        return length !== undefined ? str.substring(start, start + length) : str.substring(start);
+    }
+    if (func === 'concat') {
+        return args.map((a) => getSingleString(a)).join('');
+    }
+    if (func === 'replace') {
+        const str = getSingleString(args[0]);
+        const search = String(args[1] ?? '');
+        const replace = String(args[2] ?? '');
+        return str.split(search).join(replace);
+    }
+    if (func === 'coalesce') {
+        return args.map(normalizePathArg).find((a) => a !== null && a !== undefined && a !== '') ?? null;
+    }
+    if (func === 'ifnull') {
+        const val = normalizePathArg(args[0]);
+        return (val !== null && val !== undefined) ? val : normalizePathArg(args[1]);
+    }
+    if (func === 'round') {
+        const num = Number(normalizePathArg(args[0]) ?? 0);
+        const decimals = Number(args[1] ?? 0);
+        return Number(Math.round(Number(num + 'e' + decimals)) + 'e-' + decimals);
+    }
+    if (func === 'floor')
+        return Math.floor(Number(normalizePathArg(args[0]) ?? 0));
+    if (func === 'ceil' || func === 'ceiling')
+        return Math.ceil(Number(normalizePathArg(args[0]) ?? 0));
+    if (func === 'abs')
+        return Math.abs(Number(normalizePathArg(args[0]) ?? 0));
+    if (func === 'year') {
+        const raw = normalizePathArg(args[0]);
+        return raw ? new Date(raw).getUTCFullYear() : null;
+    }
+    if (func === 'month') {
+        const raw = normalizePathArg(args[0]);
+        return raw ? new Date(raw).getUTCMonth() + 1 : null;
+    }
+    if (func === 'day') {
+        const raw = normalizePathArg(args[0]);
+        return raw ? new Date(raw).getUTCDate() : null;
+    }
+    return undefined;
+};
+exports.evaluateFunctionOperand = evaluateFunctionOperand;
+/**
+ * Resolves a single CQN operand node against a record: literal values,
+ * `ref` (field paths), `func` (OData functions), `xpr` (sub-expressions),
+ * and `list` (IN-clause value lists).
+ *
+ * @param token  CQN operand node.
+ * @param row    Record providing field values.
+ */
+const evaluateOperand = (token, row) => {
+    if (token === null || token === undefined)
+        return token;
+    if (Array.isArray(token))
+        return (0, exports.evaluateWhereOnRecord)(token, row);
+    if (typeof token !== 'object')
+        return token;
+    if (Object.prototype.hasOwnProperty.call(token, 'val'))
+        return token.val;
+    if (Array.isArray(token.ref))
+        return (0, exports.readPathValue)(row, token.ref);
+    if (token.func)
+        return (0, exports.evaluateFunctionOperand)(token, row);
+    if (token.xpr)
+        return (0, exports.evaluateWhereOnRecord)(token.xpr, row);
+    if (Array.isArray(token.list))
+        return token.list.map((x) => (0, exports.evaluateOperand)(x, row));
+    return token;
+};
+exports.evaluateOperand = evaluateOperand;
+/**
+ * Evaluates a CQN WHERE expression against a single record in memory.
+ * Uses a small recursive-descent parser with `parseOr` → `parseAnd` →
+ * `parsePrimary` and supports parenthesised sub-expressions.
+ *
+ * @param where  CQN WHERE token array (or a single expression node).
+ * @param row    The record to test.
+ * @returns      `true` when the record matches the WHERE expression.
+ */
+const evaluateWhereOnRecord = (where, row) => {
+    if (!Array.isArray(where))
+        return (0, exports.toBoolean)((0, exports.evaluateOperand)(where, row));
+    const tokens = where;
+    let index = 0;
+    const peek = () => tokens[index];
+    const consume = () => tokens[index++];
+    const parsePrimary = () => {
+        const token = peek();
+        if (token === '(') {
+            consume();
+            const value = parseOr();
+            if (peek() === ')')
+                consume();
+            return value;
+        }
+        const left = (0, exports.evaluateOperand)(consume(), row);
+        const op = peek();
+        if ((0, exports.isComparisonOperator)(op)) {
+            consume();
+            const right = (0, exports.evaluateOperand)(consume(), row);
+            return (0, exports.compareValues)(left, right, op);
+        }
+        return (0, exports.toBoolean)(left);
+    };
+    const parseAnd = () => {
+        let value = parsePrimary();
+        while (typeof peek() === 'string' && String(peek()).toLowerCase() === 'and') {
+            consume();
+            value = value && parsePrimary();
+        }
+        return value;
+    };
+    const parseOr = () => {
+        let value = parseAnd();
+        while (typeof peek() === 'string' && String(peek()).toLowerCase() === 'or') {
+            consume();
+            value = value || parseAnd();
+        }
+        return value;
+    };
+    return parseOr();
+};
+exports.evaluateWhereOnRecord = evaluateWhereOnRecord;

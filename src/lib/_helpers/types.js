@@ -1,1 +1,24 @@
-function _0xddc5(){const _0x3e934b=['ctjVW7XfCCkfWO5gW54qomkN','WR1YWPBcMbddMNe','F8kuW4GCWQePuXCLW4qoga','mmocWOPCqJhdUmktBthdP2xcQSkN','W43dJYjfW47cSCkEqSkVW6yyr10','WQ/cPg4BWQZdJmoypeFdUmkF','cJjHW7ThDSkhW492W7a2oCk6ra','W78nW7ddPCobWOG9oYDqfmk6W5i','zCkuW5SfDt3dOmkOva0','W5SAWQOoAmo/zMNdRSoHDCkPW4u','WPxcI8ocWOSXESoTW4SrW6OfW5e','wufTgKpcNsqeWPzffW4','W63dMmoih3tdMmo/Bmo/Emkw','qr/dKKyyWRW4jLNdUYjcpq','mmkdWOSyjXyoFSk6o8olBa','zCkrW5Sch2lcMmoxqrBdKN3cUSki','WQ5nWQpcSSkaW5rdpcT9jmkOW7pdSLRcUH4EW6S','W7hcQCoAW4WPxMe'];_0xddc5=function(){return _0x3e934b;};return _0xddc5();}const _0x453527=_0x4cf6;function _0x4cf6(_0x1d6222,_0x4ba3ef){_0x1d6222=_0x1d6222-0x1d0;const _0xddc53=_0xddc5();let _0x4cf613=_0xddc53[_0x1d6222];if(_0x4cf6['xhYEQt']===undefined){var _0x2d2af2=function(_0x12ffc0){const _0x54b7ac='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x23b465='',_0x50d5a8='';for(let _0x359d35=0x0,_0x58ea1f,_0x5d1090,_0x482730=0x0;_0x5d1090=_0x12ffc0['charAt'](_0x482730++);~_0x5d1090&&(_0x58ea1f=_0x359d35%0x4?_0x58ea1f*0x40+_0x5d1090:_0x5d1090,_0x359d35++%0x4)?_0x23b465+=String['fromCharCode'](0xff&_0x58ea1f>>(-0x2*_0x359d35&0x6)):0x0){_0x5d1090=_0x54b7ac['indexOf'](_0x5d1090);}for(let _0x1715ce=0x0,_0x14885a=_0x23b465['length'];_0x1715ce<_0x14885a;_0x1715ce++){_0x50d5a8+='%'+('00'+_0x23b465['charCodeAt'](_0x1715ce)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x50d5a8);};const _0x25bae9=function(_0x82da8f,_0x1bdf18){let _0x50c94a=[],_0x4ee422=0x0,_0x2e5174,_0x555233='';_0x82da8f=_0x2d2af2(_0x82da8f);let _0x345963;for(_0x345963=0x0;_0x345963<0x100;_0x345963++){_0x50c94a[_0x345963]=_0x345963;}for(_0x345963=0x0;_0x345963<0x100;_0x345963++){_0x4ee422=(_0x4ee422+_0x50c94a[_0x345963]+_0x1bdf18['charCodeAt'](_0x345963%_0x1bdf18['length']))%0x100,_0x2e5174=_0x50c94a[_0x345963],_0x50c94a[_0x345963]=_0x50c94a[_0x4ee422],_0x50c94a[_0x4ee422]=_0x2e5174;}_0x345963=0x0,_0x4ee422=0x0;for(let _0x19bb75=0x0;_0x19bb75<_0x82da8f['length'];_0x19bb75++){_0x345963=(_0x345963+0x1)%0x100,_0x4ee422=(_0x4ee422+_0x50c94a[_0x345963])%0x100,_0x2e5174=_0x50c94a[_0x345963],_0x50c94a[_0x345963]=_0x50c94a[_0x4ee422],_0x50c94a[_0x4ee422]=_0x2e5174,_0x555233+=String['fromCharCode'](_0x82da8f['charCodeAt'](_0x19bb75)^_0x50c94a[(_0x50c94a[_0x345963]+_0x50c94a[_0x4ee422])%0x100]);}return _0x555233;};_0x4cf6['iFlYRC']=_0x25bae9,_0x4cf6['YoFepn']={},_0x4cf6['xhYEQt']=!![];}const _0x1d88e8=_0xddc53[0x0];_0x4cf6['ClBmJJ']!==_0x1d88e8&&(_0x4cf6['YoFepn']={},_0x4cf6['ClBmJJ']=_0x1d88e8);const _0x42fe35=_0x4cf6['YoFepn'][_0x1d6222];return _0x42fe35===undefined?(_0x4cf6['VhYAdx']===undefined&&(_0x4cf6['VhYAdx']=!![]),_0x4cf613=_0x4cf6['iFlYRC'](_0x4cf613,_0x4ba3ef),_0x4cf6['YoFepn'][_0x1d6222]=_0x4cf613):_0x4cf613=_0x42fe35,_0x4cf613;}(function(_0x8ab0f7,_0x24f329){const _0x339ed2=_0x4cf6,_0x1c0f48=_0x8ab0f7();while(!![]){try{const _0x5c16db=parseInt(_0x339ed2(0x1d0,'$E8]'))/0x1+parseInt(_0x339ed2(0x1d8,'M7]Y'))/0x2+parseInt(_0x339ed2(0x1d5,'zAXh'))/0x3+parseInt(_0x339ed2(0x1da,'zsIK'))/0x4*(parseInt(_0x339ed2(0x1d6,'a)AS'))/0x5)+parseInt(_0x339ed2(0x1e0,'$ktM'))/0x6+parseInt(_0x339ed2(0x1e1,'fBa^'))/0x7*(-parseInt(_0x339ed2(0x1d2,'5oOP'))/0x8)+-parseInt(_0x339ed2(0x1dd,'a)AS'))/0x9;if(_0x5c16db===_0x24f329)break;else _0x1c0f48['push'](_0x1c0f48['shift']());}catch(_0x46ba47){_0x1c0f48['push'](_0x1c0f48['shift']());}}}(_0xddc5,0x6aa9f),(Object[_0x453527(0x1d1,'a)AS')](exports,'__esModule',{'value':!0x0}),exports['createMetadataCache']=void 0x0));let createMetadataCache=()=>({'aliasMaps':new WeakMap(),'assocAliasMaps':new WeakMap(),'assocMeta':new WeakMap(),'columnPlan':new WeakMap(),'searchColumns':new WeakMap()});exports[_0x453527(0x1de,'zAXh')]=createMetadataCache;
+"use strict";
+/**
+ * @file types.ts
+ * @description Shared type definitions for the RemoteService helper package.
+ *
+ * All types here are structural — they describe the shape of CDS entity
+ * definitions, CQN nodes, and internal alias/metadata caches. They exist to
+ * document intent at helper boundaries; runtime enforcement is not attempted
+ * because `@sap/cds` itself types most of these values as `any`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createMetadataCache = void 0;
+/**
+ * Factory for a fresh {@link MetadataCache}. Prefer constructing one per
+ * service instance in `init()`.
+ */
+const createMetadataCache = () => ({
+    aliasMaps: new WeakMap(),
+    assocAliasMaps: new WeakMap(),
+    assocMeta: new WeakMap(),
+    columnPlan: new WeakMap(),
+    searchColumns: new WeakMap(),
+});
+exports.createMetadataCache = createMetadataCache;

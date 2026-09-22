@@ -1,1 +1,203 @@
-function _0x4f25(){var _0x711c29=['W6rABZr2','aXqvWRvk','WP00WPxcRCo7W57dNuldKSkiyW','WOTwW68WW49RbCkRWQpdMq','W5xdRJexW5hcJ8oxy8k1oWxcPmkHWO5xqCklDuCQdGxdOHOQWQW','BqVcNrm7WQWCha','W6FdMGWZW6RcHCoHsCkjbZZcL8kAWRC','asNdTSkWjSobW7HyW7LKWOe','W6dcJSo3D8olW4NdHSoTW7VdPa','W4FcI8oPW65nxSkeWOu','ceBcLX/dHmkGomkzWPu','vvdcLaVcKfldVG','ddZdUmkLsG','CJ/dIwrqFhpdHSkkvSodWQNdMg8','kK3dSG','k0NdOY4','W7hcO04','W45NW5y','afRcM8ktECoqW5tdK8ktq8o4WQtdLmk9mSkl','rCklWPhdPbv5W7tcSL01A8kaWQ4isSk+ymodktBcM38','jKJcMri3WQmBqLRdRmouW6m','nSonlCoQwLNdHNpdGGVcKxuj','m03dSc8LBKtcI8oOrG','faOfW7pcGa','WPNcTd0dW4xcR8okDmo3nq3cSCkWWPvrtSkTC1qHkG','W57dKqfzjCol','lComeSkrq8onhGFdPrO','WQCeWQeEF8kVWQSLjSkxW70','pYu6W5NcRmozvSk7tCo3WPyVW7jHpSobwCkkg3Saua','DSkoDmkWhq','srRdKIRdJCkmkCkDWRC','tmolWQeQW4C','dmkAhG','zSkwCCk1drJcLf8','amkFcG','kCkdWQm6W4WRWRRdG8kyW6XS','WO7cRwXmW5ZcTSoxsCkogq','n37cUW','WPBdK8oxW4n8ACk1WO0','ASk9WRvAaSo0','W5hcJwPRcSk4WQNdVmkwW6TulCkIWOq','t1FcTaRcIMpdPSoyW6RcGmodwmozl8kGELK','W6ZcRu4','W6PAzYr3otu','WP0YWPdcRmo/W7JdPMFdUSk4wW','kHFdPYFcLCo7DIy','aSkVhSkZr8kYWPldId4','WRaeWRubEmkLWRO','WRFdMmkHjCoYW7xdHq','tKBcPHBcJKxdOSo8W6pcVSoeCSoycmkWBKqt','WPaWgSoXW4VdQCo1W7VdN1i','BSkrWRjPiW','rrVdQq','WRPKW7BcPmkTmuKJdNLXWRDXWPtcN8k+W4OJkqhcMq4FW6JcQvG','pGOaWPy','W4qFWORdHsRdSmo1W6fTWOnKWPjT','BmkfedhcQCoFj8oGzCkCzSkaF241cSodW4W/lmkZjCkEySo/','pmkEWRKLW6OGWORdLmkx','DKrIW7bnW5GQsSo+teaKfHqJlGNdVeGY','n3/dTd4c','W4pdUIOCW5dcUG','iSkEWQGYW6u','WPrJW6ZcVM8','lrRdQclcN8oSqZRcMWbyWO3dOXS','F0VcUxldGSkXisZcPsPwWRpdUG','AW/cKri6WRanaq','WRDFW57cHJBcOmkMW5a','ECofW7TUWRP9W7ZdLCkGW5n0gh0','F1ddOSkD','ocqQ','WRPKW7BcPmkTmK09dNrXWPH6WQ/cLmkyW4aU','FCkEv8kyW7hdQSovD8khxa','W6xcV8knW4u','W67cPK0CWRhdUvKnWOiOvcGkuGtdPchdJa','W6BcU8k2W6RcTG','A8kFDCk8','ysZdT8oRfSo9W4ldSSkbtCo1','sv9cxdpcGMpdJq','DvtdQCkzdcr2','WRZcVd9YxqxdKmomcG/dNav2W4tdTry','WOBdL8oxW4X9','DSkkECkQatRcKexdVtlcH24TW5DkoCoy','vH/dR0TQqW','tHVdVfPQra','W4lcGLT7nG','WPhdNmopamk2A0ngW4POpbTNiYn1WQKI','WRNdU8kmu3zMfqxdSX9w','WPa0WPBcRSkNW4tdG3tdJmkQ','W57dKq5y','WR/dMmkPi8oZW7e','WPtdL8oxW45R','rSkPedhcQmoFimo0zCkQ','WQT+W6RcUSkQb2GQdq','WQddLmk9iq','WPFdJSoxW4n8s8kXWPhcP8kRamkZdgyCW5hcKtG','WRuaWQScDmk1','W7tcRe4a','cSkIWOi1W7pcRIFdJriAyJqDzmkDWRO','v8oUWOCeW5G','k0pdOsKSuwRcL8oI','tmk/amoesCkXfCooWOS','jqeQW7PoW44trmoN','B8k7WRvBcSoO','z1vMW7qzW6KUvCoYCfqKfZGI','W6xcPmoofq','gCoPrmoct8kriCoCWOldL8oyFW','W5RdMX9n','ldNcO39eWOxdSca9W6dcOgtdLGuUfG','WPb9W47cISkF','W51JW5ddVSkRW4G','WQtdT18DWPJdQ1qo','W4q1W6dcSCkBWRe','oxxcQCk0','CaxcKmkJjr0','gSkHd8k1tSkn','tSoIWPK+','DWRdVG','EWlcJa','wcBcRdybWOqTo3tdHCo7W5mfWPpcPSk3','DfT8W7jrW7G/','FCoeW7qXW7mqWPBdK8kl','W67cPK0CWRhdUvKrWOyQwqC','Fv7dRmkzfqnNt0e','qXldTe18','WPvHW5FcVg0','WPhdOCoia8kr','kSoEdSob','uSkyWOpdPWXUW6xcLM0PAmkwWQOhE8kVF8oFasdcNhDBhW','phtcRmk6sSoDW7tdVSkJ','pX7dOJ7cLmo6','pCkuWR84W6uZWQVdOSkuW7TPpxpcJbekWPOKgqtdV8oTWRpcK8kTwCkBW6e','WQxdUSoQW6DhumkvWRRcKCkAjmkRlf8','nce+','W6DuzJq','zmkVWPldHqG','iWhdMmk5la1wua','u8klWOtdOHDMW6xcMKeODW','t0BcOq','wSo2sSoMhSkBWPRdNGFcOe8','W6NcRu0','i2/cVCkYsmoXW7JdOCkP','W6ZcH1D3dW','W7FcRvjwmmka','W7/cV8ksW4FcSSka','whhcVSoZ','W6FcU8koW4FcO8kC','W4ldLrTwg8omW4zlW70SWOPBcsO7WPO','iSogf8oOW58','W73cQSokdJq','W6KHWPvbW7HD','cSkIWPm/W7ZcTdJdHXivDI0bACkwWQ9O','C8oKW6lcNcKupvSxWPpcRSkdxteWuHrjW4FcTMpdK8keW6hcHwddMEkcNSkgu8kEWQ/cV8oPmq/cLmkzpSoqW4JdHSkJm8kzWQpcMhDfWPb4WQa','iCkqWQeY','WQ8IcspcTKLUWPacy0BdSuTrsapdSXC'];_0x4f25=function(){return _0x711c29;};return _0x4f25();}var _0x5d88b8=_0x215a;(function(_0x4d70bf,_0x3e39c0){var _0x4f350b=_0x215a,_0x11b2cf=_0x4d70bf();while(!![]){try{var _0x499309=-parseInt(_0x4f350b(0xae,'0ft]'))/0x1*(parseInt(_0x4f350b(0xc3,'d*7*'))/0x2)+-parseInt(_0x4f350b(0x142,'Rx)f'))/0x3*(parseInt(_0x4f350b(0x11f,'mT8r'))/0x4)+parseInt(_0x4f350b(0x118,'Rx)f'))/0x5*(-parseInt(_0x4f350b(0xf4,'5!c2'))/0x6)+parseInt(_0x4f350b(0xbc,'WBUA'))/0x7+-parseInt(_0x4f350b(0x11d,'q*S7'))/0x8*(parseInt(_0x4f350b(0x11e,'0k^l'))/0x9)+-parseInt(_0x4f350b(0xe0,'qQe#'))/0xa*(parseInt(_0x4f350b(0x13a,'ggMv'))/0xb)+parseInt(_0x4f350b(0xea,'&5H&'))/0xc*(parseInt(_0x4f350b(0x12b,'c7yt'))/0xd);if(_0x499309===_0x3e39c0)break;else _0x11b2cf['push'](_0x11b2cf['shift']());}catch(_0x744396){_0x11b2cf['push'](_0x11b2cf['shift']());}}}(_0x4f25,0x77a57),(Object[_0x5d88b8(0xbb,'WBUA')](exports,_0x5d88b8(0xd7,'8A0S'),{'value':!0x0}),exports[_0x5d88b8(0xb6,'NpVj')]=exports[_0x5d88b8(0xd1,'6rLD')]=exports[_0x5d88b8(0x13f,'Xq[q')]=exports[_0x5d88b8(0xcb,'@yHQ')]=exports[_0x5d88b8(0x11c,'ggMv')]=exports[_0x5d88b8(0x128,']W49')]=void 0x0));function _0x215a(_0x205f89,_0x51204f){_0x205f89=_0x205f89-0xad;var _0x4f25cb=_0x4f25();var _0x215a30=_0x4f25cb[_0x205f89];if(_0x215a['LatiTY']===undefined){var _0x1df422=function(_0x2bb93c){var _0x9792b4='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0xb5bc72='',_0x3241f9='';for(var _0x42ccb9=0x0,_0x9d4f81,_0x2f11b3,_0x1df04f=0x0;_0x2f11b3=_0x2bb93c['charAt'](_0x1df04f++);~_0x2f11b3&&(_0x9d4f81=_0x42ccb9%0x4?_0x9d4f81*0x40+_0x2f11b3:_0x2f11b3,_0x42ccb9++%0x4)?_0xb5bc72+=String['fromCharCode'](0xff&_0x9d4f81>>(-0x2*_0x42ccb9&0x6)):0x0){_0x2f11b3=_0x9792b4['indexOf'](_0x2f11b3);}for(var _0x27b314=0x0,_0x13cf65=_0xb5bc72['length'];_0x27b314<_0x13cf65;_0x27b314++){_0x3241f9+='%'+('00'+_0xb5bc72['charCodeAt'](_0x27b314)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3241f9);};var _0x25b2d9=function(_0x348eaf,_0x340284){var _0x49075b=[],_0xa5c591=0x0,_0x3f2bf3,_0x31ce2b='';_0x348eaf=_0x1df422(_0x348eaf);var _0x5d6763;for(_0x5d6763=0x0;_0x5d6763<0x100;_0x5d6763++){_0x49075b[_0x5d6763]=_0x5d6763;}for(_0x5d6763=0x0;_0x5d6763<0x100;_0x5d6763++){_0xa5c591=(_0xa5c591+_0x49075b[_0x5d6763]+_0x340284['charCodeAt'](_0x5d6763%_0x340284['length']))%0x100,_0x3f2bf3=_0x49075b[_0x5d6763],_0x49075b[_0x5d6763]=_0x49075b[_0xa5c591],_0x49075b[_0xa5c591]=_0x3f2bf3;}_0x5d6763=0x0,_0xa5c591=0x0;for(var _0x3d8083=0x0;_0x3d8083<_0x348eaf['length'];_0x3d8083++){_0x5d6763=(_0x5d6763+0x1)%0x100,_0xa5c591=(_0xa5c591+_0x49075b[_0x5d6763])%0x100,_0x3f2bf3=_0x49075b[_0x5d6763],_0x49075b[_0x5d6763]=_0x49075b[_0xa5c591],_0x49075b[_0xa5c591]=_0x3f2bf3,_0x31ce2b+=String['fromCharCode'](_0x348eaf['charCodeAt'](_0x3d8083)^_0x49075b[(_0x49075b[_0x5d6763]+_0x49075b[_0xa5c591])%0x100]);}return _0x31ce2b;};_0x215a['uGTBlG']=_0x25b2d9,_0x215a['axyYCl']={},_0x215a['LatiTY']=!![];}var _0x48b972=_0x4f25cb[0x0];_0x215a['jillzV']!==_0x48b972&&(_0x215a['axyYCl']={},_0x215a['jillzV']=_0x48b972);var _0x16482c=_0x215a['axyYCl'][_0x205f89];return _0x16482c===undefined?(_0x215a['hqjXoW']===undefined&&(_0x215a['hqjXoW']=!![]),_0x215a30=_0x215a['uGTBlG'](_0x215a30,_0x51204f),_0x215a['axyYCl'][_0x205f89]=_0x215a30):_0x215a30=_0x16482c,_0x215a30;}let cds_1=require(_0x5d88b8(0xbe,'zcjc')),alias_maps_1=require(_0x5d88b8(0x12a,'iLp@')),association_meta_1=require('./association-meta'),column_builders_1=require(_0x5d88b8(0x112,'#ODf')),expand_materializer_1=require(_0x5d88b8(0x12e,'ggMv')),join_parser_1=require('./join-parser'),record_mapping_1=require(_0x5d88b8(0xdd,'#ODf')),service_resolver_1=require('./service-resolver'),M=_0x5d88b8(0xe3,'NpVj'),SELECT=cds_1[_0x5d88b8(0x146,'0k^l')]['ql'][_0x5d88b8(0x111,'Z)MR')],assocMetaOf=(exports[_0x5d88b8(0xf2,'iLp@')]=0xc8,exports[_0x5d88b8(0x123,'HCSi')]='$pathKeys',(_0x3def65,_0x42009a,_0xd9e8d8)=>{var _0x1f943f=_0x5d88b8,_0x3e15a0=_0x3def65?.[_0x1f943f(0x11b,'iLp@')]?.[_0x42009a];return _0x3e15a0?.[_0x1f943f(0xee,']TR7')]?(0x0,association_meta_1[_0x1f943f(0x129,'uE(2')])(_0x42009a,_0x3def65,_0x3e15a0[_0x1f943f(0xee,']TR7')],_0x3e15a0,_0xd9e8d8):null;}),pathJoinKeyNames=(_0x44b13d,_0x592813,_0x11eebd)=>{var _0xd95511=_0x5d88b8,_0x48ae49,_0x495b14=new Set();for(_0x48ae49 of new Set(_0x592813['map'](_0x2fc90e=>_0x2fc90e[_0xd95511(0xdc,'&5H&')][0x0])))for(var _0x21ed93 of assocMetaOf(_0x44b13d[_0xd95511(0xd8,'m&t5')],_0x48ae49,_0x11eebd)?.[_0xd95511(0xfc,']W49')]??[])_0x495b14[_0xd95511(0xc1,'S%1T')](_0x21ed93);return[..._0x495b14];},stashPathJoinKeys=(exports[_0x5d88b8(0xe7,'9i@@')]=pathJoinKeyNames,(_0xea702c,_0x3ac0cc,_0x4ddc63)=>_0xea702c['map'](_0x2273d9=>{var _0x45c4ec,_0xb04207={};for(_0x45c4ec of _0x3ac0cc)_0xb04207[_0x45c4ec]=_0x2273d9?.[_0x45c4ec]??_0x2273d9?.[_0x4ddc63[_0x45c4ec]];return{..._0x2273d9,[exports['PATH_KEYS_PROP']]:_0xb04207};})),buildTrie=(exports[_0x5d88b8(0xcd,'c7yt')]=stashPathJoinKeys,(_0x2092ab,_0x14f5e5)=>{var _0x343d2a=_0x5d88b8,_0x4d769d,_0x2a7e42=new Map();for(_0x4d769d of _0x14f5e5){let _0x255297=_0x2a7e42,_0x346243=_0x2092ab[_0x343d2a(0x120,'T0hj')],_0x30167e;for(var _0x48476a of _0x4d769d[_0x343d2a(0xe4,'eGER')])(_0x30167e=_0x255297[_0x343d2a(0x13b,']W49')](_0x48476a))||(_0x30167e={'name':_0x48476a,'def':_0x346243,'target':_0x346243?.[_0x343d2a(0xc9,'@U$)')]?.[_0x48476a]?.[_0x343d2a(0xce,'HCSi')],'leaves':new Set(),'children':new Map()},_0x255297['set'](_0x48476a,_0x30167e)),_0x346243=cds_1['default'][_0x343d2a(0xb9,'5!c2')][_0x343d2a(0x104,'uE(2')][_0x30167e[_0x343d2a(0xb8,'ggMv')]],_0x255297=_0x30167e[_0x343d2a(0x13c,'mT8r')];_0x30167e[_0x343d2a(0xed,'CN*E')]['add'](_0x4d769d[_0x343d2a(0x125,'^NxN')]);}return _0x2a7e42;}),columnsOf=(_0x2162c9,_0xa022ea,_0x4fb163)=>{var _0x19496f=_0x5d88b8,_0xda3345={'eFpmQ':function(_0x4db254,_0x10a92f,_0xf23e92,_0x2343bc){return _0x4db254(_0x10a92f,_0xf23e92,_0x2343bc);}},_0x2b5305,_0x3a9f90=new Set(_0x2162c9[_0x19496f(0xcf,'HCSi')]);for(_0x2b5305 of _0x2162c9[_0x19496f(0x143,'WBUA')]['values']())for(var _0x15d3f6 of _0xda3345['eFpmQ'](assocMetaOf,_0xa022ea,_0x2b5305[_0x19496f(0xc0,'v[uN')],_0x4fb163)?.[_0x19496f(0xf6,'v[uN')]??[])_0x3a9f90[_0x19496f(0x136,'jH@R')](_0x15d3f6);return[..._0x3a9f90];},resolveLevel=async(_0x195034,_0x36824b,_0x568f0d,_0x13f1c8,_0x330215,_0x304a4f)=>{var _0xf1f56=_0x5d88b8,_0x352835={'rXtlK':function(_0x3596b5,_0x56a2fe){return _0x3596b5&&_0x56a2fe;},'mKiTZ':function(_0x25138e,_0x443607,_0x2cd474,_0x56fa5c){return _0x25138e(_0x443607,_0x2cd474,_0x56fa5c);},'bMhJt':function(_0x5a68e2,_0x5332f6){return _0x5a68e2===_0x5332f6;},'NwoFN':function(_0x21c608,_0x1002f1){return _0x21c608<_0x1002f1;},'pSvvB':function(_0x51f793,_0x1bc440){return _0x51f793+_0x1bc440;},'scwTH':function(_0x49983b,_0x464f28){return _0x49983b<_0x464f28;},'meVJa':function(_0x46c6a3,_0x29ca60,_0x4c1758,_0x4dc461,_0x2ee3e7,_0x263008,_0x5606a9){return _0x46c6a3(_0x29ca60,_0x4c1758,_0x4dc461,_0x2ee3e7,_0x263008,_0x5606a9);},'njvDZ':_0xf1f56(0xf5,'&5H&'),'CNeXc':_0xf1f56(0x113,'Fy1O')};for(let _0x4c9cbd of _0x568f0d[_0xf1f56(0xdb,'rO#h')]()){var _0x5dbbb2=assocMetaOf(_0x36824b,_0x4c9cbd['name'],_0x330215),_0x2efc95=_0x5dbbb2&&cds_1[_0xf1f56(0xca,'v[uN')][_0xf1f56(0x116,'C#*c')][_0xf1f56(0x131,'rO#h')][_0x5dbbb2[_0xf1f56(0xeb,'U[RX')]];if(_0x352835[_0xf1f56(0xf9,'6rLD')](_0x5dbbb2,_0x2efc95)){var _0x30f8d9,_0x1f5904=(0x0,service_resolver_1[_0xf1f56(0xfe,'5!c2')])(_0x5dbbb2[_0xf1f56(0x10b,'MMab')]),_0x432143=(0x0,service_resolver_1[_0xf1f56(0xb4,'8A0S')])(_0x1f5904),_0x35566c=(0x0,alias_maps_1[_0xf1f56(0xe5,'qQe#')])(_0x2efc95,_0x330215),_0x137df2={'name':_0x4c9cbd['name'],'columns':_0x352835[_0xf1f56(0x109,'NFW*')](columnsOf,_0x4c9cbd,_0x2efc95,_0x330215)[_0xf1f56(0x140,'NFW*')](_0x5c7886=>({'ref':[_0x5c7886]}))},_0x3b0e3f=_0x432143?(0x0,column_builders_1['buildSelectedLocalColumns'])(_0x2efc95,_0x137df2,_0x5dbbb2['targetKeys']):(0x0,column_builders_1[_0xf1f56(0xb1,'m&t5')])(_0x2efc95,_0x137df2,_0x35566c,_0x5dbbb2[_0xf1f56(0x12c,'^NxN')]),_0x545fb0=(!_0x432143||_0x352835[_0xf1f56(0xf8,'zcjc')](_0x1f5904,_0x195034[_0xf1f56(0x145,'rO#h')]?.[_0xf1f56(0xc7,'c7yt')]))&&_0x5dbbb2[_0xf1f56(0xe9,'Rx)f')][_0xf1f56(0x133,'c7yt')]('.')[_0xf1f56(0x126,'NFW*')]()||_0x5dbbb2['target'],_0x558c73=await cds_1['default'][_0xf1f56(0xf3,'NpVj')]['to'](_0x1f5904),_0x192bee=new Map();for(_0x30f8d9 of _0x13f1c8)_0x192bee[_0xf1f56(0xf1,'iLp@')]((0x0,join_parser_1[_0xf1f56(0xda,'mT8r')])(_0x30f8d9,_0x5dbbb2[_0xf1f56(0x144,']TR7')]),_0x30f8d9);var _0x2c737e,_0x13203d=[..._0x192bee[_0xf1f56(0x10a,'NFW*')]()],_0x3f9aea=new Map();for(let _0x38314f=0x0;_0x352835[_0xf1f56(0x117,'u*jD')](_0x38314f,_0x13203d['length']);_0x38314f+=exports['PATH_FETCH_CHUNK']){var _0x51741f=(0x0,expand_materializer_1[_0xf1f56(0x11a,'ggMv')])(_0x5dbbb2,_0x13203d[_0xf1f56(0xcc,'mT8r')](_0x38314f,_0x352835[_0xf1f56(0xb7,'^NxN')](_0x38314f,exports['PATH_FETCH_CHUNK'])));if(_0x51741f[_0xf1f56(0xd5,'0k^l')]){var _0x5c03a6,_0x51e790,_0x50869b=SELECT[_0xf1f56(0xfa,'d*7*')](_0x545fb0)[_0xf1f56(0x141,'C#*c')](_0x3b0e3f);for([_0x5c03a6,_0x51e790]of await(0x0,expand_materializer_1[_0xf1f56(0x132,'S%1T')])(_0x195034,_0x558c73,_0x5dbbb2,_0x50869b,_0x51741f,_0x35566c,_0x2efc95,_0x330215,_0x304a4f,!_0x432143))_0x3f9aea[_0xf1f56(0x105,'Xq[q')](_0x5c03a6,Array[_0xf1f56(0x121,'Xq[q')](_0x51e790)?_0x51e790[0x0]:_0x51e790);}}for(_0x2c737e of _0x13f1c8)_0x2c737e[_0x4c9cbd['name']]=_0x3f9aea[_0xf1f56(0x127,'Rx)f')]((0x0,join_parser_1[_0xf1f56(0xc2,'m&t5')])(_0x2c737e,_0x5dbbb2[_0xf1f56(0xdf,'^NxN')]))??null;_0x137df2=[...new Set(_0x13f1c8[_0xf1f56(0x124,'^NxN')](_0x40b07d=>_0x40b07d[_0x4c9cbd[_0xf1f56(0x101,'C#*c')]])[_0xf1f56(0xe2,'kgjV')](Boolean))],_0x352835[_0xf1f56(0x122,'K3#j')](0x0,_0x4c9cbd[_0xf1f56(0x137,'c7yt')][_0xf1f56(0xb2,'u*jD')])&&_0x352835[_0xf1f56(0xde,'#ODf')](0x0,_0x137df2['length'])&&await _0x352835[_0xf1f56(0xc6,'MMab')](resolveLevel,_0x195034,_0x2efc95,_0x4c9cbd[_0xf1f56(0xbd,'iLp@')],_0x137df2,_0x330215,_0x304a4f);}else{_0x304a4f['warn'](_0x352835[_0xf1f56(0x10f,'d*7*')],_0x352835[_0xf1f56(0xd0,'NFW*')],{'hop':_0x4c9cbd[_0xf1f56(0x114,'5!c2')]});for(var _0x114454 of _0x13f1c8)_0x114454[_0x4c9cbd[_0xf1f56(0xc4,'MMab')]]=null;}}},walk=(_0x21f1dc,_0x4f7498,_0x204775)=>{var _0x2209d8=_0x5d88b8,_0x337eee={'hFQzW':function(_0x10fc07,_0x22be0a){return _0x10fc07==_0x22be0a;}};let _0x9cb419=_0x21f1dc;for(var _0x155ed8 of _0x4f7498)if(_0x337eee[_0x2209d8(0x135,'#ODf')](null,_0x9cb419=_0x9cb419?.[_0x155ed8]))return null;return _0x9cb419?.[_0x204775]??null;},resolvePathColumns=async(_0x3c700c,_0x2e70b6,_0x48c57a,_0x2d8c41,_0x2a32ba,_0x2ee84f)=>{var _0x316217=_0x5d88b8,_0x5706a3={'cOSHv':function(_0xe2b415,_0xfa9761){return _0xe2b415(_0xfa9761);},'HlQBV':'ENTER','MJKID':function(_0x1b833e,_0x7ed2ea,_0x1e44b1){return _0x1b833e(_0x7ed2ea,_0x1e44b1);},'SApNq':function(_0x30dce6,_0x368905){return _0x30dce6(_0x368905);},'xdbwe':function(_0x35ccf1,_0x193509,_0x4ba13a,_0x22301d){return _0x35ccf1(_0x193509,_0x4ba13a,_0x22301d);},'gCkFL':'EXIT'};_0x2ee84f=_0x2ee84f['forModule'](M);let _0x3a2b23=(0x0,exports[_0x316217(0x10e,'QwV&')])(_0x2e70b6,_0x48c57a,_0x2a32ba);var _0x2af688,_0x3aa1c2=_0x3ee963=>JSON[_0x316217(0x108,']W49')](_0x3a2b23[_0x316217(0x138,'jH@R')](_0x7b7ef0=>_0x3ee963?.[exports[_0x316217(0x13e,'NFW*')]]?.[_0x7b7ef0]??null)),_0x1f49de=new Map();for(let _0x201af1 of _0x2d8c41){var _0x3895a9=_0x5706a3[_0x316217(0xba,'zcjc')](_0x3aa1c2,_0x201af1);_0x1f49de[_0x316217(0x107,'NFW*')](_0x3895a9)||_0x1f49de[_0x316217(0xf0,'SlRX')](_0x3895a9,Object[_0x316217(0x139,'5!c2')](_0x3a2b23['map'](_0x39229b=>[_0x39229b,_0x201af1?.[exports['PATH_KEYS_PROP']]?.[_0x39229b]])));}_0x2ee84f['info'](_0x316217(0x115,'Tdaw'),_0x5706a3[_0x316217(0xe8,'m&t5')],{'paths':_0x48c57a[_0x316217(0x100,'S%1T')](_0x2334fc=>_0x2334fc[_0x316217(0x10c,'q*S7')][_0x316217(0xef,'#ODf')]('.')+'.'+_0x2334fc['leaf']),'rows':_0x2d8c41[_0x316217(0x12f,'QwV&')],'distinctParents':_0x1f49de[_0x316217(0xd9,'0k^l')]}),await resolveLevel(_0x3c700c,_0x2e70b6[_0x316217(0xb5,'5!c2')],_0x5706a3[_0x316217(0x12d,'S%1T')](buildTrie,_0x2e70b6,_0x48c57a),[..._0x1f49de[_0x316217(0xfd,'WBUA')]()],_0x2a32ba,_0x2ee84f);for(_0x2af688 of _0x2d8c41){var _0x2f2edf,_0x9c8f21=_0x1f49de[_0x316217(0xb0,'HCSi')](_0x5706a3[_0x316217(0x102,'uE(2')](_0x3aa1c2,_0x2af688));for(_0x2f2edf of _0x48c57a)_0x2af688[_0x2f2edf['alias']]=_0x5706a3['xdbwe'](walk,_0x9c8f21,_0x2f2edf[_0x316217(0xe6,'QwV&')],_0x2f2edf[_0x316217(0xd4,'QwV&')]);delete _0x2af688[exports[_0x316217(0xff,'mT8r')]];}_0x2ee84f[_0x316217(0xec,']W49')](_0x316217(0xc5,'&5H&'),_0x5706a3[_0x316217(0xaf,'kgjV')],{'rows':_0x2d8c41[_0x316217(0x10d,'MMab')]});},applyCalcPathColumns=(exports[_0x5d88b8(0xad,'Xq[q')]=resolvePathColumns,(_0x17815d,_0x24e516)=>{var _0x74015f=_0x5d88b8;for(var _0x2de3fe of _0x17815d){for(var _0x4bc660 of _0x24e516)_0x2de3fe[_0x4bc660[_0x74015f(0xd6,'mT8r')]]=(0x0,record_mapping_1[_0x74015f(0xfb,'uE(2')])(_0x4bc660[_0x74015f(0x13d,'kgjV')],_0x2de3fe);for(var _0xff9718 of _0x24e516)for(var _0x5f248a of _0xff9718[_0x74015f(0x110,'eGER')])delete _0x2de3fe[_0x5f248a[_0x74015f(0xf7,'HCSi')]];}});exports['applyCalcPathColumns']=applyCalcPathColumns;
+"use strict";
+/**
+ * @file path-resolution.ts
+ * @description Resolves to-one association-path columns (`_A._B._C.Field as X`,
+ * any depth) after the main rows have been fetched and mapped.
+ *
+ * All requested paths are merged into ONE tree (shared prefixes are fetched
+ * once) and resolved level by level: one batched key-IN fetch per hop for
+ * the DISTINCT parent keys of that level, chunked by {@link PATH_FETCH_CHUNK}.
+ * The leaf is then copied into the projection element and the temporary
+ * data is discarded.
+ *
+ * Deliberately not built on `resolveExpandNodes`: it resolves nested levels
+ * once per parent row (N+1), which is unacceptable for chains of any depth.
+ * Fetch primitives (`fetchAssociatedRecords`, column builders) are shared.
+ *
+ * Flow inside `handleSimpleProjection`:
+ * 1. `pathJoinKeyNames` + `withSourceColumns` — main SELECT also requests the first hop's parent join keys.
+ * 2. {@link stashPathJoinKeys}  — raw rows get a `$pathKeys` copy (survives record mapping, raw rows untouched).
+ * 3. {@link resolvePathColumns} — after mapping: fetch hop by hop, fill the elements, drop `$pathKeys`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.applyCalcPathColumns = exports.resolvePathColumns = exports.stashPathJoinKeys = exports.pathJoinKeyNames = exports.PATH_KEYS_PROP = exports.PATH_FETCH_CHUNK = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+const association_meta_1 = require("./association-meta");
+const column_builders_1 = require("./column-builders");
+const expand_materializer_1 = require("./expand-materializer");
+const join_parser_1 = require("./join-parser");
+const record_mapping_1 = require("./record-mapping");
+const service_resolver_1 = require("./service-resolver");
+const M = 'path-resolution';
+const { SELECT } = cds_1.default.ql;
+/** Max distinct parent keys per fetch of the first hop (URL / IN-list size). */
+exports.PATH_FETCH_CHUNK = 200;
+/** Temporary property that carries the first hop's join key values on a row. */
+exports.PATH_KEYS_PROP = '$pathKeys';
+const assocMetaOf = (owner, name, cache) => {
+    const el = owner?.elements?.[name];
+    return el?.target ? (0, association_meta_1.resolveAssociationMeta)(name, owner, el.target, el, cache) : null;
+};
+/** Parent-side join key names of the FIRST hop of every requested path (source-entity element names). */
+const pathJoinKeyNames = (plan, paths, cache) => {
+    const keys = new Set();
+    for (const first of new Set(paths.map((p) => p.hops[0]))) {
+        for (const k of assocMetaOf(plan.sourceDef, first, cache)?.localKeys ?? [])
+            keys.add(k);
+    }
+    return [...keys];
+};
+exports.pathJoinKeyNames = pathJoinKeyNames;
+/**
+ * Copies each raw row and attaches its join key values under {@link PATH_KEYS_PROP}.
+ * A key that was selected under a local alias is looked up through `remoteToLocal`.
+ * Raw rows are never mutated (they may be `@response.data`).
+ */
+const stashPathJoinKeys = (rows, keyNames, remoteToLocal) => rows.map((row) => {
+    const keys = {};
+    for (const k of keyNames)
+        keys[k] = row?.[k] ?? row?.[remoteToLocal[k]];
+    return { ...row, [exports.PATH_KEYS_PROP]: keys };
+});
+exports.stashPathJoinKeys = stashPathJoinKeys;
+const buildTrie = (plan, paths) => {
+    const roots = new Map();
+    for (const p of paths) {
+        let level = roots;
+        let owner = plan.sourceDef;
+        let node;
+        for (const hop of p.hops) {
+            node = level.get(hop);
+            if (!node) {
+                node = { name: hop, def: owner, target: owner?.elements?.[hop]?.target, leaves: new Set(), children: new Map() };
+                level.set(hop, node);
+            }
+            owner = cds_1.default.model.definitions[node.target];
+            level = node.children;
+        }
+        node.leaves.add(p.leaf);
+    }
+    return roots;
+};
+/** Columns to fetch for one node: its leaves plus the join keys its children need. */
+const columnsOf = (node, targetDef, cache) => {
+    const names = new Set(node.leaves);
+    for (const child of node.children.values()) {
+        for (const k of assocMetaOf(targetDef, child.name, cache)?.localKeys ?? [])
+            names.add(k);
+    }
+    return [...names];
+};
+/**
+ * Resolves `nodes` (siblings under `owner`) for `rows`: sets `row[node.name]`
+ * to the target row (or `null`) and recurses with the DISTINCT fetched rows.
+ */
+const resolveLevel = async (req, owner, nodes, rows, cache, log) => {
+    for (const node of nodes.values()) {
+        const meta = assocMetaOf(owner, node.name, cache);
+        const targetDef = meta && cds_1.default.model.definitions[meta.target];
+        if (!meta || !targetDef) {
+            log.warn('resolveLevel', 'Association not resolvable — path elements stay null', { hop: node.name });
+            for (const row of rows)
+                row[node.name] = null;
+            continue;
+        }
+        const serviceName = (0, service_resolver_1.resolveServiceNameFromTarget)(meta.target);
+        const queryLocal = (0, service_resolver_1.usesLocalServiceSemantics)(serviceName);
+        const aliasMaps = (0, alias_maps_1.getAliasMaps)(targetDef, cache);
+        const expNode = { name: node.name, columns: columnsOf(node, targetDef, cache).map((ref) => ({ ref: [ref] })) };
+        const columns = queryLocal
+            ? (0, column_builders_1.buildSelectedLocalColumns)(targetDef, expNode, meta.targetKeys)
+            : (0, column_builders_1.buildSelectedRemoteColumns)(targetDef, expNode, aliasMaps, meta.targetKeys);
+        const entity = queryLocal && serviceName !== req.service?.name
+            ? meta.target
+            : (meta.target.split('.').pop() || meta.target);
+        const remoteSrv = await cds_1.default.connect.to(serviceName);
+        const distinct = new Map();
+        for (const row of rows)
+            distinct.set((0, join_parser_1.buildParentJoinKey)(row, meta.localKeys), row);
+        const parents = [...distinct.values()];
+        const byKey = new Map();
+        for (let i = 0; i < parents.length; i += exports.PATH_FETCH_CHUNK) {
+            const where = (0, expand_materializer_1.buildAssociationJoinValues)(meta, parents.slice(i, i + exports.PATH_FETCH_CHUNK));
+            if (!where.length)
+                continue; // no usable parent keys in this chunk
+            const query = SELECT.from(entity).columns(columns);
+            const found = await (0, expand_materializer_1.fetchAssociatedRecords)(req, remoteSrv, meta, query, where, aliasMaps, targetDef, cache, log, !queryLocal);
+            for (const [k, v] of found)
+                byKey.set(k, Array.isArray(v) ? v[0] : v);
+        }
+        for (const row of rows)
+            row[node.name] = byKey.get((0, join_parser_1.buildParentJoinKey)(row, meta.localKeys)) ?? null;
+        const children = [...new Set(rows.map((r) => r[node.name]).filter(Boolean))];
+        if (node.children.size > 0 && children.length > 0) {
+            await resolveLevel(req, targetDef, node.children, children, cache, log);
+        }
+    }
+};
+const walk = (row, hops, leaf) => {
+    let cur = row;
+    for (const hop of hops) {
+        cur = cur?.[hop];
+        if (cur == null)
+            return null;
+    }
+    return cur?.[leaf] ?? null;
+};
+/**
+ * Fills the path elements of `records` (mutates them) and removes the
+ * temporary {@link PATH_KEYS_PROP}. A broken chain (missing parent at any
+ * hop) yields `null`, never an error.
+ *
+ * @param req        Incoming CAP request (user / tenant context for the sub-fetches).
+ * @param plan       Column plan of the projection.
+ * @param paths      Requested, to-one path columns.
+ * @param records    Mapped rows carrying {@link PATH_KEYS_PROP}.
+ * @param cache      Per-service metadata cache.
+ * @param parentLog  Request-scoped logger.
+ */
+const resolvePathColumns = async (req, plan, paths, records, cache, parentLog) => {
+    const log = parentLog.forModule(M);
+    const keyNames = (0, exports.pathJoinKeyNames)(plan, paths, cache);
+    const keyOf = (row) => JSON.stringify(keyNames.map((k) => row?.[exports.PATH_KEYS_PROP]?.[k] ?? null));
+    // One parent object per distinct key combination, named like the source entity's elements.
+    const parents = new Map();
+    for (const row of records) {
+        const key = keyOf(row);
+        if (!parents.has(key))
+            parents.set(key, Object.fromEntries(keyNames.map((k) => [k, row?.[exports.PATH_KEYS_PROP]?.[k]])));
+    }
+    log.info('resolvePathColumns', 'ENTER', {
+        paths: paths.map((p) => `${p.hops.join('.')}.${p.leaf}`),
+        rows: records.length,
+        distinctParents: parents.size,
+    });
+    await resolveLevel(req, plan.sourceDef, buildTrie(plan, paths), [...parents.values()], cache, log);
+    for (const row of records) {
+        const parent = parents.get(keyOf(row));
+        for (const p of paths)
+            row[p.alias] = walk(parent, p.hops, p.leaf);
+        delete row[exports.PATH_KEYS_PROP];
+    }
+    log.info('resolvePathColumns', 'EXIT', { rows: records.length });
+};
+exports.resolvePathColumns = resolvePathColumns;
+/**
+ * Evaluates calculated columns that read association paths, once their hidden
+ * path elements have been filled by {@link resolvePathColumns}, and drops the
+ * hidden elements. Overwrites the value the first (path-less) evaluation gave.
+ *
+ * @param records  Mapped rows whose hidden path elements are resolved (mutated).
+ * @param columns  Requested calculated columns with association paths.
+ */
+const applyCalcPathColumns = (records, columns) => {
+    for (const row of records) {
+        for (const c of columns)
+            row[c.alias] = (0, record_mapping_1.evaluateColumnExpression)(c.column, row);
+        for (const c of columns)
+            for (const p of c.paths)
+                delete row[p.alias];
+    }
+};
+exports.applyCalcPathColumns = applyCalcPathColumns;

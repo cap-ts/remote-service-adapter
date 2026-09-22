@@ -1,1 +1,539 @@
-function _0xcdb0(){const _0x140ac6=['sCk1WPaLFxafjwVcVGOdpmkk','DgpcNmoUWQC','xbnwWPS','W5rqW7hdOW','WRT/WRCLWQ8','WP93WQCfWQ/dTNTyWOVdH8omWRpdS00KWQrpd8o8W6ddU3vjWQVdItxdVgtdHN7dL8oLW7BcVa','W45osCkzqSkzW4zfz18glunrvKXPaqJcLqqM','WQ7dVCk1u8ofwa','W6C0zt3cHG','hmoFrCoEza','WQ/dUCkR','WQtcHsuwfCotWO3cG8k2WOldJmkIDG','sslcUGy','Cu/dRve','zZHkWPrz','fh9QlW3dJ8owWOi','DCoJWPumWOGAWQLZW5a5','gCoEuCoWW4VdVCoaW6/cSCoVAqpdHYTZWQFcV0JcSSoxiqO','W4xdGLmLzq','WQ0chSkcW5G','W6VdPCkiuCkn','WPjIWP5pW7G','WRFdKmkbz8o1','W4dcOmkMWQldMtddSG','W5WjAHNcHWi','kSotBSooFG','W5WdzG4','WQKkdmk4W5efmCkyW4BdI1bGWP5kWPddRWRcSwRdUG','WPrFWQHhW5WImue','W5uReCosW7LRsmoeWPFcM8kDW7pdJwdcGKGbdvHpjv0','r8oEu3W','c8o4wmoFxG','qfdcICkyjq','W5usWRfhW54K','iSoaW5fJcCoug8ouW7xdU8kcWQ8jW7Kgba','uComWPxcPKP3CW','DuxdVxxdQsxdUcShAs/dKW','cCk3rYpcJG','rmkkqCoEEcdcGSkNWQfKW6OtW40Uj2nEWOCFW5eSamkQjvavWQuMWQRcQSksW5VdTSooWRBcMCkFW4xdV8oVWPnXCSoGWOLiWO3dR0XvlgCHW614','WQLgWPLPW54l','fCoeBmkuWOC','W6xcNCkrWOBcJgpcVSoXW6NcKConsqJcISkUw07cMKldR8kCerCnWQhcVCoOlq','i8katSk5WQ4','WPzMWRTlW6K3','wCotWR3cTuS','kqOtd8kUgCk1','W63dLYanha','W6rbW5GFdtdcLCkB','W5SMhSocW5HVAW','e8kTy8kvWOpcTq','e3bKjG','DmkAsmkRW6O','WQVcKv3dMSkBW6RdPq','W7BdPey8qa','WRZcGKddNmkoW7VdUs0YrCoWW4i+emkB','amkGESkSWPS','W6NdRCkixq','BmoBWPSPWOi','AmkRWPW3FG','W6ldKhXbr8kwW5RcOSkQWQhdRCkgD8k2fmoT','msJcVmoX','vhSDWRpdIa','WQdcHLZdImkFW4a','amoeW4HKn8oEuSoCW5FdSSkpWOqAWRqreSooWPxcPmobWQ7dJM7IG7n5wsxcHqddVeVcHwWQwmo7p8kZDffxWRfyWOBcG8kRBYrun8kSrSo6AmoOWQa0hb/dGmoGeq','WRxdSmk+rSouqW','W4GFWQXr','W5zxW7NdQa','aSkstSkGWPm','sSokWRO','wSktWRaglsTlW6eUW50peMJcMCkwWQLswCoAtUkfRatdUIO+tZ4','ACo0WPqbWPKr','W44CEWFcNtLHqmkpW5Td','v0hcG8oMWOu','ALZdIdldHf/dTq','W5bcrmkYqG','e8k8ASkaW6ddLrPPW5dcHtaqwCozBmkWWO8bW4Wmnmo6z8ogWR/dJZS5WR/cVmoRdYBdHSkwWOBcRbu','rmovtrFcHrtdKrFdRCkHpg/dPG','W5GeBHNcGrK','udJdKHddICo2WRGJW4HAW4WFp8oF','W7WGW6yLWPVdJ0fXWQC','E8kaF8k0W4i','pHCRe8kS','W4SNhmo5W7K','uLCQWQJdUG','W5jOW7e3kWO','F0hdUq','qYBcSHn5rI06iG','dCk2wCkQWO/dLJuKW5VcSYncn8kymg9EgCkYfa','zNaGgYJdMNZdLxFdNSkDFmkl','ELBdHtxdILNdKSo0h8kqWOZcVW','W5GMgSoBW7bGB8oE','CaxdPSovC3nAWRzfW5H4DmkVr07cG8oX','WQq7emkMvG','W7JdMtKwdq','r1xcUCknnW','t8oxWRhcPL0','W4NdUgKNEa','Ae3dQ8oyWPO0A8oMWQlcNYJdTCoNi8k3WPrJx3PKA8kiqCkQWPxcStFdJ3j8WPzbWOxdGmoRBWiOWRLJ','u8oyshVdRmkF','exrNjaZdGW','g8kEr37dP8oapmkleSktW6FcN8ohwa','c8odtmoyEhldGCo8W6v0','W53dQhakyCkz','jXhcVahdHGhdLb0PEW','fSoeESkIWO8yWPW2W7RcJceGW6a','rrrDWOXB','xmoFr2pdVmkjk8kD','WRhdTmkYv8ou','WQmXhSkMxmkOWOG','imoeW5zKl8onf8oUW5/dRmkCWOqCW5ena8onWOtcVG','c3XQdbq','W7WPsJNcPYjBBCkYW7TQm8k8dMX3W7ZcLSoLo8o/','rclcUWa','WOJdKGmtWQTBo8ke','pmoYD8okAa','rfFcOSohWPSrFmoJWQVcIYBdRCoqzSk5WPr7t1rLDmohdmkQWOK','uZ56jHNdMCoqWPLHWOX6W68UWQldRCoDrSkS','xKbQu8kylG','sIlcPW','b8kQDmkSWPhdLYu','E8kYWPS','C8o8WPKPWOe','WRHRWOmaWQ8','DSosW4bQmCoygSkAW53dSCkoWO0mWRqngmoqW5dcPCoqW6VdMJVcLdfAimojgmo6bCkwjc0zW7O1W7bRwXNdPeJdL8oiW68MBq','WRxcMtKmedZcVa','dgVcMW','W5W5dmozW7zNESozWPpcHmkFWRVdRxpcMuO','WOxdMqKJWRDw','W7ldMcOx','W61CW6ZdQd8RA8kNW7VdGdXpmc9JWOvuCmovsmkZuW','WOHMWQfnW684ycldMmoFW452sZvuWPO','W54zBHNcNq','W4LuW7ZdId8','dmoGxSoIsW','wConDSoJu2ZcQq','pSoeW4TSn8ot','mL7cRNtdMmoYW6iZgcJdLWTMW7vBqSoRW73cNmoHW79UW6uwW7W','e3tdPfude3yUkWpdRbpcKa','WPKPemodW7T6','WOxdLqOTWRC','WQRdUCk1umoDvtFdICkAdh5tuCosW7RdJfroFSkkW5au','WQr8WRif','rmovxbhcLG7cMrpdO8k5ig3dPSkn','bw/cIvhcNW','xuxcPCkm','W6L1smkKvG','Ds53WQTUW7ZcGu0yymkQW7ddNrWmdW','y2uYaJy','qwSZWOFdKW','lSkjqSk1','WQW7hmk0rCkU','cNLSmr3dMa','p8kqkqBdVdS','ACkiFSkoW4K','FSoKWPqnkq','yCkiCSkCW5O6','W7LWvmkwr8kmW4vnBuyekwDkvKG','w8oihJ/cUINdPZFdHW','WOhdNqKGWQ9BgSkiW6pcHc7cSIaqW5a+W6zbWOtdOHGg','W63dMY83fq','bgZcJuhcM8kZW6HLW4PBW7SeoCo7vMldQ8oRWOa','ASkOWPeZ','C08DpYe','WRmoe8kPW5GtfSkuW4/dQ11XWQz7WPddQrRcV3ddObj0','cSkQBW','BmoIWRSuWP8yWQq','W7tdLSkKs8k6','AIv7W6VcNa','w8oEsMO','W5WcWRrp','WRm3cmk2','qNSHWOFdGWzjW4hcVbVcJSksWQyjWRW','W6TismkeAW','w8kQpSkpjq','u8oSWQGunWNdSCk6WQ3dSdrq','WO/dLqSWWQzm','qe3cV8kWiG','kaOog8k7fG','WRRdUsSbWObQ','Ac16W4xcUW','WQf3WRuyWQ3dLxXfWPNcL8oDWQ/dSLyIWQLOdSo7W6ZdOtfwWQq','WQxcHcmCfSoxWONcOSk7WP7dK8kZvW','W6zmq8koamkpW7bnEeWcAh9ksLj/qHlcNqyTrmkjjCocW4yzW5eRWOVcTmoiWPGMBmkVW5FdUmoaWQhcJCogwCoxW7LWW4G2W77dOmk9W6RcICkjWO8wFJBcI8kMFIVcR8kjBmoSa8knD8kmu8kBmIZcKLRdMwT/WQlcQCkihudcJGRcVmkvfSkHfJpcQd/cLCkFmmo3iduVW49dW4qFW5LWz8kXtSkcgq','W4BdPxSFCmkc','CSotW4P8mmkbuSouW5/dRmkjWO4FWRqka8keWPtcQmocWQxcIJNcJI1xzmoncSo8sCkwktO','WOtdNrC','eSoSu8ojs1ddGKNcMIpcPCk2CmoNqSkzWO1sy8kdWQey','WRRdQciuW6mkkmoboCouzSkKfqpdJtFdQWlcKCo7bWtcSIxcRa','Emk5fmkZoa','qLe8WRpdPmoN','dwpcHK3cJa','mGidm8kJ','qCoSWRqroH3dPSkNWQ7dQrvmWQbhCdZdJ8kZW4q5oa','nSk6psBdQW','B8khfmkhdW','DZnyW7JcPCk4fq','WQ59WQeeWRC','B1RdIdpdJem','i2m/aJ/dQG','g8ohq8oJCq','fCkWFCkRWOu','WP7dLai2WQy','WPDIWQv+W7GYAIldU8o/W4r4AIHuWQVdPuldUNHVWQi','A8keCmkpW4SG','fmoxB8knWPuvWP0+W4pcTcGZW6VcNqxcN8kkWRWeWPeN','ksRcSCoBWRi','cCoprSonAgZcMa','ySkJBSkPW4C','nCkCkXxdRse','W5RdHt8xgJNcRJ0BWOBcR8oWW4hcTgP+W4hdJ8oIWQyueSoYW6e2W5ZdJW','dalcNSorWP3cLG','W4nxv8kCqmky','BM42ga','xmoczx3dU8kmnW','Dw4Xpsi','WRC/amk9','WQxdQSk0qCobCH0','imouW4S','zvBdIIddNvK','d2rN','W5jGASk1xG','zgTaEq','bSojA8ktWOu','W7tdKhrrqW','W7vahSk8W5PBmmkjW4VdT0i','BCoWWPqcWOeCWO5ZW5iNya1+WOhcNmo1FConW45BWRJdLa','ndnMqMBcQcddGMhdPCkur8kg','zSkxgmkVpW','WR3cLLFdNCks','DbNdOSouFG','W5m/eSouW7b8','W43dNWGXWQ1k','vfqvj3hcRtxdGMZdMCkw','DSoUWRCipIFdRCkYW7JdSHneWO5DCvNcHCkZW4i9ywLejJP9rMylW5LQEdXP4Oo9WOaiW7qhWRBcHgxdLJToW6NcRmo4laDoWQjZW45AWOLGpSkGrCkanG','E2HfwCk3','mSo1u8ohDhdcVmkPWRiTW7ChW4K3j38','mL7cRNtdMmo2WQfHW4P7W6SjpW','w8oYWR4x','EuNdP1a','FCkiWRGEFq','zwxcKmk6dCk3','W6RdO8kbxCkv','hSk1ytJcKG','W5GfFWpcTWvXu8kEW51OemkpnKbbW5a','FmkyECkjW5C','mmorFSknWPKDWOC8WRtcMaqsW5RcMYxcJSk7','kCkgsCk/','WPTWWQzfW7OX','yCkMWOy','A2u+ecxdTG','vSoqWQm','WO0knCk0Eq','WRVcGKddGq','WPJdPSk3WRNdGctdSYJdPmkXW41jcmkkW6TBwa','W7vXW4VdOWi','WOWdd8kgW6m','b8oayG','uCoZWRqniYddSa','maaVeSkQ','zbtdS8oLDe5lWRDzW7DZxmkTzuRcICoNW7S','gSkqA8kXWQW','WOL6tW','W4XjW7pdRICkASkSW67cHvTgksPXWO4','z8kFBmkwW5y','yaWbemkS','W4rAtSkrsSkVW7baB0WElxDXxeTJfHNcVWqKqSoep8oz','FKxdP1pdSsq','W64ppSoKW5zgrmoHWRxcQmkWW5RdGL/cRhO7pgnXgq','pc/cS8o9WRa','W5i4g8otW6DmyG','fCoRw8oEqKe','kCodu8oCFhtcJ8kGWRWQW75gW64rcuekWPaEWPaN','uKNcR8klj8knDmkx','tMhcTCklbq','xfZdTdhdHG','zSk1WPeZF00eiuldUquhdmkoWPxcRvneW4ShWPfk','WRyZeCkCxq','W5/cP8k3WRRdMtxdUZu','iYPfz8k1v1bkW6OovG','WP/dKqqlWQ8','WQeYg8kYqG','WOFdNqOH','W7WPrY7cPZ4','vazDW7JcGG','fYOSoCkmkG','xSo5WRyFoIy','oxH6mXNdN8oqWPKLWOrOWQecWPldPCogsCoWWO0GWRFcULtcIvS','FhbdzmkI','cMpcHua','W4pdSfD2z8kQW6dcISkJWPFdGSkPxmksoSoBWQ0BCZf1','e8kTBSkcWOpcQsCfkmoMjHrdW4zOW4JcOJBcRJGp','x8o5WQSllYNdPG','WQ49eSkcW44','W5vksCkor8kiW7XABW','lCk0WPa3F3WdDMFdO04mj8kFW5pcT0HDW48bWOXqW7mHFuG9BgnTpdNdJuLiWPZdVd7cPSk9nCkynatdLCkhscXzWQZcKCotWP7dImo8WPiQ','se3cVa','fmotsSo2W53dVCoeW6ddRmoXlaZdNtbMW7m','W5ZdJ0fCFq','d8kDtmk3WPS','iYPvC8k6cezwWQ4sumk6WR8udqBcKa','EcL1W77cSSkR','W5tdICkPFCk6WO4','smoEWQdcVeS','WPhdNCkAzSoYEdVdT8k2lLXPu8oVW4ldTq','yCkMWPSYyxO4p2pdOaihgmkzWPZcRLHoW4ShWPfk','p3bQkb3dHCoxW5e+WO9LW6qUWQldOCowcmkRWQehWRFcUetcM1DSs2hcUNG+WRdcMCkIuCoSsCkkWR7dP8oasSkA4Ok1c8o2W5BcIbbXW4RcTxPYWOVdNqNcSSkWWQLaWPqFqq','jCk1Amk1WOxdKdGQWPRcGbHIdmknFeHQ','sKWPWRu','imoeW5zKl8onf8oPW5VdV8kjWOiaW5ycfmopWPxcQCor','ywbiCCkVeG','WPJdImkrCCoR','jmknsCk5WQ7cIaWGcmolfa','WRz5WOjuW4q','yCozWPq9drO','WQSocCkLW4C','W5GnEqu','WR7cMMzfumkkWPlcTmkjWQFdRmkjDSkReSoSWPW','W5TqW6ZdSZOZyCk9','WR57WQ4p','W6tdO8kjtCkuWRrq','vZhcUaLFsty9kcVcMtFcTSkNeeZdHeTd','CCkafCkqbmkiWP0','BHtdTmovEKrE','CCkgWPWIrG','WOtcVcTvj8oeW67dR0pcHCo6WOpcIq','uMS/WPNdJIfjW7ZcRb3cImkoWOe0WR3cG8ogzN/cP8ovWR0PWRqk','EIv7W7/cSa','W61iW5mvhdy','n8krxCkjW5ZcJdrTdCoNa0n0WRa5z1WoWQvajgNdImk5','hLj7fa4','jmoQtmkNWOG','ggDOlW3dISohWPqBWOjQW7mOWPNdQSoGtCk8WQyqW7m','WP7dPtuTWOG','DaBcMYz5FG','bgtcN1BcKCkIW7i','DY1SWOPr','tI3cSqW','WQbZWQq','W5PlW63dQce','W6K1WPDNW74e','zZhcSHbkrsWNiMVdKcBcQ8k2','W6/dRCklxmkvWR9Wl8kGi8o4E8oxW4L/W7ZdJSkRrCojh8os','WRNcQ2JdVmkV','wmkBh8kugSoQWPBdMCkOWPnlW49vW452W4FdMuvvp8kWW7acwG','gSkBwbJcKq','AMbsrCk+cfnxW6ahz8kWWPKrdXq','C2KeWRFdGG','gxrRnH8','WQhcGKi','iSo1s8kXW4bfW4NdRmk0WO89lCoNWQzlWPRcP8kAoCkM','W6m9WQypWQddR2bsW4hcISomWRddSeSPWQO','FCkbFCksW4a','vxGWWPddIqzfW6BcRc3cMCkkWPCBWRRcRCoiBLK','WO1RWRbEW7G','xKhcSSkBiSkgrmkkW5joW4nZWR4aWRJcLSkqEwFcUHtdIa','l8kIzstdGK7cKapdQCk0j2pdOmoEWRJdL8oJW67cSSofW7tcLmoJW5FcNH47qf8iWRnjCCo+EWddQeGparOkWQP6WP3dS2DNWPS6WRBdTSoYW67cSLO','eSovACobrG','AMeG','WPvLWRP9W7S','CgCdWP/dGmoD','cCkBqbpcSqNdGqldR8kWewxdUmkBWRxdKSoOWQdcV8odW6xdHW','gIlcVCoIWQG','ueVcRSkNnG','fh9Vla','hfnlWPTmWQRcQNDDlmkOW6xdGHOfhrldHW','WRKAfmkHW5a6kSkEW4pdT3j7WPP8WPldRqZcI23dVrvFWRvUaMKhnW','W5JdO20iE8kcWRhdV33cUCop','tSosWRFcM1q','EfddRaRdKW','W5TCW73dSJq','tKxcTCkLbW','cSk8ctFdMH0','sYBcUqroqG','W4ldV8kMAmkq','E8kIWOy5ywKoe3BdOa8mlmkLWPZcOfHE','yCo0WPGtWOO','WQKWfmk8','cCopqSozEG','yIxdHCoOCa','WROlgq','W5/dVX8Smb7cJb1sWOJcSCkTW53cVhTY','fWJcImo4WOy','g8kEr27dPCkoy8kkamkrW6VcHCogt8oCENxcO8o7','xvldLIddJexcPSoPlSkgWPhcVKqTW64','BsnlWPvxWQZcK3vFAmk0W6hdHrWgbq','W5zkW57dTse8EW','bmosA8ksWQWBWOO6W7JcJYGZW7JcUWJcQmk8WROgWOiTW6yIWQve','oSkbfmkubmkPWOZcNmk1WOLmW4iqW5SJW5BdHbWbnCkGWRKmt3muW6JcTZO','W5nCW7hdOcC1','W5JcPSkJ','W5JcQmk5WRm','Fs9SW6tcOW','sepcPSoo','a8oeF8kuWOuhWP0+W7dcNYWTW63cGGRcUCkhWPWeWO82W78LWRu','aqeufCk7b8oWWRe','v1FcRSozWOy','vCkzB8kYW7S','WOfdEatcHrOPqmkzW5LBc8kgmq','W6pdQg8yCmkcWQZcQ2FcP8olWQxcUa','kmoOxmojb1FdQadcNdBcSmoZ4Oc0WRvdWPZcNbfXWOxcVaeRnXFcN2NdSHxdQ8oFWQ/dNhpdLv8+thFcSWGhWRNdSgZdTufSwa','x8ksfSkzjdddN8k4WRG+W7WTW64','ymo5WRuxoIVcO8kNWR3dOrijWODiFrxdHmkJWO1LngfzmxLvyKWSW6GOvGbG','WO7dMrm','yNGGgZJdVxZdKLddKSksBCkCwSktWOhdTGSK','bCoUESkqWRO','W4FdOh0IEq','WOT2WRbEW6q','DKxdQ0hdOG','W4xcRmkMWQddHtldUW','D1JdVuBdPc/dRqOVBJRdKSkiW6P6W71gW7XZBZZcPCoE','nGOg','lCkwcHZdVa','wJfNlaZcI8ovWP45WOrR','oIn2W7/cUCkT','uCorWRlcUW','WOXUWRzJW7e','rCo0WR0kkW','mIBcOG','W4yFsHNcLGT9','FmkoW5jJjSojf8kxW5VdQmkAWO0','FmkoW49KkSovx8okW5/dRmkiWOqA','pmkxiX3dQYRdK8kSW5b/BCoMWPxdSspcS8kvxh7cIsRcTrtdRSoY','WP/cT3FdV8olWPVcVmo7ygpdOmoZobFcGSokW5zyW51XqHFdNf4rxgZdKJa','F2bhzCk0fa','WOfBWROdWOu','W4aVCZ/cLG','ACkAfmkhe8k5','lmknqCk3WRtcIq','zSkizq','Amk3WOu6Dfyfg2VdVqeqmCk4WPZcTKK','WPDQWPalWQ8','WPpdHcWRWQa','W5FcPCk9WRFdNW','W5vdtSkEsW','dcWIk8kB','lJlcT8oMWQC','W5yvWRvfW4K4','ytL0WRT9WOG','pmorrCo4','W7ldGh9iqmkMW5RcOmknWQhdR8krt8kWgmoIWP4kuWPtW7tdP8k7','W6nyW5qEda3cHmkjW6qMaSkgxSkXWPZcKtCEcG','B8kUWPKIAg0','xX1i','W41CW6ZdQd8Rz8kzW73cLhbPjZn3WOzEiW','zSo0AeRdISk5','g2nMlG','dq0QWQldS8oOvCkCCJuGW7VdP8k4EhTYWQ7dUmkSqG','nSoqt8oIW4pcS8oA','gSkpxXG','kCkBFmk/WQhcKsSSfCotdJT5','jSkKE8kYWPNdLZjTW57cQc9EECkZm34td8kPecDPW4JcUCobWRKrhg1RBNPMo8oDWPBcSXhdKmo9EgPoW4JdJWGGDCkvbZhdOmktWOf4h8kcW6aaW58','xb1vWPS','lCkjxW','iSo1s8kXW4bbWOH7i8o8bc/cO8k/dSkGWOdcRrldGYxdUYFcSLlcG8krWRRcL8ksW4JcNmkddG','mK/cP2hcU8kt','urnuWOTtWRlcSa','yfukoGG','rmoeqx3dSa','WQf3WROnWRFdQa','emoNASodWO7dTComW6ZdRmo2Du7dMJX5W7lcOfNdUG','jCo4W7DIca','W43dJWiLWRfDiCobW6dcMZBdTWaxW4W8W6zg','WQb3WQCzWQldP3C','W4mfzGlcKa','W7tdQCkesSkAWRj3kCkIh8o1BmoGW54','B8kOWOCByNSEoMS','aCoKW6LoamoV','BZv8W7JcRG','W4pdVSkksmkjWRnniCoTiCoXC8oOW491WRBcJ8k8xSoquokcQc43W5maDdfBiCovW7/cGmkoCY9/W5VcPmoyWQVcGf83ymkwWRVcHSoCW6nnWR/dUSkoW4jU','nmkynq','tgVdRrm','WRL9WRGfWRtdPwa','e8k8ASkaW6ddKLGVbSojcZP9W6HcWRdcMqVcJWO','dSofvCocAq','vuVcSCoo','wH1wWPPsWRNcKh1vCCk2W6xdOqCgarldLSonDeBdLq','ze3cG8oIWRu','wSo9WRyCiIVdKmk8WRxdSbPmWRfBEXpdHmkKW5KKlMe','o8oEtSoY','W68ik8kcW7OAaa','W5DAqSkpvW','Awe9eG','kxzdD8kPgu0EW64nqCkS','se3cUCogWP45Cmo/WQ/cUZldQCoJBCkWWP5RA2r5D8orcmkLWO7cRdddIfj6W5ThWPC','wCkAe8kEldhdNSknWO8sW5yHW4G','qKFcQCoEWPG','cmkGDSk+WOJdKq','pCkCjWFdVG','WPjIWQy','DY5ZW6/cTmkTlw1eW7VdTmkrWOhdJvdcSCoyqYpdRsFdN8koW7neWRddJc3dRq','W4Tkvmkot8kBW7a','WRuoemkO','W4qBFdpcGG','W5RcRmk6WRhdMdK','jrWtfCkOea','qe06WRtdTW','W5fyW7ldOG','W4hdGhCpzG','W54vWRLxW5O','rN86'];_0xcdb0=function(){return _0x140ac6;};return _0xcdb0();}const _0xba15ec=_0x4825;(function(_0x38e6fb,_0x21cabb){const _0x4fc7da=_0x4825,_0x308062=_0x38e6fb();while(!![]){try{const _0x8df2a1=-parseInt(_0x4fc7da(0x222,'a!Ph'))/0x1*(parseInt(_0x4fc7da(0x258,'ck]$'))/0x2)+-parseInt(_0x4fc7da(0x157,'9y0n'))/0x3*(-parseInt(_0x4fc7da(0x241,'9y0n'))/0x4)+-parseInt(_0x4fc7da(0x29d,'(3Cz'))/0x5+-parseInt(_0x4fc7da(0x244,'%O[&'))/0x6+parseInt(_0x4fc7da(0x1ab,'9y0n'))/0x7+-parseInt(_0x4fc7da(0x270,'h6qL'))/0x8+parseInt(_0x4fc7da(0x209,'7Y&R'))/0x9;if(_0x8df2a1===_0x21cabb)break;else _0x308062['push'](_0x308062['shift']());}catch(_0x2a9108){_0x308062['push'](_0x308062['shift']());}}}(_0xcdb0,0x85a0a),(Object['defineProperty'](exports,'__esModule',{'value':!0x0}),exports[_0xba15ec(0x29c,'^BeX')]=void 0x0));let cds_1=require('@sap/cds'),utils_1=require(_0xba15ec(0x237,'SF&w')),aggregation_1=require(_0xba15ec(0x207,'ck]$')),column_builders_1=require(_0xba15ec(0x2b8,'dS*B')),alias_maps_1=require('./alias-maps'),cqn_utils_1=require(_0xba15ec(0x2d1,'S9uA')),cqn_rewriter_1=require(_0xba15ec(0x21f,'#0c4')),expand_materializer_1=require(_0xba15ec(0x185,'uaG!')),path_columns_1=require(_0xba15ec(0x249,'ck]$')),calc_dependencies_1=require(_0xba15ec(0x339,'#0c4')),path_resolution_1=require(_0xba15ec(0x2f7,'h6qL')),join_parser_1=require(_0xba15ec(0x16b,'utUt')),record_mapping_1=require(_0xba15ec(0x319,'&QWr')),service_resolver_1=require(_0xba15ec(0x327,'D8)V')),soap_adapter_1=require(_0xba15ec(0x154,'bxv4')),cqn_utils_2=require(_0xba15ec(0x29b,'4Dmh')),where_eval_1=require(_0xba15ec(0x16a,'utUt')),where_split_1=require('./where-split'),search_1=require(_0xba15ec(0x1d7,'p*qR')),search_pushdown_1=require(_0xba15ec(0x2e6,'S9uA')),search_backend_1=require('./search-backend'),search_functions_1=require(_0xba15ec(0x22f,'QdlQ')),M=_0xba15ec(0x2fb,'%O[&'),handleSimpleProjection=async(_0x304cd4,_0x2dd18a,_0x116ffe,_0xb14123,_0x434797,_0x1a36ac,_0x307c2a)=>{const _0x582d62=_0xba15ec,_0x13c5cb={'oCxTr':function(_0x42d11d,_0x51d45c){return _0x42d11d+_0x51d45c;},'LzWxY':function(_0x348044,_0x2f12bd){return _0x348044==_0x2f12bd;},'kQmjk':_0x582d62(0x2a1,'&mm!'),'OZoYx':function(_0xe5101,_0x716e50){return _0xe5101>_0x716e50;},'fkrXx':function(_0x45c534,_0x1b1b2a){return _0x45c534>_0x1b1b2a;},'tOMHp':function(_0x4bb3a5,_0x434d60){return _0x4bb3a5<_0x434d60;},'vIZpq':function(_0x2bdd0e,_0x12afbe){return _0x2bdd0e+_0x12afbe;},'vmcOl':'handleSimpleProjection','wYRiK':function(_0xdf9f25){return _0xdf9f25();},'HpxrZ':_0x582d62(0x33a,'DD4C'),'NZGxF':function(_0x10d5b0,_0x34a753){return _0x10d5b0!==_0x34a753;},'pMibs':_0x582d62(0x2e3,'8I27'),'ZPJEZ':function(_0x1e8c29,_0x4dfa10){return _0x1e8c29||_0x4dfa10;},'PHYKK':_0x582d62(0x2e0,'7yVv'),'eKTcm':_0x582d62(0x1a9,'S9uA'),'cMkSl':function(_0x5b14fe,_0x42488b){return _0x5b14fe===_0x42488b;},'ofoQf':_0x582d62(0x263,'#0c4'),'kUGXj':function(_0x3dab50,_0x2e7464){return _0x3dab50||_0x2e7464;},'GyNbc':function(_0x453ec8,_0x597233){return _0x453ec8||_0x597233;},'tOtqZ':_0x582d62(0x155,'3kAC'),'LIniF':_0x582d62(0x318,'h^sH'),'oNrRi':_0x582d62(0x2a7,'7Y&R'),'oYyLN':_0x582d62(0x1e4,'dS*B'),'ywTPD':function(_0x4d53df,_0x26cf5c){return _0x4d53df||_0x26cf5c;},'MgoyE':function(_0xff7ce3,_0x5df0a9){return _0xff7ce3!=_0x5df0a9;},'ZxDal':function(_0x325366,_0x1f8eba){return _0x325366&&_0x1f8eba;},'cCrWv':function(_0x2d8ec2,_0x5d13f3){return _0x2d8ec2<_0x5d13f3;},'uHZSD':function(_0x21baf2,_0x359afd){return _0x21baf2===_0x359afd;},'kwwXf':function(_0x115b82,_0x540226){return _0x115b82&&_0x540226;},'WlrKW':_0x582d62(0x156,'DBJ#'),'JHTdQ':function(_0x2dd726,_0xc8e77e){return _0x2dd726&&_0xc8e77e;},'cbvtx':function(_0x443299,_0x5d01d8){return _0x443299&&_0x5d01d8;},'hXTla':_0x582d62(0x19b,'6CuA'),'RAWEX':function(_0x3174c1,_0x309314){return _0x3174c1&&_0x309314;},'ZydgM':_0x582d62(0x31e,'ck]$'),'xAitK':function(_0x1e0a04,_0x3f8cc4){return _0x1e0a04-_0x3f8cc4;},'yzmuq':_0x582d62(0x33e,'o(6w'),'fXtvD':_0x582d62(0x194,'sExQ'),'UDrjg':_0x582d62(0x312,'o(6w'),'JFDrU':function(_0x579657,_0x5ad909){return _0x579657||_0x5ad909;},'zxKoc':_0x582d62(0x1bb,'JaEN'),'xuwJm':_0x582d62(0x16d,'qgqy'),'UKBFh':function(_0x1640dd,_0x2a62f0){return _0x1640dd+_0x2a62f0;},'aTBNk':_0x582d62(0x2ca,'9y0n'),'QXWfu':'Using\x20@response.data\x20(no\x20remote\x20call)','rnaJs':_0x582d62(0x2d9,'QdlQ'),'ELtnr':function(_0x30d339){return _0x30d339();},'XtsIU':function(_0x652fbd,_0x342c47){return _0x652fbd<_0x342c47;},'JapCE':'tolower','qcHMz':_0x582d62(0x329,'3kAC'),'tebaK':_0x582d62(0x2ec,'QdlQ'),'xeiZI':function(_0x37699d,_0x580d7a){return _0x37699d(_0x580d7a);},'gUZMY':function(_0x3cfb99){return _0x3cfb99();},'LxLug':_0x582d62(0x189,'5dV9'),'HXnVb':function(_0x40bf73,_0x2b3bed){return _0x40bf73(_0x2b3bed);},'uyWjl':_0x582d62(0x2c0,'&mm!'),'CwRBh':_0x582d62(0x158,'ZwNW'),'vpUgk':_0x582d62(0x1fa,'utUt'),'fKeFN':_0x582d62(0x220,'9y0n'),'GiXQU':_0x582d62(0x19f,'0(xc'),'HCBWT':_0x582d62(0x192,'8I27'),'EQTto':function(_0x2d98f6,_0x5df8fe){return _0x2d98f6-_0x5df8fe;},'MTGgH':function(_0x1f1640,_0x2220f4){return _0x1f1640<_0x2220f4;},'ippAa':_0x582d62(0x2b0,'h^sH'),'HOZlX':_0x582d62(0x2ed,'5dV9'),'sZAsC':_0x582d62(0x24d,'D8)V'),'bpexx':function(_0x3ec06b,_0x2207d7){return _0x3ec06b===_0x2207d7;},'jrpmx':_0x582d62(0x200,'JaEN'),'EsCPi':_0x582d62(0x1c0,'&QWr'),'fWVyo':_0x582d62(0x21c,'^f!a'),'BoHIJ':function(_0x15724d,_0x45939b){return _0x15724d>_0x45939b;},'fVZWP':_0x582d62(0x1cc,'8I27'),'kXTng':function(_0x50816b,_0x15f477){return _0x50816b===_0x15f477;},'iJaOo':_0x582d62(0x276,'sExQ'),'vRqDh':function(_0x9985a0,_0xda1629){return _0x9985a0<_0xda1629;},'UoPvo':_0x582d62(0x18c,'h^sH'),'EXOzS':_0x582d62(0x303,'5dV9'),'KMVKO':function(_0x3479b4,_0x1870da){return _0x3479b4&&_0x1870da;},'haKce':_0x582d62(0x243,'7Y&R'),'xHCuK':_0x582d62(0x19d,'DD4C'),'Eeovv':function(_0x3e79ce,_0x444bd8){return _0x3e79ce!==_0x444bd8;}};let _0x3e05a9=_0x1a36ac[_0x582d62(0x198,'JaEN')](M);_0x1a36ac=Date[_0x582d62(0x2e2,'^f!a')]();if(!_0xb14123)return _0x3e05a9['warn'](_0x13c5cb[_0x582d62(0x166,'lb#P')],'No\x20entity\x20definition\x20provided;\x20delegating\x20to\x20next()'),_0x13c5cb[_0x582d62(0x1f8,'uaG!')](_0x116ffe);_0x3e05a9[_0x582d62(0x333,'IvyM')](_0x13c5cb[_0x582d62(0x26e,'^6ei')],'ENTER',{'entity':_0xb14123[_0x582d62(0x2d4,'sExQ')]});let _0x551776=(0x0,path_columns_1[_0x582d62(0x223,'h^sH')])(_0xb14123,_0x434797),_0x17b307=((0x0,path_columns_1['assertSupportedPathColumns'])(_0x551776,_0x2dd18a[_0x582d62(0x1a7,'7yVv')]?.[_0x582d62(0x26d,'sExQ')],_0xb14123[_0x582d62(0x341,'dS*B')]),(0x0,path_columns_1[_0x582d62(0x1d6,'4Dmh')])(_0x551776,_0x2dd18a[_0x582d62(0x27d,'o(6w')]?.[_0x582d62(0x2f4,'ZwNW')])['filter'](_0x38de1f=>_0x582d62(0x162,'k4Be')===_0x38de1f[_0x582d62(0x2db,'7Y&R')]));var _0x116ffe=(0x0,cqn_utils_1[_0x582d62(0x228,'utUt')])(_0xb14123),[_0x24290a,_0x33afcf]=(0x0,service_resolver_1[_0x582d62(0x27b,'ZwNW')])(_0x116ffe);_0x3e05a9[_0x582d62(0x301,'^6ei')](_0x13c5cb[_0x582d62(0x23f,'1XWF')],_0x13c5cb['HpxrZ'],{'entity':_0xb14123[_0x582d62(0x1f3,'6CuA')],'targetService':_0x24290a,'targetEntity':_0x33afcf});let _0x29afb5=await(0x0,service_resolver_1[_0x582d62(0x314,'S9uA')])(_0x24290a);var _0x460534=(0x0,soap_adapter_1[_0x582d62(0x188,'0(xc')])(_0x24290a);let _0x326e13=(0x0,service_resolver_1[_0x582d62(0x33d,'h^sH')])(_0x24290a);_0x304cd4=_0x326e13&&_0x13c5cb['NZGxF'](_0x24290a,_0x304cd4)?_0x116ffe:_0x33afcf;let {localToRemote:_0x576537,remoteToLocal:_0x48863}=(0x0,alias_maps_1[_0x582d62(0x1df,'a!Ph')])(_0xb14123,_0x434797);_0x3e05a9[_0x582d62(0x217,'IvyM')](_0x13c5cb[_0x582d62(0x234,'^BeX')],_0x13c5cb[_0x582d62(0x1b8,'3kAC')],{'aliasCount':Object[_0x582d62(0x24b,'M$j4')](_0x576537)[_0x582d62(0x2b4,'(3Cz')]});var _0x33c0ac=_0x2dd18a['query']?.[_0x582d62(0x2f4,'ZwNW')]?.[_0x582d62(0x204,'DD4C')]??[],_0x1c9ec9=_0x13c5cb[_0x582d62(0x297,'7yVv')](0x0,_0x33c0ac['length']),_0x590336=(0x0,join_parser_1['parseExpandTree'])(_0x33c0ac),_0x561012=!(!_0xb14123[_0x582d62(0x2af,'Vf9*')]?.[_0x582d62(0x1e2,'lb#P')]?.[_0x582d62(0x2cb,'M$j4')]&&!_0xb14123[_0x582d62(0x1cb,'^BeX')]?.[_0x582d62(0x2f8,'1XWF')]),_0x353a6b=!(!_0xb14123[_0x582d62(0x1c4,'9y0n')]?.[_0x582d62(0x18d,'7Y&R')]?.[_0x582d62(0x1ef,'qgqy')]&&!_0xb14123['projection']?.[_0x582d62(0x293,'^Jm)')]),_0x285cce=!!_0x2dd18a[_0x582d62(0x219,'M$j4')]?.[_0x582d62(0x308,'%O[&')]?.[_0x582d62(0x257,'7yVv')];if(0x0<_0x17b307[_0x582d62(0x221,'3kAC')]&&_0x13c5cb[_0x582d62(0x2f1,'^Jm)')](_0x561012,_0x353a6b))throw Object[_0x582d62(0x1b5,'e#%8')](new Error(_0x582d62(0x28c,'SF&w')+_0x17b307[_0x582d62(0x1c5,'^Jm)')](_0x3ad777=>_0x3ad777[_0x582d62(0x1f5,'JaEN')])['join'](',\x20')+_0x582d62(0x1e1,'9y0n')),{'code':0x1f5,'status':0x1f5,'statusCode':0x1f5});var _0x5b57be=(0x0,search_1[_0x582d62(0x214,'DD4C')])(_0x2dd18a[_0x582d62(0x20e,'uaG!')]?.[_0x582d62(0x2d5,'bxv4')]?.[_0x582d62(0x1d3,'bxv4')]);let _0x38660a=(0x0,search_1[_0x582d62(0x1f1,'qgqy')])(_0x5b57be);var _0x4678da=_0x38660a?(0x0,search_backend_1[_0x582d62(0x2ef,'utUt')])(_0xb14123,{'startIsLocal':!0x0}):void 0x0;let _0x351973=_0x4678da?(0x0,search_backend_1[_0x582d62(0x25b,'7Y&R')])(_0x4678da):_0x13c5cb['PHYKK'];_0x38660a&&_0x3e05a9[_0x582d62(0x24a,'7Y&R')](_0x13c5cb[_0x582d62(0x20d,'&mm!')],_0x13c5cb['eKTcm'],{'mode':_0x351973,'backend':_0x4678da['kind'],'chain':_0x4678da[_0x582d62(0x1e5,'0(xc')]}),_0x38660a&&_0x13c5cb['cMkSl'](_0x13c5cb[_0x582d62(0x321,'lb#P')],_0x351973)&&_0x3e05a9[_0x582d62(0x326,'QdlQ')](_0x13c5cb['vmcOl'],_0x582d62(0x2e1,'JaEN'),{'entity':_0xb14123['name'],'chain':_0x4678da[_0x582d62(0x2c7,'1Fu5')]});var _0x502720=!!_0x38660a&&_0x13c5cb['ofoQf']!==_0x351973;let _0x150eae=_0x502720?(0x0,search_1['getSearchColumnInfo'])(_0xb14123,_0x434797):[],_0xb885d2=_0x150eae[_0x582d62(0x30c,'&QWr')](_0x1bd4bb=>_0x1bd4bb[_0x582d62(0x18a,'D8)V')]);var _0x386c8f=_0x502720?(0x0,search_1[_0x582d62(0x15a,'(3Cz')])(_0xb14123)['filter'](_0x5de812=>!_0xb885d2[_0x582d62(0x1ca,'QdlQ')](_0x5de812)):[],_0x386c8f=(0x0<_0x386c8f[_0x582d62(0x28b,'k4Be')]&&_0x3e05a9[_0x582d62(0x292,'IvyM')](_0x13c5cb['vmcOl'],_0x582d62(0x271,'7yVv'),{'entity':_0xb14123[_0x582d62(0x1b2,'4Dmh')],'names':_0x386c8f,'searched':_0xb885d2}),new Set(_0x150eae[_0x582d62(0x180,'JaEN')](_0x47d1ad=>_0x582d62(0x22b,'%O[&')===_0x47d1ad[_0x582d62(0x2a9,'a!Ph')])[_0x582d62(0x231,'%O[&')](_0x12da93=>_0x12da93[_0x582d62(0x1ed,'QdlQ')]))),_0x512d4a=_0x13c5cb['kUGXj'](!_0x502720,_0x561012)||_0x353a6b?[]:_0xb885d2[_0x582d62(0x181,'D8)V')](_0x486a4f=>_0x551776[_0x582d62(0x2f5,'4Dmh')][_0x582d62(0x159,'sExQ')](_0x486a4f))[_0x582d62(0x286,'Vf9*')](_0x57ef28=>!!_0x57ef28&&_0x582d62(0x2bd,'e#%8')===_0x57ef28[_0x582d62(0x1be,'1XWF')]&&!_0x17b307[_0x582d62(0x1d5,'bxv4')](_0x34b1bb=>_0x34b1bb['alias']===_0x57ef28[_0x582d62(0x177,'dS*B')])),_0x1bc987=_0x13c5cb[_0x582d62(0x1d4,'9y0n')](_0x561012,_0x353a6b)?[]:(0x0,path_columns_1[_0x582d62(0x150,'h^sH')])(_0x551776,_0x2dd18a[_0x582d62(0x23e,'bxv4')]?.['SELECT'],_0x386c8f),_0x512d4a=[..._0x17b307,..._0x512d4a,..._0x1bc987[_0x582d62(0x1eb,'&mm!')](_0x4123f7=>_0x4123f7[_0x582d62(0x2e9,'Z^ep')])],_0x5bc5f7=_0x13c5cb[_0x582d62(0x25d,'(3Cz')](0x0,_0x512d4a[_0x582d62(0x2c5,'a!Ph')])?(0x0,path_resolution_1[_0x582d62(0x1dd,'utUt')])(_0x551776,_0x512d4a,_0x434797):[],_0xd88307=(_0x3e05a9[_0x582d62(0x254,'Vf9*')](_0x582d62(0x31d,'M$j4'),_0x13c5cb[_0x582d62(0x15b,'h^sH')],{'hasExplicitSelect':_0x1c9ec9,'expandCount':_0x590336[_0x582d62(0x191,'&QWr')],'isDistinct':_0x561012,'isGroupBy':_0x353a6b,'wantsCount':!!_0x2dd18a[_0x582d62(0x15d,'lb#P')]?.[_0x582d62(0x28d,'1Fu5')]?.[_0x582d62(0x1b6,'uaG!')],'hasSkipPagination':_0x285cce}),_0x2dd18a['query']?.['SELECT']?.[_0x582d62(0x299,'h^sH')]?(0x0,utils_1['deepClone'])(_0x2dd18a[_0x582d62(0x2af,'Vf9*')][_0x582d62(0x183,'#0c4')][_0x582d62(0x284,'sExQ')]):void 0x0),_0x46b0a2=_0x2dd18a[_0x582d62(0x283,'5dV9')]?.[_0x582d62(0x2e8,'6CuA')]?.[_0x582d62(0x2fc,'o(6w')]?(0x0,utils_1[_0x582d62(0x211,'%O[&')])(_0x2dd18a[_0x582d62(0x152,'^f!a')][_0x582d62(0x322,'uaG!')][_0x582d62(0x2c8,'&mm!')]):void 0x0,_0x129d83=_0x2dd18a[_0x582d62(0x19a,'^6ei')]?.[_0x582d62(0x20f,'pn[&')]?.[_0x582d62(0x279,'7Y&R')],{remoteWhere:_0x2dfd87,localWhere:_0x24298e}=(_0x3e05a9[_0x582d62(0x24e,'(3Cz')](_0x13c5cb[_0x582d62(0x166,'lb#P')],_0x13c5cb[_0x582d62(0x16f,'&QWr')]),(0x0,where_split_1[_0x582d62(0x2c1,'1XWF')])(_0xd88307,_0xb14123,_0x576537,_0x3e05a9,_0x460534));let _0x190a10=_0x24298e;var _0x484fd1=!!_0x24298e||_0x502720;_0x3e05a9['info'](_0x13c5cb[_0x582d62(0x26b,'M$j4')],_0x13c5cb[_0x582d62(0x28a,'Vf9*')],{'hasRemoteWhere':!(!_0x2dfd87||!_0x2dfd87[_0x582d62(0x302,'pn[&')]),'hasLocalWhere':!(!_0x24298e||!_0x24298e[_0x582d62(0x1c2,'^Jm)')])}),_0x3e05a9[_0x582d62(0x332,'^BeX')](_0x13c5cb['vmcOl'],_0x13c5cb['oYyLN']);let _0x34821d={'from':(0x0,cqn_utils_1[_0x582d62(0x23d,'lb#P')])(_0x2dd18a[_0x582d62(0x283,'5dV9')][_0x582d62(0x32e,'k4Be')]?.[_0x582d62(0x184,'QdlQ')],_0x304cd4)};_0x24298e=_0x13c5cb[_0x582d62(0x1ee,'Vf9*')](_0x561012,_0x353a6b)?new Set():(0x0,calc_dependencies_1[_0x582d62(0x2be,'Kuw4')])(_0xb14123);let _0x14ce70=0x0<_0x551776['paths'][_0x582d62(0x2f9,'&QWr')]||0x0<_0x24298e[_0x582d62(0x265,'IvyM')]?new Set([..._0x551776[_0x582d62(0x313,'ck]$')]['keys'](),..._0x24298e]):void 0x0;_0x34821d[_0x582d62(0x2fa,'6CuA')]=_0x1c9ec9?_0x326e13?(0x0,column_builders_1[_0x582d62(0x300,'sqED')])(_0xb14123,{'name':'','columns':_0x33c0ac},[],_0x14ce70):(0x0,column_builders_1[_0x582d62(0x2c4,'7yVv')])(_0xb14123,{'name':'','columns':_0x33c0ac},{'localToRemote':_0x576537,'remoteToLocal':_0x48863},[],_0x14ce70):_0x326e13?(0x0,column_builders_1[_0x582d62(0x17e,'h6qL')])(_0xb14123,_0x14ce70):(0x0,column_builders_1[_0x582d62(0x22e,'^f!a')])(_0xb14123,_0x576537,_0x14ce70),_0x13c5cb[_0x582d62(0x2ad,'ck]$')](0x0,_0x590336[_0x582d62(0x2f0,'S9uA')])&&(_0x34821d[_0x582d62(0x232,'5dV9')]=_0x326e13?(0x0,column_builders_1[_0x582d62(0x328,'4Dmh')])(_0xb14123,_0x590336,_0x33c0ac,_0x434797,_0x14ce70,cds_1[_0x582d62(0x289,'9y0n')][_0x582d62(0x2ac,'6CuA')][_0x582d62(0x2f2,'0(xc')][_0x116ffe]):(0x0,column_builders_1['buildColumnsWithExpands'])(_0xb14123,_0x590336,_0x576537,_0x33c0ac,_0x434797,_0x14ce70)),(_0x304cd4=_0x2dd18a[_0x582d62(0x29f,'qgqy')]?.[_0x582d62(0x2d7,'e#%8')]?.[_0x582d62(0x264,'p*qR')]?.['ref']?.[0x0],_0x116ffe=!(!_0x304cd4||_0x13c5cb[_0x582d62(0x267,'7yVv')](_0x582d62(0x1dc,'p*qR'),typeof _0x304cd4)||!_0x304cd4[_0x582d62(0x31c,'lb#P')]));let _0x2444e4=_0x13c5cb[_0x582d62(0x2bf,'0(xc')](_0x116ffe,_0xd88307)&&!_0x561012&&!_0x353a6b?_0xd88307:void 0x0;var _0x304cd4=_0x2444e4?[...(0x0,column_builders_1[_0x582d62(0x160,'a!Ph')])(_0x2444e4)][_0x582d62(0x2e7,'^6ei')](_0xc1d4f0=>{const _0x38c171=_0x582d62;var _0x5013a7=_0xb14123[_0x38c171(0x1ea,'pn[&')]?.[_0xc1d4f0];return _0x5013a7&&!(0x0,alias_maps_1[_0x38c171(0x212,'5dV9')])(_0x5013a7)&&!_0x5013a7[_0x38c171(0x1d2,'dS*B')]&&!_0x5013a7[_0x38c171(0x2c3,'e#%8')]&&!_0x5013a7[_0x38c171(0x1e9,'SF&w')]&&!_0x14ce70?.[_0x38c171(0x2b3,'JaEN')](_0xc1d4f0);})[_0x582d62(0x238,'7Y&R')](_0x56fef5=>_0x326e13?_0x56fef5:_0x576537[_0x56fef5]):[],_0x20dfd8=_0x150eae['filter'](_0x3c1837=>_0x582d62(0x31a,'Vf9*')===_0x3c1837['kind'])[_0x582d62(0x320,'(3Cz')](_0x418944=>_0x418944[_0x582d62(0x1c7,'%O[&')])[_0x582d62(0x280,'DD4C')](_0x1ee394=>_0x326e13||_0x576537[_0x1ee394])[_0x582d62(0x168,'1Fu5')](_0x1a8e56=>_0x326e13?_0x1a8e56:_0x576537[_0x1a8e56]),_0x304cd4=[..._0x5bc5f7,..._0x304cd4,..._0x20dfd8,..._0x13c5cb['cCrWv'](0x0,_0x24298e[_0x582d62(0x1a1,'^f!a')])?(0x0,calc_dependencies_1[_0x582d62(0x323,'ck]$')])(_0xb14123,_0x2dd18a[_0x582d62(0x24f,'sqED')]?.[_0x582d62(0x2ab,'M$j4')],_0x386c8f):[]];_0x13c5cb[_0x582d62(0x175,'&QWr')](_0x14ce70,_0x1c9ec9)&&_0x13c5cb[_0x582d62(0x1d1,'^Jm)')](0x0,_0x590336[_0x582d62(0x221,'3kAC')])&&_0x13c5cb[_0x582d62(0x1cd,'3kAC')](0x0,(_0x20dfd8=_0x33c0ac['filter'](_0x4a978d=>_0x4a978d?.[_0x582d62(0x161,'e#%8')]&&!_0x4a978d[_0x582d62(0x28e,'7yVv')])[_0x582d62(0x30c,'&QWr')](_0x21dc47=>_0x21dc47[_0x582d62(0x161,'e#%8')][0x0]))[_0x582d62(0x251,'IvyM')])&&_0x20dfd8['every'](_0x157c02=>_0x14ce70[_0x582d62(0x1af,'lb#P')](_0x157c02))&&(_0x34821d[_0x582d62(0x2bc,'ZwNW')]=[]),0x0<_0x304cd4[_0x582d62(0x172,'0(xc')]&&(_0x34821d[_0x582d62(0x227,'IvyM')]=(0x0,calc_dependencies_1[_0x582d62(0x2ae,'bxv4')])(_0x34821d[_0x582d62(0x18e,'D8)V')],_0x304cd4)),Array[_0x582d62(0x290,'#0c4')](_0x34821d['columns'])&&0x0===_0x34821d[_0x582d62(0x186,'8I27')][_0x582d62(0x201,'^BeX')]&&(_0x34821d['columns']=['*']),_0x2dfd87&&_0x13c5cb['tOMHp'](0x0,_0x2dfd87[_0x582d62(0x26c,'e#%8')])&&(_0x34821d[_0x582d62(0x224,'D8)V')]=_0x2dfd87),_0x13c5cb['kwwXf'](_0x116ffe,_0x129d83)?_0x3e05a9[_0x582d62(0x334,'9y0n')](_0x13c5cb[_0x582d62(0x15c,'3kAC')],_0x13c5cb[_0x582d62(0x2ba,'4Dmh')],{'originalLimit':_0x129d83}):_0x13c5cb[_0x582d62(0x2b9,'1XWF')](_0x353a6b,_0x129d83)?_0x3e05a9[_0x582d62(0x333,'IvyM')](_0x13c5cb[_0x582d62(0x1bf,'&QWr')],_0x582d62(0x2a4,'ZwNW'),{'originalLimit':_0x129d83}):_0x13c5cb[_0x582d62(0x1b3,'bxv4')](!_0x484fd1,_0x129d83)?_0x34821d[_0x582d62(0x196,'bxv4')]=_0x129d83:_0x13c5cb['cbvtx'](_0x484fd1,_0x129d83)&&_0x3e05a9[_0x582d62(0x165,'Z^ep')](_0x13c5cb[_0x582d62(0x288,'1Fu5')],_0x13c5cb[_0x582d62(0x31f,'DBJ#')],{'originalLimit':_0x129d83,'search':_0x502720}),!_0x2dd18a[_0x582d62(0x190,'#0c4')][_0x582d62(0x1ec,'0(xc')]?.['count']||_0x484fd1||_0x116ffe||(_0x34821d[_0x582d62(0x218,'SF&w')]=!0x0);let _0x5d1694={'SELECT':_0x34821d};_0x353a6b&&((0x0,aggregation_1[_0x582d62(0x1b0,'^6ei')])(_0xb14123,_0x5d1694,_0x576537),_0x460534)&&(_0x34821d[_0x582d62(0x2a6,'9y0n')]=!0x0),_0x285cce&&_0x460534&&(_0x34821d[_0x582d62(0x33b,'D8)V')]=!0x0),_0x34821d[_0x582d62(0x31c,'lb#P')]&&!_0x326e13&&(0x0,cqn_rewriter_1[_0x582d62(0x266,'sqED')])(_0x5d1694,_0x576537,_0x434797,_0xb14123);let _0x446187,_0x27632c=!0x1;var _0x49de1d=()=>(0x0,search_pushdown_1[_0x582d62(0x17f,'pn[&')])({'req':_0x2dd18a,'tree':_0x38660a,'columns':_0x150eae,'entityDef':_0xb14123,'plan':_0x551776,'cache':_0x434797,'log':_0x3e05a9,'queryLocalTarget':_0x326e13,'localToRemote':_0x576537,'mode':_0x351973});if(_0x13c5cb[_0x582d62(0x1bc,'^f!a')](_0x502720,_0x38660a)&&!_0x116ffe&&!_0x460534&&!_0x561012&&!_0x353a6b&&!_0xb14123[_0x582d62(0x30f,'%O[&')]){_0x24298e=await _0x13c5cb[_0x582d62(0x193,'utUt')](_0x49de1d);if(_0x24298e[_0x582d62(0x1bd,'D8)V')])return _0x3e05a9[_0x582d62(0x2a8,'ZwNW')](_0x13c5cb[_0x582d62(0x205,'7yVv')],_0x13c5cb['ZydgM'],{'elapsedMs':_0x13c5cb[_0x582d62(0x2cc,'M$j4')](Date[_0x582d62(0x25f,'5dV9')](),_0x1a36ac)}),_0x386c8f=[],_0x2dd18a[_0x582d62(0x29f,'qgqy')][_0x582d62(0x30e,'p*qR')]?.[_0x582d62(0x14e,'^6ei')]&&(_0x386c8f[_0x582d62(0x281,'(3Cz')]=0x0),_0x386c8f;_0x24298e[_0x582d62(0x171,'o(6w')]&&(_0x446187=_0x24298e['wheres'],_0x27632c=!0x0),_0x3e05a9[_0x582d62(0x17d,'8I27')](_0x582d62(0x1d8,'&mm!'),_0x24298e[_0x582d62(0x272,'3kAC')]?_0x13c5cb['yzmuq']:_0x13c5cb['fXtvD'],{'reason':_0x24298e[_0x582d62(0x16e,'S9uA')],'queries':_0x24298e[_0x582d62(0x208,'bxv4')]?.['length']});}_0x3e05a9[_0x582d62(0x15e,'a!Ph')](_0x13c5cb[_0x582d62(0x2a5,'S9uA')],_0x13c5cb[_0x582d62(0x1c9,'D8)V')],{'target':_0x33afcf,'columnCount':_0x34821d['columns'][_0x582d62(0x33f,'1XWF')],'hasWhere':!!_0x34821d[_0x582d62(0x2a0,'Kuw4')],'limit':_0x34821d[_0x582d62(0x246,'sExQ')],'count':_0x34821d['count']});let _0x5d3f52=!(_0x13c5cb[_0x582d62(0x2d6,'^6ei')](!_0x502720,_0x116ffe)||_0x460534||_0x561012||_0x353a6b||_0xb14123[_0x13c5cb[_0x582d62(0x20c,'e#%8')]]),_0x37b169;var _0x4e7e37=async()=>{const _0x34a738=_0x582d62;if(!_0x5d3f52)return _0x29afb5[_0x34a738(0x296,'QdlQ')](_0x5d1694);var _0x10845d=await _0x29afb5[_0x34a738(0x1ff,'Z^ep')]({'SELECT':{..._0x34821d,'limit':{'rows':{'val':_0x13c5cb[_0x34a738(0x170,'bxv4')](search_1[_0x34a738(0x2dc,'h6qL')],0x1)}},'count':!0x0}}),_0x115adc=Array[_0x34a738(0x260,'^BeX')](_0x10845d)?_0x10845d:_0x10845d?[_0x10845d]:[],_0x10845d=_0x13c5cb[_0x34a738(0x2f3,'lb#P')](_0x13c5cb['kQmjk'],typeof _0x10845d?.[_0x34a738(0x2a2,'sExQ')])?_0x10845d[_0x34a738(0x164,'^6ei')]:_0x115adc[_0x34a738(0x172,'0(xc')];if(_0x13c5cb[_0x34a738(0x24c,'7yVv')](_0x115adc['length'],search_1[_0x34a738(0x22a,'bxv4')])||_0x13c5cb[_0x34a738(0x325,'M$j4')](_0x10845d,search_1[_0x34a738(0x2c6,'&mm!')])||_0x13c5cb[_0x34a738(0x2aa,'JaEN')](_0x115adc['length'],_0x10845d))throw Object[_0x34a738(0x2b2,'lb#P')](new Error(_0x13c5cb['vIZpq'](_0x34a738(0x236,'utUt')+_0xb14123[_0x34a738(0x1a8,'(3Cz')]+'\x27\x20has\x20more\x20than\x20'+search_1[_0x34a738(0x2dd,'0(xc')]+_0x34a738(0x273,'utUt'),_0x37b169?'\x20(the\x20backend\x20said:\x20'+_0x37b169+')':'')),{'code':0x1f6,'status':0x1f6,'statusCode':0x1f6,'searchTooLarge':!0x0});return _0x115adc;},_0x4f53fe=async()=>{const _0x570258=_0x582d62,_0x53a3d6={'uRoOz':function(_0x275474,_0x287879){return _0x275474<_0x287879;}};let _0x392c1d=Object[_0x570258(0x309,'7Y&R')](_0x551776['sourceDef']?.[_0x570258(0x215,'&mm!')]??{})[_0x570258(0x2e7,'^6ei')](([,_0x219c6e])=>_0x219c6e?.[_0x570258(0x173,'Vf9*')])[_0x570258(0x19c,'k4Be')](([_0x55e52d])=>_0x55e52d);var _0xf2d991,_0x167cd9,_0xbd8a56=await Promise['all'](_0x446187[_0x570258(0x274,'sExQ')](_0x48caa0=>_0x29afb5[_0x570258(0x294,'utUt')]({'SELECT':{..._0x34821d,'where':(0x0,search_pushdown_1[_0x570258(0x22c,'sExQ')])(_0x34821d[_0x570258(0x167,'ZwNW')],_0x48caa0)}}))),_0x3963f3=[],_0x2ce820=new Set();for(_0xf2d991 of _0xbd8a56)for(var _0x29eff0 of Array[_0x570258(0x260,'^BeX')](_0xf2d991)?_0xf2d991:[_0xf2d991])_0x29eff0&&(_0x167cd9=(_0x5c00af=>{const _0x46c141=_0x570258;var _0x196a6c=_0x392c1d['map'](_0x42cc53=>_0x5c00af?.[_0x42cc53]);return _0x53a3d6[_0x46c141(0x2df,'4Dmh')](0x0,_0x392c1d['length'])&&_0x196a6c['every'](_0x5b28e2=>void 0x0!==_0x5b28e2)?JSON['stringify'](_0x196a6c):JSON['stringify'](_0x5c00af);})(_0x29eff0),_0x2ce820['has'](_0x167cd9)||(_0x2ce820[_0x570258(0x336,'4Dmh')](_0x167cd9),_0x3963f3[_0x570258(0x187,'ck]$')](_0x29eff0)));return _0x3963f3;};_0x3e05a9['info'](_0x13c5cb[_0x582d62(0x205,'7yVv')],_0x13c5cb[_0x582d62(0x21b,'3kAC')],{'target':_0x13c5cb[_0x582d62(0x27c,'k4Be')](_0x13c5cb[_0x582d62(0x305,'h^sH')](_0x24290a,'.'),_0x33afcf)});let _0x1ceaf8;_0x1c9ec9=Date[_0x582d62(0x340,'dS*B')]();try{if(_0x460534)_0x3e05a9[_0x582d62(0x248,'&QWr')](_0x13c5cb[_0x582d62(0x288,'1Fu5')],_0x13c5cb[_0x582d62(0x335,'Kuw4')],{'service':_0x24290a,'entity':_0x33afcf}),(_0x1ceaf8=await(0x0,soap_adapter_1['runSoapRead'])(_0x29afb5,_0x33afcf,_0x2dd18a,_0x5d1694,_0xb14123,_0x3e05a9,_0x307c2a))&&!Array[_0x582d62(0x27e,'^6ei')](_0x1ceaf8)&&(_0x1ceaf8=[_0x1ceaf8]);else{if(_0xb14123[_0x13c5cb['zxKoc']])_0x3e05a9[_0x582d62(0x29a,'h6qL')](_0x582d62(0x1c1,'7yVv'),_0x13c5cb[_0x582d62(0x22d,'9y0n')]),_0x1ceaf8=_0xb14123[_0x13c5cb[_0x582d62(0x176,'sExQ')]];else{_0x3e05a9[_0x582d62(0x1e3,'h^sH')](_0x582d62(0x310,'6CuA'),'Dispatching\x20OData/DB\x20read',{'service':_0x24290a}),_0x3e05a9[_0x582d62(0x1ac,'^f!a')](_0x13c5cb[_0x582d62(0x240,'DBJ#')],_0x13c5cb[_0x582d62(0x291,'(3Cz')],{'query':_0x5d1694});for(let _0x2403be=0x0;;_0x2403be++)try{_0x1ceaf8=_0x27632c?await _0x13c5cb['ELtnr'](_0x4f53fe):await _0x13c5cb[_0x582d62(0x307,'sExQ')](_0x4e7e37);break;}catch(_0x36977d){if(!_0x27632c)throw _0x36977d;var _0x1c6381=(0x0,search_functions_1[_0x582d62(0x1f6,'h6qL')])(_0x36977d);if(!(_0x13c5cb[_0x582d62(0x153,'Vf9*')](_0x2403be,0x8)&&_0x13c5cb[_0x582d62(0x311,'qgqy')](_0x13c5cb['JapCE'],_0x1c6381)&&_0x13c5cb[_0x582d62(0x1e0,'ck]$')](_0x13c5cb[_0x582d62(0x32b,'DD4C')],_0x351973)&&_0x4678da&&(0x0,search_functions_1[_0x582d62(0x26f,'&QWr')])(_0x4678da[_0x582d62(0x15f,'dS*B')],_0x582d62(0x19e,'&QWr')))){_0x3e05a9[_0x582d62(0x2f6,'bxv4')]('handleSimpleProjection',_0x13c5cb[_0x582d62(0x262,'^6ei')],{'error':_0x36977d?.['message']}),_0x37b169=_0x13c5cb[_0x582d62(0x32d,'M$j4')](String,_0x36977d?.[_0x582d62(0x1e8,'e#%8')]??_0x36977d)[_0x582d62(0x226,'^Jm)')](0x0,0x12c),_0x27632c=!0x1,_0x1ceaf8=await _0x13c5cb[_0x582d62(0x18f,'(3Cz')](_0x4e7e37);break;}_0x351973=(0x0,search_backend_1[_0x582d62(0x31b,'sqED')])(_0x4678da),_0x3e05a9[_0x582d62(0x30b,'%O[&')](_0x13c5cb[_0x582d62(0x240,'DBJ#')],_0x13c5cb[_0x582d62(0x255,'ZwNW')],{'error':_0x36977d?.[_0x582d62(0x195,'&QWr')]});var _0x29c8b1=await _0x49de1d();if(_0x29c8b1[_0x582d62(0x1f7,'1Fu5')]){_0x1ceaf8=[];break;}_0x446187=_0x29c8b1[_0x582d62(0x252,'QdlQ')],_0x27632c=!!_0x29c8b1[_0x582d62(0x1fb,'^Jm)')];}}}_0x3e05a9[_0x582d62(0x298,'S9uA')](_0x13c5cb[_0x582d62(0x25a,'SF&w')],_0x582d62(0x2a3,'(3Cz'),{'elapsedMs':_0x13c5cb[_0x582d62(0x2fe,'JaEN')](Date['now'](),_0x1c9ec9),'rows':Array[_0x582d62(0x169,'bxv4')](_0x1ceaf8)?_0x1ceaf8[_0x582d62(0x1c2,'^Jm)')]:_0x1ceaf8?0x1:0x0});}catch(_0x3727a6){if(_0x3727a6?.[_0x582d62(0x197,'6CuA')])throw _0x3727a6;_0x20dfd8=(0x0,cqn_utils_1['isAssociationPathRemoteError'])(_0x3727a6,_0xb14123),_0x304cd4=_0x13c5cb[_0x582d62(0x29e,'o(6w')](String,_0x3727a6?.[_0x582d62(0x2de,'ZwNW')])[_0x582d62(0x225,'#0c4')](_0x582d62(0x26a,'sExQ'))||_0x13c5cb[_0x582d62(0x1c3,'bxv4')](String,_0x3727a6?.[_0x582d62(0x25c,'JaEN')])[_0x582d62(0x2d0,'dS*B')](_0x13c5cb[_0x582d62(0x235,'&QWr')]);if(!_0x20dfd8&&!_0x304cd4)throw _0x3e05a9[_0x582d62(0x30d,'1XWF')](_0x13c5cb['vmcOl'],_0x13c5cb[_0x582d62(0x315,'sqED')],{'error':{'message':_0x3727a6?.[_0x582d62(0x1b1,'7yVv')],'code':_0x3727a6?.[_0x582d62(0x1c8,'a!Ph')]}}),_0x3727a6;_0x3e05a9['warn'](_0x13c5cb[_0x582d62(0x229,'QdlQ')],_0x13c5cb[_0x582d62(0x1db,'M$j4')],{'error':_0x3727a6?.[_0x582d62(0x2fd,'Kuw4')],'reason':_0x20dfd8?_0x582d62(0x239,'&mm!'):_0x13c5cb[_0x582d62(0x277,'o(6w')]}),_0x190a10=_0xd88307,delete _0x5d1694[_0x582d62(0x230,'S9uA')][_0x582d62(0x21a,'Z^ep')],delete _0x5d1694[_0x582d62(0x199,'utUt')][_0x582d62(0x1cf,'6CuA')],_0x1ceaf8=await _0x29afb5[_0x582d62(0x233,'JaEN')](_0x5d1694),_0x3e05a9[_0x582d62(0x23b,'SF&w')](_0x13c5cb[_0x582d62(0x27a,'e#%8')],_0x13c5cb[_0x582d62(0x1f0,'3kAC')],{'rows':Array[_0x582d62(0x290,'#0c4')](_0x1ceaf8)?_0x1ceaf8[_0x582d62(0x23a,'sExQ')]:_0x1ceaf8?0x1:0x0});}if(!_0x1ceaf8||Array[_0x582d62(0x1de,'Z^ep')](_0x1ceaf8)&&0x0===_0x1ceaf8['length'])return _0x3e05a9[_0x582d62(0x17d,'8I27')]('handleSimpleProjection',_0x13c5cb[_0x582d62(0x179,'e#%8')],{'elapsedMs':_0x13c5cb[_0x582d62(0x30a,'D8)V')](Date[_0x582d62(0x2b5,'Z^ep')](),_0x1a36ac)}),_0x2dd18a[_0x582d62(0x1da,'DBJ#')][_0x582d62(0x18d,'7Y&R')]?.[_0x582d62(0x27f,'&QWr')]?((_0x2dfd87=[])['$count']=0x0,_0x2dfd87):_0x1ceaf8;var _0x472231,_0x285cce=Array[_0x582d62(0x33c,'1XWF')](_0x1ceaf8);let _0x4ce9c1=_0x285cce?_0x1ceaf8:[_0x1ceaf8];_0x13c5cb[_0x582d62(0x2b6,'IvyM')](0x0,_0x5bc5f7['length'])&&(_0x4ce9c1=(0x0,path_resolution_1[_0x582d62(0x216,'Kuw4')])(_0x4ce9c1,_0x5bc5f7,_0x48863)),_0x561012&&(_0x3e05a9[_0x582d62(0x316,'QdlQ')](_0x582d62(0x1a4,'ZwNW'),_0x13c5cb['ippAa'],{'before':_0x4ce9c1['length']}),_0x4ce9c1=(0x0,aggregation_1[_0x582d62(0x213,'(3Cz')])(_0xb14123,_0x4ce9c1,_0x576537),_0x3e05a9[_0x582d62(0x1f2,'5dV9')](_0x13c5cb[_0x582d62(0x2d2,'sExQ')],_0x582d62(0x337,'SF&w'),{'after':_0x4ce9c1['length']})),_0x353a6b&&_0x13c5cb['MTGgH'](0x0,_0x4ce9c1[_0x582d62(0x1b4,'dS*B')])&&(_0x3e05a9[_0x582d62(0x24a,'7Y&R')](_0x13c5cb[_0x582d62(0x20d,'&mm!')],_0x13c5cb[_0x582d62(0x338,'1Fu5')],{'before':_0x4ce9c1[_0x582d62(0x21e,'QdlQ')]}),_0x4ce9c1=(0x0,aggregation_1[_0x582d62(0x269,'ZwNW')])(_0xb14123,_0x4ce9c1,_0x576537),_0x3e05a9[_0x582d62(0x1ae,'k4Be')](_0x13c5cb[_0x582d62(0x282,'9y0n')],_0x13c5cb[_0x582d62(0x261,'6CuA')],{'after':_0x4ce9c1['length']}));let _0xc3b610;if(!_0x2dd18a['query']['SELECT']?.[_0x582d62(0x1a0,'9y0n')]||_0x484fd1||(_0x353a6b||(_0xc3b610=_0x1ceaf8[_0x582d62(0x245,'&mm!')],_0x561012)||_0x13c5cb['bpexx'](void 0x0,_0xc3b610))&&(_0xc3b610=_0x4ce9c1[_0x582d62(0x256,'Vf9*')]),_0x3e05a9[_0x582d62(0x1b9,'p*qR')](_0x13c5cb[_0x582d62(0x2a5,'S9uA')],_0x13c5cb[_0x582d62(0x2c2,'Vf9*')],{'rows':_0x4ce9c1[_0x582d62(0x221,'3kAC')]}),_0x4ce9c1=_0x4ce9c1[_0x582d62(0x210,'a!Ph')](_0x289d1a=>(0x0,record_mapping_1[_0x582d62(0x285,'lb#P')])(_0xb14123,_0x289d1a,_0x48863,_0x434797)),_0x2444e4){_0x386c8f=_0x4ce9c1[_0x582d62(0x172,'0(xc')];if(_0x4ce9c1=_0x4ce9c1[_0x582d62(0x21d,'#0c4')](_0x4989b6=>(0x0,where_eval_1[_0x582d62(0x287,'h^sH')])(_0x2444e4,_0x4989b6)),_0x3e05a9[_0x582d62(0x2ee,'uaG!')](_0x13c5cb[_0x582d62(0x1ce,'4Dmh')],_0x582d62(0x206,'0(xc'),{'before':_0x386c8f,'after':_0x4ce9c1[_0x582d62(0x1e6,'lb#P')]}),_0x13c5cb[_0x582d62(0x304,'QdlQ')](0x0,_0x386c8f)&&_0x13c5cb['bpexx'](0x0,_0x4ce9c1[_0x582d62(0x32f,'%O[&')]))throw Object[_0x582d62(0x278,'uaG!')](new Error(_0x582d62(0x151,'e#%8')+_0xb14123[_0x582d62(0x1a5,'8I27')]+_0x582d62(0x163,'QdlQ')),{'code':0x194,'status':0x194,'statusCode':0x194});}if(_0x13c5cb['cCrWv'](0x0,_0x512d4a[_0x582d62(0x28b,'k4Be')])){_0x3e05a9[_0x582d62(0x1fd,'1XWF')](_0x13c5cb[_0x582d62(0x2cf,'IvyM')],_0x13c5cb[_0x582d62(0x330,'6CuA')],{'paths':_0x17b307[_0x582d62(0x18b,'0(xc')](_0x4822c4=>_0x4822c4[_0x582d62(0x1e7,'Z^ep')]),'calculated':_0x1bc987['map'](_0x2e5165=>_0x2e5165[_0x582d62(0x2d3,'IvyM')])}),await(0x0,path_resolution_1[_0x582d62(0x182,'1XWF')])(_0x2dd18a,_0x551776,_0x512d4a,_0x4ce9c1,_0x434797,_0x3e05a9),(0x0,path_resolution_1['applyCalcPathColumns'])(_0x4ce9c1,_0x1bc987);for(var _0x4eccfd of _0x4ce9c1)(0x0,record_mapping_1[_0x582d62(0x2ce,'JaEN')])(_0xb14123,_0x4eccfd);}_0x502720&&(_0x24298e=_0x4ce9c1[_0x582d62(0x1ad,'5dV9')],0x0===(_0x116ffe=_0x150eae[_0x582d62(0x210,'a!Ph')](_0x390f6f=>_0x390f6f['name']))['length']&&_0x3e05a9[_0x582d62(0x2b7,'qgqy')](_0x582d62(0x275,'DBJ#'),_0x13c5cb[_0x582d62(0x1fe,'5dV9')],{'entity':_0xb14123[_0x582d62(0x250,'0(xc')]}),_0x13c5cb[_0x582d62(0x1a3,'^f!a')](_0x24298e,search_1[_0x582d62(0x2ea,'^Jm)')])&&_0x3e05a9['warn'](_0x582d62(0x259,'sExQ'),_0x13c5cb['fVZWP'],{'entity':_0xb14123[_0x582d62(0x14f,'^f!a')],'rows':_0x24298e}),_0x4ce9c1=(0x0,search_1[_0x582d62(0x202,'bxv4')])(_0x4ce9c1,_0x5b57be,_0x116ffe,{'ignoreCase':_0x13c5cb[_0x582d62(0x2e5,'5dV9')](_0x13c5cb[_0x582d62(0x203,'^f!a')],_0x351973)}),_0x3e05a9[_0x582d62(0x2b1,'0(xc')](_0x582d62(0x247,'^Jm)'),_0x13c5cb[_0x582d62(0x1f4,'^BeX')],{'term':_0x5b57be,'mode':_0x351973,'columns':_0x116ffe[_0x582d62(0x221,'3kAC')],'before':_0x24298e,'after':_0x4ce9c1[_0x582d62(0x295,'DD4C')]}),_0x2dd18a[_0x582d62(0x17a,'1Fu5')][_0x582d62(0x1e2,'lb#P')]?.[_0x582d62(0x14e,'^6ei')])&&(_0xc3b610=_0x4ce9c1[_0x582d62(0x1f9,'qgqy')]),_0x13c5cb['vRqDh'](0x0,_0x590336[_0x582d62(0x256,'Vf9*')])&&(_0x3e05a9[_0x582d62(0x28f,'(3Cz')](_0x582d62(0x1a2,'D8)V'),_0x582d62(0x23c,'1XWF'),{'expands':_0x590336[_0x582d62(0x317,'qgqy')](_0x32aaff=>_0x32aaff['as']||_0x32aaff[_0x582d62(0x1b7,'1XWF')]),'parentRows':_0x4ce9c1[_0x582d62(0x1c2,'^Jm)')]}),_0x4ce9c1=await(0x0,expand_materializer_1[_0x582d62(0x331,'JaEN')])(_0x2dd18a,_0xb14123,_0x4ce9c1,_0x590336,_0x434797,_0x3e05a9),(0x0,record_mapping_1[_0x582d62(0x1aa,'^f!a')])(_0xb14123,_0x4ce9c1,_0x590336,_0x434797)),0x0<_0x33c0ac[_0x582d62(0x26c,'e#%8')]&&(0x0,record_mapping_1['pruneRecordsToRequestedShape'])(_0xb14123,_0x4ce9c1,_0x33c0ac),_0x190a10&&(_0x460534=_0x4ce9c1[_0x582d62(0x32f,'%O[&')],_0x4ce9c1=_0x4ce9c1[_0x582d62(0x253,'k4Be')](_0x339efe=>(0x0,where_eval_1[_0x582d62(0x306,'QdlQ')])(_0x190a10,_0x339efe)),_0x3e05a9['info'](_0x13c5cb[_0x582d62(0x20b,'Vf9*')],_0x13c5cb[_0x582d62(0x2cd,'DD4C')],{'before':_0x460534,'after':_0x4ce9c1[_0x582d62(0x242,'utUt')]}),_0x2dd18a[_0x582d62(0x2da,'S9uA')][_0x582d62(0x17c,'D8)V')]?.[_0x582d62(0x1b6,'uaG!')])&&(_0xc3b610=_0x4ce9c1[_0x582d62(0x17b,'p*qR')]),_0x46b0a2&&0x0<_0x4ce9c1[_0x582d62(0x1f9,'qgqy')]&&(_0x3e05a9[_0x582d62(0x32c,'1XWF')](_0x13c5cb[_0x582d62(0x32a,'Z^ep')],_0x13c5cb[_0x582d62(0x268,'o(6w')],{'rows':_0x4ce9c1[_0x582d62(0x1e6,'lb#P')]}),_0x4ce9c1=(0x0,cqn_utils_2[_0x582d62(0x174,'JaEN')])(_0x4ce9c1,_0x46b0a2)),_0x13c5cb['KMVKO'](_0x484fd1,_0x129d83)&&(_0x33afcf=_0x129d83[_0x582d62(0x1fc,'p*qR')]?.[_0x582d62(0x1ba,'sqED')]??_0x129d83[_0x582d62(0x1d9,'#0c4')],_0x307c2a=_0x129d83[_0x582d62(0x2c9,'DBJ#')]?.[_0x582d62(0x2bb,'h^sH')]??_0x129d83['offset']??0x0,_0x13c5cb[_0x582d62(0x2e4,'h6qL')](_0x13c5cb['kQmjk'],typeof _0x33afcf))&&(_0x3e05a9['debug'](_0x13c5cb['vmcOl'],_0x13c5cb[_0x582d62(0x1d0,'lb#P')],{'offset':_0x307c2a,'rows':_0x33afcf}),_0x4ce9c1=_0x4ce9c1[_0x582d62(0x178,'7yVv')](_0x307c2a,_0x307c2a+_0x33afcf));for(_0x472231 of _0x4ce9c1)(0x0,record_mapping_1[_0x582d62(0x16c,'k4Be')])(_0xb14123,_0x472231,_0x434797);return void 0x0!==_0xc3b610&&(_0x4ce9c1['$count']=_0xc3b610),_0x3e05a9['info'](_0x582d62(0x2eb,'JaEN'),_0x13c5cb['xHCuK'],{'elapsedMs':_0x13c5cb['EQTto'](Date['now'](),_0x1a36ac),'rows':_0x4ce9c1[_0x582d62(0x23a,'sExQ')],'$count':_0xc3b610}),_0x285cce||_0x13c5cb[_0x582d62(0x324,'1Fu5')](0x0,_0x4ce9c1[_0x582d62(0x2d8,'ZwNW')])?_0x285cce?_0x4ce9c1:_0x4ce9c1[0x0]:{};};function _0x4825(_0x5e0fc2,_0x302a26){_0x5e0fc2=_0x5e0fc2-0x14e;const _0xcdb098=_0xcdb0();let _0x48252b=_0xcdb098[_0x5e0fc2];if(_0x4825['VsBial']===undefined){var _0x20e21f=function(_0x98e450){const _0x2a9e6d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5dbde6='',_0x3fe2b6='';for(let _0x1d34e8=0x0,_0x3665bd,_0x505170,_0x5512cc=0x0;_0x505170=_0x98e450['charAt'](_0x5512cc++);~_0x505170&&(_0x3665bd=_0x1d34e8%0x4?_0x3665bd*0x40+_0x505170:_0x505170,_0x1d34e8++%0x4)?_0x5dbde6+=String['fromCharCode'](0xff&_0x3665bd>>(-0x2*_0x1d34e8&0x6)):0x0){_0x505170=_0x2a9e6d['indexOf'](_0x505170);}for(let _0x37f4cb=0x0,_0x3cb778=_0x5dbde6['length'];_0x37f4cb<_0x3cb778;_0x37f4cb++){_0x3fe2b6+='%'+('00'+_0x5dbde6['charCodeAt'](_0x37f4cb)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3fe2b6);};const _0x1770a3=function(_0x414002,_0x4606fd){let _0x2c3d0a=[],_0x1511c3=0x0,_0x561fe3,_0x14b27e='';_0x414002=_0x20e21f(_0x414002);let _0x1f84bd;for(_0x1f84bd=0x0;_0x1f84bd<0x100;_0x1f84bd++){_0x2c3d0a[_0x1f84bd]=_0x1f84bd;}for(_0x1f84bd=0x0;_0x1f84bd<0x100;_0x1f84bd++){_0x1511c3=(_0x1511c3+_0x2c3d0a[_0x1f84bd]+_0x4606fd['charCodeAt'](_0x1f84bd%_0x4606fd['length']))%0x100,_0x561fe3=_0x2c3d0a[_0x1f84bd],_0x2c3d0a[_0x1f84bd]=_0x2c3d0a[_0x1511c3],_0x2c3d0a[_0x1511c3]=_0x561fe3;}_0x1f84bd=0x0,_0x1511c3=0x0;for(let _0x43631c=0x0;_0x43631c<_0x414002['length'];_0x43631c++){_0x1f84bd=(_0x1f84bd+0x1)%0x100,_0x1511c3=(_0x1511c3+_0x2c3d0a[_0x1f84bd])%0x100,_0x561fe3=_0x2c3d0a[_0x1f84bd],_0x2c3d0a[_0x1f84bd]=_0x2c3d0a[_0x1511c3],_0x2c3d0a[_0x1511c3]=_0x561fe3,_0x14b27e+=String['fromCharCode'](_0x414002['charCodeAt'](_0x43631c)^_0x2c3d0a[(_0x2c3d0a[_0x1f84bd]+_0x2c3d0a[_0x1511c3])%0x100]);}return _0x14b27e;};_0x4825['eiPOAq']=_0x1770a3,_0x4825['vFEJlk']={},_0x4825['VsBial']=!![];}const _0x5ca031=_0xcdb098[0x0];_0x4825['KPyemS']!==_0x5ca031&&(_0x4825['vFEJlk']={},_0x4825['KPyemS']=_0x5ca031);const _0xce6b19=_0x4825['vFEJlk'][_0x5e0fc2];return _0xce6b19===undefined?(_0x4825['ZmVxZn']===undefined&&(_0x4825['ZmVxZn']=!![]),_0x48252b=_0x4825['eiPOAq'](_0x48252b,_0x302a26),_0x4825['vFEJlk'][_0x5e0fc2]=_0x48252b):_0x48252b=_0xce6b19,_0x48252b;}exports[_0xba15ec(0x25e,'4Dmh')]=handleSimpleProjection;
+"use strict";
+/**
+ * @file projection-pipeline.ts
+ * @description Handles a READ that maps to a single remote entity via a CDS
+ * projection or view.
+ *
+ * ### Pipeline
+ * 1. **Hybrid WHERE split** — separate backend-safe predicates from local-only ones.
+ * 2. **Build remote SELECT** — translate local column names → remote names.
+ * 3. **Execute remote query** — static data / SOAP / OData / local service.
+ * 4. **Map results** — translate remote field names back to local names.
+ * 5. **In-memory post-processing** — filter, sort, slice, enforce aliases.
+ *
+ * On backend filter errors (HTTP 400 / "Property not found") the service
+ * transparently retries without the WHERE clause and applies all filters
+ * in memory.
+ *
+ * ## Logging
+ * Every step above emits `INFO` boundary logs and `DEBUG` decision-point
+ * logs (see the module logger scope `projection-pipeline`). Errors caught
+ * and swallowed by the fallback are logged at `WARN`; unexpected errors
+ * are re-thrown after being logged at `ERROR` by the caller.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.handleSimpleProjection = void 0;
+const cds_1 = require("@sap/cds");
+const utils_1 = require("./utils");
+const aggregation_1 = require("./aggregation");
+const column_builders_1 = require("./column-builders");
+const alias_maps_1 = require("./alias-maps");
+const cqn_utils_1 = require("./cqn-utils");
+const cqn_rewriter_1 = require("./cqn-rewriter");
+const expand_materializer_1 = require("./expand-materializer");
+const path_columns_1 = require("./path-columns");
+const calc_dependencies_1 = require("./calc-dependencies");
+const path_resolution_1 = require("./path-resolution");
+const join_parser_1 = require("./join-parser");
+const record_mapping_1 = require("./record-mapping");
+const service_resolver_1 = require("./service-resolver");
+const soap_adapter_1 = require("./soap-adapter");
+const cqn_utils_2 = require("./cqn-utils");
+const where_eval_1 = require("./where-eval");
+const where_split_1 = require("./where-split");
+const search_1 = require("./search");
+const search_pushdown_1 = require("./search-pushdown");
+const search_backend_1 = require("./search-backend");
+const search_functions_1 = require("./search-functions");
+const M = 'projection-pipeline';
+/**
+ * Executes the simple-projection pipeline for a single remote entity.
+ *
+ * @param serviceName  The owning RemoteService's name (for local-service detection).
+ * @param req          Incoming CAP request.
+ * @param next         CAP next-handler continuation.
+ * @param entityDef    CDS entity definition.
+ * @param cache        Per-service metadata cache.
+ * @param parentLog    Request-scoped logger from the orchestrator.
+ * @returns            Mapped result rows or a single object.
+ */
+const handleSimpleProjection = async (serviceName, req, next, entityDef, cache, parentLog, outerReq) => {
+    const log = parentLog.forModule(M);
+    const t0 = Date.now();
+    if (!entityDef) {
+        log.warn('handleSimpleProjection', 'No entity definition provided; delegating to next()');
+        return next();
+    }
+    log.info('handleSimpleProjection', 'ENTER', { entity: entityDef.name });
+    // Path columns across a to-many association can never be served: fail loudly (501) when one is
+    // explicitly asked for, before any remote call. Implied by "all elements" they are left out.
+    const columnPlan = (0, path_columns_1.getColumnPlan)(entityDef, cache);
+    (0, path_columns_1.assertSupportedPathColumns)(columnPlan, req.query?.SELECT, entityDef.name);
+    const requestedPaths = (0, path_columns_1.requestedPathColumns)(columnPlan, req.query?.SELECT).filter((p) => p.kind === 'toOne');
+    // ---------------------------------------------------------------------
+    // Target resolution
+    // ---------------------------------------------------------------------
+    const targetEntity = (0, cqn_utils_1.resolveTargetEntity)(entityDef);
+    const [targetSrvName, targetEntityName] = (0, service_resolver_1.splitServiceAndEntity)(targetEntity);
+    log.debug('handleSimpleProjection', 'Target resolved', {
+        entity: entityDef.name,
+        targetService: targetSrvName,
+        targetEntity: targetEntityName,
+    });
+    const targetSrv = await (0, service_resolver_1.getServiceByName)(targetSrvName);
+    const isTargetSrvSoap = (0, soap_adapter_1.isSoapService)(targetSrvName);
+    const queryLocalTarget = (0, service_resolver_1.usesLocalServiceSemantics)(targetSrvName);
+    const queryEntityName = queryLocalTarget && targetSrvName !== serviceName ? targetEntity : targetEntityName;
+    const { localToRemote, remoteToLocal } = (0, alias_maps_1.getAliasMaps)(entityDef, cache);
+    log.debug('handleSimpleProjection', 'Alias maps built', {
+        aliasCount: Object.keys(localToRemote).length,
+    });
+    const incomingColumns = req.query?.SELECT?.columns ?? [];
+    const hasExplicitSelect = incomingColumns.length > 0;
+    const expandTree = (0, join_parser_1.parseExpandTree)(incomingColumns);
+    const isDistinctProjection = !!(entityDef.query?.SELECT?.distinct || entityDef.projection?.distinct);
+    const isGroupByProjection = !!(entityDef.query?.SELECT?.groupBy || entityDef.projection?.groupBy);
+    const hasSkipPaginationFlag = !!req.query?.SELECT?.__skipPagination;
+    if (requestedPaths.length > 0 && (isDistinctProjection || isGroupByProjection)) {
+        throw Object.assign(new Error(`Association-path elements (${requestedPaths.map((p) => p.alias).join(', ')}) are not supported on DISTINCT / GROUP BY projections.`), { code: 501, status: 501, statusCode: 501 });
+    }
+    // `$search` (`SELECT.search`) is never forwarded: rows are matched in memory (STEP 4a). It looks at every
+    // searchable column, selected or not, so those must be fetched (plain columns) and resolved (to-one paths).
+    const searchTerm = (0, search_1.searchToTerm)(req.query?.SELECT?.search);
+    const searchTree = (0, search_1.parseSearchTerm)(searchTerm);
+    // Case rule / support from the backend the data finally comes from (search-backend.ts): local and OData V4 ignore
+    // case, OData V2 is case-sensitive, SOAP does not support `$search` at all (the term is ignored).
+    const searchBackend = searchTree ? (0, search_backend_1.resolveSearchBackend)(entityDef, { startIsLocal: true }) : undefined;
+    // (a service known to reject `tolower` is case-sensitive even if its kind says otherwise)
+    let searchMode = searchBackend ? (0, search_backend_1.effectiveSearchMode)(searchBackend) : 'sensitive';
+    if (searchTree)
+        log.debug('handleSimpleProjection', '$search mode', { mode: searchMode, backend: searchBackend.kind, chain: searchBackend.chain });
+    if (searchTree && searchMode === 'none')
+        log.info('handleSimpleProjection', '$search is not supported for this backend (SOAP): ignored', { entity: entityDef.name, chain: searchBackend.chain });
+    const hasSearch = !!searchTree && searchMode !== 'none'; // blank / operator-only terms search nothing
+    const searchInfo = hasSearch ? (0, search_1.getSearchColumnInfo)(entityDef, cache) : [];
+    const searchColumns = searchInfo.map((c) => c.name);
+    const unusedSearchNames = hasSearch ? (0, search_1.explicitSearchNames)(entityDef).filter((n) => !searchColumns.includes(n)) : [];
+    if (unusedSearchNames.length > 0) {
+        log.warn('handleSimpleProjection', '@cds.search lists names that are not searched: not an element of this entity, not a string, or @cds.search: false', {
+            entity: entityDef.name, names: unusedSearchNames, searched: searchColumns,
+        });
+    }
+    const searchCalcAliases = new Set(searchInfo.filter((c) => c.kind === 'calc').map((c) => c.name));
+    const searchPaths = hasSearch && !isDistinctProjection && !isGroupByProjection
+        ? searchColumns
+            .map((c) => columnPlan.paths.get(c))
+            .filter((p) => !!p && p.kind === 'toOne' && !requestedPaths.some((r) => r.alias === p.alias))
+        : [];
+    // Calculated columns reading association paths (`coalesce(_A.X, 0)`): their hidden path elements are
+    // resolved together with the path columns, then the expression is evaluated again (see step 4).
+    const calcPathColumns = isDistinctProjection || isGroupByProjection ? [] : (0, path_columns_1.requestedCalcPathColumns)(columnPlan, req.query?.SELECT, searchCalcAliases);
+    const resolvedPaths = [...requestedPaths, ...searchPaths, ...calcPathColumns.flatMap((c) => c.paths)];
+    const pathJoinKeys = resolvedPaths.length > 0 ? (0, path_resolution_1.pathJoinKeyNames)(columnPlan, resolvedPaths, cache) : [];
+    log.debug('handleSimpleProjection', 'Request shape', {
+        hasExplicitSelect,
+        expandCount: expandTree.length,
+        isDistinct: isDistinctProjection,
+        isGroupBy: isGroupByProjection,
+        wantsCount: !!req.query?.SELECT?.count,
+        hasSkipPagination: hasSkipPaginationFlag
+    });
+    const originalWhere = req.query?.SELECT?.where ? (0, utils_1.deepClone)(req.query.SELECT.where) : undefined;
+    const originalOrderBy = req.query?.SELECT?.orderBy ? (0, utils_1.deepClone)(req.query.SELECT.orderBy) : undefined;
+    const originalLimit = req.query?.SELECT?.limit;
+    // -----------------------------------------------------------------
+    // STEP 1: hybrid WHERE split
+    // -----------------------------------------------------------------
+    log.debug('handleSimpleProjection', 'STEP 1 · Split WHERE');
+    const { remoteWhere, localWhere } = (0, where_split_1.splitWhereClause)(originalWhere, entityDef, localToRemote, log, isTargetSrvSoap);
+    let postFilterWhere = localWhere;
+    // A local filter (in-memory WHERE part, `$search`) needs every row the backend has: no remote $top / count,
+    // the count is taken and the page cut afterwards.
+    const hasLocalFilter = !!localWhere || hasSearch;
+    log.info('handleSimpleProjection', 'STEP 1 result', {
+        hasRemoteWhere: !!(remoteWhere && remoteWhere.length),
+        hasLocalWhere: !!(localWhere && localWhere.length),
+    });
+    // -----------------------------------------------------------------
+    // STEP 2: build remote SELECT
+    // -----------------------------------------------------------------
+    log.debug('handleSimpleProjection', 'STEP 2 · Build remote SELECT');
+    const cleanSelect = {
+        from: (0, cqn_utils_1.retargetFromNode)(req.query.SELECT?.from, queryEntityName),
+    };
+    // Path elements and in-memory calculated elements are not fields of the source entity: never request them from it.
+    const computedAliases = isDistinctProjection || isGroupByProjection ? new Set() : (0, calc_dependencies_1.getComputedAliases)(entityDef);
+    const skipAliases = columnPlan.paths.size > 0 || computedAliases.size > 0 ? new Set([...columnPlan.paths.keys(), ...computedAliases]) : undefined;
+    if (!hasExplicitSelect) {
+        cleanSelect.columns = queryLocalTarget
+            ? (0, column_builders_1.buildDefaultLocalColumns)(entityDef, skipAliases)
+            : (0, column_builders_1.buildDefaultRemoteColumns)(entityDef, localToRemote, skipAliases);
+    }
+    else {
+        cleanSelect.columns = queryLocalTarget
+            ? (0, column_builders_1.buildSelectedLocalColumns)(entityDef, { name: '', columns: incomingColumns }, [], skipAliases)
+            : (0, column_builders_1.buildSelectedRemoteColumns)(entityDef, { name: '', columns: incomingColumns }, { localToRemote, remoteToLocal }, [], skipAliases);
+    }
+    if (expandTree.length > 0) {
+        cleanSelect.columns = queryLocalTarget
+            ? (0, column_builders_1.buildLocalColumnsWithExpands)(entityDef, expandTree, incomingColumns, cache, skipAliases, cds_1.default.model.definitions[targetEntity])
+            : (0, column_builders_1.buildColumnsWithExpands)(entityDef, expandTree, localToRemote, incomingColumns, cache, skipAliases);
+    }
+    const fromHead = req.query?.SELECT?.from?.ref?.[0];
+    const isKeyRead = !!(fromHead && typeof fromHead === 'object' && fromHead.where);
+    // Backends ignore `$filter` on a by-key URL and return the entity anyway, so a WHERE on a key read
+    // (e.g. an instance-based `@restrict ... where`) is never applied by the backend. It is therefore
+    // evaluated again in memory (STEP 4b), which needs the fields it refers to even if not selected.
+    const keyReadRecheckWhere = isKeyRead && originalWhere && !isDistinctProjection && !isGroupByProjection ? originalWhere : undefined;
+    const recheckFields = keyReadRecheckWhere
+        ? [...(0, column_builders_1.extractReferencedFields)(keyReadRecheckWhere)]
+            .filter((n) => {
+            const el = entityDef.elements?.[n];
+            return el && !(0, alias_maps_1.isAssociationElement)(el) && !el.virtual && !el.$calc && !el.value && !skipAliases?.has(n);
+        })
+            .map((n) => (queryLocalTarget ? n : localToRemote[n]))
+        : [];
+    const searchSourceFields = searchInfo
+        .filter((c) => c.kind === 'plain')
+        .map((c) => c.name)
+        .filter((n) => queryLocalTarget || localToRemote[n])
+        .map((n) => (queryLocalTarget ? n : localToRemote[n]));
+    // Fields of the source that must be fetched although the projection does not expose them:
+    // first-hop join keys of path columns and dependencies of calculated columns.
+    // A `$select` naming only such elements would otherwise fall back to `*`: fetch just those fields.
+    const sourceExtras = [...pathJoinKeys, ...recheckFields, ...searchSourceFields, ...(computedAliases.size > 0 ? (0, calc_dependencies_1.calcSourceDependencies)(entityDef, req.query?.SELECT, searchCalcAliases) : [])];
+    if (skipAliases && hasExplicitSelect && expandTree.length === 0) {
+        const scalar = incomingColumns.filter((c) => c?.ref && !c.expand).map((c) => c.ref[0]);
+        if (scalar.length > 0 && scalar.every((n) => skipAliases.has(n)))
+            cleanSelect.columns = [];
+    }
+    if (sourceExtras.length > 0)
+        cleanSelect.columns = (0, calc_dependencies_1.withSourceColumns)(cleanSelect.columns, sourceExtras);
+    if (Array.isArray(cleanSelect.columns) && cleanSelect.columns.length === 0)
+        cleanSelect.columns = ['*'];
+    if (remoteWhere && remoteWhere.length > 0)
+        cleanSelect.where = remoteWhere;
+    // A read by key (`Entity('K1')`, key in the FROM node) addresses ONE entity: OData V2 backends reject
+    // `$top`/`$skip`/`$orderby`/`$inlinecount` on such a URL, so none of them is forwarded. The count is then
+    // simply the number of rows returned (see below).
+    if (isKeyRead && originalLimit) {
+        log.debug('handleSimpleProjection', 'Read by key — not forwarding limit to the backend', { originalLimit });
+    }
+    else if (isGroupByProjection && originalLimit) {
+        // For GROUP BY projections the remote query must return ALL rows so the
+        // in-memory aggregation (applyGroupBy) can produce the correct group set.
+        // Passing the OData page limit to the remote service would silently
+        // truncate the raw rows and drop groups whose members fall outside the
+        // page window. The limit is applied after aggregation, not before.
+        log.info('handleSimpleProjection', 'Dropping remote $top for GROUP BY — aggregation needs all rows', { originalLimit });
+    }
+    else if (!hasLocalFilter && originalLimit) {
+        cleanSelect.limit = originalLimit;
+    }
+    else if (hasLocalFilter && originalLimit) {
+        log.info('handleSimpleProjection', 'Dropping remote $top — local filter will slice in-memory', { originalLimit, search: hasSearch });
+    }
+    if (req.query.SELECT?.count && !hasLocalFilter && !isKeyRead)
+        cleanSelect.count = true;
+    const remoteQuery = { SELECT: cleanSelect };
+    if (isGroupByProjection) {
+        (0, aggregation_1.injectAggregationSourceFields)(entityDef, remoteQuery, localToRemote);
+        // Signal to _base/_evaluateODataInMemory that this is a GROUP BY sub-fetch:
+        // all raw rows must be returned untruncated so in-memory aggregation
+        // (applyGroupBy) can produce the correct groups and counts.
+        // CAP strips `groupBy` from the CQN before dispatching to SOAP, so the
+        // existing `selectAst.groupBy` bypass in _base never fires — this sentinel
+        // is the reliable alternative.
+        if (isTargetSrvSoap) {
+            cleanSelect.__skipPagination = true;
+        }
+    }
+    // Propagate the __skipPagination sentinel from the incoming request to the
+    // outbound SOAP query. This handles the expand sub-fetch path where
+    // fetchAssociatedRecords sets __skipPagination on the query it passes to
+    // a local CAP service (e.g. UserDataService), which then dispatches here.
+    // Without propagation, the SOAP-level QueryHitsMaximumNumberValue cap would
+    // silently truncate role rows for large multi-user expand fetches.
+    if (hasSkipPaginationFlag && isTargetSrvSoap) {
+        cleanSelect.__skipPagination = true;
+    }
+    if (cleanSelect.where && !queryLocalTarget) {
+        (0, cqn_rewriter_1.rewriteQueryCqn)(remoteQuery, localToRemote, cache, entityDef);
+    }
+    // `$search` push-down (search-pushdown.ts): narrows what the backend returns. STEP 4a still matches every
+    // returned row locally and has the final say, so a filter that is too wide is harmless and one that fails
+    // is retried without (STEP 3). Added AFTER the rewrite: it is already in the names the query uses.
+    let searchWheres; // alternatives whose rows are unioned (several when a key list is too long for one URL)
+    let searchPushed = false;
+    const planSearchPush = () => (0, search_pushdown_1.buildSearchPushdown)({
+        req, tree: searchTree, columns: searchInfo, entityDef, plan: columnPlan, cache, log,
+        queryLocalTarget, localToRemote, mode: searchMode,
+    });
+    if (hasSearch && searchTree && !isKeyRead && !isTargetSrvSoap && !isDistinctProjection && !isGroupByProjection && !entityDef['@response.data']) {
+        const push = await planSearchPush();
+        if (push.none) {
+            log.info('handleSimpleProjection', 'EXIT ($search can not match any row: backend not called)', { elapsedMs: Date.now() - t0 });
+            const empty = [];
+            if (req.query.SELECT?.count)
+                empty.$count = 0;
+            return empty;
+        }
+        if (push.wheres) {
+            searchWheres = push.wheres;
+            searchPushed = true;
+        }
+        log.info('handleSimpleProjection', push.wheres ? '$search pushed to the backend' : '$search not pushed', { reason: push.reason, queries: push.wheres?.length });
+    }
+    log.debug('handleSimpleProjection', 'Final remote query built', {
+        target: targetEntityName,
+        columnCount: cleanSelect.columns.length,
+        hasWhere: !!cleanSelect.where,
+        limit: cleanSelect.limit,
+        count: cleanSelect.count,
+    });
+    // A search that is not (or no longer) pushed reads the entity unfiltered and matches locally. Bounded: an entity with
+    // more than SEARCH_LOCAL_MAX_ROWS rows fails clearly instead of an unbounded read (time-out, response too large).
+    // Group-by / distinct projections aggregate over all rows and are not bounded.
+    const boundedSearchRead = hasSearch && !isKeyRead && !isTargetSrvSoap && !isDistinctProjection && !isGroupByProjection
+        && !entityDef['@response.data'];
+    let pushFailure; // why the pushed search failed, for the message below
+    const runUnpushed = async () => {
+        if (!boundedSearchRead)
+            return targetSrv.run(remoteQuery);
+        const rows = await targetSrv.run({ SELECT: { ...cleanSelect, limit: { rows: { val: search_1.SEARCH_LOCAL_MAX_ROWS + 1 } }, count: true } });
+        const list = Array.isArray(rows) ? rows : rows ? [rows] : [];
+        const total = typeof rows?.$count === 'number' ? rows.$count : list.length;
+        if (list.length > search_1.SEARCH_LOCAL_MAX_ROWS || total > search_1.SEARCH_LOCAL_MAX_ROWS || list.length < total) {
+            throw Object.assign(new Error(`$search could not be pushed to the backend and '${entityDef.name}' has more than ${search_1.SEARCH_LOCAL_MAX_ROWS} rows: narrow it down with $filter`
+                + (pushFailure ? ` (the backend said: ${pushFailure})` : '')), { code: 502, status: 502, statusCode: 502, searchTooLarge: true });
+        }
+        return list;
+    };
+    // The pushed search: one query per alternative (each ANDed onto the WHERE the query already has), rows unioned by key.
+    const runSearchPushed = async () => {
+        const keyNames = Object.entries(columnPlan.sourceDef?.elements ?? {}).filter(([, el]) => el?.key).map(([n]) => n);
+        const identity = (r) => {
+            const key = keyNames.map((k) => r?.[k]);
+            return keyNames.length > 0 && key.every((v) => v !== undefined) ? JSON.stringify(key) : JSON.stringify(r);
+        };
+        const parts = await Promise.all(searchWheres.map((w) => targetSrv.run({ SELECT: { ...cleanSelect, where: (0, search_pushdown_1.andWhere)(cleanSelect.where, w) } })));
+        const merged = [];
+        const seen = new Set();
+        for (const part of parts) {
+            for (const row of Array.isArray(part) ? part : [part]) {
+                if (!row)
+                    continue;
+                const id = identity(row);
+                if (seen.has(id))
+                    continue;
+                seen.add(id);
+                merged.push(row);
+            }
+        }
+        return merged;
+    };
+    // -----------------------------------------------------------------
+    // STEP 3: execute
+    // -----------------------------------------------------------------
+    log.info('handleSimpleProjection', 'STEP 3 · Execute remote query', { target: `${targetSrvName}.${targetEntityName}` });
+    let results;
+    const tExec = Date.now();
+    try {
+        if (isTargetSrvSoap) {
+            log.info('handleSimpleProjection', 'Dispatching SOAP read', { service: targetSrvName, entity: targetEntityName });
+            // Pass `remoteQuery` (not `req.query`) so the cleaned query reaches the SOAP
+            // adapter — this carries the rewritten WHERE, the correct columns, and
+            // critically NO limit for GROUP BY projections (where the full row set is
+            // needed before in-memory aggregation runs).
+            results = await (0, soap_adapter_1.runSoapRead)(targetSrv, targetEntityName, req, remoteQuery, entityDef, log, outerReq);
+            if (results && !Array.isArray(results))
+                results = [results];
+        }
+        else if (entityDef['@response.data']) {
+            log.debug('handleSimpleProjection', 'Using @response.data (no remote call)');
+            results = entityDef['@response.data'];
+        }
+        else {
+            log.debug('handleSimpleProjection', 'Dispatching OData/DB read', { service: targetSrvName });
+            log.debug('handleSimpleProjection', 'Dispatching OData/DB read', { query: remoteQuery });
+            for (let replans = 0;; replans++) {
+                try {
+                    results = searchPushed ? await runSearchPushed() : await runUnpushed();
+                    break;
+                }
+                catch (err) {
+                    if (!searchPushed)
+                        throw err;
+                    // the backend can not evaluate tolower: this service searches case-sensitively from now on
+                    const fn = (0, search_functions_1.rejectedFunction)(err);
+                    if (replans < 8 && fn === 'tolower' && searchMode === 'insensitive' && searchBackend
+                        && (0, search_functions_1.learnUnsupportedFunction)(searchBackend.service, 'tolower')) {
+                        searchMode = (0, search_backend_1.effectiveSearchMode)(searchBackend);
+                        log.info('handleSimpleProjection', 'Backend does not support tolower: searching case-sensitively', { error: err?.message });
+                        const push = await planSearchPush();
+                        if (push.none) {
+                            results = [];
+                            break;
+                        }
+                        searchWheres = push.wheres;
+                        searchPushed = !!push.wheres;
+                        continue;
+                    }
+                    log.warn('handleSimpleProjection', 'Backend rejected the pushed $search filter — retrying without it', { error: err?.message });
+                    pushFailure = String(err?.message ?? err).slice(0, 300);
+                    searchPushed = false;
+                    results = await runUnpushed();
+                    break;
+                }
+            }
+        }
+        log.info('handleSimpleProjection', 'STEP 3 done', {
+            elapsedMs: Date.now() - tExec,
+            rows: Array.isArray(results) ? results.length : (results ? 1 : 0),
+        });
+    }
+    catch (err) {
+        // our own "too many rows to search locally" error mentions $filter: it must not be taken for a rejected filter
+        // (the older fallback below would read the whole entity unbounded)
+        if (err?.searchTooLarge)
+            throw err;
+        const isAssocPath = (0, cqn_utils_1.isAssociationPathRemoteError)(err, entityDef);
+        const isFilter400 = String(err?.message).includes('filter') || String(err?.code).includes('400');
+        if (!isAssocPath && !isFilter400) {
+            log.error('handleSimpleProjection', 'Remote read failed (unrecoverable)', {
+                error: { message: err?.message, code: err?.code },
+            });
+            throw err;
+        }
+        log.warn('handleSimpleProjection', 'Remote filter rejected — falling back to 100% in-memory filter', {
+            error: err?.message,
+            reason: isAssocPath ? 'association-path' : 'filter-400',
+        });
+        postFilterWhere = originalWhere;
+        delete remoteQuery.SELECT.where;
+        delete remoteQuery.SELECT.limit;
+        results = await targetSrv.run(remoteQuery);
+        log.info('handleSimpleProjection', 'STEP 3 fallback done', {
+            rows: Array.isArray(results) ? results.length : (results ? 1 : 0),
+        });
+    }
+    if (!results || (Array.isArray(results) && results.length === 0)) {
+        log.info('handleSimpleProjection', 'EXIT (empty result)', { elapsedMs: Date.now() - t0 });
+        if (req.query.SELECT?.count) {
+            const empty = [];
+            empty.$count = 0;
+            return empty;
+        }
+        return results;
+    }
+    const isArray = Array.isArray(results);
+    let records = isArray ? results : [results];
+    if (pathJoinKeys.length > 0)
+        records = (0, path_resolution_1.stashPathJoinKeys)(records, pathJoinKeys, remoteToLocal);
+    if (isDistinctProjection) {
+        log.debug('handleSimpleProjection', 'Applying DISTINCT', { before: records.length });
+        records = (0, aggregation_1.applyDistinct)(entityDef, records, localToRemote);
+        log.debug('handleSimpleProjection', 'DISTINCT applied', { after: records.length });
+    }
+    if (isGroupByProjection && records.length > 0) {
+        log.debug('handleSimpleProjection', 'Applying GROUP BY', { before: records.length });
+        records = (0, aggregation_1.applyGroupBy)(entityDef, records, localToRemote);
+        log.debug('handleSimpleProjection', 'GROUP BY applied', { after: records.length });
+    }
+    let remoteCount;
+    if (req.query.SELECT?.count && !hasLocalFilter) {
+        if (isGroupByProjection) {
+            // For GROUP BY, count = number of groups (after aggregation), not raw rows.
+            remoteCount = records.length;
+        }
+        else {
+            remoteCount = results.$count;
+            if (isDistinctProjection || remoteCount === undefined)
+                remoteCount = records.length;
+        }
+    }
+    // -----------------------------------------------------------------
+    // STEP 4: map remote → local
+    // -----------------------------------------------------------------
+    log.debug('handleSimpleProjection', 'STEP 4 · Map remote → local', { rows: records.length });
+    records = records.map((r) => (0, record_mapping_1.mapRemoteRecordToLocal)(entityDef, r, remoteToLocal, cache));
+    if (keyReadRecheckWhere) {
+        const before = records.length;
+        records = records.filter((r) => (0, where_eval_1.evaluateWhereOnRecord)(keyReadRecheckWhere, r));
+        log.info('handleSimpleProjection', 'STEP 4b · WHERE re-checked on key read', { before, after: records.length });
+        // The entity exists but does not satisfy the WHERE (e.g. `@restrict`): same answer as "not found".
+        if (before > 0 && records.length === 0) {
+            throw Object.assign(new Error(`Entity '${entityDef.name}' not found`), { code: 404, status: 404, statusCode: 404 });
+        }
+    }
+    if (resolvedPaths.length > 0) {
+        log.info('handleSimpleProjection', 'Resolving association-path columns', {
+            paths: requestedPaths.map((p) => p.alias),
+            calculated: calcPathColumns.map((c) => c.alias),
+        });
+        await (0, path_resolution_1.resolvePathColumns)(req, columnPlan, resolvedPaths, records, cache, log);
+        (0, path_resolution_1.applyCalcPathColumns)(records, calcPathColumns);
+        // path values are added last: restore the CDS definition order of the fields
+        for (const row of records)
+            (0, record_mapping_1.orderRowLikeDefinition)(entityDef, row);
+    }
+    // STEP 4a: `$search`. Before $expand (fewer parents to expand) and before pruning to the requested shape
+    // (the searched columns need not be selected).
+    if (hasSearch) {
+        const before = records.length;
+        const matchColumns = searchInfo.map((c) => c.name);
+        if (matchColumns.length === 0)
+            log.warn('handleSimpleProjection', 'No searchable columns: nothing can match', { entity: entityDef.name });
+        if (before > search_1.SEARCH_WARN_ROWS)
+            log.warn('handleSimpleProjection', 'Large in-memory search', { entity: entityDef.name, rows: before });
+        records = (0, search_1.applySearch)(records, searchTerm, matchColumns, { ignoreCase: searchMode === 'insensitive' });
+        log.info('handleSimpleProjection', 'STEP 4a · $search applied', { term: searchTerm, mode: searchMode, columns: matchColumns.length, before, after: records.length });
+        if (req.query.SELECT?.count)
+            remoteCount = records.length;
+    }
+    if (expandTree.length > 0) {
+        log.info('handleSimpleProjection', 'Resolving $expand tree', {
+            expands: expandTree.map((e) => e.as || e.name),
+            parentRows: records.length,
+        });
+        records = await (0, expand_materializer_1.resolveExpandNodes)(req, entityDef, records, expandTree, cache, log);
+        (0, record_mapping_1.normalizeExpandedAssociationNames)(entityDef, records, expandTree, cache);
+    }
+    if (incomingColumns.length > 0)
+        (0, record_mapping_1.pruneRecordsToRequestedShape)(entityDef, records, incomingColumns);
+    // -----------------------------------------------------------------
+    // STEP 5: in-memory post-processing
+    // -----------------------------------------------------------------
+    if (postFilterWhere) {
+        const before = records.length;
+        records = records.filter((r) => (0, where_eval_1.evaluateWhereOnRecord)(postFilterWhere, r));
+        log.info('handleSimpleProjection', 'STEP 5a · In-memory filter applied', { before, after: records.length });
+        if (req.query.SELECT?.count)
+            remoteCount = records.length;
+    }
+    if (originalOrderBy && records.length > 0) {
+        log.debug('handleSimpleProjection', 'STEP 5b · In-memory sort', { rows: records.length });
+        records = (0, cqn_utils_2.applyInMemorySort)(records, originalOrderBy);
+    }
+    if (hasLocalFilter && originalLimit) {
+        const rows = originalLimit.rows?.val ?? originalLimit.rows;
+        const offset = originalLimit.offset?.val ?? originalLimit.offset ?? 0;
+        if (typeof rows === 'number') {
+            log.debug('handleSimpleProjection', 'STEP 5c · In-memory slice', { offset, rows });
+            records = records.slice(offset, offset + rows);
+        }
+    }
+    for (const row of records)
+        (0, record_mapping_1.enforceAssociationAliases)(entityDef, row, cache);
+    if (remoteCount !== undefined)
+        records.$count = remoteCount;
+    log.info('handleSimpleProjection', 'EXIT', {
+        elapsedMs: Date.now() - t0,
+        rows: records.length,
+        $count: remoteCount,
+    });
+    if (!isArray && records.length === 0)
+        return {};
+    return isArray ? records : records[0];
+};
+exports.handleSimpleProjection = handleSimpleProjection;

@@ -1,1 +1,98 @@
-var _0x1ee2d1=_0x5986;function _0x5986(_0x59f194,_0x5a6817){_0x59f194=_0x59f194-0x10a;var _0x35c997=_0x35c9();var _0x5986c8=_0x35c997[_0x59f194];if(_0x5986['rRULYQ']===undefined){var _0x18f449=function(_0x1bbe80){var _0x161232='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0xc5d94f='',_0x4d6151='';for(var _0x380105=0x0,_0x3848be,_0x464a5b,_0x523cb4=0x0;_0x464a5b=_0x1bbe80['charAt'](_0x523cb4++);~_0x464a5b&&(_0x3848be=_0x380105%0x4?_0x3848be*0x40+_0x464a5b:_0x464a5b,_0x380105++%0x4)?_0xc5d94f+=String['fromCharCode'](0xff&_0x3848be>>(-0x2*_0x380105&0x6)):0x0){_0x464a5b=_0x161232['indexOf'](_0x464a5b);}for(var _0x1280e=0x0,_0x4277b7=_0xc5d94f['length'];_0x1280e<_0x4277b7;_0x1280e++){_0x4d6151+='%'+('00'+_0xc5d94f['charCodeAt'](_0x1280e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4d6151);};var _0x5b8603=function(_0x1dd3a4,_0x3e5060){var _0x3978ea=[],_0x4baa06=0x0,_0x23c39b,_0x315ab9='';_0x1dd3a4=_0x18f449(_0x1dd3a4);var _0x436417;for(_0x436417=0x0;_0x436417<0x100;_0x436417++){_0x3978ea[_0x436417]=_0x436417;}for(_0x436417=0x0;_0x436417<0x100;_0x436417++){_0x4baa06=(_0x4baa06+_0x3978ea[_0x436417]+_0x3e5060['charCodeAt'](_0x436417%_0x3e5060['length']))%0x100,_0x23c39b=_0x3978ea[_0x436417],_0x3978ea[_0x436417]=_0x3978ea[_0x4baa06],_0x3978ea[_0x4baa06]=_0x23c39b;}_0x436417=0x0,_0x4baa06=0x0;for(var _0x5c2aa9=0x0;_0x5c2aa9<_0x1dd3a4['length'];_0x5c2aa9++){_0x436417=(_0x436417+0x1)%0x100,_0x4baa06=(_0x4baa06+_0x3978ea[_0x436417])%0x100,_0x23c39b=_0x3978ea[_0x436417],_0x3978ea[_0x436417]=_0x3978ea[_0x4baa06],_0x3978ea[_0x4baa06]=_0x23c39b,_0x315ab9+=String['fromCharCode'](_0x1dd3a4['charCodeAt'](_0x5c2aa9)^_0x3978ea[(_0x3978ea[_0x436417]+_0x3978ea[_0x4baa06])%0x100]);}return _0x315ab9;};_0x5986['qBerko']=_0x5b8603,_0x5986['IqLGUh']={},_0x5986['rRULYQ']=!![];}var _0x355d36=_0x35c997[0x0];_0x5986['UPPcqa']!==_0x355d36&&(_0x5986['IqLGUh']={},_0x5986['UPPcqa']=_0x355d36);var _0x4015c1=_0x5986['IqLGUh'][_0x59f194];return _0x4015c1===undefined?(_0x5986['gFEsHe']===undefined&&(_0x5986['gFEsHe']=!![]),_0x5986c8=_0x5986['qBerko'](_0x5986c8,_0x5a6817),_0x5986['IqLGUh'][_0x59f194]=_0x5986c8):_0x5986c8=_0x4015c1,_0x5986c8;}(function(_0x33c994,_0x4238a9){var _0x2ea2ab=_0x5986,_0x2d9894=_0x33c994();while(!![]){try{var _0x2bf61c=parseInt(_0x2ea2ab(0x156,'J2go'))/0x1*(-parseInt(_0x2ea2ab(0x14a,'w@Vi'))/0x2)+parseInt(_0x2ea2ab(0x128,'J2go'))/0x3+parseInt(_0x2ea2ab(0x159,'IHmQ'))/0x4+-parseInt(_0x2ea2ab(0x11d,'IHmQ'))/0x5*(-parseInt(_0x2ea2ab(0x13c,'3xAC'))/0x6)+parseInt(_0x2ea2ab(0x139,'HF%8'))/0x7+parseInt(_0x2ea2ab(0x13b,'gs7z'))/0x8+-parseInt(_0x2ea2ab(0x15a,'V4Iy'))/0x9;if(_0x2bf61c===_0x4238a9)break;else _0x2d9894['push'](_0x2d9894['shift']());}catch(_0x3fb20e){_0x2d9894['push'](_0x2d9894['shift']());}}}(_0x35c9,0x88ca7),(Object[_0x1ee2d1(0x15b,'K#xo')](exports,'__esModule',{'value':!0x0}),exports[_0x1ee2d1(0x140,'A*Ab')]=exports[_0x1ee2d1(0x14d,'3h02')]=exports[_0x1ee2d1(0x141,'Jm2D')]=exports[_0x1ee2d1(0x153,')zac')]=void 0x0));let cds_1=require('@sap/cds'),cqn_utils_1=require('./cqn-utils'),service_resolver_1=require(_0x1ee2d1(0x10a,'rNVB')),soap_adapter_1=require(_0x1ee2d1(0x138,'9mV)')),search_functions_1=require(_0x1ee2d1(0x157,'J2go')),MAX_HOPS=0x14,backendKindOfService=_0x56425b=>{var _0xb12ec1=_0x1ee2d1,_0x550f78={'FPtAK':function(_0x3b0c88,_0x53c95d){return _0x3b0c88(_0x53c95d);},'wWAfZ':_0xb12ec1(0x132,'V4Iy'),'SrUZc':_0xb12ec1(0x129,'uuNA'),'DtxFm':function(_0x32ac3a,_0x25c649){return _0x32ac3a===_0x25c649;},'DBDmw':function(_0xf4ec89,_0x3ff585){return _0xf4ec89===_0x3ff585;},'ORMbY':_0xb12ec1(0x117,'3xAC'),'mCrWZ':'other'},_0x36c955=_0x550f78[_0xb12ec1(0x11f,'l9sj')](String,cds_1['default'][_0xb12ec1(0x13e,'@llg')]?.[_0x56425b]?.[_0xb12ec1(0x144,'$EA)')]??'')[_0xb12ec1(0x122,'$EA)')]();return _0x550f78[_0xb12ec1(0x120,'ysri')]===_0x36c955||(0x0,soap_adapter_1['isSoapService'])(_0x56425b)?_0x550f78[_0xb12ec1(0x135,'Wgz3')]:_0x550f78[_0xb12ec1(0x15f,'V8%c')]===_0x36c955?_0xb12ec1(0x150,'rNVB'):_0x550f78[_0xb12ec1(0x14f,'SltL')](_0xb12ec1(0x124,'yaIB'),_0x36c955)||_0x550f78['DBDmw'](_0x550f78[_0xb12ec1(0x149,'Ir2r')],_0x36c955)?_0x550f78[_0xb12ec1(0x10c,'wxyW')]:_0x550f78[_0xb12ec1(0x113,'T9Om')];},resolveSearchBackend=(exports[_0x1ee2d1(0x123,'RcAK')]=backendKindOfService,(_0x2dc462,_0x35bc23={})=>{var _0x1396c3=_0x1ee2d1,_0x59f5b4={'PDKGq':function(_0x29c43b,_0x25ae5f){return _0x29c43b<_0x25ae5f;},'kYiiQ':function(_0x446fd8,_0x21a8fc){return _0x446fd8===_0x21a8fc;},'BASTy':function(_0x44fa0d,_0x2d64f4){return _0x44fa0d!==_0x2d64f4;},'WMftd':_0x1396c3(0x12a,')zac'),'XPBfD':function(_0x541210,_0x1a0da5){return _0x541210!==_0x1a0da5;},'VgNzL':_0x1396c3(0x134,'$EA)'),'DWceX':_0x1396c3(0x116,'V]1l'),'HdrJT':function(_0x348378,_0x530534){return _0x348378-_0x530534;}},_0x4acc07=[];let _0x2c4fcb=_0x2dc462;for(let _0x5ad523=0x0;_0x2c4fcb&&_0x59f5b4[_0x1396c3(0x115,'w@Vi')](_0x5ad523,MAX_HOPS);_0x5ad523++){_0x4acc07[_0x1396c3(0x125,'RcAK')](_0x2c4fcb['name']);var [_0x38804d]=(0x0,service_resolver_1[_0x1396c3(0x10f,'9mV)')])(_0x2c4fcb[_0x1396c3(0x145,'Jm2D')]),_0x4daec3=_0x59f5b4[_0x1396c3(0x155,'cTcm')](0x0,_0x5ad523)&&!!_0x35bc23['startIsLocal'];if(_0x59f5b4[_0x1396c3(0x14c,'3h02')]('db',_0x38804d)&&!_0x4daec3&&_0x1396c3(0x13f,'IHmQ')===(0x0,exports[_0x1396c3(0x14b,'cTcm')])(_0x38804d))return{'kind':_0x59f5b4['WMftd'],'service':_0x38804d,'chain':_0x4acc07};if(!_0x4daec3&&_0x59f5b4[_0x1396c3(0x126,'ysri')]('db',_0x38804d)&&!(0x0,service_resolver_1['usesLocalServiceSemantics'])(_0x38804d))return{'kind':(0x0,exports[_0x1396c3(0x11a,'SltL')])(_0x38804d),'service':_0x38804d,'chain':_0x4acc07};_0x4daec3=_0x2c4fcb[_0x1396c3(0x11c,'wxyW')]?.[_0x1396c3(0x12e,'yaIB')]?.[_0x1396c3(0x127,'@llg')]??_0x2c4fcb[_0x1396c3(0x136,'RcAK')]?.[_0x1396c3(0x162,'NA&!')];if(!_0x4daec3)return{'kind':_0x59f5b4[_0x1396c3(0x133,'RcAK')],'service':_0x38804d,'chain':_0x4acc07};if(_0x4daec3['join']||!_0x4daec3[_0x1396c3(0x152,'3h02')]?.[_0x1396c3(0x14e,'*cj@')])return{'kind':_0x59f5b4[_0x1396c3(0x151,'gs7z')],'service':_0x38804d,'chain':_0x4acc07};_0x2c4fcb=cds_1[_0x1396c3(0x12f,'b*q7')][_0x1396c3(0x142,'yaIB')]?.[_0x1396c3(0x15e,'vKw*')]?.[(0x0,cqn_utils_1[_0x1396c3(0x11e,'3xAC')])(_0x2c4fcb)];}return{'kind':_0x59f5b4['DWceX'],'service':_0x4acc07[_0x1396c3(0x15c,'RcAK')]?(0x0,service_resolver_1[_0x1396c3(0x10d,'vKw*')])(_0x4acc07[_0x59f5b4[_0x1396c3(0x111,'V4Iy')](_0x4acc07[_0x1396c3(0x160,'rNVB')],0x1)])[0x0]:'db','chain':_0x4acc07};}),effectiveSearchMode=(exports[_0x1ee2d1(0x110,'jgQT')]=resolveSearchBackend,_0xfc1360=>{var _0x480722=_0x1ee2d1,_0x56b296={'zlYOq':function(_0x1ffed3,_0x5f24dd){return _0x1ffed3===_0x5f24dd;},'ljrud':_0x480722(0x112,'cTcm'),'HVdWB':'tolower','aoFkl':_0x480722(0x146,'(Z#$')},_0x147c26=(0x0,exports['searchModeOf'])(_0xfc1360[_0x480722(0x130,'yaIB')]);return _0x56b296[_0x480722(0x11b,'%c4j')](_0x56b296[_0x480722(0x114,'rNVB')],_0x147c26)&&_0x480722(0x137,'uuNA')!==_0xfc1360[_0x480722(0x119,'Jm2D')]&&(0x0,search_functions_1[_0x480722(0x121,'K#xo')])(_0xfc1360['service'],_0x56b296[_0x480722(0x143,'V]1l')])?_0x56b296['aoFkl']:_0x147c26;}),searchModeOf=(exports[_0x1ee2d1(0x154,'RcAK')]=effectiveSearchMode,_0x35aca8=>_0x1ee2d1(0x158,'cTcm')===_0x35aca8?_0x1ee2d1(0x118,'8m6o'):_0x1ee2d1(0x13d,'IHmQ')===_0x35aca8||_0x1ee2d1(0x12d,'FRCH')===_0x35aca8?_0x1ee2d1(0x161,'b*q7'):_0x1ee2d1(0x10b,'b*q7'));exports[_0x1ee2d1(0x12b,'RcAK')]=searchModeOf;function _0x35c9(){var _0x137c59=['WP/cKCoCWR4r','i8oyW6f9W6bvWOuCh2ddLW','omoeWQiRWRvtWOWnywZdMmk+CdxcIWlcNCo3','WOFcP8ouWQC','lCkyW4vfttRdRSoKar/cGCo+Dq','WQmqc8o5W4dcHSkJWRlcKJlcUmorW5RdHW','W5BcQmozW6qTWONdTmomcSo8dLJdJLK','WOFcRt8Onde','W7T2W7BcRSk4tSonkmoIm8oWlSoz','W4yqwLuJAmoLW7/dR8owwa','zmoGouGU','rmktshmHna','W4ZdUaZcISoAa0FcKCowWO7dLG','W7tcUCoRW6m','bSozvxeNkMGzWO7cHSofmhDjWO3dUCk9nq','W5BdSXhcNmoDbeFcK8oA','g2SHWQS3','W5efufu5uSo0W6tdTSorsc8sWOFdIw7dV8oMdmozAG','WQpdVCk3WR7dReBdPbJcPCosbedcSmkm','WQlcKmoLu8oCW5lcNGbQd8oHW6ddHs7dKCobxcxcP8kHna','WPDRabhcHCo/mvexWPFcT8oEjvrjWOZdKmkHn8od','W5PcsSkdWQi','WP3cPSogWRiUdMlcLSogW4VcUW','W7XxW4NcLuG','rmkCvgeX','WQtdKrONqq','nmoOcqjP','wSkWWOvkW7VdRYhcHG','W4rDW6PA','bSottmox','W6eQcHu7vCo3W4WivKdcNSo0rSoTiwZcHCopW4O','W6e1WOr3cG','juWjWRSx','k8oPWPmHlLZcKW','r8kXWPDrW7BcTdldPSoFtCo+txfXD8kreCkoja','W5VcVNv1Ea','WR1FWOKhW6m','W5VcVSo5W7GTWO/dKmoxcSoIpKtdIvxdKCk3EcVdMxO+','e8kOW4ZcTNNcLgRdKCootvK','WONcQtiKjtFdUCkPBCkbW5tdUdBcGsJcV8khWP/dKSoQ','c0FdJCkPWRi','WPVcVsiN','WPjyWOOhW70','irrQWQO','j8oDW6n/W6ewW50JjhpdGSkkyG','z8oOWOdcIYj/W7X7','WPjPsuG','WPJcRta9iZhdKmknymkkW7/dKq','zq9EW7HBW5/dHSkKW6JcI8oGWP7dJW','W4CwfSoLW4/dMJRcLG','n2BdOmkyWPddOa','W4hdSXNcJSobhfO','d0RdGSk5','WPnedG10mmkNW5ldO8oZBXab','W6fjwCk5','WR3cRX81da','c8kOW6pcUgi','WR8sWOxdV8oB','WPVcUJ4LjtRdQCklA8kb','zmoJWOlcNI8','W7/dJ8o6vCojW7hdLHn4b8oYW7hdOti','WQLfW7CgWOiMW4X4bXqLnSo2','FYOTWOhcJ8kneIjdWOxcMriW','WRRdUsNcUCknWQVcO8kuW4qqW6myWRu','bmoLW5ypWQpdS2hdTSoDDmoDCLC','CSoeWPqtga','nqn0WRldKuVcHSkm','BCoeWPyc','WRfzshFcNJBdM8kyW4G6W5r6','h8oFuCoCW7aIb1G1vsvgnctdK8o/WQFcLSo6WQa','cuZdImk4WR8','e8okbtbz','dmkUW67cVq','a8oBt8ow','ohP2W4BdK8opqYj8','yxSiWPO0WRNcVW','WPpcR0/dN8kbsbJcJSoLWRNdUvK0','s8kSq8kxrG','W4BcRsurFh3dGLC','WPBcQCowWRWLe2/cQCogW5pcUSkKWOZcQ8oQluu+dvq','n8oCW4xcQmo/','emo7W7dcMCoLWQPcWOeQpZVcSSk5kgldKbLGWPO','WO8dW6X8W5eR','W4C/etGZ','r8ksr2a0CxDi','W4RcM3/dQmoG','b8o4W7a','WOnNs1mmWRTkbcddHCkunCkRWPT0WOddUIqSWQm','WO7cRJCQiY3dTmkuyCk8W5xdLIlcSsxcGmkEWPldLa'];_0x35c9=function(){return _0x137c59;};return _0x35c9();}
+"use strict";
+/**
+ * @file search-backend.ts
+ * @description Decides how `$search` behaves for an entity from the backend its data finally comes from.
+ *
+ * An entity is usually a projection on another entity, often of another locally served service, and so on until an
+ * external service or a real local entity is reached. That end decides:
+ *
+ * | Backend the data comes from                         | `$search`                                   |
+ * |-----------------------------------------------------|---------------------------------------------|
+ * | local (database / locally implemented entity)       | case-INSENSITIVE                            |
+ * | remote OData V4 (`kind: "odata"` / `"odata-v4"`)    | case-INSENSITIVE                            |
+ * | remote OData V2 (`kind: "odata-v2"`), anything else | case-SENSITIVE                              |
+ * | SOAP (`kind: "soap"`)                               | not supported: the term is ignored          |
+ *
+ * V2 / V4 is read from `cds.requires.<service>.kind` in package.json. Case-insensitive search needs `tolower` on
+ * the backend (pushed as `contains(tolower(field), word)`), which OData V2 services such as S/4
+ * `API_BUSINESS_PARTNER` reject, so V2 keeps the exact, case-sensitive `contains`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.searchModeOf = exports.effectiveSearchMode = exports.resolveSearchBackend = exports.backendKindOfService = void 0;
+const cds_1 = require("@sap/cds");
+const cqn_utils_1 = require("./cqn-utils");
+const service_resolver_1 = require("./service-resolver");
+const soap_adapter_1 = require("./soap-adapter");
+const search_functions_1 = require("./search-functions");
+/** Safety bound for projection chains (a cycle can not be resolved). */
+const MAX_HOPS = 20;
+/**
+ * Kind of an external service, from `cds.requires.<service>.kind`.
+ *
+ * @param service  Service name as used by `cds.connect.to`.
+ */
+const backendKindOfService = (service) => {
+    const kind = String(cds_1.default.requires?.[service]?.kind ?? '').toLowerCase();
+    if (kind === 'soap' || (0, soap_adapter_1.isSoapService)(service))
+        return 'soap';
+    if (kind === 'odata-v2')
+        return 'odata-v2';
+    if (kind === 'odata' || kind === 'odata-v4')
+        return 'odata-v4';
+    return 'other';
+};
+exports.backendKindOfService = backendKindOfService;
+/**
+ * Follows `entityDef` through projections and locally served services to the backend its data comes from.
+ *
+ * @param entityDef  CDS entity definition.
+ * @param opts       `startIsLocal`: `entityDef` is the entity the current request reads, which is local by
+ *                   definition (it is served by this process). Leave it off for other entities (an association
+ *                   target), whose own service decides whether they are external.
+ */
+const resolveSearchBackend = (entityDef, opts = {}) => {
+    const chain = [];
+    let def = entityDef;
+    for (let hop = 0; def && hop < MAX_HOPS; hop++) {
+        chain.push(def.name);
+        const [service] = (0, service_resolver_1.splitServiceAndEntity)(def.name);
+        const isStart = hop === 0 && !!opts.startIsLocal;
+        // SOAP first, at every step: a SOAP service is also served by this process (its adapter), so it would
+        // otherwise look "local" and get a search it can not do
+        if (service !== 'db' && !isStart && (0, exports.backendKindOfService)(service) === 'soap')
+            return { kind: 'soap', service, chain };
+        // an entity of an external (imported) service: that service is the backend
+        if (!isStart && service !== 'db' && !(0, service_resolver_1.usesLocalServiceSemantics)(service))
+            return { kind: (0, exports.backendKindOfService)(service), service, chain };
+        const from = def.query?.SELECT?.from ?? def.projection?.from;
+        if (!from)
+            return { kind: 'local', service, chain }; // a real entity: database / local handler
+        if (from.join || !from.ref?.length)
+            return { kind: 'other', service, chain }; // joins are not followed
+        def = cds_1.default.model?.definitions?.[(0, cqn_utils_1.resolveTargetEntity)(def)];
+    }
+    return { kind: 'other', service: chain.length ? (0, service_resolver_1.splitServiceAndEntity)(chain[chain.length - 1])[0] : 'db', chain };
+};
+exports.resolveSearchBackend = resolveSearchBackend;
+/**
+ * `searchModeOf` for a resolved backend, corrected by what the service is known not to support: a service that rejected
+ * `tolower` (S/4 OData V4 `API_PROJECTBILLINGREQUEST`, `BUSINESSROLE`) can only search case-sensitively.
+ *
+ * @param backend  Result of {@link resolveSearchBackend}.
+ */
+const effectiveSearchMode = (backend) => {
+    const mode = (0, exports.searchModeOf)(backend.kind);
+    return mode === 'insensitive' && backend.kind !== 'local' && (0, search_functions_1.isFunctionUnsupported)(backend.service, 'tolower') ? 'sensitive' : mode;
+};
+exports.effectiveSearchMode = effectiveSearchMode;
+/**
+ * How `$search` behaves for data from this kind of backend (see the file header).
+ *
+ * @param kind  Result of {@link resolveSearchBackend}.
+ */
+const searchModeOf = (kind) => {
+    if (kind === 'soap')
+        return 'none';
+    return kind === 'local' || kind === 'odata-v4' ? 'insensitive' : 'sensitive';
+};
+exports.searchModeOf = searchModeOf;

@@ -1,1 +1,458 @@
-function _0xb97b(){var _0x4cca26=['W7VcP8k6dsBdRSkGWQrwEmoTWQpdV8kXW7VdJa','xSk3W4m','cgPGESoRs0vWpCkJW4lcIa','ymktW7/cOaDN','W53dSCkXWRlcJW','tcBdI08','urxdT8k3x8olWRW7zG','d8keWRa','W7VdNrxdTXS8W5fIlmku','r1CwW4XA','W4dcSCoCWRzlpa','rmonWRC4W44','WOddLCkHWOLiW53cNmomsCoGrx0','WQJcRCk4W7VcPxldVxlcGSk0pay','kHJcVrjCWPmaW6VcPW','oCkVWRaFkq','W5lcQWtdOuSq','aa1LW4xcLh1iW5m','wmo9WRqNW6G','lvTfbW','W4dcSqBdIe8aWPq','n8kIiSkNW6bh','omovia','DCkjg8kpW7HP','WQNcSCk1ctFdUCkTWQv0lCoGWQ/dP8kTW7NdJmk2','uG/dSCkT','s8klWOZdTmk9','E8oZW47dNmk8','ufJdUXnS','WP/cLSkIzh1icJ5pr8kX','W71hW6Tmoa','W5ldTK1uW6LU','W4K8kCoeiCkM','smk6W4KKWPNcTCoPW7iIW713W4i','W6VdMqhdSqSKW64','WQpcP8kVW5VcPvddUxJcVa','smoknmkMW5ddMG','WQZdNLDrW7KOW5ecW5uyFeVdQa','r8kWW4K3WOZcTa','a2qAWOb+qHRcGW','WOlcNhWtWRxcGI0','W4vOWRbnxqy','W5BdSCkT','fstdQsxdPtddStK','g8kgW6dcQZe','W5y8mW','oSkEW4FcQqFcL8oGW78','W6dcSCkrgJFdU8k8','etBdJq','AmkYbxtcMJtdMCkSW40n','vSkoWQVdJa','omosemo0BG','of4FWOfLrqxcMCkOW5NdUq','mmkUiSkK','W7ZcPCkXcW','lv1JFCoH','cCkjWRm8','W5FdVubFW6HIA8oO','W73cGSoTWPGkWP3cU8odvSoQjXJcK8kdysehWQddI2xcGMescmk+W4GJWRu','gSoLWPfIWONcPCo9W5qhW5O','WRJdR8oWcW','W7/dNrpdUa','WPZdR8oYC8oW','W6BcMCoiWQLS','eSkqjCkMW5ZdIfNdNCkBWRa+W5u','WPxdVWVcRCoh','oSkPka','W5tcVZNdPNy','wcrMWQxdMG','WPqtWR9Qk8oo','uKebW6XZ','WOvxs8ofW7a','WORcQmoTW7ldMrz7e0VcR8ovW4f1','W4lcU8ogWRLwoSkpW4LbFG7cLKtcIa','W7yCbSoXfSkgWRWUm1JcQCk6W6buW4FdL8o7xq','jCoslmodEGm','huPjbCox','W7ldPmkTWRBcUW','WOWxWQnQoSos','xCkpdmkpW5K','W5tdVMfLW5i','WOpdT1XOW6u','WRFdKezE','oSk2WQOu','jSkMWRCBomkm','k8kKWQ8lkW','WP/dSCoEt8o6','W6dcJ8k1iqS','W53cHCkxbCoP','m8oVwJdcQbhdPSk6W4GLWQSo','W5WMWR3dSCkV','ySkQz8kK','WOFcNmkaBh5f','kSoKwYJcPq','WQtcPJpcIai','dIldKW','WRpdQ8oOESoY','l08lWOfLsXJcLSk+','uSoEkCkV','W4RcVCo2WRPZ','WOyBWQf5k8oi','BGnoW5PsrstcLCkLW6e','WRChW4zYWPS','W43dTLC','DmkdeCkn','ESkIW4pcKHu','W4VdICk1WOxcJW','qmk6W5RcHIe','W5tcTXpdPvO','WPqtWQv0kW','D8k6Fq','WP0hW4bTWRBcOmkzB8k/W4Sv','umojWQGKW4FcJSkOWOtcK1BcT8oZySkpm8knW53dSCouWRS','WOqDW4f6f8ocgZNdNCkSWR4EgtO','WOJcLSkaEh5mfGLOxCk4WO7dHmk6kW','W7NcRSkXasS','WQhdQ8oY','wJ7cR1mK','WQ3dPSoU','hZJdKZ7dItJdStpcJcTLcq','rSkEECkFWQW','qSk7W4q8WO3cUmoIW7i','WQNcOCkIW54','WO0xWR5+l8oDW4i','qa/dQ8kPwmo9WP0/CSojcSkKW77cN8oXASoUW6hcGq','W5ddPK5rW7H0','W5/cImo3W58oWOa','W7FcPSkScW','qmkuWQNdKq','eLGiWODj','WO3cKhqw','W49UWR9yvd9zkv4','WOBcO8kNW5lcPq','m8kxW4ZcOXBcKq','lXldVbJdQXNdGaVcIH1uiCkpWRaQW7G','jCoelSodAWdcU23cGW','m8oHqcFcOq','W5ddOWtdUaSMW7f0','WO8EWRH6dq','CdGH','l0HCf8oNWR4','WRFcRrlcSsq','ucJdJG','W4JcSCouWRbkomkC','W7ldTKjbW7nJASkHWQlcVNGWoIRdSGWshSoNWReeW6RcHeu6ACkdWPdcKmoWWQzpoZtcKCkdW5G5s3CoWQBcHfBdLCoGsCkaWP3dS8k2WRpdH8kGzSkCh8kO','qHmel8osW4L7lxz6yf/dMsKiWOZdUSkBhSod','WRJdUmo3aW','WOtcJmkKxLS','WQNdPSoNc8kbk05k','o8kuW4BcHq8','wSk4W4dcGcPaoabDWPuN','lCovmG','v8oqW6ZdNmkv','W4rtW59W','uCoEna','WQ/cSLaJWO8','mf4xWO9/ra','yb/cVeq','WQNcOCkFru0','W43dOCkVWO3cUW','nmoLuIxcVbtdVa','tCk5W4yKWRxcVCo3','WQddO8oVd8kq','wfCwW4Xzsa','WQBcL8kGC0C','ieTvk8og','uSoOdCk+W5G','pSofnSokFaq','W73cO8kIdYddRG','W4GfhSk6W5zZWPTqhge','WOqiW4DGW7JcSmkFD8kJW5aEdmo5','nuXEbCo2WQu','W4zxW5XYaSoA','pSoHwse','WPdcMhy','W5tcUXi','W5JdVff+W7jIE8o3W6C','WQRdT8osDCo7','m8kDW5xcOra','x8kZW53cGJbB','CCo7W6xdQ8kXetT3rG','WPDTD8kvzSo3W5DscLhcJSkQW5X8','ftNdNIBdNtxdUJm','WPFdQ0xcVuqXWRnMW6VdOG','zmohiCk6W6i','WOycWQPKfW','jCo8cmotCq','WOTUWPJdGCkOfc1PWQRcQCkUWR3cT8kcWObVjCku','W6BcOSotWRrY','F8kngCkBW6K','ewnXoCo3r1L6vSkLW5RcLCoTzwOFdHZdI08ZuCoPWQCWWPNcLGldVmooW49vmXDretOiWQfboZ0+sCoyieVcNaZdO2fljCoeq0vnWQ1PxCkgWQpcHSkErvjfW75esa','W6qQnmomnSkNWOixg2/cMmolW4vJW7dcS8opEZNdJYldKb/cLtXjC8oOoUkcRmkrW5OhWPjYz0XNjKac','W7jQWQzuwq','W7VcVmovWRvq','ACo1W7tdRCk4lG','W4G2i8ogoq','W7BdNGldMtO','W4dcImoRW44tWOVcRq','B8k2z8kJ','WOydWPDOhG','tuiiW5zs','DSoYpSkYW6y','W7RdLMvYW4HkwSoeW5hcNKiCva/dJcm8nCooWOfS','W5JcVSkraSoX','WQ3dNLbv','W4tcQX3dOuOWWPLgW7JdKSkIm8o+W67cTCkjWPVcRaS','Emo7W65ofCknW4n0g8oc','WPGgWOiJrCklaMNdGCkCWRyRfsu','W4mRkmoo','W5LgW4b8gmovxZ7dGa','oCkKWPatfvBdVrHrtu1hWQRcOKdcVCo/WP8HW5pcSG','WRtdKezxW7ai','W5pdSLm','BSoXW7i','mf4FWPW','tSk7W5mIWPhcUCo0','oCkzW5e','p8kIkSkPW7PgDCotWRFdHCof','E8k3W6OvWPW','W4RcUXRdQLOl','sSkPoCkTW49v','WPpdThvIW5y0W6eDW7eTtg7dMf9ZiIBdSq','lCoXfmoGqW','W4C0WPddNSk/kcTHWRNcVSkVWOlcRmoCWOvUpSkcaa','WRldQb3cJCo6yq','W4RcUmotWQvYnCky','A0NdRq','W5pdSCkU','W6RdKHpdUqOXW55ImW','WRxdRHRcGq','WOpdMKvGW5K','gCoVxqBcNW','vSoEWQ4U','yaZcU0yiWRW','BCkAiCk8W5u','W5FdTCkZWQBcNKK','W4bUWRjnwr1si27cN8kBxW','WOVcRwSkWOe','W404na','ub/dPa','vCkjWRVdKSkcu8kB','W63cP8kYhsi','DYmRhSoLW6HleW','j8oFiSod','lfqj','yG4tkmoc','gCkclq','W7yeWRJdOmkymXfnWORcHCkyWOlcJmo8WQvohSkIimkVDmkDW7aquwK','WPVcJmkDyW','Bu3dUqnyWR4','W7/cO8k8hsddQq','WRKLWPTjbG','r0ykW4jdrW','oSoNl8kHW7HmDmowWRNdN8otWPiNld4IuYVcLSktW7SKvCkQW7RdIY/cVre3c2zOtSkgW6dcL8ojW6vwW7yZW7dcPSkAcmkOsa','WOJcLSkaF2TefG5Tw8k6WP4','WRFcPW0','ymk0W7y+WQ8','fMr5Fa','e8kmp8kE','tuOiW5fsxq','vbVdRSkWwCoD','WRNcPN8bWO3cGt05aJ8','W6pcKmkcmcq','FKOIW7bv','kKXremoHWQxdVWOQq1pdNL4','WOytWQf+kW','WQJdSGZcImoHySoTW6u','WPtcNgKDWQZcMdWnhsLSWQmlW4nOWPpcVNhdSfmUqq','W4VcVWddRKykWPjaW4hdLmkZea','aCkWbmk0W4y','W4PYWO9wwqrVnv/cHSkCwmk2','WQtdJmo5DSo/','W7hcQ8kgl8oq','ySoFWRO7WOtcM8kPWQq','mCkDW5y','WQBcPSk/W5/cP2JdTxxcPSkJkq','WO7cLCklzM9dda4','W4yGWPxdKq','dmkmkG','WRVcQSkzrx4','z8kzW4OkWOi','WOe6kmowo8k6','qG14WONdRvq','xCk3W57cGa','bWDPW4tcKG','W53dSKbBW7G','WQ3dKeq','W4RcTCoEWQjA','W4XzW4e','l8o+lSo0wG','WRtdRb/cGCoM','WQhcQCkHW58','WR3cQrdcPtxcKW','W7tcO8kZgSoFW4u','WPlcKx8C','W4WVWORdL8k1ccD0WQlcQ8kI','rahcQe8dWQ1v','smk6W4S8WP3cV8oZW5etW71ZW4nIWQX4ACkSlSkSzSkCuXBcQq','WPFdQKdcUrysWQ5fW57dGSkI','ua1MWP3dRq','nK5vs8oaANrAn8kEW6tcQSkytLCIAY0','vmonWRC','k8ktW5dcOWFcJq','cw56FSo3sG','vSo2WP0tW5i','jSkSWRODimkVW7nOcG','WR9ZrSouW4q','W5/dO8k5WQtcJG','WP/dGSohuSoH','W4OghSk1W7n5WPLWle8','W5yKWO0','W5pdV8kTWRi','W7RcUmoFWPX9','e8kmmmkFt8k5','WPldImouuCoC','WQ7cPmkG','gSkFo8kkqG','Emk+fmklW6G','W5dcVXG','W6ldH8klWOxcOG','xmk0W5NcGcDh','nSkMpa','AmkzemkAW7vnWRvKmmo4eSkXW6tdJ1FdSG','tCkNW4G9WR3cSSoZW7miW7DQ','l8kOamkVW6nkC8o5WRNdMmot','W7/cNSkUfSo7','WOVdGCoCrG','xmkAW73cKcW','W6JdLCkCWPpcQwKsgeJcMmo7W791WPtcO8oAWRWwWPLsWQpdQJH1WQxcNq','W7yCbSoXfSkgWRWUm1JcQCk7W6bcW53dMSoXwrldOH3cUtZcUbf2','WPicW4a','yZmJ','WPr0W4JcGSkXkqfbWQRcJG','mCkOjCkU','W4i8mW','qmkZW5lcLYDBbrfgWO4X','fJJdLcq','fx5NCq','FSo7W6RdV8kWnc0','j8kIWQK','x1yuW4Lsxa','W4/dV8krWQ7cNuq/fMJcS8ob','cCktWQm3','nCkKjmkaAa','W5e2c8omiSkRWPeGe3pcKW','WPpcVCkCENS','BCkdoCkhW7TKWQHemmoNiW','WPldMs7cTSoxtSoxW5TNid7dRbiJWOyYmaq','W5D3WOHTyq','W4xcVWFdQa','qeOkW4e','WPJcJmkmEh5F','WPPaqmoV','WONdHCoFrmonWPq','emowW7JcKmkdt8ktW7xdTJK','t8onWQ8OW4pcKCkJWRdcVvlcVmoJ','W5/cOmoaWRHrm8kbWO9i','BYldIuNdLq','mSo6bCoTqW','e8ksWQy/kq','dWDLW5BcGxW','vcZdKu7dLCobB8kUySk0WPNcRZpcJSkTmmkDEJpcLG','E8kiDSkvkKddPfJcPmkzrCkxaW','WRxcVfSGWOpcPGyyoWPpWOu9W65vWRFcMeS','uCofWQeU','r8khWQldKCkx','W6lcN8k1d8oW','ACo7W4RdPCkQpYXnvhTH','W5JcU8oEWR5imCkA','WOBdH8o4hSk3','WOqxWQ94kq','W4tcU8o2WRjA','nmoLuI3cPX3dMmk7W6q6WQayDCkI','WPGgW5q','W5JdOuL8W7O','dmkgk8kkwmk0gaC4','W5iPWPZdNmkO','CWJcVq','BCkSsmk1WOWFWPO','W6BcTSk4dtFdRCkSWRn1','smoqc8kKW5a','W55DW556aCoxra','xCkFn8kVW5tdM0NcMmktWRvUW4ufg8oWgmkYsMG+zdxdKSksW4NcOvWEWP83W7pdTs9UxmoCmwS','x8k5W5dcHcH4na1h','uCoqnSkVWPxdNulcKCkyW7eHW4Gpv8oKbSkVbwm2DMhdLCksWOFdO1uCWODYW6NdVMaOwmoym3yRW5xcMSk/ymkAWQfUgCkuW6KfdehdSmk1ACkEBCkZnCkpz8khWQz1AbS','W6dcR8kU','W4dcImo4W4OzWOdcJSocvSoIExFcGq','cqtdJcpdNG','W6hcPCkYcW','sMNdIJz+WOi7W7FcJmkjWQagWRFdRvldPrTGW5tdVq','WQ3dUqhcG8oGBG','c8kEcCkpW6e','uSk9w8kWWQq','wCoria','vSoEWRiM','oCovnmoqCbtcTW','vJmSkmkXf39WdmkOW6pcVG','uCktWR3dIG','W6JcRmk0pY3dV8k3WQu','ubNcI04+','ASkdgmkn','WOT2nmognmk8WOalx2lcL8kiW550W7VdUG','W7/cKCoZWOn8hmk3WRLJtIZcQ2tcVMLlWQORW5jq','W6TbW4f6fCoBvYZdKmkIWQbkesKdh2bYWQO','r8oBB8oiAmkDdqCyW4G','F0xdPXbyWRG','fmkFW6TYW6ZcNmkDWO7cR08','WRdcOHO','DZ8PcCo0W7m','W5e3mSoGiq','v8khWQldL8kxrq','EgyLW7D0z8ozWRBcRIxcTt16qCkEufjnWPqp','tbxcOSk3u8ozW5G9yCoeqSkzW6RcMmo6zG','WRVcP8kaW5xcVN7dRKlcRSkMkq','sYJdLKldKCoEzmkAtmkWWPlcVW','WOBcRCkFC0S','bCkfWQhdL8kCqG','WPKiW4DRWRdcUSkEFmkDW5GjxW','aSoIWOFdKxXcaXzGWPaQ','FmkaemkfW6LVWQ50','W5tdOmk4WRpcI08P','FCk5W4FdHtrgiHXrWOD4ccZdO8ouWPvnl8k2WO3cKmojhmkgp8kPWQX4','Cmk+E8kGWPSk','aaDbW7dcGq'];_0xb97b=function(){return _0x4cca26;};return _0xb97b();}var _0x52685b=_0x111e;(function(_0x59c99d,_0x36ad6b){var _0x3eeccc=_0x111e,_0x1b121a=_0x59c99d();while(!![]){try{var _0x57a9a1=-parseInt(_0x3eeccc(0x1ee,'OcpV'))/0x1*(parseInt(_0x3eeccc(0x2fb,'HS15'))/0x2)+-parseInt(_0x3eeccc(0x2d1,'3ctE'))/0x3+-parseInt(_0x3eeccc(0x213,'@*o['))/0x4*(-parseInt(_0x3eeccc(0x291,'P5Z%'))/0x5)+-parseInt(_0x3eeccc(0x328,'AhvL'))/0x6*(parseInt(_0x3eeccc(0x26f,'yccA'))/0x7)+-parseInt(_0x3eeccc(0x2af,'x(L2'))/0x8+-parseInt(_0x3eeccc(0x27a,'OcpV'))/0x9*(parseInt(_0x3eeccc(0x31e,'f*0r'))/0xa)+parseInt(_0x3eeccc(0x1fa,'V9sY'))/0xb;if(_0x57a9a1===_0x36ad6b)break;else _0x1b121a['push'](_0x1b121a['shift']());}catch(_0x31e190){_0x1b121a['push'](_0x1b121a['shift']());}}}(_0xb97b,0x65827),(Object[_0x52685b(0x2b9,'f*0r')](exports,_0x52685b(0x24a,'x3Zt'),{'value':!0x0}),exports[_0x52685b(0x212,'yccA')]=exports[_0x52685b(0x2d3,'aIgY')]=exports[_0x52685b(0x24d,'OquO')]=exports[_0x52685b(0x231,'GCIH')]=exports['SEARCH_MAX_PUSHDOWN_FIELDS']=exports[_0x52685b(0x2ca,'HS15')]=exports[_0x52685b(0x2a0,'@sxO')]=exports['SEARCH_TUPLE_LIMIT']=exports['SEARCH_KEY_LIMIT']=void 0x0));let cds_1=require(_0x52685b(0x256,'mHxi')),alias_maps_1=require(_0x52685b(0x32d,'*U!%')),association_meta_1=require(_0x52685b(0x200,'P5Z%')),service_resolver_1=require('./service-resolver'),soap_adapter_1=require(_0x52685b(0x35e,'s]&1')),search_1=require('./search'),search_backend_1=require(_0x52685b(0x2d6,'V9sY')),search_functions_1=require('./search-functions'),SELECT=cds_1[_0x52685b(0x315,'x3Zt')]['ql'][_0x52685b(0x221,'3uNW')],M='search-pushdown',wrap=(exports[_0x52685b(0x373,'JQ1y')]=0xc8,exports['SEARCH_TUPLE_LIMIT']=0x32,exports[_0x52685b(0x222,'d@Jf')]=0xa,exports[_0x52685b(0x2d7,'rQEk')]=0x1f4,exports[_0x52685b(0x23c,'P5Z%')]=0x64,_0x1c8720=>0x1===_0x1c8720[_0x52685b(0x1f0,'OquO')]?_0x1c8720[0x0]:{'xpr':_0x1c8720}),orOf=_0x47f627=>_0x47f627['includes'](_0x52685b(0x38a,'l@(*'))?_0x52685b(0x22a,'@sxO'):0x0===(_0x47f627=_0x47f627['filter'](_0x27b960=>_0x52685b(0x2f8,'mHxi')!==_0x27b960))[_0x52685b(0x304,'3uNW')]?_0x52685b(0x24e,'ozKG'):0x1===_0x47f627[_0x52685b(0x1f1,'s]&1')]?_0x47f627[0x0]:_0x47f627[_0x52685b(0x1e6,'AhvL')]((_0x2716e4,_0x291238)=>0x0===_0x291238?[wrap(_0x2716e4)]:['or',wrap(_0x2716e4)]),andOf=_0x3e376a=>_0x3e376a[_0x52685b(0x326,'#4kZ')](_0x52685b(0x270,'Lw!6'))?_0x52685b(0x264,'rQEk'):0x0===(_0x3e376a=_0x3e376a['filter'](_0xe4d835=>_0x52685b(0x300,'OquO')!==_0xe4d835))[_0x52685b(0x2f7,'rQEk')]?_0x52685b(0x22a,'@sxO'):0x1===_0x3e376a[_0x52685b(0x269,'41[h')]?_0x3e376a[0x0]:_0x3e376a[_0x52685b(0x226,'rQEk')]((_0x14f211,_0x208a58)=>0x0===_0x208a58?[wrap(_0x14f211)]:[_0x52685b(0x32f,'kQ6d'),wrap(_0x14f211)]),containsCond=(_0x4f32fb,_0x207559,_0x327613)=>_0x327613?[{'func':_0x52685b(0x2fe,'j*!0'),'args':[{'func':_0x52685b(0x2b5,'rQEk'),'args':[{'ref':[_0x4f32fb]}]},{'val':_0x207559['toLowerCase']()}]}]:[{'func':'contains','args':[{'ref':[_0x4f32fb]},{'val':_0x207559}]}],inCond=(exports[_0x52685b(0x346,'f*0r')]=containsCond,(_0x4a5258,_0x507911)=>[{'ref':[_0x4a5258]},'in',{'list':[..._0x507911][_0x52685b(0x219,'#4kZ')](_0xedc7e=>({'val':_0xedc7e}))}]),searchFieldOf=(_0x39b334,_0x4f8e2f,_0x134541)=>_0x4f8e2f[_0x39b334]??(_0x134541?_0x39b334:void 0x0),andWhere=(exports[_0x52685b(0x2c7,'D^qP')]=searchFieldOf,(_0x250a8e,_0x10108c)=>_0x250a8e&&0x0<_0x250a8e[_0x52685b(0x372,'tF&!')]?[{'xpr':_0x250a8e},_0x52685b(0x378,'p)%o'),{'xpr':_0x10108c}]:[wrap(_0x10108c)]),keysPerQuery=(exports['andWhere']=andWhere,_0x1ab30c=>0x1===_0x1ab30c?exports['SEARCH_KEY_LIMIT']:exports[_0x52685b(0x2b0,'x3Zt')]),listCond=(_0x399997,_0x34817b)=>0x1===_0x399997[_0x52685b(0x302,'kQ6d')]?inCond(_0x399997[0x0],_0x34817b[_0x52685b(0x263,'d@Jf')](_0x194c16=>_0x194c16[0x0])):orOf(_0x34817b['map'](_0x352d12=>andOf(_0x399997['map']((_0x55a839,_0x444783)=>[{'ref':[_0x55a839]},'=',{'val':_0x352d12[_0x444783]}])))),tupleCond=(_0x3893f3,_0x15d16b,_0x359e06=!0x1)=>0x0===_0x15d16b['length']?'false':_0x359e06&&_0x15d16b[_0x52685b(0x230,'pxDu')]>keysPerQuery(_0x3893f3[_0x52685b(0x2ad,'j*!0')])?[{'__chunks':{'fields':_0x3893f3,'tuples':_0x15d16b}}]:listCond(_0x3893f3,_0x15d16b),findChunkAtoms=(_0x3587fe,_0x1c6575)=>{var _0x17b2d3=_0x52685b,_0x4fe96e={'dsded':function(_0x32a2cf,_0x518c56){return _0x32a2cf==_0x518c56;},'nhwnT':_0x17b2d3(0x338,'x(L2')};Array[_0x17b2d3(0x31c,'aIgY')](_0x3587fe)?_0x3587fe[_0x17b2d3(0x301,'yccA')](_0xb75de7=>findChunkAtoms(_0xb75de7,_0x1c6575)):_0x3587fe&&_0x4fe96e[_0x17b2d3(0x278,'pxDu')](_0x4fe96e['nhwnT'],typeof _0x3587fe)&&(_0x3587fe[_0x17b2d3(0x376,'lGmL')]?_0x1c6575[_0x17b2d3(0x340,'@*o[')](_0x3587fe):Object[_0x17b2d3(0x249,'Yiny')](_0x3587fe)['forEach'](_0x2dd679=>findChunkAtoms(_0x2dd679,_0x1c6575)));},replaceAtom=(_0x4a95ae,_0x30dee0,_0x2332ae)=>_0x4a95ae===_0x30dee0?_0x2332ae:Array['isArray'](_0x4a95ae)?_0x4a95ae[_0x52685b(0x317,'pxDu')](_0x2e70dd=>replaceAtom(_0x2e70dd,_0x30dee0,_0x2332ae)):_0x4a95ae&&_0x52685b(0x285,'owYL')==typeof _0x4a95ae?Object[_0x52685b(0x288,'AhvL')](Object[_0x52685b(0x21c,'AhvL')](_0x4a95ae)[_0x52685b(0x298,'@*o[')](([_0x489d23,_0x226665])=>[_0x489d23,replaceAtom(_0x226665,_0x30dee0,_0x2332ae)])):_0x4a95ae,expandChunks=_0x2622e1=>{var _0x2fb120=_0x52685b,_0x3680f7={'agvwg':function(_0x37ffea,_0x297644,_0x2fef4f){return _0x37ffea(_0x297644,_0x2fef4f);},'MnNxM':function(_0x237d53,_0x3a5add){return _0x237d53===_0x3a5add;},'JDjVH':function(_0x276371,_0x38e82c){return _0x276371<_0x38e82c;},'Qvwdn':function(_0x4006ec,_0xebf155){return _0x4006ec(_0xebf155);},'CkqPL':function(_0x43fa59,_0x462a3b){return _0x43fa59+_0x462a3b;},'LLmZz':'and'},_0x41ae3e=[];if(_0x3680f7[_0x2fb120(0x342,'@*o[')](findChunkAtoms,_0x2622e1,_0x41ae3e),_0x3680f7[_0x2fb120(0x1e9,'z&F1')](0x0,_0x41ae3e[_0x2fb120(0x2cb,'@sxO')]))return[_0x2622e1];if(!_0x3680f7[_0x2fb120(0x385,'5]gq')](0x1,_0x41ae3e[_0x2fb120(0x2a6,'CO9I')])){let _0x338463=_0x41ae3e[0x0],{fields:_0x3490e8,tuples:_0x1436ce}=_0x338463[_0x2fb120(0x314,'qteA')];var _0x1d0758=_0x3680f7['Qvwdn'](keysPerQuery,_0x3490e8[_0x2fb120(0x341,'@*o[')]),_0x4f7f20=[];for(let _0x12a33e=0x0;_0x12a33e<_0x1436ce[_0x2fb120(0x27e,'zt[T')];_0x12a33e+=_0x1d0758)_0x4f7f20[_0x2fb120(0x306,'Yiny')](_0x1436ce[_0x2fb120(0x358,'owYL')](_0x12a33e,_0x3680f7[_0x2fb120(0x22b,'d@Jf')](_0x12a33e,_0x1d0758)));let _0x1e72f5=_0x41014e=>wrap(listCond(_0x3490e8,_0x41014e));return _0x2622e1[_0x2fb120(0x1fb,'JQ1y')](_0x338463)&&!_0x2622e1[_0x2fb120(0x366,'AhvL')](_0x3680f7[_0x2fb120(0x25d,'AhvL')])?_0x4f7f20[_0x2fb120(0x387,'*U!%')]((_0x4f94d8,_0x5256f3)=>0x0===_0x5256f3?replaceAtom(_0x2622e1,_0x338463,_0x1e72f5(_0x4f94d8)):[_0x1e72f5(_0x4f94d8)]):_0x4f7f20['map'](_0x3f48db=>replaceAtom(_0x2622e1,_0x338463,_0x1e72f5(_0x3f48db)));}},matchingKeys=async(_0x12657a,_0x2c9dd1,_0x5d4648,_0x3f0157,_0x30bb7a,_0xf4b082,_0x5ef1d8)=>{var _0x175635=_0x52685b,_0x24c346={'tvTTY':function(_0x4dce3b,_0x4ad75a){return _0x4dce3b!==_0x4ad75a;},'CnuzC':function(_0x524575,_0x200e95){return _0x524575===_0x200e95;},'NcqoB':function(_0x527b35,_0xad8548){return _0x527b35*_0xad8548;},'zdoll':function(_0x1a1ea7,_0x47c5a6){return _0x1a1ea7(_0x47c5a6);},'BXqNG':function(_0x1c9bc4,_0x238337){return _0x1c9bc4!==_0x238337;},'dFFwZ':_0x175635(0x323,'rra7'),'VKYYK':function(_0x22be58,_0x4759ce){return _0x22be58!==_0x4759ce;},'CFhXp':function(_0x16e79c,_0x2f4af9){return _0x16e79c===_0x2f4af9;},'pUjaJ':_0x175635(0x258,'x!e#'),'pYhDe':function(_0x4959b0,_0xd158b0){return _0x4959b0(_0xd158b0);},'zQolC':function(_0x2ca40e,_0x33b45b){return _0x2ca40e||_0x33b45b;},'JtNlK':function(_0x12338f,_0x2d1705){return _0x12338f==_0x2d1705;},'nWItm':function(_0x3f2e3f,_0x4a1bde){return _0x3f2e3f<=_0x4a1bde;},'wVsAD':_0x175635(0x264,'rQEk'),'Whgdo':function(_0x2433d8,_0x3c3541,_0x3a1b50,_0x4df2f0,_0x2423ee,_0x29c33b,_0x447195,_0x25ea39){return _0x2433d8(_0x3c3541,_0x3a1b50,_0x4df2f0,_0x2423ee,_0x29c33b,_0x447195,_0x25ea39);},'oLNuh':function(_0x23131a,_0x2acbf9){return _0x23131a>_0x2acbf9;},'xDrqq':function(_0x2f8052,_0x179a68,_0x55c9e6){return _0x2f8052(_0x179a68,_0x55c9e6);},'mUQVg':function(_0x8577d9,_0x45e2e0){return _0x8577d9(_0x45e2e0);},'ujMJC':_0x175635(0x237,'p)%o'),'Ikkhl':function(_0x282f56,_0x461924){return _0x282f56!==_0x461924;},'HVwdb':function(_0x15c5a3,_0x10345c){return _0x15c5a3==_0x10345c;},'tnuCt':'number','XxepW':_0x175635(0x2e3,'[w$&'),'zbvqX':_0x175635(0x2ea,'owYL'),'BApXR':function(_0x4ceb67,_0x261c9e){return _0x4ceb67>=_0x261c9e;},'DcygU':function(_0xa7db32,_0x39200b){return _0xa7db32<_0x39200b;},'MSCGE':function(_0x411742,_0x3b423c){return _0x411742+_0x3b423c;},'dcaBy':function(_0x1115a9,_0x20388d){return _0x1115a9!==_0x20388d;},'Qkzma':function(_0x360ed1,_0x82b359){return _0x360ed1<_0x82b359;},'UiFUb':function(_0x240e1d,_0x3c2a2b){return _0x240e1d&&_0x3c2a2b;},'gMtbP':_0x175635(0x204,'V9sY'),'IoiBV':function(_0x31d331,_0x2989d5){return _0x31d331+_0x2989d5;}},_0x5e6aba=_0x24c346[_0x175635(0x22c,'f*0r')](_0x2c9dd1?.[_0x175635(0x386,'s]&1')]+'|'+_0x5d4648[_0x175635(0x292,'kQ6d')]('.')+'|'+_0x3f0157+'|',_0x30bb7a),_0x489f31=_0x5ef1d8[_0x175635(0x384,'x(L2')](_0x5e6aba);return _0x489f31||(_0x489f31=(async()=>{var _0x464972=_0x175635,_0x5d1f61=_0x2c9dd1?.['elements']?.[_0x5d4648[0x0]];if(_0x5d1f61?.['target']){var _0x321e1d=(0x0,association_meta_1[_0x464972(0x250,'x3Zt')])(_0x5d4648[0x0],_0x2c9dd1,_0x5d1f61[_0x464972(0x332,'ozKG')],_0x5d1f61,_0x12657a[_0x464972(0x262,'#4kZ')]);if(_0x321e1d&&!_0x321e1d[_0x464972(0x318,'JQ1y')]&&!_0x321e1d[_0x464972(0x35f,'z&F1')]?.['length']&&_0x24c346[_0x464972(0x22f,'3uNW')](0x0,_0x321e1d[_0x464972(0x2c4,'owYL')][_0x464972(0x349,'z&F1')])&&_0x24c346['CnuzC'](_0x321e1d[_0x464972(0x276,'@*o[')][_0x464972(0x33b,'ozKG')],_0x321e1d['targetKeys'][_0x464972(0x30c,'#4kZ')])){var _0x3c2dd9=_0x24c346[_0x464972(0x36e,'qteA')](_0x24c346[_0x464972(0x34a,'f*0r')](keysPerQuery,_0x321e1d[_0x464972(0x370,'GCIH')][_0x464972(0x36b,'D^qP')]),exports[_0x464972(0x271,'3ctE')]),_0x5d1f61=cds_1[_0x464972(0x30f,'lGmL')][_0x464972(0x208,'V9sY')]?.[_0x464972(0x321,'qteA')]?.[_0x321e1d[_0x464972(0x207,'5]gq')]];if(_0x5d1f61){var _0x1b23a1=(0x0,service_resolver_1['resolveServiceNameFromTarget'])(_0x321e1d[_0x464972(0x2eb,'tDmp')]);if(!(0x0,soap_adapter_1[_0x464972(0x253,'GCIH')])(_0x1b23a1)){var _0x9eaeb8=(0x0,search_backend_1['effectiveSearchMode'])((0x0,search_backend_1[_0x464972(0x2ae,'[w$&')])(_0x5d1f61));if(_0x24c346[_0x464972(0x38b,'z&F1')](_0x24c346['dFFwZ'],_0x9eaeb8)&&(_0x24c346[_0x464972(0x34d,'CO9I')](_0x464972(0x26c,'P5Z%'),_0x12657a[_0x464972(0x355,'3uNW')])||_0x24c346[_0x464972(0x277,'OcpV')](_0x24c346[_0x464972(0x2b3,'rra7')],_0x9eaeb8))){let _0x5629c4=(0x0,service_resolver_1['usesLocalServiceSemantics'])(_0x1b23a1),_0x4e831e=(0x0,alias_maps_1[_0x464972(0x2fa,'x!e#')])(_0x5d1f61,_0x12657a['cache'])['localToRemote'],_0x8b0cb8=_0x3d3768=>_0x5629c4?_0x3d3768:_0x4e831e[_0x3d3768];_0x9eaeb8=_0x35c79b=>{var _0x59137b=_0x464972;return _0x35c79b=_0x35c79b[_0x59137b(0x31d,'JQ1y')](_0x8b0cb8),_0x35c79b[_0x59137b(0x281,'zt[T')](Boolean)?_0x35c79b:void 0x0;};let _0x527e6d;if(0x1===_0x5d4648[_0x464972(0x389,'qteA')]){var _0x1db72f=_0x5d1f61[_0x464972(0x259,'z&F1')]?.[_0x3f0157],_0x8d2707=_0x24c346[_0x464972(0x357,'pxDu')](_0x8b0cb8,_0x3f0157);if(_0x24c346[_0x464972(0x2ff,'mHxi')](!_0x1db72f,!_0x8d2707))return;_0x1db72f=_0x24c346[_0x464972(0x210,'rra7')]('number',typeof _0x1db72f[_0x464972(0x2ad,'j*!0')])?_0x1db72f[_0x464972(0x349,'z&F1')]:search_1[_0x464972(0x217,'$4AI')],_0x527e6d=_0x24c346[_0x464972(0x1eb,'*U!%')](_0x30bb7a[_0x464972(0x1f1,'s]&1')],_0x1db72f)?(0x0,exports[_0x464972(0x30e,'AhvL')])(_0x8d2707,_0x30bb7a,_0x24c346[_0x464972(0x353,'^xUw')](_0x464972(0x383,'owYL'),_0x12657a[_0x464972(0x238,'x(L2')])):_0x24c346['wVsAD'];}else{_0x1db72f=await _0x24c346[_0x464972(0x206,'rQEk')](matchingKeys,_0x12657a,_0x5d1f61,_0x5d4648[_0x464972(0x2fc,'@*o[')](0x1),_0x3f0157,_0x30bb7a,_0xf4b082,_0x5ef1d8),_0x8d2707=_0x1db72f&&_0x24c346['zdoll'](_0x9eaeb8,_0x1db72f[_0x464972(0x21d,'tF&!')]);if(_0x24c346[_0x464972(0x343,'CO9I')](!_0x1db72f,!_0x8d2707)||_0x24c346[_0x464972(0x28c,'owYL')](_0x1db72f[_0x464972(0x2fd,'yccA')][_0x464972(0x302,'kQ6d')],keysPerQuery(_0x1db72f[_0x464972(0x265,'s]&1')][_0x464972(0x1f0,'OquO')])))return;_0x527e6d=_0x24c346[_0x464972(0x29e,'z&F1')](tupleCond,_0x8d2707,_0x1db72f['tuples']);}if(_0x24c346[_0x464972(0x33e,'d@Jf')](_0x464972(0x2f1,'pxDu'),_0x527e6d))return{'fks':_0x321e1d[_0x464972(0x1f9,'5]gq')],'tuples':[]};var _0x1dc2f1=_0x24c346['mUQVg'](_0x9eaeb8,_0x321e1d[_0x464972(0x2f5,'lGmL')]);if(_0x1dc2f1){var _0x1ea313=_0x5629c4&&_0x24c346[_0x464972(0x2a1,'GCIH')](_0x1b23a1,_0x12657a['req']?.[_0x464972(0x2d0,'x(L2')]?.[_0x464972(0x34f,'*U!%')])?_0x321e1d[_0x464972(0x25f,'Lw!6')]:_0x321e1d[_0x464972(0x273,'tF&!')]['split']('.')[_0x464972(0x239,'qteA')](),_0x5d1f61=await cds_1[_0x464972(0x37c,'rQEk')]['connect']['to'](_0x1b23a1),_0x48bcf8=_0x24c346[_0x464972(0x34b,'41[h')]==typeof _0x5d1f61['tx']?_0x5d1f61['tx'](_0x12657a[_0x464972(0x2c6,'rra7')]):_0x5d1f61,_0x29b08a=[];let _0x2123d4;for(let _0x5bb46c=0x0,_0x543567=0x0;;_0x543567++){var _0x512be6=SELECT[_0x464972(0x215,'V9sY')](_0x1ea313)[_0x464972(0x297,'5]gq')](_0x1dc2f1[_0x464972(0x361,'yl5*')](_0x5e3483=>({'ref':[_0x5e3483]})))[_0x464972(0x27f,'CO9I')](_0x527e6d)[_0x464972(0x1e7,'yl5*')](exports[_0x464972(0x2e0,'cThZ')],_0x5bb46c),_0x512be6=(0x0===_0x5bb46c&&(_0x512be6[_0x464972(0x2f0,'owYL')]['count']=!0x0),await _0x48bcf8[_0x464972(0x34c,'JQ1y')](_0x512be6)),_0x3e683c=(Array[_0x464972(0x2bf,'tDmp')](_0x512be6)?_0x512be6:[_0x512be6])[_0x464972(0x26a,'rra7')](Boolean);if(_0x24c346[_0x464972(0x2aa,'[w$&')](void 0x0,_0x2123d4=0x0===_0x5bb46c&&_0x24c346[_0x464972(0x324,'3ctE')](_0x24c346[_0x464972(0x2de,'V9sY')],typeof _0x512be6?.[_0x464972(0x25e,'V9sY')])?_0x512be6[_0x464972(0x2e5,'LLM4')]:_0x2123d4)&&_0x2123d4>_0x3c2dd9)return void _0xf4b082[_0x464972(0x236,'aIgY')](_0x24c346[_0x464972(0x1fd,'*U!%')],_0x24c346[_0x464972(0x279,'CO9I')],{'target':_0x321e1d[_0x464972(0x218,'d@Jf')],'word':_0x30bb7a,'total':_0x2123d4,'maxKeys':_0x3c2dd9});if(_0x29b08a[_0x464972(0x23d,'z&F1')](..._0x3e683c),_0x5bb46c+=_0x3e683c[_0x464972(0x304,'3uNW')],_0x24c346[_0x464972(0x277,'OcpV')](0x0,_0x3e683c[_0x464972(0x302,'kQ6d')])||(_0x24c346[_0x464972(0x371,'x!e#')](void 0x0,_0x2123d4)?_0x24c346[_0x464972(0x365,'tDmp')](_0x29b08a[_0x464972(0x389,'qteA')],_0x2123d4):_0x24c346[_0x464972(0x33c,'3uNW')](_0x3e683c[_0x464972(0x1f8,'owYL')],exports[_0x464972(0x37e,'p)%o')])))break;if(_0x24c346[_0x464972(0x339,'OquO')](_0x3c2dd9,_0x29b08a[_0x464972(0x220,'yccA')])||_0x24c346[_0x464972(0x1ff,'x(L2')](_0x543567,_0x24c346['MSCGE'](exports[_0x464972(0x337,'V9sY')],0x5)))return;}if(!(_0x24c346['dcaBy'](void 0x0,_0x2123d4)&&_0x24c346[_0x464972(0x205,'GCIH')](_0x29b08a['length'],_0x2123d4))){var _0x33cdf9=new Map();for(let _0x52a93c of _0x29b08a){var _0x22acaa=_0x1dc2f1[_0x464972(0x286,'kQ6d')](_0x477d98=>_0x52a93c[_0x477d98]);_0x22acaa[_0x464972(0x2d5,'3uNW')](_0x596e45=>null==_0x596e45)||_0x33cdf9[_0x464972(0x25b,'zt[T')](JSON[_0x464972(0x2a9,'rQEk')](_0x22acaa),_0x22acaa);}return _0xf4b082[_0x464972(0x261,'j*!0')](_0x464972(0x2e6,'^xUw'),_0x464972(0x2d8,'s]&1'),{'target':_0x321e1d[_0x464972(0x23e,'HS15')],'hop':_0x5d4648[0x0],'word':_0x30bb7a,'keys':_0x33cdf9[_0x464972(0x2b1,'mHxi')]}),{'fks':_0x321e1d[_0x464972(0x310,'x!e#')],'tuples':[..._0x33cdf9[_0x464972(0x23f,'aIgY')]()]};}_0xf4b082[_0x464972(0x261,'j*!0')](_0x464972(0x251,'yccA'),_0x464972(0x327,'D^qP'),{'target':_0x321e1d[_0x464972(0x22e,'l@(*')],'word':_0x30bb7a,'rows':_0x29b08a[_0x464972(0x313,'AhvL')],'total':_0x2123d4});}}}}}}})()[_0x175635(0x375,'f*0r')](_0x28b2e1=>{var _0x1dc200=_0x175635;let _0x2846c9=_0x2c9dd1;for(var _0x2ed0ed of _0x5d4648)_0x2846c9=cds_1[_0x1dc200(0x1e5,'f*0r')]['model']?.[_0x1dc200(0x21e,'kQ6d')]?.[_0x2846c9?.[_0x1dc200(0x2e8,'3uNW')]?.[_0x2ed0ed]?.['target']];var _0x3a5243=(0x0,search_functions_1[_0x1dc200(0x2ed,'aIgY')])(_0x28b2e1);_0x24c346[_0x1dc200(0x24c,'cThZ')](_0x2846c9,_0x3a5243)&&(0x0,search_functions_1['learnUnsupportedFunction'])((0x0,search_backend_1[_0x1dc200(0x35d,'mHxi')])(_0x2846c9)[_0x1dc200(0x20a,'D^qP')],_0x3a5243)&&_0xf4b082['info'](_0x1dc200(0x2ef,'3ctE'),_0x1dc200(0x37d,'#4kZ'),{'function':_0x3a5243}),_0xf4b082[_0x1dc200(0x33f,'d@Jf')](_0x1dc200(0x2a8,'mHxi'),_0x24c346['gMtbP'],{'target':_0x2c9dd1?.[_0x1dc200(0x381,'yl5*')]?.[_0x5d4648[0x0]]?.[_0x1dc200(0x1ed,'aIgY')],'error':_0x28b2e1?.[_0x1dc200(0x368,'ozKG')]});}),_0x5ef1d8[_0x175635(0x354,'#4kZ')](_0x5e6aba,_0x489f31),_0x489f31);},SUBSTRING_FUNCS=new Set([_0x52685b(0x21b,'qteA'),_0x52685b(0x359,'yccA'),'substring',_0x52685b(0x2a4,'z&F1'),_0x52685b(0x2cf,'mHxi'),_0x52685b(0x2f6,'cThZ'),'rtrim']),CASE_FUNCS=new Set([_0x52685b(0x2c2,'s]&1'),_0x52685b(0x1f7,'tF&!'),_0x52685b(0x235,'LLM4'),_0x52685b(0x267,'@sxO')]),substringSource=(_0x378913,_0x20df9b)=>{var _0x1dd20a=_0x52685b,_0x3efbe6={'tymTo':function(_0x5dae2e,_0x527e73){return _0x5dae2e===_0x527e73;},'xJCKZ':function(_0x355df2,_0x1601a3){return _0x355df2==_0x1601a3;},'AlHUF':_0x1dd20a(0x1e8,'cThZ'),'nHlKR':function(_0x53da2d,_0x45045d){return _0x53da2d(_0x45045d);},'ygDCt':function(_0x289455,_0x18a1c1,_0x29c0f5){return _0x289455(_0x18a1c1,_0x29c0f5);}},_0x5713e8;return _0x378913?.[_0x1dd20a(0x227,'HS15')]&&_0x3efbe6['tymTo'](0x1,_0x378913['ref'][_0x1dd20a(0x269,'41[h')])&&_0x3efbe6[_0x1dd20a(0x2ab,'x(L2')](_0x3efbe6[_0x1dd20a(0x254,'CO9I')],typeof _0x378913[_0x1dd20a(0x2f4,'$4AI')][0x0])?_0x378913['ref'][0x0]:(_0x5713e8=_0x3efbe6[_0x1dd20a(0x331,'Lw!6')](String,_0x378913?.[_0x1dd20a(0x348,'tDmp')]??'')[_0x1dd20a(0x2e2,'x!e#')](),_0x378913?.[_0x1dd20a(0x2a5,'OcpV')]&&(SUBSTRING_FUNCS[_0x1dd20a(0x233,'V9sY')](_0x5713e8)||_0x20df9b&&CASE_FUNCS[_0x1dd20a(0x228,'pxDu')](_0x5713e8))?_0x3efbe6[_0x1dd20a(0x347,'P5Z%')](substringSource,_0x378913[_0x1dd20a(0x36d,'LLM4')]?.[0x0],_0x20df9b):void 0x0);},simpleCase=_0x3c81e3=>{var _0x4eb918=_0x52685b,_0xaba1b={'tahye':_0x4eb918(0x2a2,'yccA'),'YWVDH':function(_0x426129,_0x286768){return _0x426129(_0x286768);},'ybeID':function(_0x4ec825,_0x231dd3){return _0x4ec825===_0x231dd3;},'uSqiv':function(_0x1f535f,_0x22e5f5){return _0x1f535f==_0x22e5f5;},'tZFXy':_0x4eb918(0x31f,'LLM4'),'NSfrI':function(_0x19ce3a,_0x4560f8){return _0x19ce3a(_0x4560f8);},'rbVRw':function(_0x5904cc,_0x46dcd3){return _0x5904cc+_0x46dcd3;},'OWcVB':_0x4eb918(0x325,'$4AI'),'TcdIS':function(_0x15cb34,_0x2c2893){return _0x15cb34===_0x2c2893;},'frjOg':_0x4eb918(0x36c,'rra7'),'fiDkL':function(_0x1f20f4,_0x278f39){return _0x1f20f4===_0x278f39;},'hoDce':function(_0x3911a6,_0x2caebd){return _0x3911a6+_0x2caebd;},'GxXZm':_0x4eb918(0x2ce,'*U!%'),'eNhRC':function(_0xd860ba,_0x2cba73){return _0xd860ba<_0x2cba73;}};if(Array['isArray'](_0x3c81e3)&&_0xaba1b[_0x4eb918(0x35a,'ozKG')]===_0xaba1b[_0x4eb918(0x284,'pxDu')](String,_0x3c81e3[0x0])[_0x4eb918(0x29d,'V9sY')]()){var _0x2bce36=_0x3c81e3[0x1];if(_0x2bce36?.[_0x4eb918(0x303,'x(L2')]&&_0xaba1b[_0x4eb918(0x209,'lGmL')](0x1,_0x2bce36[_0x4eb918(0x1f4,'yccA')][_0x4eb918(0x1f8,'owYL')])&&_0xaba1b[_0x4eb918(0x2c8,'JQ1y')](_0x4eb918(0x225,'@sxO'),typeof _0x2bce36[_0x4eb918(0x290,'p)%o')][0x0])){var _0x338514=[];let _0x3f1ecb=0x2;for(;_0xaba1b[_0x4eb918(0x1ea,'OquO')](_0xaba1b[_0x4eb918(0x275,'mHxi')],_0xaba1b['NSfrI'](String,_0x3c81e3[_0x3f1ecb])[_0x4eb918(0x289,'kQ6d')]());){var _0x571edb=_0x3c81e3[_0x3f1ecb+0x1],_0x4d4b0e=_0x3c81e3[_0xaba1b[_0x4eb918(0x320,'x(L2')](_0x3f1ecb,0x3)];if(void 0x0===_0x571edb?.[_0x4eb918(0x283,'yccA')]||_0xaba1b[_0x4eb918(0x1f6,'CO9I')]!==_0xaba1b[_0x4eb918(0x240,'ozKG')](String,_0x3c81e3[_0xaba1b['rbVRw'](_0x3f1ecb,0x2)])[_0x4eb918(0x30a,'z&F1')]()||_0xaba1b[_0x4eb918(0x334,'OcpV')](void 0x0,_0x4d4b0e?.['val']))return;_0x338514[_0x4eb918(0x2d2,'LLM4')]({'when':_0x571edb[_0x4eb918(0x37b,'[w$&')],'then':String(_0x4d4b0e[_0x4eb918(0x1f3,'x3Zt')])}),_0x3f1ecb+=0x4;}let _0x355fdf;if(_0xaba1b[_0x4eb918(0x32e,'@sxO')](_0xaba1b[_0x4eb918(0x2bb,'#4kZ')],String(_0x3c81e3[_0x3f1ecb])[_0x4eb918(0x2b4,'5]gq')]())){if(_0xaba1b[_0x4eb918(0x350,'rQEk')](void 0x0,_0x3c81e3[_0xaba1b[_0x4eb918(0x2b8,'rQEk')](_0x3f1ecb,0x1)]?.[_0x4eb918(0x272,'mHxi')]))return;_0x355fdf=String(_0x3c81e3[_0x3f1ecb+0x1]['val']),_0x3f1ecb+=0x2;}return _0xaba1b[_0x4eb918(0x333,'cThZ')](_0xaba1b['GxXZm'],_0xaba1b[_0x4eb918(0x362,'l@(*')](String,_0x3c81e3[_0x3f1ecb])[_0x4eb918(0x29f,'3uNW')]())&&_0xaba1b[_0x4eb918(0x266,'x(L2')](0x0,_0x338514[_0x4eb918(0x269,'41[h')])?{'operand':_0x2bce36[_0x4eb918(0x234,'Yiny')][0x0],'whens':_0x338514,'otherwise':_0x355fdf}:void 0x0;}}},calcCond=(_0x4ab8cd,_0x4cc9d1,_0xbbaf43,_0x3769c6)=>{var _0x3edaf1=_0x52685b,_0x4233ac={'jRRXa':function(_0x5b9b47,_0x13b2d3,_0x3658e2){return _0x5b9b47(_0x13b2d3,_0x3658e2);},'sXVUS':function(_0x22b9f8,_0x5e2d05){return _0x22b9f8<=_0x5e2d05;},'PSwNt':function(_0x360546,_0x37feb6){return _0x360546==_0x37feb6;},'WuYYN':_0x3edaf1(0x36a,'#4kZ'),'iMeIN':_0x3edaf1(0x20d,'cThZ'),'DtBoS':'true','ItpwQ':function(_0x14b367,_0x59cede){return _0x14b367(_0x59cede);},'fgHVa':function(_0x3ad673,_0x36590e){return _0x3ad673!==_0x36590e;}},_0x383b94,_0x5f5fdf=_0x4233ac[_0x3edaf1(0x24b,'aIgY')](substringSource,_0x4ab8cd,_0x3769c6);if(_0x5f5fdf)return(_0x383b94=_0xbbaf43?.['elements']?.[_0x5f5fdf])?_0x4233ac[_0x3edaf1(0x23a,'p)%o')](_0x4cc9d1['length'],_0x4233ac[_0x3edaf1(0x25c,'z&F1')](_0x4233ac[_0x3edaf1(0x30b,'s]&1')],typeof _0x383b94['length'])?_0x383b94[_0x3edaf1(0x274,'3ctE')]:search_1[_0x3edaf1(0x20f,'#4kZ')])?(0x0,exports[_0x3edaf1(0x364,'JQ1y')])(_0x5f5fdf,_0x4cc9d1,_0x3769c6):_0x4233ac[_0x3edaf1(0x344,'aIgY')]:_0x4233ac[_0x3edaf1(0x319,'tF&!')];let _0x25571e=_0x4233ac[_0x3edaf1(0x309,'HS15')](simpleCase,_0x4ab8cd?.['xpr']);if(_0x25571e&&_0xbbaf43?.[_0x3edaf1(0x31b,'tF&!')]?.[_0x25571e[_0x3edaf1(0x2e9,'pxDu')]]){let _0x39fdaa=_0x3c37a1=>_0x3769c6?_0x3c37a1[_0x3edaf1(0x2e2,'x!e#')]()[_0x3edaf1(0x24f,'@sxO')](_0x4cc9d1[_0x3edaf1(0x29a,'pxDu')]()):_0x3c37a1['includes'](_0x4cc9d1);return _0x4233ac[_0x3edaf1(0x308,'5]gq')](void 0x0,_0x25571e[_0x3edaf1(0x2c0,'aIgY')])&&_0x4233ac[_0x3edaf1(0x33a,'pxDu')](_0x39fdaa,_0x25571e[_0x3edaf1(0x374,'x(L2')])?_0x4233ac[_0x3edaf1(0x2d4,'l@(*')]:_0x4233ac[_0x3edaf1(0x356,'owYL')](orOf,_0x25571e[_0x3edaf1(0x2bd,'P5Z%')][_0x3edaf1(0x351,'ozKG')](_0x2f2fd3=>_0x39fdaa(_0x2f2fd3[_0x3edaf1(0x26b,'x3Zt')]))[_0x3edaf1(0x286,'kQ6d')](_0x1a919d=>[{'ref':[_0x25571e['operand']]},'=',{'val':_0x1a919d['when']}]));}return'true';},buildSearchPushdown=async _0x538f57=>{var _0x1f2d4e=_0x52685b,_0x31b35a={'BYnKc':function(_0x5a96e6,_0x3dab9c){return _0x5a96e6!==_0x3dab9c;},'IKJQO':function(_0x290445,_0x4cc7a5){return _0x290445<=_0x4cc7a5;},'raMkX':function(_0x112145,_0x5d9db7,_0x3be49d,_0xca57ec,_0x5f324e){return _0x112145(_0x5d9db7,_0x3be49d,_0xca57ec,_0x5f324e);},'ceJAt':function(_0x17dd21,_0x9a5b92,_0x4ac089,_0x50834d){return _0x17dd21(_0x9a5b92,_0x4ac089,_0x50834d);},'jmBVO':function(_0x39d91e,_0x30e352){return _0x39d91e===_0x30e352;},'yOCPI':_0x1f2d4e(0x329,'yl5*'),'mTqxA':_0x1f2d4e(0x22d,'mHxi'),'hxELa':_0x1f2d4e(0x2dc,'41[h'),'nspmi':function(_0x34c46f,_0x33ab1e){return _0x34c46f>_0x33ab1e;},'caYAj':function(_0x53802f,_0x30f76e){return _0x53802f+_0x30f76e;},'SKENF':_0x1f2d4e(0x2c3,'*U!%'),'ouJUQ':_0x1f2d4e(0x2c1,'*U!%'),'oluwC':_0x1f2d4e(0x242,'kQ6d'),'vqrLQ':function(_0x275e88,_0x147269){return _0x275e88===_0x147269;},'fpgiY':_0x1f2d4e(0x35c,'^xUw'),'bjPRK':function(_0x1b0b06,_0x5d21b3){return _0x1b0b06(_0x5d21b3);},'VlmMB':_0x1f2d4e(0x224,'P5Z%'),'fqZeP':function(_0x105431,_0x5ef7ad){return _0x105431===_0x5ef7ad;},'rPUXe':_0x1f2d4e(0x336,'rQEk'),'jmfuG':_0x1f2d4e(0x2e1,'Yiny'),'zDqtP':_0x1f2d4e(0x316,'GCIH'),'VbRwZ':function(_0x58b808,_0x5c97f3){return _0x58b808===_0x5c97f3;},'PbMEd':_0x1f2d4e(0x203,'3ctE'),'aRacd':_0x1f2d4e(0x2c5,'*U!%')};let _0x458f25=_0x538f57[_0x1f2d4e(0x2ba,'^xUw')][_0x1f2d4e(0x1f5,'#4kZ')](M),{columns:_0x2d1737,plan:_0xf05510,tree:_0x1d5c91}=_0x538f57,_0x37fff5=_0x2d1737[_0x1f2d4e(0x2dd,'p)%o')](_0x48f57e=>_0x1f2d4e(0x360,'aIgY')===_0x48f57e[_0x1f2d4e(0x322,'kQ6d')]);var _0x2626ee,_0x313051=_0x2d1737[_0x1f2d4e(0x2da,'HS15')](_0x4f24fd=>_0x1f2d4e(0x32a,'lGmL')===_0x4f24fd[_0x1f2d4e(0x36f,'x3Zt')]),_0xdbebd3=_0x2d1737[_0x1f2d4e(0x248,'cThZ')](_0x23f942=>_0x1f2d4e(0x25a,'P5Z%')===_0x23f942[_0x1f2d4e(0x2a3,'cThZ')]);if(_0x31b35a[_0x1f2d4e(0x2ac,'$4AI')](_0x31b35a[_0x1f2d4e(0x255,'rra7')](_0x37fff5[_0x1f2d4e(0x30d,'V9sY')]+_0x313051[_0x1f2d4e(0x241,'cThZ')],_0xdbebd3['length']),exports[_0x1f2d4e(0x28e,'V9sY')]))return{'reason':'more\x20than\x20'+exports[_0x1f2d4e(0x28d,'pxDu')]+_0x1f2d4e(0x305,'aIgY')};let _0x133bfe=_0xef4158=>_0x538f57[_0x1f2d4e(0x312,'d@Jf')][_0xef4158]??(_0x538f57[_0x1f2d4e(0x287,'3uNW')]?_0xef4158:void 0x0);if(_0x37fff5[_0x1f2d4e(0x246,'3ctE')](_0x1d62de=>!_0x133bfe(_0x1d62de[_0x1f2d4e(0x28b,'CO9I')])))return{'reason':_0x31b35a['SKENF']};let _0x3e640b=[];for(_0x2626ee of _0x313051){var _0x234c9a=_0xf05510['paths']['get'](_0x2626ee[_0x1f2d4e(0x260,'owYL')]);if(!_0x234c9a||_0x31b35a[_0x1f2d4e(0x380,'z&F1')]!==_0x234c9a[_0x1f2d4e(0x20b,'tDmp')])return{'reason':_0x1f2d4e(0x1ef,'^xUw')+_0x2626ee[_0x1f2d4e(0x1f2,'f*0r')]+'\x27\x20can\x20not\x20be\x20resolved'};_0x3e640b[_0x1f2d4e(0x296,'3ctE')](_0x234c9a);}let _0x2c7027=(0x0,alias_maps_1[_0x1f2d4e(0x26e,'AhvL')])(_0x538f57[_0x1f2d4e(0x229,'lGmL')]),_0x41aeb2=_0xdbebd3[_0x1f2d4e(0x2ee,'owYL')](_0x150426=>_0x2c7027[_0x1f2d4e(0x367,'x!e#')](_0x3898be=>_0x3898be?.['as']===_0x150426['name']));if(_0x41aeb2[_0x1f2d4e(0x2c9,'rra7')](_0x307046=>!_0x307046))return{'reason':_0x31b35a[_0x1f2d4e(0x377,'ozKG')]};let _0xee1a82=_0x31b35a[_0x1f2d4e(0x38c,'pxDu')](_0x31b35a[_0x1f2d4e(0x1fe,'ozKG')],_0x538f57[_0x1f2d4e(0x211,'d@Jf')]),_0x17d651=new Map(),_0x403ce9=new Map(),_0x69ebc6=async _0x2cbf4c=>{var _0x43b388=_0x1f2d4e,_0x5c1351={'PYEOu':function(_0x347431,_0x5b8e10){return _0x31b35a['BYnKc'](_0x347431,_0x5b8e10);},'JvaeM':_0x43b388(0x202,'3uNW'),'OOHkS':function(_0x59e959,_0x43fe16){var _0x52c2b5=_0x43b388;return _0x31b35a[_0x52c2b5(0x388,'x3Zt')](_0x59e959,_0x43fe16);},'JMzxS':function(_0x254d26,_0x266f14){return _0x254d26(_0x266f14);},'ZwHtR':function(_0xbfcb09,_0x4b3c3d,_0x547fcd,_0x30c652,_0x1c153e){var _0xdff7bc=_0x43b388;return _0x31b35a[_0xdff7bc(0x330,'yccA')](_0xbfcb09,_0x4b3c3d,_0x547fcd,_0x30c652,_0x1c153e);},'gARFZ':_0x43b388(0x29b,'$4AI'),'YfrSb':function(_0xd29139,_0x1c8d28,_0x57eb20,_0x168137){var _0x2c2b7c=_0x43b388;return _0x31b35a[_0x2c2b7c(0x2ec,'j*!0')](_0xd29139,_0x1c8d28,_0x57eb20,_0x168137);}},_0x2ecef3;return _0x31b35a['jmBVO'](_0x31b35a[_0x43b388(0x32b,'CO9I')],_0x2cbf4c['k'])?(_0x2c9cdb=>{var _0x1eff1b=_0x43b388;let _0xd489b3=_0x403ce9[_0x1eff1b(0x2be,'l@(*')](_0x2c9cdb);return _0xd489b3||(_0xd489b3=((async()=>{var _0x81b60e=_0x1eff1b,_0x524927={'dfdAm':function(_0x3cedce,_0x5e3472){var _0x4e5a47=_0x111e;return _0x5c1351[_0x4e5a47(0x2cc,'kQ6d')](_0x3cedce,_0x5e3472);},'KaQnW':_0x5c1351[_0x81b60e(0x201,'rQEk')]};let _0x5c8dc7=new Map();var _0x4c89fe,_0x519d88,_0x8c7ea6=_0x3d08da=>{var _0x31e257=_0x81b60e;_0x524927[_0x31e257(0x382,'tF&!')](_0x524927[_0x31e257(0x245,'AhvL')],_0x3d08da)&&_0x5c8dc7[_0x31e257(0x27b,'P5Z%')](JSON[_0x31e257(0x216,'s]&1')](_0x3d08da),_0x3d08da);};for(_0x4c89fe of _0x37fff5)_0x5c1351[_0x81b60e(0x345,'rra7')](_0x2c9cdb['length'],_0x4c89fe[_0x81b60e(0x2ad,'j*!0')])&&_0x5c1351[_0x81b60e(0x2b6,'yl5*')](_0x8c7ea6,(0x0,exports[_0x81b60e(0x243,'z&F1')])(_0x5c1351[_0x81b60e(0x20e,'*U!%')](_0x133bfe,_0x4c89fe[_0x81b60e(0x268,'x!e#')]),_0x2c9cdb,_0xee1a82));for(_0x519d88 of _0x41aeb2){var _0x2c7abe=_0x5c1351[_0x81b60e(0x252,'kQ6d')](calcCond,_0x519d88,_0x2c9cdb,_0xf05510[_0x81b60e(0x2bc,'zt[T')],_0xee1a82);if(_0x81b60e(0x37f,'yl5*')===_0x2c7abe)return _0x5c1351[_0x81b60e(0x223,'x(L2')];_0x5c1351[_0x81b60e(0x32c,'rQEk')](_0x8c7ea6,_0x2c7abe);}var _0x2c9d2a,_0x2ee629,_0x419968=new Map();for(_0x2c9d2a of await Promise[_0x81b60e(0x363,'yl5*')](_0x3e640b['map'](_0x5b15a7=>matchingKeys(_0x538f57,_0xf05510[_0x81b60e(0x2f3,'Yiny')],_0x5b15a7[_0x81b60e(0x27c,'pxDu')],_0x5b15a7[_0x81b60e(0x247,'zt[T')],_0x2c9cdb,_0x458f25,_0x17d651)))){if(!_0x2c9d2a)return _0x5c1351['gARFZ'];var _0x31bdd3,_0x25f861=_0x419968[_0x81b60e(0x293,'V9sY')](_0x2c9d2a[_0x81b60e(0x244,'41[h')][_0x81b60e(0x2f2,'[w$&')]('|'))??{'fks':_0x2c9d2a[_0x81b60e(0x28f,'^xUw')],'tuples':new Map()};for(_0x31bdd3 of _0x2c9d2a[_0x81b60e(0x299,'cThZ')])_0x25f861[_0x81b60e(0x311,'*U!%')][_0x81b60e(0x35b,'tDmp')](JSON[_0x81b60e(0x34e,'qteA')](_0x31bdd3),_0x31bdd3);_0x419968[_0x81b60e(0x21a,'5]gq')](_0x2c9d2a[_0x81b60e(0x23b,'zt[T')][_0x81b60e(0x295,'JQ1y')]('|'),_0x25f861);}for(_0x2ee629 of _0x419968[_0x81b60e(0x379,'OquO')]())_0x8c7ea6(_0x5c1351['YfrSb'](tupleCond,_0x2ee629['fks'],[..._0x2ee629[_0x81b60e(0x1ec,'x(L2')][_0x81b60e(0x2df,'LLM4')]()],!0x0));return _0x5c1351[_0x81b60e(0x29c,'zt[T')](orOf,[..._0x5c8dc7['values']()]);})()),_0x403ce9[_0x1eff1b(0x31a,'V9sY')](_0x2c9cdb,_0xd489b3)),_0xd489b3;})(_0x2cbf4c['v']):_0x31b35a[_0x43b388(0x33d,'#4kZ')](_0x43b388(0x257,'tF&!'),_0x2cbf4c['k'])?_0x31b35a[_0x43b388(0x28a,'rra7')]:(_0x2ecef3=await Promise[_0x43b388(0x280,'x!e#')](_0x2cbf4c['n'][_0x43b388(0x263,'d@Jf')](_0x69ebc6)),(_0x31b35a[_0x43b388(0x307,'LLM4')](_0x31b35a['hxELa'],_0x2cbf4c['k'])?andOf:orOf)(_0x2ecef3));};return _0x313051=await _0x31b35a['bjPRK'](_0x69ebc6,_0x1d5c91),(_0x458f25[_0x1f2d4e(0x2b7,'ozKG')](_0x31b35a[_0x1f2d4e(0x27d,'rQEk')],_0x1f2d4e(0x26d,'l@(*'),{'words':[...(0x0,search_1[_0x1f2d4e(0x294,'owYL')])(_0x1d5c91)],'outcome':_0x31b35a[_0x1f2d4e(0x20c,'ozKG')](_0x31b35a[_0x1f2d4e(0x2e4,'z&F1')],_0x313051)?_0x31b35a['rPUXe']:_0x1f2d4e(0x37a,'41[h')===_0x313051?_0x31b35a['jmfuG']:_0x31b35a['zDqtP']}),_0x31b35a[_0x1f2d4e(0x2cd,'tDmp')](_0x31b35a[_0x1f2d4e(0x232,'x3Zt')],_0x313051)?{'reason':_0x31b35a[_0x1f2d4e(0x21f,'AhvL')]}:_0x31b35a['VbRwZ'](_0x1f2d4e(0x2b2,'LLM4'),_0x313051)?{'none':!0x0}:(_0xdbebd3=expandChunks(_0x313051))?{'wheres':_0xdbebd3}:{'reason':_0x31b35a[_0x1f2d4e(0x282,'3uNW')]});};function _0x111e(_0x5bcca2,_0x249c7b){_0x5bcca2=_0x5bcca2-0x1e5;var _0xb97b82=_0xb97b();var _0x111e24=_0xb97b82[_0x5bcca2];if(_0x111e['YCwMOi']===undefined){var _0x14bcc9=function(_0x451393){var _0xe4475='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x18c5ff='',_0x5e1d96='';for(var _0x4cab09=0x0,_0x3f8e6a,_0x62897,_0x58f07e=0x0;_0x62897=_0x451393['charAt'](_0x58f07e++);~_0x62897&&(_0x3f8e6a=_0x4cab09%0x4?_0x3f8e6a*0x40+_0x62897:_0x62897,_0x4cab09++%0x4)?_0x18c5ff+=String['fromCharCode'](0xff&_0x3f8e6a>>(-0x2*_0x4cab09&0x6)):0x0){_0x62897=_0xe4475['indexOf'](_0x62897);}for(var _0x1802f8=0x0,_0x1cbb04=_0x18c5ff['length'];_0x1802f8<_0x1cbb04;_0x1802f8++){_0x5e1d96+='%'+('00'+_0x18c5ff['charCodeAt'](_0x1802f8)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5e1d96);};var _0xc7a644=function(_0x37335a,_0x549cd6){var _0x4fbebc=[],_0xdc9df9=0x0,_0x1648da,_0x6257e1='';_0x37335a=_0x14bcc9(_0x37335a);var _0x2234c8;for(_0x2234c8=0x0;_0x2234c8<0x100;_0x2234c8++){_0x4fbebc[_0x2234c8]=_0x2234c8;}for(_0x2234c8=0x0;_0x2234c8<0x100;_0x2234c8++){_0xdc9df9=(_0xdc9df9+_0x4fbebc[_0x2234c8]+_0x549cd6['charCodeAt'](_0x2234c8%_0x549cd6['length']))%0x100,_0x1648da=_0x4fbebc[_0x2234c8],_0x4fbebc[_0x2234c8]=_0x4fbebc[_0xdc9df9],_0x4fbebc[_0xdc9df9]=_0x1648da;}_0x2234c8=0x0,_0xdc9df9=0x0;for(var _0x6e3aa2=0x0;_0x6e3aa2<_0x37335a['length'];_0x6e3aa2++){_0x2234c8=(_0x2234c8+0x1)%0x100,_0xdc9df9=(_0xdc9df9+_0x4fbebc[_0x2234c8])%0x100,_0x1648da=_0x4fbebc[_0x2234c8],_0x4fbebc[_0x2234c8]=_0x4fbebc[_0xdc9df9],_0x4fbebc[_0xdc9df9]=_0x1648da,_0x6257e1+=String['fromCharCode'](_0x37335a['charCodeAt'](_0x6e3aa2)^_0x4fbebc[(_0x4fbebc[_0x2234c8]+_0x4fbebc[_0xdc9df9])%0x100]);}return _0x6257e1;};_0x111e['epjkQc']=_0xc7a644,_0x111e['zNvIKE']={},_0x111e['YCwMOi']=!![];}var _0x393550=_0xb97b82[0x0];_0x111e['UOnRmy']!==_0x393550&&(_0x111e['zNvIKE']={},_0x111e['UOnRmy']=_0x393550);var _0x3ec72e=_0x111e['zNvIKE'][_0x5bcca2];return _0x3ec72e===undefined?(_0x111e['mXYJnW']===undefined&&(_0x111e['mXYJnW']=!![]),_0x111e24=_0x111e['epjkQc'](_0x111e24,_0x249c7b),_0x111e['zNvIKE'][_0x5bcca2]=_0x111e24):_0x111e24=_0x3ec72e,_0x111e24;}exports[_0x52685b(0x369,'Yiny')]=buildSearchPushdown;
+"use strict";
+/**
+ * @file search-pushdown.ts
+ * @description Builds the part of a `$search` that can be sent to the backend, so fewer rows come back.
+ * The local match in `search.ts` still runs on those rows and has the final say.
+ *
+ * ## Soundness
+ * The pushed filter may only drop rows that can not match. For every word `w` of the term it is
+ *
+ *     OR( contains(field, w)  for each searched field of the entity that can hold w,
+ *         fk IN (keys of associated rows that match w)  for each to-one association searched
+ *             (a composite key: OR of (k1 = .. AND k2 = ..) tuples),
+ *         the pushable condition of each calculated column )
+ *
+ * and words are combined like the term is (`AND` / `OR`). `NOT` is not pushed (`TRUE`: a row that does not
+ * contain a word can not be excluded before all its columns are known). Whenever a column can not be pushed the
+ * word is not restricted at all (`TRUE`): a calculated column that is not a substring / simple CASE of one field, a
+ * filtered or SOAP association, an association with too many matches (more than {@link SEARCH_MAX_QUERIES} x
+ * {@link SEARCH_KEY_LIMIT} keys) or an answer the backend cut short.
+ * Nothing is pushed for DISTINCT / GROUP BY projections (aggregates would change).
+ *
+ * ## Many matching keys
+ * The keys of an associated entity are fetched page by page ({@link SEARCH_PREQUERY_PAGE} rows per call, completeness
+ * checked against `$count`). An `IN` list of more than {@link SEARCH_KEY_LIMIT} keys (composite:
+ * {@link SEARCH_TUPLE_LIMIT}) does not fit a URL, so the main read is split into up to {@link SEARCH_MAX_QUERIES}
+ * queries with at most that many keys each, and the pipeline unions their rows. The field `contains` are only
+ * in the first query (`A OR fk IN (keys)`: the others just look up the remaining keys). Only ONE oversized key list
+ * can be split; a second one leaves the word unrestricted.
+ *
+ * ## Calculated columns
+ * A calculated column is matched locally (it does not exist on the backend), but its word is still pushed when the
+ * column is derived from ONE source field in a way that is exact or a superset: `left/right/substring/trim(field)`
+ * (the result is a substring of the field: `contains(field, w)`; `upper/lower` only when the search ignores case), and a simple
+ * `CASE field WHEN 'E' THEN 'Employee' ... END` (`field = 'E'` for each branch whose text holds the word; an `ELSE`
+ * that holds the word leaves the word unrestricted). Any other expression (searched CASE, `concat`, `coalesce`, a
+ * path) can not be pushed, so the word is not restricted and the local match does all the work for it.
+ *
+ * ## Column size
+ * `contains` with a word longer than the field makes some backends fail, and can never match anyway: a field
+ * whose declared length is shorter than the word is left out of the OR (exact, not just safe).
+ *
+ * ## Associations ("joined data becomes less at every association")
+ * For `_Parent.Name as ParentName` the associated entity is asked first: which `Parent` rows contain the word
+ * in `Name`? Their keys become `ParentID IN (...)` in the main filter. Deeper paths ask level by level, from the
+ * last hop upwards, so each level only returns keys and the main fetch shrinks.
+ *
+ * ## Case
+ * Follows the entity's search mode (`search-backend.ts`, from the backend its data comes from):
+ * - case-SENSITIVE (OData V2): `contains(field, word)`, the word as typed. No function is sent: some V2 services
+ *   (S/4 `API_BUSINESS_PARTNER`) reject `tolower`.
+ * - case-INSENSITIVE (local, OData V4): `contains(tolower(field), lower-cased word)`. An associated entity whose
+ *   own backend can not do that (OData V2) is not pushed: the word is not restricted for it.
+ * Either way the pushed filter is exact for the columns it covers, and the local match uses the same case rule.
+ * If a backend rejects the filter, the pipeline retries without it.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.buildSearchPushdown = exports.andWhere = exports.searchFieldOf = exports.containsCond = exports.SEARCH_MAX_PUSHDOWN_FIELDS = exports.SEARCH_PREQUERY_PAGE = exports.SEARCH_MAX_QUERIES = exports.SEARCH_TUPLE_LIMIT = exports.SEARCH_KEY_LIMIT = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+const association_meta_1 = require("./association-meta");
+const service_resolver_1 = require("./service-resolver");
+const soap_adapter_1 = require("./soap-adapter");
+const search_1 = require("./search");
+const search_backend_1 = require("./search-backend");
+const search_functions_1 = require("./search-functions");
+const { SELECT } = cds_1.default.ql;
+const M = 'search-pushdown';
+/** Most keys in one `IN` list (URL length); more keys split the main read into several queries. */
+exports.SEARCH_KEY_LIMIT = 200;
+/** Most composite-key tuples in one `(k1 = .. and k2 = ..) or ...` list; more tuples split the main read. */
+exports.SEARCH_TUPLE_LIMIT = 50;
+/** Most queries a search is split into; with {@link SEARCH_KEY_LIMIT} it bounds the associated keys used (2000). */
+exports.SEARCH_MAX_QUERIES = 10;
+/** Rows per call when the keys of an associated entity are fetched. */
+exports.SEARCH_PREQUERY_PAGE = 500;
+/**
+ * Most fields (plain + association paths + calculated) that are OR-ed into one pushed filter (URL length, backend
+ * cost). Wider entities are not pushed: restrict them with an entity-level `@cds.search: { A, B }` list.
+ */
+exports.SEARCH_MAX_PUSHDOWN_FIELDS = 100;
+// ---------------------------------------------------------------------------
+// CQN building
+// ---------------------------------------------------------------------------
+const wrap = (tokens) => (tokens.length === 1 ? tokens[0] : { xpr: tokens });
+const orOf = (parts) => {
+    if (parts.includes('true'))
+        return 'true';
+    const items = parts.filter((p) => p !== 'false');
+    if (items.length === 0)
+        return 'false';
+    if (items.length === 1)
+        return items[0];
+    return items.flatMap((p, i) => (i === 0 ? [wrap(p)] : ['or', wrap(p)]));
+};
+const andOf = (parts) => {
+    if (parts.includes('false'))
+        return 'false';
+    const items = parts.filter((p) => p !== 'true');
+    if (items.length === 0)
+        return 'true';
+    if (items.length === 1)
+        return items[0];
+    return items.flatMap((p, i) => (i === 0 ? [wrap(p)] : ['and', wrap(p)]));
+};
+/**
+ * `contains(field, 'word')` (as typed), or for a case-insensitive search `contains(tolower(field), 'lower-cased word')`.
+ */
+const containsCond = (field, word, ignoreCase) => ignoreCase
+    ? [{ func: 'contains', args: [{ func: 'tolower', args: [{ ref: [field] }] }, { val: word.toLowerCase() }] }]
+    : [{ func: 'contains', args: [{ ref: [field] }, { val: word }] }];
+exports.containsCond = containsCond;
+const inCond = (field, values) => [
+    { ref: [field] }, 'in', { list: [...values].map((val) => ({ val })) },
+];
+/**
+ * ANDs a pushed filter onto an existing WHERE, grouping both so operator precedence can not change.
+ *
+ * @param where   The WHERE already on the query (may be empty).
+ * @param pushed  The pushed search filter.
+ */
+/**
+ * The field of the query a searched column is filtered on: the projection's SOURCE entity's own name (the alias map maps
+ * `Title` -> `RemoteColumn`), or the element name for a locally served target.
+ */
+const searchFieldOf = (name, localToRemote, queryLocalTarget) => localToRemote[name] ?? (queryLocalTarget ? name : undefined);
+exports.searchFieldOf = searchFieldOf;
+const andWhere = (where, pushed) => where && where.length > 0 ? [{ xpr: where }, 'and', { xpr: pushed }] : [wrap(pushed)];
+exports.andWhere = andWhere;
+const keysPerQuery = (fieldCount) => (fieldCount === 1 ? exports.SEARCH_KEY_LIMIT : exports.SEARCH_TUPLE_LIMIT);
+/** `fk IN (v1, v2)`, or for a composite key `(k1 = a AND k2 = b) OR (...)`. */
+const listCond = (fields, tuples) => {
+    if (fields.length === 1)
+        return inCond(fields[0], tuples.map((t) => t[0]));
+    return orOf(tuples.map((t) => andOf(fields.map((f, i) => [{ ref: [f] }, '=', { val: t[i] }]))));
+};
+/**
+ * The condition "the key is one of `tuples`". A list too long for one URL becomes a placeholder token that
+ * {@link expandChunks} turns into several queries (`chunkable` only for the main read, never inside a pre-query).
+ */
+const tupleCond = (fields, tuples, chunkable = false) => {
+    if (tuples.length === 0)
+        return 'false';
+    if (chunkable && tuples.length > keysPerQuery(fields.length))
+        return [{ __chunks: { fields, tuples } }];
+    return listCond(fields, tuples);
+};
+const findChunkAtoms = (node, out) => {
+    if (Array.isArray(node))
+        node.forEach((n) => findChunkAtoms(n, out));
+    else if (node && typeof node === 'object') {
+        if (node.__chunks)
+            out.push(node);
+        else
+            Object.values(node).forEach((n) => findChunkAtoms(n, out));
+    }
+};
+const replaceAtom = (node, atom, by) => {
+    if (node === atom)
+        return by;
+    if (Array.isArray(node))
+        return node.map((n) => replaceAtom(n, atom, by));
+    if (node && typeof node === 'object')
+        return Object.fromEntries(Object.entries(node).map(([k, v]) => [k, replaceAtom(v, atom, by)]));
+    return node;
+};
+/**
+ * Turns a condition that holds one oversized key list into the alternatives whose rows, unioned, are the rows of the
+ * whole condition (it is monotone: no NOT is ever pushed). `undefined` when it holds several oversized lists.
+ */
+const expandChunks = (cond) => {
+    const atoms = [];
+    findChunkAtoms(cond, atoms);
+    if (atoms.length === 0)
+        return [cond];
+    if (atoms.length > 1)
+        return undefined;
+    const atom = atoms[0];
+    const { fields, tuples } = atom.__chunks;
+    const per = keysPerQuery(fields.length);
+    const groups = [];
+    for (let i = 0; i < tuples.length; i += per)
+        groups.push(tuples.slice(i, i + per));
+    const listOf = (g) => wrap(listCond(fields, g));
+    // `A OR fk IN (keys)`: the first query keeps A, the others only look up their keys (A is not read again)
+    if (cond.includes(atom) && !cond.includes('and')) {
+        return groups.map((g, i) => (i === 0 ? replaceAtom(cond, atom, listOf(g)) : [listOf(g)]));
+    }
+    return groups.map((g) => replaceAtom(cond, atom, listOf(g)));
+};
+/**
+ * Keys of `owner` rows whose to-one association path `hops[0]. … .hops[n-1].leaf` contains `word`, or
+ * `undefined` when that can not be pushed (see the file header).
+ */
+const matchingKeys = async (input, owner, hops, leaf, word, log, memo) => {
+    const memoKey = `${owner?.name}|${hops.join('.')}|${leaf}|${word}`;
+    const hit = memo.get(memoKey);
+    if (hit)
+        return hit;
+    const run = async () => {
+        const el = owner?.elements?.[hops[0]];
+        if (!el?.target)
+            return undefined;
+        const meta = (0, association_meta_1.resolveAssociationMeta)(hops[0], owner, el.target, el, input.cache);
+        // constant ON-conditions do not say which side they filter: not pushed
+        if (!meta || meta.isToMany || meta.constantFilters?.length || meta.localKeys.length === 0 || meta.localKeys.length !== meta.targetKeys.length)
+            return undefined;
+        const maxKeys = keysPerQuery(meta.localKeys.length) * exports.SEARCH_MAX_QUERIES;
+        const targetDef = cds_1.default.model?.definitions?.[meta.target];
+        if (!targetDef)
+            return undefined;
+        const serviceName = (0, service_resolver_1.resolveServiceNameFromTarget)(meta.target);
+        if ((0, soap_adapter_1.isSoapService)(serviceName))
+            return undefined;
+        // A case-insensitive search needs `tolower` on this backend as well; OData V2 (and unknown) backends can not.
+        const targetMode = (0, search_backend_1.effectiveSearchMode)((0, search_backend_1.resolveSearchBackend)(targetDef));
+        if (targetMode === 'none' || (input.mode === 'insensitive' && targetMode !== 'insensitive'))
+            return undefined;
+        const queryLocal = (0, service_resolver_1.usesLocalServiceSemantics)(serviceName);
+        const { localToRemote } = (0, alias_maps_1.getAliasMaps)(targetDef, input.cache);
+        const nameOf = (n) => (queryLocal ? n : localToRemote[n]);
+        const namesOf = (ns) => {
+            const out = ns.map(nameOf);
+            return out.every(Boolean) ? out : undefined;
+        };
+        // What must hold for a row of the target: the leaf contains the word, or (deeper path) its own
+        // association matches, which is asked first.
+        let cond;
+        if (hops.length === 1) {
+            const leafEl = targetDef.elements?.[leaf];
+            const field = nameOf(leaf);
+            if (!leafEl || !field)
+                return undefined;
+            const length = typeof leafEl.length === 'number' ? leafEl.length : search_1.DEFAULT_STRING_LENGTH;
+            cond = word.length <= length ? (0, exports.containsCond)(field, word, input.mode === 'insensitive') : 'false';
+        }
+        else {
+            const child = await matchingKeys(input, targetDef, hops.slice(1), leaf, word, log, memo);
+            const childFields = child && namesOf(child.fks);
+            // a pre-query can not be split: a child list that does not fit one URL is not pushed
+            if (!child || !childFields || child.tuples.length > keysPerQuery(child.fks.length))
+                return undefined;
+            cond = tupleCond(childFields, child.tuples);
+        }
+        if (cond === 'false')
+            return { fks: meta.localKeys, tuples: [] };
+        const keyFields = namesOf(meta.targetKeys);
+        if (!keyFields)
+            return undefined;
+        const entity = queryLocal && serviceName !== input.req?.service?.name ? meta.target : meta.target.split('.').pop();
+        const srv = await cds_1.default.connect.to(serviceName);
+        const tx = typeof srv.tx === 'function' ? srv.tx(input.req) : srv;
+        // Page by page until the backend's `$count` is reached. A total above the limit, or an answer the backend cut
+        // short (fewer rows than `$count` although asked for more), leaves the key set incomplete: not pushed.
+        const collected = [];
+        let total;
+        for (let offset = 0, pages = 0;; pages++) {
+            const query = SELECT.from(entity).columns(keyFields.map((f) => ({ ref: [f] }))).where(cond).limit(exports.SEARCH_PREQUERY_PAGE, offset);
+            if (offset === 0)
+                query.SELECT.count = true;
+            const rows = await tx.run(query);
+            const list = (Array.isArray(rows) ? rows : [rows]).filter(Boolean);
+            if (offset === 0 && typeof rows?.$count === 'number')
+                total = rows.$count;
+            if (total !== undefined && total > maxKeys) {
+                log.debug('matchingKeys', 'Not pushed: too many matches', { target: meta.target, word, total, maxKeys });
+                return undefined;
+            }
+            collected.push(...list);
+            offset += list.length;
+            if (list.length === 0 || (total !== undefined ? collected.length >= total : list.length < exports.SEARCH_PREQUERY_PAGE))
+                break;
+            if (collected.length > maxKeys || pages > exports.SEARCH_MAX_QUERIES + 5)
+                return undefined;
+        }
+        if (total !== undefined && collected.length < total) {
+            log.debug('matchingKeys', 'Not pushed: truncated answer', { target: meta.target, word, rows: collected.length, total });
+            return undefined;
+        }
+        const seen = new Map();
+        for (const row of collected) {
+            const tuple = keyFields.map((f) => row[f]);
+            if (tuple.some((v) => v === undefined || v === null))
+                continue;
+            seen.set(JSON.stringify(tuple), tuple);
+        }
+        log.debug('matchingKeys', 'Association matched', { target: meta.target, hop: hops[0], word, keys: seen.size });
+        return { fks: meta.localKeys, tuples: [...seen.values()] };
+    };
+    const promise = run().catch((err) => {
+        let target = owner;
+        for (const hop of hops)
+            target = cds_1.default.model?.definitions?.[target?.elements?.[hop]?.target];
+        // this association's backend can not evaluate a function we sent (tolower): remember it, then it is not asked that way again
+        const fn = (0, search_functions_1.rejectedFunction)(err);
+        if (target && fn && (0, search_functions_1.learnUnsupportedFunction)((0, search_backend_1.resolveSearchBackend)(target).service, fn))
+            log.info('matchingKeys', 'Learned: the backend does not support this filter function', { function: fn });
+        log.warn('matchingKeys', 'Association pre-query failed — not pushed', { target: owner?.elements?.[hops[0]]?.target, error: err?.message });
+        return undefined;
+    });
+    memo.set(memoKey, promise);
+    return promise;
+};
+// ---------------------------------------------------------------------------
+// Calculated columns
+// ---------------------------------------------------------------------------
+/** Functions whose result is a substring of their first argument, unchanged. */
+const SUBSTRING_FUNCS = new Set(['left', 'right', 'substring', 'substr', 'trim', 'ltrim', 'rtrim']);
+/** ... and those that only change the case: still a substring when the search ignores case, otherwise not. */
+const CASE_FUNCS = new Set(['tolower', 'lower', 'toupper', 'upper']);
+/** The one source field a `left(f, 2)` / `trim(f)` expression is a substring of. */
+const substringSource = (node, ignoreCase) => {
+    if (node?.ref && node.ref.length === 1 && typeof node.ref[0] === 'string')
+        return node.ref[0];
+    const fn = String(node?.func ?? '').toLowerCase();
+    if (node?.func && (SUBSTRING_FUNCS.has(fn) || (ignoreCase && CASE_FUNCS.has(fn))))
+        return substringSource(node.args?.[0], ignoreCase);
+    return undefined;
+};
+/** `CASE field WHEN 'a' THEN 'x' ... [ELSE 'z'] END` with literal branches. Anything else: `undefined`. */
+const simpleCase = (xpr) => {
+    if (!Array.isArray(xpr) || String(xpr[0]).toLowerCase() !== 'case')
+        return undefined;
+    const operand = xpr[1];
+    if (!operand?.ref || operand.ref.length !== 1 || typeof operand.ref[0] !== 'string')
+        return undefined;
+    const whens = [];
+    let i = 2;
+    while (String(xpr[i]).toLowerCase() === 'when') {
+        const when = xpr[i + 1];
+        const then = xpr[i + 3];
+        if (when?.val === undefined || String(xpr[i + 2]).toLowerCase() !== 'then' || then?.val === undefined)
+            return undefined;
+        whens.push({ when: when.val, then: String(then.val) });
+        i += 4;
+    }
+    let otherwise;
+    if (String(xpr[i]).toLowerCase() === 'else') {
+        if (xpr[i + 1]?.val === undefined)
+            return undefined;
+        otherwise = String(xpr[i + 1].val);
+        i += 2;
+    }
+    return String(xpr[i]).toLowerCase() === 'end' && whens.length > 0 ? { operand: operand.ref[0], whens, otherwise } : undefined;
+};
+/** The pushable condition of `word` in a calculated column (see the file header), `'true'` when there is none. */
+const calcCond = (col, word, sourceDef, ignoreCase) => {
+    const sub = substringSource(col, ignoreCase);
+    if (sub) {
+        const el = sourceDef?.elements?.[sub];
+        if (!el)
+            return 'true';
+        return word.length <= (typeof el.length === 'number' ? el.length : search_1.DEFAULT_STRING_LENGTH) ? (0, exports.containsCond)(sub, word, ignoreCase) : 'false';
+    }
+    const cs = simpleCase(col?.xpr);
+    if (cs && sourceDef?.elements?.[cs.operand]) {
+        // the ELSE branch (also taken for a NULL operand) can not be expressed without listing every other value
+        const holds = (text) => (ignoreCase ? text.toLowerCase().includes(word.toLowerCase()) : text.includes(word));
+        if (cs.otherwise !== undefined && holds(cs.otherwise))
+            return 'true';
+        return orOf(cs.whens.filter((w) => holds(w.then)).map((w) => [{ ref: [cs.operand] }, '=', { val: w.when }]));
+    }
+    return 'true';
+};
+// ---------------------------------------------------------------------------
+// Entry point
+// ---------------------------------------------------------------------------
+/**
+ * Plans the pushed-down part of a `$search`.
+ *
+ * @param input  See {@link PushdownInput}.
+ * @returns      `{ where }` to AND onto the backend query, `{ none: true }` when nothing can match, or `{ reason }`
+ *               when nothing is pushed (the local match then does all the work).
+ */
+const buildSearchPushdown = async (input) => {
+    const log = input.log.forModule(M);
+    const { columns, plan, tree } = input;
+    const plain = columns.filter((c) => c.kind === 'plain');
+    const pathColumns = columns.filter((c) => c.kind === 'path');
+    const calcColumns = columns.filter((c) => c.kind === 'calc');
+    if (plain.length + pathColumns.length + calcColumns.length > exports.SEARCH_MAX_PUSHDOWN_FIELDS) {
+        return { reason: `more than ${exports.SEARCH_MAX_PUSHDOWN_FIELDS} searched columns` };
+    }
+    // The query goes to the projection's SOURCE entity: its own field names (the alias map maps `Title` -> `RemoteColumn`).
+    const fieldOf = (name) => input.localToRemote[name] ?? (input.queryLocalTarget ? name : undefined);
+    if (plain.some((c) => !fieldOf(c.name)))
+        return { reason: 'a searched column has no backend field' };
+    const paths = [];
+    for (const c of pathColumns) {
+        const p = plan.paths.get(c.name);
+        if (!p || p.kind !== 'toOne')
+            return { reason: `path column '${c.name}' can not be resolved` };
+        paths.push(p);
+    }
+    const projection = (0, alias_maps_1.collectProjectionColumns)(input.entityDef);
+    const calcDefs = calcColumns.map((c) => projection.find((col) => col?.as === c.name));
+    if (calcDefs.some((d) => !d))
+        return { reason: 'a calculated column has no projection expression' };
+    const ignoreCase = input.mode === 'insensitive';
+    const memo = new Map();
+    const words = new Map();
+    const wordCond = (word) => {
+        let cond = words.get(word);
+        if (!cond) {
+            cond = (async () => {
+                const parts = new Map(); // de-duplicated (a calculated column repeats its source field)
+                const add = (c) => { if (c !== 'false')
+                    parts.set(JSON.stringify(c), c); };
+                // only columns that are long enough to hold the word: fewer contains() clauses, and none can fail on length
+                for (const c of plain)
+                    if (word.length <= c.length)
+                        add((0, exports.containsCond)(fieldOf(c.name), word, ignoreCase));
+                for (const def of calcDefs) {
+                    const c = calcCond(def, word, plan.sourceDef, ignoreCase);
+                    if (c === 'true')
+                        return 'true'; // not pushable: the word is not restricted
+                    add(c);
+                }
+                const byFks = new Map();
+                const matches = await Promise.all(paths.map((p) => matchingKeys(input, plan.sourceDef, p.hops, p.leaf, word, log, memo)));
+                for (const m of matches) {
+                    if (!m)
+                        return 'true'; // this association can not be pushed: the word is not restricted
+                    const group = byFks.get(m.fks.join('|')) ?? { fks: m.fks, tuples: new Map() };
+                    for (const t of m.tuples)
+                        group.tuples.set(JSON.stringify(t), t);
+                    byFks.set(m.fks.join('|'), group);
+                }
+                for (const g of byFks.values())
+                    add(tupleCond(g.fks, [...g.tuples.values()], true));
+                return orOf([...parts.values()]);
+            })();
+            words.set(word, cond);
+        }
+        return cond;
+    };
+    const combine = async (node) => {
+        if (node.k === 'term')
+            return wordCond(node.v);
+        if (node.k === 'not')
+            return 'true';
+        const parts = await Promise.all(node.n.map(combine));
+        return node.k === 'and' ? andOf(parts) : orOf(parts);
+    };
+    const cond = await combine(tree);
+    log.debug('buildSearchPushdown', 'Planned', {
+        words: [...(0, search_1.searchTerms)(tree)],
+        outcome: cond === 'true' ? 'nothing pushed' : cond === 'false' ? 'no row can match' : 'filter',
+    });
+    if (cond === 'true')
+        return { reason: 'the term can not be restricted (NOT, unpushable column or association)' };
+    if (cond === 'false')
+        return { none: true };
+    const wheres = expandChunks(cond);
+    if (!wheres)
+        return { reason: 'more than one association has too many matching keys for one query' };
+    return { wheres };
+};
+exports.buildSearchPushdown = buildSearchPushdown;

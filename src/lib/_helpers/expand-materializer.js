@@ -1,1 +1,472 @@
-function _0x522c(_0x3dd67b,_0x55a733){_0x3dd67b=_0x3dd67b-0x1dc;var _0x297f8a=_0x297f();var _0x522c77=_0x297f8a[_0x3dd67b];if(_0x522c['EyEtpt']===undefined){var _0x5dbd7e=function(_0x4f2150){var _0x35b3f5='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5eab25='',_0x35113d='';for(var _0x520bda=0x0,_0x20d5c7,_0x4185f3,_0x25b6aa=0x0;_0x4185f3=_0x4f2150['charAt'](_0x25b6aa++);~_0x4185f3&&(_0x20d5c7=_0x520bda%0x4?_0x20d5c7*0x40+_0x4185f3:_0x4185f3,_0x520bda++%0x4)?_0x5eab25+=String['fromCharCode'](0xff&_0x20d5c7>>(-0x2*_0x520bda&0x6)):0x0){_0x4185f3=_0x35b3f5['indexOf'](_0x4185f3);}for(var _0x4a27ac=0x0,_0x228eee=_0x5eab25['length'];_0x4a27ac<_0x228eee;_0x4a27ac++){_0x35113d+='%'+('00'+_0x5eab25['charCodeAt'](_0x4a27ac)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x35113d);};var _0x2ca33c=function(_0x19608,_0x3062b3){var _0x1386a1=[],_0x10ca68=0x0,_0x5f5b6d,_0x358d9e='';_0x19608=_0x5dbd7e(_0x19608);var _0x280220;for(_0x280220=0x0;_0x280220<0x100;_0x280220++){_0x1386a1[_0x280220]=_0x280220;}for(_0x280220=0x0;_0x280220<0x100;_0x280220++){_0x10ca68=(_0x10ca68+_0x1386a1[_0x280220]+_0x3062b3['charCodeAt'](_0x280220%_0x3062b3['length']))%0x100,_0x5f5b6d=_0x1386a1[_0x280220],_0x1386a1[_0x280220]=_0x1386a1[_0x10ca68],_0x1386a1[_0x10ca68]=_0x5f5b6d;}_0x280220=0x0,_0x10ca68=0x0;for(var _0x1ca755=0x0;_0x1ca755<_0x19608['length'];_0x1ca755++){_0x280220=(_0x280220+0x1)%0x100,_0x10ca68=(_0x10ca68+_0x1386a1[_0x280220])%0x100,_0x5f5b6d=_0x1386a1[_0x280220],_0x1386a1[_0x280220]=_0x1386a1[_0x10ca68],_0x1386a1[_0x10ca68]=_0x5f5b6d,_0x358d9e+=String['fromCharCode'](_0x19608['charCodeAt'](_0x1ca755)^_0x1386a1[(_0x1386a1[_0x280220]+_0x1386a1[_0x10ca68])%0x100]);}return _0x358d9e;};_0x522c['AyqkLf']=_0x2ca33c,_0x522c['wGtgEF']={},_0x522c['EyEtpt']=!![];}var _0x4f4696=_0x297f8a[0x0];_0x522c['crQrzH']!==_0x4f4696&&(_0x522c['wGtgEF']={},_0x522c['crQrzH']=_0x4f4696);var _0x41051c=_0x522c['wGtgEF'][_0x3dd67b];return _0x41051c===undefined?(_0x522c['TPcdhs']===undefined&&(_0x522c['TPcdhs']=!![]),_0x522c77=_0x522c['AyqkLf'](_0x522c77,_0x55a733),_0x522c['wGtgEF'][_0x3dd67b]=_0x522c77):_0x522c77=_0x41051c,_0x522c77;}var _0x5e5864=_0x522c;(function(_0x4e6d4a,_0xe0663b){var _0x1c1e8d=_0x522c,_0x2ac5c2=_0x4e6d4a();while(!![]){try{var _0x50ff87=-parseInt(_0x1c1e8d(0x1e0,'(jiq'))/0x1*(-parseInt(_0x1c1e8d(0x2c4,'MG$M'))/0x2)+parseInt(_0x1c1e8d(0x210,'mnDL'))/0x3+parseInt(_0x1c1e8d(0x337,'m(!X'))/0x4+-parseInt(_0x1c1e8d(0x315,'Ur]6'))/0x5+parseInt(_0x1c1e8d(0x317,'(jiq'))/0x6+parseInt(_0x1c1e8d(0x2cd,'Vyjw'))/0x7*(-parseInt(_0x1c1e8d(0x227,'7Zb$'))/0x8)+parseInt(_0x1c1e8d(0x253,'9lWX'))/0x9*(parseInt(_0x1c1e8d(0x263,'p6@6'))/0xa);if(_0x50ff87===_0xe0663b)break;else _0x2ac5c2['push'](_0x2ac5c2['shift']());}catch(_0x3378c2){_0x2ac5c2['push'](_0x2ac5c2['shift']());}}}(_0x297f,0x60b47),(Object[_0x5e5864(0x205,'m(!X')](exports,_0x5e5864(0x2b1,'mnDL'),{'value':!0x0}),exports['resolveExpandNodes']=exports[_0x5e5864(0x21f,'0Pf7')]=exports[_0x5e5864(0x1f0,'^8tx')]=exports['purgeRemoteAssociationKeys']=exports[_0x5e5864(0x261,'pQ6e')]=exports['sliceByLimit']=exports[_0x5e5864(0x2e8,'zIcN')]=void 0x0));let cds_1=require(_0x5e5864(0x332,'9lWX')),utils_1=require(_0x5e5864(0x316,'QDq7')),alias_maps_1=require(_0x5e5864(0x2af,'7Zb$')),association_meta_1=require(_0x5e5864(0x234,'lXe]')),column_builders_1=require('./column-builders'),cqn_rewriter_1=require(_0x5e5864(0x238,'^8tx')),join_parser_1=require(_0x5e5864(0x269,'9lWX')),record_mapping_1=require(_0x5e5864(0x24e,'9lWX')),service_resolver_1=require(_0x5e5864(0x313,'lo!s')),soap_adapter_1=require(_0x5e5864(0x335,'#Bq0')),where_eval_1=require(_0x5e5864(0x1f8,'d)]]')),where_split_1=require(_0x5e5864(0x2fc,'jHYX')),SELECT=cds_1[_0x5e5864(0x266,'Sz#3')]['ql'][_0x5e5864(0x2f8,'u]0H')],M=_0x5e5864(0x276,'4L9e'),applyExpandModifiers=(_0x5b0bc6,_0x51f530)=>{var _0x38cc2e=_0x5e5864,_0x129433,_0x997933;_0x51f530[_0x38cc2e(0x2ab,'7Zb$')]&&_0x5b0bc6[_0x38cc2e(0x257,'lXe]')](_0x51f530['orderBy']),_0x51f530['limit']&&(_0x129433=_0x51f530[_0x38cc2e(0x2a9,'4L9e')]['rows']?.[_0x38cc2e(0x245,'MG$M')]??_0x51f530['limit'][_0x38cc2e(0x2a5,'zIcN')],_0x997933=_0x51f530[_0x38cc2e(0x290,'%V^#')][_0x38cc2e(0x221,'VL2P')]?.[_0x38cc2e(0x1ea,'Vyjw')]??_0x51f530['limit'][_0x38cc2e(0x2aa,'R2zL')],_0x5b0bc6[_0x38cc2e(0x213,'Sz#3')](_0x129433,_0x997933)),_0x51f530[_0x38cc2e(0x23b,'OdFW')]&&(_0x5b0bc6[_0x38cc2e(0x26c,'%V^#')][_0x38cc2e(0x286,'3hoL')]=!0x0),_0x51f530[_0x38cc2e(0x220,'p6@6')]&&_0x5b0bc6[_0x38cc2e(0x2bd,'mnDL')](_0x51f530['where']);},sliceByLimit=(exports[_0x5e5864(0x2da,'vzEW')]=applyExpandModifiers,(_0x53bed1,_0x4865e1)=>{var _0x43c79c=_0x5e5864,_0x52c023={'CGfbI':function(_0xf6f793,_0x4af16e){return _0xf6f793+_0x4af16e;}},_0x213a15=_0x4865e1[_0x43c79c(0x30c,'RPV6')]?.['val']??_0x4865e1[_0x43c79c(0x2c9,'K(k&')],_0x4865e1=_0x4865e1[_0x43c79c(0x32d,'d)]]')]?.['val']??_0x4865e1[_0x43c79c(0x25a,'iP8U')]??0x0;return _0x53bed1['slice'](_0x4865e1,_0x52c023['CGfbI'](_0x4865e1,_0x213a15));}),localSort=(exports[_0x5e5864(0x25d,'6t^W')]=sliceByLimit,(_0x185caa,_0x573cd1,_0x596f28)=>Array[_0x5e5864(0x2a6,'4L9e')](_0x573cd1)?[..._0x185caa][_0x5e5864(0x1ef,'zIcN')]((_0x10c4b0,_0x17dc8)=>{var _0x4cc253=_0x5e5864,_0x582f56={'DhWvL':function(_0x42ea34,_0x470cca){return _0x42ea34-_0x470cca;},'AkoTh':function(_0x221d3b,_0x4c303c){return _0x221d3b===_0x4c303c;},'nHRyh':_0x4cc253(0x287,'^8tx'),'ZXnkG':function(_0xed3cf4,_0x3f0cff){return _0xed3cf4==_0x3f0cff;},'vywGg':function(_0xef432a,_0x599771){return _0xef432a*_0x599771;},'ZwnKR':function(_0x2bb9d2,_0x55e4da){return _0x2bb9d2<_0x55e4da;},'hhsBz':function(_0x326643,_0x53d80a){return _0x326643<_0x53d80a;}};for(var _0x260fc3 of _0x573cd1){var _0x4c1029=_0x260fc3[_0x4cc253(0x291,'VL2P')]?_0x260fc3[_0x4cc253(0x2e2,'^8tx')][_0x582f56['DhWvL'](_0x260fc3[_0x4cc253(0x23a,'0Pf7')]['length'],0x1)]:_0x260fc3,_0x4c1029=_0x596f28[_0x4cc253(0x26b,'KKJr')][_0x4c1029]||_0x4c1029,_0x260fc3=_0x582f56[_0x4cc253(0x217,'@7&C')](_0x582f56[_0x4cc253(0x24f,'R2zL')],_0x260fc3[_0x4cc253(0x20e,'m(!X')])?-0x1:0x1,_0x3432e1=_0x10c4b0[_0x4c1029],_0x4c1029=_0x17dc8[_0x4c1029];if(null==_0x3432e1)return _0x260fc3;if(_0x582f56[_0x4cc253(0x2b5,'7Zb$')](null,_0x4c1029))return _0x582f56[_0x4cc253(0x214,'98Kc')](-0x1,_0x260fc3);if(_0x582f56[_0x4cc253(0x2e7,'7Zb$')](_0x3432e1,_0x4c1029))return-0x1*_0x260fc3;if(_0x582f56[_0x4cc253(0x32e,'V(vh')](_0x4c1029,_0x3432e1))return _0x260fc3;}return 0x0;}):_0x185caa),purgeRemoteAssociationKeys=(exports[_0x5e5864(0x28b,'2ZU2')]=localSort,(_0x2cde56,_0x5243e7,_0x1bac9c,_0x36b885)=>{var _0x46a505=_0x5e5864,_0x5be46c=_0x1bac9c[_0x46a505(0x2fe,'PC3w')](_0x4d2b0c=>!!_0x4d2b0c&&_0x4d2b0c!==_0x5243e7&&!_0x36b885[_0x46a505(0x241,'d)]]')](_0x4d2b0c));if(_0x5be46c[_0x46a505(0x328,'u]0H')]){for(var _0x192987 of _0x2cde56)if(_0x192987){for(var _0xfba537 of _0x5be46c)Object[_0x46a505(0x20f,'rRDC')]['hasOwnProperty'][_0x46a505(0x28d,'PC3w')](_0x192987,_0xfba537)&&delete _0x192987[_0xfba537];}}}),buildAssociationJoinValues=(exports[_0x5e5864(0x207,'vzEW')]=purgeRemoteAssociationKeys,(_0x2cf378,_0x25e18c)=>{var _0x12ba5=_0x5e5864,_0x4d97c5={'QPdfc':_0x12ba5(0x265,'lXe]'),'jUFxT':_0x12ba5(0x2df,'4L9e'),'RKpzd':function(_0x9f0b67,_0x203d3f){return _0x9f0b67<_0x203d3f;},'ldHCG':function(_0x422fc7,_0x290737){return _0x422fc7===_0x290737;}};let {localKeys:_0x18c29a,targetKeys:_0x47d6ec}=_0x2cf378;if(!_0x18c29a?.['length']||!_0x47d6ec?.[_0x12ba5(0x273,'MG$M')])return[];let _0x37496a=new Set();var _0x2ebab4,_0x2cf378=_0x25e18c[_0x12ba5(0x29e,'u]0H')](_0xf1bb95=>{var _0x2add85=_0x12ba5,_0x4cbcf8=_0x18c29a[_0x2add85(0x2a2,'OdFW')](_0x289043=>String(_0xf1bb95[_0x289043]??''))[_0x2add85(0x2f6,'K(k&')](_0x4d97c5[_0x2add85(0x24b,'(jiq')]);return!_0x37496a[_0x2add85(0x2d7,'#Bq0')](_0x4cbcf8)&&(_0x37496a[_0x2add85(0x309,'4L9e')](_0x4cbcf8),!0x0);});if(_0x4d97c5[_0x12ba5(0x33d,'pQ6e')](0x1,_0x18c29a[_0x12ba5(0x1f2,'tvA(')]))return _0x25e18c=_0x47d6ec[0x0],_0x4d97c5[_0x12ba5(0x2e4,'3hoL')](0x0,(_0x2ebab4=_0x2cf378[_0x12ba5(0x1f4,'9lWX')](_0x1c09e7=>_0x1c09e7[_0x18c29a[0x0]])['filter'](_0x39d5ea=>null!=_0x39d5ea&&''!==_0x39d5ea))[_0x12ba5(0x328,'u]0H')])?[]:_0x4d97c5[_0x12ba5(0x23c,'MNUl')](0x1,_0x2ebab4['length'])?[{'ref':[_0x25e18c]},'=',{'val':_0x2ebab4[0x0]}]:[{'ref':[_0x25e18c]},'in',{'list':_0x2ebab4[_0x12ba5(0x2e1,'iP8U')](_0x4cbfa1=>({'val':_0x4cbfa1}))}];let _0x400d26=[];return _0x2cf378[_0x12ba5(0x33f,'PC3w')]((_0x4b9b15,_0x5e214c)=>{var _0x4d404=_0x12ba5,_0x70621c={'frttM':function(_0xaef869,_0x4edc57){return _0xaef869-_0x4edc57;},'YDLdV':_0x4d97c5[_0x4d404(0x31f,'u]0H')]};let _0x470ea0=[];_0x18c29a[_0x4d404(0x26e,'lo!s')]((_0x2005f4,_0x8fbb6d)=>{var _0x2b398e=_0x4d404;_0x2005f4=_0x4b9b15[_0x2005f4]??'',(_0x470ea0[_0x2b398e(0x1ee,'stM*')]({'ref':[_0x47d6ec[_0x8fbb6d]]},'=',{'val':_0x2005f4}),_0x8fbb6d<_0x70621c[_0x2b398e(0x2c5,'Ur]6')](_0x18c29a[_0x2b398e(0x30b,'R2zL')],0x1)&&_0x470ea0['push'](_0x70621c[_0x2b398e(0x324,'K(k&')]));}),_0x4d97c5[_0x4d404(0x233,'PjA6')](0x0,_0x5e214c)&&_0x400d26[_0x4d404(0x1f1,'Vyjw')]('or'),_0x400d26[_0x4d404(0x264,'jHYX')]('(',..._0x470ea0,')');}),_0x400d26;}),fetchAssociatedRecords=(exports[_0x5e5864(0x28f,'TpwQ')]=buildAssociationJoinValues,async(_0x39649e,_0x47c39b,_0xb78641,_0x315a10,_0x44b22d,_0x432470,_0x170879,_0x1ba06f,_0x2f3780,_0x230d3a=!0x0,_0x1ee86f)=>{var _0x2ca468=_0x5e5864,_0x1baf9b={'INHov':function(_0x4c00c4,_0x38ec0a){return _0x4c00c4&&_0x38ec0a;},'jHnii':'fetchAssociatedRecords','jvzwe':_0x2ca468(0x2df,'4L9e'),'shbRJ':function(_0x43fccc,_0x56c1d3){return _0x43fccc<_0x56c1d3;},'dnvdJ':_0x2ca468(0x267,'98Kc'),'CJvpO':'SOAP\x20dispatch','jFagW':function(_0xeb07ff,_0x1ef7f9){return _0xeb07ff??_0x1ef7f9;},'bgzla':_0x2ca468(0x300,'rRDC'),'qAMVA':_0x2ca468(0x2c2,'R2zL'),'TBqEd':'In-memory\x20expand\x20filter\x20applied','UdUrX':function(_0x3fb897,_0x2c7b86){return _0x3fb897-_0x2c7b86;}},_0x19bd29=new Map();if(_0x44b22d?.['length']){var _0x315a10=_0x315a10?.[_0x2ca468(0x270,')#Kw')],_0x483136=_0x315a10?.['from']?.[_0x2ca468(0x293,'MNUl')]?.[0x0]||_0xb78641[_0x2ca468(0x20c,'iP8U')][_0x2ca468(0x2ca,'4L9e')]('.')[_0x2ca468(0x1e4,'Vyjw')]()||_0xb78641['target'],_0x17ee54=SELECT[_0x2ca468(0x2f3,'jHYX')](_0x483136);if(_0x315a10?.[_0x2ca468(0x218,'9lWX')]&&_0x17ee54[_0x2ca468(0x223,'MG$M')](JSON[_0x2ca468(0x2b8,'Ur]6')](JSON[_0x2ca468(0x31c,'stM*')](_0x315a10['columns']))),_0x315a10?.[_0x2ca468(0x244,'0Pf7')]&&_0x17ee54[_0x2ca468(0x250,'u]0H')](JSON['parse'](JSON['stringify'](_0x315a10['orderBy']))),_0x315a10?.['limit']){let _0x550e3a=_0x315a10[_0x2ca468(0x239,')#Kw')][_0x2ca468(0x1dc,'@7&C')]?.[_0x2ca468(0x2e5,'jHYX')]??_0x315a10[_0x2ca468(0x329,'lo!s')][_0x2ca468(0x31e,'KKJr')];var _0x5bc740=_0x315a10['limit'][_0x2ca468(0x2fd,'RPV6')]?.[_0x2ca468(0x247,'u]0H')]??_0x315a10['limit'][_0x2ca468(0x256,'TpwQ')];_0x17ee54[_0x2ca468(0x2d3,'7Zb$')](_0x550e3a,_0x5bc740);}_0x315a10?.[_0x2ca468(0x237,'lo!s')]&&(_0x17ee54[_0x2ca468(0x31a,'(jiq')][_0x2ca468(0x23b,'OdFW')]=!0x0),_0x5bc740=(0x0,soap_adapter_1[_0x2ca468(0x29c,'(jiq')])(_0x47c39b[_0x2ca468(0x30d,'tvA(')]);let _0x177158;var _0x3f9b2c,{remoteWhere:_0x2ad233,localWhere:_0x1c849e}=_0x5bc740&&_0x315a10?.[_0x2ca468(0x284,'rRDC')]?(0x0,where_split_1[_0x2ca468(0x2f1,'^8tx')])(_0x315a10[_0x2ca468(0x32c,'0Pf7')],_0x170879,_0x432470['localToRemote'],_0x2f3780,!0x0):{'remoteWhere':_0x315a10?.[_0x2ca468(0x1e5,'m(!X')],'localWhere':void 0x0},_0x5b820b=(_0x1baf9b[_0x2ca468(0x2de,'PC3w')](_0x5bc740,_0x1c849e)&&(_0x177158=_0x1c849e,_0x2f3780[_0x2ca468(0x27f,'@7&C')](_0x1baf9b[_0x2ca468(0x1dd,'6t^W')],_0x2ca468(0x24c,'jHYX'),{'target':_0xb78641[_0x2ca468(0x298,'TpwQ')],'localWhere':JSON[_0x2ca468(0x279,'PjA6')](_0x1c849e)})),0x3<_0x44b22d[_0x2ca468(0x1fe,'7Zb$')]?['(',..._0x44b22d,')']:[..._0x44b22d]);for(_0x3f9b2c of _0xb78641[_0x2ca468(0x1e6,'XicL')]||[])for(var [_0x43c255,_0x3b3605]of Object[_0x2ca468(0x209,'K(k&')](_0x3f9b2c))0x0<_0x5b820b[_0x2ca468(0x268,'%V^#')]&&_0x5b820b[_0x2ca468(0x2b4,'TpwQ')](_0x1baf9b[_0x2ca468(0x2a7,'lo!s')]),_0x5b820b[_0x2ca468(0x2b9,'@!@X')]({'ref':[_0x43c255]},'=',{'val':_0x3b3605});_0x1c849e=_0x5bc740?_0x2ad233:_0x315a10?.[_0x2ca468(0x27a,'K(k&')],_0x2ad233=(_0x1c849e&&(_0x1baf9b[_0x2ca468(0x2a0,'iP8U')](0x0,_0x5b820b[_0x2ca468(0x273,'MG$M')])&&_0x5b820b[_0x2ca468(0x334,'d)]]')](_0x1baf9b['jvzwe']),Array[_0x2ca468(0x281,'iP8U')](_0x1c849e)?_0x5b820b['push']('(',..._0x1c849e,')'):_0x5b820b[_0x2ca468(0x333,'pQ6e')](_0x1c849e)),_0x1baf9b[_0x2ca468(0x2a1,'@7&C')](0x0,_0x5b820b[_0x2ca468(0x323,'53Ke')])&&_0x17ee54['where'](_0x5b820b),_0x230d3a?(0x0,cqn_rewriter_1[_0x2ca468(0x311,'PC3w')])(_0x17ee54,_0x170879,_0x432470):_0x17ee54),_0x315a10=Date[_0x2ca468(0x22c,')#Kw')](),_0x2f3780[_0x2ca468(0x2c0,'Vyjw')](_0x1baf9b[_0x2ca468(0x260,'KKJr')],_0x1baf9b[_0x2ca468(0x251,'&AvW')],{'target':_0xb78641[_0x2ca468(0x326,'53Ke')],'entity':_0x483136,'parentKeyCount':_0x44b22d[_0x2ca468(0x289,'MNUl')],'soap':_0x5bc740});let _0x371ac0;if(_0x2f3780['debug'](_0x1baf9b[_0x2ca468(0x33b,'zIcN')],'Before\x20dispatch',{'target':_0xb78641[_0x2ca468(0x31b,'6t^W')],'entity':_0x483136,'remoteSrv':_0x47c39b[_0x2ca468(0x1f7,'jHYX')]}),_0x5bc740)_0x2f3780[_0x2ca468(0x2ea,'TpwQ')](_0x1baf9b[_0x2ca468(0x21e,'m(!X')],_0x1baf9b[_0x2ca468(0x296,'tvA(')]),_0x2ad233?.['SELECT']&&(_0x2ad233[_0x2ca468(0x278,'K(k&')][_0x2ca468(0x2f9,'R2zL')]=!0x0),_0x371ac0=await(0x0,soap_adapter_1[_0x2ca468(0x2e0,'m(!X')])(_0x47c39b,_0x483136,_0x39649e,_0x2ad233,_0x170879,_0x2f3780,_0x1baf9b[_0x2ca468(0x24a,'98Kc')](_0x1ee86f,_0x39649e));else{_0x2ad233?.[_0x2ca468(0x2a4,'vzEW')]&&_0x47c39b?.[_0x2ca468(0x235,'#Bq0')]&&(_0x2ad233['SELECT']['__skipPagination']=!0x0),_0x1c849e=_0x47c39b['tx'](_0x39649e);try{_0x2f3780[_0x2ca468(0x27d,'6t^W')](_0x1baf9b['jHnii'],'Backend\x20dispatch\x20(tx)'),_0x371ac0=await _0x1c849e[_0x2ca468(0x2ad,'OdFW')](_0x2ad233);}catch(_0x597810){_0x2f3780['warn'](_0x1baf9b[_0x2ca468(0x2d0,'#Bq0')],_0x1baf9b[_0x2ca468(0x325,'MG$M')],{'target':_0xb78641['target'],'error':_0x597810?.[_0x2ca468(0x321,'3hoL')]}),delete _0x2ad233[_0x2ca468(0x2d4,'mnDL')][_0x2ca468(0x223,'MG$M')],delete _0x2ad233[_0x2ca468(0x2a3,'lo!s')][_0x2ca468(0x243,'R2zL')],delete _0x2ad233[_0x2ca468(0x262,'rRDC')][_0x2ca468(0x1eb,'XicL')],_0x44b22d?.[_0x2ca468(0x240,'PjA6')]&&_0x2ad233['where'](_0x44b22d),_0x371ac0=await _0x1c849e[_0x2ca468(0x33e,'rRDC')](_0x2ad233);}}var _0x4f97a5,_0x2eba6e,_0x249099,_0x230d3a=Array[_0x2ca468(0x314,'KKJr')](_0x371ac0)?_0x371ac0:[_0x371ac0];for(_0x4f97a5 of _0x230d3a)if(_0x4f97a5){let _0x550a4a=(0x0,record_mapping_1[_0x2ca468(0x224,'lXe]')])(_0x170879,_0x4f97a5,_0x432470[_0x2ca468(0x201,'PjA6')],_0x1ba06f);var _0x1be7c6,_0x1106b1=(0x0,join_parser_1[_0x2ca468(0x327,'QDq7')])(_0x550a4a,_0xb78641[_0x2ca468(0x32a,'p6@6')]);_0x2f3780[_0x2ca468(0x1fa,'m(!X')](_0x1baf9b[_0x2ca468(0x246,'%V^#')],_0x1baf9b[_0x2ca468(0x29a,'lo!s')],{'targetKeys':_0xb78641[_0x2ca468(0x2c7,'3hoL')],'rawRowKeys':Object['keys'](_0x4f97a5),'mappedRowKeys':Object[_0x2ca468(0x308,'zIcN')](_0x550a4a),'targetKeyValues':_0xb78641[_0x2ca468(0x1e1,'0Pf7')][_0x2ca468(0x318,'0Pf7')]((_0x111e68,_0x456ea3)=>(_0x111e68[_0x456ea3]=_0x550a4a[_0x456ea3],_0x111e68),{}),'childJoinKey':_0x1106b1}),_0xb78641[_0x2ca468(0x322,'#Bq0')]?((_0x1be7c6=_0x19bd29[_0x2ca468(0x29d,'MG$M')](_0x1106b1)||[])[_0x2ca468(0x1f9,'98Kc')](_0x550a4a),_0x19bd29[_0x2ca468(0x301,'&AvW')](_0x1106b1,_0x1be7c6)):_0x19bd29[_0x2ca468(0x2dc,'tvA(')](_0x1106b1,_0x550a4a);}if(_0x177158){let _0x536094=0x0;for(var [_0x54a5a0,_0x48be9a]of _0x19bd29['entries']())Array[_0x2ca468(0x23d,'pQ6e')](_0x48be9a)?(_0x2eba6e=_0x48be9a[_0x2ca468(0x32b,'VL2P')],_0x249099=_0x48be9a[_0x2ca468(0x29f,'R2zL')](_0x5ea79e=>(0x0,where_eval_1[_0x2ca468(0x20b,'lo!s')])(_0x177158,_0x5ea79e)),_0x19bd29[_0x2ca468(0x2b3,'iP8U')](_0x54a5a0,_0x249099),_0x536094+=_0x2eba6e-_0x249099[_0x2ca468(0x2fa,'Vyjw')]):_0x48be9a&&!(0x0,where_eval_1[_0x2ca468(0x2fb,'2ZU2')])(_0x177158,_0x48be9a)&&(_0x19bd29[_0x2ca468(0x27e,'OdFW')](_0x54a5a0),_0x536094++);_0x2f3780[_0x2ca468(0x2cf,'R2zL')](_0x1baf9b['jHnii'],_0x1baf9b[_0x2ca468(0x2d9,'jHYX')],{'target':_0xb78641['target'],'removedRows':_0x536094});}_0x2f3780[_0x2ca468(0x307,'3hoL')](_0x1baf9b[_0x2ca468(0x2d0,'#Bq0')],_0x2ca468(0x25c,'VL2P'),{'target':_0xb78641[_0x2ca468(0x319,'Vyjw')],'elapsedMs':_0x1baf9b[_0x2ca468(0x2bf,'vzEW')](Date[_0x2ca468(0x21d,'0Pf7')](),_0x315a10),'childRows':_0x230d3a[_0x2ca468(0x1fe,'7Zb$')],'keyedGroups':_0x19bd29[_0x2ca468(0x21c,'PC3w')]});}return _0x19bd29;}),attachPreFetchedChildren=(exports[_0x5e5864(0x232,'rRDC')]=fetchAssociatedRecords,async(_0x414df5,_0x1e6a03,_0xef1b7f,_0x32f75d,_0x135c31,_0x3fb726,_0x27dc68,_0x482dcd,_0x4cec9d,_0x2eabed)=>{var _0x5584dd=_0x5e5864,_0x1f7f03={'Ftbgm':_0x5584dd(0x26d,'QDq7'),'dGMBG':function(_0xd9030d,_0x203f6c){return _0xd9030d<_0x203f6c;},'qEFmT':_0x5584dd(0x2d1,'tvA(')};_0x2eabed[_0x5584dd(0x331,'%V^#')](_0x1f7f03[_0x5584dd(0x20a,'&AvW')],_0x5584dd(0x2f2,'QDq7'),{'assoc':_0x135c31[_0x5584dd(0x222,'RPV6')],'parents':_0x1e6a03[_0x5584dd(0x21b,'K(k&')]});for(var _0x4f6ec2 of _0x1e6a03){var _0x36152a=_0x4f6ec2[_0xef1b7f];if(_0x36152a){let _0x452f60=(Array[_0x5584dd(0x314,'KKJr')](_0x36152a)?_0x36152a:[_0x36152a])[_0x5584dd(0x28e,'zIcN')](_0x36608b=>(0x0,record_mapping_1[_0x5584dd(0x229,'4L9e')])(_0x3fb726,_0x36608b,_0x27dc68[_0x5584dd(0x203,'OdFW')],_0x4cec9d));_0x32f75d[_0x5584dd(0x2ed,'3hoL')]&&(_0x452f60=_0x452f60[_0x5584dd(0x275,'KKJr')](_0x5961c2=>(0x0,where_eval_1[_0x5584dd(0x236,'9lWX')])(_0x32f75d[_0x5584dd(0x27b,'u]0H')],_0x5961c2))),_0x32f75d[_0x5584dd(0x2ec,'(jiq')]&&(_0x452f60=(0x0,exports['sliceByLimit'])(_0x452f60,_0x32f75d['limit'])),_0x1f7f03[_0x5584dd(0x259,'^8tx')](0x0,_0x482dcd[_0x5584dd(0x1fe,'7Zb$')])&&(_0x452f60=await(0x0,exports[_0x5584dd(0x2cc,'XicL')])(_0x414df5,_0x3fb726,_0x452f60,_0x482dcd,_0x4cec9d,_0x2eabed)),_0x4f6ec2[_0xef1b7f]=_0x135c31[_0x5584dd(0x304,'MNUl')]?_0x452f60:_0x452f60[0x0];}}_0x2eabed[_0x5584dd(0x22e,'^8tx')](_0x1f7f03['Ftbgm'],_0x1f7f03[_0x5584dd(0x2c1,'0Pf7')]);}),attachMissingChildren=async(_0x30094d,_0x3bd505,_0x2b92f6,_0x30fa85,_0xb331a8,_0x5b597,_0x26800a,_0x1df4de,_0x3251db,_0x528978,_0x344837)=>{var _0x552cdf=_0x5e5864,_0x416de2={'Cfetu':'ENTER','rrocT':_0x552cdf(0x1de,'R2zL'),'ZhfVX':function(_0x7628a9,_0x438250){return _0x7628a9<_0x438250;},'jlMkr':_0x552cdf(0x297,'@7&C')};_0x344837[_0x552cdf(0x303,'2ZU2')](_0x552cdf(0x28a,'0Pf7'),_0x416de2[_0x552cdf(0x292,'7Zb$')],{'assoc':_0x5b597['name'],'parents':_0x2b92f6['length'],'target':_0x5b597['target']});var _0x482a26=(0x0,exports['buildAssociationJoinValues'])(_0x5b597,_0x2b92f6);if(_0x482a26[_0x552cdf(0x2d8,'4L9e')]){var _0x13ee81=(0x0,service_resolver_1[_0x552cdf(0x225,'4L9e')])(_0x5b597[_0x552cdf(0x280,'PjA6')]),_0x2305d=(0x0,service_resolver_1['usesLocalServiceSemantics'])(_0x13ee81),_0x78e413=_0x2305d?(0x0,column_builders_1['buildSelectedLocalColumns'])(_0x26800a,_0x30fa85,_0x5b597[_0x552cdf(0x277,'@!@X')]):(0x0,column_builders_1[_0x552cdf(0x31d,'u]0H')])(_0x26800a,_0x30fa85,_0x1df4de,_0x5b597[_0x552cdf(0x22b,'d)]]')]),_0x169a29=(!_0x2305d||_0x13ee81===_0x30094d[_0x552cdf(0x2db,'RPV6')]?.[_0x552cdf(0x204,'K(k&')])&&_0x5b597['target']['split']('.')['pop']()||_0x5b597[_0x552cdf(0x23e,'m(!X')],_0x169a29=SELECT[_0x552cdf(0x283,'MG$M')](_0x169a29)[_0x552cdf(0x30f,'vzEW')](_0x78e413),_0x78e413=((0x0,exports[_0x552cdf(0x2b7,'53Ke')])(_0x169a29,_0x30fa85),await cds_1['default'][_0x552cdf(0x26a,'KKJr')]['to'](_0x13ee81)),_0x429510=await(0x0,exports['fetchAssociatedRecords'])(_0x30094d,_0x78e413,_0x5b597,_0x169a29,_0x482a26,_0x1df4de,_0x26800a,_0x528978,_0x344837,!_0x2305d);let _0x4009a9=0x0,_0x431a66=0x0;for(let _0x1c7f0e of _0x2b92f6){var _0x856d7=(0x0,join_parser_1['buildParentJoinKey'])(_0x1c7f0e,_0x5b597['localKeys']),_0x856d7=(_0x344837[_0x552cdf(0x1e3,'Ur]6')](_0x416de2['rrocT'],_0x552cdf(0x1df,'p6@6'),{'localKeys':_0x5b597[_0x552cdf(0x299,'98Kc')],'parentKeys':Object[_0x552cdf(0x1ec,'Vyjw')](_0x1c7f0e),'localKeyValues':_0x5b597[_0x552cdf(0x1e9,'0Pf7')][_0x552cdf(0x1f6,'Vyjw')]((_0x4ba834,_0x63f90f)=>(_0x4ba834[_0x63f90f]=_0x1c7f0e[_0x63f90f],_0x4ba834),{}),'parentJoinKey':_0x856d7,'availableChildKeys':[..._0x429510[_0x552cdf(0x219,'3hoL')]()]}),_0x429510[_0x552cdf(0x2e9,'R2zL')](_0x856d7));if(_0x856d7){if(_0x4009a9++,_0x5b597[_0x552cdf(0x33a,'d)]]')]){let _0x8ca122=_0x856d7;var _0x59096e=(_0x8ca122=_0x30fa85[_0x552cdf(0x23f,'OdFW')]&&_0x416de2[_0x552cdf(0x2e6,'mnDL')](0x1,_0x8ca122[_0x552cdf(0x2a8,'vzEW')])?(0x0,exports['localSort'])(_0x8ca122,_0x30fa85[_0x552cdf(0x200,'KKJr')],_0x1df4de):_0x8ca122)[_0x552cdf(0x2d2,'iP8U')];_0x30fa85[_0x552cdf(0x239,')#Kw')]&&(_0x8ca122=(0x0,exports[_0x552cdf(0x2ae,'m(!X')])(_0x8ca122,_0x30fa85[_0x552cdf(0x2be,'p6@6')])),_0x1c7f0e[_0xb331a8]=await(0x0,exports[_0x552cdf(0x255,'VL2P')])(_0x30094d,_0x26800a,_0x8ca122,_0x3251db,_0x528978,_0x344837),_0x30fa85['count']&&(_0x1c7f0e[_0xb331a8]['$count']=_0x59096e);}else _0x59096e=Array[_0x552cdf(0x2ef,'Ur]6')](_0x856d7)?_0x856d7[0x0]:_0x856d7,_0x856d7=await(0x0,exports[_0x552cdf(0x27c,'iP8U')])(_0x30094d,_0x26800a,[_0x59096e],_0x3251db,_0x528978,_0x344837),_0x1c7f0e[_0xb331a8]=_0x856d7[0x0];}else _0x1c7f0e[_0xb331a8]=_0x5b597[_0x552cdf(0x295,'9lWX')]?[]:null,_0x431a66++;}_0x344837[_0x552cdf(0x254,'#Bq0')](_0x552cdf(0x294,'7Zb$'),'EXIT',{'assoc':_0x5b597[_0x552cdf(0x2d5,'#Bq0')],'matched':_0x4009a9,'unmatched':_0x431a66});}else{_0x344837[_0x552cdf(0x305,'zIcN')](_0x416de2[_0x552cdf(0x20d,'0Pf7')],_0x416de2[_0x552cdf(0x22f,'0Pf7')],{'assoc':_0x5b597[_0x552cdf(0x228,'mnDL')]});for(var _0x24c77a of _0x2b92f6)_0x24c77a[_0xb331a8]=_0x5b597[_0x552cdf(0x22a,'lo!s')]?[]:null;}},resolveExpandNodes=async(_0x5d3179,_0x575268,_0x5397ab,_0x519565,_0x40ce13,_0x5cba79)=>{var _0xc47c63=_0x5e5864,_0x2b152c={'ydqpK':function(_0x520f76,_0x4efbd1){return _0x520f76===_0x4efbd1;},'WrdjW':_0xc47c63(0x312,'mnDL'),'blLjf':function(_0x20606a,_0x468b81){return _0x20606a!==_0x468b81;},'bQlEI':function(_0x232e69,_0x292272){return _0x232e69!==_0x292272;},'phhjs':_0xc47c63(0x2ff,'p6@6'),'EoRkQ':function(_0xe65126,_0x266c54){return _0xe65126<_0x266c54;},'kykLU':function(_0x2ad1a7,_0x324fa3,_0x3a49f0,_0x153637,_0x1c8315,_0x190c6d,_0x5da38e,_0x4ae53b,_0xe70982,_0x157bb8,_0x133570){return _0x2ad1a7(_0x324fa3,_0x3a49f0,_0x153637,_0x1c8315,_0x190c6d,_0x5da38e,_0x4ae53b,_0xe70982,_0x157bb8,_0x133570);},'OuFrr':function(_0x4e0725,_0x139c8c){return _0x4e0725<_0x139c8c;},'MvFur':function(_0x2d1b30,_0x415452){return _0x2d1b30-_0x415452;},'irPSD':_0xc47c63(0x28c,'%V^#'),'JBJQK':_0xc47c63(0x258,'RPV6'),'KGrtq':_0xc47c63(0x285,'PjA6')};if(!_0x5397ab?.['length']||!_0x519565?.[_0xc47c63(0x328,'u]0H')])return _0x5397ab;var _0x10f498,_0xeae75c=_0x2b152c[_0xc47c63(0x330,'%V^#')](_0x5cba79[_0xc47c63(0x2dd,'p6@6')],M)?_0x5cba79:_0x5cba79[_0xc47c63(0x1e2,'lo!s')](M),_0x5290d8=(_0xeae75c[_0xc47c63(0x302,'rRDC')](_0xc47c63(0x2f5,'R2zL'),_0x2b152c[_0xc47c63(0x215,'V(vh')],{'entity':_0x575268?.['name'],'parents':_0x5397ab[_0xc47c63(0x252,'XicL')],'expands':_0x519565[_0xc47c63(0x230,'XicL')](_0xb659c6=>_0xb659c6['as']||_0xb659c6[_0xc47c63(0x2ac,'u]0H')])}),(0x0,utils_1[_0xc47c63(0x242,'vzEW')])(_0x5397ab)),_0x4ada6d=(0x0,alias_maps_1[_0xc47c63(0x30a,'QDq7')])(_0x575268,_0x40ce13),_0x23fec4=new Set(_0x519565[_0xc47c63(0x2ce,'@!@X')](_0x3fce74=>_0x3fce74['as']||_0x3fce74[_0xc47c63(0x2e3,'KKJr')])),_0x41028d=new Set();for(_0x10f498 of _0x519565)if(!_0x41028d[_0xc47c63(0x2f4,'3hoL')](_0x10f498[_0xc47c63(0x272,'7Zb$')])){_0x41028d[_0xc47c63(0x310,'6t^W')](_0x10f498[_0xc47c63(0x271,'V(vh')]);var _0x4992b8=_0x575268?.[_0xc47c63(0x248,'V(vh')]?.[_0x10f498[_0xc47c63(0x2bb,'98Kc')]];if(_0x4992b8?.[_0xc47c63(0x30e,'mnDL')]){var _0x5af6fe=(0x0,association_meta_1[_0xc47c63(0x2c3,'Ur]6')])(_0x10f498[_0xc47c63(0x338,'9lWX')],_0x575268,_0x4992b8[_0xc47c63(0x1fd,'vzEW')],_0x4992b8,_0x40ce13);if(_0x5af6fe){var _0xe79246=cds_1['default'][_0xc47c63(0x306,'MNUl')][_0xc47c63(0x288,'mnDL')][_0x5af6fe['target']];if(_0xe79246){var _0x536ccb,_0x4e5008=(0x0,join_parser_1[_0xc47c63(0x21a,'(jiq')])(_0x10f498[_0xc47c63(0x2cb,'KKJr')]||[]),_0x593c07=(0x0,alias_maps_1[_0xc47c63(0x320,'u]0H')])(_0xe79246,_0x40ce13),_0x5d0b32=_0x10f498['as']||_0x10f498['name'],_0x4fbeb8=(0x0,alias_maps_1[_0xc47c63(0x336,'stM*')])(_0x575268,_0x10f498[_0xc47c63(0x222,'RPV6')],_0x40ce13,_0x4992b8),_0x5e0b4e=(_0x5af6fe[_0xc47c63(0x2eb,'KKJr')]&&_0x2b152c[_0xc47c63(0x2b0,'0Pf7')](_0x5af6fe[_0xc47c63(0x211,'lo!s')],_0x5d0b32)?_0x5af6fe['originalName']:void 0x0)||_0x4fbeb8,_0x589f3d=[],_0x446db8=[];for(_0x536ccb of _0x5290d8){let _0x57a7bc=null;_0x5af6fe[_0xc47c63(0x339,'3hoL')]&&(_0x2b152c[_0xc47c63(0x25e,'p6@6')](void 0x0,_0x536ccb[_0x5d0b32])?_0x57a7bc=_0x5d0b32:_0x5e0b4e&&_0x2b152c[_0xc47c63(0x2d6,'53Ke')](void 0x0,_0x536ccb[_0x5e0b4e])&&(_0x57a7bc=_0x5e0b4e)),(_0x2b152c[_0xc47c63(0x2d6,'53Ke')](null,_0x57a7bc)?(_0x536ccb[_0x5d0b32]=_0x536ccb[_0x57a7bc],_0x2b152c[_0xc47c63(0x274,'PjA6')](_0x57a7bc,_0x5d0b32)&&delete _0x536ccb[_0x57a7bc],_0x589f3d):_0x446db8)[_0xc47c63(0x334,'d)]]')](_0x536ccb);}_0xeae75c[_0xc47c63(0x24d,'PC3w')]('resolveExpandNodes',_0x2b152c[_0xc47c63(0x2f0,'@!@X')],{'expand':_0x10f498[_0xc47c63(0x2ac,'u]0H')],'preFetched':_0x589f3d[_0xc47c63(0x25b,'RPV6')],'missing':_0x446db8['length'],'nestedExpands':_0x4e5008[_0xc47c63(0x289,'MNUl')]}),_0x2b152c[_0xc47c63(0x29b,')#Kw')](0x0,_0x589f3d['length'])&&await _0x2b152c[_0xc47c63(0x1e8,'R2zL')](attachPreFetchedChildren,_0x5d3179,_0x589f3d,_0x5d0b32,_0x10f498,_0x5af6fe,_0xe79246,_0x593c07,_0x4e5008,_0x40ce13,_0xeae75c),_0x2b152c['OuFrr'](0x0,_0x446db8[_0xc47c63(0x216,'TpwQ')])&&await attachMissingChildren(_0x5d3179,_0x575268,_0x446db8,_0x10f498,_0x5d0b32,_0x5af6fe,_0xe79246,_0x593c07,_0x4e5008,_0x40ce13,_0xeae75c),(0x0,exports[_0xc47c63(0x1fc,'MG$M')])(_0x5290d8,_0x5d0b32,[_0x5e0b4e,_0x5af6fe['originalName'],_0x4fbeb8,_0x4992b8[_0xc47c63(0x226,'rRDC')],_0x4992b8['value']?.[_0xc47c63(0x1ff,'lXe]')]?.[_0x4992b8[_0xc47c63(0x282,'VL2P')]?.[_0xc47c63(0x32f,'MG$M')]?.[_0x2b152c['MvFur'](_0x4992b8[_0xc47c63(0x2b6,'98Kc')]?.[_0xc47c63(0x202,'2ZU2')]?.['length'],0x1)]],_0x4ada6d[_0xc47c63(0x206,'@!@X')][_0x5d0b32]],_0x23fec4);}else _0xeae75c[_0xc47c63(0x208,'V(vh')](_0x2b152c[_0xc47c63(0x1ed,'V(vh')],_0xc47c63(0x2b2,'mnDL'),{'target':_0x5af6fe[_0xc47c63(0x1f5,'KKJr')]});}else _0xeae75c[_0xc47c63(0x1f3,'2ZU2')](_0x2b152c['irPSD'],_0xc47c63(0x22d,'Ur]6'),{'expand':_0x10f498['name']});}else _0xeae75c[_0xc47c63(0x2f7,'m(!X')](_0xc47c63(0x2c6,'53Ke'),_0x2b152c['JBJQK'],{'expand':_0x10f498[_0xc47c63(0x26f,'2ZU2')]});}return _0xeae75c[_0xc47c63(0x2c8,'stM*')](_0x2b152c[_0xc47c63(0x249,'Vyjw')],_0x2b152c[_0xc47c63(0x1e7,'m(!X')],{'entity':_0x575268?.[_0xc47c63(0x1fb,'OdFW')],'records':_0x5290d8['length']}),_0x5290d8;};function _0x297f(){var _0x28c101=['W7yfW4FcHauXtG','W6RdSCo0W6KUWQm8qedcSmoKqCkv','iLJcOCkXW7TSja','rmoAaHycW53cRSojvtFcUw1P','m2aUpZLa','Dmobvf/dPHi','jSkOFwj2WRS','q8kXW41tW5RcQW','WRlcLIGuWPNdH1RcKSoo','W7NdNSkcwwWFWQNdQmouaCkHB8kxWQXSW7tcKmkbW5S2WQW9WOzmWQVcIW','W60zW7hcHq','W7hdVSkTtvW','W7ZdJSkFDgqLWQ3dT8o8a8kLEq','WPZdVYPGWQXQWOC','W5FdKd1JWPhcOmkLja','W4hdSSk5WP7cMvW','BSoFW51lga','WP3dTmkTmmo6','W5NdTSkLWP7cIea','BGlcVCkPW7zdpXpcRNLQWP3dGK3dUCkFW4K','W7FdJSkfuNWK','W4GBWRRcR3K','sIejW4TqWOv0W5DHW5a','bmo8W4hcHhldPq','nM0Vod8','WPRdH8k/dSogWQG','WQDeW6FcKZK','WO3dTSkX','bKpdQ8kWfW','g0ldUmk1oW','WPiIDmoEW4CAW4ldKa','WQyTWQGo','WOxdLmkQfq','WPdcJbPJWR3cSCoMpmkCWP10WPhcOfu','WQFcIZqzWQxdHv7cM8odWRStg8kMW7qrlSknomoZxmoOW77cV1jo','WQxdVcVdICoyyXiTWQH8gSkYW6m','WRWWEmol','WPJdQrrYWQnSWOxcSmk3','WPZdKSkneSoUWR08W7u','iwjWWR/dVW','ghpdHSohW7BcL8oqWPvF','WRO8WPmLAq','jmo9Aq','W4xdVCoaWO8WW43cTG','qmkPW4lcQW','xCkyW5fDW5y','W6igp8kEwSklFhrKW4ldISodp0tcSs5TlLldJCkY','BIejW4LBWOuFW5L9W5P+iCkuW4rDW60mqmoqWRjn','rmkFvgHBWR7dTq','nwq4lt9rk1/dP8kE','W4iDWQxcI2ivWPldKxW','WR3cPCkGWQP4','CmopvG','W6pcPN3cISkm','W7NdOgqGW7dcNSkhFb/dVI0Ac0BcRq','W5/cIwRcJmky','W6GlimkZBa','lwOPkZzUbupdRq','DSobsG','W7xdVw42W7BcVCkq','A8ofx0S','WQzEW4tcGGC','WRhcLYKv','oevSWQi','xCkEWOyHW6WTWOPIW57cOmkYlYmdaSkgnftdSmkdomkXW4LelCoT','Cmovvva','W4aVWRrgWRjL','WRyuzWm','WR8Wzq','W6SxW7tcKriK','CSofqK3dOam','qmk1WO7dMq','W5VcJSkUfCogWQ43WQhcOmkTj8kP','iSkAhSoy','W6dcVhNcM8km','vCkAWOnv','WO/dPSkLo8o+W6nPnmkvzKjzuSojWODdW7RcICo7WOtdQZ0bWRn8eq','gSocohWrW4K','WOGGzXFdQCkR','h8oCzW','W7aeW6lcKWustG','hfW1WPdcPSoBW63cHSknW4vGFCkt','WRmqCW','sCkEWOnFWONdOtNcK8oKavpdO8k7','wCo6W7Xk','W7dcQ37cKCkhn3aUWPfIlmkIW7RdMq','kvCdELhcTmkDACkPsSo9WPbE','hSowohWrW6/cHw4GAJJcTSoFocPyCCk5za1lo3RdHtZcQq','WRHnW6BcVW','uSo1W6vDjWhcJa','AcddJvqy','W4eeWRBcQNGqWPpdMe4yd8o+W40KW41KW4nrzHP4','n8krW4RdU3/dLq','m3CLkq4','W6FcOwRcJa','jSo6AmkoWQbwmbvx','f8kDWQNcSfDCd8oFWP9Stq','W4SaWR7cOwqFWOBdKvCrb8oP','E8kYn3tdLCoWW6lcPLtdRmoVWRxdVW','Cmo3W5hdGde','jmkwgSo3Aq','WPHEW7dcUXq','jmoMBYxcKmkH','C8kTW5RcJay','WRe+ECoBWOuxW5u','WPRdVYbG','bCkmq1rqWQRdOmoGDJxcUNfsANO','w8o+W79ioGW','W5ddU8oiWQ8','l2O9','W77cHNBcKCka','j2a+ktjKe0NdSCkoW6lcNtT/khKjW5tcQCknW4Tg','ssGEW55q','b8o/W4NcKgpdUq','rYlcN8oL','WPZdVmk7kCo2W59/','amoyCCkODYZdNmozm8obamklba1Anmo6WO4inCoDvW','tCkHEgNdO3fCvw1kWRJcHx1nWRKJF8kSc0FdO8oUlrvjyf10','oCo6BSkDWQzmkaK','W5v1ptFdTmkNpaj9','t8ofW7tdRq','uSkLE1tdQMPwCM1QWQVcJ3fAWPmwFCkfiLBdRCoV','W40bWOpcQuaqWONdHa','WOhdGmkRgSogWQGzW6NcVmkO','W41JWQi','WORcQ8kRWQ9VW7nIqIJcHSoPECkni8oKvEkbQhfCfwtdKw1wvCoOoCkVi3tdQXbgW696lSkcWQjnW5BcGCoJrmo/W5Cx','w8koWO04W68','k2KhisG','W7FdRNO','WPZdPCkYWRBcG2vd','mmoTC8kzWQDJoHzDcL8rW7ZdTYBdU34EWQJdVmo+aq','phiOWOxcTG','q8kwymkjys7dKmoen8oNdmkhbvjtbCoHWQm','W43dLHL8WRpcS8k/lSkRWPDTWPxcLuBcI0JcTCopeSkeWO8s','WRCNDmocWP0yW5ldHJ4nWRdcKSonCtfCoCk+gqZcLq','W4CDWQlcQhK','eCoeWOW8W6zbWOT0W4BcSCkYoJiy','W49LWRHZrq','m2aS','wmkuWPTEWOK','smo0sdBdRW','WR8RWPOuxfddPq','W6dcR2RcN8kmjG','vmkjWOPvWO/dHHq','aLW2WPJcPSow','WP3dGmkQ','cSogl2S3W5hcJ20Q','W7qAlSknxa','lNCUlYHNgq','WONdSSk7','fw/dTmkPnq','W63dISkh','WQPaW7hcVczStu0','ACosDMVdHW','omkPdmoxwq','jmk9vufw','A8kSWPpdNCoEW5jeW7ddN8otWRJdV8ovDMBcTx3dUCkVucxIGlZcOcNcTLRdGHOSrCkOWOT6W59yyeutv8oeW5GYrryHjfK0AMFdQsldQSkaW5VcNSoxWP92sCkFWOjFWPepWQ0','W4FdT8oqWR82','W7X+z8olWOSwW5tdH0qiWRtcKmoyvZfP','W606gCkguq','W7tdMCkpuhOoWRu','sJRdMvC/','W7BdQMq0W7dcLW','W6fHjmkwW51mWPpdLY4VWOlcMSoC','W5FdJq9J','gSo8W5ZcJgRdUWvKW5zclbpdL8oJW4FdRmouW6m','j8oLzZhcGCk9','aSolzCkFyapdIG','EIJcM8oWW6/cMSoAWOuCWOiLuCkjl8k6WPBIG69LWQyhWOpdLdejW5RdMCoSfmkGeSoAWOpcUWXZWPegmq','w8kSWQipW48','lmkwW57dR3/dLq','rsBcNmoNW6VcMW','lCobW6BcTW','rmk8W5zxW5RcNCkMWRKSsMBdMq','xcW3W4zt','q0XzW6ZcNaVcI8omcxRdN2i9','W7u+W6JcNX4','WRO3WRGhqMldS8oOW4W','bCons8k/WOX2','d3ajW6DqWR53W4a','xSkHWPddLa','eCofFq','Emo7W5RdIdbqna','f8kHoCo1xa','e0ldTmkNkmk4','W7X+F8obWOexWOVdKWGxWQBcHCoA','W7WzW6JcMbiZqW','W60tW6VcMqm1yWffWOldHCkZWOW','lgldLSkfh8ke','BqpcOmkKW7fObWJcP1TfWOBdIeVdL8kEW7mPW6jLAKKOW44','W4iDWQxcG2WsWO8','WQ8uEaG','W7bjWPLFCNu','WQfnW7NcTa','WOOKzbu','WPpdTSk5o8oVW5K','dgG0WRRcMW','W7KFW6RcGHiI','wSk8E2FdOwmuA2LmWQVcNNDjWPSRAmkSpW','mvKsFfJcLmk5xSk1va','zmoEW51Qdta','hu0QWPBcVmozW5dcJ8k4','qmoZW7rDkW','W6ZdG8kor20','mCkvW4VdS3BdL8kGW5G1iq7dGc7cLZRcShJcOG','u8k1W51bW5G','x8kEWOjvWONdOq','vSkJW5FcRqK','gLGQWPJcT8ok','kSkdW7NdRMJdGmk8','hSo4W4pcLMm','WPNdOCk4mq','iCoGySkiWQO','k2erWQS','WPldTsX9WRK','w8koWPWU','rCobW7/dOqH8a8o/WP5KwG','smo1BHldNd0','ihe+kZLnlvpdRCkEW6lcKIHzjeiaW5pcTmkAW4e','WQ0ADGZdVdjLWPml','duldQCkVmmkMWPrNW4PJv8krFh/dN8kxWPzn','W4ddS8oEWQy','jKTU','kSo2Ac7cGmkiWQhcShpdNmoZWPZdSSokW4lcHCoTzmkpWPZcK8kCwmk2lvu','e07dT8kPka','gSo8W4K','WQCJBatdQa','vSo1zG','WOuXFrhdVSkRfrXTot3dL8o5F8kUg8oUkmkWorO','WRSIqCobWQuyW4JdMG','W68aWQXrWOK','FmkPWPxcQa/dJmkNwmosW5mwW5LsEgxIGk3cM8kLFmkuW53cGCoQW7XBcmkOWPCKc2VcSsOsWPf+h8kcWOS','pmoICYxcGCk9','pSkadSoryMnQuIu','W5uZWPRcKeW','W6zJWODXya','hmkEyKHuWP/dI8o1zs3cT0zf','WPJdTSkJ','W73dGSkhqw0+','W6uBj8klxmkr','mmkyW5RdJLa','qCkUW5FcIIq','vSkAWP4','W7C3WPVcG04L','pCoMbL43W6K','ouvPWQu','vSk3sNtdVwza','W44eWQ3cSwG','aSogjhWaW5u','u8kTzM/dUW','W6WulCkmxmkx','WOS3BrxdR8kbiq','W7xdISkgua','sCkoWOa','W6FcONhcM8kmefKqWPD/imkK','W4PQAbZdTmkIk1HZkYtdIG','i2KgidW','FSo7W7ZdUYT6e8oJWP1V','CSopW7ddUbz8gCoXW5fVuCkBW4vLBt/IGizeF8kQWQxcVv3dUKy4W7RcHCoxW5NcOmobuSkXf8k7kvnnCrW','mmkvW4W','omo2CIO','WR4DzXVdMG','jmkoaCofAW','W4ZdP8kNWPxcLhfwW5nVfSkqW4XOW60kfCodW5NcOCoo','WQNcOCkWWQX6','nu0tCW','WRjcoCk0xmkSEw8','pmkoamov','W4pcMmoPrCksWPuQW4xcQ8k9iG','vSomW7ZdUGm','uIKwW4vb','o8ohh2KS','zmofre3dPa','meamjW4','W4aAiSktxCodwNHUWPhdH8oeowdcTYHYpKNdIW','WQVcPCkXWRbZW6XPzhVcKmo+ASkflmo0hbm/CH9LW5W','W4VcPSoIB8kIWOLcm8klzw57','WR/cSSk2WQTs','W5/dSSkKWPBcGujlW6z2cmkvW69JW4Cmf8opW48','WOxdUYT0WQH5WQNcSmkQW6W','WQJcJdWs','rCo0W6zC','tmk0z2/dUW','W7WzW6RcGXO+ra','W6JdQNK8W6JcICkmtshdPYaacNRcSCo4WOW6','omkseGdcSIjCAeZcUuG','kfKq','W6CxkCkkxG','W5tdQWDLWRu','W6KsWPn1','l8kvW5BdU27dIq','WOGSzbNdQq','CSoHW5xdJsvb','W5ddGGrP','W4/dU8kBWPpcIW','W5BdGHO','u8kHzwhdU28','ESkwWPldUCou','d8otoNCnW7JcMhmUCdNcUSodlYXDCCk9yHC','wIBcGmo2W7BcKmor','W58VWQ4','uY8FW5LzWPq','W6RdNmo6WQuN','xSkQBW','W6BcU3BcQ8kgm1aoWPTZlq','lSkrW4G','tCkoWOK','W7exW6VcKW','WP3dVHfqWOO','wmk1WO8','E8omW7/dNJ4','WR4YzZVdJW','kLPUWRRdR8kWlHyweuVdMMFcGSo/WOhcLJBdQh4','W6qxpW','lmoMyZFcGW','W7aeW6/cKr4+vGjhWOZdI8k3','gCkexe5b','WOBdSJXHWQG','E8ocWOZcPcVdPCkjW4GhiY0','WRdcS8kdWQ1TW7T1','nvaiCu4','tmkBWOmKW7W7WPf0W4pcPSkyiJyFhSkn','stNcGmkaW4a','smkMWOZdKq','WPNdUYO','W7exomkqvCkvvfHVW4hdGSodpeNcTInKoq','xCo0W7Hb','W6pcR2RcLG','W4JdRSkNCeSy','W5WTomkuumktyxXWW5JdJComlg7cTIK','Bmofsf/dTW4','WQqdDahdPqb+WOqOWP/dTXFdRZyYWPjUWQbKACoe','amo7WPtdLmovW4qbW7NdISokWRJdOSoe','rIxcLmoZW7RcHW','W4xdU8oEWR40W5W','BIejW5HCWOvwW512','fmoPzmkrWQPmluvadfWvW6VdPIFdJtSyWR/dVSo7hmo0WQD3xmo4W612W5RIGOzwW6WFW63dSW0boW8hWR/dTtBdS8oGgmoUurJcMeqIkCooW6FcKN8Je1JcVHrl','xthdMW','p8oMyCkv','WQuqDXJdTW','tCoJvbRdPtq7WOe','iKr4WRK','sCo/zbddHa','WPJdTd98','ie9NWQu','xSkGBW','AXlcOmkeW75PnGNcJ3XqWOe','W68xjCkytCkl','wYZcHCoZ','W4iRWRDe','vCofW6VdRWnH','dComjM4zW5pcKW','vSk0W5S','W5ddS8oCWQmLW4FcPhFcGSo+W4JdSCokW5L3W6VdTGKttSk/WP4f','zmoQW43dJtq','WOPDWQtcO38hWO7dNNXDgmoPW5SeW49aW4na'];_0x297f=function(){return _0x28c101;};return _0x297f();}exports['resolveExpandNodes']=resolveExpandNodes;
+"use strict";
+/**
+ * @file expand-materializer.ts
+ * @description Turns a parsed `$expand` tree into materialised parent→child
+ * associations. Handles pre-fetched (inline) children and missing children
+ * (batched IN-clause fetch), plus SOAP dispatch when the target is a SOAP
+ * service.
+ *
+ * ## Logging
+ * Each expand node emits an `INFO` boundary log with parent-row count,
+ * pre-fetched vs missing split, and batched-fetch timing. Fallbacks are
+ * logged at `WARN`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.resolveExpandNodes = exports.fetchAssociatedRecords = exports.buildAssociationJoinValues = exports.purgeRemoteAssociationKeys = exports.localSort = exports.sliceByLimit = exports.applyExpandModifiers = void 0;
+const cds_1 = require("@sap/cds");
+const utils_1 = require("./utils");
+const alias_maps_1 = require("./alias-maps");
+const association_meta_1 = require("./association-meta");
+const column_builders_1 = require("./column-builders");
+const cqn_rewriter_1 = require("./cqn-rewriter");
+const join_parser_1 = require("./join-parser");
+const record_mapping_1 = require("./record-mapping");
+const service_resolver_1 = require("./service-resolver");
+const soap_adapter_1 = require("./soap-adapter");
+const where_eval_1 = require("./where-eval");
+const where_split_1 = require("./where-split");
+const { SELECT } = cds_1.default.ql;
+const M = 'expand-materializer';
+// ============================================================================
+// thin helpers (no logging — trivial)
+// ============================================================================
+const applyExpandModifiers = (query, exp) => {
+    if (exp.orderBy)
+        query.orderBy(exp.orderBy);
+    if (exp.limit) {
+        const rows = exp.limit.rows?.val ?? exp.limit.rows;
+        const offset = exp.limit.offset?.val ?? exp.limit.offset;
+        query.limit(rows, offset);
+    }
+    if (exp.count)
+        query.SELECT.count = true;
+    if (exp.where)
+        query.where(exp.where);
+};
+exports.applyExpandModifiers = applyExpandModifiers;
+const sliceByLimit = (list, limit) => {
+    const rows = limit.rows?.val ?? limit.rows;
+    const offset = limit.offset?.val ?? limit.offset ?? 0;
+    return list.slice(offset, offset + rows);
+};
+exports.sliceByLimit = sliceByLimit;
+const localSort = (array, orderBySpec, aliasMaps) => {
+    if (!Array.isArray(orderBySpec))
+        return array;
+    return [...array].sort((a, b) => {
+        for (const order of orderBySpec) {
+            const prop = order.ref ? order.ref[order.ref.length - 1] : order;
+            const localKey = aliasMaps.remoteToLocal[prop] || prop;
+            const dir = order.sort === 'desc' ? -1 : 1;
+            const valA = a[localKey];
+            const valB = b[localKey];
+            if (valA == null)
+                return 1 * dir;
+            if (valB == null)
+                return -1 * dir;
+            if (valA < valB)
+                return -1 * dir;
+            if (valA > valB)
+                return 1 * dir;
+        }
+        return 0;
+    });
+};
+exports.localSort = localSort;
+const purgeRemoteAssociationKeys = (records, localKeyName, candidates, protectedKeys) => {
+    const remoteCandidates = candidates.filter((c) => !!c && c !== localKeyName && !protectedKeys.has(c));
+    if (!remoteCandidates.length)
+        return;
+    for (const record of records) {
+        if (!record)
+            continue;
+        for (const candidate of remoteCandidates) {
+            if (Object.prototype.hasOwnProperty.call(record, candidate))
+                delete record[candidate];
+        }
+    }
+};
+exports.purgeRemoteAssociationKeys = purgeRemoteAssociationKeys;
+const buildAssociationJoinValues = (assocMeta, records) => {
+    const { localKeys, targetKeys } = assocMeta;
+    if (!localKeys?.length || !targetKeys?.length)
+        return [];
+    const seenKeys = new Set();
+    const uniqueRecords = records.filter((record) => {
+        const key = localKeys.map((k) => String(record[k] ?? '')).join('|||');
+        if (seenKeys.has(key))
+            return false;
+        seenKeys.add(key);
+        return true;
+    });
+    if (localKeys.length === 1) {
+        const targetKeyName = targetKeys[0];
+        const values = uniqueRecords.map((r) => r[localKeys[0]]).filter((v) => v !== undefined && v !== null && v !== '');
+        if (values.length === 0)
+            return [];
+        if (values.length === 1)
+            return [{ ref: [targetKeyName] }, '=', { val: values[0] }];
+        return [{ ref: [targetKeyName] }, 'in', { list: values.map((v) => ({ val: v })) }];
+    }
+    const whereClause = [];
+    uniqueRecords.forEach((record, index) => {
+        const recordConditions = [];
+        localKeys.forEach((localKey, keyIdx) => {
+            const value = record[localKey] ?? '';
+            recordConditions.push({ ref: [targetKeys[keyIdx]] }, '=', { val: value });
+            if (keyIdx < localKeys.length - 1)
+                recordConditions.push('and');
+        });
+        if (index > 0)
+            whereClause.push('or');
+        whereClause.push('(', ...recordConditions, ')');
+    });
+    return whereClause;
+};
+exports.buildAssociationJoinValues = buildAssociationJoinValues;
+// ============================================================================
+// Fetch pipeline (logged)
+// ============================================================================
+/**
+ * Executes the target-side SELECT for a `$expand` and returns a `Map` keyed
+ * on the parent join key. Handles SOAP separately and includes a fallback
+ * that strips column / filter / order restrictions when the backend rejects
+ * the query.
+ */
+const fetchAssociatedRecords = async (req, remoteSrv, assocMeta, targetQuery, whereCondition, aliasMaps, targetDef, cache, log, rewriteForRemote = true, outerReq) => {
+    const result = new Map();
+    if (!whereCondition?.length)
+        return result;
+    const select = targetQuery?.SELECT;
+    const entityName = select?.from?.ref?.[0] || assocMeta.target.split('.').pop() || assocMeta.target;
+    const q = SELECT.from(entityName);
+    if (select?.columns)
+        q.columns(JSON.parse(JSON.stringify(select.columns)));
+    if (select?.orderBy)
+        q.orderBy(JSON.parse(JSON.stringify(select.orderBy)));
+    if (select?.limit) {
+        const rows = select.limit.rows?.val ?? select.limit.rows;
+        const offset = select.limit.offset?.val ?? select.limit.offset;
+        q.limit(rows, offset);
+    }
+    if (select?.count)
+        q.SELECT.count = true;
+    // For SOAP services, split the expand $filter into predicates the SOAP
+    // adapter can push down (simple equality) vs. those it cannot (function
+    // calls like contains(), startswith(), etc.).  Only the pushable part is
+    // sent to SOAP; the rest is applied in-memory after the fetch.
+    const isSoap = (0, soap_adapter_1.isSoapService)(remoteSrv.name);
+    let inMemoryExpandFilter;
+    const { remoteWhere: expandRemoteWhere, localWhere: expandLocalWhere } = isSoap && select?.where
+        ? (0, where_split_1.splitWhereClause)(select.where, targetDef, aliasMaps.localToRemote, log, true)
+        : { remoteWhere: select?.where, localWhere: undefined };
+    if (isSoap && expandLocalWhere) {
+        inMemoryExpandFilter = expandLocalWhere;
+        log.debug('fetchAssociatedRecords', 'Expand $filter split — local-only predicates deferred to in-memory', {
+            target: assocMeta.target,
+            localWhere: JSON.stringify(expandLocalWhere),
+        });
+    }
+    const finalWhere = whereCondition.length > 3 ? ['(', ...whereCondition, ')'] : [...whereCondition];
+    for (const filter of assocMeta.constantFilters || []) {
+        for (const [key, val] of Object.entries(filter)) {
+            if (finalWhere.length > 0)
+                finalWhere.push('and');
+            finalWhere.push({ ref: [key] }, '=', { val });
+        }
+    }
+    const effectiveRemoteWhere = isSoap ? expandRemoteWhere : select?.where;
+    if (effectiveRemoteWhere) {
+        if (finalWhere.length > 0)
+            finalWhere.push('and');
+        if (Array.isArray(effectiveRemoteWhere))
+            finalWhere.push('(', ...effectiveRemoteWhere, ')');
+        else
+            finalWhere.push(effectiveRemoteWhere);
+    }
+    if (finalWhere.length > 0)
+        q.where(finalWhere);
+    const queryToRun = rewriteForRemote ? (0, cqn_rewriter_1.sanitizeAndRewriteQuery)(q, targetDef, aliasMaps) : q;
+    const tExec = Date.now();
+    log.debug('fetchAssociatedRecords', 'ENTER', {
+        target: assocMeta.target,
+        entity: entityName,
+        parentKeyCount: whereCondition.length,
+        soap: isSoap,
+    });
+    let rows;
+    log.debug('fetchAssociatedRecords', 'Before dispatch', { target: assocMeta.target, entity: entityName, remoteSrv: remoteSrv.name });
+    if (isSoap) {
+        log.debug('fetchAssociatedRecords', 'SOAP dispatch');
+        // Expand fetches need ALL matching rows so the materializer can distribute
+        // them across parent records. The default 1000-row page in _base would
+        // silently truncate a large association (e.g. 637 roles for one BP when
+        // earlier BPs already consumed most of the page window). Signal _base to
+        // skip pagination for this internal sub-fetch.
+        if (queryToRun?.SELECT)
+            queryToRun.SELECT.__skipPagination = true;
+        rows = await (0, soap_adapter_1.runSoapRead)(remoteSrv, entityName, req, queryToRun, targetDef, log, outerReq ?? req);
+    }
+    else {
+        // For non-SOAP expand sub-fetches (e.g. UserDataService.BusinessUserRoleSet),
+        // the dispatch goes through a local CAP service which then calls SOAP internally.
+        // Set __skipPagination on the query so handleSimpleProjection propagates it
+        // to the outbound SOAP query, bypassing the SOAP-level row cap.
+        // Only services that understand the hint get it: others (e.g. BillingDataService, implemented through
+        // esi.impl.RemoteService) reject a SELECT with an unknown property ("Feature not supported: SELECT
+        // statement with .__skipPagination"), which made every read through such an association fail.
+        if (queryToRun?.SELECT && remoteSrv?.supportsSkipPagination)
+            queryToRun.SELECT.__skipPagination = true;
+        // Use remoteSrv.tx(req) so user/tenant context is propagated.
+        // Also pass outerReq (the original top-level HTTP request) so that
+        // any nested SOAP dispatch inside _handleDynamicRead can source the
+        // full HTTP headers (authorization etc.) from it.
+        const tx = remoteSrv.tx(req);
+        try {
+            log.debug('fetchAssociatedRecords', 'Backend dispatch (tx)');
+            rows = await tx.run(queryToRun);
+        }
+        catch (err) {
+            log.warn('fetchAssociatedRecords', 'Backend rejected expand query — retrying without columns/filters', {
+                target: assocMeta.target,
+                error: err?.message,
+            });
+            delete queryToRun.SELECT.columns;
+            delete queryToRun.SELECT.where;
+            delete queryToRun.SELECT.orderBy;
+            if (whereCondition?.length)
+                queryToRun.where(whereCondition);
+            rows = await tx.run(queryToRun);
+        }
+    }
+    const list = Array.isArray(rows) ? rows : [rows];
+    for (const row of list) {
+        if (!row)
+            continue;
+        const mapped = (0, record_mapping_1.mapRemoteRecordToLocal)(targetDef, row, aliasMaps.remoteToLocal, cache);
+        const key = (0, join_parser_1.buildChildJoinKey)(mapped, assocMeta.targetKeys);
+        // Diagnostic: log raw row keys, mapped keys, and the computed child join key
+        log.trace('fetchAssociatedRecords', 'Child key diagnostic', {
+            targetKeys: assocMeta.targetKeys,
+            rawRowKeys: Object.keys(row),
+            mappedRowKeys: Object.keys(mapped),
+            targetKeyValues: assocMeta.targetKeys.reduce((acc, k) => { acc[k] = mapped[k]; return acc; }, {}),
+            childJoinKey: key,
+        });
+        if (assocMeta.isToMany) {
+            const arr = result.get(key) || [];
+            arr.push(mapped);
+            result.set(key, arr);
+        }
+        else {
+            result.set(key, mapped);
+        }
+    }
+    // Apply any expand $filter predicates that SOAP could not push down
+    // (e.g. contains(), startswith()) in-memory on the mapped results.
+    if (inMemoryExpandFilter) {
+        let filtered = 0;
+        for (const [key, children] of result.entries()) {
+            if (Array.isArray(children)) {
+                const before = children.length;
+                const kept = children.filter((child) => (0, where_eval_1.evaluateWhereOnRecord)(inMemoryExpandFilter, child));
+                result.set(key, kept);
+                filtered += before - kept.length;
+            }
+            else if (children && !(0, where_eval_1.evaluateWhereOnRecord)(inMemoryExpandFilter, children)) {
+                result.delete(key);
+                filtered++;
+            }
+        }
+        log.debug('fetchAssociatedRecords', 'In-memory expand filter applied', {
+            target: assocMeta.target,
+            removedRows: filtered,
+        });
+    }
+    log.info('fetchAssociatedRecords', 'EXIT', {
+        target: assocMeta.target,
+        elapsedMs: Date.now() - tExec,
+        childRows: list.length,
+        keyedGroups: result.size,
+    });
+    return result;
+};
+exports.fetchAssociatedRecords = fetchAssociatedRecords;
+const attachPreFetchedChildren = async (req, parents, localKeyName, exp, assocMeta, targetDef, targetAliasMaps, targetExpandTree, cache, log) => {
+    log.debug('attachPreFetchedChildren', 'ENTER', {
+        assoc: assocMeta.name,
+        parents: parents.length,
+    });
+    for (const parent of parents) {
+        const preFetched = parent[localKeyName];
+        if (!preFetched)
+            continue;
+        let childGroup = (Array.isArray(preFetched) ? preFetched : [preFetched]).map((child) => (0, record_mapping_1.mapRemoteRecordToLocal)(targetDef, child, targetAliasMaps.remoteToLocal, cache));
+        // Apply $filter from the expand clause (e.g. $expand=_RoleSet($filter=contains(BusinessRoleID,'_BILLING_CLERK')))
+        if (exp.where) {
+            childGroup = childGroup.filter((child) => (0, where_eval_1.evaluateWhereOnRecord)(exp.where, child));
+        }
+        // Apply $top/$skip from the expand clause
+        if (exp.limit) {
+            childGroup = (0, exports.sliceByLimit)(childGroup, exp.limit);
+        }
+        if (targetExpandTree.length > 0) {
+            childGroup = await (0, exports.resolveExpandNodes)(req, targetDef, childGroup, targetExpandTree, cache, log);
+        }
+        parent[localKeyName] = assocMeta.isToMany ? childGroup : childGroup[0];
+    }
+    log.debug('attachPreFetchedChildren', 'EXIT');
+};
+const attachMissingChildren = async (req, entityDef, parents, exp, localKeyName, assocMeta, targetDef, targetAliasMaps, targetExpandTree, cache, log) => {
+    log.debug('attachMissingChildren', 'ENTER', {
+        assoc: assocMeta.name,
+        parents: parents.length,
+        target: assocMeta.target,
+    });
+    const whereCondition = (0, exports.buildAssociationJoinValues)(assocMeta, parents);
+    if (!whereCondition.length) {
+        log.info('attachMissingChildren', 'No parent keys — setting empty children', { assoc: assocMeta.name });
+        for (const parent of parents)
+            parent[localKeyName] = assocMeta.isToMany ? [] : null;
+        return;
+    }
+    const targetServiceName = (0, service_resolver_1.resolveServiceNameFromTarget)(assocMeta.target);
+    const queryLocalProjection = (0, service_resolver_1.usesLocalServiceSemantics)(targetServiceName);
+    const selectCols = queryLocalProjection
+        ? (0, column_builders_1.buildSelectedLocalColumns)(targetDef, exp, assocMeta.targetKeys)
+        : (0, column_builders_1.buildSelectedRemoteColumns)(targetDef, exp, targetAliasMaps, assocMeta.targetKeys);
+    const targetQueryEntity = queryLocalProjection && targetServiceName !== req.service?.name
+        ? assocMeta.target
+        : (assocMeta.target.split('.').pop() || assocMeta.target);
+    const targetQuery = SELECT.from(targetQueryEntity).columns(selectCols);
+    (0, exports.applyExpandModifiers)(targetQuery, exp);
+    const remoteSrv = await cds_1.default.connect.to(targetServiceName);
+    const childRecordsByParent = await (0, exports.fetchAssociatedRecords)(req, remoteSrv, assocMeta, targetQuery, whereCondition, targetAliasMaps, targetDef, cache, log, !queryLocalProjection);
+    let matched = 0;
+    let unmatched = 0;
+    for (const parent of parents) {
+        const key = (0, join_parser_1.buildParentJoinKey)(parent, assocMeta.localKeys);
+        // Diagnostic: log parent key fields and computed join key
+        log.debug('attachMissingChildren', 'Parent key diagnostic', {
+            localKeys: assocMeta.localKeys,
+            parentKeys: Object.keys(parent),
+            localKeyValues: assocMeta.localKeys.reduce((acc, k) => { acc[k] = parent[k]; return acc; }, {}),
+            parentJoinKey: key,
+            availableChildKeys: [...childRecordsByParent.keys()],
+        });
+        const rawChildren = childRecordsByParent.get(key);
+        if (!rawChildren) {
+            parent[localKeyName] = assocMeta.isToMany ? [] : null;
+            unmatched++;
+            continue;
+        }
+        matched++;
+        if (assocMeta.isToMany) {
+            let childGroup = rawChildren;
+            if (exp.orderBy && childGroup.length > 1)
+                childGroup = (0, exports.localSort)(childGroup, exp.orderBy, targetAliasMaps);
+            const originalCount = childGroup.length;
+            if (exp.limit)
+                childGroup = (0, exports.sliceByLimit)(childGroup, exp.limit);
+            parent[localKeyName] = await (0, exports.resolveExpandNodes)(req, targetDef, childGroup, targetExpandTree, cache, log);
+            if (exp.count)
+                parent[localKeyName].$count = originalCount;
+        }
+        else {
+            const single = Array.isArray(rawChildren) ? rawChildren[0] : rawChildren;
+            const resolvedChildren = await (0, exports.resolveExpandNodes)(req, targetDef, [single], targetExpandTree, cache, log);
+            parent[localKeyName] = resolvedChildren[0];
+        }
+    }
+    log.info('attachMissingChildren', 'EXIT', {
+        assoc: assocMeta.name,
+        matched,
+        unmatched,
+    });
+};
+/**
+ * Materialises a `$expand` tree against a set of parent records.
+ */
+const resolveExpandNodes = async (req, entityDef, records, expandTree, cache, parentLog) => {
+    if (!records?.length || !expandTree?.length)
+        return records;
+    const log = parentLog.module === M ? parentLog : parentLog.forModule(M);
+    log.info('resolveExpandNodes', 'ENTER', {
+        entity: entityDef?.name,
+        parents: records.length,
+        expands: expandTree.map((e) => e.as || e.name),
+    });
+    const resolved = (0, utils_1.deepClone)(records);
+    const sourceAliasMaps = (0, alias_maps_1.getAliasMaps)(entityDef, cache);
+    const requestedExpandKeys = new Set(expandTree.map((e) => e.as || e.name));
+    const seen = new Set();
+    for (const exp of expandTree) {
+        if (seen.has(exp.name))
+            continue;
+        seen.add(exp.name);
+        const assocEl = entityDef?.elements?.[exp.name];
+        if (!assocEl?.target) {
+            log.warn('resolveExpandNodes', 'Skipping expand — no target on element', { expand: exp.name });
+            continue;
+        }
+        const assocMeta = (0, association_meta_1.resolveAssociationMeta)(exp.name, entityDef, assocEl.target, assocEl, cache);
+        if (!assocMeta) {
+            log.warn('resolveExpandNodes', 'Skipping expand — could not resolve assoc meta', { expand: exp.name });
+            continue;
+        }
+        const targetDef = cds_1.default.model.definitions[assocMeta.target];
+        if (!targetDef) {
+            log.warn('resolveExpandNodes', 'Skipping expand — target not in cds.model', { target: assocMeta.target });
+            continue;
+        }
+        const targetExpandTree = (0, join_parser_1.parseExpandTree)(exp.columns || []);
+        const targetAliasMaps = (0, alias_maps_1.getAliasMaps)(targetDef, cache);
+        const localKeyName = exp.as || exp.name;
+        const inferredRemoteKeyName = (0, alias_maps_1.findRemoteAssociationName)(entityDef, exp.name, cache, assocEl);
+        const remoteKeyName = (assocMeta.originalName && assocMeta.originalName !== localKeyName ? assocMeta.originalName : undefined) ||
+            inferredRemoteKeyName;
+        const preFetchedRecords = [];
+        const missingRecords = [];
+        for (const record of resolved) {
+            let foundKey = null;
+            if (assocMeta.isManaged) {
+                if (record[localKeyName] !== undefined)
+                    foundKey = localKeyName;
+                else if (remoteKeyName && record[remoteKeyName] !== undefined)
+                    foundKey = remoteKeyName;
+            }
+            if (foundKey !== null) {
+                record[localKeyName] = record[foundKey];
+                if (foundKey !== localKeyName)
+                    delete record[foundKey];
+                preFetchedRecords.push(record);
+            }
+            else {
+                missingRecords.push(record);
+            }
+        }
+        log.debug('resolveExpandNodes', 'Partition', {
+            expand: exp.name,
+            preFetched: preFetchedRecords.length,
+            missing: missingRecords.length,
+            nestedExpands: targetExpandTree.length,
+        });
+        if (preFetchedRecords.length > 0) {
+            await attachPreFetchedChildren(req, preFetchedRecords, localKeyName, exp, assocMeta, targetDef, targetAliasMaps, targetExpandTree, cache, log);
+        }
+        if (missingRecords.length > 0) {
+            await attachMissingChildren(req, entityDef, missingRecords, exp, localKeyName, assocMeta, targetDef, targetAliasMaps, targetExpandTree, cache, log);
+        }
+        (0, exports.purgeRemoteAssociationKeys)(resolved, localKeyName, [
+            remoteKeyName,
+            assocMeta.originalName,
+            inferredRemoteKeyName,
+            assocEl.original,
+            assocEl.value?.ref?.[assocEl.value?.ref?.[assocEl.value?.ref?.length - 1]],
+            sourceAliasMaps.localToRemote[localKeyName]
+        ], requestedExpandKeys);
+    }
+    log.info('resolveExpandNodes', 'EXIT', { entity: entityDef?.name, records: resolved.length });
+    return resolved;
+};
+exports.resolveExpandNodes = resolveExpandNodes;

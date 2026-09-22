@@ -1,1 +1,35 @@
-const _0x4ece3c=_0xf68c;(function(_0x1fa5b4,_0x112527){const _0x5afba9=_0xf68c,_0x425348=_0x1fa5b4();while(!![]){try{const _0xd4d69f=-parseInt(_0x5afba9(0x14e,'u0hz'))/0x1*(-parseInt(_0x5afba9(0x135,'XmbT'))/0x2)+parseInt(_0x5afba9(0x157,')(Vf'))/0x3+-parseInt(_0x5afba9(0x153,']7u0'))/0x4*(parseInt(_0x5afba9(0x138,'*Zq$'))/0x5)+parseInt(_0x5afba9(0x146,'cMqj'))/0x6*(-parseInt(_0x5afba9(0x14f,'Re(j'))/0x7)+parseInt(_0x5afba9(0x136,'$wo!'))/0x8+parseInt(_0x5afba9(0x14c,'J@Bg'))/0x9+-parseInt(_0x5afba9(0x137,'fkTZ'))/0xa;if(_0xd4d69f===_0x112527)break;else _0x425348['push'](_0x425348['shift']());}catch(_0x426fae){_0x425348['push'](_0x425348['shift']());}}}(_0xad51,0x74c84),(Object[_0x4ece3c(0x139,'z&Ri')](exports,_0x4ece3c(0x13a,'^7eQ'),{'value':!0x0}),exports[_0x4ece3c(0x145,')(Vf')]=exports[_0x4ece3c(0x155,'Bb8X')]=exports[_0x4ece3c(0x154,'GSag')]=exports[_0x4ece3c(0x158,'ltnx')]=void 0x0));let unsupportedFunctions=new Set(),resetLearnedFunctions=()=>{const _0x386757=_0x4ece3c;unsupportedFunctions[_0x386757(0x14a,'b78[')]();},rejectedFunction=(exports[_0x4ece3c(0x143,'gf2j')]=resetLearnedFunctions,_0x37ae0e=>/Filter function '([A-Za-z_]+)'\s+(?:is\s+)?not supported/i['exec'](String(_0x37ae0e?.['message']??_0x37ae0e?.[_0x4ece3c(0x149,'sxMi')]?.[_0x4ece3c(0x159,'NCxS')]??''))?.[0x1]?.[_0x4ece3c(0x141,'G6NI')]()),learnUnsupportedFunction=(exports[_0x4ece3c(0x156,')(Vf')]=rejectedFunction,(_0x4934fb,_0x591930)=>{const _0x48ce78=_0x4ece3c,_0x20fbd0={'DqyWe':function(_0x3b19c7,_0x15d025){return _0x3b19c7+_0x15d025;}};return _0x4934fb=_0x20fbd0[_0x48ce78(0x13c,'XmbT')](_0x20fbd0[_0x48ce78(0x13d,'WwPI')](_0x4934fb,'|'),_0x591930[_0x48ce78(0x152,']1(j')]()),!unsupportedFunctions[_0x48ce78(0x15a,'fkTZ')](_0x4934fb)&&(unsupportedFunctions[_0x48ce78(0x147,'@A&H')](_0x4934fb),!0x0);}),isFunctionUnsupported=(exports[_0x4ece3c(0x13f,'eUPW')]=learnUnsupportedFunction,(_0x17abda,_0x2082f8)=>unsupportedFunctions[_0x4ece3c(0x148,'XTVD')](_0x17abda+'|'+_0x2082f8[_0x4ece3c(0x144,'n79q')]()));function _0xf68c(_0x20ee02,_0x3f81f7){_0x20ee02=_0x20ee02-0x135;const _0xad5151=_0xad51();let _0xf68ce2=_0xad5151[_0x20ee02];if(_0xf68c['YjlkfZ']===undefined){var _0x3a043b=function(_0x5c7a76){const _0x156fe1='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x493107='',_0x2c57fc='';for(let _0x196d1c=0x0,_0x3ed970,_0x61e5e2,_0x27fafb=0x0;_0x61e5e2=_0x5c7a76['charAt'](_0x27fafb++);~_0x61e5e2&&(_0x3ed970=_0x196d1c%0x4?_0x3ed970*0x40+_0x61e5e2:_0x61e5e2,_0x196d1c++%0x4)?_0x493107+=String['fromCharCode'](0xff&_0x3ed970>>(-0x2*_0x196d1c&0x6)):0x0){_0x61e5e2=_0x156fe1['indexOf'](_0x61e5e2);}for(let _0xf08443=0x0,_0x55bb1c=_0x493107['length'];_0xf08443<_0x55bb1c;_0xf08443++){_0x2c57fc+='%'+('00'+_0x493107['charCodeAt'](_0xf08443)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2c57fc);};const _0x3ef023=function(_0x1a5f7e,_0x4bdc97){let _0x4d3a1d=[],_0x30c7fb=0x0,_0x1c5212,_0x10fba9='';_0x1a5f7e=_0x3a043b(_0x1a5f7e);let _0x5d9c5b;for(_0x5d9c5b=0x0;_0x5d9c5b<0x100;_0x5d9c5b++){_0x4d3a1d[_0x5d9c5b]=_0x5d9c5b;}for(_0x5d9c5b=0x0;_0x5d9c5b<0x100;_0x5d9c5b++){_0x30c7fb=(_0x30c7fb+_0x4d3a1d[_0x5d9c5b]+_0x4bdc97['charCodeAt'](_0x5d9c5b%_0x4bdc97['length']))%0x100,_0x1c5212=_0x4d3a1d[_0x5d9c5b],_0x4d3a1d[_0x5d9c5b]=_0x4d3a1d[_0x30c7fb],_0x4d3a1d[_0x30c7fb]=_0x1c5212;}_0x5d9c5b=0x0,_0x30c7fb=0x0;for(let _0x83d56c=0x0;_0x83d56c<_0x1a5f7e['length'];_0x83d56c++){_0x5d9c5b=(_0x5d9c5b+0x1)%0x100,_0x30c7fb=(_0x30c7fb+_0x4d3a1d[_0x5d9c5b])%0x100,_0x1c5212=_0x4d3a1d[_0x5d9c5b],_0x4d3a1d[_0x5d9c5b]=_0x4d3a1d[_0x30c7fb],_0x4d3a1d[_0x30c7fb]=_0x1c5212,_0x10fba9+=String['fromCharCode'](_0x1a5f7e['charCodeAt'](_0x83d56c)^_0x4d3a1d[(_0x4d3a1d[_0x5d9c5b]+_0x4d3a1d[_0x30c7fb])%0x100]);}return _0x10fba9;};_0xf68c['uuLwyQ']=_0x3ef023,_0xf68c['WMBhpA']={},_0xf68c['YjlkfZ']=!![];}const _0x40370b=_0xad5151[0x0];_0xf68c['kqFiQb']!==_0x40370b&&(_0xf68c['WMBhpA']={},_0xf68c['kqFiQb']=_0x40370b);const _0x59ced4=_0xf68c['WMBhpA'][_0x20ee02];return _0x59ced4===undefined?(_0xf68c['lVOuxm']===undefined&&(_0xf68c['lVOuxm']=!![]),_0xf68ce2=_0xf68c['uuLwyQ'](_0xf68ce2,_0x3f81f7),_0xf68c['WMBhpA'][_0x20ee02]=_0xf68ce2):_0xf68ce2=_0x59ced4,_0xf68ce2;}function _0xad51(){const _0x58e74a=['WORcP1vdpGzAgHBcUW','y8o1WOFdUCkmwflcGL86da','u1FdNSkriG','lMq5D8k4','kSkhWQBcKCkmW6G6ACkKaLy7W4qRACoOvSk+WRnWhG','WOfsWPhcHrrRW6LKW4Wwf8ojeCk5WRfIvSkSACkuWOpdMSo2iW','W48dW4jkWQeYb2RcHmk4W5Tysa','f8khW6jhEmkGbCkxWQdcOMm','ot3dTmklWO89WQhcLtNdVSkKW5pdIa','WOewn8ovfCo0oKWIWQ04WRpcP1a7m8kAWRalpsC','EwtcGmoDW45GW6FcLaNdImka','W6ddTmoHW7FdT8k5vGrjwSkulYeUW6dcRSkosKhcI8og','W44eW4XbWQi4c3ZcU8kFW5n7Fq','W6pdSuy','a0FdRa','W6FdI1immmku','W7zdW6T2W64','WQZdNmoxzmouW68UWPFcNSkLWQ8','WO7cJsW9gSo+W5TsW7FcGSkTfaG','W6pdLCkyb8kjBCkYtq','WQhdVuxcRCoKzrVcRq','WOFdMLDfWOmPWOu','WO4WWQ/cPb9Gp8onAb8WW6XM','W57dPCopnZiQW57dO8ozW6OSW4FdLG','cmk2W6pdNwNcR8kbW6Tnxay','BhZdH8oQiGG0WRxdNSo/oq','W4LDfKuTWPvhW5ZdLxGsWOjDWOpdNSoV','pxqMvCozWQ3cQK/dN2ureLFcMSkrigNcIsNcSfenW4ZdPa','W7VdOSonW6FdUSkUrWLGqCkViIyYW7/cSa','WRVcTCkvWRdcOmoQeWj2z8kldtO','W6hcRGyVW7tdQmkCs8oKemoWg8kfWRtdKmoOeCo0bLfH','rfLob25Aja','l8oWEa','ibtcKmo1F8k8W70qW4LHW4y','WRVdGmk4FvVcPMucr8oosdvZ','FSkHpr4cW7irExJdRSkHWOy5','fSkavIuMxmkXW4G','WPJdJLuZkCkhWQ3dQCoehxnNAGW'];_0xad51=function(){return _0x58e74a;};return _0xad51();}exports[_0x4ece3c(0x13e,'fGuV')]=isFunctionUnsupported;
+"use strict";
+/**
+ * @file search-functions.ts
+ * @description Remembers which filter functions a backend service rejected, so `$search` stops sending them.
+ *
+ * `$search` on an insensitive backend sends `contains(tolower(field), 'word')`. Some services refuse it
+ * (`Filter function 'TOLOWER' not supported`); the rejection is remembered for the process and that service is then
+ * searched case-sensitively (see {@link effectiveSearchMode}). Columns a backend can not filter on are NOT handled
+ * here: they are excluded with `@cds.search: false` in the local service projection.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isFunctionUnsupported = exports.learnUnsupportedFunction = exports.rejectedFunction = exports.resetLearnedFunctions = void 0;
+const unsupportedFunctions = new Set();
+/** Forgets everything learned (tests). */
+const resetLearnedFunctions = () => { unsupportedFunctions.clear(); };
+exports.resetLearnedFunctions = resetLearnedFunctions;
+/** The function a "Filter function 'X' not supported" rejection names (lower case). */
+const rejectedFunction = (err) => /Filter function '([A-Za-z_]+)'\s+(?:is\s+)?not supported/i.exec(String(err?.message ?? err?.reason?.message ?? ''))?.[1]?.toLowerCase();
+exports.rejectedFunction = rejectedFunction;
+/**
+ * Remembers that a service can not evaluate `fn` in a filter.
+ *
+ * @returns `true` when that was not known yet (a plan made before is out of date).
+ */
+const learnUnsupportedFunction = (service, fn) => {
+    const key = `${service}|${fn.toLowerCase()}`;
+    if (unsupportedFunctions.has(key))
+        return false;
+    unsupportedFunctions.add(key);
+    return true;
+};
+exports.learnUnsupportedFunction = learnUnsupportedFunction;
+/** `true` when the service rejected `fn` before. */
+const isFunctionUnsupported = (service, fn) => unsupportedFunctions.has(`${service}|${fn.toLowerCase()}`);
+exports.isFunctionUnsupported = isFunctionUnsupported;

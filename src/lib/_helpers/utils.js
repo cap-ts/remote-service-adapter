@@ -1,1 +1,309 @@
-var _0x3fc573=_0x35d2;(function(_0x13e929,_0x4f2695){var _0x34ea8f=_0x35d2,_0x344454=_0x13e929();while(!![]){try{var _0x333a5c=parseInt(_0x34ea8f(0x159,'k&VO'))/0x1+parseInt(_0x34ea8f(0x12d,'@gcf'))/0x2+parseInt(_0x34ea8f(0x13d,'6haG'))/0x3+-parseInt(_0x34ea8f(0x1a1,'Nxi('))/0x4*(-parseInt(_0x34ea8f(0x19a,'1c)$'))/0x5)+-parseInt(_0x34ea8f(0x180,'bM@Y'))/0x6+parseInt(_0x34ea8f(0x194,'Cc9)'))/0x7+-parseInt(_0x34ea8f(0x14e,'ZP4x'))/0x8;if(_0x333a5c===_0x4f2695)break;else _0x344454['push'](_0x344454['shift']());}catch(_0x4e1d4c){_0x344454['push'](_0x344454['shift']());}}}(_0x49cd,0x7778f),(Object[_0x3fc573(0x176,'f3z9')](exports,_0x3fc573(0x172,'64@B'),{'value':!0x0}),exports[_0x3fc573(0x19d,'[AcI')]=exports[_0x3fc573(0x13f,'Q]9p')]=exports[_0x3fc573(0x1ab,'IvU@')]=exports[_0x3fc573(0x12f,'sSvy')]=exports[_0x3fc573(0x1df,'f3z9')]=exports['LOG_TO_FILE']=exports['LOG_TO_CONSOLE']=exports['LOG_LEVEL']=exports[_0x3fc573(0x12b,'QfH#')]=void 0x0));let fs=require('fs'),path=require(_0x3fc573(0x1cd,'5%1C')),LEVEL_RANK=(exports[_0x3fc573(0x18b,'OV57')]=/(^|,)\s*(remote-service|\*)\s*(,|$)/[_0x3fc573(0x15a,'9LuA')](process.env.DEBUG??''),{'trace':0x0,'debug':0x1,'info':0x2,'warn':0x3,'error':0x4}),parseLevel=(_0x124da5,_0xa1af18)=>{var _0x30f4d7=_0x3fc573,_0x26cff0={'sHrQN':function(_0x32f4f1,_0x410ffa){return _0x32f4f1??_0x410ffa;},'yVbIF':_0x30f4d7(0x147,'YBqn'),'JmvCn':_0x30f4d7(0x193,'YBqn'),'XPgRy':_0x30f4d7(0x1b6,'2JR^')};return _0x124da5=_0x26cff0[_0x30f4d7(0x1cb,'paaz')](_0x124da5,'')[_0x30f4d7(0x132,'f3z9')](),[_0x30f4d7(0x1c6,'cE3l'),_0x26cff0['yVbIF'],_0x26cff0[_0x30f4d7(0x133,'Mlgx')],_0x26cff0[_0x30f4d7(0x192,'Kvga')],_0x30f4d7(0x178,'2JR^')][_0x30f4d7(0x1a6,'7KMY')](_0x124da5)?_0x124da5:_0xa1af18;},deepClone=(exports[_0x3fc573(0x124,'[AcI')]=parseLevel(process.env.LOG_LEVEL??process.env.CDS_LOG_LEVELS_ESI,exports[_0x3fc573(0x14f,'[AcI')]?'debug':_0x3fc573(0x16c,'Q]9p')),exports[_0x3fc573(0x1e5,'CEC8')]=_0x3fc573(0x143,'2JR^')===(process.env.LOG_TO_CONSOLE??(exports['DEBUG']?'true':_0x3fc573(0x182,'@gcf')))[_0x3fc573(0x15d,'CEC8')](),exports['LOG_TO_FILE']=_0x3fc573(0x142,'BHQR')!==process.env.NODE_ENV&&_0x3fc573(0x1b0,'0]n7')===(process.env.LOG_TO_FILE??_0x3fc573(0x190,'Cc9)'))[_0x3fc573(0x131,'(*ml')](),exports[_0x3fc573(0x15f,'6haG')]=process.env.LOG_DIR||'logs',_0x27764b=>{var _0x458b64=_0x3fc573,_0x1e7ce9={'DwWco':function(_0x3e2043,_0x3ba4e4){return _0x3e2043==_0x3ba4e4;},'LvnmP':function(_0x5d10f0,_0x560ba8){return _0x5d10f0(_0x560ba8);}},_0x47e63b=globalThis[_0x458b64(0x1c4,'0]n7')];return _0x1e7ce9[_0x458b64(0x150,'KTb]')](_0x458b64(0x18c,'Kvga'),typeof _0x47e63b)?_0x1e7ce9[_0x458b64(0x156,'*T5B')](_0x47e63b,_0x27764b):JSON[_0x458b64(0x1c0,'@gcf')](JSON[_0x458b64(0x17e,'IvU@')](_0x27764b));}),pad2=(exports['deepClone']=deepClone,_0x140863=>(_0x140863<0xa?'0':'')+_0x140863),filenameTimestamp=(_0x415c00=new Date())=>''+_0x415c00['getFullYear']()+pad2(_0x415c00[_0x3fc573(0x1cc,'U&kL')]()+0x1)+pad2(_0x415c00[_0x3fc573(0x153,'bR)$')]())+'-'+pad2(_0x415c00['getHours']())+pad2(_0x415c00[_0x3fc573(0x1bc,'5)Y]')]())+pad2(_0x415c00[_0x3fc573(0x13a,'SXtS')]()),isoTimestamp=(_0x11b374=new Date())=>_0x11b374[_0x3fc573(0x127,'SXtS')](),_fileStream=null,_fileStreamInitialized=!0x1,_resolvedLogPath=null,getFileStream=()=>{var _0x30b792=_0x3fc573,_0x594bd4={'DfqlB':function(_0x180799){return _0x180799();},'qHEbL':_0x30b792(0x120,'@gcf'),'XUOnK':'remote-service-latest.log','FLfUi':_0x30b792(0x1bb,'IvU@'),'EizLO':_0x30b792(0x1d8,'qwQ0'),'MnRAz':_0x30b792(0x1e7,'5%1C'),'dRVtu':_0x30b792(0x164,'dP]m'),'faOAc':_0x30b792(0x166,'aRL%')};if(!_fileStreamInitialized){if(_fileStreamInitialized=!0x0,!exports['LOG_TO_FILE'])return null;try{var _0x1b801a=path[_0x30b792(0x12e,'dP]m')](exports[_0x30b792(0x167,'CEC8')])?exports['LOG_DIR']:path[_0x30b792(0x18f,'U&kL')](process[_0x30b792(0x179,'Cc9)')](),exports[_0x30b792(0x14a,'64@B')]),_0x539634=(fs['mkdirSync'](_0x1b801a,{'recursive':!0x0}),_0x30b792(0x136,'@gcf')+_0x594bd4[_0x30b792(0x171,'aRL%')](filenameTimestamp)+_0x30b792(0x168,'bR)$'));_resolvedLogPath=path[_0x30b792(0x123,'QfH#')](_0x1b801a,_0x539634),_fileStream=fs[_0x30b792(0x146,'(*ml')](_resolvedLogPath,{'flags':'a','encoding':_0x594bd4[_0x30b792(0x14c,'2JR^')]});try{var _0x3aed78=path[_0x30b792(0x121,'SXtS')](_0x1b801a,_0x594bd4[_0x30b792(0x1a2,'@gcf')]);(fs[_0x30b792(0x1d9,'9LuA')](_0x3aed78)||fs[_0x30b792(0x1a7,'Nxi(')](_0x3aed78)[_0x30b792(0x170,'f3z9')]?.())&&fs[_0x30b792(0x169,'qwQ0')](_0x3aed78);}catch{}try{fs['symlinkSync'](_0x539634,path['join'](_0x1b801a,_0x594bd4[_0x30b792(0x137,'Wi3c')]));}catch{}_fileStream[_0x30b792(0x1d5,'KTb]')](_0x30b792(0x160,'U&kL')+isoTimestamp()+'\x20—\x20pid='+process[_0x30b792(0x19e,'SXtS')]+_0x30b792(0x1b8,'5%1C')+(process.env.NODE_ENV||_0x594bd4[_0x30b792(0x14b,'Wi3c')])+'\x0a');var _0x2af78d=()=>{var _0x303519=_0x30b792;try{_fileStream?.[_0x303519(0x12a,'9LuA')]();}catch{}};process[_0x30b792(0x140,'Xrex')](_0x594bd4[_0x30b792(0x1e3,'HdTq')],_0x2af78d),process[_0x30b792(0x1a0,'k&VO')](_0x594bd4[_0x30b792(0x1b1,'Cc9)')],_0x2af78d),process[_0x30b792(0x1ac,'9LuA')](_0x594bd4[_0x30b792(0x18d,'OV57')],_0x2af78d);}catch(_0x2066da){console[_0x30b792(0x144,'yUxk')](_0x594bd4[_0x30b792(0x139,'9LuA')],_0x2066da[_0x30b792(0x1c2,'SXtS')]),_fileStream=null;}}return _fileStream;},getLogFilePath=()=>(getFileStream(),_resolvedLogPath),LEVEL_TAG=(exports[_0x3fc573(0x17a,'OV57')]=getLogFilePath,{'trace':_0x3fc573(0x1d2,'2JR^'),'debug':_0x3fc573(0x128,'qDvp'),'info':_0x3fc573(0x1a5,'Q]9p'),'warn':_0x3fc573(0x125,'bR)$'),'error':_0x3fc573(0x175,'Wi3c')}),REDACT_KEYS=new Set([_0x3fc573(0x1a3,'dP]m'),_0x3fc573(0x163,'Xrex'),_0x3fc573(0x174,'Kvga'),_0x3fc573(0x18e,'bR)$'),_0x3fc573(0x19c,'64@B'),_0x3fc573(0x195,'1c)$'),_0x3fc573(0x1b4,'zNcX'),_0x3fc573(0x1af,'5)Y]'),_0x3fc573(0x16e,'OV57'),_0x3fc573(0x17d,'SXtS'),_0x3fc573(0x1e6,'RgBD'),_0x3fc573(0x1a4,'Cc9)'),_0x3fc573(0x1bd,'CEC8')]),redact=_0x38ff36=>{var _0x3068a3=_0x3fc573,_0x366b69={'cAgLP':function(_0x3592da,_0x238287){return _0x3592da==_0x238287;},'nPXsR':function(_0xf82075,_0x4d4116){return _0xf82075!=_0x4d4116;},'CfHVu':_0x3068a3(0x15e,'BHQR'),'MOAeh':function(_0x3ea87f,_0xea4795){return _0x3ea87f(_0xea4795);}};if(_0x366b69[_0x3068a3(0x145,'ZP4x')](null,_0x38ff36)||_0x366b69[_0x3068a3(0x187,'yUxk')](_0x3068a3(0x157,'(*ml'),typeof _0x38ff36))return _0x38ff36;if(Array[_0x3068a3(0x19b,'sSvy')](_0x38ff36))return _0x38ff36[_0x3068a3(0x126,'[AcI')](redact);var _0x2ac844,_0x304dbf,_0x367a88={};for([_0x2ac844,_0x304dbf]of Object['entries'](_0x38ff36))_0x367a88[_0x2ac844]=REDACT_KEYS[_0x3068a3(0x1d3,'Xrex')](_0x2ac844[_0x3068a3(0x1ba,'qDvp')]())?_0x366b69[_0x3068a3(0x138,'qDvp')]:_0x366b69[_0x3068a3(0x1cf,'paaz')](redact,_0x304dbf);return _0x367a88;},formatLine=(_0x34b8f2,_0x28b0bb,_0x50fd59,_0x467432,_0x5bd0e4,_0x9c4dfa)=>{var _0x5f3d00=_0x3fc573,_0x5e6614={'MRCgI':function(_0x1d2b00,_0x5e9a18){return _0x1d2b00+_0x5e9a18;},'lWRCe':function(_0x257d8a,_0x5afe6b){return _0x257d8a===_0x5afe6b;},'SoCOR':_0x5f3d00(0x184,'&c[j')};_0x34b8f2=_0x5e6614['MRCgI'](isoTimestamp()+'\x20'+LEVEL_TAG[_0x34b8f2]+'\x20['+_0x50fd59+_0x5f3d00(0x1a8,'CEC8')+_0x28b0bb+'.'+_0x467432+']\x20',_0x5bd0e4);if(_0x5e6614[_0x5f3d00(0x1ae,'0]n7')](void 0x0,_0x9c4dfa))return _0x34b8f2;try{return _0x5e6614['MRCgI'](_0x34b8f2,'\x20')+JSON['stringify'](redact(_0x9c4dfa));}catch{return _0x34b8f2+_0x5e6614[_0x5f3d00(0x1d6,'5%1C')];}},emit=(_0x5c136f,_0x200b2a)=>{var _0x2416b6=_0x3fc573,_0x288c47={'uFBZc':function(_0x2296c1,_0x54eca2){return _0x2296c1<_0x54eca2;},'ozLEZ':function(_0x94fdb9,_0x324d3b){return _0x94fdb9===_0x324d3b;},'iNqXj':_0x2416b6(0x1c1,'SXtS'),'UxloQ':'warn','gIkFR':function(_0x5c0041,_0x5a1b43){return _0x5c0041+_0x5a1b43;}};_0x288c47[_0x2416b6(0x186,'OV57')](LEVEL_RANK[_0x5c136f],LEVEL_RANK[exports[_0x2416b6(0x1d7,'ZP4x')]])||(exports['LOG_TO_CONSOLE']&&(_0x288c47[_0x2416b6(0x1b3,'f3z9')](_0x288c47[_0x2416b6(0x188,'Xrex')],_0x5c136f)||_0x288c47['UxloQ']===_0x5c136f?console[_0x2416b6(0x16a,'6haG')](_0x200b2a):console[_0x2416b6(0x155,'Cc9)')](_0x200b2a)),(_0x5c136f=getFileStream())&&_0x5c136f['write'](_0x288c47[_0x2416b6(0x11f,'9LuA')](_0x200b2a,'\x0a')));},NOOP_LOGGER=((()=>{var _0x1db4c9=_0x3fc573,_0x527700={'BINEF':_0x1db4c9(0x13c,'dP]m')},_0x5a2971=()=>{};let _0x71d5d6={'reqId':_0x1db4c9(0x1e2,'5)Y]'),'module':_0x527700['BINEF'],'trace':_0x5a2971,'debug':_0x5a2971,'info':_0x5a2971,'warn':_0x5a2971,'error':_0x5a2971,'forModule':()=>_0x71d5d6,'forRequest':()=>_0x71d5d6};return _0x71d5d6;})());function _0x35d2(_0x47eaac,_0xd34919){_0x47eaac=_0x47eaac-0x11f;var _0x49cd10=_0x49cd();var _0x35d29c=_0x49cd10[_0x47eaac];if(_0x35d2['FThZSf']===undefined){var _0x16ce05=function(_0x4125d1){var _0x4f2788='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x3c876b='',_0x1dd493='';for(var _0x5f0160=0x0,_0x274580,_0x300a70,_0x135c52=0x0;_0x300a70=_0x4125d1['charAt'](_0x135c52++);~_0x300a70&&(_0x274580=_0x5f0160%0x4?_0x274580*0x40+_0x300a70:_0x300a70,_0x5f0160++%0x4)?_0x3c876b+=String['fromCharCode'](0xff&_0x274580>>(-0x2*_0x5f0160&0x6)):0x0){_0x300a70=_0x4f2788['indexOf'](_0x300a70);}for(var _0xd6517c=0x0,_0x11a4d3=_0x3c876b['length'];_0xd6517c<_0x11a4d3;_0xd6517c++){_0x1dd493+='%'+('00'+_0x3c876b['charCodeAt'](_0xd6517c)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x1dd493);};var _0x4e465c=function(_0x123b08,_0x1ed001){var _0x220970=[],_0x3ccd21=0x0,_0x20f7a3,_0x4d44d5='';_0x123b08=_0x16ce05(_0x123b08);var _0x48d9c6;for(_0x48d9c6=0x0;_0x48d9c6<0x100;_0x48d9c6++){_0x220970[_0x48d9c6]=_0x48d9c6;}for(_0x48d9c6=0x0;_0x48d9c6<0x100;_0x48d9c6++){_0x3ccd21=(_0x3ccd21+_0x220970[_0x48d9c6]+_0x1ed001['charCodeAt'](_0x48d9c6%_0x1ed001['length']))%0x100,_0x20f7a3=_0x220970[_0x48d9c6],_0x220970[_0x48d9c6]=_0x220970[_0x3ccd21],_0x220970[_0x3ccd21]=_0x20f7a3;}_0x48d9c6=0x0,_0x3ccd21=0x0;for(var _0x12db52=0x0;_0x12db52<_0x123b08['length'];_0x12db52++){_0x48d9c6=(_0x48d9c6+0x1)%0x100,_0x3ccd21=(_0x3ccd21+_0x220970[_0x48d9c6])%0x100,_0x20f7a3=_0x220970[_0x48d9c6],_0x220970[_0x48d9c6]=_0x220970[_0x3ccd21],_0x220970[_0x3ccd21]=_0x20f7a3,_0x4d44d5+=String['fromCharCode'](_0x123b08['charCodeAt'](_0x12db52)^_0x220970[(_0x220970[_0x48d9c6]+_0x220970[_0x3ccd21])%0x100]);}return _0x4d44d5;};_0x35d2['DyjhCK']=_0x4e465c,_0x35d2['xFNQny']={},_0x35d2['FThZSf']=!![];}var _0x4ba55f=_0x49cd10[0x0];_0x35d2['pnIhGm']!==_0x4ba55f&&(_0x35d2['xFNQny']={},_0x35d2['pnIhGm']=_0x4ba55f);var _0x5835a6=_0x35d2['xFNQny'][_0x47eaac];return _0x5835a6===undefined?(_0x35d2['gqWsaS']===undefined&&(_0x35d2['gqWsaS']=!![]),_0x35d29c=_0x35d2['DyjhCK'](_0x35d29c,_0xd34919),_0x35d2['xFNQny'][_0x47eaac]=_0x35d29c):_0x35d29c=_0x5835a6,_0x35d29c;}class ActiveLogger{[_0x3fc573(0x1c9,'Nxi(')];[_0x3fc573(0x17c,'BHQR')];constructor(_0x4346d6,_0xdac8f6){this['module']=_0x4346d6,this['reqId']=_0xdac8f6;}['trace'](_0x3178e9,_0x38e2bb,_0x55b740){var _0x5caf0f=_0x3fc573,_0x4880c1={'GYXDv':function(_0x4b5e0b,_0x438609,_0x513211){return _0x4b5e0b(_0x438609,_0x513211);},'lQHrt':_0x5caf0f(0x1d4,'paaz')};_0x4880c1[_0x5caf0f(0x185,'5%1C')](emit,_0x4880c1['lQHrt'],formatLine(_0x4880c1[_0x5caf0f(0x1c5,'bM@Y')],this[_0x5caf0f(0x17b,'Mlgx')],this['reqId'],_0x3178e9,_0x38e2bb,_0x55b740));}['debug'](_0x567ece,_0x159801,_0x275805){var _0x29a030=_0x3fc573,_0x2c843d={'VMhNM':function(_0x32cedd,_0x50da40,_0x4a6e25){return _0x32cedd(_0x50da40,_0x4a6e25);},'DUgbG':_0x29a030(0x18a,'paaz')};_0x2c843d[_0x29a030(0x199,'Sh@7')](emit,_0x2c843d['DUgbG'],formatLine(_0x2c843d[_0x29a030(0x1ce,'k&VO')],this[_0x29a030(0x1b2,'sSvy')],this[_0x29a030(0x16d,'QfH#')],_0x567ece,_0x159801,_0x275805));}[_0x3fc573(0x197,'f3z9')](_0x52232d,_0x5f3132,_0x123364){var _0x26b3a3=_0x3fc573,_0x36c2d0={'YUwAo':_0x26b3a3(0x16b,'Sh@7'),'LvmPF':function(_0x52ce57,_0x48b292,_0x13d8d4,_0x4eeca9,_0x1e13f8,_0x4a048a,_0x51d041){return _0x52ce57(_0x48b292,_0x13d8d4,_0x4eeca9,_0x1e13f8,_0x4a048a,_0x51d041);}};emit(_0x36c2d0[_0x26b3a3(0x1c7,'Kvga')],_0x36c2d0[_0x26b3a3(0x1e4,'qwQ0')](formatLine,_0x36c2d0[_0x26b3a3(0x15b,'IxXK')],this[_0x26b3a3(0x1c8,'qDvp')],this[_0x26b3a3(0x16d,'QfH#')],_0x52232d,_0x5f3132,_0x123364));}[_0x3fc573(0x149,'ZP4x')](_0x3962f3,_0x486a52,_0x367ac5){var _0x481b8e=_0x3fc573,_0x4109c3={'EJzpr':function(_0x471a93,_0x4da172,_0x5d940d,_0x2af2d5,_0x3cae3e,_0x16e816,_0x1a39a5){return _0x471a93(_0x4da172,_0x5d940d,_0x2af2d5,_0x3cae3e,_0x16e816,_0x1a39a5);},'tDePx':_0x481b8e(0x13b,'BHQR')};emit(_0x481b8e(0x196,'[AcI'),_0x4109c3[_0x481b8e(0x1d1,'CEC8')](formatLine,_0x4109c3[_0x481b8e(0x1ca,'k&VO')],this[_0x481b8e(0x16f,'k&VO')],this[_0x481b8e(0x1e1,'k&VO')],_0x3962f3,_0x486a52,_0x367ac5));}[_0x3fc573(0x173,'*T5B')](_0x1ddd93,_0x19a2fe,_0x780315){var _0x39e22e=_0x3fc573,_0x8da23c={'GyUmp':function(_0x419715,_0x1db9fb,_0x214105){return _0x419715(_0x1db9fb,_0x214105);}};_0x8da23c['GyUmp'](emit,_0x39e22e(0x130,'f3z9'),formatLine(_0x39e22e(0x191,'KTb]'),this[_0x39e22e(0x1b2,'sSvy')],this[_0x39e22e(0x129,'6haG')],_0x1ddd93,_0x19a2fe,_0x780315));}[_0x3fc573(0x19f,'ZP4x')](_0x4daada){var _0x152fa6=_0x3fc573;return new ActiveLogger(_0x4daada,this[_0x152fa6(0x1bf,'f3z9')]);}[_0x3fc573(0x177,'KTb]')](_0x4d2aa3){var _0x1fe692=_0x3fc573;return new ActiveLogger(this[_0x1fe692(0x1de,'Sh@7')],_0x4d2aa3);}}function _0x49cd(){var _0x110f4b=['p3H9i2a','WP4jtHPx','e1a2W5OMfrhdJSo7umkGtSoGnG','WPNcTSogh1NdPq','W6XZWOn3WRVdLq','lsiTWQuY','W7ldJcai','l38kWRC','WPhdHcBcRG','a3/dUhK','mSoTW5VdICkNW6hcUrVcIW','hSkPxCo4sG','e8odW6W','mx8QWORcUapcL8oDWPtdMIS','ls9AW648','jhJdGWldRq','lWuI','lvxdK0lcGW','fNrGdKZcLq','WRBcINyiW7qhW6StqeNcN2pcPG','WPvSde/dV8olW7hcGmk7W5K','WQVcN1O6WPJcVCkFhmoh','bh7cR0JcJW','nmo2z8oJvqinW4BdRhyL','fwpcKuJcIHFcJSkmv8kYzq','WPSYuJyO','w1BcJCkTW4ZcU8kqWPa+bSkKW4i','WPvXk0i','W7xdNsTFWRnqW7a1u3NcIMtcSCoUgG','WONcLrr9WP0','kGXqW60o','laOjWQid','iNuxWORcKJpcJmobWPNdHW','WOfQwbK','WPjWiL0','zs/cHNRcVmktmCkXWRueW4Gx','WOlcNL7cS8kV','W446h8kGW54BWOJdGCkQzmoLrW','BCkGW4lcVq','wvpcGmkVW43cVSk3WPSLc8kzW5G','WOz5rrn9s8koBWix','aGJcUaK','gSooWP9BWP0','WPCGWQWfW4m','i8oRtSoTvGiOW7FdPheLWPWEDMVcTf8','iCkCk17cGG','qe7dU1tcRNVdHmk5gmo7sSkTpG','WOmaWRKN','W77cVmkwaI1+WP8','WPFcJd1gWR8','bZlcIa7dLa','DmonWPT8W4/cPa','W4jvW71XWQu2WRGRASkWE8oxWOq','oSoNW57dG8kS','WOHVWQj7bG','e8o5FfKPs2i0rq','W51tWQPA','lSknE8oYcY4e','aCkgWRalFqa3W7BdLre','dJHG','vNDvWQhdLq','l8o7qCoPqrm','gHxcQG','CCotW6uxcqlcIN8dy8oPWQO','pG41WPC','WPeqW6pdL8oS','krKJWOiuwSo0W6dcOt1PWPy','k3a9W6OfpZZdJSovBCkw','WQ1zBZnjA8kUqYKK','gLldTrtdJCoQlG','W4fPB8k0xGxdJ8k1WPL/WOZdKaNcH8kEW6NdTmkObW1+4OofemkOWPldTu55vchcLa','WOHDWRDnlG','WPn5wbH6','y8k7W5xcSa','WQ9wcNNdICo2W5a','WQK2W6FdV8oKya','hgGXWORdIvxdN8ouW5jGWOtcQZrGWOZcUJWYWPSaW4CDeXVdSIldHLTfn24vW6LaW5pdRcy6WOJdI8kxWO0IW4WKF8olEmo0','e1a2W5O2eXW','z8keymor','WQCrtYn/sSo+W6DvW6G','m2/dGctdUW','WPpcLKdcVG','W4G6cmkUW5G','g3xdOf7cOa','WQDSk3LOpem','kmkoWRbAvve','ch/cJL7cKbdcK8kJx8kItmkfxg8','a3WLWOVdPa','W63cRmk0lIryWQK9W4pdPG','F3njWQpdTW','e2iOuSobqHVcNa','WPtcKGLCWOq','bwNcU07cKXFcRmk9wCkXzCkErN0','WQP3WODkddr/W4JdUXq','eWJcVWpdQG','asbJ','WQf5nMPSpNZdKCkaaNVcRv8p','WRWWqaaQwG','WOrUwZ5S','nNuaWQVcKIq','W4ddQdVdKvW1u8ocWOW','WQ53WPPS','W4BcLxVdVXyOl2NdIWv9ka','WPrKrqm','W6hdMsPdWQi','dWvQW7yudwnvWRS','sL3dGCoWWOVdQ8kiWROsimkjW5ODW61wWOOVzSorWRlcJ8kNW55LjW','W7HJWPX6WOm','WRnAahXG','eCoSWRvhWR0','A8kaW5dcGmkR','CmozW6CAdqBcH1qLECokWRS','eCoZBgeH','WOjzahne','bxy1qSocraBcLG','WQjoffj2','oCkFAW','WPaSBSk+xXZdNG','bdzRWPtdSG','WQLQWOD3gW','o1m8C8op','lmkxl0q','vwCXW5lcPSkZsqj/tYW','dCkeWRGlqHWpW6xdNWJdVL8','cCodW67dUa','cglcU0G','W7hdRSo5tW','WQZcTu7cN8kW','xCoqW6jDbvO6W5ldVsNdN1O','WQBcIx44WQNcSmkj','W4BcNmk6oaC','e8odW7FdS8kNW4VcIdNcOSo5','nxKh','WPioWRKeW7XHW78UAq','kSkpWRDk','ihhcRSkCt8ojAmki','W5/dRqLEWOW','WP1QouxdO8owW7tcJ8kUW4GmWR/cSa','etjZW4RdTmkkAsPhBW','W6qgpmkoWOO','W50GtSoYW5mPEr8','FJRcT8kFBmoPwSkCWR4','aJ8Q','WPJcSmohea','W5yNq8o6','W5tdUt3dTf01FmonWPNcLSoBfsjA','jquLWOy','e8onW7JdO8khW4e','DCo1WQ1kW4y','lLhcJaqglG','BCoqWOPS','lZLvWQBdRq','WQlcLvS/WRFcTa','dNBcKwlcPW','hSkaW7q3v8kDW5BdJCoZuSk3W77dGq','W4tdVtVdLG','arVcVWi','lCknBCoddq','WP/IGk7dPhdcUSofb8kvW7JdLW3cTa','WPxdGJRcMeDRmwRdVsi','hqvuW5qmdgr6WR/cIK4','W4BdSJRdNuy','ketcKsikoCk2b8kJua','jZisW7yapgpdUCoBDCkwBW','WPaSBmkyvW','e2NcRg7cMq','W7FdMtrdWQi','igirWRBcHq','khuqWQRcLJFcHG','g8keW6aR','ASowWO18W4dcTx7dICk8wSk6W6BcLYDj','WP/dVadcUfy','W6FdTCo2smoU','oLySymoz','bav8W44xda','FYBcP8klDmoF','mCkLWRf/qq','bSoEFeui','WOuSACkCxatdJ8k4','W49BWRbw','aCk0WRnnFG','omozt3eU','imktWQzasW','gLulW7ua','iIJcJc/dNq','ASkVW5i','aCoKB3CJ','WRTQWPXSda','W6XvWODXWQC','WRGUWOWwW59aW5Whqa','WRChsJ4','lXmVWPautmoRW7BcQdK','W4KTgmk0W40','dCkTtCoJlq','oXLFWQtdSW','nNexW6O','WPFcL0lcPmkrmW','lupcMNJcUtVcRG','WOn+g8kRWPCBuY/dG8khtq','n8keWQvMxq','iu7cIH8'];_0x49cd=function(){return _0x110f4b;};return _0x49cd();}let createLogger=(_0x50882b,_0x284238=_0x3fc573(0x17f,'KTb]'))=>exports[_0x3fc573(0x161,'KTb]')]?new ActiveLogger(_0x50882b,_0x284238):NOOP_LOGGER,makeLogger=(exports[_0x3fc573(0x15c,'9LuA')]=createLogger,()=>{var _0x590173=_0x3fc573,_0x43072={'xfxbR':_0x590173(0x12c,'HdTq'),'YNXCd':_0x590173(0x181,'BHQR')};if(!exports[_0x590173(0x1db,'bR)$')])return _0x362d4c=()=>{},Object[_0x590173(0x165,'IxXK')](_0x362d4c,NOOP_LOGGER),_0x362d4c;let _0x521914=new ActiveLogger(_0x43072[_0x590173(0x13e,'Sh@7')],_0x43072[_0x590173(0x1dc,'Cc9)')]);var _0x362d4c=(_0x4892d0,_0x4c214f)=>{var _0x1f0374=_0x590173;_0x521914[_0x1f0374(0x1da,'Q]9p')](_0x1f0374(0x158,'2JR^'),_0x4892d0,_0x4c214f);};return _0x362d4c[_0x590173(0x1be,'U&kL')]=_0x521914['reqId'],_0x362d4c[_0x590173(0x1ad,'[AcI')]=_0x521914[_0x590173(0x14d,'0]n7')],_0x362d4c['debug']=_0x521914[_0x590173(0x1b7,'bR)$')][_0x590173(0x198,'cE3l')](_0x521914),_0x362d4c[_0x590173(0x1dd,'CEC8')]=_0x521914[_0x590173(0x135,'dP]m')]['bind'](_0x521914),_0x362d4c[_0x590173(0x1c3,'zNcX')]=_0x521914[_0x590173(0x1b5,'IvU@')][_0x590173(0x1aa,'7KMY')](_0x521914),_0x362d4c[_0x590173(0x1d0,'k&VO')]=_0x521914[_0x590173(0x162,'BHQR')][_0x590173(0x152,'5%1C')](_0x521914),_0x362d4c[_0x590173(0x183,'qDvp')]=_0x521914[_0x590173(0x151,'paaz')][_0x590173(0x1a9,'RgBD')](_0x521914),_0x362d4c['forRequest']=_0x521914[_0x590173(0x1b9,'bM@Y')][_0x590173(0x122,'bM@Y')](_0x521914),_0x362d4c;});exports[_0x3fc573(0x154,'1c)$')]=makeLogger;
+"use strict";
+/**
+ * @file utils.ts
+ * @description Zero-dependency utilities shared by every helper module:
+ * `deepClone` and the local-development logger.
+ *
+ * ## Logger design
+ *
+ * This is a **local-development-only** logger. It has three modes:
+ *
+ * 1. **Off (production default)** — every method is a zero-cost no-op. The
+ *    `DEBUG` flag is evaluated once at module load, and when it is false the
+ *    factory returns pre-bound no-op closures so hot paths pay nothing.
+ *
+ * 2. **Console only (`DEBUG=remote-service`)** — pretty-printed to stderr via
+ *    `console.warn` / `console.error`. Payloads are JSON.stringified. No file
+ *    I/O.
+ *
+ * 3. **Console + file (`DEBUG=remote-service LOG_TO_FILE=true`)** — same output
+ *    as mode 2, plus a per-run timestamped file at
+ *    `${LOG_DIR || 'logs'}/remote-service-YYYYMMDD-HHMMSS.log`.
+ *
+ * ## Production safety
+ *
+ * File logging is **hard-disabled** when `NODE_ENV === 'production'` regardless
+ * of the value of `LOG_TO_FILE`. Cloud Foundry containers have ephemeral
+ * filesystems, so writing files there would silently lose data and confuse the
+ * `cf logs` pipeline. See `.claude/docs/troubleshooting.md` for the
+ * full rationale.
+ *
+ * ## Correlation
+ *
+ * Each incoming request gets a short correlation ID (`reqId`, first 8 chars of
+ * a UUID v4). Every log line for that request carries the same ID so a single
+ * request can be traced across ~30–50 log lines from all helper modules.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.makeLogger = exports.createLogger = exports.getLogFilePath = exports.deepClone = exports.LOG_DIR = exports.LOG_TO_FILE = exports.LOG_TO_CONSOLE = exports.LOG_LEVEL = exports.DEBUG = void 0;
+const fs = require("fs");
+const path = require("path");
+// ============================================================================
+// Configuration — evaluated once at module load
+// ============================================================================
+/**
+ * Master trace switch. Set via `DEBUG=remote-service` (or `DEBUG=*`).
+ * When false every logger method is a no-op closure with zero call cost.
+ */
+exports.DEBUG = /(^|,)\s*(remote-service|\*)\s*(,|$)/.test(process.env.DEBUG ?? '');
+const LEVEL_RANK = { trace: 0, debug: 1, info: 2, warn: 3, error: 4 };
+const parseLevel = (v, fallback) => {
+    const s = (v ?? '').toLowerCase();
+    return ['trace', 'debug', 'info', 'warn', 'error'].includes(s)
+        ? s
+        : fallback;
+};
+/**
+ * Level threshold — messages below this are dropped.
+ * Resolution order (first match wins):
+ *   1. `LOG_LEVEL` env var (e.g. `LOG_LEVEL=trace`)
+ *   2. `CDS_LOG_LEVELS_ESI` env var — lets package.json scripts set
+ *      the remote-service level independently of the global `LOG_LEVEL`
+ *   3. `debug` when the `DEBUG` env var is set, `error` otherwise
+ */
+exports.LOG_LEVEL = parseLevel(process.env.LOG_LEVEL ?? process.env.CDS_LOG_LEVELS_ESI, exports.DEBUG ? 'debug' : 'error');
+/** Whether to print to stderr. Default: true when DEBUG is on. */
+exports.LOG_TO_CONSOLE = (process.env.LOG_TO_CONSOLE ?? (exports.DEBUG ? 'true' : 'false')).toLowerCase() === 'true';
+/**
+ * Whether to also append to a timestamped log file. **Hard-disabled** in
+ * production. Default: false.
+ */
+exports.LOG_TO_FILE = process.env.NODE_ENV !== 'production' &&
+    (process.env.LOG_TO_FILE ?? 'false').toLowerCase() === 'true';
+/** Log directory (relative to process cwd). Default: `logs`. */
+exports.LOG_DIR = process.env.LOG_DIR || 'logs';
+// ============================================================================
+// deepClone
+// ============================================================================
+/**
+ * Fast structured clone with a JSON fallback for runtimes that pre-date the
+ * `structuredClone` global (Node.js < 17).
+ */
+const deepClone = (value) => {
+    const sc = globalThis.structuredClone;
+    return typeof sc === 'function' ? sc(value) : JSON.parse(JSON.stringify(value));
+};
+exports.deepClone = deepClone;
+// ============================================================================
+// Timestamp helpers
+// ============================================================================
+const pad2 = (n) => (n < 10 ? '0' : '') + n;
+/** Compact timestamp for filenames: `YYYYMMDD-HHMMSS`. */
+const filenameTimestamp = (d = new Date()) => `${d.getFullYear()}${pad2(d.getMonth() + 1)}${pad2(d.getDate())}-${pad2(d.getHours())}${pad2(d.getMinutes())}${pad2(d.getSeconds())}`;
+/** ISO-8601 timestamp for log lines. */
+const isoTimestamp = (d = new Date()) => d.toISOString();
+// ============================================================================
+// File sink — lazy, per-process, singleton
+// ============================================================================
+let _fileStream = null;
+let _fileStreamInitialized = false;
+let _resolvedLogPath = null;
+/**
+ * Returns the write stream for the timestamped log file, creating it (and
+ * the parent directory) on first use. Returns `null` in production or when
+ * `LOG_TO_FILE=false`.
+ */
+const getFileStream = () => {
+    if (_fileStreamInitialized)
+        return _fileStream;
+    _fileStreamInitialized = true;
+    if (!exports.LOG_TO_FILE)
+        return null;
+    try {
+        const dir = path.isAbsolute(exports.LOG_DIR)
+            ? exports.LOG_DIR
+            : path.resolve(process.cwd(), exports.LOG_DIR);
+        fs.mkdirSync(dir, { recursive: true });
+        const fileName = `remote-service-${filenameTimestamp()}.log`;
+        _resolvedLogPath = path.join(dir, fileName);
+        _fileStream = fs.createWriteStream(_resolvedLogPath, { flags: 'a', encoding: 'utf8' });
+        // Best-effort "latest" convenience pointer. Skipped silently on failure
+        // (e.g. Windows without symlink privilege). Not critical.
+        try {
+            const latest = path.join(dir, 'remote-service-latest.log');
+            if (fs.existsSync(latest) || fs.lstatSync(latest).isSymbolicLink?.())
+                fs.unlinkSync(latest);
+        }
+        catch { /* ignore */ }
+        try {
+            fs.symlinkSync(fileName, path.join(dir, 'remote-service-latest.log'));
+        }
+        catch { /* ignore */ }
+        // Header
+        _fileStream.write(`# remote-service log — started ${isoTimestamp()} — pid=${process.pid} — NODE_ENV=${process.env.NODE_ENV || 'unset'}\n`);
+        // Flush on shutdown so trailing entries aren't lost
+        const flushAndClose = () => {
+            try {
+                _fileStream?.end();
+            }
+            catch { /* ignore */ }
+        };
+        process.once('exit', flushAndClose);
+        process.once('SIGINT', flushAndClose);
+        process.once('SIGTERM', flushAndClose);
+    }
+    catch (err) {
+        // Never let logger init crash the app
+        // eslint-disable-next-line no-console
+        console.error(`[remote-service logger] failed to init file sink:`, err.message);
+        _fileStream = null;
+    }
+    return _fileStream;
+};
+/** Absolute path of the current run's log file, or `null` when file logging is disabled. */
+const getLogFilePath = () => {
+    getFileStream(); // lazy init
+    return _resolvedLogPath;
+};
+exports.getLogFilePath = getLogFilePath;
+// ---------------------------------------------------------------------------
+// Formatting
+// ---------------------------------------------------------------------------
+const LEVEL_TAG = {
+    trace: 'TRACE',
+    debug: 'DEBUG',
+    info: 'INFO ',
+    warn: 'WARN ',
+    error: 'ERROR',
+};
+/**
+ * Fields that will be redacted from any logged context object. Best-effort —
+ * do not rely on this in place of not logging secrets in the first place.
+ */
+const REDACT_KEYS = new Set([
+    'authorization', 'auth', 'password', 'pwd', 'token', 'access_token',
+    'refresh_token', 'apikey', 'api_key', 'secret', 'cookie', 'set-cookie',
+    'x-csrf-token',
+]);
+const redact = (value) => {
+    if (value == null || typeof value !== 'object')
+        return value;
+    if (Array.isArray(value))
+        return value.map(redact);
+    const out = {};
+    for (const [k, v] of Object.entries(value)) {
+        out[k] = REDACT_KEYS.has(k.toLowerCase()) ? '[REDACTED]' : redact(v);
+    }
+    return out;
+};
+const formatLine = (level, module, reqId, method, message, context) => {
+    const base = `${isoTimestamp()} ${LEVEL_TAG[level]} [${reqId}] [${module}.${method}] ${message}`;
+    if (context === undefined)
+        return base;
+    try {
+        return `${base} ${JSON.stringify(redact(context))}`;
+    }
+    catch {
+        return `${base} <unserialisable context>`;
+    }
+};
+// ---------------------------------------------------------------------------
+// Sinks
+// ---------------------------------------------------------------------------
+const emit = (level, line) => {
+    if (LEVEL_RANK[level] < LEVEL_RANK[exports.LOG_LEVEL])
+        return;
+    if (exports.LOG_TO_CONSOLE) {
+        // stderr for warn/error, stdout otherwise — matches Node conventions
+        if (level === 'error' || level === 'warn') {
+            // eslint-disable-next-line no-console
+            console.error(line);
+        }
+        else {
+            // eslint-disable-next-line no-console
+            console.log(line);
+        }
+    }
+    const stream = getFileStream();
+    if (stream)
+        stream.write(line + '\n');
+};
+// ---------------------------------------------------------------------------
+// Logger implementations
+// ---------------------------------------------------------------------------
+const NOOP_LOGGER = (() => {
+    const noop = () => { };
+    const self = {
+        reqId: 'noop',
+        module: 'noop',
+        trace: noop,
+        debug: noop,
+        info: noop,
+        warn: noop,
+        error: noop,
+        forModule: () => self,
+        forRequest: () => self,
+    };
+    return self;
+})();
+class ActiveLogger {
+    module;
+    reqId;
+    constructor(module, reqId) {
+        this.module = module;
+        this.reqId = reqId;
+    }
+    trace(method, message, context) {
+        emit('trace', formatLine('trace', this.module, this.reqId, method, message, context));
+    }
+    debug(method, message, context) {
+        emit('debug', formatLine('debug', this.module, this.reqId, method, message, context));
+    }
+    info(method, message, context) {
+        emit('info', formatLine('info', this.module, this.reqId, method, message, context));
+    }
+    warn(method, message, context) {
+        emit('warn', formatLine('warn', this.module, this.reqId, method, message, context));
+    }
+    error(method, message, context) {
+        emit('error', formatLine('error', this.module, this.reqId, method, message, context));
+    }
+    forModule(module) { return new ActiveLogger(module, this.reqId); }
+    forRequest(reqId) { return new ActiveLogger(this.module, reqId); }
+}
+// ---------------------------------------------------------------------------
+// Public factory
+// ---------------------------------------------------------------------------
+/**
+ * Creates a {@link Logger} bound to the given module name. Returns a shared
+ * no-op instance when `DEBUG` is off (zero allocation, zero I/O).
+ *
+ * @param module  Module tag used in every log line (e.g. `'projection-pipeline'`).
+ * @param reqId   Optional correlation ID. Defaults to `'boot'` for module-level logs.
+ */
+const createLogger = (module, reqId = 'boot') => {
+    if (!exports.DEBUG)
+        return NOOP_LOGGER;
+    return new ActiveLogger(module, reqId);
+};
+exports.createLogger = createLogger;
+/**
+ * Legacy factory kept for backwards compatibility with the initial refactor.
+ * Produces a call-style logger that additionally implements the {@link Logger}
+ * interface via prototype-mixin, so both `log('msg', ctx)` and
+ * `log.debug('method', 'msg', ctx)` work.
+ *
+ * @deprecated Use {@link createLogger} instead.
+ */
+const makeLogger = () => {
+    if (!exports.DEBUG) {
+        const noop = () => { };
+        Object.assign(noop, NOOP_LOGGER);
+        return noop;
+    }
+    const structured = new ActiveLogger('legacy', 'boot');
+    const fn = (message, payload) => {
+        structured.debug('log', message, payload);
+    };
+    // Mixin the structured interface so tests / older code can still call debug()/info() etc.
+    fn.reqId = structured.reqId;
+    fn.module = structured.module;
+    fn.debug = structured.debug.bind(structured);
+    fn.info = structured.info.bind(structured);
+    fn.warn = structured.warn.bind(structured);
+    fn.error = structured.error.bind(structured);
+    fn.forModule = structured.forModule.bind(structured);
+    fn.forRequest = structured.forRequest.bind(structured);
+    return fn;
+};
+exports.makeLogger = makeLogger;

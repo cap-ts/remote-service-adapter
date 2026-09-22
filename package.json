@@ -58,7 +58,9 @@
     "src",
     "types/index.d.ts",
     "types/lib/index.d.ts",
-    "src/lib/**/*"
+    "types/lib/_RemoteService/index.d.ts",
+    "src/lib/**/*",
+    "!**/.DS_Store"
   ],
   "bugs": {
     "url": "https://github.com/cap-ts/remote-service-adapter/issues"

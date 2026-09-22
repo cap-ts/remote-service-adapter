@@ -1,1 +1,183 @@
-function _0x3fb7(_0x5eb711,_0x22760a){_0x5eb711=_0x5eb711-0x1d2;var _0x4c59ea=_0x4c59();var _0x3fb799=_0x4c59ea[_0x5eb711];if(_0x3fb7['kKNRty']===undefined){var _0x19a590=function(_0x86852d){var _0x4096a0='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x4eae61='',_0x3ef584='';for(var _0x1a5fde=0x0,_0x68e799,_0x46b921,_0x20b96b=0x0;_0x46b921=_0x86852d['charAt'](_0x20b96b++);~_0x46b921&&(_0x68e799=_0x1a5fde%0x4?_0x68e799*0x40+_0x46b921:_0x46b921,_0x1a5fde++%0x4)?_0x4eae61+=String['fromCharCode'](0xff&_0x68e799>>(-0x2*_0x1a5fde&0x6)):0x0){_0x46b921=_0x4096a0['indexOf'](_0x46b921);}for(var _0x3bbc65=0x0,_0x52ecfc=_0x4eae61['length'];_0x3bbc65<_0x52ecfc;_0x3bbc65++){_0x3ef584+='%'+('00'+_0x4eae61['charCodeAt'](_0x3bbc65)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3ef584);};var _0x22b3e2=function(_0x37d5e4,_0x264115){var _0x77c70d=[],_0x144f00=0x0,_0x188a32,_0x45e19d='';_0x37d5e4=_0x19a590(_0x37d5e4);var _0x361f1b;for(_0x361f1b=0x0;_0x361f1b<0x100;_0x361f1b++){_0x77c70d[_0x361f1b]=_0x361f1b;}for(_0x361f1b=0x0;_0x361f1b<0x100;_0x361f1b++){_0x144f00=(_0x144f00+_0x77c70d[_0x361f1b]+_0x264115['charCodeAt'](_0x361f1b%_0x264115['length']))%0x100,_0x188a32=_0x77c70d[_0x361f1b],_0x77c70d[_0x361f1b]=_0x77c70d[_0x144f00],_0x77c70d[_0x144f00]=_0x188a32;}_0x361f1b=0x0,_0x144f00=0x0;for(var _0x1c93a9=0x0;_0x1c93a9<_0x37d5e4['length'];_0x1c93a9++){_0x361f1b=(_0x361f1b+0x1)%0x100,_0x144f00=(_0x144f00+_0x77c70d[_0x361f1b])%0x100,_0x188a32=_0x77c70d[_0x361f1b],_0x77c70d[_0x361f1b]=_0x77c70d[_0x144f00],_0x77c70d[_0x144f00]=_0x188a32,_0x45e19d+=String['fromCharCode'](_0x37d5e4['charCodeAt'](_0x1c93a9)^_0x77c70d[(_0x77c70d[_0x361f1b]+_0x77c70d[_0x144f00])%0x100]);}return _0x45e19d;};_0x3fb7['nOBwDs']=_0x22b3e2,_0x3fb7['wliNOU']={},_0x3fb7['kKNRty']=!![];}var _0x3c4223=_0x4c59ea[0x0];_0x3fb7['JnuLHR']!==_0x3c4223&&(_0x3fb7['wliNOU']={},_0x3fb7['JnuLHR']=_0x3c4223);var _0x543e2e=_0x3fb7['wliNOU'][_0x5eb711];return _0x543e2e===undefined?(_0x3fb7['NnvaEk']===undefined&&(_0x3fb7['NnvaEk']=!![]),_0x3fb799=_0x3fb7['nOBwDs'](_0x3fb799,_0x22760a),_0x3fb7['wliNOU'][_0x5eb711]=_0x3fb799):_0x3fb799=_0x543e2e,_0x3fb799;}var _0x303624=_0x3fb7;(function(_0x1b69c4,_0x7d9d45){var _0x211f3b=_0x3fb7,_0x394273=_0x1b69c4();while(!![]){try{var _0x28d0f2=-parseInt(_0x211f3b(0x21d,'xV)g'))/0x1*(parseInt(_0x211f3b(0x235,'Q!9m'))/0x2)+parseInt(_0x211f3b(0x242,'(K$U'))/0x3*(-parseInt(_0x211f3b(0x218,'xSXg'))/0x4)+-parseInt(_0x211f3b(0x21c,'ofLA'))/0x5+-parseInt(_0x211f3b(0x21a,'ETnt'))/0x6*(parseInt(_0x211f3b(0x241,'x]aS'))/0x7)+-parseInt(_0x211f3b(0x20f,'edTT'))/0x8*(-parseInt(_0x211f3b(0x208,'5N!p'))/0x9)+-parseInt(_0x211f3b(0x244,'3erk'))/0xa*(-parseInt(_0x211f3b(0x223,'8v2x'))/0xb)+parseInt(_0x211f3b(0x205,'7]#$'))/0xc;if(_0x28d0f2===_0x7d9d45)break;else _0x394273['push'](_0x394273['shift']());}catch(_0x8abf4a){_0x394273['push'](_0x394273['shift']());}}}(_0x4c59,0xe4833),(Object[_0x303624(0x1e2,'vC0b')](exports,_0x303624(0x221,'t5lW'),{'value':!0x0}),exports[_0x303624(0x1fc,'ofLA')]=exports[_0x303624(0x1d9,')Evl')]=exports[_0x303624(0x20a,')pK)')]=exports[_0x303624(0x1d6,'PPB(')]=void 0x0));function _0x4c59(){var _0xbe0cd2=['vfBdTq','Aevtj8kN','zSkAW57dSJ7cObO','WRO0WQ0hW5XWl1yemMGJW4i','mZrwWQFdUq','pgjDBHy','W7ldG8kPbh3cItpdH8ouhmkYW7rMcq','DMtdK8kzna','CwRcUmkKWO3cJguDW7NdNSkE','FYldICkKW4pcSCkklSoOW6a','oHu/WRtdTq','WR1PW4CseSk+Dmo1WQe','W6hdVSo0WOi','W4JdImo8WQ8','W5RdGmo2WRJdKxJcQSoqWPS','rhLGrHy','r8oAWRa','WQlcGSoZva','k3hdUdC','suxdQSkxotBcQ8kyEcS','WRG1wSo3','hWniWOhdLhe','WORdQYLnsSok','xMZcNHKhEq','oCo8ithcQmkoWOyPW57dRCkHWRtcGmoUWPpdI8khWRu0aZpcK3RdNrOKC8kjhG','W7ldV8oAWPmgaa','DYZcMmklBalcTb7cMYS','vmopWQywjmoLWRRdIdddK8kkW7tdOG','WRZcVSoYWPBcJSkOW6LF','ueFdKSkNdW','W5K5W51UwSoOWQKgWRLuDSkgvW','btqP','W6S8WOm','AdXlWPpdRW','WReRWRqf','i3pdHCoB','WQ7cMw7dLsC2smkeW6FcT8omr8oHta','WQ3cSwNcL8og','EYTcWPtdSW','FtjlWPpdPZBcPG','ACkBW7ddRq','nM7dMCowrJi','le3cQCkGtgnN','emksDG','WPqPWRWbgwiLEmoz','fd4JWRVdU8kDiG','lwNcLSoM','F2jOcSkP','W7rvWRG','o8o3mIC','WQVdQNDL','ASk5A8oNb8oTy8oSySoEW7JdVrtcGtmKoCo1W5JdJmkXDM1rWOWaWOVcUWa','WOrPWOm7dSkU','WPJcNxa','W77dSSoCWOmigSo1','W5G2WPmkfW','WOzizq','W6pdOSoMWQhdSW','wfurW4tcHJbcW54lWQZdRmk+','WQVcT8oX','cNJdP8o5yq','gJGH','weFdTCkrjrlcRCkEyJudW6u','WPJcLw4','Bt4rmLrdWPOEW5KXoG','W4GZCW','WR7cO8k5W4u2zSosqSkjjW','B8kYB8oLemoX','q39MxaT1WRr5','W7NdTmoGWPq','AhJcKmo5W7K','W63cQZa+beuQnmkoW6bRzcdcJW','BSkzWRZdI8k8W55wbmomexv/','nM/dHG','pmoFW6BdMGdcOWrl','qMvaoCkdvW','cavdWOBdLgvTW7mg','FCoWWRG8','ymkoW4JdKb8','WQNcOmo4WPhcJSkLW6LfWOaV','WQOnW7a0WPxcQK7cLmkVW5K','W4NcUxGihSkDW57cHXtcVSomWPi','WP3dPGxdOq','WOFcKxG','xfVdOmkqotVcQ8kc','W5WJEWC','emkFW4ehWQXuWRuN','kN3dPa','uComW54','W5SGCG','n8oVnCk2j8ojw8oQtCoM','BLlcPCkEzubVWR0ohSoJjK4','WQ/cQ8kdW4iHi8orDvif','WPnRWRZcJbFdHHTuW7O','daFcSCooBMBdQSkKvG8yW67cRq','W7xcH8oKEWxdVvG','vMLiomkfqa','WPT+WPO2','WP5PWRxcMqBdIq','q8oDWRO8kwhcJaLhlW','hdq2WR0','y8omW4rBD8k/a8kaW63dP8oYxq','lJJdUq','ASkKqmoWfSo4wW','ACkaWQddK8kGW6S','vgdcNaOwyW','W6TrWQ4','WRJcMw4','W50Zyq','ySojWQmvnW','gCo2Bq','yCoeW4DzCSk9FmkwW4NdQCoTqCot','tSoaW5y','WOlcTCoJW6xdHa','WQNcP8oKWPm','q2vq','WP41DaHF','i3pdH8oltsC','pCoZoW','wmkHlCkXWRbUb3HXW6GUj8ov','eCkEDSoipSoh','WPZcH1/cJ8oYjqWIWPlcKSkkih7dTmobamovW77dNGu','W5JdImoKWQtdGa'];_0x4c59=function(){return _0xbe0cd2;};return _0x4c59();}let alias_maps_1=require('./alias-maps'),injectAggregationSourceFields=(_0x1deb07,_0x3d15bd,_0x14e350)=>{var _0x460997=_0x303624,_0x5a13f3={'MDpzc':function(_0x24fead,_0x58f0ab){return _0x24fead===_0x58f0ab;},'ogWPS':function(_0x352f83,_0x337a78){return _0x352f83!==_0x337a78;},'vzORn':function(_0x509307,_0x5c42f2){return _0x509307==_0x5c42f2;},'gMEdE':_0x460997(0x1d7,'ETnt')},_0x4eb614,_0x5c6eb2=_0x3d15bd['SELECT'][_0x460997(0x1f4,'ETnt')];if(Array['isArray'](_0x5c6eb2)&&_0x5a13f3[_0x460997(0x20c,'5N!p')]('*',_0x5c6eb2[0x0])){for(_0x4eb614 of _0x1deb07[_0x460997(0x24c,'ofLA')]?.[_0x460997(0x1eb,'CoZs')]||[])if(_0x4eb614['func']&&_0x4eb614[_0x460997(0x1ec,'(K$U')]){for(var _0xef47ce of _0x4eb614['args'])if(_0xef47ce&&_0x5a13f3['vzORn'](_0x5a13f3[_0x460997(0x22f,'!kT&')],typeof _0xef47ce)&&Array[_0x460997(0x23b,'5N!p')](_0xef47ce[_0x460997(0x249,')Evl')])){let _0x2eeb01=_0xef47ce[_0x460997(0x211,'d2Dm')][0x0],_0x46c368=_0x14e350[_0x2eeb01]||_0x2eeb01;_0x5c6eb2[_0x460997(0x203,'1&tY')](_0x10c0ed=>{var _0x41d6c3=_0x460997;return _0x10c0ed=_0x10c0ed[_0x41d6c3(0x215,'P7Ep')]?.[0x0]||_0x10c0ed,_0x5a13f3[_0x41d6c3(0x243,'CoZs')](_0x10c0ed,_0x46c368)||_0x5a13f3['MDpzc'](_0x10c0ed,_0x2eeb01);})||_0x5c6eb2[_0x460997(0x230,'w0q(')]({'ref':[_0x46c368]});}}}},aggregate=(exports[_0x303624(0x1f1,'xSXg')]=injectAggregationSourceFields,(_0x22eb93,_0x10277d,_0x2e087b,_0x251d65,_0x2f15ef)=>{var _0x46a051=_0x303624,_0x308024={'TodQj':_0x46a051(0x248,'RNz!'),'XEwkG':function(_0x4b715b){return _0x4b715b();},'JxUDD':'count_distinct','OSVdh':_0x46a051(0x207,'@]c8'),'ObLFI':function(_0x13786e,_0x134c28){return _0x13786e===_0x134c28;},'ZVrSH':function(_0x5ca88b,_0x407c2d){return _0x5ca88b/_0x407c2d;},'nJXpq':_0x46a051(0x22e,'&$Uz'),'Wvuoj':_0x46a051(0x1f6,'YM18')};switch(_0x22eb93){case _0x308024[_0x46a051(0x1f5,'3erk')]:return'*'===_0x10277d?_0x251d65:(_0x367ece=_0x308024[_0x46a051(0x23a,'UrG4')](_0x2e087b),_0x2f15ef?new Set(_0x367ece)[_0x46a051(0x24b,'P7Ep')]:_0x367ece[_0x46a051(0x236,'Da2M')]);case _0x308024['JxUDD']:return new Set(_0x308024['XEwkG'](_0x2e087b))[_0x46a051(0x1d2,'*cUP')];case _0x308024[_0x46a051(0x240,'ofLA')]:return _0x308024[_0x46a051(0x1e3,'d2Dm')](_0x2e087b)[_0x46a051(0x1d4,'edTT')]((_0x31861d,_0x1ff659)=>_0x31861d+Number(_0x1ff659||0x0),0x0);case _0x46a051(0x217,'uk[H'):var _0x367ece=_0x2e087b();return _0x308024[_0x46a051(0x1fa,'@]c8')](0x0,_0x367ece[_0x46a051(0x220,'f4I6')])?null:(_0x367ece=_0x367ece[_0x46a051(0x234,'PPB(')](_0x2af1fe=>Number(_0x2af1fe)))[_0x46a051(0x246,'mcsf')](_0x32f61a=>isNaN(_0x32f61a))?null:_0x308024[_0x46a051(0x23d,')pK)')](_0x367ece[_0x46a051(0x209,'UrG4')]((_0x3e267d,_0x32c17e)=>_0x3e267d+_0x32c17e,0x0),_0x367ece[_0x46a051(0x201,'xSXg')]);case _0x308024['nJXpq']:case _0x308024[_0x46a051(0x22b,')Evl')]:var _0x5359fa,_0x367ece=_0x308024[_0x46a051(0x1f7,'mcsf')](_0x2e087b);return _0x308024[_0x46a051(0x1ed,'UrG4')](0x0,_0x367ece[_0x46a051(0x1d5,'7T2S')])?null:_0x367ece[_0x46a051(0x1e4,'RIv)')](_0x584683=>!isNaN(Number(_0x584683)))?(_0x5359fa=_0x367ece['map'](_0x5916ee=>Number(_0x5916ee)),_0x46a051(0x1e9,'Da2M')===_0x22eb93?Math[_0x46a051(0x1f3,'d2Dm')](..._0x5359fa):Math[_0x46a051(0x224,'x]aS')](..._0x5359fa)):_0x367ece['reduce']((_0x372672,_0x2e968b)=>_0x46a051(0x1fb,'CoZs')===_0x22eb93?_0x2e968b<_0x372672?_0x2e968b:_0x372672:_0x372672<_0x2e968b?_0x2e968b:_0x372672,_0x367ece[0x0]);default:return;}}),applyDistinct=(exports[_0x303624(0x21b,'f4I6')]=aggregate,(_0x4063c8,_0x2c2300,_0x2e2107)=>{var _0x52e4ab=_0x303624;let _0x54a2a1=_0x4063c8[_0x52e4ab(0x212,'ofLA')]||{};var _0x318903=Object[_0x52e4ab(0x245,'1&tY')](_0x54a2a1)[_0x52e4ab(0x227,'7T2S')](_0x4094f3=>_0x52e4ab(0x238,'mcsf')===_0x54a2a1[_0x4094f3][_0x52e4ab(0x232,'uk[H')]?.[_0x52e4ab(0x24a,'xV)g')]),_0x39ed74=Object[_0x52e4ab(0x1ef,'PPB(')](_0x54a2a1)[_0x52e4ab(0x226,'VWd1')](_0x22260e=>!(0x0,alias_maps_1['isAssociationElement'])(_0x54a2a1[_0x22260e])&&!_0x54a2a1[_0x22260e]['$calc']),_0x5c122b=new Map();for(let _0x491834 of _0x2c2300){var _0x50a887=_0x39ed74[_0x52e4ab(0x1fd,'d2Dm')](_0x49f70b=>String(_0x491834[_0x2e2107[_0x49f70b]||_0x49f70b]??''))[_0x52e4ab(0x1e0,'Z!]V')]('|'),_0x44478e=_0x5c122b[_0x52e4ab(0x1de,'3erk')](_0x50a887);if(_0x44478e){_0x44478e[_0x52e4ab(0x23e,'TZ1H')]+=0x1;for(var _0x1df259 of _0x318903)_0x44478e[_0x52e4ab(0x216,'&$Uz')][_0x1df259]=_0x44478e['count'];}else{for(var _0x9b3e9f of _0x318903)_0x491834[_0x9b3e9f]=0x1;_0x5c122b[_0x52e4ab(0x22c,'Q!9m')](_0x50a887,{'ref':_0x491834,'count':0x1});}}return Array[_0x52e4ab(0x1e6,'5N!p')](_0x5c122b['values'](),_0x23c55b=>_0x23c55b[_0x52e4ab(0x229,'vC0b')]);}),applyGroupBy=(exports[_0x303624(0x23c,'Z!]V')]=applyDistinct,(_0x373934,_0x1b1213,_0xb6a495)=>{var _0x466a46=_0x303624,_0xd1fe98={'ikrhJ':_0x466a46(0x1f2,'kR[Z'),'ipWZS':function(_0x2cbf2c,_0x2135e7){return _0x2cbf2c==_0x2135e7;},'usBvK':_0x466a46(0x1e7,'@]c8')};let _0xafbc97=_0x373934[_0x466a46(0x1da,'w0q(')]||{},_0x5746df=_0x373934[_0x466a46(0x20d,'w0q(')]?.[_0x466a46(0x1e5,'RIv)')]||[];var _0x2b361e=Object[_0x466a46(0x222,'CoZs')](_0xafbc97)[_0x466a46(0x233,'@]c8')](_0x32485c=>{var _0x33247c=_0x466a46,_0x2b848d=_0xafbc97[_0x32485c],_0x26ca4d=_0x5746df[_0x33247c(0x1e1,'@]c8')](_0x50130=>_0x50130['as']===_0x32485c||_0x50130[_0x33247c(0x228,'J91x')]?.[0x0]===_0x32485c&&!_0x50130['func']);return!(0x0,alias_maps_1[_0x33247c(0x237,'d2Dm')])(_0x2b848d)&&!_0x2b848d[_0x33247c(0x204,'(K$U')]&&!_0x2b848d[_0x33247c(0x1df,'RIv)')]&&_0x26ca4d;}),_0x1f8214=new Map();for(let _0x32984d of _0x1b1213){var _0x281f89=_0x2b361e[_0x466a46(0x239,'ofLA')](_0x54a2e7=>String(_0x32984d[_0xb6a495[_0x54a2e7]||_0x54a2e7]??_0x32984d[_0x54a2e7]??''))[_0x466a46(0x210,'Gj(o')]('|'),_0x145776=_0x1f8214[_0x466a46(0x22a,'uk[H')](_0x281f89);_0x145776?_0x145776[_0x466a46(0x219,'f!JA')][_0x466a46(0x21f,'kR[Z')](_0x32984d):_0x1f8214[_0x466a46(0x231,'UrG4')](_0x281f89,{'ref':{..._0x32984d},'sourceRecords':[_0x32984d]});}var _0x34306d=[];for(let {ref:_0x474113,sourceRecords:_0xf7b4e}of _0x1f8214[_0x466a46(0x1d3,')pK)')]()){for(var _0x282a40 of _0x5746df)if(_0x282a40['func']){var _0x34a412=_0x282a40['as']||_0x282a40[_0x466a46(0x1dd,'CoZs')]?.[0x0];if(_0x34a412){var _0x1d6298=_0x282a40[_0x466a46(0x213,'uk[H')]['toLowerCase'](),_0x27f43e=(_0x282a40[_0x466a46(0x20b,'t5lW')]||[])[0x0];let _0x269222='*',_0x8f5b1f=(_0x27f43e&&_0xd1fe98['ikrhJ']==typeof _0x27f43e&&Array[_0x466a46(0x225,'xSXg')](_0x27f43e[_0x466a46(0x1ff,'uk[H')])?_0x269222=_0x27f43e[_0x466a46(0x1f9,'w0q(')][0x0]:_0xd1fe98[_0x466a46(0x1db,'ofLA')](_0xd1fe98['usBvK'],typeof _0x27f43e)&&(_0x269222=_0x27f43e),_0xb6a495[_0x269222]||_0x269222);_0x474113[_0x34a412]=(0x0,exports[_0x466a46(0x247,'mcsf')])(_0x1d6298,_0x269222,()=>_0xf7b4e[_0x466a46(0x1ee,'J91x')](_0x58cee5=>_0x58cee5[_0x8f5b1f]??_0x58cee5[_0x269222])[_0x466a46(0x21e,'UrG4')](_0x587ea4=>null!=_0x587ea4&&''!==_0x587ea4),_0xf7b4e[_0x466a46(0x236,'Da2M')],!!_0x282a40[_0x466a46(0x202,'RNz!')]);}}_0x34306d[_0x466a46(0x1f0,'7]#$')](_0x474113);}return _0x34306d;});exports[_0x303624(0x206,'VWd1')]=applyGroupBy;
+"use strict";
+/**
+ * @file aggregation.ts
+ * @description In-memory emulation of DISTINCT, GROUP BY, and aggregate
+ * functions (`count`, `count_distinct`, `sum`, `avg`, `min`, `max`).
+ *
+ * Aggregation runs after the remote backend has returned raw rows, so any
+ * physical source column referenced by an aggregate function must be
+ * present in the SELECT — {@link injectAggregationSourceFields} guarantees this.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.applyGroupBy = exports.applyDistinct = exports.aggregate = exports.injectAggregationSourceFields = void 0;
+const alias_maps_1 = require("./alias-maps");
+/**
+ * Ensures physical source columns referenced by aggregation functions are
+ * fetched from the remote backend, even when the incoming SELECT does not
+ * list them explicitly. Without this, `sum(Amount)` would fail because
+ * `Amount` was never selected.
+ *
+ * @param entityDef      Local entity definition.
+ * @param remoteQuery    Mutable remote query CQN.
+ * @param localToRemote  Alias map.
+ */
+const injectAggregationSourceFields = (entityDef, remoteQuery, localToRemote) => {
+    const columns = remoteQuery.SELECT.columns;
+    if (!Array.isArray(columns) || columns[0] === '*')
+        return;
+    const projColumns = entityDef.projection?.columns || [];
+    for (const col of projColumns) {
+        if (!col.func || !col.args)
+            continue;
+        for (const arg of col.args) {
+            if (!arg || typeof arg !== 'object' || !Array.isArray(arg.ref))
+                continue;
+            const field = arg.ref[0];
+            const remoteField = localToRemote[field] || field;
+            const exists = columns.some((c) => {
+                const r = c.ref?.[0] || c;
+                return r === remoteField || r === field;
+            });
+            if (!exists)
+                columns.push({ ref: [remoteField] });
+        }
+    }
+};
+exports.injectAggregationSourceFields = injectAggregationSourceFields;
+/**
+ * Applies a single aggregation function over a group of records.
+ *
+ * Supported:
+ * - `count`: including `count(*)` and `count(distinct field)`.
+ * - `sum`:   coerces to Number, defaults to 0.
+ * - `min` / `max`: numeric when all values are numeric, otherwise lexicographic.
+ *
+ * @param func        Aggregation function name (case-insensitive).
+ * @param targetArg   Source field or `'*'`.
+ * @param getValues   Lazy value provider (skips work for `count(*)`).
+ * @param rowCount    Total row count in the current group.
+ * @param isDistinct  `true` to deduplicate values before aggregating.
+ */
+const aggregate = (func, targetArg, getValues, rowCount, isDistinct) => {
+    switch (func) {
+        case 'count': {
+            if (targetArg === '*')
+                return rowCount;
+            const values = getValues();
+            return isDistinct ? new Set(values).size : values.length;
+        }
+        case 'count_distinct':
+            return new Set(getValues()).size;
+        case 'sum':
+            return getValues().reduce((sum, v) => sum + Number(v || 0), 0);
+        case 'avg': {
+            const values = getValues();
+            if (values.length === 0)
+                return null;
+            const nums = values.map((v) => Number(v));
+            return nums.some((n) => isNaN(n)) ? null : nums.reduce((sum, n) => sum + n, 0) / nums.length;
+        }
+        case 'min':
+        case 'max': {
+            const values = getValues();
+            if (values.length === 0)
+                return null;
+            const numeric = values.every((v) => !isNaN(Number(v)));
+            if (numeric) {
+                const nums = values.map((v) => Number(v));
+                return func === 'min' ? Math.min(...nums) : Math.max(...nums);
+            }
+            return values.reduce((acc, cur) => (func === 'min' ? (cur < acc ? cur : acc) : cur > acc ? cur : acc), values[0]);
+        }
+        default:
+            return undefined;
+    }
+};
+exports.aggregate = aggregate;
+/**
+ * In-memory DISTINCT emulation. Deduplicates records by the concatenation
+ * of all non-association, non-calculated key fields, and populates any
+ * dynamic `count`-annotated elements with the size of each dedup group.
+ *
+ * @param entityDef      Local entity definition.
+ * @param records        Raw remote records.
+ * @param localToRemote  Alias map.
+ * @returns              Deduplicated record set.
+ */
+const applyDistinct = (entityDef, records, localToRemote) => {
+    const elements = entityDef.elements || {};
+    const countElements = Object.keys(elements).filter((k) => elements[k].$calc?.func === 'count');
+    const keyFields = Object.keys(elements).filter((k) => !(0, alias_maps_1.isAssociationElement)(elements[k]) && !elements[k].$calc);
+    const uniqueRecords = new Map();
+    for (const record of records) {
+        const compositeKey = keyFields.map((k) => String(record[localToRemote[k] || k] ?? '')).join('|');
+        const existing = uniqueRecords.get(compositeKey);
+        if (existing) {
+            existing.count += 1;
+            for (const name of countElements)
+                existing.ref[name] = existing.count;
+        }
+        else {
+            for (const name of countElements)
+                record[name] = 1;
+            uniqueRecords.set(compositeKey, { ref: record, count: 1 });
+        }
+    }
+    return Array.from(uniqueRecords.values(), (item) => item.ref);
+};
+exports.applyDistinct = applyDistinct;
+/**
+ * In-memory GROUP BY / aggregation emulation. Groups records by all projected
+ * scalar fields and computes each aggregate function declared in the
+ * projection's `columns` list.
+ *
+ * @param entityDef      Local entity definition.
+ * @param records        Raw remote records.
+ * @param localToRemote  Alias map.
+ * @returns              Aggregated record set (one row per group).
+ */
+const applyGroupBy = (entityDef, records, localToRemote) => {
+    const elements = entityDef.elements || {};
+    const projColumns = entityDef.projection?.columns || [];
+    const groupByFields = Object.keys(elements).filter((k) => {
+        const el = elements[k];
+        const colDef = projColumns.find((c) => c.as === k || (c.ref?.[0] === k && !c.func));
+        return !(0, alias_maps_1.isAssociationElement)(el) && !el.$calc && !el.value && colDef;
+    });
+    const groups = new Map();
+    for (const record of records) {
+        const compositeKey = groupByFields
+            .map((k) => String(record[localToRemote[k] || k] ?? record[k] ?? ''))
+            .join('|');
+        const existing = groups.get(compositeKey);
+        if (existing)
+            existing.sourceRecords.push(record);
+        else
+            groups.set(compositeKey, { ref: { ...record }, sourceRecords: [record] });
+    }
+    const output = [];
+    for (const { ref: summarizedRow, sourceRecords } of groups.values()) {
+        for (const col of projColumns) {
+            if (!col.func)
+                continue;
+            const keyName = col.as || col.ref?.[0];
+            if (!keyName)
+                continue;
+            const func = col.func.toLowerCase();
+            const firstArg = (col.args || [])[0];
+            let targetArg = '*';
+            if (firstArg && typeof firstArg === 'object' && Array.isArray(firstArg.ref))
+                targetArg = firstArg.ref[0];
+            else if (typeof firstArg === 'string')
+                targetArg = firstArg;
+            const remoteProp = localToRemote[targetArg] || targetArg;
+            const values = () => sourceRecords
+                .map((r) => r[remoteProp] ?? r[targetArg])
+                .filter((v) => v !== undefined && v !== null && v !== '');
+            summarizedRow[keyName] = (0, exports.aggregate)(func, targetArg, values, sourceRecords.length, !!col.distinct);
+        }
+        output.push(summarizedRow);
+    }
+    return output;
+};
+exports.applyGroupBy = applyGroupBy;

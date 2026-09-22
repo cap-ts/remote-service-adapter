@@ -1,1 +1,146 @@
-function _0x36e4(){var _0x41dbe4=['cWVcOCkj','fX5GzNldHq','gCklWQfBBbXwW5zOW6VcP1i','WQufySo5WPlcNmotqCk/D8klW77cGq','oWRdThydbW','W48ocCkFW6tcTSoM','rSoyW7WpkeW','W5tdTCkUW54','amocWPO','W6b7aSk1W6WkW4qoxwfJF8kT','W79OW6RcTXGQaCkECG','W6mpgSk5W5i','W454W58xWQTetuNdOG','WODAWRRdTaBdUxxcTHtdIepdRG','W5GcW7VcJvZcQhtcKqe','t03dPCovW7ifxmokvmkLWRe','fbLKzgxdMq','qSoRqNXcbCksWRJcR8kCWO4','lCo4WPK7pcVdUCofB8k/','W7uGqf4','o3FdJSk9sa','WPi3W4VdQeOoW7bJhuKdD8oOeZBcOG','ASkSlKm','xbBdLCoTW7i','WPOqrqSN','sdFcV2xcQaJdHSoHba','aSk0hJywz8kIWO/cH8kZWPG','Eh/cJHfH','WRKcrMq','WPfmqfxdNZPb','WRtdRSkvWO7cVa','e8kZcqeskCk5','WQ1FzSoihW','oSk5WP7cK8k7WPlcRSkzW43dOLajW4zO','WQW4WOWSdq','WPldRbJcPCkA','wYnNW4Cq','eG3cNSkoWQevu8oismkFWP1ECCoXWQCqW4f6aJfn','jmksltBdS8oxFSoAW5JdRCoRW6CzW7SCW7tdQYeNWPqd','WRtcGmkd','dSkDW7xdT0K','t8orW7CfouPWW5i','W6KWxvhcHSki','W7SIW6ZcIea/F8koi8o0W7zHeW','W6y6xLtcM8koWO3cKWjkwSoXW48h','t8oUW559WPL6wCoIfdbD','jCkpChdcVG','WQWpqx5AirH2W5L9WP8kWOVcKmoWbJzjxq3cKq','W7K+WPNcQGWfWRBdOalcO8kUBa','WPmzWR3cGSobW68','rSojW6pdK18','m3tdMCkaCJKBoGqyWPXGWOpcIg5TjaLrWPe','W6PtjLz1d8ooW4NcGg7dHW','WQ0RWRdcLW','WPfgrCoRaa','W60ryZCtWQBcMCk8','WOxdIJdcICkqxW3dNmkAWOGsWOOAWQa','id3cNfW5e8onuq','cmkTWOuGW51CuSokfanlW4myemkPDq','W7XPW6FdJeumdCk1uSooWQC','WPnjCCk4W7VcN8oxW74q','kCoVBHJcGSkypMVdKIZcS8on','W6jgFCkVW4ddRh5PW71uxa0OW5xcKdS','WPm9WQC7WQrmBMRdQbTBFIFcGs3cVCkisZemEa','WPxcTSoQWO82qmo1xxZcIxi','gwC/WPTDowfUW6uhcLNdGq','WPfmtuJdJJPuWQfHW5vGlmk3W5VdQWVcSXdcISo7WOe','WPnjtmoM','WOpdHw/dPa','WOTlC07dGZW','WOXAWRRdSGpdVtFcLdFdTgRdJSoj','E8kjeM7dPa'];_0x36e4=function(){return _0x41dbe4;};return _0x36e4();}var _0x183625=_0x4b94;function _0x4b94(_0x43e58e,_0x37be9c){_0x43e58e=_0x43e58e-0x7a;var _0x36e4b8=_0x36e4();var _0x4b9439=_0x36e4b8[_0x43e58e];if(_0x4b94['sKjAKw']===undefined){var _0x42bbaa=function(_0x2564d9){var _0x5021ba='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x17a0fb='',_0x124601='';for(var _0x194b47=0x0,_0x4abb12,_0x1c93e5,_0x2b2aff=0x0;_0x1c93e5=_0x2564d9['charAt'](_0x2b2aff++);~_0x1c93e5&&(_0x4abb12=_0x194b47%0x4?_0x4abb12*0x40+_0x1c93e5:_0x1c93e5,_0x194b47++%0x4)?_0x17a0fb+=String['fromCharCode'](0xff&_0x4abb12>>(-0x2*_0x194b47&0x6)):0x0){_0x1c93e5=_0x5021ba['indexOf'](_0x1c93e5);}for(var _0x1ced5b=0x0,_0x37927b=_0x17a0fb['length'];_0x1ced5b<_0x37927b;_0x1ced5b++){_0x124601+='%'+('00'+_0x17a0fb['charCodeAt'](_0x1ced5b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x124601);};var _0x4fce76=function(_0x5d936c,_0x5c4077){var _0x2c7dba=[],_0xcb539e=0x0,_0x2b0d5d,_0xe49156='';_0x5d936c=_0x42bbaa(_0x5d936c);var _0x2fa143;for(_0x2fa143=0x0;_0x2fa143<0x100;_0x2fa143++){_0x2c7dba[_0x2fa143]=_0x2fa143;}for(_0x2fa143=0x0;_0x2fa143<0x100;_0x2fa143++){_0xcb539e=(_0xcb539e+_0x2c7dba[_0x2fa143]+_0x5c4077['charCodeAt'](_0x2fa143%_0x5c4077['length']))%0x100,_0x2b0d5d=_0x2c7dba[_0x2fa143],_0x2c7dba[_0x2fa143]=_0x2c7dba[_0xcb539e],_0x2c7dba[_0xcb539e]=_0x2b0d5d;}_0x2fa143=0x0,_0xcb539e=0x0;for(var _0x599573=0x0;_0x599573<_0x5d936c['length'];_0x599573++){_0x2fa143=(_0x2fa143+0x1)%0x100,_0xcb539e=(_0xcb539e+_0x2c7dba[_0x2fa143])%0x100,_0x2b0d5d=_0x2c7dba[_0x2fa143],_0x2c7dba[_0x2fa143]=_0x2c7dba[_0xcb539e],_0x2c7dba[_0xcb539e]=_0x2b0d5d,_0xe49156+=String['fromCharCode'](_0x5d936c['charCodeAt'](_0x599573)^_0x2c7dba[(_0x2c7dba[_0x2fa143]+_0x2c7dba[_0xcb539e])%0x100]);}return _0xe49156;};_0x4b94['TQwoPr']=_0x4fce76,_0x4b94['pjtVPi']={},_0x4b94['sKjAKw']=!![];}var _0x4ed1f6=_0x36e4b8[0x0];_0x4b94['HDDrvu']!==_0x4ed1f6&&(_0x4b94['pjtVPi']={},_0x4b94['HDDrvu']=_0x4ed1f6);var _0x10780d=_0x4b94['pjtVPi'][_0x43e58e];return _0x10780d===undefined?(_0x4b94['QcnbuG']===undefined&&(_0x4b94['QcnbuG']=!![]),_0x4b9439=_0x4b94['TQwoPr'](_0x4b9439,_0x37be9c),_0x4b94['pjtVPi'][_0x43e58e]=_0x4b9439):_0x4b9439=_0x10780d,_0x4b9439;}(function(_0x137897,_0x5cd52b){var _0x4abcbc=_0x4b94,_0x1fec81=_0x137897();while(!![]){try{var _0x4c1654=-parseInt(_0x4abcbc(0xb6,'HRao'))/0x1+-parseInt(_0x4abcbc(0xa7,'WueW'))/0x2+-parseInt(_0x4abcbc(0xb2,'Uq0i'))/0x3+parseInt(_0x4abcbc(0xaf,'kz7B'))/0x4*(parseInt(_0x4abcbc(0x91,'ky]J'))/0x5)+parseInt(_0x4abcbc(0x94,'PIOP'))/0x6*(parseInt(_0x4abcbc(0x9e,'$vx9'))/0x7)+parseInt(_0x4abcbc(0xa8,'Pfdw'))/0x8+parseInt(_0x4abcbc(0x99,'Op]h'))/0x9*(-parseInt(_0x4abcbc(0xb4,'YrGR'))/0xa);if(_0x4c1654===_0x5cd52b)break;else _0x1fec81['push'](_0x1fec81['shift']());}catch(_0x4c6c59){_0x1fec81['push'](_0x1fec81['shift']());}}}(_0x36e4,0x479e2),(Object[_0x183625(0x95,'zJ&k')](exports,_0x183625(0xb7,'3eAr'),{'value':!0x0}),exports[_0x183625(0xba,'9t!y')]=exports['isLocalOnlyExpression']=exports[_0x183625(0x7e,'WOkB')]=exports[_0x183625(0x8c,'^U8e')]=void 0x0));let alias_maps_1=require(_0x183625(0x8d,'Y3Oc')),M=_0x183625(0xbf,'HRao'),extractAndExpressions=_0x37e6b2=>{var _0x35727a=_0x183625,_0x3efc21={'ygxhz':function(_0x5e88cf,_0x16e30a){return _0x5e88cf==_0x16e30a;},'aPOEV':function(_0x47599c,_0x6747e9){return _0x47599c===_0x6747e9;},'YJOqu':_0x35727a(0x84,'k8x6'),'TmGpy':function(_0x2b709b,_0x208294){return _0x2b709b<_0x208294;}},_0x35a229,_0x3b9c6b=[];let _0x5af60b=[];for(_0x35a229 of _0x37e6b2)_0x3efc21['ygxhz']('string',typeof _0x35a229)&&_0x3efc21[_0x35727a(0xa4,'BJbf')](_0x3efc21[_0x35727a(0x8b,'QZvK')],_0x35a229['toUpperCase']())?_0x3efc21[_0x35727a(0x85,'c$GE')](0x0,_0x5af60b[_0x35727a(0xab,'WueW')])&&(_0x3b9c6b[_0x35727a(0xbb,'BJbf')](_0x5af60b),_0x5af60b=[]):_0x5af60b[_0x35727a(0xa5,'YrGR')](_0x35a229);return _0x3efc21[_0x35727a(0xbc,'LQl0')](0x0,_0x5af60b['length'])&&_0x3b9c6b[_0x35727a(0xa0,'f%W2')](_0x5af60b),_0x3b9c6b;},combineWithAnd=(exports[_0x183625(0x83,'&6)*')]=extractAndExpressions,_0x2784c7=>{var _0x2988f3=_0x183625,_0x5c5fd9={'bbEIi':function(_0x5bba1f,_0x39b8e3){return _0x5bba1f<_0x39b8e3;},'tdbDc':function(_0x3d826b,_0x5e6016){return _0x3d826b!==_0x5e6016;}};if(_0x5c5fd9[_0x2988f3(0x7b,'l]XF')](0x0,_0x2784c7[_0x2988f3(0xa9,'5Q7V')])){let _0x369864=[];return _0x2784c7[_0x2988f3(0x7c,'HRao')]((_0x7f9d64,_0x40541e)=>{var _0x3d9307=_0x2988f3;_0x5c5fd9[_0x3d9307(0xbd,'i)%i')](0x0,_0x40541e)&&_0x369864[_0x3d9307(0xac,'%GoZ')]('AND'),_0x369864[_0x3d9307(0xc1,'^U8e')](..._0x7f9d64);}),_0x369864;}}),isLocalOnlyExpression=(exports[_0x183625(0x89,'xL[v')]=combineWithAnd,(_0x95ad74,_0xae536b,_0xd2caad,_0x3a5c7b=!0x1)=>{var _0x35d337=_0x183625,_0x51e17d={'rzzeQ':function(_0xd0eb88,_0x427bea){return _0xd0eb88==_0x427bea;},'ErRTD':_0x35d337(0xb5,'2*o$'),'zCmzF':function(_0x74bafe,_0x4d897f){return _0x74bafe!==_0x4d897f;},'kIOoQ':_0x35d337(0x88,'kz7B'),'RkYKK':function(_0x55c767,_0x15c75a){return _0x55c767<_0x15c75a;},'vDFiA':_0x35d337(0xa2,'hZ7l')};for(var _0xd5497c of _0x95ad74)if(_0x51e17d[_0x35d337(0x93,'f%W2')](_0x51e17d[_0x35d337(0xb0,'Op]h')],typeof _0xd5497c)&&_0x51e17d[_0x35d337(0x8f,'x4YH')](null,_0xd5497c)){if(_0x3a5c7b&&_0xd5497c[_0x35d337(0x92,'kz7B')])return!0x0;if(Array[_0x35d337(0x7a,'hZ7l')](_0xd5497c[_0x35d337(0xa1,'H$0^')])&&(0x0,exports[_0x35d337(0x9c,'UNPB')])(_0xd5497c['args'],_0xae536b,_0xd2caad,_0x3a5c7b))return!0x0;if(_0xd5497c[_0x35d337(0xad,'3eAr')]){var _0x179e63=_0x51e17d[_0x35d337(0x7f,'F4wc')][_0x35d337(0x81,'$vx9')]('|'),_0x2b8820=0x0;while(!![]){switch(_0x179e63[_0x2b8820++]){case'0':_0xd5497c=_0xd5497c['ref'];continue;case'1':if(!_0x19bfb8)return!0x0;continue;case'2':if(_0x51e17d['RkYKK'](0x1,_0xd5497c[_0x35d337(0x8e,'*(rB')])||_0x51e17d['vDFiA']==typeof _0xd5497c[0x0]&&_0xd5497c[0x0][_0x35d337(0x96,'pb(g')]('/'))return!0x0;continue;case'3':if((0x0,alias_maps_1[_0x35d337(0x90,'c9#m')])(_0x19bfb8))return!0x0;continue;case'4':var _0xd5497c=_0xd5497c[0x0],_0x19bfb8=_0xae536b?.[_0x35d337(0x86,'WueW')]?.[_0xd5497c];continue;case'5':if(_0x19bfb8['virtual']||_0x19bfb8[_0x35d337(0xc0,'BAhw')]||_0x19bfb8['value'])return!0x0;continue;case'6':if(!_0xd2caad[_0xd5497c])return!0x0;continue;}break;}}}return!0x1;}),splitWhereClause=(exports[_0x183625(0x9f,'hZ7l')]=isLocalOnlyExpression,(_0xfaa77a,_0xf26253,_0x1c6019,_0x33b1c5,_0x3ea022=!0x1)=>{var _0x4d15e8=_0x183625,_0x47fad6={'sCNEd':function(_0x5bce0b,_0xaf6102){return _0x5bce0b===_0xaf6102;},'NcYFN':_0x4d15e8(0x97,'1G(X'),'apVNI':'Split\x20complete'};if(!_0xfaa77a||!Array[_0x4d15e8(0xaa,'Op]h')](_0xfaa77a)||_0x47fad6[_0x4d15e8(0x80,'zJ&k')](0x0,_0xfaa77a['length']))return{'remoteWhere':void 0x0,'localWhere':void 0x0};var _0x447f61,_0xfaa77a=(0x0,exports['extractAndExpressions'])(_0xfaa77a),_0x1c5b00=[],_0x5bb3f6=[];for(_0x447f61 of _0xfaa77a)((0x0,exports[_0x4d15e8(0x82,'YrGR')])(_0x447f61,_0xf26253,_0x1c6019,_0x3ea022)?_0x5bb3f6:_0x1c5b00)[_0x4d15e8(0xb8,'xL[v')](_0x447f61);return _0x33b1c5?.[_0x4d15e8(0xb3,'Uq0i')](M)['debug'](_0x47fad6[_0x4d15e8(0x7d,'f%W2')],_0x47fad6[_0x4d15e8(0xb9,'c9#m')],{'total':_0xfaa77a[_0x4d15e8(0xa9,'5Q7V')],'remote':_0x1c5b00[_0x4d15e8(0xa6,'2*o$')],'local':_0x5bb3f6[_0x4d15e8(0x87,'xL[v')]}),{'remoteWhere':(0x0,exports['combineWithAnd'])(_0x1c5b00),'localWhere':(0x0,exports['combineWithAnd'])(_0x5bb3f6)};});exports[_0x183625(0x9b,'*Dob')]=splitWhereClause;
+"use strict";
+/**
+ * @file where-split.ts
+ * @description Hybrid WHERE split: separates predicates that can be pushed to
+ * the remote backend from those that must be evaluated in memory.
+ *
+ * The split happens at the top-level AND boundary, keeping individual
+ * sub-expressions intact. This is the cornerstone of `RemoteService`'s
+ * hybrid execution model.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.splitWhereClause = exports.isLocalOnlyExpression = exports.combineWithAnd = exports.extractAndExpressions = void 0;
+const alias_maps_1 = require("./alias-maps");
+const M = 'where-split';
+/**
+ * Splits a flat CQN WHERE token array into separate sub-arrays at each
+ * top-level `AND` boundary.
+ *
+ * @param where  CQN WHERE token array.
+ * @returns      Array of individual expression sub-arrays.
+ */
+const extractAndExpressions = (where) => {
+    const expressions = [];
+    let current = [];
+    for (const token of where) {
+        if (typeof token === 'string' && token.toUpperCase() === 'AND') {
+            if (current.length > 0) {
+                expressions.push(current);
+                current = [];
+            }
+        }
+        else {
+            current.push(token);
+        }
+    }
+    if (current.length > 0)
+        expressions.push(current);
+    return expressions;
+};
+exports.extractAndExpressions = extractAndExpressions;
+/**
+ * Joins expression groups back into a single CQN WHERE array using `AND`.
+ *
+ * @param expressionGroups  Array of expression sub-arrays.
+ * @returns                 Combined CQN WHERE array, or `undefined` when empty.
+ */
+const combineWithAnd = (expressionGroups) => {
+    if (expressionGroups.length === 0)
+        return undefined;
+    const result = [];
+    expressionGroups.forEach((group, index) => {
+        if (index > 0)
+            result.push('AND');
+        result.push(...group);
+    });
+    return result;
+};
+exports.combineWithAnd = combineWithAnd;
+/**
+ * Returns `true` when the given CQN expression sub-array references any
+ * field that cannot be pushed to the remote backend:
+ * - Multi-segment navigation paths (association traversal).
+ * - Fields not present in the local entity definition.
+ * - Virtual, `$calc`, or formula (`value`) fields.
+ * - Association / Composition elements.
+ * - Fields with no corresponding remote mapping.
+ *
+ * Function arguments and parenthesised groups (`xpr`) are checked with the same rules.
+ *
+ * @param expr           A single AND-clause expression token array.
+ * @param entityDef      Local entity definition.
+ * @param localToRemote  Field alias map.
+ */
+const isLocalOnlyExpression = (expr, entityDef, localToRemote, isSoap = false) => {
+    for (const token of expr) {
+        if (typeof token !== 'object' || token === null)
+            continue;
+        // OData function calls (contains, startswith, endswith, tolower, …)
+        // cannot be pushed to SOAP — evaluate them in memory.
+        // For non-SOAP (OData) backends these functions are valid and can be
+        // pushed to the remote service, so only treat them as local-only when
+        // the target is a SOAP service.
+        if (isSoap && token.func)
+            return true;
+        // A field wrapped in a function (`contains(ParentName, 'x')`) is local-only when the field is:
+        // check the function arguments with the same rules as top-level refs.
+        if (Array.isArray(token.args) && (0, exports.isLocalOnlyExpression)(token.args, entityDef, localToRemote, isSoap))
+            return true;
+        // A parenthesised group `(a and b)` arrives as a nested `xpr` (OData `$filter=(_Assoc/Field gt 1) and (...)`): the same
+        // rules apply inside it, otherwise a path / virtual / calculated field in a group would be pushed to the backend.
+        if (Array.isArray(token.xpr) && (0, exports.isLocalOnlyExpression)(token.xpr, entityDef, localToRemote, isSoap))
+            return true;
+        if (token.ref) {
+            const path = token.ref;
+            if (path.length > 1 || (typeof path[0] === 'string' && path[0].includes('/')))
+                return true;
+            const fieldName = path[0];
+            const el = entityDef?.elements?.[fieldName];
+            if (!el)
+                return true;
+            if (el.virtual || el.$calc || el.value)
+                return true;
+            if ((0, alias_maps_1.isAssociationElement)(el))
+                return true;
+            if (!localToRemote[fieldName])
+                return true;
+        }
+    }
+    return false;
+};
+exports.isLocalOnlyExpression = isLocalOnlyExpression;
+/**
+ * Splits a CQN WHERE array into two disjoint parts:
+ * - `remoteWhere` — predicates that can be safely pushed to the backend.
+ * - `localWhere`  — predicates that must be evaluated in memory (virtual /
+ *                   calculated / association-path / unmapped fields).
+ *
+ * @param where          Incoming CQN WHERE array (may be `undefined`).
+ * @param entityDef      Local entity definition used for field classification.
+ * @param localToRemote  Alias map for field-name translation.
+ * @returns              `{ remoteWhere, localWhere }`; either may be `undefined`.
+ */
+const splitWhereClause = (where, entityDef, localToRemote, log, isSoap = false) => {
+    if (!where || !Array.isArray(where) || where.length === 0) {
+        return { remoteWhere: undefined, localWhere: undefined };
+    }
+    const expressions = (0, exports.extractAndExpressions)(where);
+    const remoteExprs = [];
+    const localExprs = [];
+    for (const expr of expressions) {
+        if ((0, exports.isLocalOnlyExpression)(expr, entityDef, localToRemote, isSoap))
+            localExprs.push(expr);
+        else
+            remoteExprs.push(expr);
+    }
+    log?.forModule(M).debug('splitWhereClause', 'Split complete', {
+        total: expressions.length,
+        remote: remoteExprs.length,
+        local: localExprs.length,
+    });
+    return {
+        remoteWhere: (0, exports.combineWithAnd)(remoteExprs),
+        localWhere: (0, exports.combineWithAnd)(localExprs)
+    };
+};
+exports.splitWhereClause = splitWhereClause;

@@ -1,1 +1,250 @@
-var _0x1c055f=_0x6ba0;(function(_0x3b5975,_0x5a4ede){var _0x3af061=_0x6ba0,_0x1ddfb9=_0x3b5975();while(!![]){try{var _0x44d33e=parseInt(_0x3af061(0x1ce,'L&]j'))/0x1+-parseInt(_0x3af061(0x1bc,'av#D'))/0x2*(-parseInt(_0x3af061(0x1ee,']H!*'))/0x3)+parseInt(_0x3af061(0x19a,'L&]j'))/0x4+parseInt(_0x3af061(0x1c1,'$xmc'))/0x5+-parseInt(_0x3af061(0x191,'$xmc'))/0x6*(-parseInt(_0x3af061(0x1f5,'av#D'))/0x7)+-parseInt(_0x3af061(0x1bf,'Aj&0'))/0x8*(-parseInt(_0x3af061(0x1bb,'r(y7'))/0x9)+-parseInt(_0x3af061(0x1b1,'L&]j'))/0xa*(parseInt(_0x3af061(0x1b9,'y9td'))/0xb);if(_0x44d33e===_0x5a4ede)break;else _0x1ddfb9['push'](_0x1ddfb9['shift']());}catch(_0x5bf663){_0x1ddfb9['push'](_0x1ddfb9['shift']());}}}(_0x12e9,0x58868),(Object[_0x1c055f(0x195,'L&]j')](exports,'__esModule',{'value':!0x0}),exports[_0x1c055f(0x189,'Oqpl')]=loadPlugin));let cds_1=require(_0x1c055f(0x1e1,'&!7e')),path=require(_0x1c055f(0x190,'G(UJ')),LOG_NAME=_0x1c055f(0x1c3,'BdgB'),OPT_IN_KEY='remoteService',SUPPORTED_KINDS=new Set([_0x1c055f(0x1df,'av#D'),_0x1c055f(0x19c,'Aj&0'),'odata-v4',_0x1c055f(0x1ba,'3w]H')]),SIBLING_DIRS=['/','/lib/','/handlers/'],isSupportedKind=_0x234b6c=>SUPPORTED_KINDS['has'](_0x234b6c),defaultIsFile=_0x50c575=>!!cds_1[_0x1c055f(0x1e5,'fX(P')][_0x1c055f(0x1c2,'!i)u')][_0x1c055f(0x1e2,'r(y7')](_0x50c575),nameOf=_0x3c69c2=>_0x1c055f(0x1f2,'HNxz')==typeof _0x3c69c2?_0x3c69c2:_0x3c69c2?.['id'],collectSourceNames=(_0x1be02f,_0x3f4525=[])=>{var _0x331fc9=_0x1c055f,_0x4079db={'ursac':function(_0x56c9df,_0xd7dec9){return _0x56c9df==_0xd7dec9;},'QoljI':function(_0xad2413,_0xd4511e){return _0xad2413<_0xd4511e;},'kPGRX':function(_0x294665,_0x3bb77e){return _0x294665(_0x3bb77e);}};if(_0x1be02f&&_0x4079db['ursac'](_0x331fc9(0x18c,'HNxz'),typeof _0x1be02f)){var _0x4149f8,_0x54746b;Array[_0x331fc9(0x197,'QZDa')](_0x1be02f[_0x331fc9(0x18d,'^E&J')])&&_0x4079db[_0x331fc9(0x1a0,'G(UJ')](0x0,_0x1be02f['ref'][_0x331fc9(0x1cb,'0#uX')])&&(_0x4149f8=_0x4079db[_0x331fc9(0x1e8,'av#D')](nameOf,_0x1be02f['ref'][0x0]))&&_0x3f4525[_0x331fc9(0x1be,'1krD')](_0x4149f8);for(_0x54746b of _0x1be02f[_0x331fc9(0x1da,'HxL0')]??[])collectSourceNames(_0x54746b,_0x3f4525);}return _0x3f4525;},owningServiceName=(_0x39c95e,_0x52c607)=>{var _0x4670ec=_0x1c055f,_0x3c5fd7={'mBVBX':function(_0x4075b7,_0x43e539){return _0x4075b7===_0x43e539;},'HdlJp':function(_0x3bd55e,_0x203bd4){return _0x3bd55e>_0x203bd4;}};let _0x30cac6;for(var [_0x5ab7b5,_0xbfe60c]of Object[_0x4670ec(0x1f3,'3w]H')](_0x39c95e))_0x3c5fd7[_0x4670ec(0x192,'$yfx')](_0x4670ec(0x1a8,'&xnS'),_0xbfe60c[_0x4670ec(0x18e,'IQ0Y')])&&_0x52c607[_0x4670ec(0x1d7,'4%f0')](_0x5ab7b5+'.')&&(!_0x30cac6||_0x3c5fd7[_0x4670ec(0x1a6,'RuZ4')](_0x5ab7b5[_0x4670ec(0x1e4,'SoBJ')],_0x30cac6['length']))&&(_0x30cac6=_0x5ab7b5);return _0x30cac6;},isExternalService=(_0x399b2c,_0x1327aa,_0x2bf849)=>!!(_0x1327aa[_0x1c055f(0x19f,'NV9f')]||_0x1327aa[_0x1c055f(0x18f,'&xnS')]||_0x2bf849[_0x399b2c]?.[_0x1c055f(0x1cc,'QZDa')]),hasSiblingImplementation=(_0x3ddc9d,_0x47edb1=defaultIsFile)=>{var _0x511eaf=_0x1c055f,_0x37fefa={'FBpWL':_0x511eaf(0x1db,'Y9BR'),'qaqdQ':'.js','AMblk':'.mjs','ZPhoa':function(_0x47bac3,_0x21a7f2){return _0x47bac3+_0x21a7f2;}};_0x3ddc9d=_0x3ddc9d[_0x37fefa[_0x511eaf(0x1f4,'1PNU')]]||_0x3ddc9d[_0x511eaf(0x1c0,'&xnS')]?.[_0x511eaf(0x1b5,'b7UJ')];if(_0x3ddc9d){var _0x39f421,{dir:_0x3bf9c0,name:_0x20c9f3}=path[_0x511eaf(0x1dc,'Aj&0')](_0x3ddc9d),_0x10482e=process.env.CDS_TYPESCRIPT?[_0x511eaf(0x1d0,'HxL0'),_0x37fefa[_0x511eaf(0x1c4,'^E&J')],_0x511eaf(0x1d8,']H!*')]:[_0x37fefa[_0x511eaf(0x1c7,'F9#u')],_0x37fefa[_0x511eaf(0x1b8,'Aj&0')]];for(_0x39f421 of SIBLING_DIRS)for(var _0x56e1be of _0x10482e)if(_0x47edb1(_0x37fefa['ZPhoa'](_0x37fefa[_0x511eaf(0x1f0,'L&]j')](_0x37fefa[_0x511eaf(0x1ef,'!i)u')](_0x3bf9c0||'.',_0x39f421),_0x20c9f3),_0x56e1be)))return!0x0;}return!0x1;},isOptedIn=_0x57dbd2=>!0x0===_0x57dbd2?.[OPT_IN_KEY]&&isSupportedKind(_0x57dbd2['kind']),findRemoteServiceTargets=(_0x32c64c,_0x20b415)=>{var _0x2c20ee=_0x1c055f,_0xecb419={'bPIbL':function(_0xba89b0,_0x42aa99){return _0xba89b0===_0x42aa99;},'JiQSg':function(_0x2a1361,_0x339a12,_0x2bdfdb){return _0x2a1361(_0x339a12,_0x2bdfdb);},'MzUMo':function(_0x490cc0,_0x164d49){return _0x490cc0(_0x164d49);},'luCSK':function(_0x11dace,_0xf8dd9,_0x32752e){return _0x11dace(_0xf8dd9,_0x32752e);},'sUqoF':function(_0x298a8d,_0x327f5b){return _0x298a8d!==_0x327f5b;}},_0x5de14d,_0x4f9204,_0x4eb2cb=_0x32c64c[_0x2c20ee(0x19b,'6r4U')],_0x1c0f4f=new Map();for([_0x5de14d,_0x4f9204]of Object[_0x2c20ee(0x18b,'9Zg5')](_0x4eb2cb))if(_0xecb419[_0x2c20ee(0x1ad,'y9td')](_0x2c20ee(0x1ac,'F9#u'),_0x4f9204[_0x2c20ee(0x1e0,'Aj&0')])){var _0x4abe3d=_0xecb419[_0x2c20ee(0x1eb,'b7UJ')](owningServiceName,_0x4eb2cb,_0x5de14d);if(_0x4abe3d)for(var _0x33ae19 of _0xecb419['MzUMo'](collectSourceNames,_0x4f9204[_0x2c20ee(0x196,'L&]j')]?.[_0x2c20ee(0x1c8,'3!vL')]??_0x4f9204['query']?.[_0x2c20ee(0x1d6,'9Zg5')]?.[_0x2c20ee(0x1de,'2DqA')])){var _0x4f5a33,_0x33ae19=_0xecb419[_0x2c20ee(0x1d1,'uX3&')](owningServiceName,_0x4eb2cb,_0x33ae19);_0x33ae19&&_0xecb419[_0x2c20ee(0x1a4,'$xmc')](_0x33ae19,_0x4abe3d)&&isOptedIn(_0x20b415[_0x33ae19])&&((_0x4f5a33=_0x1c0f4f['get'](_0x4abe3d)??new Set())[_0x2c20ee(0x1aa,'J59z')](_0x33ae19),_0x1c0f4f[_0x2c20ee(0x1cf,'9Zg5')](_0x4abe3d,_0x4f5a33));}}return _0x1c0f4f;},applyRemoteServiceImpl=(_0x39cb58,_0x3e93bc,_0x252664,_0x4566e8,_0x51d7fe=defaultIsFile)=>{var _0x5ab6f0=_0x1c055f,_0x41abf0={'dYngv':function(_0x4bf205,_0x8b9939){return _0x4bf205+_0x8b9939;},'fCLAm':function(_0x42b6a9,_0x90d9db,_0x2a2405,_0x480f5c){return _0x42b6a9(_0x90d9db,_0x2a2405,_0x480f5c);},'eHNDi':_0x5ab6f0(0x1e7,'HNxz'),'xAutQ':_0x5ab6f0(0x1cd,'6r4U'),'WrMyg':function(_0xf8a6e6,_0x6658ff,_0x2c7741){return _0xf8a6e6(_0x6658ff,_0x2c7741);},'Gshaa':_0x5ab6f0(0x1d4,'av#D')},_0x9cbcbd,_0x269341,_0x40e84a,_0x199d46,_0x5137d1=[];for([_0x9cbcbd,_0x269341]of Object[_0x5ab6f0(0x1b7,'F9#u')](_0x3e93bc))!0x0!==_0x269341?.[OPT_IN_KEY]||isSupportedKind(_0x269341[_0x5ab6f0(0x1bd,'0*)#')])||_0x4566e8?.[_0x5ab6f0(0x1e9,'1krD')](_0x41abf0[_0x5ab6f0(0x1c5,'Oqpl')]('cds.requires.'+_0x9cbcbd+'.'+OPT_IN_KEY+'\x20is\x20ignored:\x20kind\x20\x27'+_0x269341[_0x5ab6f0(0x1ea,'uoeK')]+_0x5ab6f0(0x1dd,'J59z'),[...SUPPORTED_KINDS]['join'](',\x20')));for([_0x40e84a,_0x199d46]of findRemoteServiceTargets(_0x39cb58,_0x3e93bc)){var _0x26ca27,_0x22631c=_0x39cb58['definitions'][_0x40e84a];_0x41abf0[_0x5ab6f0(0x194,'3!vL')](isExternalService,_0x40e84a,_0x22631c,_0x3e93bc)||((_0x26ca27=_0x22631c[_0x41abf0[_0x5ab6f0(0x19d,'wYLZ')]]?_0x41abf0[_0x5ab6f0(0x19d,'wYLZ')]:_0x3e93bc[_0x40e84a]?.[_0x5ab6f0(0x1b0,'uX3&')]?_0x41abf0[_0x5ab6f0(0x1b2,'^E&J')]:_0x41abf0[_0x5ab6f0(0x198,'$xmc')](hasSiblingImplementation,_0x22631c,_0x51d7fe)?_0x41abf0[_0x5ab6f0(0x1f1,'1krD')]:void 0x0)?_0x4566e8?.[_0x5ab6f0(0x1ca,'wYLZ')](_0x40e84a+(_0x5ab6f0(0x1ae,'6r4U')+_0x26ca27+')')):(_0x22631c['@impl']=_0x252664,_0x5137d1[_0x5ab6f0(0x199,'Aj&0')](_0x40e84a),_0x4566e8?.[_0x5ab6f0(0x1a5,'9Zg5')](_0x40e84a+_0x5ab6f0(0x1ab,']H!*')+[..._0x199d46][_0x5ab6f0(0x1ed,']H!*')](',\x20')+')')));}return _0x5137d1;};function loadPlugin(){var _0x5e66e9=_0x1c055f;let _0x1bcbd2=cds_1[_0x5e66e9(0x1b6,'av#D')][_0x5e66e9(0x193,'2DqA')](LOG_NAME),_0x41e1ca=require['resolve'](_0x5e66e9(0x1e6,'uX3&'));cds_1[_0x5e66e9(0x1a7,'HxL0')]['on'](_0x5e66e9(0x1d5,'w3K('),_0x17b987=>{var _0x5ef511=_0x5e66e9;_0x17b987?.[_0x5ef511(0x1a1,'9Zg5')]&&applyRemoteServiceImpl(_0x17b987,cds_1[_0x5ef511(0x18a,'G(UJ')][_0x5ef511(0x1b3,'IQ0Y')][_0x5ef511(0x1ec,'J59z')]||{},_0x41e1ca,_0x1bcbd2);});}module[_0x1c055f(0x1af,'&!7e')]=loadPlugin,module[_0x1c055f(0x1a3,'!i)u')]['__test']={'OPT_IN_KEY':OPT_IN_KEY,'isSupportedKind':isSupportedKind,'collectSourceNames':collectSourceNames,'owningServiceName':owningServiceName,'isExternalService':isExternalService,'hasSiblingImplementation':hasSiblingImplementation,'findRemoteServiceTargets':findRemoteServiceTargets,'applyRemoteServiceImpl':applyRemoteServiceImpl};function _0x6ba0(_0x4ab58f,_0x413106){_0x4ab58f=_0x4ab58f-0x189;var _0x12e924=_0x12e9();var _0x6ba03e=_0x12e924[_0x4ab58f];if(_0x6ba0['QWgxqG']===undefined){var _0x2a227e=function(_0x229250){var _0x4dbf57='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x129e96='',_0x5c48d3='';for(var _0x46660b=0x0,_0xaa914f,_0x48d452,_0x3b0fd3=0x0;_0x48d452=_0x229250['charAt'](_0x3b0fd3++);~_0x48d452&&(_0xaa914f=_0x46660b%0x4?_0xaa914f*0x40+_0x48d452:_0x48d452,_0x46660b++%0x4)?_0x129e96+=String['fromCharCode'](0xff&_0xaa914f>>(-0x2*_0x46660b&0x6)):0x0){_0x48d452=_0x4dbf57['indexOf'](_0x48d452);}for(var _0x9e7b2b=0x0,_0x3d1292=_0x129e96['length'];_0x9e7b2b<_0x3d1292;_0x9e7b2b++){_0x5c48d3+='%'+('00'+_0x129e96['charCodeAt'](_0x9e7b2b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5c48d3);};var _0x17059a=function(_0x3c7f90,_0x55c1c2){var _0x4ae511=[],_0x265fd6=0x0,_0x20ccd4,_0x21bc6f='';_0x3c7f90=_0x2a227e(_0x3c7f90);var _0x14d0c4;for(_0x14d0c4=0x0;_0x14d0c4<0x100;_0x14d0c4++){_0x4ae511[_0x14d0c4]=_0x14d0c4;}for(_0x14d0c4=0x0;_0x14d0c4<0x100;_0x14d0c4++){_0x265fd6=(_0x265fd6+_0x4ae511[_0x14d0c4]+_0x55c1c2['charCodeAt'](_0x14d0c4%_0x55c1c2['length']))%0x100,_0x20ccd4=_0x4ae511[_0x14d0c4],_0x4ae511[_0x14d0c4]=_0x4ae511[_0x265fd6],_0x4ae511[_0x265fd6]=_0x20ccd4;}_0x14d0c4=0x0,_0x265fd6=0x0;for(var _0x4288ca=0x0;_0x4288ca<_0x3c7f90['length'];_0x4288ca++){_0x14d0c4=(_0x14d0c4+0x1)%0x100,_0x265fd6=(_0x265fd6+_0x4ae511[_0x14d0c4])%0x100,_0x20ccd4=_0x4ae511[_0x14d0c4],_0x4ae511[_0x14d0c4]=_0x4ae511[_0x265fd6],_0x4ae511[_0x265fd6]=_0x20ccd4,_0x21bc6f+=String['fromCharCode'](_0x3c7f90['charCodeAt'](_0x4288ca)^_0x4ae511[(_0x4ae511[_0x14d0c4]+_0x4ae511[_0x265fd6])%0x100]);}return _0x21bc6f;};_0x6ba0['RbhTsG']=_0x17059a,_0x6ba0['VxfGMl']={},_0x6ba0['QWgxqG']=!![];}var _0x59fb13=_0x12e924[0x0];_0x6ba0['zSeYMT']!==_0x59fb13&&(_0x6ba0['VxfGMl']={},_0x6ba0['zSeYMT']=_0x59fb13);var _0x36c444=_0x6ba0['VxfGMl'][_0x4ab58f];return _0x36c444===undefined?(_0x6ba0['QgbhRa']===undefined&&(_0x6ba0['QgbhRa']=!![]),_0x6ba03e=_0x6ba0['RbhTsG'](_0x6ba03e,_0x413106),_0x6ba0['VxfGMl'][_0x4ab58f]=_0x6ba03e):_0x6ba03e=_0x36c444,_0x6ba03e;}function _0x12e9(){var _0x577312=['WOuiFSkLWPRcSG','W73dPLhcTG7dSNC','amorW5y0mKpcIxBdQmooW5qsW6i1WOD8W6q','WRRdISkDW7vU','tu/cMdlcPG','WQyeWOBcHW','iCkqWONdRW','k8oPi0ZcOG','WRRcICknWPBdG8kJWPva','hWXUW60','rGrPW44cWPJcTa','vbdcVWVdIa','z8ojW5jbrW','WPywWPZcIc0','WONdL8kcW6XSWPm','W4i2vJ/dGahcQW','WOFcSJfrW7G','fY3dQrFcSSo0AxldIa','BmkhWPfnymk9umo6DHi','eMxdRmo6WONdV8kV','qSoNE8oBWRe+W6C','WPxdGCkAW6bHWOa','umo+W6u','uSkWWQio','W5pcLSktkmowlwSCDG','bMhdVSoZ','FbGnW4ZcVmoUW7hcQCo8WORdHa','qhxdOSoKeG','WOKaAa','zmoFWQBcMmkv','wCo8W5XhsmkvWPpdJN4AyJ3dGXG','tCoRW5veq8ktWRFdLx4e','cSoZnWFdJCk8W4m','hv10WOFdQq','bbTtxG','d8kRWOOAe8oeW7FdTKGUsdRdHW','x8oRWPOonmozWO87A3ql','gWPbqSktWRP3WPy','W6BdJfH9WQS','WPCcgCkOW4f4gSkhtSkSCSkm','p8ohuCo4W58aDCkGm8o/W4tdHmk3','j2/dPSoXWRu','q8oSACoaWRyYW6b/mKG0','v8k3rI3dT8oOWRldNdZcM8oW','AZJcPWVdM8kPda','oxPiWPhdIa','tSoNACog','EID+kCkT','W6SSbHZcKYDY','W6dcLSkzkSoApga','W7NdNmoeW5tcNmoKWRHxW75bfZq','WQNcImky','t0nvW6ybWQhcUCkJW7BdG8o/aMlcKqhdIbepWPv5W4O/WPHxetasqSogW6FdOmoKt8oWWPRdQgP/WQJdTglcMW','k8oEBSoUW6JdGG','WPxdSSodW4ldNq','aCkUWPCcp8oaWOHYBw4lWRZcJCk9W5DoW6Orq1X8WRyOW5uIWOZcJcOOW5qjBq','WQhcKMP2W4VdILW','r8ksWOKh','d8kPW7XgrmkyWQVdIa','wSoAW7BdKSow','xmk3WRO','WPvOzcxdIWZcSdO','b8oPhNO','qNRcUqhcI8owFW','k8oEBSo1W7xdNNW','nsncwSkz','W4BcLSk6WPhcO8o0kfddUerQECkenW','W5q3qZ0','c8kZdfX/WPhcHf1/W6/cL34','fY7dQfFdICkpp1BdP1hcLe5l','W5VdTd4I','WQeqWOFcGq','rLCwxCkEW7nhW4RdMG','WRFcN8kep8osk2WsDa','EbOpW43cU8kFWOpcG8oCWORdSCkrga','EZtcVGJdMG','WQpdKCkJW6RdQ8olacqeWOLCoSk0ma','u8o6W7ldGSow','zmkXWP5orG','WQJcTWFdPKNcQtqPa2xcISkMA2C','p8orA8oJW40','zmoUWOxcTa','W4VcKSohWRi1W4hcVbZcNSoMs0vC','W6FdOxrmWQu','W51RW4rUg24','bSo4aHddJCkZW5Tb','wmoQWO9jkmovWOONBwGDW6/dGSkJW5qEW68','c8kPWOiCfCojWO/dHx4TqGy','vmoSEW','WQe9eW','qSkkWRO4kW','a3eKfmkrzColWQfV','W4xcL8k8WPpcPmo0kGxdOLP7zmk1','tN7cSqtcKSoFEqpdGfpcOv4','wSoykZpdNg8','Dmomq8oSWPSp','DNPZFZrIs8oHW4Ob','wW5TW7a','cmk6aGaLW4dcILD4','W647bW4','WQqsWO5zvupcTG','ba9srCkx','W6/dJmkvWPdcISk/WP9hWOP7gZ16gg1N','WOmDydG','sxVcVHtcNW','hWDouG','WOtcMxTPWPBdNuTc','u8oWuGiLW4e','Eb0jW4RcU8kCWOlcPCohWOBdMSkVkq'];_0x12e9=function(){return _0x577312;};return _0x12e9();}
+"use strict";
+/**
+ * @file index.ts
+ * @description CAP plugin entry (`cds-plugin.js` -> `require('./src/lib/_loader')()`).
+ *
+ * Makes {@link RemoteService} the implementation of local CAP services that are projections on external OData / SOAP
+ * services, without a handler file per service.
+ *
+ * ## Opt-in
+ * Per external service, in the consuming project's `cds.requires`:
+ *
+ * ```json
+ * { "cds": { "requires": { "MyExternalService": {
+ *     "kind": "odata",
+ *     "model": "srv/external/MyExternalService",
+ *     "credentials": { "url": "https://example.com" },
+ *     "remoteService": true
+ * } } } }
+ * ```
+ *
+ * Supported kinds: `odata`, `odata-v2`, `odata-v4`, `soap`. Any other kind with the flag is reported and ignored.
+ *
+ * ## What it does
+ * On every `cds.on('loaded')` (raw CSN, before linking) every LOCAL service that has at least one entity selecting from an
+ * opted-in external service gets `@impl` pointing at this package's `RemoteService`. CAP then instantiates it for the
+ * service, and `RemoteService` reads through `cds.connect.to(<external>)`.
+ *
+ * ## What it never does
+ * - It does not touch the external service itself. `cds.requires.<external>.impl` (your own client extension) keeps
+ *   working. Pointing it at `RemoteService` would make the service call itself, because `RemoteService` reads through
+ *   `cds.connect.to(<owning service>)`, which returns the same cached instance.
+ * - It never replaces an implementation the project already has: an existing `@impl`, a `cds.requires.<local>.impl`,
+ *   or a sibling handler file that CAP would pick up (`<name>.js` next to the `.cds`, or in `lib/` / `handlers/`).
+ *   Such services can extend `RemoteService` themselves.
+ *
+ * See `.claude/docs/integration.md`.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.loadPlugin = loadPlugin;
+const cds_1 = require("@sap/cds");
+const fs = require("fs");
+const path = require("path");
+/** Name of the log channel (`DEBUG=remote-service` enables the debug lines). */
+const LOG_NAME = 'remote-service';
+/** Property of `cds.requires.<external>` that opts the external service in. */
+const OPT_IN_KEY = 'remoteService';
+/** External service kinds `RemoteService` can read from. */
+const SUPPORTED_KINDS = new Set(['odata', 'odata-v2', 'odata-v4', 'soap']);
+/**
+ * Nearest `package.json` walking up from `startDir`: this module's own manifest. Not a fixed relative depth because the
+ * compiled module runs one directory level deeper in the dev/test tree (under `build/`) than it does once installed in a
+ * consumer's `node_modules` (where `package.json` sits three levels above `src/lib/_loader/index.js`).
+ */
+const findPackageJson = (startDir) => {
+    let dir = startDir;
+    for (;;) {
+        const candidate = path.join(dir, 'package.json');
+        if (fs.existsSync(candidate))
+            return candidate;
+        const parent = path.dirname(dir);
+        if (parent === dir)
+            throw new Error(`package.json not found above ${startDir}`);
+        dir = parent;
+    }
+};
+/** Name of this package (its own `package.json`), used to build a portable `@impl` specifier. */
+const PACKAGE_NAME = require(findPackageJson(__dirname)).name;
+/**
+ * The value written to `@impl`. The absolute file path is machine specific: `cds build` / `cds compile` copy `@impl`
+ * into the CSN, so on another machine (Cloud Foundry) CAP would try to load a path that does not exist, and the plugin
+ * would take it for an implementation of the project and leave it alone. A package specifier survives that: CAP
+ * resolves it from `cds.root` (`node_modules`). It is only used when it resolves to the very same file; otherwise
+ * (nested / linked installs that `cds.root` can not see) the absolute path is kept.
+ *
+ * @param moduleFile  Absolute path of this package's `_RemoteService` module.
+ * @param root        `cds.root`.
+ */
+const resolveImplSpecifier = (moduleFile, root) => {
+    const specifier = `${PACKAGE_NAME}/src/lib/_RemoteService`;
+    try {
+        return require.resolve(specifier, { paths: [root] }) === moduleFile ? specifier : moduleFile;
+    }
+    catch {
+        return moduleFile;
+    }
+};
+/** Where CAP looks for a handler file next to the service's `.cds` file (see `@sap/cds/lib/srv/factory.js`). */
+const SIBLING_DIRS = ['/', '/lib/', '/handlers/'];
+/**
+ * @param kind  `cds.requires.<name>.kind`.
+ * @returns `true` for the kinds `RemoteService` supports.
+ */
+const isSupportedKind = (kind) => SUPPORTED_KINDS.has(kind);
+/** Default file check: CAP's own (`cds.utils.isfile`, resolved against `cds.root`). */
+const defaultIsFile = (file) => !!cds_1.default.utils.isfile(file);
+const nameOf = (segment) => (typeof segment === 'string' ? segment : segment?.id);
+/**
+ * Names of the entities a CSN `from` clause selects from, including all sides of a JOIN.
+ *
+ * @param from  `projection.from` / `query.SELECT.from` of a definition.
+ * @param out   Accumulator (used by the recursion).
+ * @returns The entity names in source order.
+ */
+const collectSourceNames = (from, out = []) => {
+    if (!from || typeof from !== 'object')
+        return out;
+    if (Array.isArray(from.ref) && from.ref.length > 0) {
+        const name = nameOf(from.ref[0]);
+        if (name)
+            out.push(name);
+    }
+    for (const arg of from.args ?? [])
+        collectSourceNames(arg, out);
+    return out;
+};
+/**
+ * Longest service definition whose name is a prefix of `entityName` (`Svc.Sub.Entity` -> `Svc.Sub`).
+ *
+ * @param definitions  `csn.definitions`.
+ * @param entityName   Fully qualified entity name.
+ */
+const owningServiceName = (definitions, entityName) => {
+    let owner;
+    for (const [name, def] of Object.entries(definitions)) {
+        if (def.kind !== 'service' || !entityName.startsWith(`${name}.`))
+            continue;
+        if (!owner || name.length > owner.length)
+            owner = name;
+    }
+    return owner;
+};
+/** `true` when the service is imported from an external model (`@cds.external`, `@external`, `requires.<name>.external`). */
+const isExternalService = (name, def, requires) => !!(def['@cds.external'] || def['@external'] || requires[name]?.external);
+/**
+ * `true` when CAP would load a handler file for this service by itself (the sibling lookup of `cds.service.factory`).
+ *
+ * A `.ts` handler counts even when `CDS_TYPESCRIPT` is not set. The CDS CLI sets it only for `cds serve` / `cds watch`, not
+ * for `cds compile` / `cds build`; there the loader would not see `lib/X.ts`, write `@impl` into the CSN, and at runtime
+ * (`gen/srv`, where the handler is compiled to `X.js`) CAP prefers the CSN's `@impl` over the sibling file: the project's own
+ * implementation would be replaced by `RemoteService`.
+ *
+ * @param def     CSN definition of the service.
+ * @param isFile  File check, injectable for tests.
+ */
+const hasSiblingImplementation = (def, isFile = defaultIsFile) => {
+    const source = def['@source'] || def.$location?.file;
+    if (!source)
+        return false;
+    const { dir, name } = path.parse(source);
+    const extensions = ['.ts', '.js', '.mjs'];
+    for (const sub of SIBLING_DIRS) {
+        for (const ext of extensions)
+            if (isFile((dir || '.') + sub + name + ext))
+                return true;
+    }
+    return false;
+};
+/** `true` for a `cds.requires` entry that opted in and has a supported kind. */
+const isOptedIn = (config) => config?.[OPT_IN_KEY] === true && isSupportedKind(config.kind);
+/**
+ * Local services that select from an opted-in external service, with the external services they use.
+ *
+ * @param csn       Raw CSN.
+ * @param requires  `cds.env.requires`.
+ * @returns Map local service name -> external service names.
+ */
+const findRemoteServiceTargets = (csn, requires) => {
+    const definitions = csn.definitions;
+    const targets = new Map();
+    for (const [name, def] of Object.entries(definitions)) {
+        if (def.kind !== 'entity')
+            continue;
+        const local = owningServiceName(definitions, name);
+        if (!local)
+            continue;
+        for (const source of collectSourceNames(def.projection?.from ?? def.query?.SELECT?.from)) {
+            const external = owningServiceName(definitions, source);
+            if (!external || external === local || !isOptedIn(requires[external]))
+                continue;
+            const used = targets.get(local) ?? new Set();
+            used.add(external);
+            targets.set(local, used);
+        }
+    }
+    return targets;
+};
+/**
+ * Sets `@impl` on every eligible local service (see the file header) and reports opt-ins with an unsupported kind.
+ *
+ * @param csn       Raw CSN (mutated).
+ * @param requires  `cds.env.requires`.
+ * @param implPath  `@impl` value: specifier or absolute path of the module whose default export is `RemoteService`.
+ * @param log       Optional logger.
+ * @param isFile    File check, injectable for tests.
+ * @returns Names of the services that received `@impl`.
+ */
+const applyRemoteServiceImpl = (csn, requires, implPath, log, isFile = defaultIsFile) => {
+    const patched = [];
+    for (const [name, config] of Object.entries(requires)) {
+        if (config?.[OPT_IN_KEY] === true && !isSupportedKind(config.kind)) {
+            log?.warn(`cds.requires.${name}.${OPT_IN_KEY} is ignored: kind '${config.kind}' is not one of ${[...SUPPORTED_KINDS].join(', ')}`);
+        }
+    }
+    for (const [local, externals] of findRemoteServiceTargets(csn, requires)) {
+        const def = csn.definitions[local];
+        if (isExternalService(local, def, requires))
+            continue;
+        const reason = def['@impl'] ? '@impl' : requires[local]?.impl ? 'cds.requires impl' : hasSiblingImplementation(def, isFile) ? 'handler file' : undefined;
+        if (reason) {
+            log?.debug(`${local}: keeps its own implementation (${reason})`);
+            continue;
+        }
+        def['@impl'] = implPath;
+        patched.push(local);
+        log?.info(`${local}: RemoteService implements it (reads from ${[...externals].join(', ')})`);
+    }
+    return patched;
+};
+/**
+ * Registers the `loaded` listener. Called once by CAP's plugin loader through `cds-plugin.js`.
+ *
+ * @returns `void` - side effects only.
+ */
+function loadPlugin() {
+    const log = cds_1.default.log(LOG_NAME);
+    const moduleFile = require.resolve('../_RemoteService');
+    cds_1.default.on('loaded', (csn) => {
+        if (!csn?.definitions)
+            return;
+        applyRemoteServiceImpl(csn, cds_1.default.env.requires || {}, resolveImplSpecifier(moduleFile, cds_1.default.root), log);
+    });
+}
+/** CJS default export: the plugin factory, as CAP's plugin loader expects (`require('.../_loader')()`). */
+module.exports = loadPlugin;
+/**
+ * Testable surface: `require('.../_loader').__test`. Named exports do not survive `module.exports = loadPlugin`, so the
+ * helpers are only reachable here.
+ */
+module.exports.__test = {
+    OPT_IN_KEY,
+    isSupportedKind,
+    collectSourceNames,
+    owningServiceName,
+    isExternalService,
+    hasSiblingImplementation,
+    findPackageJson,
+    resolveImplSpecifier,
+    findRemoteServiceTargets,
+    applyRemoteServiceImpl,
+};

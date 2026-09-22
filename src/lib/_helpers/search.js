@@ -1,1 +1,341 @@
-const _0x178aaf=_0x27b0;function _0x27b0(_0xab3d97,_0x2fa6d1){_0xab3d97=_0xab3d97-0x180;const _0x4e9b5f=_0x4e9b();let _0x27b0f2=_0x4e9b5f[_0xab3d97];if(_0x27b0['ladJdt']===undefined){var _0xb43ccc=function(_0x51a3de){const _0x39e8f6='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x8ffbd2='',_0x3a58b1='';for(let _0x1e3dba=0x0,_0x4a95e4,_0x4a446b,_0x5b5367=0x0;_0x4a446b=_0x51a3de['charAt'](_0x5b5367++);~_0x4a446b&&(_0x4a95e4=_0x1e3dba%0x4?_0x4a95e4*0x40+_0x4a446b:_0x4a446b,_0x1e3dba++%0x4)?_0x8ffbd2+=String['fromCharCode'](0xff&_0x4a95e4>>(-0x2*_0x1e3dba&0x6)):0x0){_0x4a446b=_0x39e8f6['indexOf'](_0x4a446b);}for(let _0x1e1d21=0x0,_0x1809fc=_0x8ffbd2['length'];_0x1e1d21<_0x1809fc;_0x1e1d21++){_0x3a58b1+='%'+('00'+_0x8ffbd2['charCodeAt'](_0x1e1d21)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3a58b1);};const _0x5708f5=function(_0x1691ae,_0x16889f){let _0x440646=[],_0x3a3090=0x0,_0x55ea88,_0x41b666='';_0x1691ae=_0xb43ccc(_0x1691ae);let _0x17e210;for(_0x17e210=0x0;_0x17e210<0x100;_0x17e210++){_0x440646[_0x17e210]=_0x17e210;}for(_0x17e210=0x0;_0x17e210<0x100;_0x17e210++){_0x3a3090=(_0x3a3090+_0x440646[_0x17e210]+_0x16889f['charCodeAt'](_0x17e210%_0x16889f['length']))%0x100,_0x55ea88=_0x440646[_0x17e210],_0x440646[_0x17e210]=_0x440646[_0x3a3090],_0x440646[_0x3a3090]=_0x55ea88;}_0x17e210=0x0,_0x3a3090=0x0;for(let _0x340085=0x0;_0x340085<_0x1691ae['length'];_0x340085++){_0x17e210=(_0x17e210+0x1)%0x100,_0x3a3090=(_0x3a3090+_0x440646[_0x17e210])%0x100,_0x55ea88=_0x440646[_0x17e210],_0x440646[_0x17e210]=_0x440646[_0x3a3090],_0x440646[_0x3a3090]=_0x55ea88,_0x41b666+=String['fromCharCode'](_0x1691ae['charCodeAt'](_0x340085)^_0x440646[(_0x440646[_0x17e210]+_0x440646[_0x3a3090])%0x100]);}return _0x41b666;};_0x27b0['BvlXGU']=_0x5708f5,_0x27b0['StUQSz']={},_0x27b0['ladJdt']=!![];}const _0x53813b=_0x4e9b5f[0x0];_0x27b0['AzPjhT']!==_0x53813b&&(_0x27b0['StUQSz']={},_0x27b0['AzPjhT']=_0x53813b);const _0x1d4b7c=_0x27b0['StUQSz'][_0xab3d97];return _0x1d4b7c===undefined?(_0x27b0['uIhPxl']===undefined&&(_0x27b0['uIhPxl']=!![]),_0x27b0f2=_0x27b0['BvlXGU'](_0x27b0f2,_0x2fa6d1),_0x27b0['StUQSz'][_0xab3d97]=_0x27b0f2):_0x27b0f2=_0x1d4b7c,_0x27b0f2;}(function(_0xc2f134,_0x504149){const _0x4362fd=_0x27b0,_0xf557d=_0xc2f134();while(!![]){try{const _0x1da53b=-parseInt(_0x4362fd(0x1a6,'gP*N'))/0x1+parseInt(_0x4362fd(0x1a7,'c^OZ'))/0x2*(-parseInt(_0x4362fd(0x183,'iAv1'))/0x3)+parseInt(_0x4362fd(0x1b6,'xGFJ'))/0x4*(parseInt(_0x4362fd(0x228,')XI%'))/0x5)+-parseInt(_0x4362fd(0x224,'Df&F'))/0x6+parseInt(_0x4362fd(0x1df,'B5*^'))/0x7+-parseInt(_0x4362fd(0x21b,'NvD%'))/0x8*(-parseInt(_0x4362fd(0x1d5,'C@ec'))/0x9)+parseInt(_0x4362fd(0x223,'H!6U'))/0xa;if(_0x1da53b===_0x504149)break;else _0xf557d['push'](_0xf557d['shift']());}catch(_0x258e6a){_0xf557d['push'](_0xf557d['shift']());}}}(_0x4e9b,0x3c687),(Object[_0x178aaf(0x229,'^gIH')](exports,'__esModule',{'value':!0x0}),exports['getSearchColumns']=exports[_0x178aaf(0x20e,'Ekw^')]=exports[_0x178aaf(0x1a9,'c^OZ')]=exports[_0x178aaf(0x197,'5ovU')]=exports[_0x178aaf(0x1cd,'iAv1')]=exports[_0x178aaf(0x206,'(2]b')]=exports[_0x178aaf(0x204,'H!6U')]=exports[_0x178aaf(0x199,'c^OZ')]=exports['SEARCH_WARN_ROWS']=exports[_0x178aaf(0x1ae,'1cb1')]=exports[_0x178aaf(0x225,'HJGr')]=void 0x0));function _0x4e9b(){const _0x4858a0=['CfRdJXD0','t37cP8k5','k8o1W7ddMIe','W4/cRI0','E8o3WRjGaq','W5dcVSk+WRpcRSoLF8kHd8kfWQjE','AMDLWQFcVbq','sxHUWRK','pmodW4/dIG','W7/cTsPv','p8k9W7igw8kdA8kUdSk5WO1HEG','W58UeZz0uG','WOFcT1XeW4hcVmkXrv0PrLS','dmkOWQ7dSSo2d0m','tCo1WRPMsSosk3pdL8oxW4a','w8k6WO/dLmohfwFdRh3cQGXEjwuKWOZcImkJlW','W5FcPdniE8oIESoHW7L2hG','vLytxCk/','W6pcPtDAW6xcJq','gGLFDxu','lgOnW53dS8kodSoIv8kqWPhdNCkRjXVdVCoIWQaWWRBdOW','W67cMvRdHSorASoyW7BcGCkxkXrYW4SS','r8ouWRLKkG','W67cLvhdKSo/','WPxdSg98tcuvW67cTehcHIi','mqqP','cmkEaSovW4Cs','itFdKaWyfmoUWQRdQSogfby','W61WW455W6/dUIenWQWpW5ldIW','DLFdLXy','W6NcGaPLs8opB8owW4HtmG90WR/cO8kgWQZdHLZdJ38ciCoz','WQuPWO04WRJcNq8LWRaKW4RdSYJdUuC','uhH2WQVcOa','C096WQdcQq','WQVdSmoRW4JdRa','W4NcOcP2FCoKsCoWW6m','k8k4oruP','AN9+WQ3cTW','WQVcUdBdQhJdQSoAmgtdSCkHW7C7W4/dTHzIxKe','W4ldMCkUW4xcVq','ubRcRSkdWOO+WQ7dVclcP8od','mCoKtfzD','gCoWW6NdMHm','F1ddK3u','W61PeH7cS8kFEHRcSmoQW4NdMmotW41tWRBdOq','trVcGCkaWOG/WRNdTcBcRCov','W5FcTsbtDSoT','AuZdJgNcLXC','quHZWOtcNW','W7XRDG','omkHW6mr','FdJcP8oxF2DAW4XrsY3dHG','or8MESkR','bb15sgy','nmkPFSkgW7ldJG','WPmcWQO/WOq','mIX6vNq','pSkoWPdcOCoU','p8kPzmkIW6NdI8kZW77cISoeWQ8ZWPr4WP7cOq0j','omkNW6CTvSktaxJdTmoDW53dJq','Dxz5WQNcPHS','W70OeaHU','W6DzW4C','d3BcVSkZW4XAE8ogW6xdLCoJCG','WRO5WO8NWOq','WOJcIWldT2y','b8oSvunUmCo3W77cLd5J','x3xcUCoYWRJdM8kYemkOW4/dUtHHEq','W6JcPs1+W77cICkodLSaB2JcGa','rCk5aWy+ACkuW7lcTYrxW71Z','kSoFW5ddLHbM','x2eiuCke','WR7dOmobW7pdMW','fbjiEG','k8otW4G','ve4Pn8kj','FxKVhCkoWQC','cNZcOMOb','a8kEgmoHW5yBWQ1BWOdcN2dcM8kLfdZdQa','zI7cH8oxBM53','tvhdKG','W4bcnq','Bq3cQwipCCkjAq','sCohkbatW6eJW6a','W5xcPcSN','rKBdLSohWPewWOPKW5GQumojCbZdUW/dHg3dKq','W4PlW5BdImoZW4ZdUHq','W4aUcq','iCkSwCkTWQfPvKZcLxNcMIbz','W4tcJbSHjG','W43cRZfwBCoUs8o3','W6fDW47dIW','nSk0kcGJ','mr7dNYDA','F0tdLhxcGq','WObDW6hcOuK','yeaTuSkGxW','W5hcPXbctG','W73cNfVcM8oCwmotW7BdNCkIaHjuW7eayW','W6TJE8k3Ba','e0OIW6JdHmkU','W6uAW6NcSf0Z','W4udfSoc','W53dOrW8WPW','W5tdLmoSW54SfIFcVXvT','W7q3WP0U','eaPkBfxdSmktW7ddMr/dLCoIiSkgWQC','gmkDW78CsG','DLVdJafKWOJdJ3m2owS','CxjK','W5D+l3FcKW','WPZcNSoYWONdG8k0W7rWWOrGegO','hSk7dbm+','uSkNWPhdN8oAhG','D39FWRRcTW','ytZcQ8oa','qXdcLSk/WPG6WQ7dNcVcL8ojWQ8tW4WeW6GvvSor','x1PsWOtcSG','DhFdGCoXWQa','dthdMHHcdW','W5BdUmkxlb4','W7K2W77cRva','ixlcTSoeAgCJW4bQqIRdHSkBW74','WR5RW7RcHhu','eKa7W4NdHa','W5hcOc0I','zL8timkj','WQiaWPyaWO0','WQmPWPm','FGNdVmoxW5T8geC','eIddLq1cfmoCWQldRmon','W4RcPca','t8omWRPMjq','W6GZWPW','W7bNBmk0','W67cPd0','mWSHyW','uLKmjGpcKmogW5pdSZFdT8oxjq','lIeGW7JdQ0hdNmkQW5/dQCoFW6u','xf0zjCkPWORcQaFdMSopWP9fd0DpW63cOSo1iZNdUCkXW5RcIW','WQeNWRmKWQRcQXGhWQm0W4C','A3/dLNBcGq','y8o5w8kwWRPrDNa','n0z2WPtdKLNdTSk5WP1OW7pdLYNdMW','yCoZWRbYemoj','W43dImkMwdq','oCk6WQxcQmo2W4vpW5RcMufYW5n7W419W77cP8onjSowoq','W6q3WOKIm0BcJW','W5WddSoqWOG','jSkHcmobW7i','BSoigW','W74kjq5tF8oOWQeKA8ocW7NcQCo5WPpcTXCHWQZdRglcLhxcPW','ifDXWO/dIe/dSCkIWOzW','F8oma0/dM2q/vGT4hSkBW5mOWPdcL8oAWRWV','W5RdICkLutyZnWFdVWya','xxabySkgzqKEW6uoqSkLWRlcGSkmqCkxWOxdJKTw','uK8Jl8kD','W4BdQ8kFAdu','nrWOCSkv','imotW5ldHqf8','nSkJza','W7/cLKW','bCkWWPdcOCoG','WO/dUSk4','ECozb3ddH1yOvbfygq','W6ucW7lcULy','WO99W53cMwxcHCoH','vgXT','W4pcKtblqq','W73dISklW43cVq','v8kXWR7dI8oDgw3dSu/cUWrdkeGgWOJcImkJmSo+','CZZcHCk2WQu','uh5CWQpcLxjU','jJBdMqvZ','W4FcUYzBxW','dmozW5JdGWf1W4bYW7SVWPRdTexdGwldKexdVq','k1CFW6ddIq','t1VdImomWOWD','W715e1NcTCkz','W4ZcOce','Eenz','W7PGzG','pM7dT8kqldG6W4H/ycBdU8ka','BCo4eMxdKa','c8ouW5hdMda','EgKQamk9','DCoMWQW','W6q3W5FcSeC','BveZhSkwwsq7W4qQ','p8kOqmktWQDVCLFcKq','W5aVdN9Ow8ohWPjjymovW7VcTa','nWZcMuO0W5pcQ1qCh1ldIty','B8o/WPHcaq','WOxdP8o/','W73cNfVcMW','W7RcNu7dNmoAumojW77cNmkAma','jSk3W7OA','yuRdLa','W69RCmk9','W6mqk8oyWOG','iCk5W6m','WP7dP8oJ','qK7dLSohWOeMWOzXW7KSwq','E0ddKNa','ESkhWRNdUCo7oLRdH33cMZ9LceO1WQhcOmkig8oECq'];_0x4e9b=function(){return _0x4858a0;};return _0x4e9b();}let cds_1=require(_0x178aaf(0x1f0,'m(@*')),alias_maps_1=require('./alias-maps'),calc_dependencies_1=require('./calc-dependencies'),path_columns_1=require(_0x178aaf(0x214,'iAv1')),SEP=(exports[_0x178aaf(0x1b8,'Gb3k')]=0x1f4,exports[_0x178aaf(0x235,'h*^E')]=0x1388,exports['SEARCH_WARN_ROWS']=0x1388,'\x01'),isSpace=(exports[_0x178aaf(0x22c,'$%hQ')]=0xff,_0x35132b=>'\x20'===_0x35132b||'\x09'===_0x35132b||'\x0a'===_0x35132b||'\x0d'===_0x35132b),tokenize=_0x34673f=>{const _0x2c341f=_0x178aaf,_0x2a7246={'CqsHM':function(_0x236150,_0x25374d){return _0x236150(_0x25374d);},'TxSoy':function(_0x33cfc0,_0x157d73){return _0x33cfc0===_0x157d73;},'UmiMv':function(_0x4f7a4b,_0x312164){return _0x4f7a4b<_0x312164;},'mowFt':function(_0x283c6d,_0x1973d9){return _0x283c6d+_0x1973d9;},'RGBID':_0x2c341f(0x193,'so#]'),'xEnUx':function(_0x26ba30,_0x4c0085){return _0x26ba30!==_0x4c0085;},'uQeyn':_0x2c341f(0x1b3,'1Xl!'),'HwgKe':function(_0x10904c,_0x3e4385){return _0x10904c===_0x3e4385;},'zbgjE':_0x2c341f(0x23a,'8jmr')};var _0xf618fa=[];let _0x26ba1a=0x0,_0x3b5c39=0x0;for(;_0x3b5c39<_0x34673f[_0x2c341f(0x20b,'c^OZ')];){var _0x212431=_0x34673f[_0x3b5c39];if(_0x2a7246[_0x2c341f(0x1d3,'$%hQ')](isSpace,_0x212431))_0x3b5c39++;else{if('('===_0x212431)_0x26ba1a++,_0xf618fa['push']({'t':'('}),_0x3b5c39++;else{if(')'===_0x212431)0x0<_0x26ba1a&&(_0x26ba1a--,_0xf618fa['push']({'t':')'})),_0x3b5c39++;else{if(_0x2a7246[_0x2c341f(0x215,'HV!Q')]('\x22',_0x212431)){let _0x3727c9='';for(_0x3b5c39++;_0x3b5c39<_0x34673f[_0x2c341f(0x1e6,'HJGr')]&&'\x22'!==_0x34673f[_0x3b5c39];)'\x5c'===_0x34673f[_0x3b5c39]&&_0x2a7246['UmiMv'](_0x2a7246[_0x2c341f(0x216,'1cb1')](_0x3b5c39,0x1),_0x34673f[_0x2c341f(0x1d0,'8jmr')])&&_0x3b5c39++,_0x3727c9+=_0x34673f[_0x3b5c39++];_0x3b5c39++,_0x3727c9&&_0xf618fa[_0x2c341f(0x1a3,'kgMt')]({'t':_0x2a7246[_0x2c341f(0x1d2,'H!6U')],'v':_0x3727c9});}else{let _0x568708=_0x3b5c39;for(;_0x568708<_0x34673f[_0x2c341f(0x1e6,'HJGr')]&&!isSpace(_0x34673f[_0x568708])&&_0x2a7246['xEnUx']('(',_0x34673f[_0x568708])&&_0x2a7246[_0x2c341f(0x1ca,'u@1C')](')',_0x34673f[_0x568708])&&'\x22'!==_0x34673f[_0x568708];)_0x568708++;_0x212431=_0x34673f[_0x2c341f(0x1bf,'Df&F')](_0x3b5c39,_0x568708),(_0x3b5c39=_0x568708,_0xf618fa[_0x2c341f(0x1c5,'juvY')](_0x2a7246[_0x2c341f(0x24a,'1cb1')](_0x2c341f(0x181,'u@1C'),_0x212431)?{'t':_0x2a7246[_0x2c341f(0x184,'LQM!')]}:'OR'===_0x212431?{'t':'or'}:_0x2a7246['HwgKe'](_0x2c341f(0x1eb,'qzXc'),_0x212431)?{'t':_0x2a7246[_0x2c341f(0x1ad,'H!6U')]}:{'t':_0x2a7246[_0x2c341f(0x1e7,'Ck7C')],'v':_0x212431}));}}}}}return _0xf618fa;},join=(_0x3504af,_0x297960)=>0x0===_0x297960[_0x178aaf(0x1fe,'1cb1')]?void 0x0:0x1===_0x297960[_0x178aaf(0x1d6,'Df&F')]?_0x297960[0x0]:{'k':_0x3504af,'n':_0x297960},parse=_0x14d1e3=>{const _0x6adb70=_0x178aaf,_0x18fa88={'lRlpZ':function(_0x16957a,_0xe1e133){return _0x16957a===_0xe1e133;},'ERhMs':_0x6adb70(0x203,'Ef&8'),'NrBkP':function(_0x4a59c3,_0x2c9776){return _0x4a59c3===_0x2c9776;},'iukzG':function(_0x4fb2d9){return _0x4fb2d9();},'rYLit':function(_0x149bcd,_0x95d6be){return _0x149bcd===_0x95d6be;},'VfNrG':function(_0x2c44a3){return _0x2c44a3();},'EmxgP':'not','thPPX':function(_0x3ec6de,_0x476d55){return _0x3ec6de===_0x476d55;},'VNfqH':function(_0x4b3216,_0x43e0a3){return _0x4b3216===_0x43e0a3;},'FJUtY':'and','PJkXl':function(_0xed22d3,_0x29a6bc,_0x399965){return _0xed22d3(_0x29a6bc,_0x399965);}};let _0x43e64f=0x0,_0x4f0513=()=>_0x14d1e3[_0x43e64f],_0x15b55a=()=>{const _0x22d58f=_0x6adb70;var _0x524dff=_0x4f0513();if(_0x524dff)return _0x18fa88['lRlpZ']('term',_0x524dff['t'])?(_0x43e64f++,{'k':_0x18fa88[_0x22d58f(0x1e5,'HJGr')],'v':_0x524dff['v']}):_0x18fa88['NrBkP']('(',_0x524dff['t'])?(_0x43e64f++,_0x524dff=_0x18fa88[_0x22d58f(0x1c1,'1*ss')](_0x1a0f31),_0x18fa88[_0x22d58f(0x188,'D)qB')](')',_0x4f0513()?.['t'])&&_0x43e64f++,_0x524dff):void 0x0;},_0x22d770=()=>{const _0x432ad0=_0x6adb70;var _0x1cfb76;return _0x432ad0(0x19d,'pj31')===_0x18fa88[_0x432ad0(0x186,'HJGr')](_0x4f0513)?.['t']?(_0x43e64f++,(_0x1cfb76=_0x18fa88[_0x432ad0(0x1e2,'R7@G')](_0x22d770))?{'k':_0x18fa88[_0x432ad0(0x1c3,'B5*^')],'n':_0x1cfb76}:void 0x0):_0x18fa88[_0x432ad0(0x243,'1*ss')](_0x15b55a);},_0x137569=()=>{const _0x459c88=_0x6adb70;for(var _0x1d75c2=[];;){var _0x413045=_0x18fa88[_0x459c88(0x1ba,'u@1C')](_0x4f0513);if(_0x18fa88['thPPX']('and',_0x413045?.['t']))_0x43e64f++;else{if(!_0x413045||_0x18fa88[_0x459c88(0x20c,'u@1C')]('or',_0x413045['t'])||_0x18fa88['VNfqH'](')',_0x413045['t']))break;_0x413045=_0x18fa88[_0x459c88(0x1ce,'1Xl!')](_0x22d770),_0x413045&&_0x1d75c2[_0x459c88(0x1a2,'tlmv')](_0x413045);}}return join(_0x18fa88[_0x459c88(0x1d1,'xGFJ')],_0x1d75c2);},_0x1a0f31=()=>{const _0x1fcdc0=_0x6adb70;for(var _0x32360=[];;){var _0x4156ba=_0x18fa88[_0x1fcdc0(0x22e,'luCw')](_0x137569);if(_0x4156ba&&_0x32360[_0x1fcdc0(0x200,'luCw')](_0x4156ba),'or'!==_0x4f0513()?.['t'])break;_0x43e64f++;}return _0x18fa88[_0x1fcdc0(0x1f7,'Mjxb')](join,'or',_0x32360);};return _0x18fa88[_0x6adb70(0x194,'luCw')](_0x1a0f31);},parseSearchTerm=_0x46d173=>parse(tokenize(String(_0x46d173??''))),searchTerms=(exports[_0x178aaf(0x1af,'eUF3')]=parseSearchTerm,(_0x4d25a5,_0x57402c=new Set())=>{const _0x2a663d=_0x178aaf,_0x1a0310={'JBgqN':function(_0x112b29,_0x17dfb7){return _0x112b29===_0x17dfb7;},'fWOUU':'not'};if(_0x4d25a5){if(_0x1a0310[_0x2a663d(0x1b0,'C@ec')](_0x2a663d(0x1ee,'pj31'),_0x4d25a5['k']))_0x57402c[_0x2a663d(0x221,'kgMt')](_0x4d25a5['v']);else{if(_0x1a0310[_0x2a663d(0x1bb,'u@1C')](_0x1a0310[_0x2a663d(0x20f,'u@1C')],_0x4d25a5['k']))(0x0,exports[_0x2a663d(0x1aa,'Gb3k')])(_0x4d25a5['n'],_0x57402c);else{for(var _0x4353f4 of _0x4d25a5['n'])(0x0,exports['searchTerms'])(_0x4353f4,_0x57402c);}}}return _0x57402c;}),toPredicate=(exports[_0x178aaf(0x1dc,'B5*^')]=searchTerms,(_0x19f97a,_0x46de14)=>{const _0x1b8339=_0x178aaf,_0x5cb3c1={'CSbUg':function(_0x215487,_0x410252){return _0x215487===_0x410252;},'ufBxV':_0x1b8339(0x198,'juvY'),'SOrLB':function(_0x539c86,_0x5b2877){return _0x539c86===_0x5b2877;},'umYlL':_0x1b8339(0x1ea,'5ovU'),'wCRZs':function(_0x365319,_0x1aa36b,_0x48b65c){return _0x365319(_0x1aa36b,_0x48b65c);},'kIQPy':_0x1b8339(0x23b,'eUF3')};if(_0x5cb3c1[_0x1b8339(0x236,'HJGr')](_0x5cb3c1[_0x1b8339(0x1fb,'Gb3k')],_0x19f97a['k'])){let _0x196416=_0x46de14?_0x19f97a['v'][_0x1b8339(0x1c2,'Ekw^')]():_0x19f97a['v'];return _0x45d79e=>_0x45d79e[_0x1b8339(0x1f4,'Gb3k')](_0x196416);}if(_0x5cb3c1[_0x1b8339(0x1be,'sUOp')](_0x5cb3c1['umYlL'],_0x19f97a['k'])){let _0x53b7f8=_0x5cb3c1[_0x1b8339(0x218,'HJGr')](toPredicate,_0x19f97a['n'],_0x46de14);return _0x10385f=>!_0x53b7f8(_0x10385f);}let _0x2dcb49=_0x19f97a['n'][_0x1b8339(0x18e,'R7@G')](_0x3b62d9=>toPredicate(_0x3b62d9,_0x46de14));return _0x5cb3c1['kIQPy']===_0x19f97a['k']?_0x29413c=>_0x2dcb49[_0x1b8339(0x238,'1Xl!')](_0x549ae7=>_0x549ae7(_0x29413c)):_0x470d1d=>_0x2dcb49[_0x1b8339(0x19b,'g$9H')](_0x434b68=>_0x434b68(_0x470d1d));}),searchToTerm=_0x377c02=>{const _0x19fdaf=_0x178aaf,_0x1bb222={'dZvks':function(_0x326578,_0x5ec59f){return _0x326578==_0x5ec59f;},'BZdsA':function(_0x17fe2d,_0x17dca9){return _0x17fe2d===_0x17dca9;},'xOsHC':_0x19fdaf(0x192,'juvY'),'gPbqY':'NOT','NCcqH':function(_0x4c2a3b,_0x23cbf7){return _0x4c2a3b!==_0x23cbf7;},'GbmzE':function(_0x1c3685,_0x4a9dad){return _0x1c3685(_0x4a9dad);}};if(!Array[_0x19fdaf(0x1e9,'iAv1')](_0x377c02)||0x0===_0x377c02[_0x19fdaf(0x24b,'5ovU')])return'';let _0x479556=_0x120cc1=>{const _0x439fb4=_0x19fdaf,_0x48e56={'FKDsw':function(_0x4da3a5,_0x3684b7){const _0x50b557=_0x27b0;return _0x1bb222[_0x50b557(0x227,'juvY')](_0x4da3a5,_0x3684b7);},'HPsOj':_0x439fb4(0x1ff,'D)qB'),'wHiKP':function(_0x1299b4,_0x147ee7){const _0x5231c4=_0x439fb4;return _0x1bb222[_0x5231c4(0x22f,'OYoo')](_0x1299b4,_0x147ee7);},'jNHJE':function(_0x3ca448,_0xcab476){const _0x2a1bac=_0x439fb4;return _0x1bb222[_0x2a1bac(0x21e,'C@ec')](_0x3ca448,_0xcab476);},'SuNio':_0x1bb222[_0x439fb4(0x23c,'$%hQ')],'gCLxT':_0x1bb222[_0x439fb4(0x242,'Gb3k')],'fLGJU':function(_0x4ca4eb,_0x4b96ab){const _0x3d1be3=_0x439fb4;return _0x1bb222[_0x3d1be3(0x212,'y%L1')](_0x4ca4eb,_0x4b96ab);},'oqplY':function(_0x322e47,_0x319a05){const _0x83ef6f=_0x439fb4;return _0x1bb222[_0x83ef6f(0x1f6,'sUOp')](_0x322e47,_0x319a05);},'eMBkR':function(_0x4287a9,_0x3f1911){const _0x265985=_0x439fb4;return _0x1bb222[_0x265985(0x185,'tlmv')](_0x4287a9,_0x3f1911);}};let _0x2fbc0c=0x1===_0x120cc1[_0x439fb4(0x239,'tlmv')];return _0x120cc1[_0x439fb4(0x1d8,'m(@*')](_0x54cdda=>{const _0x15ff63=_0x439fb4;var _0x4f5195;return _0x48e56[_0x15ff63(0x1db,'F0DJ')](_0x48e56['HPsOj'],typeof _0x54cdda)?_0x15ff63(0x182,'so#]')===(_0x4f5195=_0x54cdda[_0x15ff63(0x226,'xGFJ')]())?'AND':_0x48e56[_0x15ff63(0x219,'xGFJ')]('or',_0x4f5195)?'OR':_0x48e56[_0x15ff63(0x1f9,'HV!Q')](_0x48e56['SuNio'],_0x4f5195)?_0x48e56[_0x15ff63(0x19c,'tlmv')]:'':_0x54cdda?.['xpr']?'('+_0x479556(_0x54cdda[_0x15ff63(0x187,'C@ec')])+')':_0x48e56[_0x15ff63(0x20a,'sUOp')](void 0x0,_0x54cdda?.[_0x15ff63(0x196,'R7@G')])&&_0x48e56[_0x15ff63(0x1da,'xGFJ')](null,_0x54cdda[_0x15ff63(0x21a,'xGFJ')])?_0x2fbc0c?_0x48e56[_0x15ff63(0x1f3,'pj31')](String,_0x54cdda[_0x15ff63(0x230,'LQM!')]):'('+String(_0x54cdda[_0x15ff63(0x23d,'L&SX')])+')':'';})[_0x439fb4(0x1c9,'juvY')](Boolean)[_0x439fb4(0x191,'C7CM')]('\x20');};return _0x1bb222[_0x19fdaf(0x247,'Mjxb')](_0x479556,_0x377c02);},haystackOf=(exports['searchToTerm']=searchToTerm,(_0x21e9f0,_0x2511fd,_0x5da62e)=>{const _0x16ca7a=_0x178aaf,_0x33941a={'hMvVt':_0x16ca7a(0x24c,'qzXc'),'TElhr':function(_0x285b80,_0x4a35f1){return _0x285b80(_0x4a35f1);}};let _0x2dacb4='';for(var _0x5bfc89 of _0x2511fd){var _0x5bfc89=_0x21e9f0?.[_0x5bfc89];null!=_0x5bfc89&&''!==_0x5bfc89&&(_0x5bfc89=_0x33941a[_0x16ca7a(0x237,'sjvX')]==typeof _0x5bfc89?_0x5bfc89:_0x33941a[_0x16ca7a(0x205,'C7CM')](String,_0x5bfc89),_0x2dacb4+=(_0x5da62e?_0x5bfc89[_0x16ca7a(0x234,'sjvX')]():_0x5bfc89)+SEP);}return _0x2dacb4;}),applySearch=(_0x28b74e,_0x38cf45,_0x22286b,_0x4e3d72={})=>{const _0x5aa835=_0x178aaf,_0x859b60={'biFWe':function(_0x1b99d6,_0x418094){return _0x1b99d6===_0x418094;},'UFUxf':function(_0x4af3b2,_0x4337e2,_0xc51a76){return _0x4af3b2(_0x4337e2,_0xc51a76);}};if(!Array[_0x5aa835(0x246,'u@1C')](_0x28b74e)||_0x859b60[_0x5aa835(0x18d,'C@ec')](0x0,_0x28b74e[_0x5aa835(0x211,'Mjxb')]))return _0x28b74e;_0x38cf45=(0x0,exports[_0x5aa835(0x1b9,'xGFJ')])(_0x38cf45);if(!_0x38cf45)return _0x28b74e;let _0x4627ca=!!_0x4e3d72['ignoreCase'],_0x4fd8da=_0x859b60[_0x5aa835(0x1c4,'tlmv')](toPredicate,_0x38cf45,_0x4627ca),_0x2c2822=[...new Set(_0x22286b)];return _0x28b74e['filter'](_0x2189af=>_0x4fd8da(haystackOf(_0x2189af,_0x2c2822,_0x4627ca)));},STRING_TYPES=(exports[_0x178aaf(0x23e,'LQM!')]=applySearch,new Set([_0x178aaf(0x189,'h*^E'),_0x178aaf(0x1fc,'eUF3'),_0x178aaf(0x1c6,'qzXc'),_0x178aaf(0x18b,'iT55'),_0x178aaf(0x1dd,'g$9H')])),builtinType=_0x3b6822=>{const _0x14434c=_0x178aaf,_0x45cec8={'XcSmz':function(_0x1d60eb,_0x3376ea){return _0x1d60eb==_0x3376ea;},'cnOfu':_0x14434c(0x1a0,'Df&F'),'ngvNe':_0x14434c(0x18f,'eUF3'),'QTHaA':function(_0x8ac4cb,_0x1f234c){return _0x8ac4cb<_0x1f234c;}};let _0x40af08=_0x3b6822;for(let _0x476d3c=0x0;_0x45cec8[_0x14434c(0x1ab,'h*^E')](_0x45cec8[_0x14434c(0x22b,'sjvX')],typeof _0x40af08)&&!_0x40af08[_0x14434c(0x202,'@(wP')](_0x45cec8[_0x14434c(0x201,'gP*N')])&&_0x45cec8[_0x14434c(0x1e1,'h*^E')](_0x476d3c,0xa);_0x476d3c++)_0x40af08=cds_1[_0x14434c(0x22d,'Ef&8')]['model']?.[_0x14434c(0x190,'eUF3')]?.[_0x40af08]?.[_0x14434c(0x1cc,'C7CM')];return _0x14434c(0x1c8,'Gb3k')==typeof _0x40af08?_0x40af08:void 0x0;},explicitSearchNames=_0xee103e=>Object[_0x178aaf(0x1f5,'m(@*')](_0xee103e??{})[_0x178aaf(0x1e0,'tlmv')](_0x571ecf=>_0x571ecf[_0x178aaf(0x21c,'Mjxb')](_0x178aaf(0x1b5,'Mjxb'))&&!0x0===_0xee103e[_0x571ecf])[_0x178aaf(0x241,'u@1C')](_0x3c8e1d=>_0x3c8e1d[_0x178aaf(0x23f,'D)qB')](_0x178aaf(0x1d9,'J@%S')[_0x178aaf(0x1a5,'iT55')])),getSearchColumnInfo=(exports[_0x178aaf(0x1ef,'5ovU')]=explicitSearchNames,(_0x2f867d,_0x2608db,_0x5fe92={})=>{const _0x1d4f5e=_0x178aaf,_0x1ca7fa={'oXetc':function(_0x571e63,_0x3bb86e){return _0x571e63===_0x3bb86e;},'CvdIp':_0x1d4f5e(0x249,'tlmv'),'cztaG':function(_0x2853fa,_0x40f85c){return _0x2853fa(_0x40f85c);},'dvAWV':function(_0x3f77e3,_0x191719){return _0x3f77e3===_0x191719;},'WIgZX':'toOne','NcmYn':function(_0x1c9b04,_0x4772e4){return _0x1c9b04!==_0x4772e4;},'udbds':_0x1d4f5e(0x1a8,'C@ec'),'rZOtY':function(_0x422e64,_0x31e441){return _0x422e64<_0x31e441;},'pmygK':_0x1d4f5e(0x1fa,'h*^E'),'YsNGH':_0x1d4f5e(0x222,'1Xl!')};var _0x2dcdb5=void 0x0===_0x5fe92['includeKeys']&&_0x1ca7fa[_0x1d4f5e(0x213,'D)qB')](void 0x0,_0x5fe92[_0x1d4f5e(0x18a,')XI%')]);if(_0x2dcdb5){var _0x50ce68=_0x2608db[_0x1d4f5e(0x1a4,'C7CM')][_0x1d4f5e(0x1cb,'so#]')](_0x2f867d);if(_0x50ce68)return _0x50ce68;}let _0x4170f5=(0x0,path_columns_1[_0x1d4f5e(0x1de,'kgMt')])(_0x2f867d,_0x2608db),_0x267329=(0x0,calc_dependencies_1[_0x1d4f5e(0x1d4,'8jmr')])(_0x2f867d);var _0x50bae7,_0x52168c,_0x572a0b=_0x5fe92[_0x1d4f5e(0x1c7,'Ekw^')]??!0x0,_0x5c8b51=_0x5fe92[_0x1d4f5e(0x1bd,'Gb3k')]??exports[_0x1d4f5e(0x231,'iT55')],_0x15d786=new Set((0x0,exports[_0x1d4f5e(0x1c0,'F0DJ')])(_0x2f867d)),_0x133501=[];for(let [_0x5e72e0,_0x11784c]of Object[_0x1d4f5e(0x240,'HV!Q')](_0x2f867d?.['elements']??{}))if(_0x50bae7=_0x5e72e0,!(!(_0x52168c=_0x11784c)||_0x50bae7[_0x1d4f5e(0x232,'^gIH')]('$')||(0x0,alias_maps_1[_0x1d4f5e(0x244,'c^OZ')])(_0x52168c)||_0x52168c[_0x1ca7fa[_0x1d4f5e(0x1bc,'R7@G')]]||_0x52168c['virtual']||!_0x267329['has'](_0x50bae7)&&(_0x52168c['$calc']||_0x52168c[_0x1d4f5e(0x19e,'C@ec')]))&&STRING_TYPES[_0x1d4f5e(0x207,'Df&F')](_0x1ca7fa[_0x1d4f5e(0x248,'Gb3k')](builtinType,_0x52168c[_0x1d4f5e(0x1e3,'H!6U')]))&&_0x1ca7fa[_0x1d4f5e(0x1cf,'H!6U')](_0x1ca7fa[_0x1d4f5e(0x210,'5ovU')],_0x4170f5[_0x1d4f5e(0x1f8,'juvY')][_0x1d4f5e(0x1e4,'tlmv')](_0x50bae7)?.[_0x1d4f5e(0x220,'so#]')]??_0x1ca7fa[_0x1d4f5e(0x245,'Ekw^')])&&_0x1ca7fa[_0x1d4f5e(0x1d7,'iT55')](!0x1,_0x11784c[_0x1ca7fa[_0x1d4f5e(0x19a,'(2]b')]])){if(_0x1ca7fa['rZOtY'](0x0,_0x15d786[_0x1d4f5e(0x1b7,'(2]b')])){if(!_0x15d786['has'](_0x5e72e0))continue;}else{if(!0x0!==_0x11784c[_0x1ca7fa['udbds']]){if(_0x11784c[_0x1d4f5e(0x21d,'pj31')]&&!_0x572a0b)continue;if(_0x1ca7fa[_0x1d4f5e(0x1b1,'eUF3')]==typeof _0x11784c[_0x1d4f5e(0x1d6,'Df&F')]&&_0x11784c[_0x1d4f5e(0x1b4,'OYoo')]>_0x5c8b51)continue;}}_0x133501[_0x1d4f5e(0x1a1,'u@1C')]({'name':_0x5e72e0,'kind':_0x4170f5['paths'][_0x1d4f5e(0x21f,'Ef&8')](_0x5e72e0)?_0x1d4f5e(0x217,'pj31'):_0x267329[_0x1d4f5e(0x180,'Gb3k')](_0x5e72e0)?_0x1ca7fa[_0x1d4f5e(0x208,'qzXc')]:'plain','length':_0x1ca7fa[_0x1d4f5e(0x1fd,'so#]')]==typeof _0x11784c[_0x1d4f5e(0x22a,'C@ec')]?_0x11784c[_0x1d4f5e(0x1ac,'kgMt')]:exports['DEFAULT_STRING_LENGTH']});}return _0x2dcdb5&&_0x2608db[_0x1d4f5e(0x1f2,')XI%')][_0x1d4f5e(0x1f1,'iT55')](_0x2f867d,_0x133501),_0x133501;}),getSearchColumns=(exports['getSearchColumnInfo']=getSearchColumnInfo,(_0x40e32f,_0x4cd915,_0x337bbd={})=>(0x0,exports[_0x178aaf(0x233,'LQM!')])(_0x40e32f,_0x4cd915,_0x337bbd)[_0x178aaf(0x195,'C7CM')](_0x300cef=>_0x300cef[_0x178aaf(0x20d,'iAv1')]));exports[_0x178aaf(0x1e8,'OYoo')]=getSearchColumns;
+"use strict";
+/**
+ * @file search.ts
+ * @description In-memory `$search` (`req.query.SELECT.search`).
+ *
+ * `SELECT.search` is never forwarded as such: backends either do not support it or search their own field
+ * names, not the projection's. Instead the term is (1) pushed down as far as it is safe (`search-pushdown.ts`:
+ * `contains(field, word)` on the entity and on associated entities, so fewer rows come back) and
+ * (2) always matched again here on the rows that came back, after mapping and after association-path and
+ * calculated elements are resolved. (2) has the final say; (1) only narrows.
+ *
+ * ## Semantics (OData V4 `$search` syntax, "contains")
+ * - Words are ANDed (`a b` = `a AND b`), `OR` and `NOT` are supported, precedence `NOT` > `AND` > `OR`,
+ *   `( )` group, `"a phrase"` matches the phrase. Keywords are upper case only, as in OData.
+ * - A word matches a row when it is contained in ANY searched column: exactly as typed (case-sensitive) or ignoring
+ *   case, depending on the backend the entity's data comes from (`search-backend.ts`: OData V2 = case-sensitive,
+ *   local / OData V4 = case-insensitive, SOAP = no search). It is what the backend's `contains` can do, so the pushed
+ *   filter is exact.
+ * - Blank / operator-only terms search nothing and return the rows unchanged.
+ *
+ * ## Searched columns ({@link getSearchColumns})
+ * String elements of the entity, keys included, string elements read through to-one associations
+ * (`_Parent.Name as ParentName`) and calculated string columns (`LEFT(x, 2) as Short`; searched locally only).
+ * Never searched: to-many paths (1:N, M:N), associations, virtual elements, `LargeString`, `UUID`, and
+ * `String(n)` longer than {@link MAX_SEARCH_COLUMN_LENGTH}. `@cds.search: false` on an element excludes it (also a
+ * key), `@cds.search: true` forces it in (also a long string), and an entity-level `@cds.search: { A, B }`
+ * restricts the search to A and B.
+ *
+ * ## Cost
+ * Local matching is O(rows x searched columns): one string per row, one `includes` per word. The
+ * backend can not page (the local pass may drop more rows), so `$top` / `$count` are applied afterwards.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getSearchColumns = exports.getSearchColumnInfo = exports.explicitSearchNames = exports.applySearch = exports.searchToTerm = exports.searchTerms = exports.parseSearchTerm = exports.DEFAULT_STRING_LENGTH = exports.SEARCH_WARN_ROWS = exports.SEARCH_LOCAL_MAX_ROWS = exports.MAX_SEARCH_COLUMN_LENGTH = void 0;
+const cds_1 = require("@sap/cds");
+const alias_maps_1 = require("./alias-maps");
+const calc_dependencies_1 = require("./calc-dependencies");
+const path_columns_1 = require("./path-columns");
+/** `String(n)` columns longer than this are treated as free text (descriptions, notes) and are not searched. */
+exports.MAX_SEARCH_COLUMN_LENGTH = 500;
+/**
+ * Most rows a search may read when it can NOT be pushed to the backend (the local match then needs every row). An
+ * entity with more rows fails with a clear message instead of an unbounded read (time-outs, responses too large to hold).
+ */
+exports.SEARCH_LOCAL_MAX_ROWS = 5000;
+/** Rows scanned above which the pipeline logs a warning: a search then means a large in-memory scan. */
+exports.SEARCH_WARN_ROWS = 5000;
+/** Separates column values in a row's haystack so a term can never match across two columns. */
+const SEP = '\u0001';
+/** Length assumed for a string element without a declared length (the CDS default of `cds.String`). */
+exports.DEFAULT_STRING_LENGTH = 255;
+const isSpace = (ch) => ch === ' ' || ch === '\t' || ch === '\n' || ch === '\r';
+/** Splits a term into words, phrases, operators and parentheses. Never throws; unmatched `)` are dropped. */
+const tokenize = (input) => {
+    const out = [];
+    let depth = 0;
+    let i = 0;
+    while (i < input.length) {
+        const ch = input[i];
+        if (isSpace(ch)) {
+            i++;
+            continue;
+        }
+        if (ch === '(') {
+            depth++;
+            out.push({ t: '(' });
+            i++;
+            continue;
+        }
+        if (ch === ')') {
+            if (depth > 0) {
+                depth--;
+                out.push({ t: ')' });
+            }
+            i++;
+            continue;
+        }
+        if (ch === '"') {
+            let phrase = '';
+            i++;
+            while (i < input.length && input[i] !== '"') {
+                if (input[i] === '\\' && i + 1 < input.length)
+                    i++;
+                phrase += input[i++];
+            }
+            i++; // closing quote (a missing one ends the phrase at the end of the input)
+            if (phrase)
+                out.push({ t: 'term', v: phrase });
+            continue;
+        }
+        let j = i;
+        while (j < input.length && !isSpace(input[j]) && input[j] !== '(' && input[j] !== ')' && input[j] !== '"')
+            j++;
+        const word = input.slice(i, j);
+        i = j;
+        out.push(word === 'AND' ? { t: 'and' } : word === 'OR' ? { t: 'or' } : word === 'NOT' ? { t: 'not' } : { t: 'term', v: word });
+    }
+    return out;
+};
+const join = (k, parts) => parts.length === 0 ? undefined : parts.length === 1 ? parts[0] : { k, n: parts };
+/** Recursive descent over the tokens; tolerant: dangling operators are ignored, every loop consumes input. */
+const parse = (tokens) => {
+    let p = 0;
+    const peek = () => tokens[p];
+    const primary = () => {
+        const tk = peek();
+        if (!tk)
+            return undefined;
+        if (tk.t === 'term') {
+            p++;
+            return { k: 'term', v: tk.v };
+        }
+        if (tk.t === '(') {
+            p++;
+            const inner = orExpr();
+            if (peek()?.t === ')')
+                p++;
+            return inner;
+        }
+        return undefined;
+    };
+    const notExpr = () => {
+        if (peek()?.t === 'not') {
+            p++;
+            const inner = notExpr();
+            return inner ? { k: 'not', n: inner } : undefined;
+        }
+        return primary();
+    };
+    const andExpr = () => {
+        const parts = [];
+        for (;;) {
+            const tk = peek();
+            if (tk?.t === 'and') {
+                p++;
+                continue;
+            }
+            if (!tk || tk.t === 'or' || tk.t === ')')
+                break;
+            const part = notExpr();
+            if (part)
+                parts.push(part);
+        }
+        return join('and', parts);
+    };
+    const orExpr = () => {
+        const parts = [];
+        for (;;) {
+            const part = andExpr();
+            if (part)
+                parts.push(part);
+            if (peek()?.t === 'or') {
+                p++;
+                continue;
+            }
+            break;
+        }
+        return join('or', parts);
+    };
+    return orExpr();
+};
+/**
+ * Parses an OData `$search` term (see the file header). Never throws.
+ *
+ * @param term  The term as typed.
+ * @returns     The parse tree, or `undefined` for a blank / operator-only term (nothing to search for).
+ */
+const parseSearchTerm = (term) => parse(tokenize(String(term ?? '')));
+exports.parseSearchTerm = parseSearchTerm;
+/** The distinct words / phrases of a parse tree. */
+const searchTerms = (node, out = new Set()) => {
+    if (!node)
+        return out;
+    if (node.k === 'term')
+        out.add(node.v);
+    else if (node.k === 'not')
+        (0, exports.searchTerms)(node.n, out);
+    else
+        for (const child of node.n)
+            (0, exports.searchTerms)(child, out);
+    return out;
+};
+exports.searchTerms = searchTerms;
+const toPredicate = (node, ignoreCase) => {
+    if (node.k === 'term') {
+        const v = ignoreCase ? node.v.toLowerCase() : node.v;
+        return (h) => h.includes(v);
+    }
+    if (node.k === 'not') {
+        const inner = toPredicate(node.n, ignoreCase);
+        return (h) => !inner(h);
+    }
+    const parts = node.n.map((n) => toPredicate(n, ignoreCase));
+    return node.k === 'and' ? (h) => parts.every((f) => f(h)) : (h) => parts.some((f) => f(h));
+};
+/**
+ * Renders `SELECT.search` (CQN) as an OData `$search` term. CAP puts the raw `$search` string into one `{ val }`;
+ * `SELECT.search('a', 'b')` gives `[{ val: 'a' }, 'or', { val: 'b' }]`.
+ *
+ * @param search  `SELECT.search` of the incoming CQN.
+ * @returns       The term, or `''` when there is none.
+ */
+const searchToTerm = (search) => {
+    if (!Array.isArray(search) || search.length === 0)
+        return '';
+    const render = (tokens) => {
+        const single = tokens.length === 1;
+        return tokens
+            .map((tk) => {
+            if (typeof tk === 'string') {
+                const op = tk.toLowerCase();
+                return op === 'and' ? 'AND' : op === 'or' ? 'OR' : op === 'not' ? 'NOT' : '';
+            }
+            if (tk?.xpr)
+                return `(${render(tk.xpr)})`;
+            if (tk?.val !== undefined && tk.val !== null)
+                return single ? String(tk.val) : `(${String(tk.val)})`;
+            return '';
+        })
+            .filter(Boolean)
+            .join(' ');
+    };
+    return render(search);
+};
+exports.searchToTerm = searchToTerm;
+// ============================================================================
+// Matching
+// ============================================================================
+/** One string holding every searched value of the row. */
+const haystackOf = (row, columns, ignoreCase) => {
+    let hay = '';
+    for (const col of columns) {
+        const v = row?.[col];
+        if (v === null || v === undefined || v === '')
+            continue;
+        const text = typeof v === 'string' ? v : String(v);
+        hay += (ignoreCase ? text.toLowerCase() : text) + SEP;
+    }
+    return hay;
+};
+/**
+ * Keeps the rows in which `term` is contained (case-sensitive unless `options.ignoreCase`) in at least one of `columns`.
+ * See the file header for the term syntax. Does not mutate `data`.
+ *
+ * @param data     Rows (plain objects, already in the shape the columns refer to).
+ * @param term     OData `$search` term.
+ * @param columns  Property names to search. Duplicates are ignored; with none, no positive term can match.
+ * @param options  `ignoreCase`: compare upper / lower case alike (default: exactly as typed).
+ * @returns        The matching rows, in their original order. All rows when `term` is blank.
+ */
+const applySearch = (data, term, columns, options = {}) => {
+    if (!Array.isArray(data) || data.length === 0)
+        return data;
+    const tree = (0, exports.parseSearchTerm)(term);
+    if (!tree)
+        return data;
+    const ignoreCase = !!options.ignoreCase;
+    const match = toPredicate(tree, ignoreCase);
+    const cols = [...new Set(columns)];
+    return data.filter((row) => match(haystackOf(row, cols, ignoreCase)));
+};
+exports.applySearch = applySearch;
+// ============================================================================
+// Column selection
+// ============================================================================
+const STRING_TYPES = new Set(['cds.String', 'cds.hana.VARCHAR', 'cds.hana.NVARCHAR', 'cds.hana.CHAR', 'cds.hana.NCHAR']);
+/** Resolves a (custom) type name down to its `cds.*` built-in. */
+const builtinType = (type) => {
+    let t = type;
+    for (let i = 0; typeof t === 'string' && !t.startsWith('cds.') && i < 10; i++)
+        t = cds_1.default.model?.definitions?.[t]?.type;
+    return typeof t === 'string' ? t : undefined;
+};
+/**
+ * Element names listed by an entity-level `@cds.search: { A, B }` (compiled to `@cds.search.A = true`, ...).
+ * They must be elements of the entity that is read (for a path column its alias, e.g. `SearchTerm`, not
+ * `SearchTerm1`); other names are ignored, the pipeline logs them.
+ *
+ * @param entityDef  CDS entity definition.
+ */
+const explicitSearchNames = (entityDef) => Object.keys(entityDef ?? {})
+    .filter((k) => k.startsWith('@cds.search.') && entityDef[k] === true)
+    .map((k) => k.slice('@cds.search.'.length));
+exports.explicitSearchNames = explicitSearchNames;
+/**
+ * The columns `$search` looks at, in definition order (memoised per entity when `opts` is omitted).
+ * Includes string elements read through to-one associations; the pipeline resolves those before matching.
+ *
+ * @param entityDef  CDS entity definition.
+ * @param cache      Per-service metadata cache.
+ * @param opts       See {@link SearchOptions}.
+ */
+const getSearchColumnInfo = (entityDef, cache, opts = {}) => {
+    const cacheable = opts.includeKeys === undefined && opts.maxLength === undefined;
+    if (cacheable) {
+        const hit = cache.searchColumns.get(entityDef);
+        if (hit)
+            return hit;
+    }
+    const plan = (0, path_columns_1.getColumnPlan)(entityDef, cache);
+    const computed = (0, calc_dependencies_1.getComputedAliases)(entityDef);
+    const includeKeys = opts.includeKeys ?? true;
+    const maxLength = opts.maxLength ?? exports.MAX_SEARCH_COLUMN_LENGTH;
+    const explicit = new Set((0, exports.explicitSearchNames)(entityDef));
+    /** Element kinds that can never be searched, whatever the annotations say. */
+    const isSearchableKind = (name, el) => !!el
+        && !name.startsWith('$')
+        && !(0, alias_maps_1.isAssociationElement)(el)
+        && !el['@odata.foreignKey4']
+        && !el.virtual
+        && (computed.has(name) || (!el.$calc && !el.value))
+        && STRING_TYPES.has(builtinType(el.type))
+        && (plan.paths.get(name)?.kind ?? 'toOne') === 'toOne'; // never 1:N / M:N
+    const columns = [];
+    for (const [name, el] of Object.entries(entityDef?.elements ?? {})) {
+        if (!isSearchableKind(name, el) || el['@cds.search'] === false)
+            continue;
+        if (explicit.size > 0) {
+            if (!explicit.has(name))
+                continue;
+        }
+        else if (el['@cds.search'] !== true) {
+            if (el.key && !includeKeys)
+                continue;
+            if (typeof el.length === 'number' && el.length > maxLength)
+                continue;
+        }
+        columns.push({
+            name,
+            kind: plan.paths.has(name) ? 'path' : computed.has(name) ? 'calc' : 'plain',
+            length: typeof el.length === 'number' ? el.length : exports.DEFAULT_STRING_LENGTH,
+        });
+    }
+    if (cacheable)
+        cache.searchColumns.set(entityDef, columns);
+    return columns;
+};
+exports.getSearchColumnInfo = getSearchColumnInfo;
+/** Names of the columns `$search` looks at (see {@link getSearchColumnInfo}). */
+const getSearchColumns = (entityDef, cache, opts = {}) => (0, exports.getSearchColumnInfo)(entityDef, cache, opts).map((c) => c.name);
+exports.getSearchColumns = getSearchColumns;
