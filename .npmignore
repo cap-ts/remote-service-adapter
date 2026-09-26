@@ -1,7 +1,7 @@
 node_modules/
-build/
+_internal/
 package-lock.json
-build/src/
+_internal/src/
 out/
 coverage/
 .types/

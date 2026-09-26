@@ -11,8 +11,8 @@
     "esModuleInterop": false,
     "skipLibCheck": true,
     "declarationDir": "./types",
-    "outDir": "./build/src",
-    "rootDir": "./build/src",
+    "outDir": "./_internal/src",
+    "rootDir": "./_internal/src",
     "resolveJsonModule": true,
     "types": [
       "@cap-js/cds-types",
@@ -21,12 +21,12 @@
     "moduleResolution": "nodenext"
   },
   "include": [
-    "build/src/**/*.ts",
-    "build/types/**/*"
+    "_internal/src/**/*.ts",
+    "_internal/types/**/*"
   ],
   "exclude": [
     "node_modules",
-    "build/test",
-    "build/*.*"
+    "_internal/test",
+    "_internal/*.*"
   ]
 }
