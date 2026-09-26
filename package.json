@@ -39,19 +39,19 @@
     "uglify-js": "^3.19.3"
   },
   "scripts": {
-    "build": "node build/index.js --build",
-    "test": "node build/index.js --test",
+    "build": "node ../.bash/index.js --build",
+    "test": "node ../.bash/index.js --test",
     "prepublishOnly": "git submodule update --init --recursive --remote",
-    "prepare": "node build/index.js --build-secure",
-    "postpublish": "node build/index.js --post-publish",
+    "prepare": "node ../.bash/index.js --build-secure",
+    "postpublish": "node ../.bash/index.js --post-publish",
     "gitonly": "npm run prepublishOnly && npm run prepare && npm run postpublish",
     "gitbuild": "npm run prepare && npm run postpublish",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
     "deploy": "npm publish --access public",
-    "deprecate": "node build/index.js --deprecate",
-    "unpublish": "node build/index.js --unpublish"
+    "deprecate": "node ../.bash/index.js --deprecate",
+    "unpublish": "node ../.bash/index.js --unpublish"
   },
   "files": [
     "cds-plugin.js",
