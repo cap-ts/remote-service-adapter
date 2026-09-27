@@ -1,6 +1,6 @@
 {
   "name": "@cap-ts/remote-service-adapter",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Remote service Adapter for CAP",
   "main": "src/index.js",
   "types": "types/index.d.ts",
@@ -24,9 +24,19 @@
     "Plugin"
   ],
   "peerDependencies": {
-    "@cap-js/cds-types": "^0.18.0",
-    "@sap/cds": "^9.9.1",
-    "@cap-ts/soap-adapter": "^0.1.11"
+    "@cap-js/cds-types": ">=0.18.0",
+    "@sap/cds": "^9.9.1 || ^10",
+    "@cap-ts/soap-adapter": "^0.2.0",
+    "@sap-cloud-sdk/connectivity": "^4.7.0",
+    "@sap-cloud-sdk/http-client": "^4.7.0"
+  },
+  "peerDependenciesMeta": {
+    "@cap-js/cds-types": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20"
   },
   "files": [
     "cds-plugin.js",

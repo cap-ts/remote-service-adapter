@@ -4,7 +4,7 @@
 
 > **CAP service implementation that turns a CDS projection / view entity into a working READ endpoint over a remote
 > backend, without per-entity handler code.**
-> `@sap/cds` ^9.9.1, TypeScript output is plain CommonJS.
+> `@sap/cds` ^9.9.1 or ^10, TypeScript output is plain CommonJS.
 
 ## 📦 About
 
@@ -56,14 +56,14 @@ annotation opt-in path. `cds watch` and `cds build` pick it up automatically. Im
 
 | Peer | Version | Notes |
 | --- | --- | --- |
-| `@sap/cds` | ^9.9.1 | CAP runtime. |
-| `@cap-js/cds-types` | ^0.18.0 | TypeScript types for `@sap/cds`. |
-| `@cap-ts/soap-adapter` | ^0.1.11 | Only exercised at runtime when a backend's `kind` is `soap`; still a required peer because the SOAP dispatch helper imports it unconditionally. |
+| `@sap/cds` | `^9.9.1 \|\| ^10` | CAP runtime. Tested against 9.9.3 and 10.1.1; Node >=20 (cds 10 needs 22). |
+| `@cap-js/cds-types` | >=0.18.0, optional | TypeScript types for `@sap/cds`; not needed at runtime. |
+| `@cap-ts/soap-adapter` | ^0.1.12 | Only exercised at runtime when a backend's `kind` is `soap`; still a required peer because the SOAP dispatch helper imports it unconditionally. |
+| `@sap-cloud-sdk/connectivity`, `@sap-cloud-sdk/http-client` | ^4.7.0 | Needed by `@cap-ts/soap-adapter` for destination lookup and HTTP calls. |
 
-The package declares no runtime `dependencies` of its own — everything else is a peer or a Node builtin
-(`crypto.randomUUID`, `structuredClone` with a JSON fallback for Node < 17). There is no pinned `engines` field;
-development and the test suite use Node ≥ 22.18 (native TypeScript execution), but the published CommonJS output has
-no additional runtime requirement beyond what `@sap/cds` itself needs.
+The package declares no runtime `dependencies` of its own — everything else is a peer or a Node built-in
+(`crypto.randomUUID`, `structuredClone`). `engines` requires Node.js ≥ 20 (cds 10 itself requires ≥ 22); the test
+suite runs on Node ≥ 22.18 (native TypeScript execution).
 
 ---
 
@@ -277,6 +277,10 @@ code contains `400` or whose message mentions `filter`, or an association-path c
   by key.
 - `$count` comes from the backend only when there is no local filter and it is not a key read. With a local filter,
   a search, DISTINCT or GROUP BY, the count is computed after local processing.
+- When sorting has to happen in memory (after a local filter, or for the children of an `$expand`), elements with
+  a numeric CDS type (Integer, Int64, Decimal, Double, …) are compared as numbers, also when the values arrive as
+  strings (OData `IEEE754Compatible`, and from cds 10 on Decimal / Int64 read from a database). Other elements keep
+  plain text order.
 - Reads by key (`Entity('K1')`) get no backend count and no limit; the entity's remaining WHERE is re-checked on the
   returned row, and a row that fails the re-check becomes **404**.
 
@@ -467,7 +471,7 @@ DEBUG=remote-service LOG_TO_FILE=true npm run watch
 
 Each line: ISO timestamp, level, an 8-character correlation id (`[boot]` outside a request), `[module.method]`,
 message, and an optional redacted JSON context. Filter one request with
-`grep '\[<correlation-id>\]' logs/remote-service-latest.log`.
+`grep '\[<correlation-id>\]' logs/remote-service-*.log`.
 
 ---
 
