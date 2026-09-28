@@ -191,9 +191,9 @@ entity Order as projection on RemoteOrders.Orders {
 
 | Element | Behavior |
 | --- | --- |
-| `Remote as Local` | `localToRemote[Local] = Remote`. No alias means identity. |
+| `Remote as Local` | `localToRemote[Local] = Remote`. No alias means identity. A remote field exposed under several names (`*` and `Field as Alias`) is requested once, and every name gets its value. |
 | `virtual` | Never requested; predicates on it are evaluated locally. |
-| Calculated (`<expr> as Name`) | Computed in memory on the mapped row; its source fields are requested automatically even if not otherwise projected. |
+| Calculated (`<expr> as Name`) | Computed in memory from the source values (`left(Field, 2)` reads the source's `Field`, also when the projection renames it); its source fields are requested automatically even if not otherwise projected. |
 | Path column (`_A._B.Field as X`) | Resolved across to-one associations at any depth via one batched key-IN fetch per hop. A to-many hop or a filtered segment requested in `$select` / `$filter` / `$orderby` is **501** before any remote call. |
 | `String(n)` | Sizes matter for `$search` — a search word longer than `n` is not pushed for that column. |
 | Association (`Items`) | Declare the ON condition or managed keys in CDS; `$expand=Items` becomes one batched `WHERE <fk> IN (...)` query. |
@@ -266,7 +266,9 @@ The external service's own `impl` (a custom client extension) keeps working unto
 
 Every WHERE clause is split at the top-level AND boundary. A predicate stays local (evaluated in memory after the
 fetch) when it references a `virtual`, calculated, association-path or unmapped field — or, against a SOAP backend,
-any function call. Everything else is pushed to the backend. If the backend rejects the pushed WHERE (an error whose
+any function call. Everything else is pushed to the backend. One calculated case is pushed as well: a comparison
+`Name = 'v'` on a column `left(Field, n) as Name` where `'v'` has exactly `n` characters is the same as
+`startswith(Field, 'v')` and is sent in that form (not to SOAP backends). If the backend rejects the pushed WHERE (an error whose
 code contains `400` or whose message mentions `filter`, or an association-path complaint), the read is retried
 **without** the WHERE and the original filter is applied to the full result set in memory instead.
 
@@ -274,9 +276,19 @@ code contains `400` or whose message mentions `filter`, or an association-path c
 
 - `$top` / `$skip` are forwarded to the backend only when nothing has to be done locally afterwards. They are
   **dropped** (and applied in memory instead) when there is a local-only filter, a `$search`, a GROUP BY, or a read
-  by key.
+  by key. A local-only filter then reads every row that matches the rest of the filter, which can be slow or time out
+  on a large entity set: the first time per entity this is logged as a warning on `cds.log('remote-service')`
+  (`<entity>: $top is not sent to the backend because the filter on <fields> is evaluated in memory ...`), visible
+  without `DEBUG`.
 - `$count` comes from the backend only when there is no local filter and it is not a key read. With a local filter,
   a search, DISTINCT or GROUP BY, the count is computed after local processing.
+- A count only (`$top=0&$count=true`) on a projection of a remote entity is one `/$count` request to the backend
+  (`GET <entity>/$count?$filter=...`): no rows move. (CAP leaves a `$top` of 0 out of the URL, so asking with
+  `$top=0` and `$count` would make the backend return every matching row.) A backend without `/$count` is asked for
+  one row plus the total (`$top=1&$inlinecount=allpages`); only a backend that gives no count at all has its rows
+  read, in pages, and counted. A count never turns into one request for every row.
+- When the source is another service of the same application and every row is needed (a local-only filter, DISTINCT,
+  GROUP BY), the inner read is sent without a limit (`limit: null`), so CAP's default page size does not cut it.
 - When sorting has to happen in memory (after a local filter, or for the children of an `$expand`), elements with
   a numeric CDS type (Integer, Int64, Decimal, Double, …) are compared as numbers, also when the values arrive as
   strings (OData `IEEE754Compatible`, and from cds 10 on Decimal / Int64 read from a database). Other elements keep
@@ -305,9 +317,13 @@ always evaluated locally.
 
 ### Calculated columns
 
-A projection column `<expr> as Name` (a `CASE`, a function call, `left()`, ...) is computed in memory on the mapped
-row. The source fields it reads are requested from the backend automatically, even when the projection doesn't
-otherwise expose them. Calculated columns are never sent to the backend and can't be filtered remotely.
+A projection column `<expr> as Name` (a `CASE`, a function call, `left()`, ...) is computed in memory from the
+values of the source entity, as CDS defines it: `left(Field, 2)` reads the source's `Field`, also when the projection
+exposes that field under another name (`Field as Alias`). The source fields it reads are requested from the
+backend automatically, even when the projection doesn't otherwise expose them. Calculated columns are never sent to
+the backend. A filter on one is evaluated in memory, except `Name = 'v'` on a `left(Field, n)` column with an `n`
+character value, which is pushed as `startswith(Field, 'v')` (see the WHERE push-down above). An association whose ON
+condition uses a calculated column (`on _Target.Key = $self.Prefix`) is resolved with the computed value.
 
 ### `$search`
 
@@ -325,6 +341,30 @@ word unrestricted, and the **local match always has the final say**. Without any
 Only when the CDS entity itself declares `distinct` / `groupBy`. Computed in memory on the full fetched result:
 `count`, `count_distinct`, `sum`, `avg`, `min`, `max`. Aggregate source fields are added to the remote columns
 automatically. Because this needs every row, `$top` / `$skip` are never pushed for a GROUP BY entity.
+
+- **Every source row is read, in pages.** The source is read in pages (`$top` / `$skip`, ordered by the source key),
+  so no single request has to return a large entity set. The first page also asks for the total (`$count` /
+  `$inlinecount`); the next pages follow until it is reached. A backend that returns fewer rows per page than asked
+  (server-side paging) simply needs more pages.
+- **Page size.** The page size is the maximum CAP allows for a read of the source entity: `@cds.query.limit.max` on
+  the source entity, else on its service, else `cds.query.limit.max` in the configuration (CAP's default: 1000).
+  Annotate the entity the GROUP BY projection is written on, not the GROUP BY entity itself. A projection inherits the
+  annotation of the entity it projects on, so annotating the imported remote entity covers the projections on it.
+  Set the default together with the maximum, otherwise CAP uses the maximum as the default page size for clients too:
+
+  ```cds
+  annotate MyService.Items with @cds.query.limit: { default: 1000, max: 5000 };
+  ```
+- **No partial totals.** If the rows stop before the total is reached, the request fails with **502**
+  (`<entity>: the backend returned <n> of <total> rows, ...`) instead of returning totals over a part of the data.
+- **Count requests.** When every aggregate is a row count (`count(*)`, `count(1)`, or `count` of a key of the source)
+  and the `$filter` fixes every group column (`=` or `in`, joined by `and`, at most 25 combinations), no rows are read:
+  one count request per combination of group values is sent (`GET <source>/$count?$filter=...`), and groups with a count of 0
+  are left out. Example: for `projection on Items { key Category, Status, count(ID) as N } group by Category, Status`,
+  `$filter=Category eq 'A' and Status in ('open','done')` sends two count requests. This also works when a group
+  column is a calculated column of the source that can be pushed (`left(Field, n)`, see Calculated columns).
+- An element that a projection only takes over from its source (for example a calculated column of the underlying
+  projection) is read from the source like any other field; it can be grouped, filtered and selected.
 
 ---
 
@@ -486,8 +526,9 @@ Pinned by the package's own regression tests — these are known, not silently w
    flattening. Simple two-way joins are unaffected in practice.
 2. **`$expand`'s `$top`** is sent to the backend for the whole batch of parents at once, not per parent — only the
    first parent(s) in a batch get their full child set when several parents are expanded together.
-3. **Filters on path or calculated columns are always evaluated in memory** (correct results, but can be slow on
-   very large remote sets — there is no way to push these down).
+3. **Filters on path or calculated columns are evaluated in memory** (correct results, but can be slow on very
+   large remote sets). The exception is `Name = 'v'` on a `left(Field, n)` column with an `n`-character value, which
+   is pushed as `startswith(Field, 'v')`. A full read caused by such a filter is logged as a warning once per entity.
 
 ---
 
