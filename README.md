@@ -271,6 +271,29 @@ any function call. Everything else is pushed to the backend. One calculated case
 `startswith(Field, 'v')` and is sent in that form (not to SOAP backends). If the backend rejects the pushed WHERE (an error whose
 code contains `400` or whose message mentions `filter`, or an association-path complaint), the read is retried
 **without** the WHERE and the original filter is applied to the full result set in memory instead.
+A `$filter` or `$orderby` on an element that `$select` leaves out works: the rows are filtered and sorted before they
+are cut down to the selected elements.
+
+### The projection's own WHERE
+
+A `where` on the entity itself is applied to every read of it, like CDS defines it:
+
+```cds
+entity OpenOrders as projection on Sales.Orders {
+    key OrderID, Amount, _Customer.ValidTo as CustomerValidTo
+} where Status != 'CANCELLED' and _Customer.ValidTo >= current_date;
+```
+
+- Conditions on plain fields of the source are sent to the backend together with the query's own `$filter`; the fields
+  need not be part of the projection.
+- Conditions on to-one association paths (`_Customer.ValidTo`) are evaluated in memory after the paths are resolved
+  (like a filter on a path column: the backend `$top` is then dropped and the page is cut here).
+- `$user`, `$user.<attribute>`, `$now`, `current_date`, `current_time` and `current_timestamp` take the request's values.
+- On a read by key every condition is checked in memory (backends ignore `$filter` on a by-key URL): a row that fails
+  one is **404**. Projections on top of the entity inherit the filter.
+- A condition that can be neither sent nor evaluated in memory is rejected with **501**, never ignored: `exists`, a
+  sub-select, `$at` / `$valid`, a to-many or filtered path, or `like` / `between` / an unknown function in a condition
+  that has to be evaluated in memory. A JOIN view with a `where` is **501** as well.
 
 ### Paging, `$count` and local filters
 
@@ -324,6 +347,9 @@ backend automatically, even when the projection doesn't otherwise expose them. C
 the backend. A filter on one is evaluated in memory, except `Name = 'v'` on a `left(Field, n)` column with an `n`
 character value, which is pushed as `startswith(Field, 'v')` (see the WHERE push-down above). An association whose ON
 condition uses a calculated column (`on _Target.Key = $self.Prefix`) is resolved with the computed value.
+A calculated column of an association target that another `RemoteApplicationService` of the application serves
+(read through a path column `_Target.Text as Text` or `$expand`) is computed by that service, from its own source
+values: the reading projection need not select the fields it depends on.
 
 ### `$search`
 
@@ -440,12 +466,14 @@ Every logged context is redacted (case-insensitive, recursive) for keys matching
 
 | Situation | Behavior |
 | --- | --- |
-| Backend rejects the filter (400-ish error, or an association-path complaint) | Warn, drop WHERE and limit, refetch everything, apply the original WHERE in memory |
+| Backend rejects the filter (400-ish error, or an association-path complaint) | Warn, drop WHERE and limit, refetch everything, apply the original WHERE (and the projection's own WHERE) in memory |
+| The projection's own WHERE can't be applied (see [The projection's own WHERE](#the-projections-own-where)), or a JOIN view has one | **501** before any remote call |
 | Any other backend error | Logged at error level and re-thrown unchanged |
 | Path column crossing a to-many association / filtered segment, requested explicitly | **501** before any remote call |
 | Path column on a DISTINCT / GROUP BY entity | **501** |
 | `$search` that can't be pushed and the entity has more than 5000 rows | **502** (`searchTooLarge`); message names the backend's rejection when a push was attempted and failed |
-| Key read whose WHERE re-check removes the row | **404** `Entity '<name>' not found` |
+| Key read whose WHERE re-check (the query's or the projection's) removes the row | **404** `Entity '<name>' not found` |
+| `SELECT.one` | One object, whatever shape the backend answered in; `{}` when no row matches |
 | Empty result | `[]` (or `{}` for `SELECT.one`); with `$count`, the empty array carries `$count = 0` |
 | Entity with `@response.data` | The annotation value is returned, no backend call |
 | SOAP backend returns several rows per key | Reduced to one per key automatically |
@@ -488,8 +516,8 @@ memory. **Fix:** add `$filter` to narrow the set first. `$search` on a SOAP enti
 
 ### 404 on a read by key
 
-**Cause:** the entity's own WHERE clause doesn't hold for that row once it comes back from the backend (the
-post-fetch re-check removed it). This is by design, not a bug.
+**Cause:** the entity's own WHERE clause (the query's, or the `where` of the projection) doesn't hold for that row once
+it comes back from the backend (the post-fetch re-check removed it). This is by design, not a bug.
 
 ### `$expand` children are missing
 
