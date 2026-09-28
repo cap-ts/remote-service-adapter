@@ -473,8 +473,8 @@ Every logged context is redacted (case-insensitive, recursive) for keys matching
 | Path column on a DISTINCT / GROUP BY entity | **501** |
 | `$search` that can't be pushed and the entity has more than 5000 rows | **502** (`searchTooLarge`); message names the backend's rejection when a push was attempted and failed |
 | Key read whose WHERE re-check (the query's or the projection's) removes the row | **404** `Entity '<name>' not found` |
-| `SELECT.one` | One object, whatever shape the backend answered in; `{}` when no row matches |
-| Empty result | `[]` (or `{}` for `SELECT.one`); with `$count`, the empty array carries `$count = 0` |
+| `SELECT.one` | One object, whatever shape the backend answered in; `undefined` when no row matches, like every CAP service (OData: **404**, or **204** for a nullable singleton) |
+| Empty result | `[]` (or `undefined` for `SELECT.one`); with `$count`, the empty array carries `$count = 0` |
 | Entity with `@response.data` | The annotation value is returned, no backend call |
 | SOAP backend returns several rows per key | Reduced to one per key automatically |
 | `$search` against a SOAP backend | Ignored — all rows come back, local match decides |
