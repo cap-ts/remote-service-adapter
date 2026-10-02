@@ -2,40 +2,58 @@
 
 [![Version npm](https://img.shields.io/npm/v/@cap-ts/remote-service-adapter.svg)](https://www.npmjs.com/package/@cap-ts/remote-service-adapter)
 
-> **CAP service implementation that turns a CDS projection / view entity into a working READ endpoint over a remote
-> backend, without per-entity handler code.**
-> `@sap/cds` ^9.9.1 or ^10, TypeScript output is plain CommonJS.
+> **A CAP service implementation that turns CDS projections and views into working OData endpoints over remote
+> backends (read, write, actions), without per-entity handler code.**
+> `@sap/cds` ^9.9.1 or ^10, plain CommonJS output, TypeScript typings included.
 
 ## 📦 About
 
-`@cap-ts/remote-service-adapter` exports one class, `RemoteApplicationService`. Register it as the implementation of a
-CDS service and every entity of that service gets a READ handler that reads through to a remote backend — OData V2/V4,
-SOAP (via `@cap-ts/soap-adapter`), another locally served CAP service, or the database — and translates between your
-projection's field names and the backend's. It handles the parts that would otherwise be hand-written per entity:
-hybrid `$filter` push-down, field alias translation, `$expand` across service boundaries, JOIN mashups, association
-path columns, calculated columns, `$search`, and in-memory DISTINCT / GROUP BY / aggregation.
+`@cap-ts/remote-service-adapter` exports one class, `RemoteApplicationService`. Make it the implementation of a CDS
+service (annotate the service `@remote`, or extend the class) and every entity of that service is served from the
+entity's source: a remote OData V2 / V4 service, a SOAP service (via `@cap-ts/soap-adapter`), another CAP service of the
+same application, or the database. The service reads the mapping from the projection itself (aliases, calculated
+columns, association paths, structured fields, the projection's `where`) and translates every request to the backend's
+names and every answer back.
 
-It is READ only. No CREATE / UPDATE / DELETE handlers, no authentication or authorization model, no override seams —
-bespoke behavior is composed from helper functions, not from subclassing hooks.
+What you get without writing a handler:
+
+| Area | Features |
+| --- | --- |
+| Reading | Hybrid `$filter` push-down, field aliases, calculated columns, association path columns, structured fields, the projection's own `where`, `$expand` across services, `$search`, `$orderby`, paging, `$count`, DISTINCT / GROUP BY / aggregates, JOIN views, static data |
+| Filters through associations | `_A/_B/Field eq 'v'` and OData `any()` through to-one and to-many associations, answered by key semi-joins instead of full reads |
+| Reads by key | A filter that pins the source key (or lists several keys) becomes one read by key per key; unknown keys answer 404 |
+| Writing | CREATE / UPDATE / DELETE on the projection written to its source; write rules checked before the backend is written; deep writes; non-CRUD APIs (every change a POST) |
+| Operations | Bound and unbound actions / functions forwarded to the source operation |
+| Backend quirks | Opt-in annotations for fields a backend cannot filter, flags it cannot compare, date-time fields exposed as dates |
+| Operations support | `[remote]` log line of every backend request, request-scoped tracing, secret redaction |
+
+It has no authentication or authorization model of its own (CAP's `@requires` / `@restrict` apply as usual), no
+business logic and no override seams: bespoke behavior goes into ordinary CAP handlers of your service.
 
 ---
 
 ## 📑 Table of Contents
 
 📥 [Installation](#-installation)\
-📖 [Usage Guidelines](#-usage-guidelines)\
-⚡ [Quick start (5 minutes)](#-quick-start-5-minutes)\
-📝 [Modelling reference: projection → remote entity](#-modelling-reference-projection--remote-entity)\
-🔌 [`RemoteApplicationService` class API](#-remoteapplicationservice-class-api)\
+🧭 [How it works](#-how-it-works)\
+⚡ [Quick start](#-quick-start)\
+🏷️ [Annotation reference](#️-annotation-reference)\
+📝 [Modelling reference](#-modelling-reference)\
+🔍 [Reading data](#-reading-data)\
+🔗 [Filters through associations](#-filters-through-associations)\
+🔑 [Reads by key](#-reads-by-key)\
+✏️ [Writing data](#️-writing-data)\
+⚙️ [Actions and functions](#️-actions-and-functions)\
+🔌 [Class API](#-class-api)\
 🧩 [CAP plugin: the `@remote` annotation](#-cap-plugin-the-remote-annotation)\
-🔍 [Query features in depth](#-query-features-in-depth)\
 🧼 [SOAP backends](#-soap-backends)\
-⚙️ [Configuration](#️-configuration)\
-🚦 [Error & result behavior](#-error--result-behavior)\
-🔒 [Boundaries & security](#-boundaries--security)\
-🛠️ [Troubleshooting](#️-troubleshooting)\
+🛠️ [Configuration and logging](#️-configuration-and-logging)\
+🚦 [Errors and results](#-errors-and-results)\
+🚀 [Performance guide](#-performance-guide)\
+🔒 [Boundaries and security](#-boundaries-and-security)\
+🩺 [Troubleshooting](#-troubleshooting)\
 ⚠️ [Known limitations](#️-known-limitations)\
-💬 [Support & feedback](#-support--feedback)\
+💬 [Support and feedback](#-support-and-feedback)\
 📄 [License](#-license)
 
 ---
@@ -48,26 +66,22 @@ bespoke behavior is composed from helper functions, not from subclassing hooks.
 npm install @cap-ts/remote-service-adapter
 ```
 
-The package registers itself as a CAP plugin via `cds-plugin.js` — no explicit `require()` is needed for the `@remote`
-annotation opt-in path. `cds watch` and `cds build` pick it up automatically. Importing the class yourself
-(`import { RemoteApplicationService } from '@cap-ts/remote-service-adapter'`) works either way.
-
-### Peer requirements
+The package registers itself as a CAP plugin (`cds-plugin.js`): no `require()` is needed for the `@remote` annotation.
+`cds watch` and `cds build` pick it up. Importing the class (`import { RemoteApplicationService } from
+'@cap-ts/remote-service-adapter'`) works either way.
 
 | Peer | Version | Notes |
 | --- | --- | --- |
-| `@sap/cds` | `^9.9.1 \|\| ^10` | CAP runtime. Tested against 9.9.3 and 10.1.1; Node >=20 (cds 10 needs 22). |
-| `@cap-js/cds-types` | >=0.18.0, optional | TypeScript types for `@sap/cds`; not needed at runtime. |
-| `@cap-ts/soap-adapter` | ^0.1.12 | Only exercised at runtime when a backend's `kind` is `soap`; still a required peer because the SOAP dispatch helper imports it unconditionally. |
-| `@sap-cloud-sdk/connectivity`, `@sap-cloud-sdk/http-client` | ^4.7.0 | Needed by `@cap-ts/soap-adapter` for destination lookup and HTTP calls. |
+| `@sap/cds` | `^9.9.1 \|\| ^10` | CAP runtime. Node.js >= 20 (cds 10 needs >= 22). |
+| `@cap-ts/soap-adapter` | `^0.2.0 \|\| ^0.3.0-beta.0` | Used at runtime only for services of `kind: 'soap'`; a required peer because the SOAP dispatch imports it. |
+| `@sap-cloud-sdk/connectivity`, `@sap-cloud-sdk/http-client` | `^4.7.0` | Destination lookup and HTTP for `@cap-ts/soap-adapter`. |
+| `@cap-js/cds-types` | `>=0.18.0`, optional | TypeScript types for `@sap/cds`. |
 
-The package declares no runtime `dependencies` of its own — everything else is a peer or a Node built-in
-(`crypto.randomUUID`, `structuredClone`). `engines` requires Node.js ≥ 20 (cds 10 itself requires ≥ 22); the test
-suite runs on Node ≥ 22.18 (native TypeScript execution).
+No runtime `dependencies` of its own (everything else is a peer or a Node.js built-in).
 
 ---
 
-## 📖 Usage Guidelines
+## 🧭 How it works
 
 [↑ Table of Contents](#-table-of-contents)
 
@@ -75,41 +89,33 @@ suite runs on Node ≥ 22.18 (native TypeScript execution).
 Client (OData V4 / Fiori)
       │
       ▼
-CAP service (your service class, registered with RemoteApplicationService as implementation)
-      │  this.on('READ', <entity>) — one handler per exposed entity, registered by init()
+Your CAP service (implementation: RemoteApplicationService, via @remote or a subclass)
+      │  READ / CREATE / UPDATE / DELETE / actions of every entity
       ▼
-RemoteApplicationService
-      │  cds.connect.to() / locally served service / cds.db / soap.read()
+RemoteApplicationService: query in local names → query in source names → backend → rows in local names
+      │  cds.connect.to() / a service of this application / cds.db / soap.read()
       ▼
-Backends: OData V2 / V4, SOAP (via @cap-ts/soap-adapter), other CAP services of the same process, the database
+Backends: OData V2 / V4, SOAP (@cap-ts/soap-adapter), other CAP services of this application, the database
 ```
 
-Two ways to wire `RemoteApplicationService` up as the implementation of a CDS service:
+For every request the service:
 
-1. **Let the CAP plugin do it** — annotate the service `@remote` in the CDS source. No handler file at all.
-2. **Import and subclass it yourself** — for the odd service that also needs a handler for a non-READ event
-   alongside the automatic READ dispatch.
+1. Splits the `$filter` into the part the backend can evaluate (pushed) and the rest (evaluated in memory).
+2. Translates the pushed part, `$select`, `$orderby`, keys and paging to the source's names.
+3. Sends the query to the service that owns the source entity (paging through the backend when it needs every row).
+4. Maps the answer back: aliases, calculated columns, structured fields, association paths, `$expand`.
+5. Applies what was not pushed (filter, `$search`, sort, paging, `$count`) and prunes to the requested shape.
 
-Field names, associations, aliases and structure of the projection may differ freely from the remote backend — the
-service reads them from the CSN projection columns and translates both directions on every request.
+Services can be stacked: a projection on an entity of another `@remote` service is served the same way, and each layer
+pushes down what it can to the layer below.
 
 ---
 
-## ⚡ Quick start (5 minutes)
+## ⚡ Quick start
 
 [↑ Table of Contents](#-table-of-contents)
 
-Assume a CAP project laid out like:
-
-```diagram
-srv/
-  external/
-    RemoteOrders.cds     ← model for the external OData service (cds import / cds-dk generated)
-  Orders.cds              ← your projection service
-package.json
-```
-
-**1. Configure the external service in `package.json`.**
+**1. Configure the external service** (`package.json` or `.cdsrc.json`):
 
 ```json
 {
@@ -118,117 +124,503 @@ package.json
       "RemoteOrders": {
         "kind": "odata-v4",
         "model": "srv/external/RemoteOrders",
-        "credentials": { "destination": "DEST_ORDERS" }
+        "credentials": { "destination": "ORDERS_DESTINATION" }
       }
     }
   }
 }
 ```
 
-- `kind` — one of `odata`, `odata-v2`, `odata-v4`, `soap`. Drives the search case rule and, for `soap`, the dispatch
-  path; it does **not** gate whether `RemoteApplicationService` is used (see the next step).
-- `credentials.destination` — SAP BTP destination name, resolved by CAP's own connectivity layer.
+`kind` is `odata`, `odata-v2`, `odata-v4` or `soap`. It decides the `$search` case rule and, for `soap`, the dispatch.
 
-**2. Declare your projection service in `srv/Orders.cds`, annotated `@remote`.**
+**2. Declare the projection service, annotated `@remote`:**
 
 ```cds
 using { RemoteOrders } from './external/RemoteOrders';
 
 @remote
-service Orders {
-    entity Order as projection on RemoteOrders.Orders {
+service OrderService {
+    entity Orders as projection on RemoteOrders.Orders {
         key ID,
-        OrderName as Title,      // alias: local Title <-> remote OrderName
-        Amount,                  // same name: identity mapping
-        Customer.Name as CustomerName   // to-one path, resolved by a batched lookup
+        OrderName as Title,              // alias: local Title <-> remote OrderName
+        Amount,                          // same name
+        _Customer.Name as CustomerName,  // to-one association path
+        _Items                           // association, for $expand
     };
 }
 ```
 
-`@remote` is the entire opt-in surface. The plugin does not inspect what the entities project on — it just gives
-every entity of this service a READ handler backed by `RemoteApplicationService`.
+**3. Run `cds watch`.** `GET /odata/v4/order/Orders` is live: no handler file.
 
-**3. Start `cds watch`.** No handler file, no `srv/Orders.js` — `GET /odata/v4/Orders/Order` is live.
-
-**Alternative: register it yourself**, e.g. when the service also needs a non-READ handler:
+**Alternative: extend the class**, when the service also needs handlers of its own:
 
 ```ts
-// srv/Orders.ts
+// srv/OrderService.ts
 import { RemoteApplicationService } from '@cap-ts/remote-service-adapter';
 
-export class Orders extends RemoteApplicationService {
+export class OrderService extends RemoteApplicationService {
     async init(): Promise<void> {
-        // READ is already handled for every entity by the base class.
-        // Add handlers for other events here if you need them.
+        // Handlers registered here run BEFORE the generic ones (READ, writes, operations of every entity).
+        this.before('CREATE', 'Orders', (req) => { /* validation, derived values */ });
         await super.init();
     }
 }
 ```
 
-With a handler file present (or `@impl` already set, or `cds.requires.<Name>.impl`), the plugin leaves the service
-alone — no `@remote` needed, and no double registration.
+With a handler file (or `@impl`, or `cds.requires.<Service>.impl`), the plugin leaves the service alone.
 
 ---
 
-## 📝 Modelling reference: projection → remote entity
+## 🏷️ Annotation reference
 
 [↑ Table of Contents](#-table-of-contents)
 
-The local ↔ remote mapping is read entirely from the entity's projection / query columns — never hard-code remote
-field names in TypeScript.
+Every annotation goes on the definition it describes, in the local (projection) service.
+
+| Annotation | On | Effect | Section |
+| --- | --- | --- | --- |
+| `@remote` | service | Makes `RemoteApplicationService` the service's implementation (CAP plugin). | [CAP plugin](#-cap-plugin-the-remote-annotation) |
+| `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
+| `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
+| `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
+| `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
+| `@remote.write.asInsert: ['UPDATE', 'DELETE']` | entity | Sends these events as `INSERT` (POST) with the source keys in the body. | [Non-CRUD backends](#non-crud-backends) |
+| `@remote.write.operation: { field, CREATE, UPDATE, DELETE }` | entity | Sets the source field `field` to the event's code in the body. | [Non-CRUD backends](#non-crud-backends) |
+| `@remote.write.truncate` | entity / element | Cuts strings to the element's length before the write (`false` on an element opts out). | [Writing data](#️-writing-data) |
+| `@remote.write.deep` | association | Data of the association is written with the parent (upsert per child row). | [Deep writes](#deep-writes) |
+| `@remote.assert: (case when <cond> then '<message>' end)` | element | Check evaluated before the backend write; the first matching `when` is the error. | [Write rules](#write-rules) |
+| `@remote.assert.args: [ ... ]` | element | Message arguments (`{0}`, `{1}`, ...) of `@remote.assert`: paths or `(<expression>)`. | [Write rules](#write-rules) |
+| `@remote.assert.target` | to-one association | The target must exist (`ASSERT_TARGET`). | [Write rules](#write-rules) |
+| `@remote.write.value: (<expression>)` | element | Value computed before the write when the data has none. | [Write rules](#write-rules) |
+
+Standard annotations the service reads:
+
+| Annotation | Effect |
+| --- | --- |
+| `@cds.search: false` / `true` (element), `@cds.search: { A, B }` (entity) | Which columns `$search` uses. |
+| `@cds.query.limit: { default, max }` (source entity or its service) | Page size when every source row is read (GROUP BY, DISTINCT, association fetches). |
+| `@sap.filterable: 'false'` (source element, from the EDMX) | Terms of the projection's own `where` on it are evaluated in memory; request filters with `@remote.filter.local`. |
+| `@odata.Type: 'Edm.Date'` (local element) | A date-time source value is delivered as a date, date literals are compared as days. |
+| `@mandatory` (child element) | Checked on every child row of a deep write (CAP checks the root only). |
+| `@readonly` | CAP drops client values; your handler may set them (backend-only values). |
+
+---
+
+## 📝 Modelling reference
+
+[↑ Table of Contents](#-table-of-contents)
+
+The local ↔ remote mapping comes from the projection's columns. Never hard-code remote field names in TypeScript.
 
 ```cds
-entity Order as projection on RemoteOrders.Orders {
+entity Orders as projection on RemoteOrders.Orders {
     key ID,
-    OrderName as Title,                         // alias: local Title <-> remote OrderName
-    Amount,                                      // same name: identity
-    virtual Flag : Boolean,                      // never requested from the backend
-    left(OrderName, 2) as Prefix : String(2),    // calculated in memory
-    Customer.Name as CustomerName,                // to-one association path, one batched lookup
-    Items                                         // association, materialised for $expand
-};
+    OrderName as Title,                           // alias
+    Amount,                                       // same name
+    virtual Flag : Boolean,                       // never requested from the backend
+    left(OrderName, 2) as Prefix : String(2),     // calculated in memory
+    case when Status = 'X' then true else false end as IsClosed : Boolean,   // boolean flag, filter pushed
+    Address.City as City,                         // field of a structured element
+    _Customer.Name as CustomerName,               // to-one association path, any depth
+    _Items,                                       // association, $expand
+    _Customer : redirected to Customers           // association to another entity of this service
+} where Kind = 'A';                              // the projection's own WHERE, applied to every read and write
 ```
 
 | Element | Behavior |
 | --- | --- |
-| `Remote as Local` | `localToRemote[Local] = Remote`. No alias means identity. A remote field exposed under several names (`*` and `Field as Alias`) is requested once, and every name gets its value. |
-| `virtual` | Never requested; predicates on it are evaluated locally. |
-| Calculated (`<expr> as Name`) | Computed in memory from the source values (`left(Field, 2)` reads the source's `Field`, also when the projection renames it); its source fields are requested automatically even if not otherwise projected. |
-| Path column (`_A._B.Field as X`) | Resolved across to-one associations at any depth via one batched key-IN fetch per hop. A to-many hop or a filtered segment requested in `$select` / `$filter` / `$orderby` is **501** before any remote call. |
-| `String(n)` | Sizes matter for `$search` — a search word longer than `n` is not pushed for that column. |
-| Association (`Items`) | Declare the ON condition or managed keys in CDS; `$expand=Items` becomes one batched `WHERE <fk> IN (...)` query. |
+| `Remote as Local` | Translated both ways. A remote field exposed under several names (`*` plus `Field as Alias`) is requested once and fills every name. |
+| `virtual` | Never requested; filters on it run in memory. |
+| Calculated (`<expr> as Name`) | Computed in memory from the source values: a CASE, or one function call (`left(Field, 2)` reads the source's `Field` even when the projection renames it). Its source fields are requested automatically. Never sent to the backend. |
+| Boolean flag (`case when Field = 'v' then true else false end`) | Computed in memory; a filter `Flag = true / false` is pushed as `Field = 'v'` / `Field != 'v'`. |
+| Structured field (`Struct.Field as X`) | The backend is asked for the structure, the answer flattened. Filters on it run in memory. Written back as `{ Struct: { Field } }`. |
+| Path column (`_A._B.Field as X`) | Resolved across to-one associations at any depth, one batched key fetch per hop. A to-many hop or filtered segment requested explicitly is 501. |
+| Association | Declare the ON condition (or managed keys). Used for `$expand`, path columns, filters through associations, write rules and deep writes. |
+| `Date` element over a date-time source field | Delivered as `yyyy-mm-dd`; date literals compared with it are sent as day ranges. |
+| `String(n)` | A `$search` word longer than `n` is not pushed for that column. |
 
 ### Static data
 
 ```cds
 @response.data: [{ ID: 'A', Name: 'Alpha' }, { ID: 'B', Name: 'Beta' }]
-entity CodeList as projection on Remote.Codes { key ID, Name };
+entity Codes as projection on RemoteOrders.Codes { key ID, Name };
 ```
 
-Returned as-is, no backend call, and `$search` is never pushed for it.
+Returned as is, no backend call, never written.
+
+### JOIN views
+
+```cds
+entity OrderLines as select from RemoteOrders.Orders as o join RemoteOrders.Items as i on i.OrderID = o.ID {
+    key i.ID, o.Title, i.Quantity
+};
+```
+
+The first source is read, the joined sources are fetched by key in batches and merged. A JOIN view with its own `where`
+is 501; JOIN views are not writable. See [Known limitations](#️-known-limitations).
 
 ---
 
-## 🔌 `RemoteApplicationService` class API
+## 🔍 Reading data
+
+[↑ Table of Contents](#-table-of-contents)
+
+### `$filter` push-down
+
+The WHERE is split at its top-level `and`. Each term is pushed to the backend when it only reads plain mapped fields;
+otherwise it is evaluated in memory after the fetch. Evaluated in memory: virtual, calculated, path and unmapped
+fields, structured fields, fields with `@remote.filter.local`, and (for SOAP) any function. The in-memory evaluator
+understands `and` / `or` / `not`, comparisons, `[not] in`, `is [not] null`, `exists` (OData `any()`), and the functions
+`contains`, `startswith`, `endswith`, `indexof`, `tolower` / `toupper`, `length`, `trim`, `substring`, `concat`,
+`replace`, `left`, `right`, `coalesce` / `ifnull`, `round`, `floor`, `ceiling`, `abs`, `year`, `month`, `day`.
+
+Pushed in a backend-friendly form:
+
+| Request term | Sent as |
+| --- | --- |
+| `Prefix = 'AB'` on `left(Field, 2) as Prefix` | `startswith(Field, 'AB')` |
+| `IsClosed = true` on `case when Status = 'X' then true else false end as IsClosed` | `Status = 'X'` (`false`: `Status != 'X'`) |
+| `Day >= 2026-09-28` on a `Date` element over a date-time source | `Day >= 2026-09-28T00:00:00Z` (only `>=` / `<=`; `=` becomes the day range) |
+| The same condition twice (e.g. from two stacked layers) | Once |
+| A literal comparison that is false (`'1' = '2'`, written by CAP for a restriction whose `$user` attribute is missing) | Nothing: the answer is empty, the backend is not called |
+
+If the backend rejects the pushed filter (an error with `400` or `filter` in it, or an association path complaint),
+the read is repeated without the filter and the whole WHERE is applied in memory.
+
+A filter or sort on an element that `$select` leaves out works: rows are filtered and sorted before they are pruned.
+
+### Fields the backend cannot filter
+
+OData V2 services declare some fields `sap:filterable="false"` and ignore a `$filter` on them without an error (every
+row comes back). Opt in to in-memory evaluation:
+
+```cds
+@remote.filter.local                                   // every sap:filterable=false field of the source
+entity Entries as projection on Remote.Entries {
+    *,
+    @remote.filter.local: false Note                   // ...except this one: pushed
+};
+
+entity Tasks as projection on Remote.Tasks {
+    key ID, Owner,
+    @remote.filter.local Label                         // just this element, whatever the EDMX says
+};
+```
+
+The read then fetches every row the rest of the filter leaves, so opt in where that set is small (for example when
+another pushed term restricts it to one user's rows). Terms of the projection's own `where` on such fields are always
+evaluated in memory, without annotation.
+
+### The projection's own WHERE
+
+```cds
+entity OpenOrders as projection on RemoteOrders.Orders {
+    key ID, Amount, _Customer.ValidTo as CustomerValidTo
+} where Status != 'CANCELLED' and _Customer.ValidTo >= current_date;
+```
+
+- Plain source fields are pushed with the request's filter (they need not be projected).
+- To-one association paths are resolved and evaluated in memory.
+- `$user`, `$user.<attribute>`, `$now`, `current_date`, `current_time`, `current_timestamp` take the request's values.
+- Reads by key re-check every term in memory; a row that fails is 404. Projections on top inherit the filter.
+- Writes respect it: CREATE fills `Field = 'v'` terms (a different value is 400), UPDATE / DELETE of a row outside is 404.
+- What can be neither pushed nor evaluated (`exists`, a sub-select, `$at`, a to-many or filtered path, `like` /
+  `between` / an unknown function in an in-memory term) is 501, never ignored.
+
+### Paging and `$count`
+
+- `$top` / `$skip` go to the backend only when nothing is evaluated in memory afterwards; otherwise every row matching
+  the pushed part is read and the page is cut here (logged once per entity as a warning on `cds.log('remote-service')`).
+- `$count` is always a number. It is the backend's count when nothing is filtered in memory, else the count after local
+  processing. OData V2 sends its count as text; the service converts it.
+- A count only (`$top=0&$count=true`) is one `GET <Entity>/$count?$filter=...`: no rows move. Fallbacks: one row plus
+  the total, then reading in pages. A count never reads every row in one request.
+- When every source row is needed (GROUP BY, DISTINCT, association fetches of a stacked service), the source is read in
+  pages of its `@cds.query.limit.max` (entity, then service, then `cds.query.limit.max`, CAP default 1000), ordered by
+  the source key, until the backend's total is reached. A backend that caps its pages below that size just needs more
+  pages. Ending short of the total is a 502, never a partial result.
+- A page past the end returns `[]` with the full `$count`.
+- In-memory sorts compare numeric elements as numbers, also when the values arrive as strings.
+
+### `$expand`
+
+- Declare the association; `$expand=_Items` becomes batched `<key> in (...)` reads of the target (at most 200 parent
+  keys per request), grouped per parent. Nested expands, `$filter`, `$orderby` and `$count` inside the expand work.
+- Children the backend delivered inline are mapped, filtered, limited and expanded further in place.
+- A target served by another `RemoteApplicationService` is read without a page limit, in pages up to its total.
+- A managed to-one association is joined on its foreign key elements (`<assoc>_<key>`); an association from an EDMX
+  model without ON condition joins on the key names it shares with its target.
+- A backend that rejects the expand query is asked again without columns, filter and order.
+
+### Path columns
+
+`_A._B.Field as X` is resolved after the main read: one batched key fetch per hop level for all rows. To-many hops and
+filtered segments are 501 when requested in `$select`, `$filter` or `$orderby` (left out otherwise). `$orderby` on a
+path sorts by the resolved value.
+
+### Calculated columns
+
+Computed in memory on the source values: a CASE expression (simple or searched; conditions with comparisons, `and` /
+`or` / `not`, `in`, `is null`), or one function call (`left(Field, 2)`, `concat(A, B)`, `coalesce(A, B)`, any function
+listed above, also inside an expression). Operators outside a CASE (`A || B`, `A + B`) are not computed: write
+`concat(A, B)`, or compute the value in a handler. A calculated element of an association target served by another `RemoteApplicationService` is computed by that service.
+An association whose ON condition uses a calculated column is resolved with the computed value.
+`@remote.pushdown: false` keeps filters on a calculated column in memory, for a backend that mishandles the comparison
+of its source field (for example `Status != 'X'`).
+
+### Structured fields
+
+`Address.City as City` asks the backend for `Address` and flattens the answer. Filters, `$search` and the `left()`
+push-down on structured fields run in memory. Writes send `{ Address: { City } }`.
+
+### `$search`
+
+OData V4 syntax: words ANDed, `OR`, `NOT`, parentheses, `"phrases"`. Searched: string elements (keys included), to-one
+path strings and calculated string columns; not LargeString, UUID, virtual, to-many paths, `String(n)` with n > 500.
+Tune with `@cds.search`. The case rule follows the backend the data comes from (`cds.requires.<service>.kind`):
+`odata-v2` case-sensitive, `odata` / `odata-v4` and local case-insensitive (`tolower`), `soap` not supported (the term
+is ignored). A backend that rejects `tolower` is remembered and searched case-sensitively.
+
+A sound `contains(field, word)` filter is pushed where possible (including key lists of matching associated rows);
+the local match always has the final say. Without any push the read is bounded at 5000 rows; more is a 502 asking for
+a `$filter`.
+
+### DISTINCT and GROUP BY
+
+Only when the entity itself declares `distinct` / `group by`. Computed in memory over every source row (read in pages):
+`count`, `count_distinct`, `sum`, `avg`, `min`, `max`. When every aggregate is a row count and the `$filter` fixes
+every group column (`=` / `in`, at most 25 combinations), one `$count` request per combination replaces the read.
+
+```cds
+entity ItemCounts as projection on RemoteOrders.Items { key Category, Status, count(ID) as N : Integer } group by Category, Status;
+annotate RemoteOrders.Items with @cds.query.limit: { default: 1000, max: 5000 };   // page size for reading every row
+```
+
+---
+
+## 🔗 Filters through associations
+
+[↑ Table of Contents](#-table-of-contents)
+
+Filters may go several associations deep, through to-one and to-many associations:
+
+```http
+GET /odata/v4/order/Orders?$filter=_Customer/_Group/Region eq 'EMEA'
+GET /odata/v4/order/Orders?$filter=_Customer/_Contacts/any(c: c/_Mails/any(m: m/Address eq 'x@example.com'))
+```
+
+The main entity's backend cannot evaluate these. Instead of reading every order and expanding the associations, the
+service answers them with **semi-joins**, hop by hop:
+
+1. The first association's target (`Customers`) is read with the rest of the condition (`_Group/Region eq 'EMEA'`),
+   selecting only its join keys. Its own service answers that rest the same way, so a chain of any length resolves
+   level by level.
+2. The main entity is filtered by the keys found:
+   - at most 200 key values: pushed as `CustomerID in (...)` (backend `$top` and `$count` stay correct);
+   - at most 5000 keys: the same filter in memory (the main entity is read without any expand);
+   - no key: an empty answer, the main entity is not read.
+3. Above 5000 keys, or when the target's `$count` does not prove the key list complete, the filter is evaluated in
+   memory on hidden expands of the associations (correct, slower).
+
+Rules per hop:
+
+- The hop is joined on key pairs: the ON condition, managed foreign keys, or (EDMX associations without ON) the key
+  names it shares with its target. Composite keys are pushed as `(k1 = a and k2 = b) or ...`; empty-string values are
+  left out of the pushed filter (OData V2 backends answer `X eq ''` with no row) and the exact filter is applied in
+  memory.
+- A constant on the target side of the ON condition (`and _Partner.Role = 'BP'`) filters the target read; a constant on
+  the parent side keeps the term in memory.
+- Supported terms: `=`, `in`, `contains`, `startswith`, `endswith` on the leaf, and `exists` / `any()` with infix
+  filters (nested). A hop whose target is an external service (not a projection served by this application) only
+  accepts a filter on a field of its own.
+- The target's key reads use the request's user, tenant and locale, so the target's `@restrict` applies.
+
+A filter or sort through an association that cannot be a semi-join (for example `or` across associations) is evaluated
+in memory: the associations it reads are expanded with just the needed fields and removed from the answer again.
+
+---
+
+## 🔑 Reads by key
+
+[↑ Table of Contents](#-table-of-contents)
+
+| Request | Backend call |
+| --- | --- |
+| `Orders('O1')` | `Orders('O1')` (key in the source's names); no `$top`, no count |
+| `$filter=ID eq 'O1'` (every source key pinned with `=`, or `in` with one value) | read by key, answer shaped back (list with `$count`, or `SELECT.one`) |
+| `$filter=ID in ('O1','O2','O3')` | one read by key per value (at most 50), merged, sorted, counted and paged here |
+| `$filter=(Company eq 'C1' and No eq '1') or (Company eq 'C2' and No eq '7')` | one read by key per key tuple |
+| a key tuple that contradicts another pinned key (`Owner eq 'A' and ((Owner eq 'B' and ...) or ...)`) | dropped: no row, no call |
+| an unknown key | 404 `Entity '<name>' not found` for a key read, an empty list for a filter |
+
+Backends answer keys in a `$filter` slowly (a scan) or wrongly; the key in the URL addresses the row. The rest of the
+WHERE is re-checked on the row (also the projection's own `where`); a row that fails is 404 (key read) or left out.
+
+When the entity's key is not the source's key (a DISTINCT view, a different key element), `Entity('x')` is read with a
+filter instead.
+
+---
+
+## ✏️ Writing data
+
+[↑ Table of Contents](#-table-of-contents)
+
+CREATE / UPDATE / DELETE on a simple projection are written to its source entity:
+
+```cds
+entity Orders as projection on RemoteOrders.Orders { key Company, key No, Note as Text, Header.Title as Title } where Kind = 'A';
+```
+
+- `POST Orders` sends `INSERT` into `RemoteOrders.Orders` with `Note`, `{ Header: { Title } }` and `Kind = 'A'` (from
+  the `where`).
+- `PATCH Orders(Company='C1',No='1')` reads the row by key first (404 when it is outside the `where`), then sends
+  `PATCH Orders(Company='C1',No='1')`. After an answer without a row (OData V2: 204) the entity is read again.
+- `DELETE` reads the row the same way, then deletes it.
+- Keys: the source's keys come from the URL key and `req.data` (local names). When the entity's key is not the source's
+  key, the missing source keys are read by the entity's own key (a handler that knows them can put them into
+  `req.data` and save that read).
+- Calculated, virtual and path elements are dropped from the data; an unknown element is 400; data for an association
+  without `@remote.write.deep` is 501.
+- Database sources are written by CAP's generic handler. JOIN views, static data and SOAP sources are 501.
+- Backend errors keep their status (502 without one), code and message.
+- `@remote.write.truncate` on the entity or an element cuts strings to the element's length.
+
+Handlers of your service run first: a `before` handler validates or sets values; an `on` handler registered before
+`super.init()` replaces the generic write unless it calls `next()`.
+
+### Backend-only values
+
+Values the backend needs but clients never send are projected as `@readonly` (often `@UI.Hidden`) elements and set by
+your handler. CAP drops client values of `@readonly` elements, not the values your handler puts into `req.data`.
+
+### Non-CRUD backends
+
+For APIs where every change is a POST that names the operation in a field:
+
+```cds
+@remote.write.asInsert: ['UPDATE', 'DELETE']
+@remote.write.operation: { field: 'Op', CREATE: 'C', UPDATE: 'U', DELETE: 'D' }
+entity Entries as projection on Remote.Entries { key Company, key Rec, Note, @readonly @UI.Hidden Released };
+```
+
+`PATCH Entries(...)` becomes `POST Entries` with `{ Note, Company, Rec, Op: 'U' }`. A DELETE sent this way returns
+the backend's row when it answers one. Invalid settings (another event in `asInsert`, an operation field that is not
+an element of the source, codes without a field) are a 500 naming the entity.
+
+### Write rules
+
+CAP checks `@assert` after the write, against the database, and rolls back on failure. A remote backend cannot roll
+back, so declare the rules with `@remote.*`; they are evaluated in memory before anything is written:
+
+```cds
+entity Bookings as projection on Remote.Bookings {
+    key ID,
+    Customer,
+    @remote.assert.target
+    _Customer : Association to one Customers on _Customer.ID = $self.Customer,       // ASSERT_TARGET on Customer
+    Project,
+    @remote.assert: (case when not exists _Project or _Project.Customer != Customer then 'ASSERT_TARGET' end)
+    _Project : Association to one Projects on _Project.ID = $self.Project,
+    @remote.assert: (case when Day < _Project.StartDate or Day > _Project.EndDate then 'BOOKING_OUTSIDE_PROJECT' end)
+    @remote.assert.args: [Project, (left(_Project.StartDate, 10)), (left(_Project.EndDate, 10))]
+    Day,
+    @remote.write.truncate
+    @remote.write.value: (Customer || ' - ' || _Customer.Name)
+    CustomerText
+};
+```
+
+- `@remote.assert`: a CASE expression; the first matching `when` gives the message (text or i18n key, looked up like
+  CAP's `@assert`), target = the element. `@remote.assert.args` gives `{0}`, `{1}`, ... (paths or `(<expression>)`).
+- `@remote.assert.target` on a to-one association: the target must exist (`ASSERT_TARGET`, target = its foreign key).
+- `@remote.write.value`: computed when the write's data has no value (a value from the caller or a handler wins); on
+  UPDATE computed from the stored row merged with the data.
+- Expressions read the entity's elements and one-hop to-one paths (`_Assoc.Field`, `exists _Assoc`, `not exists
+  _Assoc`), with CASE, `||`, `+ - * /`, comparisons, `and` / `or` / `not`, `is [not] null` and the in-memory functions.
+  Each association is read once per write through the service that owns its target. Deeper or to-many paths are 501.
+- All failing checks are collected: one 400 error, or `MULTIPLE_ERRORS` with `details`.
+- A date compared with a date-time compares as instants.
+
+### Deep writes
+
+```cds
+entity Projects as projection on Remote.Projects {
+    key ProjectID, Name,
+    @remote.write.deep
+    _Packages : Association to many Packages on _Packages.ProjectID = $self.ProjectID
+};
+entity Packages as projection on Remote.Packages { key ProjectID, @mandatory key PackageID, Description };
+```
+
+- `POST` / `PATCH Projects` with `_Packages: [...]` writes the project, then every package row as an upsert (`PATCH`
+  when a row with its key exists, else `POST`; a row without all its keys is created), the join keys filled in from the
+  parent, recursively for the packages' own `@remote.write.deep` associations.
+- Checked before anything is written: the shape (to-many: an array of objects, to-one: an object; 400) and `@mandatory`
+  of every child row (join keys from the parent excepted).
+- A failing row does not stop its siblings (its own children are skipped). All failures come back as one
+  `MULTIPLE_ERRORS` (400 when all are 4xx, else 502) with the path of each row (`_Packages[1]/_Items[0]`). Rows written
+  before stay written: there is no transaction across backend requests. Children left out of the payload are not
+  deleted. No ETag handling.
+
+---
+
+## ⚙️ Actions and functions
+
+[↑ Table of Contents](#-table-of-contents)
+
+Operations of the local service are forwarded to the source without a handler:
+
+```cds
+entity Documents as projection on Remote.Documents { key DocNo as No, Title } actions {
+    action Cancel() returns many Remote.CancelResult;   // bound operation of the same name on Remote.Documents
+    function GetPDF() returns Remote.PDF;
+    @remote.operation: 'Release'
+    action ReleaseDocument();                           // bound operation `Release` of Remote.Documents
+};
+
+@remote.operation: 'Remote.upsertStatus'               // unbound operation of another service
+action setStatus(DocNo : String(10), Status : String(20)) returns Statuses;
+```
+
+- Bound: the URL key is translated to the source's names and sent as the binding parameter (OData V2: a function import
+  with the keys as parameters), the parameters as data.
+- Unbound: the parameters are sent as they are (their names must be the source operation's names).
+- `returns X` / `returns many X` with `X` an entity of this service over a remote source: rows mapped to local names
+  (calculated columns included). Other answers are returned as they come.
+- A handler you register before `super.init()` wins. `@remote.operation` naming no existing operation fails `init()`.
+- Backend errors keep their status (502 without one) and message.
+
+---
+
+## 🔌 Class API
 
 [↑ Table of Contents](#-table-of-contents)
 
 ```ts
 import { RemoteApplicationService } from '@cap-ts/remote-service-adapter';
 
-export class MyDataService extends RemoteApplicationService {
+export class OrderService extends RemoteApplicationService {
     async init(): Promise<void> {
-        // custom handlers for OTHER events can go here; READ is handled for every entity
+        this.after('CREATE', 'Entries', async (row, req) => {
+            // a further write inside the same, already authorized request
+            await this.writeSource('UPDATE', 'Entries', { ...row, Released: true }, { checkWhere: false });
+        });
         await super.init();
     }
 }
 ```
 
-- **`init()`** — for every entity in `this.entities`, registers `this.on('READ', entityName, ...)`, then calls
-  `super.init()`. Called automatically by CAP; do not call it yourself.
-- **Correlation IDs** — every dispatched READ gets an 8-character correlation id (`randomUUID()`), threaded through
-  every log line for that request. See [Troubleshooting](#️-troubleshooting).
+| Member | Description |
+| --- | --- |
+| `init()` | Registers READ, CREATE / UPDATE / DELETE and the operation forwarding for every entity, then `super.init()`. Called by CAP. |
+| `readSource(entity, where, { columns }?)` | One row through the read pipeline without the service's handlers (aliases, calculated columns, the projection's `where`; a filter on the source key is a read by key). `where` = element values compared with `=`. Returns the row in local names or `undefined`. |
+| `writeSource(event, entity, data, { checkWhere, checks }?)` | The generic write without the service's handlers and without CAP's authorization and input checks; `@readonly` values are kept. `checkWhere: false` skips the read of the row against the projection's `where`; `checks: false` skips the write rules. Only from a handler that has authorized the request. |
+| `supportsSkipPagination` | `true`: other instances may send this service the internal "all rows" hint of association fetches. |
 
+`entity` is the definition or the name (with or without the service prefix); user, tenant, locale and headers come
+from `cds.context`. Both methods are 501 for an entity without a remote source.
+
+Every request gets an 8-character correlation id that appears in every log line of that request.
 
 ---
 
@@ -236,161 +628,22 @@ export class MyDataService extends RemoteApplicationService {
 
 [↑ Table of Contents](#-table-of-contents)
 
-The package ships `cds-plugin.js`, so CAP activates the loader automatically once the package is a dependency.
-
 ```cds
 @remote
 service Catalog {
-    entity Partners as projection on MyExternalService.A_BusinessPartner { key ID, Name as Title };
+    entity Partners as projection on ExternalPartners.Partners { key ID, Name as Title };
 }
 ```
 
-- `@remote` is the **entire** opt-in surface. The plugin does not inspect what the service's entities project on (it
-  does not matter whether they select from OData, SOAP, another local service, or the database), and it does not
-  look at `cds.requires` to decide who gets patched. `cds.requires.<name>` still configures **how**
-  `RemoteApplicationService` reads once it is the implementation (`kind`, `credentials` / destination, etc.).
-- A service **without** `@remote` is left alone entirely, whatever its entities project on.
-- `DEBUG=remote-service` shows which services were patched and which kept their own implementation.
-
-**Do not** point `cds.requires.<external>.impl` at `RemoteApplicationService`: it reads through
-`cds.connect.to(<owning service>)`, which would return the same cached instance and make the service call itself.
-The external service's own `impl` (a custom client extension) keeps working untouched.
-
----
-
-## 🔍 Query features in depth
-
-[↑ Table of Contents](#-table-of-contents)
-
-### Hybrid `$filter` (WHERE) push-down
-
-Every WHERE clause is split at the top-level AND boundary. A predicate stays local (evaluated in memory after the
-fetch) when it references a `virtual`, calculated, association-path or unmapped field — or, against a SOAP backend,
-any function call. Everything else is pushed to the backend. One calculated case is pushed as well: a comparison
-`Name = 'v'` on a column `left(Field, n) as Name` where `'v'` has exactly `n` characters is the same as
-`startswith(Field, 'v')` and is sent in that form (not to SOAP backends). If the backend rejects the pushed WHERE (an error whose
-code contains `400` or whose message mentions `filter`, or an association-path complaint), the read is retried
-**without** the WHERE and the original filter is applied to the full result set in memory instead.
-A `$filter` or `$orderby` on an element that `$select` leaves out works: the rows are filtered and sorted before they
-are cut down to the selected elements.
-
-### The projection's own WHERE
-
-A `where` on the entity itself is applied to every read of it, like CDS defines it:
-
-```cds
-entity OpenOrders as projection on Sales.Orders {
-    key OrderID, Amount, _Customer.ValidTo as CustomerValidTo
-} where Status != 'CANCELLED' and _Customer.ValidTo >= current_date;
-```
-
-- Conditions on plain fields of the source are sent to the backend together with the query's own `$filter`; the fields
-  need not be part of the projection.
-- Conditions on to-one association paths (`_Customer.ValidTo`) are evaluated in memory after the paths are resolved
-  (like a filter on a path column: the backend `$top` is then dropped and the page is cut here).
-- `$user`, `$user.<attribute>`, `$now`, `current_date`, `current_time` and `current_timestamp` take the request's values.
-- On a read by key every condition is checked in memory (backends ignore `$filter` on a by-key URL): a row that fails
-  one is **404**. Projections on top of the entity inherit the filter.
-- A condition that can be neither sent nor evaluated in memory is rejected with **501**, never ignored: `exists`, a
-  sub-select, `$at` / `$valid`, a to-many or filtered path, or `like` / `between` / an unknown function in a condition
-  that has to be evaluated in memory. A JOIN view with a `where` is **501** as well.
-
-### Paging, `$count` and local filters
-
-- `$top` / `$skip` are forwarded to the backend only when nothing has to be done locally afterwards. They are
-  **dropped** (and applied in memory instead) when there is a local-only filter, a `$search`, a GROUP BY, or a read
-  by key. A local-only filter then reads every row that matches the rest of the filter, which can be slow or time out
-  on a large entity set: the first time per entity this is logged as a warning on `cds.log('remote-service')`
-  (`<entity>: $top is not sent to the backend because the filter on <fields> is evaluated in memory ...`), visible
-  without `DEBUG`.
-- `$count` comes from the backend only when there is no local filter and it is not a key read. With a local filter,
-  a search, DISTINCT or GROUP BY, the count is computed after local processing.
-- A count only (`$top=0&$count=true`) on a projection of a remote entity is one `/$count` request to the backend
-  (`GET <entity>/$count?$filter=...`): no rows move. (CAP leaves a `$top` of 0 out of the URL, so asking with
-  `$top=0` and `$count` would make the backend return every matching row.) A backend without `/$count` is asked for
-  one row plus the total (`$top=1&$inlinecount=allpages`); only a backend that gives no count at all has its rows
-  read, in pages, and counted. A count never turns into one request for every row.
-- When the source is another service of the same application and every row is needed (a local-only filter, DISTINCT,
-  GROUP BY), the inner read is sent without a limit (`limit: null`), so CAP's default page size does not cut it.
-- When sorting has to happen in memory (after a local filter, or for the children of an `$expand`), elements with
-  a numeric CDS type (Integer, Int64, Decimal, Double, …) are compared as numbers, also when the values arrive as
-  strings (OData `IEEE754Compatible`, and from cds 10 on Decimal / Int64 read from a database). Other elements keep
-  plain text order.
-- Reads by key (`Entity('K1')`) get no backend count and no limit; the entity's remaining WHERE is re-checked on the
-  returned row, and a row that fails the re-check becomes **404**.
-
-### `$expand`
-
-Declare the association in CDS; `$expand=Items` becomes one batched `WHERE <fk> IN (...)` query against the target.
-Children the backend already delivered inline are mapped, filtered, limited and nested-expanded in place; missing
-children are fetched in one batched key-IN query per association, grouped per parent key. Nested expands, `$filter`,
-`$orderby` and `$count` inside the expand are all supported. A backend that rejects the expand query is retried
-without columns, filter and order.
-
-> **Known limitation** — an expand node's `$top` is sent to the backend for the whole batch of parents at once, so
-> only the first parent(s) get their full child set. See [Known limitations](#️-known-limitations).
-
-### Association path columns (`_A._B.Field as X`)
-
-Classified once per entity definition (cached): `toOne` (every hop to-one, resolvable), `toMany` (rejected), or
-`unsupported` (a filtered segment, a non-association after an association, or a target not in the model). A `toMany`
-or `unsupported` path requested in `$select`, `$filter` or `$orderby` is **501 before any remote call**; if it's not
-explicitly requested (no `$select`), the element is silently left out instead. A `$filter` on a path element is
-always evaluated locally.
-
-### Calculated columns
-
-A projection column `<expr> as Name` (a `CASE`, a function call, `left()`, ...) is computed in memory from the
-values of the source entity, as CDS defines it: `left(Field, 2)` reads the source's `Field`, also when the projection
-exposes that field under another name (`Field as Alias`). The source fields it reads are requested from the
-backend automatically, even when the projection doesn't otherwise expose them. Calculated columns are never sent to
-the backend. A filter on one is evaluated in memory, except `Name = 'v'` on a `left(Field, n)` column with an `n`
-character value, which is pushed as `startswith(Field, 'v')` (see the WHERE push-down above). An association whose ON
-condition uses a calculated column (`on _Target.Key = $self.Prefix`) is resolved with the computed value.
-A calculated column of an association target that another `RemoteApplicationService` of the application serves
-(read through a path column `_Target.Text as Text` or `$expand`) is computed by that service, from its own source
-values: the reading projection need not select the fields it depends on.
-
-### `$search`
-
-OData V4 syntax: words ANDed, `OR`, `NOT`, parentheses, `"phrases"`. Searches string elements (including to-one path
-strings and calculated string columns); tune with `@cds.search: false` (element) or `@cds.search: { Title, Note }`
-(entity). The case rule follows `cds.requires.<service>.kind`: `odata-v2` case-sensitive, `odata` / `odata-v4` and
-local case-insensitive, `soap` not supported (the term is ignored — all rows come back and the local match decides).
-
-Sound `contains(field, word)` push-down narrows what's fetched when possible; whatever can't be pushed leaves the
-word unrestricted, and the **local match always has the final say**. Without any push-down the read is bounded at
-5000 rows — beyond that it's a **502** telling the caller to add `$filter` instead.
-
-### DISTINCT and GROUP BY
-
-Only when the CDS entity itself declares `distinct` / `groupBy`. Computed in memory on the full fetched result:
-`count`, `count_distinct`, `sum`, `avg`, `min`, `max`. Aggregate source fields are added to the remote columns
-automatically. Because this needs every row, `$top` / `$skip` are never pushed for a GROUP BY entity.
-
-- **Every source row is read, in pages.** The source is read in pages (`$top` / `$skip`, ordered by the source key),
-  so no single request has to return a large entity set. The first page also asks for the total (`$count` /
-  `$inlinecount`); the next pages follow until it is reached. A backend that returns fewer rows per page than asked
-  (server-side paging) simply needs more pages.
-- **Page size.** The page size is the maximum CAP allows for a read of the source entity: `@cds.query.limit.max` on
-  the source entity, else on its service, else `cds.query.limit.max` in the configuration (CAP's default: 1000).
-  Annotate the entity the GROUP BY projection is written on, not the GROUP BY entity itself. A projection inherits the
-  annotation of the entity it projects on, so annotating the imported remote entity covers the projections on it.
-  Set the default together with the maximum, otherwise CAP uses the maximum as the default page size for clients too:
-
-  ```cds
-  annotate MyService.Items with @cds.query.limit: { default: 1000, max: 5000 };
-  ```
-- **No partial totals.** If the rows stop before the total is reached, the request fails with **502**
-  (`<entity>: the backend returned <n> of <total> rows, ...`) instead of returning totals over a part of the data.
-- **Count requests.** When every aggregate is a row count (`count(*)`, `count(1)`, or `count` of a key of the source)
-  and the `$filter` fixes every group column (`=` or `in`, joined by `and`, at most 25 combinations), no rows are read:
-  one count request per combination of group values is sent (`GET <source>/$count?$filter=...`), and groups with a count of 0
-  are left out. Example: for `projection on Items { key Category, Status, count(ID) as N } group by Category, Status`,
-  `$filter=Category eq 'A' and Status in ('open','done')` sends two count requests. This also works when a group
-  column is a calculated column of the source that can be pushed (`left(Field, n)`, see Calculated columns).
-- An element that a projection only takes over from its source (for example a calculated column of the underlying
-  projection) is read from the source like any other field; it can be grouped, filtered and selected.
+- `@remote` on the local service is the entire opt-in. The plugin does not look at what the entities project on or at
+  `cds.requires`; `cds.requires.<name>` only configures how the sources are reached.
+- A service keeps its own implementation when it has `@impl`, `cds.requires.<service>.impl`, or a handler file CAP
+  would load (`<name>.js` / `.mjs`, `.ts` with TypeScript, next to the `.cds`, in `lib/` or `handlers/`). To combine
+  both, extend `RemoteApplicationService` in that file.
+- A service marked external (`@cds.external`, `@external`, `cds.requires.<name>.external`) is never patched.
+- Do not point `cds.requires.<external>.impl` at `RemoteApplicationService`: it reads through
+  `cds.connect.to(<external>)`, which would return itself.
+- `DEBUG=remote-service` logs which services were patched.
 
 ---
 
@@ -398,148 +651,158 @@ automatically. Because this needs every row, `$top` / `$skip` are never pushed f
 
 [↑ Table of Contents](#-table-of-contents)
 
-Configure the backend service as SOAP and let `@cap-ts/soap-adapter` handle WSDL / destination / XML concerns:
-
 ```json
-{
-  "cds": {
-    "requires": {
-      "BP": {
-        "kind": "soap",
-        "wsdl": "srv/external/wsdl/BP.wsdl",
-        "credentials": { "destination": "DEST_BP" }
-      }
-    }
+{ 
+  "cds": { 
+    "requires": { 
+      "Partners": { 
+        "kind": "soap", 
+        "wsdl": "srv/external/wsdl/Partners.wsdl", 
+        "credentials": { 
+          "destination": "PARTNERS_DESTINATION" 
+        } 
+      } 
+    } 
   }
 }
 ```
 
-`RemoteApplicationService` detects a SOAP backend (`isSoapService`) and dispatches through `soap.read` from
-`@cap-ts/soap-adapter` instead of `cds.connect.to(...).run(query)`. Because a SOAP backend can return several rows
-per logical key, results are **deduplicated by entity key fields** before being mapped back to local names.
-`$search` is not supported against SOAP (the term is ignored); filter functions are always evaluated in memory for
-SOAP targets.
+Annotate the external model as `@cap-ts/soap-adapter` documents. Reads go through `soap.read` (a fresh request per
+call, forbidden headers stripped), results are de-duplicated by the entity's keys, filter functions run in memory,
+`$search` is ignored (all rows come back, the local match decides). SOAP sources are not writable, and a filter on
+the key is not turned into a read by key (the SOAP operation gets its parameters from the URL key or a flat `and` of
+equalities).
 
 ---
 
-## ⚙️ Configuration
+## 🛠️ Configuration and logging
 
 [↑ Table of Contents](#-table-of-contents)
 
-There is no package-specific config block (no `cds.env.remote_service_adapter`, unlike some CAP plugins) — everything
-is driven by the standard `cds.requires.<ServiceName>` entry and by environment variables for logging.
+No package-specific config block is required; everything is driven by `cds.requires.<Service>` and the annotations.
 
-### Per-service (`cds.requires.<ServiceName>`)
+| Setting | Description |
+| --- | --- |
+| `cds.requires.<Service>.kind` | `odata`, `odata-v2`, `odata-v4`, `soap`: `$search` case rule, SOAP dispatch. |
+| `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
+| `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
+| `cds.remote-service.capRemoteLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
+| `@cds.query.limit.max` / `cds.query.limit.max` | Page size for reads of every source row. |
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `kind` | `"odata"` \| `"odata-v2"` \| `"odata-v4"` \| `"soap"` | Drives the `$search` case rule and, for `soap`, the dispatch path. |
-| `model` | `string` | Path to the external service's CSN/CDS model, for OData services. |
-| `credentials.destination` | `string` | BTP destination name. |
-| `credentials.url` | `string` | Direct endpoint URL for local development without a BTP destination. |
-| `impl` | `string` | Set by you (or by `cds build`) to opt a service OUT of `@remote` auto-patching, or to point a handler file at something else. |
+### `[remote]` query log
 
-### Logging (environment variables, read once at module load)
+Every request sent to an external system (remote OData or SOAP, not the database or a service of this application)
+is logged on `cds.log('remote')`:
+
+- `info`: `[remote] - GET <destination>:<path>/<Entity>?$select=...&$filter=...` (SOAP: `[remote] - SOAP <service> <entity>`)
+- `debug`: the query in the backend's names as one JSON line.
+
+Both contain filter values. Silence them with `cds.log.levels.remote: 'warn'` or `CDS_LOG_LEVELS_REMOTE=warn`. CAP's
+own remote-client lines on that channel (the request with headers, "Executing via @sap-cloud-sdk/http-client.") are
+dropped, so debug shows exactly these two lines; `cds.remote-service.capRemoteLog: true` keeps them.
+
+### Tracing (environment variables, read once at start)
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `DEBUG` | unset | Master switch: must contain `remote-service` or `*`. Unset → no-op logger, zero cost. |
+| `DEBUG` | unset | Must contain `remote-service` or `*`. Unset: no-op logger, zero cost. |
 | `LOG_LEVEL` | `debug` with `DEBUG`, else `error` | `trace` < `debug` < `info` < `warn` < `error`; falls back to `CDS_LOG_LEVELS_ESI`. |
-| `LOG_TO_CONSOLE` | `true` with `DEBUG` | `warn` / `error` → stderr, others → stdout. |
-| `LOG_TO_FILE` | `false` | Also append to `${LOG_DIR:-logs}/remote-service-YYYYMMDD-HHMMSS.log`. Development only — hard-disabled when `NODE_ENV=production`. |
-| `LOG_DIR` | `logs` | Directory for the log file, when `LOG_TO_FILE=true`. |
-
-```bash
-DEBUG=remote-service LOG_TO_FILE=true npm run watch          # console + file
-DEBUG=remote-service LOG_LEVEL=trace npm run watch           # also per-row key diagnostics
-```
-
-Every logged context is redacted (case-insensitive, recursive) for keys matching: `authorization`, `auth`,
-`password`, `pwd`, `token`, `access_token`, `refresh_token`, `apikey`, `api_key`, `secret`, `cookie`, `set-cookie`,
-`x-csrf-token`.
-
----
-
-## 🚦 Error & result behavior
-
-[↑ Table of Contents](#-table-of-contents)
-
-| Situation | Behavior |
-| --- | --- |
-| Backend rejects the filter (400-ish error, or an association-path complaint) | Warn, drop WHERE and limit, refetch everything, apply the original WHERE (and the projection's own WHERE) in memory |
-| The projection's own WHERE can't be applied (see [The projection's own WHERE](#the-projections-own-where)), or a JOIN view has one | **501** before any remote call |
-| Any other backend error | Logged at error level and re-thrown unchanged |
-| Path column crossing a to-many association / filtered segment, requested explicitly | **501** before any remote call |
-| Path column on a DISTINCT / GROUP BY entity | **501** |
-| `$search` that can't be pushed and the entity has more than 5000 rows | **502** (`searchTooLarge`); message names the backend's rejection when a push was attempted and failed |
-| Key read whose WHERE re-check (the query's or the projection's) removes the row | **404** `Entity '<name>' not found` |
-| `SELECT.one` | One object, whatever shape the backend answered in; `undefined` when no row matches, like every CAP service (OData: **404**, or **204** for a nullable singleton) |
-| Empty result | `[]` (or `undefined` for `SELECT.one`); with `$count`, the empty array carries `$count = 0` |
-| Entity with `@response.data` | The annotation value is returned, no backend call |
-| SOAP backend returns several rows per key | Reduced to one per key automatically |
-| `$search` against a SOAP backend | Ignored — all rows come back, local match decides |
-
----
-
-## 🔒 Boundaries & security
-
-[↑ Table of Contents](#-table-of-contents)
-
-| Guarantee / boundary | Detail |
-| --- | --- |
-| **READ only** | No CREATE / UPDATE / DELETE handlers are registered, ever. |
-| **No authentication or authorization of its own** | The incoming request is propagated as-is to the connected service (`cds.connect.to`); roles and restrictions belong to the concrete CDS service and to CAP's own `@requires` / `@restrict` enforcement. |
-| **No CDS ownership** | The package owns no definitions of its own; it only reads `cds.model`. |
-| **No override seams** | No `protected` members, nothing to subclass into. Composition (deep-importing `_helpers`) is the only extension point, and it is explicitly unstable / not part of the published typings. |
-| **Minimal public surface** | The package exports exactly one symbol: `RemoteApplicationService`. Enforced by the package's own test suite. |
-
----
-
-## 🛠️ Troubleshooting
-
-[↑ Table of Contents](#-table-of-contents)
-
-### A filter is not pushed to the backend
-
-**Cause:** the predicate references a `virtual`, calculated, association-path or unmapped field (or, against SOAP,
-any function). **Fix:** map the field 1:1 in the projection, or accept the in-memory evaluation.
-
-### 501 on a `$select` / `$filter` / `$orderby`
-
-**Cause:** the requested element is a path across a to-many association, a filtered segment, or a path column on a
-DISTINCT / GROUP BY entity. **Fix:** leave it out of the explicit `$select`, or remodel the projection.
-
-### 502 `$search` "more than 5000 rows"
-
-**Cause:** the search term couldn't be soundly pushed to the backend and the entity is too large to search fully in
-memory. **Fix:** add `$filter` to narrow the set first. `$search` on a SOAP entity is silently ignored, not failed.
-
-### 404 on a read by key
-
-**Cause:** the entity's own WHERE clause (the query's, or the `where` of the projection) doesn't hold for that row once
-it comes back from the backend (the post-fetch re-check removed it). This is by design, not a bug.
-
-### `$expand` children are missing
-
-**Cause:** usually a managed association whose join keys were guessed rather than declared explicitly. **Fix:**
-declare the ON condition or managed keys precisely in CDS; enable `DEBUG=remote-service` and look for "Association
-not resolvable" or an empty fetch trace.
-
-### Nothing shows up in the log
-
-**Checklist:** `DEBUG` is set and contains `remote-service` or `*`; `LOG_LEVEL` isn't filtering everything out; at
-least one sink is on (`LOG_TO_CONSOLE` or `LOG_TO_FILE`); `NODE_ENV` isn't `production` (file logging is hard-disabled
-there); and the request actually reaches `RemoteApplicationService` — look for "Registering READ handlers" at boot.
-
-### Enable verbose logging
+| `LOG_TO_CONSOLE` | `true` with `DEBUG` | `warn` / `error` to stderr, the rest to stdout. |
+| `LOG_TO_FILE` | `false` | Also write `${LOG_DIR:-logs}/remote-service-YYYYMMDD-HHMMSS.log` (plus `remote-service-latest.log`). Disabled when `NODE_ENV=production`. |
+| `LOG_DIR` | `logs` | Directory of the log file. |
 
 ```bash
 DEBUG=remote-service LOG_TO_FILE=true npm run watch
 ```
 
-Each line: ISO timestamp, level, an 8-character correlation id (`[boot]` outside a request), `[module.method]`,
-message, and an optional redacted JSON context. Filter one request with
-`grep '\[<correlation-id>\]' logs/remote-service-*.log`.
+Each line: ISO timestamp, level, correlation id (`[boot]` outside a request), `[module.method]`, message, redacted JSON
+context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `password`, `pwd`, `token`,
+`access_token`, `refresh_token`, `apikey`, `api_key`, `secret`, `cookie`, `set-cookie`, `x-csrf-token`.
+
+---
+
+## 🚦 Errors and results
+
+[↑ Table of Contents](#-table-of-contents)
+
+| Situation | Result |
+| --- | --- |
+| Backend rejects the pushed filter (400-like, or an association path) | Read again without the filter, whole WHERE in memory |
+| Read by key of an unknown key | **404** `Entity '<name>' not found` (also when CAP wraps the backend's 404 as 502) |
+| Read by key whose WHERE re-check (request or projection) drops the row | **404** |
+| Filter on the key that finds no row | `[]` with `$count = 0` |
+| `SELECT.one` | One object, `undefined` without a row (OData: 404, or 204 for a nullable singleton) |
+| Empty result | `[]`; with `$count`, `$count = 0` |
+| WHERE with a false literal comparison | `[]`, no backend call |
+| Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
+| Projection `where` that can be neither pushed nor evaluated; JOIN view with a `where` | **501** |
+| `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
+| Paged read ends short of the backend's total | **502** (no partial aggregates) |
+| Write to a JOIN view, static data, a SOAP source; association data without `@remote.write.deep`; source key not exposed | **501** |
+| Write: unknown element, missing key, value contradicting the projection's `where`, deep data of the wrong shape | **400** |
+| Write: row outside the projection's `where`, or no row for the entity's own key | **404** |
+| Write rule fails | **400** with the rule's message; several: `MULTIPLE_ERRORS` with `details` |
+| Write rule not serviceable (`@remote.assert` not a CASE, deeper / to-many path) | **501** |
+| Invalid write settings | **500** naming the entity |
+| Deep write with failed child rows | `MULTIPLE_ERRORS` (400 when all are 4xx, else 502), `details[].target` = row path |
+| `writeSource` / `readSource` on an entity without a remote source | **501** |
+| Any other backend error (read, write, operation) | Its status (502 without one), code and message |
+| SOAP returns several rows per key | One per key |
+
+---
+
+## 🚀 Performance guide
+
+[↑ Table of Contents](#-table-of-contents)
+
+| Concern | Guidance |
+| --- | --- |
+| Filters evaluated in memory | Every row matching the pushed part is read. Keep filters on plain mapped fields; push a restricting term along. |
+| Filters through associations | Semi-joins are fast when the matching keys are few (pushed up to 200, in memory up to 5000) and each hop is joined on keys of projections served by this application. Declare an explicit ON when a managed association's derived keys are wrong. |
+| Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
+| `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests. |
+| `$search` without push-down | Bounded at 5000 rows; add a `$filter`. |
+| DISTINCT / GROUP BY | Every source row, in pages; prefer count requests (filter fixing every group column). |
+| Fields the backend ignores in `$filter` | `@remote.filter.local`, only where the remaining set is small. |
+| Metadata | Alias maps, column plans and association metadata are cached per definition: free after the first request. |
+
+---
+
+## 🔒 Boundaries and security
+
+[↑ Table of Contents](#-table-of-contents)
+
+| Boundary | Detail |
+| --- | --- |
+| No authentication or authorization of its own | The request's user, tenant and locale are propagated to the connected services; CAP's `@requires` / `@restrict` on your service apply, and the target's restrictions apply to semi-join and association reads. |
+| No business logic | Validation and derived values are declared (`@remote.assert`, `@remote.write.value`) or written in your handlers. |
+| Writes are pass-through | No transaction across backend requests (deep writes stay partially written on failure). |
+| No CDS definitions of its own | It only reads `cds.model`. |
+| Minimal public surface | The package exports `RemoteApplicationService`; nothing else is part of the published typings. No override seams. |
+| Logs | Filter values appear in `[remote]` lines; secrets are redacted in the tracing log. |
+
+---
+
+## 🩺 Troubleshooting
+
+[↑ Table of Contents](#-table-of-contents)
+
+| Symptom | Cause and fix |
+| --- | --- |
+| A filter is not pushed | The term reads a virtual, calculated, path, structured or unmapped field (or a function on SOAP). Map the field 1:1, or accept the in-memory evaluation. |
+| A filter is ignored (every row comes back) | The backend cannot filter that field (`sap:filterable="false"`). Add `@remote.filter.local`. |
+| A filter through an association is slow | More than 5000 matching keys, or a hop without key join: the filter runs on expands. Check the `path-semijoin` log line ("Target read for a path filter"). |
+| A boolean flag filter stalls the backend | The backend mishandles `Field != 'v'`: `@remote.pushdown: false` on the flag. |
+| A date filter is rejected ("Invalid token") | A `Date` element over a date-time source without the date type: declare the element `Date` or `@odata.Type: 'Edm.Date'`. |
+| 501 on `$select` / `$filter` / `$orderby` | Path across a to-many association or a filtered segment, or a path column on DISTINCT / GROUP BY. |
+| 501 "The WHERE of `<entity>` can not be applied" | The projection's `where` uses `exists`, a sub-select, `$at`, a to-many path, or `like` / `between` in an in-memory term. Move it into a `before('READ')` handler. |
+| 502 `$search` "more than 5000 rows" | Add a `$filter`. |
+| 404 on a read by key | Unknown key, or the WHERE re-check (request or projection) dropped the row. |
+| `$expand` children missing | The association's join keys are wrong (managed association without declared keys). Declare the ON condition. |
+| Write 400 `ASSERT_*` / `MULTIPLE_ERRORS` | A write rule failed; `details` name each element or child row. |
+| Nothing in the log | `DEBUG` must contain `remote-service`; check `LOG_LEVEL`, the sinks, `NODE_ENV=production` (no file), and the boot line "Registering READ and write handlers". |
+
+Follow one request: find its correlation id and `grep '\[<id>\]' logs/remote-service-latest.log`.
 
 ---
 
@@ -547,25 +810,24 @@ message, and an optional redacted JSON context. Filter one request with
 
 [↑ Table of Contents](#-table-of-contents)
 
-Pinned by the package's own regression tests — these are known, not silently wrong:
+Pinned by the package's regression tests:
 
-1. **JOIN mashup entities** (`select from A as a join B as b on ...`) can mis-order which source is treated as
-   primary for entities with more than two participants, due to a known defect in the internal JOIN-structure
-   flattening. Simple two-way joins are unaffected in practice.
-2. **`$expand`'s `$top`** is sent to the backend for the whole batch of parents at once, not per parent — only the
-   first parent(s) in a batch get their full child set when several parents are expanded together.
-3. **Filters on path or calculated columns are evaluated in memory** (correct results, but can be slow on very
-   large remote sets). The exception is `Name = 'v'` on a `left(Field, n)` column with an `n`-character value, which
-   is pushed as `startswith(Field, 'v')`. A full read caused by such a filter is logged as a warning once per entity.
+1. **JOIN views** with more than two sources can pick the wrong primary source (an internal flattening defect); simple
+   two-way joins work in practice.
+2. **An `$expand`'s `$top`** applies to the whole batch of parents, not per parent.
+3. **In-memory filters** (path, calculated, structured, `@remote.filter.local` fields, filters through associations
+   above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
+   per entity is logged as a warning.
+4. **Deep writes** are not transactional and do not delete children missing from the payload.
 
 ---
 
-## 💬 Support & feedback
+## 💬 Support and feedback
 
 [↑ Table of Contents](#-table-of-contents)
 
-- **Bug reports & feature requests:** open an issue on the [GitHub repository](https://github.com/cap-ts/remote-service-adapter/issues).
-- **Questions:** use [GitHub Discussions](https://github.com/orgs/cap-ts/discussions).
+- Bug reports and feature requests: [GitHub issues](https://github.com/cap-ts/remote-service-adapter/issues).
+- Questions: [GitHub Discussions](https://github.com/orgs/cap-ts/discussions).
 
 ---
 
