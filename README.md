@@ -184,6 +184,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#caching) |
+| `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
 | `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
 | `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
 | `@remote.write.asInsert: ['UPDATE', 'DELETE']` | entity | Sends these events as `INSERT` (POST) with the source keys in the body. | [Non-CRUD backends](#non-crud-backends) |
@@ -248,7 +249,8 @@ entity Orders as projection on RemoteOrders.Orders {
 entity Codes as projection on RemoteOrders.Codes { key ID, Name };
 ```
 
-Returned as is, no backend call, never written.
+Returned without a backend call, never written. A request `$filter` (and `$count`) is evaluated on the rows in memory, like any
+filter on a projection that cannot be pushed.
 
 ### JOIN views
 
@@ -386,6 +388,15 @@ is ignored). A backend that rejects `tolower` is remembered and searched case-se
 A sound `contains(field, word)` filter is pushed where possible (including key lists of matching associated rows);
 the local match always has the final say. Without any push the read is bounded at 5000 rows; more is a 502 asking for
 a `$filter`.
+
+When the entity projects on an entity of another service of this package (a layered model) and every searched column of the entity
+is a plain column, the search is handed to that service instead of being turned into a filter over its columns: the lower service
+knows which of its columns are path or calculated columns and plans the push-down (and the key pre-queries) itself, so a search
+through several layers reads what a search on the lowest layer reads. The upper layer matches the returned rows again. An entity
+with path or calculated columns of its own (columns the lower entity does not have, for example a path over an association of the
+lower entity) is not handed off: its push-down is planned in its own layer, over the lower entity's associations, and sent to the
+lower service as a plain filter. A term that matches more than 2000 associated rows cannot be turned into a key list; the search
+then falls back to the bounded local match (see above), so narrow broad terms with `@cds.search` (leave out coded columns) or `$filter`.
 
 ### DISTINCT and GROUP BY
 
@@ -775,7 +786,8 @@ No package-specific config block is required; everything is driven by `cds.requi
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
 | `cds.remote-service.capRemoteLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
-| `cds.query.remote.pagesInParallel: <n>` | Pages of a full read (DISTINCT / GROUP BY, association fetch, unpushed `$search`) requested at once after the first page (default 4; `1` = one at a time). The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
+| `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
+| `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
 | `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
@@ -834,6 +846,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
 | Projection `where` that can be neither pushed nor evaluated; JOIN view with a `where` | **501** |
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
+| `$search` that matched more rows than `maxRows` (opt-in limit) of an entity with association-path columns | **502** naming `$filter`, before any path is read (the paths of every matched row would have to be read before the page is cut) |
 | Paged read ends short of the backend's total | **502** (no partial aggregates) |
 | Write to a JOIN view, static data, a SOAP source; association data without `@remote.write.deep`; source key not exposed | **501** |
 | Write: unknown element, missing key, value contradicting the projection's `where`, deep data of the wrong shape | **400** |
@@ -857,7 +870,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Filters evaluated in memory | Every row matching the pushed part is read. Keep filters on plain mapped fields; push a restricting term along. |
 | Filters through associations | Semi-joins are fast when the matching keys are few (pushed up to 200, in memory up to 5000) and each hop is joined on keys of projections served by this application. Declare an explicit ON when a managed association's derived keys are wrong. |
 | Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
-| `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests. |
+| `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests, sent up to `pagesInParallel` at a time. The association paths of every matched row are read before the page is cut: keep `$search` / `$filter` narrow, or set `search.maxRows` to refuse a search that is too broad. |
 | `$search` without push-down | Bounded at 5000 rows; add a `$filter`. |
 | DISTINCT / GROUP BY | Every source row, in pages (the first page with the count, the rest up to `pagesInParallel` at a time); prefer count requests (filter fixing every group column). A page that takes longer than the destination's `requestTimeout` (CAP, default 60000 ms) fails the read: lower the page size.  `$top` / `$skip` / `$orderby` apply to the groups after the aggregation (without `$top`, CAP's default page of groups: set `@cds.query.limit` on an aggregate with more groups); `$count` is the number of groups. |
 | Many reads of the same stable data | Opt-in caches: `cds.query.remote.cache.aggregates` for GROUP BY / DISTINCT, `@remote.cache` for reads by key (see Caching). |
@@ -896,12 +909,13 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | A date filter is rejected ("Invalid token") | A `Date` element over a date-time source without the date type: declare the element `Date` or `@odata.Type: 'Edm.Date'`. |
 | 501 on `$select` / `$filter` / `$orderby` | Path across a to-many association or a filtered segment, or a path column on DISTINCT / GROUP BY. |
 | 501 "The WHERE of `<entity>` can not be applied" | The projection's `where` uses `exists`, a sub-select, `$at`, a to-many path, or `like` / `between` in an in-memory term. Move it into a `before('READ')` handler. |
-| 502 `$search` "more than 5000 rows" | Add a `$filter`. |
+| 502 `$search` "more than 5000 rows", or "matched more than <n> rows ... association paths" (only with `search.maxRows` set) | Add a `$filter`: the search is too broad to read the association paths of every matched row. Without `search.maxRows` a broad search over association paths is answered, slowly (200 parents per request, `pagesInParallel` at a time). |
 | 404 on a read by key | Unknown key, or the WHERE re-check (request or projection) dropped the row. |
 | `$expand` children missing | The association's join keys are wrong (managed association without declared keys). Declare the ON condition. |
 | Write 400 `ASSERT_*` / `MULTIPLE_ERRORS` | A write rule failed; `details` name each element or child row. |
 | 501 "Navigation '<assoc>' in the path" | A navigation path needs a key on its first segment and an association joined by equalities, foreign keys or shared keys; a parameterized segment and more than 200 parents before the last hop are not supported. |
 | An unknown key in `key in (...)` / `Key eq 'x'` gives 502 | The backend answers an unknown key with 400; the adapter asks again as a filter. A 502 that remains is a real error (the filter read failed too, a malformed value, a bad column). |
+| An `$expand` is `null` although the element has a value in the answer | The join key is read before any handler of your own changes the row (`after('READ')` and the like): an association over a value that a handler derives sees the raw backend value. Derive it in the model (a calculated column) and join on that, or expand in the layer above. |
 | A text expand returned every language | CAP does not apply `@restrict ... where` to expanded entities; an expand over such a target is read through its service (not pushed to the backend). The restriction must be on the target entity's own definition. |
 | 501 "cannot be served generically" after `@remote.cache` | `@remote: { cache: true }` is `@remote.cache` only: write `@remote` and `@remote.cache: true` as two annotations (the plugin logs a warning). |
 | A cached answer looks stale | Entries live until their time to live and are per process; check `X-Cache` (`HIT; age=..`). A write through the adapter drops them in that process only. |
