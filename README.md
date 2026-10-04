@@ -42,6 +42,7 @@ business logic and no override seams: bespoke behavior goes into ordinary CAP ha
 🔍 [Reading data](#-reading-data)\
 🔗 [Filters through associations](#-filters-through-associations)\
 🔑 [Reads by key](#-reads-by-key)\
+🧠 [Caching](#-caching)\
 ✏️ [Writing data](#️-writing-data)\
 ⚙️ [Actions and functions](#️-actions-and-functions)\
 🔌 [Class API](#-class-api)\
@@ -182,6 +183,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@remote` | service | Makes `RemoteApplicationService` the service's implementation (CAP plugin). | [CAP plugin](#-cap-plugin-the-remote-annotation) |
 | `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
+| `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#caching) |
 | `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
 | `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
 | `@remote.write.asInsert: ['UPDATE', 'DELETE']` | entity | Sends these events as `INSERT` (POST) with the source keys in the body. | [Non-CRUD backends](#non-crud-backends) |
@@ -398,6 +400,23 @@ annotate RemoteOrders.Items with @cds.query.limit: { default: 1000, max: 5000 };
 
 ---
 
+### `$expand` and instance restrictions
+
+CAP evaluates `@restrict ... where` only on the entity a request targets, not on expanded entities (CAP Node.js "Limitations"). An
+association that the backend can expand itself (a managed association of an imported OData service) is normally expanded by the
+backend, which can not apply a restriction that depends on the current user:
+
+```cds
+@(restrict: [{ grant: 'READ', where: (Field = $user.<attr>) }])
+entity Targets as projection on Remote.Targets { ... };
+```
+
+An expand whose target (or a target further down) has a `@restrict` privilege for `READ` / `*` with a `where` is therefore not
+sent to the backend as `$expand`: its rows are read through the target's own service, where CAP applies the restriction. Other
+expands are unchanged; role-only restrictions are not affected.
+
+---
+
 ## 🔗 Filters through associations
 
 [↑ Table of Contents](#-table-of-contents)
@@ -451,13 +470,82 @@ in memory: the associations it reads are expanded with just the needed fields an
 | `$filter=ID in ('O1','O2','O3')` | one read by key per value (at most 50), merged, sorted, counted and paged here |
 | `$filter=(Company eq 'C1' and No eq '1') or (Company eq 'C2' and No eq '7')` | one read by key per key tuple |
 | a key tuple that contradicts another pinned key (`Owner eq 'A' and ((Owner eq 'B' and ...) or ...)`) | dropped: no row, no call |
-| an unknown key | 404 `Entity '<name>' not found` for a key read, an empty list for a filter |
+| an unknown key | 404 `Entity '<name>' not found` for a key read, an empty list for a filter; a backend that answers an unknown key with 400 instead of 404 is asked again with a filter, so the answer is the same |
+
+A parenthesized group of ANDs counts like its terms (CAP adds a `@restrict ... where` as `(Field = 'value')`), so a key
+completed by such a term is still a read by key. `$count=true` on a single entity answers `@odata.count: 1`.
 
 Backends answer keys in a `$filter` slowly (a scan) or wrongly; the key in the URL addresses the row. The rest of the
-WHERE is re-checked on the row (also the projection's own `where`); a row that fails is 404 (key read) or left out.
+WHERE is not sent (OData V2 services ignore a `$filter` on such a URL, some OData V4 services reject it) but evaluated on the returned
+row (also the projection's own `where`); a row that fails is 404 (key read) or left out.
 
 When the entity's key is not the source's key (a DISTINCT view, a different key element), `Entity('x')` is read with a
 filter instead.
+
+### Navigation by key (`Parent('k')/_Children`)
+
+`GET Orders('O1')/_Items` (a to-many or to-one association of a local entity, any number of hops) reads the parent by
+key, fills the association's `on` condition with its values and reads the target with that as a filter: one plain read
+of the target (`Items where OrderID = 'O1'`), with the request's `$filter`, `$orderby`, `$top`, `$skip`, `$count`. The
+`on` condition must be `=` terms joined by `and` (`<assoc>.X = $self.Y`, constants allowed); managed associations use
+their foreign keys; an association with neither (a navigation property imported from an OData service, redirected to a local entity) is joined on
+the key elements both entities share, as `$expand` does. An unknown parent key is 404 `Entity '<parent>' not found`; a parent without a value for the join
+is an empty list. Every segment may carry its own key or filter (`Parent('k')/_Items(ItemID='i')/_Details(DetailID='d')`; on a
+single-valued navigation it is a filter, as in CAP's path expressions): it narrows the rows of that hop together with the join.
+Not supported (501): a path without a key on the first segment, a parameterized segment, another `on` shape, more than 200 rows
+before the last hop.
+
+---
+
+## 🧠 Caching
+
+[↑ Table of Contents](#-table-of-contents)
+
+Two opt-in caches, kept in the memory of each process (nothing is shared between instances; an entry lives at most its time
+to live). Both are off until you switch them on; nothing changes for an entity you do not opt in.
+
+**Aggregates.** `cds.query.remote.cache.aggregates: true` caches GROUP BY / DISTINCT entities (a single entity can opt out
+with `@remote.cache: false`, or opt in with `@remote.cache: true`). The whole group set of a filter is read once;
+`$top`, `$skip`, `$orderby` and `$count` are applied to a copy, so every page and order of that filter shares one entry.
+The key is the entity and the effective filter (it includes what CAP's `@restrict ... where` added), so users with different
+restrictions never share an entry; the columns are not part of it (the rows are cached complete and cut to the `$select`). Not for `$search`, `$expand`, `SELECT.one`, a read by key, `@response.data` or SOAP.
+
+**Rows by key.** `@remote.cache: true` on an entity, or on its service for all its entities:
+
+```cds
+@remote.cache: true            // service level: every entity of the service
+service ReferenceData { ... }
+
+@remote.cache: { ttl: 60 }     // entity level, own time to live
+entity Regions as projection on ...;
+
+@remote.cache: false           // opt out of the service's setting
+entity LiveSet as projection on ...;
+```
+
+A read of a remote entity by key (`Entity('K')`, `$filter=Key eq 'K'`, `key in ('a', 'b')`, the key reads that resolve
+`$expand` and path columns) is answered from the cache while the row is fresh. For `key in (a, b)` each key is one read, so
+only the keys that are not cached go to the backend. The entry is the entity, the key and the columns read: another
+`$select` is another entry. Collection reads (`$filter` on other fields, paging, `$search`) are not cached. Only the hop
+that talks to the backend caches; a projection over another local service does not.
+
+`@remote.cache` goes next to `@remote` on a service, it does not replace it: `@remote: { cache: true }` compiles to
+`@remote.cache: true` only, and the service is then not served by `RemoteApplicationService` (501 "cannot be served
+generically"; the plugin logs a warning). Write `@remote` and `@remote.cache: true` as two annotations.
+
+**Time to live** (seconds, default 300): `@remote.cache.ttl` on the entity, else on the service, else
+`cds.query.remote.cache.ttl`, else 300.
+
+**Always:** every answer is a copy; an error or an empty answer is not kept; identical reads that arrive while one is
+running wait for it (one backend read); a write, an action or a function through the adapter drops what is cached from the
+entity (an unbound operation clears the cache); a read that started before a write does not store its answer.
+
+**`X-Cache` response header:** `HIT; age=<seconds>`, `MISS`, or `PARTIAL; hits=<n>; misses=<m>; age=<seconds>` when one HTTP
+response needed several lookups (the age is the oldest hit). Without a cached entity involved there is no header.
+
+**Limits:** per process (with several instances each has its own entries and an entry can be stale for up to its time to
+live, also after a write that went through another instance); the data is as current as the last read. Set
+`cds.query.remote.cache.perUser: true` when the backend answers differently per user.
 
 ---
 
@@ -687,6 +775,11 @@ No package-specific config block is required; everything is driven by `cds.requi
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
 | `cds.remote-service.capRemoteLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
+| `cds.query.remote.pagesInParallel: <n>` | Pages of a full read (DISTINCT / GROUP BY, association fetch, unpushed `$search`) requested at once after the first page (default 4; `1` = one at a time). The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
+| `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
+| `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
+| `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
+| `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
 | `@cds.query.limit.max` / `cds.query.limit.max` | Page size for reads of every source row. |
 
 ### `[remote]` query log
@@ -729,7 +822,11 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | --- | --- |
 | Backend rejects the pushed filter (400-like, or an association path) | Read again without the filter, whole WHERE in memory |
 | Read by key of an unknown key | **404** `Entity '<name>' not found` (also when CAP wraps the backend's 404 as 502) |
+| Read by key answered with 400 by the backend ("X does not exist" for an unknown key) | Asked again as a filter: **404** for a URL key read, no row for `in (...)`; a real error stays |
 | Read by key whose WHERE re-check (request or projection) drops the row | **404** |
+| Navigation `Parent('k')/_Assoc`: unknown parent key | **404** `Entity '<parent>' not found` |
+| Navigation without a key on the first segment, a parameterized segment, an ON that is not equalities, more than 200 rows before the last hop | **501** |
+| `$count=true` on a single entity | `@odata.count: 1` |
 | Filter on the key that finds no row | `[]` with `$count = 0` |
 | `SELECT.one` | One object, `undefined` without a row (OData: 404, or 204 for a nullable singleton) |
 | Empty result | `[]`; with `$count`, `$count = 0` |
@@ -762,7 +859,10 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
 | `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests. |
 | `$search` without push-down | Bounded at 5000 rows; add a `$filter`. |
-| DISTINCT / GROUP BY | Every source row, in pages; prefer count requests (filter fixing every group column). |
+| DISTINCT / GROUP BY | Every source row, in pages (the first page with the count, the rest up to `pagesInParallel` at a time); prefer count requests (filter fixing every group column). A page that takes longer than the destination's `requestTimeout` (CAP, default 60000 ms) fails the read: lower the page size.  `$top` / `$skip` / `$orderby` apply to the groups after the aggregation (without `$top`, CAP's default page of groups: set `@cds.query.limit` on an aggregate with more groups); `$count` is the number of groups. |
+| Many reads of the same stable data | Opt-in caches: `cds.query.remote.cache.aggregates` for GROUP BY / DISTINCT, `@remote.cache` for reads by key (see Caching). |
+| `$expand` over a restricted target | Read through the target's service (one read per parent up to 50, then one filter read per batch): correct rows, more requests than a backend `$expand`. |
+| Navigation paths | One read per segment. |
 | Fields the backend ignores in `$filter` | `@remote.filter.local`, only where the remaining set is small. |
 | Metadata | Alias maps, column plans and association metadata are cached per definition: free after the first request. |
 
@@ -800,6 +900,12 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | 404 on a read by key | Unknown key, or the WHERE re-check (request or projection) dropped the row. |
 | `$expand` children missing | The association's join keys are wrong (managed association without declared keys). Declare the ON condition. |
 | Write 400 `ASSERT_*` / `MULTIPLE_ERRORS` | A write rule failed; `details` name each element or child row. |
+| 501 "Navigation '<assoc>' in the path" | A navigation path needs a key on its first segment and an association joined by equalities, foreign keys or shared keys; a parameterized segment and more than 200 parents before the last hop are not supported. |
+| An unknown key in `key in (...)` / `Key eq 'x'` gives 502 | The backend answers an unknown key with 400; the adapter asks again as a filter. A 502 that remains is a real error (the filter read failed too, a malformed value, a bad column). |
+| A text expand returned every language | CAP does not apply `@restrict ... where` to expanded entities; an expand over such a target is read through its service (not pushed to the backend). The restriction must be on the target entity's own definition. |
+| 501 "cannot be served generically" after `@remote.cache` | `@remote: { cache: true }` is `@remote.cache` only: write `@remote` and `@remote.cache: true` as two annotations (the plugin logs a warning). |
+| A cached answer looks stale | Entries live until their time to live and are per process; check `X-Cache` (`HIT; age=..`). A write through the adapter drops them in that process only. |
+| One row makes a full read fail (backend 500 for one value of a column) | The adapter cannot skip a column: select the other columns, or correct the data. GROUP BY / DISTINCT read only the columns they use. |
 | Nothing in the log | `DEBUG` must contain `remote-service`; check `LOG_LEVEL`, the sinks, `NODE_ENV=production` (no file), and the boot line "Registering READ and write handlers". |
 
 Follow one request: find its correlation id and `grep '\[<id>\]' logs/remote-service-latest.log`.
@@ -819,6 +925,9 @@ Pinned by the package's regression tests:
    above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
    per entity is logged as a warning.
 4. **Deep writes** are not transactional and do not delete children missing from the payload.
+5. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
+6. **Navigation paths** need a key on the first segment; a parameterized segment is not supported; more than 200 parents before the last hop is 501.
+7. **`$expand` over a restricted target** costs one read of the target per expand (up to 50 parents one read by key each, then one filter read per batch) instead of one backend `$expand`.
 
 ---
 
