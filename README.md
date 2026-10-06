@@ -793,14 +793,39 @@ equalities).
 
 [↑ Table of Contents](#-table-of-contents)
 
-No package-specific config block is required; everything is driven by `cds.requires.<Service>` and the annotations.
+Nothing has to be configured: the service is driven by `cds.requires.<Service>` and the annotations. Global runtime
+knobs live under `cds.env.query.remote` (the `cds.query.remote` key in `package.json` / `.cdsrc.json`, or an environment
+variable such as `CDS_QUERY_REMOTE_PAGESINPARALLEL=3`), next to CAP's own `cds.query.limit`. All are optional; the values
+shown are the defaults, except `search.maxRows`, which has none (5000 is an example):
+
+```json
+{
+  "cds": {
+    "query": {
+      "remote": {
+        "pagesInParallel": 5,
+        "capClientLog": false,
+        "search": { "maxRows": 5000 },
+        "cache": {
+          "aggregates": false,
+          "ttl": 300,
+          "perUser": false,
+          "maxEntries": 500,
+          "maxRows": 100000
+        }
+      }
+    }
+  }
+}
+```
+
 
 | Setting | Description |
 | --- | --- |
 | `cds.requires.<Service>.kind` | `odata`, `odata-v2`, `odata-v4`, `soap`: `$search` case rule, SOAP dispatch. |
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
-| `cds.remote-service.capRemoteLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
+| `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
 | `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
 | `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
 | `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
@@ -819,7 +844,7 @@ is logged on `cds.log('remote')`:
 
 Both contain filter values. They are quiet by default (the plugin sets the level to `warn`); show them with `cds.log.levels.remote: 'info'` or `CDS_LOG_LEVELS_REMOTE=info`. CAP's
 own remote-client lines on that channel (the request with headers, "Executing via @sap-cloud-sdk/http-client.") are
-dropped, so debug shows exactly these two lines; `cds.remote-service.capRemoteLog: true` keeps them.
+dropped, so debug shows exactly these two lines; `cds.query.remote.capClientLog: true` keeps them.
 
 ### Tracing (environment variables, read once at start)
 
@@ -939,12 +964,14 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 
 Follow one request: find its correlation id and `grep '\[<id>\]' logs/remote-service-latest.log`.
 
+<!--
 ### Application does not start: `CAPTS_LICENSE_MISSING` / `CAPTS_LICENSE_INVALID` / `CAPTS_LICENSE_EXPIRED`
 
 The licence check of `@cap-ts/remote-service-adapter` failed in production. The message gives the reason. `MISSING`: `cds.capts.license`
 is not set (check that the `CDS_CAPTS_LICENSE` variable reached the app: `cds env get capts`). `INVALID`: the token was
 changed or truncated, does not grant `@cap-ts/remote-service-adapter`, or is bound to another Cloud Foundry org or space. `EXPIRED`: the
 grace period is over. Contact SAP-Code-World for a new token. See [Licence](#licence-token).
+-->
 
 ---
 
@@ -981,7 +1008,7 @@ Pinned by the package's regression tests:
 [↑ Table of Contents](#-table-of-contents)
 
 This package is provided under the terms of the **SAP-Code-World** [Usage License Agreement](LICENSE).
-
+<!--
 ### Licence token
 
 Using `@cap-ts/remote-service-adapter` in production needs a licence token from SAP-Code-World. The token is a signed text string. The
@@ -1015,5 +1042,5 @@ What happens:
   `cds compile` never run it.
 - A licence can be bound to Cloud Foundry org or space GUIDs. It is then only valid in those orgs or spaces.
 - A running application is never stopped. Renewing means setting the new token and restarting the app.
-
+-->
 © 2025 **SAP-Code-World**. All rights reserved.
