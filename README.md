@@ -334,7 +334,7 @@ entity OpenOrders as projection on RemoteOrders.Orders {
 ### Paging and `$count`
 
 - `$top` / `$skip` go to the backend only when nothing is evaluated in memory afterwards; otherwise every row matching
-  the pushed part is read and the page is cut here (logged once per entity as a warning on `cds.log('remote-service')`).
+  the pushed part is read and the page is cut here (logged once per entity as a warning on `cds.log('remote')`).
 - `$count` is always a number. It is the backend's count when nothing is filtered in memory, else the count after local
   processing. OData V2 sends its count as text; the service converts it.
 - A count only (`$top=0&$count=true`) is one `GET <Entity>/$count?$filter=...`: no rows move. Fallbacks: one row plus
@@ -408,6 +408,21 @@ every group column (`=` / `in`, at most 25 combinations), one `$count` request p
 entity ItemCounts as projection on RemoteOrders.Items { key Category, Status, count(ID) as N : Integer } group by Category, Status;
 annotate RemoteOrders.Items with @cds.query.limit: { default: 1000, max: 5000 };   // page size for reading every row
 ```
+
+**HAVING.** A `having` of the projection filters the groups, for every read of the entity:
+
+```cds
+entity BusyStages as projection on RemoteOrders.Items { key Stage, count(*) as N : Integer }
+  group by Stage having count(*) > 1 and Stage in ('OPEN', 'DONE');
+```
+
+Terms with an aggregate (`count`, `sum`, `avg`, `min`, `max`, also one that is not in the select list) are evaluated on every
+group after the aggregation. Terms on group columns only (`Stage in (...)`) are a `where` in effect: they go to the backend like the
+projection's own `where`, so fewer rows are read (evaluated here when the backend cannot filter that field). An aggregate of no
+value is `null`, and a comparison with `null` is false. `between` is supported in aggregate terms. A `having` the adapter cannot
+apply (no `group by`, a field that is neither a group column nor inside an aggregate, `like`, a function it cannot evaluate here,
+`exists`, a sub-select) is answered with 501 instead of unfiltered groups. A `$filter` on an aggregate column of the request
+narrows the groups that remain; `$count` is the number of groups after the `having`.
 
 ---
 
@@ -802,7 +817,7 @@ is logged on `cds.log('remote')`:
 - `info`: `[remote] - GET <destination>:<path>/<Entity>?$select=...&$filter=...` (SOAP: `[remote] - SOAP <service> <entity>`)
 - `debug`: the query in the backend's names as one JSON line.
 
-Both contain filter values. Silence them with `cds.log.levels.remote: 'warn'` or `CDS_LOG_LEVELS_REMOTE=warn`. CAP's
+Both contain filter values. They are quiet by default (the plugin sets the level to `warn`); show them with `cds.log.levels.remote: 'info'` or `CDS_LOG_LEVELS_REMOTE=info`. CAP's
 own remote-client lines on that channel (the request with headers, "Executing via @sap-cloud-sdk/http-client.") are
 dropped, so debug shows exactly these two lines; `cds.remote-service.capRemoteLog: true` keeps them.
 
