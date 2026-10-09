@@ -236,6 +236,7 @@ entity Orders as projection on RemoteOrders.Orders {
 | `virtual` | Never requested; filters on it run in memory. |
 | Calculated (`<expr> as Name`) | Computed in memory from the source values: a CASE, or one function call (`left(Field, 2)` reads the source's `Field` even when the projection renames it). Its source fields are requested automatically. Never sent to the backend. |
 | Boolean flag (`case when Field = 'v' then true else false end`) | Computed in memory; a filter `Flag = true / false` is pushed as `Field = 'v'` / `Field != 'v'`. |
+| `exists` flag (`case when exists _Items then true else false end`) | The association is read for the rows of the answer, then the flag is computed in memory. See [Association flags (`exists`)](#association-flags-exists). |
 | Structured field (`Struct.Field as X`) | The backend is asked for the structure, the answer flattened. Filters on it run in memory. Written back as `{ Struct: { Field } }`. |
 | Path column (`_A._B.Field as X`) | Resolved across to-one associations at any depth, one batched key fetch per hop. A to-many hop or filtered segment requested explicitly is 501. |
 | Association | Declare the ON condition (or managed keys). Used for `$expand`, path columns, filters through associations, write rules and deep writes. |
@@ -371,6 +372,42 @@ listed above, also inside an expression). Operators outside a CASE (`A || B`, `A
 An association whose ON condition uses a calculated column is resolved with the computed value.
 `@remote.pushdown: false` keeps filters on a calculated column in memory, for a backend that mishandles the comparison
 of its source field (for example `Status != 'X'`).
+A calculated column that reads a path across a to-many association (`coalesce(_Items.ID, 'none')`) is 501 when
+requested in `$select`, `$filter` or `$orderby`: test the association with `exists` instead.
+
+### Association flags (`exists`)
+
+```cds
+@remote
+service OrderService {
+    @readonly entity Orders as projection on RemoteOrders.Orders {
+        *,
+        _Items : Association to many Items on _Items.OrderID = $self.ID and _Items.Status = 'Active'
+    };
+    @readonly entity Items as projection on RemoteOrders.Items;
+}
+
+@remote
+service OrderOverview {
+    @readonly entity Orders as projection on OrderService.Orders {
+        *,
+        case when exists _Items then true else false end as HasActiveItems : Boolean,
+        case when exists _Items[Quantity > 10] then true else false end as HasLargeItems : Boolean,
+        exists _Items._Product[Blocked = true] as HasBlockedProduct : Boolean
+    };
+}
+```
+
+- `exists <association>` is true when the association has at least one row. Constant terms of its ON condition
+  (`_Items.Status = 'Active'`) and infix filters (`[Quantity > 10]`) apply. Paths of any depth work, through to-one
+  and to-many associations.
+- Each association is read once for all rows of the answer, in batched key reads (one per hop and 200 parents), and
+  only when the query asks for the flag.
+- `$filter` and `$orderby` on the flag are evaluated in memory, on every row the pushed part of the filter leaves.
+- A `$expand` of the same association keeps its own `$select`, `$filter` and `$top`.
+- 501 when the query names the flag and it cannot be computed: the association is not an element of the projection,
+  an infix filter reads a path or contains `exists`, `exists` on a sub-select or inside a function call, or a DISTINCT /
+  GROUP BY projection. A read without `$select` leaves such a flag out.
 
 ### Structured fields
 
@@ -884,6 +921,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Empty result | `[]`; with `$count`, `$count = 0` |
 | WHERE with a false literal comparison | `[]`, no backend call |
 | Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
+| Calculated column over a to-many path, or an `exists` flag that cannot be computed, requested | **501** before any backend call |
 | Projection `where` that can be neither pushed nor evaluated; JOIN view with a `where` | **501** |
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
 | `$search` that matched more rows than `maxRows` (opt-in limit) of an entity with association-path columns | **502** naming `$filter`, before any path is read (the paths of every matched row would have to be read before the page is cut) |
@@ -947,7 +985,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | A filter through an association is slow | More than 5000 matching keys, or a hop without key join: the filter runs on expands. Check the `path-semijoin` log line ("Target read for a path filter"). |
 | A boolean flag filter stalls the backend | The backend mishandles `Field != 'v'`: `@remote.pushdown: false` on the flag. |
 | A date filter is rejected ("Invalid token") | A `Date` element over a date-time source without the date type: declare the element `Date` or `@odata.Type: 'Edm.Date'`. |
-| 501 on `$select` / `$filter` / `$orderby` | Path across a to-many association or a filtered segment, or a path column on DISTINCT / GROUP BY. |
+| 501 on `$select` / `$filter` / `$orderby` | Path across a to-many association or a filtered segment, or a path column on DISTINCT / GROUP BY. A calculated column over a to-many path: use `exists`. An `exists` flag the message names as not supported: see [Association flags (`exists`)](#association-flags-exists). |
 | 501 "The WHERE of `<entity>` can not be applied" | The projection's `where` uses `exists`, a sub-select, `$at`, a to-many path, or `like` / `between` in an in-memory term. Move it into a `before('READ')` handler. |
 | 502 `$search` "more than 5000 rows", or "matched more than <n> rows ... association paths" (only with `search.maxRows` set) | Add a `$filter`: the search is too broad to read the association paths of every matched row. Without `search.maxRows` a broad search over association paths is answered, slowly (200 parents per request, `pagesInParallel` at a time). |
 | 404 on a read by key | Unknown key, or the WHERE re-check (request or projection) dropped the row. |
@@ -984,8 +1022,8 @@ Pinned by the package's regression tests:
 1. **JOIN views** with more than two sources can pick the wrong primary source (an internal flattening defect); simple
    two-way joins work in practice.
 2. **An `$expand`'s `$top`** applies to the whole batch of parents, not per parent.
-3. **In-memory filters** (path, calculated, structured, `@remote.filter.local` fields, filters through associations
-   above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
+3. **In-memory filters** (path, calculated, `exists` flag, structured, `@remote.filter.local` fields, filters through
+   associations above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
    per entity is logged as a warning.
 4. **Deep writes** are not transactional and do not delete children missing from the payload.
 5. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
