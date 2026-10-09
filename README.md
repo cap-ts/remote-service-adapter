@@ -182,6 +182,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | --- | --- | --- | --- |
 | `@remote` | service | Makes `RemoteApplicationService` the service's implementation (CAP plugin). | [CAP plugin](#-cap-plugin-the-remote-annotation) |
 | `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
+| `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#caching) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
@@ -292,7 +293,21 @@ Pushed in a backend-friendly form:
 If the backend rejects the pushed filter (an error with `400` or `filter` in it, or an association path complaint),
 the read is repeated without the filter and the whole WHERE is applied in memory.
 
-A filter or sort on an element that `$select` leaves out works: rows are filtered and sorted before they are pruned.
+A read whose filter is (partly) evaluated in memory needs every row the pushed part leaves: `$top` is not sent. Such a
+read, and every other read of a remote source without a limit (for example the read of a projection on another entity
+of this package, which asks that entity for every row), first asks for one page of the source's
+`@cds.query.limit.max` (entity, then service, then `cds.query.limit.max`, else 1000) with the count, in the backend's
+own order. When that is every row (the usual case) it is the answer. A longer answer is read again in pages ordered by
+the source key, up to `pagesInParallel` at a time: a single request for every row can exceed what the backend answers
+at once (S/4: HTTP 500 `SYSTEM_NO_ROLL`). One request without paging, as before: `@remote.paging: false` on the entity or
+its service, `cds.query.remote.paging: false`, a source without key, or a backend that rejects the page request (400).
+
+A filter or sort on an element that `$select` leaves out works, also on a calculated or path element (its source
+fields are read): rows are filtered and sorted before they are pruned. A sort the backend does completely keeps the
+backend's order.
+
+A projection on an entity of another service of this package (a layered model) may rename its elements
+(`Item as ItemKey`): columns, `$filter`, `$orderby` and keys go to that entity in its own names.
 
 ### Fields the backend cannot filter
 
@@ -345,6 +360,12 @@ entity OpenOrders as projection on RemoteOrders.Orders {
   the source key, until the backend's total is reached. A backend that caps its pages below that size just needs more
   pages. Ending short of the total is a 502, never a partial result.
 - A page past the end returns `[]` with the full `$count`.
+- `$orderby` with `$top` / `$skip`: the backend sorts, so the page is the right one. The leading sort terms on plain
+  elements are sent in the source's names (also CAP's implicit key order, which CAP adds to every paged OData request).
+  A backend that rejects the sort (400) is asked again without it, and the page is sorted among itself. An explicit
+  sort on a path or calculated element is applied here over every row, after one count request, for at most 5000 rows;
+  above that the page is read as before and sorted among itself (logged on `cds.log('remote')`). CAP's implicit key
+  order never causes a read of every row.
 - In-memory sorts compare numeric elements as numbers, also when the values arrive as strings.
 
 ### `$expand`
@@ -404,6 +425,13 @@ service OrderOverview {
 - Each association is read once for all rows of the answer, in batched key reads (one per hop and 200 parents), and
   only when the query asks for the flag.
 - `$filter` and `$orderby` on the flag are evaluated in memory, on every row the pushed part of the filter leaves.
+- A flag no filter or sort needs is computed after the page is cut: for the rows of the answer only.
+- A read that computes a flag for more than 5000 rows is refused (**502**, "narrow it down with `$filter` or
+  `$search`"): the association of every row would be read. A read of every row (a filter on the flag, or a layer above
+  that filters on it) is counted first, so it fails in about one request; with `$search` the rows the search leaves
+  are checked. A filter `Flag = true` is answered by a semi-join instead (Filters through associations), so a projection
+  `where HasActiveItems = true` over tens of thousands of orders works when the association's target is small enough for
+  `cds.query.remote.semiJoin.maxRows` (with the key set cache, every later request answers from memory).
 - A `$expand` of the same association keeps its own `$select`, `$filter` and `$top`.
 - The association may also be one of the source only, when the projection lists its columns and leaves it out
   (`entity ActiveOrders as projection on OrderService.Orders { key ID, case when exists _Items then true else false end as HasActiveItems : Boolean }`).
@@ -508,10 +536,19 @@ service answers them with **semi-joins**, hop by hop:
    level by level.
 2. The main entity is filtered by the keys found:
    - at most 200 key values: pushed as `CustomerID in (...)` (backend `$top` and `$count` stay correct);
-   - at most 5000 keys: the same filter in memory (the main entity is read without any expand);
+   - more: the same filter in memory (the main entity is read without any expand);
    - no key: an empty answer, the main entity is not read.
-3. Above 5000 keys, or when the target's `$count` does not prove the key list complete, the filter is evaluated in
-   memory on hidden expands of the associations (correct, slower).
+3. The target is read in pages ordered by its key, up to `pagesInParallel` at a time, for at most 5000 rows
+   (`cds.query.remote.semiJoin.maxRows` raises it). Above that, or when the target's `$count` does not prove the key list
+   complete, the filter is evaluated in memory on hidden expands of the associations (correct, slower).
+4. When the target has more than one page of rows and the rest of the filter leaves at most 5000 rows of the main
+   entity, the filter is evaluated on those rows if that takes fewer requests (their pages plus one association read
+   per 200 rows) than reading the target's keys. One count request decides; the key set cache (Caching) skips it.
+
+A filter `Flag = true` on an `exists` flag (`case when exists _Items[Status = 'Open'] then true else false end`, or
+`exists _Items as Flag`) is the semi-join `exists _Items[Status = 'Open']`, also when the association is one of the
+source only and when the filter comes in parentheses from a layer above. `@remote.pushdown: false` on the flag keeps it
+in memory.
 
 Rules per hop:
 
@@ -521,8 +558,10 @@ Rules per hop:
   memory.
 - A constant on the target side of the ON condition (`and _Partner.Role = 'BP'`) filters the target read; a constant on
   the parent side keeps the term in memory.
-- Supported terms: `=`, `in`, `contains`, `startswith`, `endswith` on the leaf, and `exists` / `any()` with infix
-  filters (nested). A hop whose target is an external service (not a projection served by this application) only
+- Supported terms: `=`, `<`, `<=`, `>`, `>=`, `in`, `contains`, `startswith`, `endswith` on the leaf, and `exists` /
+  `any()` with infix filters (nested). Not `ne` (`!=`): CAP's `!=` is two-valued, so a row without a target (or with a
+  null value) matches it, and no key list selects such rows; it is evaluated in memory. To ask for a filled value,
+  use `gt ''` instead of `ne ''` (a semi-join). A hop whose target is an external service (not a projection served by this application) only
   accepts a filter on a field of its own.
 - The target's key reads use the request's user, tenant and locale, so the target's `@restrict` applies.
 
@@ -573,8 +612,14 @@ before the last hop.
 
 [↑ Table of Contents](#-table-of-contents)
 
-Two opt-in caches, kept in the memory of each process (nothing is shared between instances; an entry lives at most its time
-to live). Both are off until you switch them on; nothing changes for an entity you do not opt in.
+Three opt-in caches, kept in the memory of each process (nothing is shared between instances; an entry lives at most its time
+to live). All are off until you switch them on; nothing changes for an entity you do not opt in.
+
+**Key sets of semi-joins.** `cds.query.remote.cache.semiJoins: true` (or `@remote.cache` on the association's target or its
+service) keeps the key set a filter through an association reads (Filters through associations), per target, filter and
+tenant (and user with `perUser`). Every filter that needs the same key set then answers from memory, whatever else it
+filters on. With it on, the key set is always read (to be reused) instead of the in-memory evaluation of a narrow request:
+the first request after the time to live pays the full read. Writes through the adapter to the target drop it.
 
 **Aggregates.** `cds.query.remote.cache.aggregates: true` caches GROUP BY / DISTINCT entities (a single entity can opt out
 with `@remote.cache: false`, or opt in with `@remote.cache: true`). The whole group set of a filter is read once;
@@ -850,10 +895,13 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
     "query": {
       "remote": {
         "pagesInParallel": 5,
+        "paging": true,
         "capClientLog": false,
         "search": { "maxRows": 5000 },
+        "semiJoin": { "maxRows": 5000 },
         "cache": {
           "aggregates": false,
+          "semiJoins": false,
           "ttl": 300,
           "perUser": false,
           "maxEntries": 500,
@@ -872,9 +920,12 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
 | `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
-| `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
+| `cds.query.remote.paging: false` | Every read of all rows of a remote source that is not an aggregation is one request (see `@remote.paging`). Default `true`. |
+| `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, a filter evaluated in memory, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
 | `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
 | `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
+| `cds.query.remote.cache.semiJoins: true` | Cache the key sets of filters through associations (default off), see [Caching](#caching). |
+| `cds.query.remote.semiJoin.maxRows: <n>` | Most target rows a filter through an association reads for its keys (default 5000), see [Filters through associations](#-filters-through-associations). |
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
 | `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
@@ -935,6 +986,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
 | `$search` that matched more rows than `maxRows` (opt-in limit) of an entity with association-path columns | **502** naming `$filter`, before any path is read (the paths of every matched row would have to be read before the page is cut) |
 | Paged read ends short of the backend's total | **502** (no partial aggregates) |
+| An `exists` flag computed for more than 5000 rows | **502** naming the flag and the row count, before its association is read |
 | Write to a JOIN view, static data, a SOAP source; association data without `@remote.write.deep`; source key not exposed | **501** |
 | Write: unknown element, missing key, value contradicting the projection's `where`, deep data of the wrong shape | **400** |
 | Write: row outside the projection's `where`, or no row for the entity's own key | **404** |
@@ -954,7 +1006,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 
 | Concern | Guidance |
 | --- | --- |
-| Filters evaluated in memory | Every row matching the pushed part is read. Keep filters on plain mapped fields; push a restricting term along. |
+| Filters evaluated in memory | Every row matching the pushed part is read, in pages (up to `pagesInParallel` at a time). Keep filters on plain mapped fields; push a restricting term along. |
 | Filters through associations | Semi-joins are fast when the matching keys are few (pushed up to 200, in memory up to 5000) and each hop is joined on keys of projections served by this application. Declare an explicit ON when a managed association's derived keys are wrong. |
 | Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
 | `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests, sent up to `pagesInParallel` at a time. The association paths of every matched row are read before the page is cut: keep `$search` / `$filter` narrow, or set `search.maxRows` to refuse a search that is too broad. |
@@ -1038,6 +1090,11 @@ Pinned by the package's regression tests:
 5. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
 6. **Navigation paths** need a key on the first segment; a parameterized segment is not supported; more than 200 parents before the last hop is 501.
 7. **`$expand` over a restricted target** costs one read of the target per expand (up to 50 parents one read by key each, then one filter read per batch) instead of one backend `$expand`.
+8. **`exists` flags** are computed for at most 5000 rows per read (502 above, see Association flags).
+9. **Reads of every row in pages** are not one snapshot: rows written between two page requests can be missed or read
+   twice, as can rows whose declared key is not unique. Only answers longer than one page are paged.
+10. **An explicit `$orderby` on a path or calculated element** sorts only the page when the entity has more than 5000
+    rows (logged).
 
 ---
 

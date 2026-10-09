@@ -1,6 +1,6 @@
 {
   "name": "@cap-ts/remote-service-adapter",
-  "version": "0.2.0-beta.4",
+  "version": "0.2.0-beta.5",
   "description": "Remote service Adapter for CAP",
   "main": "src/index.js",
   "types": "types/index.d.ts",
