@@ -405,7 +405,9 @@ service OrderOverview {
   only when the query asks for the flag.
 - `$filter` and `$orderby` on the flag are evaluated in memory, on every row the pushed part of the filter leaves.
 - A `$expand` of the same association keeps its own `$select`, `$filter` and `$top`.
-- 501 when the query names the flag and it cannot be computed: the association is not an element of the projection,
+- The association may also be one of the source only, when the projection lists its columns and leaves it out
+  (`entity ActiveOrders as projection on OrderService.Orders { key ID, case when exists _Items then true else false end as HasActiveItems : Boolean }`).
+- 501 when the query names the flag and it cannot be computed: the association is an element of neither the projection nor its source,
   an infix filter reads a path or contains `exists`, `exists` on a sub-select or inside a function call, or a DISTINCT /
   GROUP BY projection. A read without `$select` leaves such a flag out.
 
@@ -425,6 +427,13 @@ is ignored). A backend that rejects `tolower` is remembered and searched case-se
 A sound `contains(field, word)` filter is pushed where possible (including key lists of matching associated rows);
 the local match always has the final say. Without any push the read is bounded at 5000 rows; more is a 502 asking for
 a `$filter`.
+
+`*`, `+` and `%` are plain characters, as in CAP (no wildcards): `cc*` matches values that contain `cc*`. They are
+never sent to the backend (SAP Gateway and S/4 OData V4 reject them in `contains`): the longest piece between them is
+(`cc`), and a word of only these characters is not pushed. The rows of a pushed search are read in pages, so a backend
+that answers a fixed page size without `$top` (S/4 OData V4: 100) does not cut the result or `$count`. Parentheses group; an unmatched `(` or `)` standing alone (`$search=(`) is a word
+and matches literally, one touching a word is ignored (`(Acme` = `Acme`). A lone `"` and `&` are rejected by CAP's
+OData parser (400) before the adapter is called.
 
 When the entity projects on an entity of another service of this package (a layered model) and every searched column of the entity
 is a plain column, the search is handed to that service instead of being turned into a filter over its columns: the lower service
