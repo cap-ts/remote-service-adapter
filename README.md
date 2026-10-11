@@ -182,6 +182,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | --- | --- | --- | --- |
 | `@remote` | service | Makes `RemoteApplicationService` the service's implementation (CAP plugin). | [CAP plugin](#-cap-plugin-the-remote-annotation) |
 | `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
+| `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#caching) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
@@ -236,6 +237,7 @@ entity Orders as projection on RemoteOrders.Orders {
 | `virtual` | Never requested; filters on it run in memory. |
 | Calculated (`<expr> as Name`) | Computed in memory from the source values: a CASE, or one function call (`left(Field, 2)` reads the source's `Field` even when the projection renames it). Its source fields are requested automatically. Never sent to the backend. |
 | Boolean flag (`case when Field = 'v' then true else false end`) | Computed in memory; a filter `Flag = true / false` is pushed as `Field = 'v'` / `Field != 'v'`. |
+| `exists` flag (`case when exists _Items then true else false end`) | The association is read for the rows of the answer, then the flag is computed in memory. See [Association flags (`exists`)](#association-flags-exists). |
 | Structured field (`Struct.Field as X`) | The backend is asked for the structure, the answer flattened. Filters on it run in memory. Written back as `{ Struct: { Field } }`. |
 | Path column (`_A._B.Field as X`) | Resolved across to-one associations at any depth, one batched key fetch per hop. A to-many hop or filtered segment requested explicitly is 501. |
 | Association | Declare the ON condition (or managed keys). Used for `$expand`, path columns, filters through associations, write rules and deep writes. |
@@ -291,7 +293,21 @@ Pushed in a backend-friendly form:
 If the backend rejects the pushed filter (an error with `400` or `filter` in it, or an association path complaint),
 the read is repeated without the filter and the whole WHERE is applied in memory.
 
-A filter or sort on an element that `$select` leaves out works: rows are filtered and sorted before they are pruned.
+A read whose filter is (partly) evaluated in memory needs every row the pushed part leaves: `$top` is not sent. Such a
+read, and every other read of a remote source without a limit (for example the read of a projection on another entity
+of this package, which asks that entity for every row), first asks for one page of the source's
+`@cds.query.limit.max` (entity, then service, then `cds.query.limit.max`, else 1000) with the count, in the backend's
+own order. When that is every row (the usual case) it is the answer. A longer answer is read again in pages ordered by
+the source key, up to `pagesInParallel` at a time: a single request for every row can exceed what the backend answers
+at once (S/4: HTTP 500 `SYSTEM_NO_ROLL`). One request without paging, as before: `@remote.paging: false` on the entity or
+its service, `cds.query.remote.paging: false`, a source without key, or a backend that rejects the page request (400).
+
+A filter or sort on an element that `$select` leaves out works, also on a calculated or path element (its source
+fields are read): rows are filtered and sorted before they are pruned. A sort the backend does completely keeps the
+backend's order.
+
+A projection on an entity of another service of this package (a layered model) may rename its elements
+(`Item as ItemKey`): columns, `$filter`, `$orderby` and keys go to that entity in its own names.
 
 ### Fields the backend cannot filter
 
@@ -334,7 +350,7 @@ entity OpenOrders as projection on RemoteOrders.Orders {
 ### Paging and `$count`
 
 - `$top` / `$skip` go to the backend only when nothing is evaluated in memory afterwards; otherwise every row matching
-  the pushed part is read and the page is cut here (logged once per entity as a warning on `cds.log('remote-service')`).
+  the pushed part is read and the page is cut here (logged once per entity as a warning on `cds.log('remote')`).
 - `$count` is always a number. It is the backend's count when nothing is filtered in memory, else the count after local
   processing. OData V2 sends its count as text; the service converts it.
 - A count only (`$top=0&$count=true`) is one `GET <Entity>/$count?$filter=...`: no rows move. Fallbacks: one row plus
@@ -344,6 +360,12 @@ entity OpenOrders as projection on RemoteOrders.Orders {
   the source key, until the backend's total is reached. A backend that caps its pages below that size just needs more
   pages. Ending short of the total is a 502, never a partial result.
 - A page past the end returns `[]` with the full `$count`.
+- `$orderby` with `$top` / `$skip`: the backend sorts, so the page is the right one. The leading sort terms on plain
+  elements are sent in the source's names (also CAP's implicit key order, which CAP adds to every paged OData request).
+  A backend that rejects the sort (400) is asked again without it, and the page is sorted among itself. An explicit
+  sort on a path or calculated element is applied here over every row, after one count request, for at most 5000 rows;
+  above that the page is read as before and sorted among itself (logged on `cds.log('remote')`). CAP's implicit key
+  order never causes a read of every row.
 - In-memory sorts compare numeric elements as numbers, also when the values arrive as strings.
 
 ### `$expand`
@@ -371,6 +393,51 @@ listed above, also inside an expression). Operators outside a CASE (`A || B`, `A
 An association whose ON condition uses a calculated column is resolved with the computed value.
 `@remote.pushdown: false` keeps filters on a calculated column in memory, for a backend that mishandles the comparison
 of its source field (for example `Status != 'X'`).
+A calculated column that reads a path across a to-many association (`coalesce(_Items.ID, 'none')`) is 501 when
+requested in `$select`, `$filter` or `$orderby`: test the association with `exists` instead.
+
+### Association flags (`exists`)
+
+```cds
+@remote
+service OrderService {
+    @readonly entity Orders as projection on RemoteOrders.Orders {
+        *,
+        _Items : Association to many Items on _Items.OrderID = $self.ID and _Items.Status = 'Active'
+    };
+    @readonly entity Items as projection on RemoteOrders.Items;
+}
+
+@remote
+service OrderOverview {
+    @readonly entity Orders as projection on OrderService.Orders {
+        *,
+        case when exists _Items then true else false end as HasActiveItems : Boolean,
+        case when exists _Items[Quantity > 10] then true else false end as HasLargeItems : Boolean,
+        exists _Items._Product[Blocked = true] as HasBlockedProduct : Boolean
+    };
+}
+```
+
+- `exists <association>` is true when the association has at least one row. Constant terms of its ON condition
+  (`_Items.Status = 'Active'`) and infix filters (`[Quantity > 10]`) apply. Paths of any depth work, through to-one
+  and to-many associations.
+- Each association is read once for all rows of the answer, in batched key reads (one per hop and 200 parents), and
+  only when the query asks for the flag.
+- `$filter` and `$orderby` on the flag are evaluated in memory, on every row the pushed part of the filter leaves.
+- A flag no filter or sort needs is computed after the page is cut: for the rows of the answer only.
+- A read that computes a flag for more than 5000 rows is refused (**502**, "narrow it down with `$filter` or
+  `$search`"): the association of every row would be read. A read of every row (a filter on the flag, or a layer above
+  that filters on it) is counted first, so it fails in about one request; with `$search` the rows the search leaves
+  are checked. A filter `Flag = true` is answered by a semi-join instead (Filters through associations), so a projection
+  `where HasActiveItems = true` over tens of thousands of orders works when the association's target is small enough for
+  `cds.query.remote.semiJoin.maxRows` (with the key set cache, every later request answers from memory).
+- A `$expand` of the same association keeps its own `$select`, `$filter` and `$top`.
+- The association may also be one of the source only, when the projection lists its columns and leaves it out
+  (`entity ActiveOrders as projection on OrderService.Orders { key ID, case when exists _Items then true else false end as HasActiveItems : Boolean }`).
+- 501 when the query names the flag and it cannot be computed: the association is an element of neither the projection nor its source,
+  an infix filter reads a path or contains `exists`, `exists` on a sub-select or inside a function call, or a DISTINCT /
+  GROUP BY projection. A read without `$select` leaves such a flag out.
 
 ### Structured fields
 
@@ -388,6 +455,13 @@ is ignored). A backend that rejects `tolower` is remembered and searched case-se
 A sound `contains(field, word)` filter is pushed where possible (including key lists of matching associated rows);
 the local match always has the final say. Without any push the read is bounded at 5000 rows; more is a 502 asking for
 a `$filter`.
+
+`*`, `+` and `%` are plain characters, as in CAP (no wildcards): `cc*` matches values that contain `cc*`. They are
+never sent to the backend (SAP Gateway and S/4 OData V4 reject them in `contains`): the longest piece between them is
+(`cc`), and a word of only these characters is not pushed. The rows of a pushed search are read in pages, so a backend
+that answers a fixed page size without `$top` (S/4 OData V4: 100) does not cut the result or `$count`. Parentheses group; an unmatched `(` or `)` standing alone (`$search=(`) is a word
+and matches literally, one touching a word is ignored (`(Acme` = `Acme`). A lone `"` and `&` are rejected by CAP's
+OData parser (400) before the adapter is called.
 
 When the entity projects on an entity of another service of this package (a layered model) and every searched column of the entity
 is a plain column, the search is handed to that service instead of being turned into a filter over its columns: the lower service
@@ -408,6 +482,21 @@ every group column (`=` / `in`, at most 25 combinations), one `$count` request p
 entity ItemCounts as projection on RemoteOrders.Items { key Category, Status, count(ID) as N : Integer } group by Category, Status;
 annotate RemoteOrders.Items with @cds.query.limit: { default: 1000, max: 5000 };   // page size for reading every row
 ```
+
+**HAVING.** A `having` of the projection filters the groups, for every read of the entity:
+
+```cds
+entity BusyStages as projection on RemoteOrders.Items { key Stage, count(*) as N : Integer }
+  group by Stage having count(*) > 1 and Stage in ('OPEN', 'DONE');
+```
+
+Terms with an aggregate (`count`, `sum`, `avg`, `min`, `max`, also one that is not in the select list) are evaluated on every
+group after the aggregation. Terms on group columns only (`Stage in (...)`) are a `where` in effect: they go to the backend like the
+projection's own `where`, so fewer rows are read (evaluated here when the backend cannot filter that field). An aggregate of no
+value is `null`, and a comparison with `null` is false. `between` is supported in aggregate terms. A `having` the adapter cannot
+apply (no `group by`, a field that is neither a group column nor inside an aggregate, `like`, a function it cannot evaluate here,
+`exists`, a sub-select) is answered with 501 instead of unfiltered groups. A `$filter` on an aggregate column of the request
+narrows the groups that remain; `$count` is the number of groups after the `having`.
 
 ---
 
@@ -447,10 +536,19 @@ service answers them with **semi-joins**, hop by hop:
    level by level.
 2. The main entity is filtered by the keys found:
    - at most 200 key values: pushed as `CustomerID in (...)` (backend `$top` and `$count` stay correct);
-   - at most 5000 keys: the same filter in memory (the main entity is read without any expand);
+   - more: the same filter in memory (the main entity is read without any expand);
    - no key: an empty answer, the main entity is not read.
-3. Above 5000 keys, or when the target's `$count` does not prove the key list complete, the filter is evaluated in
-   memory on hidden expands of the associations (correct, slower).
+3. The target is read in pages ordered by its key, up to `pagesInParallel` at a time, for at most 5000 rows
+   (`cds.query.remote.semiJoin.maxRows` raises it). Above that, or when the target's `$count` does not prove the key list
+   complete, the filter is evaluated in memory on hidden expands of the associations (correct, slower).
+4. When the target has more than one page of rows and the rest of the filter leaves at most 5000 rows of the main
+   entity, the filter is evaluated on those rows if that takes fewer requests (their pages plus one association read
+   per 200 rows) than reading the target's keys. One count request decides; the key set cache (Caching) skips it.
+
+A filter `Flag = true` on an `exists` flag (`case when exists _Items[Status = 'Open'] then true else false end`, or
+`exists _Items as Flag`) is the semi-join `exists _Items[Status = 'Open']`, also when the association is one of the
+source only and when the filter comes in parentheses from a layer above. `@remote.pushdown: false` on the flag keeps it
+in memory.
 
 Rules per hop:
 
@@ -460,8 +558,10 @@ Rules per hop:
   memory.
 - A constant on the target side of the ON condition (`and _Partner.Role = 'BP'`) filters the target read; a constant on
   the parent side keeps the term in memory.
-- Supported terms: `=`, `in`, `contains`, `startswith`, `endswith` on the leaf, and `exists` / `any()` with infix
-  filters (nested). A hop whose target is an external service (not a projection served by this application) only
+- Supported terms: `=`, `<`, `<=`, `>`, `>=`, `in`, `contains`, `startswith`, `endswith` on the leaf, and `exists` /
+  `any()` with infix filters (nested). Not `ne` (`!=`): CAP's `!=` is two-valued, so a row without a target (or with a
+  null value) matches it, and no key list selects such rows; it is evaluated in memory. To ask for a filled value,
+  use `gt ''` instead of `ne ''` (a semi-join). A hop whose target is an external service (not a projection served by this application) only
   accepts a filter on a field of its own.
 - The target's key reads use the request's user, tenant and locale, so the target's `@restrict` applies.
 
@@ -512,8 +612,14 @@ before the last hop.
 
 [↑ Table of Contents](#-table-of-contents)
 
-Two opt-in caches, kept in the memory of each process (nothing is shared between instances; an entry lives at most its time
-to live). Both are off until you switch them on; nothing changes for an entity you do not opt in.
+Three opt-in caches, kept in the memory of each process (nothing is shared between instances; an entry lives at most its time
+to live). All are off until you switch them on; nothing changes for an entity you do not opt in.
+
+**Key sets of semi-joins.** `cds.query.remote.cache.semiJoins: true` (or `@remote.cache` on the association's target or its
+service) keeps the key set a filter through an association reads (Filters through associations), per target, filter and
+tenant (and user with `perUser`). Every filter that needs the same key set then answers from memory, whatever else it
+filters on. With it on, the key set is always read (to be reused) instead of the in-memory evaluation of a narrow request:
+the first request after the time to live pays the full read. Writes through the adapter to the target drop it.
 
 **Aggregates.** `cds.query.remote.cache.aggregates: true` caches GROUP BY / DISTINCT entities (a single entity can opt out
 with `@remote.cache: false`, or opt in with `@remote.cache: true`). The whole group set of a filter is read once;
@@ -778,17 +884,48 @@ equalities).
 
 [↑ Table of Contents](#-table-of-contents)
 
-No package-specific config block is required; everything is driven by `cds.requires.<Service>` and the annotations.
+Nothing has to be configured: the service is driven by `cds.requires.<Service>` and the annotations. Global runtime
+knobs live under `cds.env.query.remote` (the `cds.query.remote` key in `package.json` / `.cdsrc.json`, or an environment
+variable such as `CDS_QUERY_REMOTE_PAGESINPARALLEL=3`), next to CAP's own `cds.query.limit`. All are optional; the values
+shown are the defaults, except `search.maxRows`, which has none (5000 is an example):
+
+```json
+{
+  "cds": {
+    "query": {
+      "remote": {
+        "pagesInParallel": 5,
+        "paging": true,
+        "capClientLog": false,
+        "search": { "maxRows": 5000 },
+        "semiJoin": { "maxRows": 5000 },
+        "cache": {
+          "aggregates": false,
+          "semiJoins": false,
+          "ttl": 300,
+          "perUser": false,
+          "maxEntries": 500,
+          "maxRows": 100000
+        }
+      }
+    }
+  }
+}
+```
+
 
 | Setting | Description |
 | --- | --- |
 | `cds.requires.<Service>.kind` | `odata`, `odata-v2`, `odata-v4`, `soap`: `$search` case rule, SOAP dispatch. |
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
-| `cds.remote-service.capRemoteLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
-| `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
+| `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
+| `cds.query.remote.paging: false` | Every read of all rows of a remote source that is not an aggregation is one request (see `@remote.paging`). Default `true`. |
+| `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, a filter evaluated in memory, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
 | `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
 | `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
+| `cds.query.remote.cache.semiJoins: true` | Cache the key sets of filters through associations (default off), see [Caching](#caching). |
+| `cds.query.remote.semiJoin.maxRows: <n>` | Most target rows a filter through an association reads for its keys (default 5000), see [Filters through associations](#-filters-through-associations). |
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
 | `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
@@ -802,9 +939,9 @@ is logged on `cds.log('remote')`:
 - `info`: `[remote] - GET <destination>:<path>/<Entity>?$select=...&$filter=...` (SOAP: `[remote] - SOAP <service> <entity>`)
 - `debug`: the query in the backend's names as one JSON line.
 
-Both contain filter values. Silence them with `cds.log.levels.remote: 'warn'` or `CDS_LOG_LEVELS_REMOTE=warn`. CAP's
+Both contain filter values. They are quiet by default (the plugin sets the level to `warn`); show them with `cds.log.levels.remote: 'info'` or `CDS_LOG_LEVELS_REMOTE=info`. CAP's
 own remote-client lines on that channel (the request with headers, "Executing via @sap-cloud-sdk/http-client.") are
-dropped, so debug shows exactly these two lines; `cds.remote-service.capRemoteLog: true` keeps them.
+dropped, so debug shows exactly these two lines; `cds.query.remote.capClientLog: true` keeps them.
 
 ### Tracing (environment variables, read once at start)
 
@@ -844,10 +981,12 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Empty result | `[]`; with `$count`, `$count = 0` |
 | WHERE with a false literal comparison | `[]`, no backend call |
 | Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
+| Calculated column over a to-many path, or an `exists` flag that cannot be computed, requested | **501** before any backend call |
 | Projection `where` that can be neither pushed nor evaluated; JOIN view with a `where` | **501** |
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
 | `$search` that matched more rows than `maxRows` (opt-in limit) of an entity with association-path columns | **502** naming `$filter`, before any path is read (the paths of every matched row would have to be read before the page is cut) |
 | Paged read ends short of the backend's total | **502** (no partial aggregates) |
+| An `exists` flag computed for more than 5000 rows | **502** naming the flag and the row count, before its association is read |
 | Write to a JOIN view, static data, a SOAP source; association data without `@remote.write.deep`; source key not exposed | **501** |
 | Write: unknown element, missing key, value contradicting the projection's `where`, deep data of the wrong shape | **400** |
 | Write: row outside the projection's `where`, or no row for the entity's own key | **404** |
@@ -867,7 +1006,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 
 | Concern | Guidance |
 | --- | --- |
-| Filters evaluated in memory | Every row matching the pushed part is read. Keep filters on plain mapped fields; push a restricting term along. |
+| Filters evaluated in memory | Every row matching the pushed part is read, in pages (up to `pagesInParallel` at a time). Keep filters on plain mapped fields; push a restricting term along. |
 | Filters through associations | Semi-joins are fast when the matching keys are few (pushed up to 200, in memory up to 5000) and each hop is joined on keys of projections served by this application. Declare an explicit ON when a managed association's derived keys are wrong. |
 | Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
 | `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests, sent up to `pagesInParallel` at a time. The association paths of every matched row are read before the page is cut: keep `$search` / `$filter` narrow, or set `search.maxRows` to refuse a search that is too broad. |
@@ -907,7 +1046,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | A filter through an association is slow | More than 5000 matching keys, or a hop without key join: the filter runs on expands. Check the `path-semijoin` log line ("Target read for a path filter"). |
 | A boolean flag filter stalls the backend | The backend mishandles `Field != 'v'`: `@remote.pushdown: false` on the flag. |
 | A date filter is rejected ("Invalid token") | A `Date` element over a date-time source without the date type: declare the element `Date` or `@odata.Type: 'Edm.Date'`. |
-| 501 on `$select` / `$filter` / `$orderby` | Path across a to-many association or a filtered segment, or a path column on DISTINCT / GROUP BY. |
+| 501 on `$select` / `$filter` / `$orderby` | Path across a to-many association or a filtered segment, or a path column on DISTINCT / GROUP BY. A calculated column over a to-many path: use `exists`. An `exists` flag the message names as not supported: see [Association flags (`exists`)](#association-flags-exists). |
 | 501 "The WHERE of `<entity>` can not be applied" | The projection's `where` uses `exists`, a sub-select, `$at`, a to-many path, or `like` / `between` in an in-memory term. Move it into a `before('READ')` handler. |
 | 502 `$search` "more than 5000 rows", or "matched more than <n> rows ... association paths" (only with `search.maxRows` set) | Add a `$filter`: the search is too broad to read the association paths of every matched row. Without `search.maxRows` a broad search over association paths is answered, slowly (200 parents per request, `pagesInParallel` at a time). |
 | 404 on a read by key | Unknown key, or the WHERE re-check (request or projection) dropped the row. |
@@ -924,6 +1063,15 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 
 Follow one request: find its correlation id and `grep '\[<id>\]' logs/remote-service-latest.log`.
 
+<!--
+### Application does not start: `CAPTS_LICENSE_MISSING` / `CAPTS_LICENSE_INVALID` / `CAPTS_LICENSE_EXPIRED`
+
+The licence check of `@cap-ts/remote-service-adapter` failed in production. The message gives the reason. `MISSING`: `cds.capts.license`
+is not set (check that the `CDS_CAPTS_LICENSE` variable reached the app: `cds env get capts`). `INVALID`: the token was
+changed or truncated, does not grant `@cap-ts/remote-service-adapter`, or is bound to another Cloud Foundry org or space. `EXPIRED`: the
+grace period is over. Contact SAP-Code-World for a new token. See [Licence](#licence-token).
+-->
+
 ---
 
 ## ⚠️ Known limitations
@@ -935,13 +1083,18 @@ Pinned by the package's regression tests:
 1. **JOIN views** with more than two sources can pick the wrong primary source (an internal flattening defect); simple
    two-way joins work in practice.
 2. **An `$expand`'s `$top`** applies to the whole batch of parents, not per parent.
-3. **In-memory filters** (path, calculated, structured, `@remote.filter.local` fields, filters through associations
-   above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
+3. **In-memory filters** (path, calculated, `exists` flag, structured, `@remote.filter.local` fields, filters through
+   associations above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
    per entity is logged as a warning.
 4. **Deep writes** are not transactional and do not delete children missing from the payload.
 5. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
 6. **Navigation paths** need a key on the first segment; a parameterized segment is not supported; more than 200 parents before the last hop is 501.
 7. **`$expand` over a restricted target** costs one read of the target per expand (up to 50 parents one read by key each, then one filter read per batch) instead of one backend `$expand`.
+8. **`exists` flags** are computed for at most 5000 rows per read (502 above, see Association flags).
+9. **Reads of every row in pages** are not one snapshot: rows written between two page requests can be missed or read
+   twice, as can rows whose declared key is not unique. Only answers longer than one page are paged.
+10. **An explicit `$orderby` on a path or calculated element** sorts only the page when the entity has more than 5000
+    rows (logged).
 
 ---
 
@@ -959,5 +1112,39 @@ Pinned by the package's regression tests:
 [↑ Table of Contents](#-table-of-contents)
 
 This package is provided under the terms of the **SAP-Code-World** [Usage License Agreement](LICENSE).
+<!--
+### Licence token
 
+Using `@cap-ts/remote-service-adapter` in production needs a licence token from SAP-Code-World. The token is a signed text string. The
+package checks it when the first `RemoteApplicationService` is initialised (server start), offline: no call home, no network access.
+
+Set it as `cds.capts.license`. One setting serves every `@cap-ts` package. Keep it out of source control, like any
+other credential:
+
+| Where | How |
+| --- | --- |
+| Environment variable (Cloud Foundry, Kyma, local shell) | `CDS_CAPTS_LICENSE=<token>`, for example `cf set-env <app> CDS_CAPTS_LICENSE <token>` or an `mta.yaml` `properties` entry |
+| Kubernetes secret | mount it as `<CDS_CONFIG root>/capts/license` (see CAP's `CDS_CONFIG` directory mode) |
+| Local development | `.cdsrc-private.json`: `{ "capts": { "license": "<token>" } }` |
+
+A licence covers this package only, selected `@cap-ts` packages, or every `@cap-ts` package. Several tokens (for
+example one per package) go into the same setting, separated by spaces or commas, or as a JSON array; the best one for
+each package is used.
+
+What happens:
+
+| Licence state | Production | Not production |
+| --- | --- | --- |
+| Valid | `info` log: licensee, expiry date, licence ID | same |
+| Expires within 30 days | `warn` log | same |
+| Expired, inside the grace period (30 days unless your licence says otherwise) | `error` log; reads keep working | same |
+| Expired after the grace period, invalid, not granted for this package, or not set | the application does not start: error `CAPTS_LICENSE_EXPIRED`, `CAPTS_LICENSE_INVALID` or `CAPTS_LICENSE_MISSING` with the reason | `warn` log; the package runs in evaluation mode |
+
+- **Production** means the cds profile `production` (`NODE_ENV=production`, which the Cloud Foundry Node.js buildpack
+  sets) or running on Cloud Foundry.
+- The check runs when a `@remote` service (or your subclass of `RemoteApplicationService`) is served. `cds build` and
+  `cds compile` never run it.
+- A licence can be bound to Cloud Foundry org or space GUIDs. It is then only valid in those orgs or spaces.
+- A running application is never stopped. Renewing means setting the new token and restarting the app.
+-->
 © 2025 **SAP-Code-World**. All rights reserved.
