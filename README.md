@@ -74,7 +74,7 @@ The package registers itself as a CAP plugin (`cds-plugin.js`): no `require()` i
 | Peer | Version | Notes |
 | --- | --- | --- |
 | `@sap/cds` | `^9.9.1 \|\| ^10` | CAP runtime. Node.js >= 20 (cds 10 needs >= 22). |
-| `@cap-ts/soap-adapter` | `^0.2.0 \|\| ^0.3.0-beta.0` | Used at runtime only for services of `kind: 'soap'`; a required peer because the SOAP dispatch imports it. |
+| `@cap-ts/soap-adapter` | `^0.3.0` | Used at runtime only for services of `kind: 'soap'`; a required peer because the SOAP dispatch imports it. |
 | `@sap-cloud-sdk/connectivity`, `@sap-cloud-sdk/http-client` | `^4.7.0` | Destination lookup and HTTP for `@cap-ts/soap-adapter`. |
 | `@cap-js/cds-types` | `>=0.18.0`, optional | TypeScript types for `@sap/cds`. |
 
