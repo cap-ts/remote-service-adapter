@@ -431,7 +431,9 @@ service OrderOverview {
   that filters on it) is counted first, so it fails in about one request; with `$search` the rows the search leaves
   are checked. A filter `Flag = true` is answered by a semi-join instead (Filters through associations), so a projection
   `where HasActiveItems = true` over tens of thousands of orders works when the association's target is small enough for
-  `cds.query.remote.semiJoin.maxRows` (with the key set cache, every later request answers from memory).
+  `cds.query.remote.semiJoin.maxRows` (with the key set cache, every later request answers from memory). The flag of
+  the rows such a filter leaves is `true` without reading the association again, and the 5000-row limit does not apply
+  to it.
 - A `$expand` of the same association keeps its own `$select`, `$filter` and `$top`.
 - The association may also be one of the source only, when the projection lists its columns and leaves it out
   (`entity ActiveOrders as projection on OrderService.Orders { key ID, case when exists _Items then true else false end as HasActiveItems : Boolean }`).
@@ -536,10 +538,15 @@ service answers them with **semi-joins**, hop by hop:
    level by level.
 2. The main entity is filtered by the keys found:
    - at most 200 key values: pushed as `CustomerID in (...)` (backend `$top` and `$count` stay correct);
-   - more: the same filter in memory (the main entity is read without any expand);
+   - more (up to 5000): the same filter in memory; the main entity is read with one request per 200 keys (sent up
+     to `pagesInParallel` at a time) when that takes fewer requests than reading all of its rows (one count request
+     decides), else in full without any expand;
    - no key: an empty answer, the main entity is not read.
 3. The target is read in pages ordered by its key, up to `pagesInParallel` at a time, for at most 5000 rows
-   (`cds.query.remote.semiJoin.maxRows` raises it). Above that, or when the target's `$count` does not prove the key list
+   (`cds.query.remote.semiJoin.maxRows` raises it). A page has 1000 rows (`cds.query.remote.semiJoin.pageSize`: the
+   read selects only the join keys, so a backend that allows larger pages needs fewer requests). A target served by
+   this application gets at most its own page limit (`@cds.query.limit.max`, else `cds.query.limit.max`, else 1000):
+   CAP answers no more per read, and larger pages would be read one after the other). Above that, or when the target's `$count` does not prove the key list
    complete, the filter is evaluated in memory on hidden expands of the associations (correct, slower).
 4. When the target has more than one page of rows and the rest of the filter leaves at most 5000 rows of the main
    entity, the filter is evaluated on those rows if that takes fewer requests (their pages plus one association read
@@ -619,7 +626,8 @@ to live). All are off until you switch them on; nothing changes for an entity yo
 service) keeps the key set a filter through an association reads (Filters through associations), per target, filter and
 tenant (and user with `perUser`). Every filter that needs the same key set then answers from memory, whatever else it
 filters on. With it on, the key set is always read (to be reused) instead of the in-memory evaluation of a narrow request:
-the first request after the time to live pays the full read. Writes through the adapter to the target drop it.
+the first request after the time to live pays the full read, unless `staleWhileRevalidate` is set (below). Writes
+through the adapter to the target drop it.
 
 **Aggregates.** `cds.query.remote.cache.aggregates: true` caches GROUP BY / DISTINCT entities (a single entity can opt out
 with `@remote.cache: false`, or opt in with `@remote.cache: true`). The whole group set of a filter is read once;
@@ -652,6 +660,12 @@ generically"; the plugin logs a warning). Write `@remote` and `@remote.cache: tr
 
 **Time to live** (seconds, default 300): `@remote.cache.ttl` on the entity, else on the service, else
 `cds.query.remote.cache.ttl`, else 300.
+
+**Stale while revalidate** (`cds.query.remote.cache.staleWhileRevalidate: <seconds>`, default off): an entry past its
+time to live is still answered for that many seconds, and one read in the background refreshes it. A request then never
+waits for an expensive read (a large key set, an aggregate over every row) once the entry exists; only the very first
+request, or one after the stale time too, reads the backend. A write through the adapter still drops the entry at once.
+A refresh that fails is logged on `cds.log('remote')` and the old entry is answered until its stale time ends.
 
 **Always:** every answer is a copy; an error or an empty answer is not kept; identical reads that arrive while one is
 running wait for it (one backend read); a write, an action or a function through the adapter drops what is cached from the
@@ -898,11 +912,12 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
         "paging": true,
         "capClientLog": false,
         "search": { "maxRows": 5000 },
-        "semiJoin": { "maxRows": 5000 },
+        "semiJoin": { "maxRows": 5000, "pageSize": 1000 },
         "cache": {
           "aggregates": false,
           "semiJoins": false,
           "ttl": 300,
+          "staleWhileRevalidate": 0,
           "perUser": false,
           "maxEntries": 500,
           "maxRows": 100000
@@ -926,7 +941,9 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
 | `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
 | `cds.query.remote.cache.semiJoins: true` | Cache the key sets of filters through associations (default off), see [Caching](#caching). |
 | `cds.query.remote.semiJoin.maxRows: <n>` | Most target rows a filter through an association reads for its keys (default 5000), see [Filters through associations](#-filters-through-associations). |
+| `cds.query.remote.semiJoin.pageSize: <n>` | Rows per page when a filter through an association reads its target's keys (default 1000; a target served by this application: at most its `@cds.query.limit.max` / `cds.query.limit.max`). |
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
+| `cds.query.remote.cache.staleWhileRevalidate: <seconds>` | An expired entry is still answered this long while a background read refreshes it (default 0: off), see [Caching](#caching). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
 | `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
 | `@cds.query.limit.max` / `cds.query.limit.max` | Page size for reads of every source row. |
