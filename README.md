@@ -384,6 +384,42 @@ entity OpenOrders as projection on RemoteOrders.Orders {
 filtered segments are 501 when requested in `$select`, `$filter` or `$orderby` (left out otherwise). `$orderby` on a
 path sorts by the resolved value.
 
+### Columns of a handler's query
+
+A handler that reads through the service (`this.run(SELECT ...)`) can name path columns, aliases and expressions,
+as with any CAP service:
+
+```js
+const row = await this.run(SELECT.one(Orders).columns(
+    'Amount as Total', 'Customer.Name', 'Customer.City as Town', { func: 'upper', args: [{ ref: ['Customer', 'Name'] }], as: 'Loud' }
+).where(key));
+// { Total: 10, Customer_Name: 'Acme', Town: 'Berlin', Loud: 'ACME' }
+```
+
+The source is read with plain columns: the elements these columns read, and an `$expand` of every association a path
+goes along (for every source kind: database, CAP-served, OData, SOAP, and JOIN views). The answer has them under CAP's
+names: the alias, else the path joined by `_`; `null` when the association has no target. Expressions are computed in
+memory after the read: literals, elements, to-one paths, `||`, `+ - * /` (a null operand gives null), CASE and the
+functions evaluated in memory (`upper`, `lower`, `concat`, `substring`, `left`, `right`, `length`, `trim`, `replace`,
+`coalesce`, `round`, `floor`, `ceiling`, `abs`, `year`, `month`, `day`, `contains`, `startswith`, `endswith`, ...).
+
+| Column form (query) | Database / CAP-served source | Remote OData / SOAP source |
+| --- | --- | --- |
+| Element `Field` | Supported | Supported |
+| `*` | Supported | Supported |
+| Path along to-one associations `Assoc.Field`, `A.B.Field` | Supported, as `Assoc_Field` | Supported, as `Assoc_Field` |
+| Path with an alias `Assoc.Field as X` | Supported, as `X` | Supported, as `X` |
+| Alias on an own element `Field as X` | Supported, as `X` | Supported, as `X` |
+| `expand`: `{ ref: ['Assoc'], expand: [...] }`, with or without alias | Supported, nested object / array | Supported, nested object / array |
+| Expression with alias: `upper(Field) as X`, `A * B as X`, `A || '-' || B as X`, CASE, `1 as One`, paths inside | Computed in memory | Computed in memory |
+| Aggregates (`count`, `sum`, `avg`, `min`, `max`) | Handled by GROUP BY (see DISTINCT and GROUP BY) | Same |
+| Path over a to-many association, with an infix filter, ending on an association or structure | **501** naming the column | **501** naming the column |
+| `inline`: `Assoc.{ Field }` | **501** (name each path instead) | **501** (name each path instead) |
+| Expression without alias; a function or operator not listed above (comparison outside a CASE, `exists`, a sub-select); an expression as a function argument; `$user` / `$now` | **501** naming the column | **501** naming the column |
+
+Path columns of the query are 501 on DISTINCT / GROUP BY projections (aliases and expressions are computed on the
+aggregated rows).
+
 ### Calculated columns
 
 Computed in memory on the source values: a CASE expression (simple or searched; conditions with comparisons, `and` /
@@ -998,6 +1034,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Empty result | `[]`; with `$count`, `$count = 0` |
 | WHERE with a false literal comparison | `[]`, no backend call |
 | Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
+| Query column that can not be read (a path that is not to-one, `inline`, an expression without alias or with a function / operator not computed here) | **501** naming the column, before any backend call |
 | Calculated column over a to-many path, or an `exists` flag that cannot be computed, requested | **501** before any backend call |
 | Projection `where` that can be neither pushed nor evaluated; JOIN view with a `where` | **501** |
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
