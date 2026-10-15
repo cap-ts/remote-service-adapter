@@ -517,7 +517,14 @@ A term with `&` must be quoted: CAP's OData parser ends an unquoted `$search` at
 
 A sound `contains(field, word)` filter is pushed where possible (including key lists of matching associated rows);
 the local match always has the final say. Without any push the read is bounded at 5000 rows; more is a 502 asking for
-a `$filter`.
+a `$filter` that names why nothing was pushed, for example `$search could not be pushed to the backend (the term can not
+be restricted: calculated column 'Label') and '<Entity>' has more than 5000 rows`.
+
+When the pushed filter is the search itself, the page goes to the backend as well: every searched column is a plain
+column, the term has no `NOT` and no word with `*`, `+` or `%`, and the filter is one query (no list of associated
+keys split over several). Then `$top`, `$skip`, `$count` and `$orderby` are sent with it and only the page is read, so a
+value help's type-ahead with a broad term reads ten rows, not every match. A backend that answers fewer rows than asked
+(server paging) is asked again for the rest. Otherwise every match is read, then matched, counted, sorted and paged here.
 
 `*`, `+` and `%` are plain characters, as in CAP (no wildcards): `cc*` matches values that contain `cc*`. They are
 never sent to the backend (SAP Gateway and S/4 OData V4 reject them in `contains`): the longest piece between them is
@@ -526,14 +533,23 @@ that answers a fixed page size without `$top` (S/4 OData V4: 100) does not cut t
 and matches literally, one touching a word is ignored (`(Acme` = `Acme`). A lone `"` and `&` are rejected by CAP's
 OData parser (400) before the adapter is called.
 
-When the entity projects on an entity of another service of this package (a layered model) and every searched column of the entity
+When the entity projects on an entity of another service of this package (a layered model) and every SEARCHED column of the entity
 is a plain column, the search is handed to that service instead of being turned into a filter over its columns: the lower service
 knows which of its columns are path or calculated columns and plans the push-down (and the key pre-queries) itself, so a search
-through several layers reads what a search on the lowest layer reads. The upper layer matches the returned rows again. An entity
-with path or calculated columns of its own (columns the lower entity does not have, for example a path over an association of the
-lower entity) is not handed off: its push-down is planned in its own layer, over the lower entity's associations, and sent to the
-lower service as a plain filter. A term that matches more than 2000 associated rows cannot be turned into a key list; the search
-then falls back to the bounded local match (see above), so narrow broad terms with `@cds.search` (leave out coded columns) or `$filter`.
+through several layers reads what a search on the lowest layer reads. Columns that are not searched do not matter: an `exists`
+flag or another calculated column of the upper entity is computed for the rows the lower service returns. The upper layer does not
+bound its read (the lower layer pushes the search or bounds its own read) and matches the returned rows again. When both search the
+same columns (`@cds.search`) with the same case rule, the lower answer is exact and the page, count and sort are sent down with
+the search (see above).
+
+Only a searched path or calculated column of the entity's own (a column the lower entity does not have, for example a path over an
+association of the lower entity) stops the hand-off: its push-down is planned in its own layer, over the lower entity's
+associations, and sent to the lower service as a plain filter. A term that matches more than 2000 associated rows cannot be turned
+into a key list; the search then falls back to the bounded local match (see above).
+
+For a value help over layered entities: keep the searched columns plain (`@cds.search: { ID, Name, ... }` on columns the lowest
+entity has, leave out coded and calculated columns). Flags and other calculated columns may stay in the entity; they are not
+searched and do not slow the search down.
 
 ### DISTINCT and GROUP BY
 
