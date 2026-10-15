@@ -257,13 +257,31 @@ filter on a projection that cannot be pushed.
 ### JOIN views
 
 ```cds
-entity OrderLines as select from RemoteOrders.Orders as o join RemoteOrders.Items as i on i.OrderID = o.ID {
-    key i.ID, o.Title, i.Quantity
-};
+entity OrderLines as select from RemoteOrders.Orders as o
+    join RemoteOrders.Items as i on i.OrderID = o.ID and i.Status = 'Active'
+    left join RemoteCustomers.Customers as c on c.ID = o.Customer {
+        key i.ID, o.Title, i.Quantity, c.Name as CustomerName, i.Quantity * i.Price as Total : Decimal(15, 2)
+} where o.Kind = 'STD';
 ```
 
-The first source is read, the joined sources are fetched by key in batches and merged. A JOIN view with its own `where`
-is 501; JOIN views are not writable. See [Known limitations](#️-known-limitations).
+Sources of any kind (remote OData, SOAP, CAP-served, the database), `inner` and `left` joins, any number of them:
+
+- The terms of the request's `$filter` (and of the view's own `where`) that read plain columns of one source are pushed
+  to that source (not to the right side of a left join, not `!=` / `not`, not when the filter has a top-level `or`), as
+  are the constants an ON condition sets for the source it joins (`i.Status = 'Active'`).
+- The inner joins before the first left join start at their most restricted source (the key of a read by key first,
+  then the request's filter, the view's `where`, ON constants): `OrderLines('I1')` reads the item `I1` first, then its
+  order by the join key. From the first left join on, the sources are read in the order of the FROM. Every next
+  source is read by the join keys of the rows found so far (`in` lists of 200 values).
+- Each source contributes at most `cds.query.remote.join.maxRows` rows (default 5000, read in pages of its
+  `@cds.query.limit.max`); more is a 502 asking for a `$filter`.
+- The rows are joined here (inner: every ON condition holds, constants included; left: a row without partner keeps its
+  columns `null`), then the view's columns (plain columns and expressions), its `where`, the request's `$filter`,
+  `$search`, `$orderby`, `$count`, paging, `$expand` and `$select` apply. A read by key without row is 404.
+- 501: `right` / `full` / `cross` joins, a source joined without an equality to the others, a column or a filter that
+  goes through an association, `exists` or a sub-select in a `where`. JOIN views are not writable.
+- An application with a database compiles every view to SQL: annotate a JOIN view `@cds.persistence.skip` when it joins
+  a remote entity with one that has a table (an entity of the database, or of a SOAP service, which CAP deploys).
 
 ---
 
@@ -487,8 +505,15 @@ push-down on structured fields run in memory. Writes send `{ Address: { City } }
 OData V4 syntax: words ANDed, `OR`, `NOT`, parentheses, `"phrases"`. Searched: string elements (keys included), to-one
 path strings and calculated string columns; not LargeString, UUID, virtual, to-many paths, `String(n)` with n > 500.
 Tune with `@cds.search`. The case rule follows the backend the data comes from (`cds.requires.<service>.kind`):
-`odata-v2` case-sensitive, `odata` / `odata-v4` and local case-insensitive (`tolower`), `soap` not supported (the term
-is ignored). A backend that rejects `tolower` is remembered and searched case-sensitively.
+`odata-v2` case-sensitive, `odata` / `odata-v4` and local case-insensitive (`tolower`), `soap` matched here only
+(every row is read, case-insensitive, nothing is pushed). A backend that rejects `tolower` (S/4:
+`Filter function 'TOLOWER' not supported`) is remembered and searched case-sensitively: the first request is asked
+again without it, and one line is logged per service and process, `[remote] - <Service> does not support the filter
+function tolower: $search on it is case-sensitive from now on` (CAP's own warning with the backend's error is not
+logged for it).
+
+A term with `&` must be quoted: CAP's OData parser ends an unquoted `$search` at `&`, also when it is sent as `%26`
+(`$search=A%26B` searches for `A`). Send `$search="A%26B"` (`%22A%26B%22`).
 
 A sound `contains(field, word)` filter is pushed where possible (including key lists of matching associated rows);
 the local match always has the final say. Without any push the read is bounded at 5000 rows; more is a 502 asking for
@@ -924,7 +949,9 @@ service Catalog {
 
 Annotate the external model as `@cap-ts/soap-adapter` documents. Reads go through `soap.read` (a fresh request per
 call, forbidden headers stripped), results are de-duplicated by the entity's keys, filter functions run in memory,
-`$search` is ignored (all rows come back, the local match decides). SOAP sources are not writable, and a filter on
+`$search` matches every row here, case-insensitively (nothing is sent to the SOAP service). An association declared on
+the SOAP entity (`extend <Soap>.Entity with { _X : Association to ... }`) works for `$expand`, path columns and filters
+through it. SOAP sources are not writable, and a filter on
 the key is not turned into a read by key (the SOAP operation gets its parameters from the URL key or a flat `and` of
 equalities).
 
@@ -949,6 +976,7 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
         "capClientLog": false,
         "search": { "maxRows": 5000 },
         "semiJoin": { "maxRows": 5000, "pageSize": 1000 },
+        "join": { "maxRows": 5000 },
         "cache": {
           "aggregates": false,
           "semiJoins": false,
@@ -970,13 +998,14 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
 | `cds.requires.<Service>.kind` | `odata`, `odata-v2`, `odata-v4`, `soap`: `$search` case rule, SOAP dispatch. |
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
-| `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines (dropped by default, see below). |
+| `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines and its warning for a filter function the adapter handles (dropped by default, see below). |
 | `cds.query.remote.paging: false` | Every read of all rows of a remote source that is not an aggregation is one request (see `@remote.paging`). Default `true`. |
 | `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, a filter evaluated in memory, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
 | `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
 | `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
 | `cds.query.remote.cache.semiJoins: true` | Cache the key sets of filters through associations (default off), see [Caching](#caching). |
 | `cds.query.remote.semiJoin.maxRows: <n>` | Most target rows a filter through an association reads for its keys (default 5000), see [Filters through associations](#-filters-through-associations). |
+| `cds.query.remote.join.maxRows: <n>` | Most rows one source of a JOIN view contributes to a read (default 5000); more is a 502 naming `$filter`. See [JOIN views](#join-views). |
 | `cds.query.remote.semiJoin.pageSize: <n>` | Rows per page when a filter through an association reads its target's keys (default 1000; a target served by this application: at most its `@cds.query.limit.max` / `cds.query.limit.max`). |
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
 | `cds.query.remote.cache.staleWhileRevalidate: <seconds>` | An expired entry is still answered this long while a background read refreshes it (default 0: off), see [Caching](#caching). |
@@ -994,7 +1023,8 @@ is logged on `cds.log('remote')`:
 
 Both contain filter values. They are quiet by default (the plugin sets the level to `warn`); show them with `cds.log.levels.remote: 'info'` or `CDS_LOG_LEVELS_REMOTE=info`. CAP's
 own remote-client lines on that channel (the request with headers, "Executing via @sap-cloud-sdk/http-client.") are
-dropped, so debug shows exactly these two lines; `cds.query.remote.capClientLog: true` keeps them.
+dropped, so debug shows exactly these two lines; so is CAP's warning (with the error and its stack) when a backend rejects
+`tolower` in a `$search` filter, which the adapter handles (see `$search`). `cds.query.remote.capClientLog: true` keeps them.
 
 ### Tracing (environment variables, read once at start)
 
@@ -1036,7 +1066,9 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
 | Query column that can not be read (a path that is not to-one, `inline`, an expression without alias or with a function / operator not computed here) | **501** naming the column, before any backend call |
 | Calculated column over a to-many path, or an `exists` flag that cannot be computed, requested | **501** before any backend call |
-| Projection `where` that can be neither pushed nor evaluated; JOIN view with a `where` | **501** |
+| Projection `where` that can be neither pushed nor evaluated | **501** |
+| JOIN view: a `right` / `full` / `cross` join, a source without an equality to the others, a column or a filter through an association, `exists` / a sub-select in a `where` | **501** |
+| JOIN view: a source with more rows for the request than `cds.query.remote.join.maxRows` | **502** naming `$filter` |
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
 | `$search` that matched more rows than `maxRows` (opt-in limit) of an entity with association-path columns | **502** naming `$filter`, before any path is read (the paths of every matched row would have to be read before the page is cut) |
 | Paged read ends short of the backend's total | **502** (no partial aggregates) |
@@ -1065,6 +1097,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
 | `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests, sent up to `pagesInParallel` at a time. The association paths of every matched row are read before the page is cut: keep `$search` / `$filter` narrow, or set `search.maxRows` to refuse a search that is too broad. |
 | `$search` without push-down | Bounded at 5000 rows; add a `$filter`. |
+| JOIN views | Each source contributes every row the pushed terms leave (at most `join.maxRows`) and is joined here; filter on plain columns (pushed), read by key (starts at the key's source). |
 | DISTINCT / GROUP BY | Every source row, in pages (the first page with the count, the rest up to `pagesInParallel` at a time); prefer count requests (filter fixing every group column). A page that takes longer than the destination's `requestTimeout` (CAP, default 60000 ms) fails the read: lower the page size.  `$top` / `$skip` / `$orderby` apply to the groups after the aggregation (without `$top`, CAP's default page of groups: set `@cds.query.limit` on an aggregate with more groups); `$count` is the number of groups. |
 | Many reads of the same stable data | Opt-in caches: `cds.query.remote.cache.aggregates` for GROUP BY / DISTINCT, `@remote.cache` for reads by key (see Caching). |
 | `$expand` over a restricted target | Read through the target's service (one read per parent up to 50, then one filter read per batch): correct rows, more requests than a backend `$expand`. |
@@ -1134,21 +1167,20 @@ grace period is over. Contact SAP-Code-World for a new token. See [Licence](#lic
 
 Pinned by the package's regression tests:
 
-1. **JOIN views** with more than two sources can pick the wrong primary source (an internal flattening defect); simple
-   two-way joins work in practice.
-2. **An `$expand`'s `$top`** applies to the whole batch of parents, not per parent.
-3. **In-memory filters** (path, calculated, `exists` flag, structured, `@remote.filter.local` fields, filters through
+1. **JOIN views** are joined in memory: each source contributes the rows the pushed terms leave, at most
+   `cds.query.remote.join.maxRows` (502 above). `right` / `full` / `cross` joins and paths through associations are 501.
+2. **In-memory filters** (path, calculated, `exists` flag, structured, `@remote.filter.local` fields, filters through
    associations above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
    per entity is logged as a warning.
-4. **Deep writes** are not transactional and do not delete children missing from the payload.
-5. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
-6. **Navigation paths** need a key on the first segment; a parameterized segment is not supported; more than 200 parents before the last hop is 501.
-7. **`$expand` over a restricted target** costs one read of the target per expand (up to 50 parents one read by key each, then one filter read per batch) instead of one backend `$expand`.
-8. **`exists` flags** are computed for at most 5000 rows per read (502 above, see Association flags).
-9. **Reads of every row in pages** are not one snapshot: rows written between two page requests can be missed or read
+3. **Deep writes** are not transactional and do not delete children missing from the payload.
+4. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
+5. **Navigation paths** need a key on the first segment; a parameterized segment is not supported; more than 200 parents before the last hop is 501.
+6. **`$expand` over a restricted target** costs one read of the target per expand (up to 50 parents one read by key each, then one filter read per batch) instead of one backend `$expand`.
+7. **`exists` flags** are computed for at most 5000 rows per read (502 above, see Association flags).
+8. **Reads of every row in pages** are not one snapshot: rows written between two page requests can be missed or read
    twice, as can rows whose declared key is not unique. Only answers longer than one page are paged.
-10. **An explicit `$orderby` on a path or calculated element** sorts only the page when the entity has more than 5000
-    rows (logged).
+9. **An explicit `$orderby` on a path or calculated element** sorts only the page when the entity has more than 5000
+   rows (logged).
 
 ---
 
