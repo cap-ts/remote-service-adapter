@@ -185,6 +185,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#caching) |
+| `@remote.warmUp`, `@remote.warmUp: { where, every, limit, enabled }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. | [Warm-up](#warm-up-remotewarmup) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
 | `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
 | `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
@@ -755,6 +756,55 @@ response needed several lookups (the age is the oldest hit). Without a cached en
 live, also after a write that went through another instance); the data is as current as the last read. Set
 `cds.query.remote.cache.perUser: true` when the backend answers differently per user.
 
+### Warm-up (`@remote.warmUp`)
+
+A cache helps from the second request on. `@remote.warmUp` makes the first one fast too: the entity is read when the
+server starts, and again just before the caches that read filled expire, so users find them filled (a semi-join's key
+set, an aggregate over every row).
+
+```cds
+// read once at start, then again before the filled caches expire
+@remote.warmUp
+entity ActiveCustomers as projection on ...;
+
+// one read per filter the UI sends: each fills its own cache entry
+@remote.warmUp: [
+    { where: (HasOpenOrders = true) },
+    { where: 'Country = ''DE''', every: 1800, limit: 10 }
+]
+entity Customers as projection on ...;
+```
+
+| Property | Meaning | Default |
+| --- | --- | --- |
+| `where` | Filter of the read: a CDS expression `(...)` (checked by the compiler) or a string in CDS expression syntax (parsed when the server starts; a string that does not parse is logged as an error and that read left out). | none |
+| `every` | Seconds between the end of one read and the next. | 90 % of the shortest time to live of the caches the read went through, less the time the read took. A read that went through no cache runs once (logged). |
+| `limit` | Rows read. A key set or an aggregate is cached whole, whatever the page. | 1 |
+| `enabled` | `false` switches the record (or `@remote.warmUp.enabled: false` the entity) off, e.g. in a profile. | `true` |
+
+How it reads:
+
+- Through the entity's own service, as the privileged user, with every cache lookup of the read a miss: the caches are
+  read and stored again, also while their entries are still fresh. Once per tenant of `cds.query.remote.warmUp.tenants`.
+- A cache entry is found only for the same effective query. The privileged user gets no `@restrict ... where` filter, so
+  annotate the layer whose users get no user-dependent filter (the data layer, not the app service above it).
+- CDS copies the annotation to every projection above the entity. Only the lowest entity of a projection chain with an
+  enabled warm-up is read; a projection above it would fill the same caches. An expression that names an element a
+  projection above does not have stops the compiler ("Assign a value for @remote.warmUp.where"): write the `where` as a
+  string then.
+- A failed read is logged as a warning and tried again after `every`, else after 300 seconds. Nothing is warmed with
+  `cds.query.remote.cache.perUser` (no user would find the privileged user's entries). An annotation on an entity that
+  no `RemoteApplicationService` serves is ignored with a warning.
+
+When it runs (`cds.query.remote.warmUp`):
+
+- `enabled`: default on in Cloud Foundry (`VCAP_APPLICATION`) or with the `production` profile, off in tests and local runs.
+- Startup: the warm-up starts when the services are served. By default the server does not wait for it; a request
+  that arrives during a warm-up read waits for that read instead of starting its own. With `await: true` (45 seconds)
+  or `await: <seconds>` the server listens only after the first reads are done or that time is over (the reads go on in
+  the background). Keep it below the platform's start-up health check timeout (Cloud Foundry: 60 seconds by default).
+- `concurrency`: reads at the same time at start (default 1). Every instance warms its own caches (they are per process).
+
 ---
 
 ## ✏️ Writing data
@@ -1001,6 +1051,11 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
           "perUser": false,
           "maxEntries": 500,
           "maxRows": 100000
+        },
+        "warmUp": {
+          "await": false,
+          "concurrency": 1,
+          "tenants": []
         }
       }
     }
@@ -1027,6 +1082,9 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
 | `cds.query.remote.cache.staleWhileRevalidate: <seconds>` | An expired entry is still answered this long while a background read refreshes it (default 0: off), see [Caching](#caching). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
 | `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
+| `cds.query.remote.warmUp.enabled` | Run the `@remote.warmUp` reads (default: in Cloud Foundry or with the `production` profile), see [Warm-up](#warm-up-remotewarmup). |
+| `cds.query.remote.warmUp.await: true` / `<seconds>` | The server listens only after the first warm-up reads, at most 45 seconds / that long (default: it does not wait). |
+| `cds.query.remote.warmUp.concurrency` / `.tenants` | Warm-up reads at the same time (default 1) / tenants to warm (default: the one without tenant). |
 | `@cds.query.limit.max` / `cds.query.limit.max` | Page size for reads of every source row. |
 
 ### `[remote]` query log
@@ -1116,6 +1174,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | JOIN views | Each source contributes every row the pushed terms leave (at most `join.maxRows`) and is joined here; filter on plain columns (pushed), read by key (starts at the key's source). |
 | DISTINCT / GROUP BY | Every source row, in pages (the first page with the count, the rest up to `pagesInParallel` at a time); prefer count requests (filter fixing every group column). A page that takes longer than the destination's `requestTimeout` (CAP, default 60000 ms) fails the read: lower the page size.  `$top` / `$skip` / `$orderby` apply to the groups after the aggregation (without `$top`, CAP's default page of groups: set `@cds.query.limit` on an aggregate with more groups); `$count` is the number of groups. |
 | Many reads of the same stable data | Opt-in caches: `cds.query.remote.cache.aggregates` for GROUP BY / DISTINCT, `@remote.cache` for reads by key (see Caching). |
+| A slow first read of a cached entity | `@remote.warmUp` reads it at start and renews the cache before it expires (see Warm-up). |
 | `$expand` over a restricted target | Read through the target's service (one read per parent up to 50, then one filter read per batch): correct rows, more requests than a backend `$expand`. |
 | Navigation paths | One read per segment. |
 | Fields the backend ignores in `$filter` | `@remote.filter.local`, only where the remaining set is small. |
@@ -1197,6 +1256,8 @@ Pinned by the package's regression tests:
    twice, as can rows whose declared key is not unique. Only answers longer than one page are paged.
 9. **An explicit `$orderby` on a path or calculated element** sorts only the page when the entity has more than 5000
    rows (logged).
+10. **`@remote.warmUp`** reads as the privileged user: entries of entities whose users get a `@restrict ... where` filter
+    are not found by them; a write through another instance does not trigger a new warm-up.
 
 ---
 
