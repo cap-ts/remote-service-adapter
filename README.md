@@ -184,7 +184,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
 | `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
-| `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#caching) |
+| `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#-caching) |
 | `@remote.warmUp`, `@remote.warmUp: { where, every, limit, enabled }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. | [Warm-up](#warm-up-remotewarmup) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
 | `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
@@ -281,8 +281,11 @@ Sources of any kind (remote OData, SOAP, CAP-served, the database), `inner` and 
   `$search`, `$orderby`, `$count`, paging, `$expand` and `$select` apply. A read by key without row is 404.
 - 501: `right` / `full` / `cross` joins, a source joined without an equality to the others, a column or a filter that
   goes through an association, `exists` or a sub-select in a `where`. JOIN views are not writable.
-- An application with a database compiles every view to SQL: annotate a JOIN view `@cds.persistence.skip` when it joins
-  a remote entity with one that has a table (an entity of the database, or of a SOAP service, which CAP deploys).
+- An application with a database compiles every view to SQL: annotate a JOIN view over a remote entity
+  `@cds.persistence.skip` and `@cds.persistence.mock: false`. CAP gives `@cds.persistence.skip` only to a view with a
+  plain `from` over a remote entity, not to a JOIN view. When `cds watch` (or `cds deploy --with-mocks`) mocks the remote
+  services, it removes every `@cds.persistence.skip` except where `@cds.persistence.mock: false` is set, so without it
+  the view is deployed and fails ("Invalid navigation ... having annotation @cds.persistence.skip").
 
 ---
 
@@ -1069,17 +1072,17 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
 | `cds.requires.<Service>.kind` | `odata`, `odata-v2`, `odata-v4`, `soap`: `$search` case rule, SOAP dispatch. |
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
-| `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines and its warning for a filter function the adapter handles (dropped by default, see below). |
+| `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines and its warnings for failed requests the adapter handles: a rejected filter function, the 404 / 400 of a read by key (dropped by default, see below). |
 | `cds.query.remote.paging: false` | Every read of all rows of a remote source that is not an aggregation is one request (see `@remote.paging`). Default `true`. |
 | `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, a filter evaluated in memory, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
 | `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
-| `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#caching). |
-| `cds.query.remote.cache.semiJoins: true` | Cache the key sets of filters through associations (default off), see [Caching](#caching). |
+| `cds.query.remote.cache.aggregates: true` | Cache the answers of every GROUP BY / DISTINCT entity (default off), see [Caching](#-caching). |
+| `cds.query.remote.cache.semiJoins: true` | Cache the key sets of filters through associations (default off), see [Caching](#-caching). |
 | `cds.query.remote.semiJoin.maxRows: <n>` | Most target rows a filter through an association reads for its keys (default 5000), see [Filters through associations](#-filters-through-associations). |
 | `cds.query.remote.join.maxRows: <n>` | Most rows one source of a JOIN view contributes to a read (default 5000); more is a 502 naming `$filter`. See [JOIN views](#join-views). |
 | `cds.query.remote.semiJoin.pageSize: <n>` | Rows per page when a filter through an association reads its target's keys (default 1000; a target served by this application: at most its `@cds.query.limit.max` / `cds.query.limit.max`). |
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
-| `cds.query.remote.cache.staleWhileRevalidate: <seconds>` | An expired entry is still answered this long while a background read refreshes it (default 0: off), see [Caching](#caching). |
+| `cds.query.remote.cache.staleWhileRevalidate: <seconds>` | An expired entry is still answered this long while a background read refreshes it (default 0: off), see [Caching](#-caching). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
 | `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
 | `cds.query.remote.warmUp.enabled` | Run the `@remote.warmUp` reads (default: in Cloud Foundry or with the `production` profile), see [Warm-up](#warm-up-remotewarmup). |
@@ -1097,8 +1100,10 @@ is logged on `cds.log('remote')`:
 
 Both contain filter values. They are quiet by default (the plugin sets the level to `warn`); show them with `cds.log.levels.remote: 'info'` or `CDS_LOG_LEVELS_REMOTE=info`. CAP's
 own remote-client lines on that channel (the request with headers, "Executing via @sap-cloud-sdk/http-client.") are
-dropped, so debug shows exactly these two lines; so is CAP's warning (with the error and its stack) when a backend rejects
-`tolower` in a `$search` filter, which the adapter handles (see `$search`). `cds.query.remote.capClientLog: true` keeps them.
+dropped, so debug shows exactly these two lines. So is CAP's warning (with the error and its stack) for a failed request the
+adapter handles: a backend that rejects `tolower` in a `$search` filter (see `$search`), and a read by key answered with
+404 (no such key: no row, or 404 to the client) or 400 (asked again as a filter). `cds.query.remote.capClientLog: true`
+keeps them.
 
 ### Tracing (environment variables, read once at start)
 
