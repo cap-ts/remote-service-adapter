@@ -185,7 +185,7 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#-caching) |
-| `@remote.warmUp`, `@remote.warmUp: { where, every, limit, enabled }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. | [Warm-up](#warm-up-remotewarmup) |
+| `@remote.warmUp`, `@remote.warmUp: { where, every, limit, enabled, search }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. `search: 'read'` / `'push'`: keep a copy of the rows for a case-insensitive `$search` on a backend without `tolower`. | [Warm-up](#warm-up-remotewarmup) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
 | `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
 | `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
@@ -376,7 +376,9 @@ entity OpenOrders as projection on RemoteOrders.Orders {
 - `$count` is always a number. It is the backend's count when nothing is filtered in memory, else the count after local
   processing. OData V2 sends its count as text; the service converts it.
 - A count only (`$top=0&$count=true`) is one `GET <Entity>/$count?$filter=...`: no rows move. Fallbacks: one row plus
-  the total, then reading in pages. A count never reads every row in one request.
+  the total, then reading in pages. A count never reads every row in one request. With a `$search` sent to the backend
+  as the search itself (see `$search`), one row and the backend's count of the matches are read; otherwise the matches
+  are read and counted here. The count only always agrees with the rows a read with a page returns.
 - When every source row is needed (GROUP BY, DISTINCT, association fetches of a stacked service), the source is read in
   pages of its `@cds.query.limit.max` (entity, then service, then `cds.query.limit.max`, CAP default 1000), ordered by
   the source key, until the backend's total is reached. A backend that caps its pages below that size just needs more
@@ -514,7 +516,8 @@ Tune with `@cds.search`. The case rule follows the backend the data comes from (
 `Filter function 'TOLOWER' not supported`) is remembered and searched case-sensitively: the first request is asked
 again without it, and one line is logged per service and process, `[remote] - <Service> does not support the filter
 function tolower: $search on it is case-sensitive from now on` (CAP's own warning with the backend's error is not
-logged for it).
+logged for it). For a case-insensitive search on such a backend, keep a search copy of the entity
+(`@remote.warmUp: { search: 'read' }`, see [Warm-up](#warm-up-remotewarmup)).
 
 A term with `&` must be quoted: CAP's OData parser ends an unquoted `$search` at `&`, also when it is sent as `%26`
 (`$search=A%26B` searches for `A`). Send `$search="A%26B"` (`%22A%26B%22`).
@@ -529,6 +532,10 @@ column, the term has no `NOT` and no word with `*`, `+` or `%`, and the filter i
 keys split over several). Then `$top`, `$skip`, `$count` and `$orderby` are sent with it and only the page is read, so a
 value help's type-ahead with a broad term reads ten rows, not every match. A backend that answers fewer rows than asked
 (server paging) is asked again for the rest. Otherwise every match is read, then matched, counted, sorted and paged here.
+The backend's rows and `$count` are the answer then, whatever case they match in: S/4 converts a filter value to upper
+case for a field whose values have no lower case (customer or order numbers), so on a backend without `tolower`
+`$search=c100` finds `C100` there, while other columns are still matched as typed. A row that does not contain the term
+in any case makes the service read the request again and match, count and page it here.
 
 `*`, `+` and `%` are plain characters, as in CAP (no wildcards): `cc*` matches values that contain `cc*`. They are
 never sent to the backend (SAP Gateway and S/4 OData V4 reject them in `contains`): the longest piece between them is
@@ -784,6 +791,7 @@ entity Customers as projection on ...;
 | `every` | Seconds between the end of one read and the next. | 90 % of the shortest time to live of the caches the read went through, less the time the read took. A read that went through no cache runs once (logged). |
 | `limit` | Rows read. A key set or an aggregate is cached whole, whatever the page. | 1 |
 | `enabled` | `false` switches the record (or `@remote.warmUp.enabled: false` the entity) off, e.g. in a profile. | `true` |
+| `search` | `'read'` (or `true`) / `'push'`: keep a copy of the rows for `$search` (see below). | none |
 
 How it reads:
 
@@ -798,6 +806,36 @@ How it reads:
 - A failed read is logged as a warning and tried again after `every`, else after 300 seconds. Nothing is warmed with
   `cds.query.remote.cache.perUser` (no user would find the privileged user's entries). An annotation on an entity that
   no `RemoteApplicationService` serves is ignored with a warning.
+
+Search copy (`search`). A backend that can not search ignoring case (OData V2, a service without `tolower` such as many
+S/4 OData V4 APIs) answers `$search` case-sensitively. With `search` the warm-up also reads every row of the record's
+`where` (all elements but associations and `exists` flags, in pages) and keeps them, and a `$search` on the entity, or
+on a projection above that hands the search down, is matched on that copy ignoring case. The request's WHERE (with
+CAP's `@restrict ... where`), the sort, the page and `$count` are applied to the copy; `exists` flags are computed for
+the page only.
+
+```cds
+@remote.warmUp: { every: 3000, search: 'read' }
+entity ActiveCustomers as projection on Customers { key Customer, Name, Country, case when exists _Orders then true else false end as HasOrders : Boolean };
+```
+
+| `search` | While no copy is held (before the first warm-up, after a write through the service, after it expired) |
+| --- | --- |
+| `'read'` | The first `$search` reads the copy (every row in pages, can take long on a large set), then matches it. |
+| `'push'` | `$search` goes to the backend as without the option (case-sensitive) until the warm-up filled the copy. |
+
+- The copy is used only when the request can be answered from it: its WHERE and `$orderby` name only elements of the
+  copy (no `exists`, no association path, no sub-select), its WHERE contains the record's `where` as an AND term
+  (a copy of `Country = 'DE'` answers only requests that filter `Country = 'DE'`), no `$expand`, no DISTINCT / GROUP BY,
+  and the `exists` flags join on elements of the copy. Otherwise the search goes to the backend.
+- A backend that searches ignoring case itself (OData V4 with `tolower`) is searched as before; a copy that is held
+  answers there too.
+- Cost: memory for every row of the copy per process and tenant, and one full read per warm-up run. The copy lives until
+  shortly after the next run (`every` + 10 %, else the cache's time to live), is dropped by a write through the adapter,
+  and is not kept above `cds.query.remote.cache.maxRows` rows (100000; logged). A copy that can not be read is logged
+  and the search goes to the backend. More than 5000 matches of an entity with an `exists` flag and no page are a 502.
+- The copy is read as the privileged user: rows a user may not see are removed by the request's `@restrict ... where`,
+  which must be evaluable on the copy (else the search goes to the backend).
 
 When it runs (`cds.query.remote.warmUp`):
 
