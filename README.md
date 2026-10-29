@@ -895,6 +895,15 @@ entity Entries as projection on Remote.Entries { key Company, key Rec, Note, @re
 the backend's row when it answers one. Invalid settings (another event in `asInsert`, an operation field that is not
 an element of the source, codes without a field) are a 500 naming the entity.
 
+Layered models: CDS copies these annotations to every projection above the entity. A layer whose source is served by
+another `@remote` service and carries the same settings does not apply them: it passes the plain CREATE / UPDATE /
+DELETE down, and the lowest layer converts it once. A layer with settings of its own (values its source does not have)
+applies them. `null` switches a setting off on an entity:
+
+```cds
+annotate ExtService.Entries with @remote.write.asInsert: null @remote.write.operation: null;
+```
+
 ### Write rules
 
 CAP checks `@assert` after the write, against the database, and rolls back on failure. A remote backend cannot roll
