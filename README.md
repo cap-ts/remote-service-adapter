@@ -831,7 +831,8 @@ entity ActiveCustomers as projection on Customers { key Customer, Name, Country,
 - A backend that searches ignoring case itself (OData V4 with `tolower`) is searched as before; a copy that is held
   answers there too.
 - Cost: memory for every row of the copy per process and tenant, and one full read per warm-up run. The copy lives until
-  shortly after the next run (`every` + 10 %, else the cache's time to live), is dropped by a write through the adapter,
+  shortly after the next run (`every` + 10 %, else the cache's time to live), is dropped by a write or an operation through
+  the adapter (an unbound operation drops every cache),
   and is not kept above `cds.query.remote.cache.maxRows` rows (100000; logged). A copy that can not be read is logged
   and the search goes to the backend. More than 5000 matches of an entity with an `exists` flag and no page are a 502.
 - The copy is read as the privileged user: rows a user may not see are removed by the request's `@restrict ... where`,
