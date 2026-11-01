@@ -49,6 +49,7 @@ business logic and no override seams: bespoke behavior goes into ordinary CAP ha
 🧩 [CAP plugin: the `@remote` annotation](#-cap-plugin-the-remote-annotation)\
 🧼 [SOAP backends](#-soap-backends)\
 🛠️ [Configuration and logging](#️-configuration-and-logging)\
+🤖 [AI agents and MCP](#-ai-agents-and-mcp)\
 🚦 [Errors and results](#-errors-and-results)\
 🚀 [Performance guide](#-performance-guide)\
 🔒 [Boundaries and security](#-boundaries-and-security)\
@@ -298,14 +299,27 @@ Sources of any kind (remote OData, SOAP, CAP-served, the database), `inner` and 
 The WHERE is split at its top-level `and`. Each term is pushed to the backend when it only reads plain mapped fields;
 otherwise it is evaluated in memory after the fetch. Evaluated in memory: virtual, calculated, path and unmapped
 fields, structured fields, fields with `@remote.filter.local`, and (for SOAP) any function. The in-memory evaluator
-understands `and` / `or` / `not`, comparisons, `[not] in`, `is [not] null`, `exists` (OData `any()`), and the functions
-`contains`, `startswith`, `endswith`, `indexof`, `tolower` / `toupper`, `length`, `trim`, `substring`, `concat`,
-`replace`, `left`, `right`, `coalesce` / `ifnull`, `round`, `floor`, `ceiling`, `abs`, `year`, `month`, `day`.
+understands `and` / `or` / `not`, comparisons, `[not] in`, `[not] like`, `[not] between`, `is [not] null`, `exists`
+(OData `any()`), and the functions `contains`, `startswith`, `endswith`, `indexof`, `tolower` / `toupper`, `length`,
+`trim`, `substring` (zero-based, a negative start counts from the end), `concat`, `replace`, `left`, `right`,
+`coalesce` / `ifnull`, `round`, `floor`, `ceiling`, `abs`, `year`, `month`, `day`.
+
+**Query semantics.** Every query answers what the database would answer for the same rows (CAP's semantics), whether
+it is computed here or by the backend: `=`, `<>`, `<`, `>`, `<=`, `>=`, `in`, `like` and `between` are unknown for a
+null value (also under `not`), `!=` / `==` are two-valued (CAP), `= null` is `is null`; a function of a null value is
+null (`concat` with a null argument too); `like` is case-sensitive; null sorts lowest (first ascending, last descending)
+unless `nulls first` / `nulls last` says otherwise. A remote OData service is two-valued, so a term it can not answer
+the same way is rewritten or kept in memory (table below). The package's CQL conformance suite checks this against a
+database for a remote, a CAP-served and a layered source.
 
 Pushed in a backend-friendly form:
 
 | Request term | Sent as |
 | --- | --- |
+| `F <> v` (to a remote OData service) | `F ne v and F ne null` (`ne` alone matched rows without a value) |
+| `F is null` / `F is not null` | `F eq null` / `F ne null` |
+| `F not in (a, b)` | `F ne a and F ne b and F ne null` |
+| `F like 'v%'` / `'%v'` / `'%v%'` / `'v'` | `startswith` / `endswith` / `contains` / `eq`; any other pattern, `not like`, `not between` and a `not` over a condition: in memory |
 | `Prefix = 'AB'` on `left(Field, 2) as Prefix` | `startswith(Field, 'AB')` |
 | `IsClosed = true` on `case when Status = 'X' then true else false end as IsClosed` | `Status = 'X'` (`false`: `Status != 'X'`) |
 | `Day >= 2026-09-28` on a `Date` element over a date-time source | `Day >= 2026-09-28T00:00:00Z` (only `>=` / `<=`; `=` becomes the day range) |
@@ -313,7 +327,7 @@ Pushed in a backend-friendly form:
 | A literal comparison that is false (`'1' = '2'`, written by CAP for a restriction whose `$user` attribute is missing) | Nothing: the answer is empty, the backend is not called |
 
 If the backend rejects the pushed filter (an error with `400` or `filter` in it, or an association path complaint),
-the read is repeated without the filter and the whole WHERE is applied in memory.
+the read is repeated without the filter, with the fields the WHERE reads, and the whole WHERE is applied in memory.
 
 A read whose filter is (partly) evaluated in memory needs every row the pushed part leaves: `$top` is not sent. Such a
 read, and every other read of a remote source without a limit (for example the read of a projection on another entity
@@ -401,6 +415,9 @@ entity OpenOrders as projection on RemoteOrders.Orders {
 - A managed to-one association is joined on its foreign key elements (`<assoc>_<key>`); an association from an EDMX
   model without ON condition joins on the key names it shares with its target.
 - A backend that rejects the expand query is asked again without columns, filter and order.
+- A query's expand in CQL's infix form (`_Orders[Status = 'O' order by Amount desc limit 1] { ID as OrderID }`) gets
+  its filter, order and limit per parent like OData's; each expanded row has exactly the expand's columns, aliases
+  included (keys read only to match the rows to their parents are not part of it). A `*` keeps every column.
 
 ### Path columns
 
@@ -436,7 +453,7 @@ functions evaluated in memory (`upper`, `lower`, `concat`, `substring`, `left`, 
 | Alias on an own element `Field as X` | Supported, as `X` | Supported, as `X` |
 | `expand`: `{ ref: ['Assoc'], expand: [...] }`, with or without alias | Supported, nested object / array | Supported, nested object / array |
 | Expression with alias: `upper(Field) as X`, `A * B as X`, `A || '-' || B as X`, CASE, `1 as One`, paths inside | Computed in memory | Computed in memory |
-| Aggregates (`count`, `sum`, `avg`, `min`, `max`) | Handled by GROUP BY (see DISTINCT and GROUP BY) | Same |
+| Aggregates (`count`, `count_distinct`, `sum`, `avg`, `min`, `max`), with or without `groupBy` / `having` | Computed in memory (see Aggregates of a query) | Same |
 | Path over a to-many association, with an infix filter, ending on an association or structure | **501** naming the column | **501** naming the column |
 | `inline`: `Assoc.{ Field }` | **501** (name each path instead) | **501** (name each path instead) |
 | Expression without alias; a function or operator not listed above (comparison outside a CASE, `exists`, a sub-select); an expression as a function argument; `$user` / `$now` | **501** naming the column | **501** naming the column |
@@ -564,7 +581,8 @@ searched and do not slow the search down.
 
 ### DISTINCT and GROUP BY
 
-Only when the entity itself declares `distinct` / `group by`. Computed in memory over every source row (read in pages):
+An entity that declares `distinct` / `group by` itself; for a query's own GROUP BY see Aggregates of a query below.
+Computed in memory over every source row (read in pages):
 `count`, `count_distinct`, `sum`, `avg`, `min`, `max`. When every aggregate is a row count and the `$filter` fixes
 every group column (`=` / `in`, at most 25 combinations), one `$count` request per combination replaces the read.
 
@@ -587,6 +605,30 @@ value is `null`, and a comparison with `null` is false. `between` is supported i
 apply (no `group by`, a field that is neither a group column nor inside an aggregate, `like`, a function it cannot evaluate here,
 `exists`, a sub-select) is answered with 501 instead of unfiltered groups. A `$filter` on an aggregate column of the request
 narrows the groups that remain; `$count` is the number of groups after the `having`.
+
+**Aggregates of a query.** A query with its own `groupBy`, aggregate columns or `having`, on any entity (a handler's
+`SELECT`, OData `$apply`, an AI agent's query through an MCP server such as `@cap-js/mcp`), is grouped and aggregated here.
+A query's `SELECT distinct a, b` is grouped the same way (`group by a, b`):
+
+```js
+await srv.run(SELECT.from('Orders').columns('Status', 'count(*) as N', 'sum(Amount) as Total')
+  .groupBy('Status').having('sum(Amount) > 100').orderBy('Total desc'))
+// GET /Orders?$apply=filter(Amount gt 0)/groupby((Status),aggregate(Amount with sum as Total))
+```
+
+The source is read once with the group columns and the aggregate arguments; the query's `where` and `$search` go to the
+backend as usual. Like SQL: without `groupBy` the answer is one row (also for no source rows: `count` 0, the other
+aggregates `null`), and every column that is not an aggregate must be a `groupBy` column. Group columns can be paths along
+to-one associations (`_Customer.Country`, answered as `_Customer_Country`). `having`, `orderBy` (an alias, a group column,
+an aggregate of the select list), `$top` / `$skip` and `$count` (the number of groups) apply to the groups. At most
+`cds.query.remote.aggregate.maxRows` source rows (default 5000) are read; more is a 502: narrow the filter, or declare a
+`group by` projection, which reads every row in pages. A row count without `groupBy` and `having` (`count(*)`, OData
+`$count`) is one count request, without that limit.
+
+Answered with 400: `*` or a column that is neither a group column nor an aggregate, two columns of one name. With 501,
+naming the column: an `expand`, any other expression, a `groupBy` that is not an element or a path, an aggregate of an
+expression or of more than one argument, `*` or a literal in an aggregate other than `count`, a `having` / `orderBy` term
+that is not evaluated here. Before, the query's `groupBy`, aggregates and `having` were left out and the plain rows answered.
 
 ---
 
@@ -1081,7 +1123,7 @@ equalities).
 Nothing has to be configured: the service is driven by `cds.requires.<Service>` and the annotations. Global runtime
 knobs live under `cds.env.query.remote` (the `cds.query.remote` key in `package.json` / `.cdsrc.json`, or an environment
 variable such as `CDS_QUERY_REMOTE_PAGESINPARALLEL=3`), next to CAP's own `cds.query.limit`. All are optional; the values
-shown are the defaults, except `search.maxRows`, which has none (5000 is an example):
+shown are the defaults, except `search.maxRows` and `budget`, which have none (the numbers are examples):
 
 ```json
 {
@@ -1091,6 +1133,10 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
         "pagesInParallel": 5,
         "paging": true,
         "capClientLog": false,
+        "budget": { "requests": 200, "rows": 50000, "seconds": 60 },
+        "maskBackendErrors": false,
+        "audit": false,
+        "agentHints": false,
         "search": { "maxRows": 5000 },
         "semiJoin": { "maxRows": 5000, "pageSize": 1000 },
         "join": { "maxRows": 5000 },
@@ -1121,6 +1167,11 @@ shown are the defaults, except `search.maxRows`, which has none (5000 is an exam
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
 | `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines and its warnings for failed requests the adapter handles: a rejected filter function, the 404 / 400 of a read by key (dropped by default, see below). |
+| `cds.query.remote.budget: { requests, rows, seconds }` | Opt-in budget of one incoming request, over every layer of `RemoteApplicationService` below it: requests sent to external systems, rows they answered, seconds since the request began. Going over is a **502** `REMOTE_BUDGET_EXCEEDED` naming the setting. Each limit is optional; default: none. See [AI agents and MCP](#-ai-agents-and-mcp). |
+| `cds.query.remote.maskBackendErrors: true` | The client gets `The backend system could not process the request (reference <id>)` with the backend's status instead of its text; the detail is logged under the reference. Default off. |
+| `cds.query.remote.audit: true` | One line per incoming request on `cds.log('remote-audit')` (info): event, entity, user, tenant, protocol, status, backend requests and rows, time; no filter values. Default off. |
+| `cds.query.remote.agentHints: true` | Adds hints for agents to the docs of the `@remote` services, their entities and elements (MCP `describe` and server description, OData `$metadata` `Core.Description`). Default off. See [AI agents and MCP](#-ai-agents-and-mcp). |
+| `cds.query.remote.aggregate.maxRows: <n>` | Source rows a query with its own GROUP BY / aggregates may read (default 5000; more is a 502). Not for `group by` entities, nor for a row count. See Aggregates of a query. |
 | `cds.query.remote.paging: false` | Every read of all rows of a remote source that is not an aggregation is one request (see `@remote.paging`). Default `true`. |
 | `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, a filter evaluated in memory, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
 | `cds.query.remote.search.maxRows: <n>` | Opt-in limit for every entity: a `$search` that matched more than `n` rows of an entity whose association paths must be resolved is refused with a 502 naming `$filter` (the paths of every matched row are read before the page is cut). Default: no limit. `@remote.search.maxRows` on an entity wins. |
@@ -1173,6 +1224,106 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 
 ---
 
+## 🤖 AI agents and MCP
+
+[↑ Table of Contents](#-table-of-contents)
+
+A `@remote` service is a regular CAP service. Served over the [Model Context Protocol](https://modelcontextprotocol.io)
+with SAP's plugin [`@cap-js/mcp`](https://cap.cloud.sap/docs/guides/protocols/mcp), an AI agent reads the same
+projections as an OData client: the same push-down to the backends, the same mapping, the same `@requires` /
+`@restrict` checks, and no tool code. This package has no dependency on any MCP package; the opt-in settings below
+work for every protocol (MCP, OData, REST, Joule, A2A).
+
+### Serving a service over MCP
+
+1. Add the plugin to the application, with an exact version: `npm install --save-exact @cap-js/mcp`.
+2. Name the protocols of the service. `@mcp` is a protocol annotation like `@odata`, and a service that names protocols
+   is served by those only, so name `@odata` too to keep the OData endpoint:
+
+   ```cds
+   annotate CatalogService with @odata @mcp @mcp.instructions: 'Order Status: O open, X closed, C cancelled. Call setCustomerStatus only after the user confirmed the change.';
+   ```
+
+3. Turn on the settings for agents (see [Guardrails](#guardrails)) and, optionally, the plugin's own settings:
+
+   ```json
+   {
+     "cds": {
+       "mcp": { "prefix": true },
+       "query": { "remote": { "agentHints": true, "budget": { "requests": 200, "rows": 100000, "seconds": 60 }, "audit": true, "[production]": { "maskBackendErrors": true } } }
+     }
+   }
+   ```
+
+The service is served at `/mcp/<service path>` (e.g. `/mcp/catalog`) next to `/odata/v4/catalog`. An agent connects
+to it as a remote MCP server over Streamable HTTP, with the credentials of a user of the application. Under
+`cds watch` the plugin can also register the endpoints with local agents (`cds.mcp.autowire`); see its documentation.
+
+| Tool (`<Service>-` with `prefix`) | What `RemoteApplicationService` does with it |
+| --- | --- |
+| `describe` | Nothing at run time: the model and its docs, including the hints of `agentHints`. |
+| `query` | One CQL `SELECT`, run as a query of the service: filter, order and limit pushed to the backends, path columns and expands read by key across systems, GROUP BY / aggregates computed on at most `cds.query.remote.aggregate.maxRows` rows read. |
+| `call` | An unbound action or function of the service: your handler, or forwarded to the backend with `@remote.operation`, as for an OData call. |
+
+### Hints and instructions
+
+`cds.query.remote.agentHints: true` writes what the adapter knows into the docs (`Adapter hints: ...`), which
+`describe` shows and the MCP server uses as its description:
+
+| Doc of | Hint |
+| --- | --- |
+| the service | Entities of other systems are read on every request: select only the columns needed, keep a limit, totals with GROUP BY (at most `aggregate.maxRows` rows read); which entity comes from which system; the `budget`, when set. |
+| an entity | A filter on the whole key is one read by key; the row cap of aggregates and JOIN views; the mandatory filters of a SOAP source. |
+| an element | Filtered in memory (`@remote.filter.local`): combine it with another filter; an association to another system costs further requests. |
+
+Your own doc comments are kept, the hints follow them. `@mcp.instructions` is for what only your application knows:
+the meaning of codes, which action needs a confirmation, what the services are for.
+
+### Guardrails
+
+An agent writes its own queries and retries. These opt-in settings bound and describe what it can do; they work for
+every protocol:
+
+- **Budget** (`cds.query.remote.budget`): the limits of each feature (join, aggregates, `exists`, `$search`, semi-joins)
+  bound one step; a free-form query can stack them. The budget counts the whole incoming request, every layer of
+  `RemoteApplicationService` included, and stops it with a 502 before the next backend request. A warm-up read and the
+  background refresh of a stale cache entry have no budget.
+- **Error masking** (`cds.query.remote.maskBackendErrors`): backend texts (host names, table names, values) do not reach
+  the client; the adapter's own messages (400 / 501 / 502 saying what to change) are kept. Only the outermost layer
+  masks: a layer below keeps the original error, its fallbacks read it.
+- **Audit line** (`cds.query.remote.audit`): `READ CatalogService.Orders {"reference":"1a2b3c4d","user":"alice",
+  "protocol":"mcp","status":200,"backendRequests":2,"backendRows":120,"elapsedMs":85}`. The protocol is the OData
+  adapter's, else the first segment of the URL path (`mcp`, `rest`), else `internal`. The debug lines of the tracing
+  log carry the same protocol, user and counts.
+- **Agent hints** (`cds.query.remote.agentHints`): the docs of the services, entities and elements, see
+  [Hints and instructions](#hints-and-instructions).
+
+All four are in the example of [Serving a service over MCP](#serving-a-service-over-mcp); each one is independent of
+the others.
+
+### The agent is the user
+
+Every tool call runs as the user of the agent's connection (basic authentication, a JWT), with that user's roles and
+attributes, as an OData request would:
+
+- `@requires` and `@restrict ... where` apply; an entity or action the user may not see is left out of `describe`.
+- A restriction on `$user.<attribute>` is pushed to the backend as a filter; a user without the attribute gets no row
+  and no backend call.
+- An `$expand` to a restricted entity is read through that entity's service, so the restriction applies there too.
+- Caches keep one entry per effective filter, the restriction included: a cached row or total never reaches a user
+  whose restriction would not let it through.
+
+### Limits
+
+- The MCP tools read and call unbound operations; CREATE / UPDATE / DELETE and bound actions are not served over MCP.
+  Expose a change as an unbound action (`@remote.operation` forwards it).
+- Backend data can contain text that tries to steer an agent. Connect trusted agents only and keep a human
+  confirmation on every `call`.
+- Every MCP query is a query of the service: `@cds.query.limit` and the `cds.query.remote` limits apply as for OData.
+- The tools are meant for agents and are not a stable API; programs use OData.
+
+---
+
 ## 🚦 Errors and results
 
 [↑ Table of Contents](#-table-of-contents)
@@ -1192,6 +1343,9 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | WHERE with a false literal comparison | `[]`, no backend call |
 | Path column across a to-many / filtered segment requested; path column on DISTINCT / GROUP BY | **501** before any backend call |
 | Query column that can not be read (a path that is not to-one, `inline`, an expression without alias or with a function / operator not computed here) | **501** naming the column, before any backend call |
+| A sub-select in the query's WHERE or HAVING (`ID in (SELECT ...)`) | **501** before any backend call |
+| `SELECT distinct` over `*` / over an expression | **400** / **501** (over elements and paths: grouped here) |
+| `order by` a column the query computes (`Qty * 2 as Double`) on more than 5000 matching rows | **502** (up to 5000: sorted, paged and counted here) |
 | Calculated column over a to-many path, or an `exists` flag that cannot be computed, requested | **501** before any backend call |
 | Projection `where` that can be neither pushed nor evaluated | **501** |
 | JOIN view: a `right` / `full` / `cross` join, a source without an equality to the others, a column or a filter through an association, `exists` / a sub-select in a `where` | **501** |
@@ -1199,6 +1353,9 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | `$search` not pushable on more than 5000 rows | **502** naming the backend's rejection when a push failed |
 | `$search` that matched more rows than `maxRows` (opt-in limit) of an entity with association-path columns | **502** naming `$filter`, before any path is read (the paths of every matched row would have to be read before the page is cut) |
 | Paged read ends short of the backend's total | **502** (no partial aggregates) |
+| Query with its own GROUP BY / aggregates: `*` or a column neither grouped nor aggregated, two columns of one name | **400** |
+| Query with its own GROUP BY / aggregates: an expand, another expression, an aggregate or `having` / `orderBy` term not computed here | **501** naming the column |
+| Query with its own GROUP BY / aggregates over more than `cds.query.remote.aggregate.maxRows` source rows | **502** naming the setting |
 | An `exists` flag computed for more than 5000 rows | **502** naming the flag and the row count, before its association is read |
 | Write to a JOIN view, static data, a SOAP source; association data without `@remote.write.deep`; source key not exposed | **501** |
 | Write: unknown element, missing key, value contradicting the projection's `where`, deep data of the wrong shape | **400** |
@@ -1208,7 +1365,8 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Invalid write settings | **500** naming the entity |
 | Deep write with failed child rows | `MULTIPLE_ERRORS` (400 when all are 4xx, else 502), `details[].target` = row path |
 | `writeSource` / `readSource` on an entity without a remote source | **501** |
-| Any other backend error (read, write, operation) | Its status (502 without one), code and message |
+| More backend requests / rows / seconds for one incoming request than `cds.query.remote.budget` allows | **502** `REMOTE_BUDGET_EXCEEDED` naming the setting |
+| Any other backend error (read, write, operation) | Its status (502 without one), code and message; with `maskBackendErrors`: its status, code `REMOTE_SERVICE_ERROR`, a generic message with the reference |
 | SOAP returns several rows per key | One per key |
 
 ---
@@ -1226,6 +1384,7 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | `$search` without push-down | Bounded at 5000 rows; add a `$filter`. |
 | JOIN views | Each source contributes every row the pushed terms leave (at most `join.maxRows`) and is joined here; filter on plain columns (pushed), read by key (starts at the key's source). |
 | DISTINCT / GROUP BY | Every source row, in pages (the first page with the count, the rest up to `pagesInParallel` at a time); prefer count requests (filter fixing every group column). A page that takes longer than the destination's `requestTimeout` (CAP, default 60000 ms) fails the read: lower the page size.  `$top` / `$skip` / `$orderby` apply to the groups after the aggregation (without `$top`, CAP's default page of groups: set `@cds.query.limit` on an aggregate with more groups); `$count` is the number of groups. |
+| A query's own GROUP BY / aggregates (`$apply`, a handler's or an agent's query) | One read of at most `cds.query.remote.aggregate.maxRows` rows (502 above); filter first. A frequent or large aggregation belongs in a `group by` entity (paged, count requests, aggregate cache). |
 | Many reads of the same stable data | Opt-in caches: `cds.query.remote.cache.aggregates` for GROUP BY / DISTINCT, `@remote.cache` for reads by key (see Caching). |
 | A slow first read of a cached entity | `@remote.warmUp` reads it at start and renews the cache before it expires (see Warm-up). |
 | `$expand` over a restricted target | Read through the target's service (one read per parent up to 50, then one filter read per batch): correct rows, more requests than a backend `$expand`. |
@@ -1246,7 +1405,9 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | Writes are pass-through | No transaction across backend requests (deep writes stay partially written on failure). |
 | No CDS definitions of its own | It only reads `cds.model`. |
 | Minimal public surface | The package exports `RemoteApplicationService`; nothing else is part of the published typings. No override seams. |
-| Logs | Filter values appear in `[remote]` lines; secrets are redacted in the tracing log. |
+| Logs | Filter values appear in `[remote]` lines; secrets are redacted in the tracing log; the audit line has none. |
+| Backend error texts | Passed through by default; `maskBackendErrors` keeps them in the log only. |
+| Shared caches | An entry is per effective filter, the `@restrict` condition included: a user never gets a row or total another user's restriction let through, also without `cache.perUser`. |
 
 ---
 
@@ -1274,6 +1435,9 @@ context. Redacted keys (case-insensitive, recursive): `authorization`, `auth`, `
 | 501 "cannot be served generically" after `@remote.cache` | `@remote: { cache: true }` is `@remote.cache` only: write `@remote` and `@remote.cache: true` as two annotations (the plugin logs a warning). |
 | A cached answer looks stale | Entries live until their time to live and are per process; check `X-Cache` (`HIT; age=..`). A write through the adapter drops them in that process only. |
 | One row makes a full read fail (backend 500 for one value of a column) | The adapter cannot skip a column: select the other columns, or correct the data. GROUP BY / DISTINCT read only the columns they use. |
+| 502 `REMOTE_BUDGET_EXCEEDED` "Request budget exceeded ... cds.query.remote.budget.<limit>" | One incoming request needed more backend requests / rows / time than the opt-in budget: narrow it (a selective filter, fewer `$expand`, a smaller page) or raise that limit. |
+| "The backend system could not process the request (reference ...)" | `maskBackendErrors` is on: the backend's message is in the log, `cds.log('remote')` error line `Backend error (reference ...)`. |
+| 502 "More than N source rows (cds.query.remote.aggregate.maxRows)" | A query's own GROUP BY / aggregates matched more rows than the limit: add a `$filter`, raise the setting, or model the aggregation as a `group by` entity (read in pages). |
 | Nothing in the log | `DEBUG` must contain `remote-service`; check `LOG_LEVEL`, the sinks, `NODE_ENV=production` (no file), and the boot line "Registering READ and write handlers". |
 
 Follow one request: find its correlation id and `grep '\[<id>\]' logs/remote-service-latest.log`.
@@ -1301,7 +1465,9 @@ Pinned by the package's regression tests:
    associations above 5000 keys) read every row the pushed part leaves: correct, but slow on very large sets. The first full read
    per entity is logged as a warning.
 3. **Deep writes** are not transactional and do not delete children missing from the payload.
-4. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
+4. **Aggregates of a query** (`groupBy` / aggregate columns / `having` of the query, not of the entity) read at most
+   `cds.query.remote.aggregate.maxRows` source rows (502 above) and are not cached.
+5. **Caches** are per process (no sharing between instances) and `Cache-Control: no-cache` from the client is not honored.
 5. **Navigation paths** need a key on the first segment; a parameterized segment is not supported; more than 200 parents before the last hop is 501.
 6. **`$expand` over a restricted target** costs one read of the target per expand (up to 50 parents one read by key each, then one filter read per batch) instead of one backend `$expand`.
 7. **`exists` flags** are computed for at most 5000 rows per read (502 above, see Association flags).
@@ -1311,6 +1477,9 @@ Pinned by the package's regression tests:
    rows (logged).
 10. **`@remote.warmUp`** reads as the privileged user: entries of entities whose users get a `@restrict ... where` filter
     are not found by them; a write through another instance does not trigger a new warm-up.
+11. **Query semantics** (see `$filter` push-down) are those of the projection pipeline; the WHERE of a JOIN view's
+    sources and the filters a semi-join plans keep their own push rules. Sub-selects are not supported (501). A sort by
+    a column the query computes reads every matching row (at most 5000).
 
 ---
 
