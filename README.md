@@ -626,7 +626,10 @@ aggregates `null`), and every column that is not an aggregate must be a `groupBy
 to-one associations (`_Customer.Country`, answered as `_Customer_Country`). `having`, `orderBy` (an alias, a group column,
 an aggregate of the select list), `$top` / `$skip` and `$count` (the number of groups) apply to the groups. At most
 `cds.query.remote.aggregate.maxRows` source rows (default 5000) are read; more is a 502: narrow the filter, or declare a
-`group by` projection, which reads every row in pages. A row count without `groupBy` and `having` (`count(*)`, OData
+`group by` projection, which reads every row in pages. The read asks for the count too: a source that answers fewer
+rows than it counts (a layer below, which CAP cuts to its `@cds.query.limit.max` per read, or a backend's server page
+size) is read again in pages of that size, so an entity over another `@remote` service is grouped over every row as
+well; a source that never reaches its count is a 502, never the groups of a part. A row count without `groupBy` and `having` (`count(*)`, OData
 `$count`) is one count request, without that limit.
 
 Answered with 400: `*` or a column that is neither a group column nor an aggregate, two columns of one name. With 501,
@@ -1392,10 +1395,10 @@ attributes, as an OData request would:
 | Filters through associations | Semi-joins are fast when the matching keys are few (pushed up to 200, in memory up to 5000) and each hop is joined on keys of projections served by this application. Declare an explicit ON when a managed association's derived keys are wrong. |
 | Keys in a `$filter` | Lists of keys become reads by key (up to 50). |
 | `$expand` / path columns on many rows | One batched request per association / hop and 200 parents; large parent sets mean several requests, sent up to `pagesInParallel` at a time. The association paths of every matched row are read before the page is cut: keep `$search` / `$filter` narrow, or set `search.maxRows` to refuse a search that is too broad. |
-| `$search` without push-down | Bounded at 5000 rows; add a `$filter`. |
+| `$search` without push-down | Bounded at 5000 rows (an answer cut by a page cap within the bound is read in pages); add a `$filter`. |
 | JOIN views | Each source contributes every row the pushed terms leave (at most `join.maxRows`) and is joined here; filter on plain columns (pushed), read by key (starts at the key's source). |
 | DISTINCT / GROUP BY | Every source row, in pages (the first page with the count, the rest up to `pagesInParallel` at a time); prefer count requests (filter fixing every group column). A page that takes longer than the destination's `requestTimeout` (CAP, default 60000 ms) fails the read: lower the page size.  `$top` / `$skip` / `$orderby` apply to the groups after the aggregation (without `$top`, CAP's default page of groups: set `@cds.query.limit` on an aggregate with more groups); `$count` is the number of groups. |
-| A query's own GROUP BY / aggregates (`$apply`, a handler's or an agent's query) | One read of at most `cds.query.remote.aggregate.maxRows` rows (502 above); filter first. A frequent or large aggregation belongs in a `group by` entity (paged, count requests, aggregate cache). |
+| A query's own GROUP BY / aggregates (`$apply`, a handler's or an agent's query) | One read of at most `cds.query.remote.aggregate.maxRows` rows with the count (502 above); a source that answers less per read (a layer below: its `@cds.query.limit.max`) is read again in pages; filter first. A frequent or large aggregation belongs in a `group by` entity (paged, count requests, aggregate cache). |
 | Many reads of the same stable data | Opt-in caches: `cds.query.remote.cache.aggregates` for GROUP BY / DISTINCT, `@remote.cache` for reads by key (see Caching). |
 | A slow first read of a cached entity | `@remote.warmUp` reads it at start and renews the cache before it expires (see Warm-up). |
 | `$expand` over a restricted target | Read through the target's service (one read per parent up to 50, then one filter read per batch): correct rows, more requests than a backend `$expand`. |
