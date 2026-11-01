@@ -1114,6 +1114,12 @@ through it. SOAP sources are not writable, and a filter on
 the key is not turned into a read by key (the SOAP operation gets its parameters from the URL key or a flat `and` of
 equalities).
 
+A SOAP source with `@Soap.filterRestriction` keeps its rules through the projection: a read without one of the
+`mandatoryFields` (in the projection's names, also in the key of a read by key) is a 400 `MISSING_MANDATORY_FILTER`
+before any call, and with `multipleSelection: false` a key `in (...)` list is one SOAP call per value (the SOAP
+adapter's fan-out). A refusal of the SOAP adapter (`MISSING_MANDATORY_FILTER`, `UNSUPPORTED_MULTI_SELECTION_FILTER`) is
+final: it is never read again without the filter.
+
 ---
 
 ## 🛠️ Configuration and logging
@@ -1368,6 +1374,7 @@ attributes, as an OData request would:
 | More backend requests / rows / seconds for one incoming request than `cds.query.remote.budget` allows | **502** `REMOTE_BUDGET_EXCEEDED` naming the setting |
 | Any other backend error (read, write, operation) | Its status (502 without one), code and message; with `maskBackendErrors`: its status, code `REMOTE_SERVICE_ERROR`, a generic message with the reference |
 | SOAP returns several rows per key | One per key |
+| SOAP source with `@Soap.filterRestriction`: a mandatory filter field missing; a refusal of the SOAP adapter | **400** `MISSING_MANDATORY_FILTER` before any call; the adapter's code (never retried without the filter) |
 
 ---
 
