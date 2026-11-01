@@ -591,6 +591,10 @@ entity ItemCounts as projection on RemoteOrders.Items { key Category, Status, co
 annotate RemoteOrders.Items with @cds.query.limit: { default: 1000, max: 5000 };   // page size for reading every row
 ```
 
+The entity can also be written as `select from`, also with `distinct` (applied to the groups):
+`entity ItemCounts as select from RemoteOrders.Items distinct { key Category, Status, count(ID) as N : Integer } group by Category, Status;`
+answers the same groups as the `projection on` form.
+
 **HAVING.** A `having` of the projection filters the groups, for every read of the entity:
 
 ```cds
