@@ -188,6 +188,8 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#-caching) |
 | `@remote.warmUp`, `@remote.warmUp: { where, every, limit, enabled, search }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. `search: 'read'` / `'push'`: keep a copy of the rows for a case-insensitive `$search` on a backend without `tolower`. | [Warm-up](#warm-up-remotewarmup) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
+| `@remote.budget: { requests, rows, seconds }` (`@remote.budget.rows: <n>`), `@remote.budget: false` | service / entity | The request budget of a request the client sends to this service (entity: to this entity), as `cds.query.remote.budget`, which fills the limits it leaves open; `false`: no budget. | [Per service and entity](#per-service-and-entity) |
+| `@remote.maskBackendErrors: true` / `false` | service / entity | Backend error texts masked (or not) for a request the client sends to this service or entity, as `cds.query.remote.maskBackendErrors`. | [Per service and entity](#per-service-and-entity) |
 | `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
 | `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
 | `@remote.write.asInsert: ['UPDATE', 'DELETE']` | entity | Sends these events as `INSERT` (POST) with the source keys in the body. | [Non-CRUD backends](#non-crud-backends) |
@@ -1180,10 +1182,10 @@ shown are the defaults, except `search.maxRows` and `budget`, which have none (t
 | `cds.requires.<Service>.model`, `.credentials.destination`, `.credentials.url` | Standard CAP: model of the external service, BTP destination, or a URL for local development. |
 | `cds.requires.<Service>.impl` | Your own implementation: the plugin leaves the service alone. |
 | `cds.query.remote.capClientLog: true` | Keep CAP's own remote-client debug lines and its warnings for failed requests the adapter handles: a rejected filter function, the 404 / 400 of a read by key (dropped by default, see below). |
-| `cds.query.remote.budget: { requests, rows, seconds }` | Opt-in budget of one incoming request, over every layer of `RemoteApplicationService` below it: requests sent to external systems, rows they answered, seconds since the request began. Going over is a **502** `REMOTE_BUDGET_EXCEEDED` naming the setting. Each limit is optional; default: none. See [AI agents and MCP](#-ai-agents-and-mcp). |
-| `cds.query.remote.maskBackendErrors: true` | The client gets `The backend system could not process the request (reference <id>)` with the backend's status instead of its text; the detail is logged under the reference. Default off. |
+| `cds.query.remote.budget: { requests, rows, seconds }` | Opt-in budget of one incoming request, over every layer of `RemoteApplicationService` below it: requests sent to external systems, rows they answered, seconds since the request began. Going over is a **502** `REMOTE_BUDGET_EXCEEDED` naming the setting. Each limit is optional; default: none. `@remote.budget` of a service or entity wins, see [Per service and entity](#per-service-and-entity). |
+| `cds.query.remote.maskBackendErrors: true` | The client gets `The backend system could not process the request (reference <id>)` with the backend's status instead of its text; the detail is logged under the reference. Default off. `@remote.maskBackendErrors` of a service or entity wins. |
 | `cds.query.remote.audit: true` | One line per incoming request on `cds.log('remote-audit')` (info): event, entity, user, tenant, protocol, status, backend requests and rows, time; no filter values. Default off. |
-| `cds.query.remote.agentHints: true` | Adds hints for agents to the docs of the `@remote` services, their entities and elements (MCP `describe` and server description, OData `$metadata` `Core.Description`). Default off. See [AI agents and MCP](#-ai-agents-and-mcp). |
+| `cds.query.remote.agentHints: true` | Adds hints for agents to the `@remote` services, their entities and elements (MCP `describe` and server description, OData `$metadata` `Core.Description`), never to database artifacts. Default off. See [Hints and instructions](#hints-and-instructions). |
 | `cds.query.remote.aggregate.maxRows: <n>` | Source rows a query with its own GROUP BY / aggregates may read (default 5000; more is a 502). Not for `group by` entities, nor for a row count. See Aggregates of a query. |
 | `cds.query.remote.paging: false` | Every read of all rows of a remote source that is not an aggregation is one request (see `@remote.paging`). Default `true`. |
 | `cds.query.remote.pagesInParallel: <n>` | Requests of one read sent at the same time (default 5; `1` = one at a time): the pages of a full read (DISTINCT / GROUP BY, a filter evaluated in memory, association fetch, unpushed `$search`) after the first page, and the key chunks (200 parents each) of an association-path column fetch or `$expand`. The page size is `@cds.query.limit.max` of the source entity, else of its service, else `cds.query.limit.max`, else 1000. |
@@ -1274,23 +1276,32 @@ to it as a remote MCP server over Streamable HTTP, with the credentials of a use
 
 | Tool (`<Service>-` with `prefix`) | What `RemoteApplicationService` does with it |
 | --- | --- |
-| `describe` | Nothing at run time: the model and its docs, including the hints of `agentHints`. |
+| `describe` | Nothing at run time: the model, its docs and `@description` texts, including the hints of `agentHints`. |
 | `query` | One CQL `SELECT`, run as a query of the service: filter, order and limit pushed to the backends, path columns and expands read by key across systems, GROUP BY / aggregates computed on at most `cds.query.remote.aggregate.maxRows` rows read. |
 | `call` | An unbound action or function of the service: your handler, or forwarded to the backend with `@remote.operation`, as for an OData call. |
 
 ### Hints and instructions
 
-`cds.query.remote.agentHints: true` writes what the adapter knows into the docs (`Adapter hints: ...`), which
-`describe` shows and the MCP server uses as its description:
+`cds.query.remote.agentHints: true` writes what the adapter knows into the model (`Adapter hints: ...`), which
+`describe` shows, the MCP server uses as its description and OData `$metadata` carries as `Core.Description`:
 
-| Doc of | Hint |
+| Hint of | Text |
 | --- | --- |
-| the service | Entities of other systems are read on every request: select only the columns needed, keep a limit, totals with GROUP BY (at most `aggregate.maxRows` rows read); which entity comes from which system; the `budget`, when set. |
-| an entity | A filter on the whole key is one read by key; the row cap of aggregates and JOIN views; the mandatory filters of a SOAP source. |
+| the service | Entities of other systems are read on every request: select only the columns needed, keep a limit, totals with GROUP BY (at most `aggregate.maxRows` rows read); which entity comes from which system; its budget (`@remote.budget`, else `budget`), when set. |
+| an entity | A filter on the whole key is one read by key; the row cap of aggregates and JOIN views; the mandatory filters of a SOAP source; its own `@remote.budget`. |
 | an element | Filtered in memory (`@remote.filter.local`): combine it with another filter; an association to another system costs further requests. |
 
-Your own doc comments are kept, the hints follow them. `@mcp.instructions` is for what only your application knows:
-the meaning of codes, which action needs a confirmation, what the services are for.
+Where the hint goes:
+
+- After your own doc comment, as a further paragraph.
+- Without a doc comment: in `@description`, after your own `@description` text. An i18n text key
+  (`@description: '{i18n>...}'`) is left as it is and gets no hint.
+- Never as the first paragraph of a doc comment: the SQL for SAP HANA turns that paragraph into the `COMMENT` of a
+  table, a column or a view, and a `@remote` service can have entities served from the database. So the hints reach
+  neither SAP HANA (`cds build`, `cds deploy`) nor SQLite or PostgreSQL; a `COMMENT` there is your own doc.
+
+`@mcp.instructions` is for what only your application knows: the meaning of codes, which action needs a confirmation,
+what the services are for.
 
 ### Guardrails
 
@@ -1313,6 +1324,33 @@ every protocol:
 
 All four are in the example of [Serving a service over MCP](#serving-a-service-over-mcp); each one is independent of
 the others.
+
+### Per service and entity
+
+The settings of `cds.query.remote` apply to every request of every `@remote` service. An application that serves
+curated services to agents and others to its apps on the same process sets the budget and the masking on the agent
+services only:
+
+```cds
+@remote
+@remote.budget: { requests: 50, rows: 20000, seconds: 30 }
+@remote.maskBackendErrors
+service AgentService {
+    entity Orders as projection on CatalogService.Orders;
+    @remote.budget.rows: 2000                     // a tighter limit for one entity
+    entity Items as projection on CatalogService.Items;
+}
+```
+
+- The settings of the service the client called apply: its entity's annotation, then the service's, then
+  `cds.query.remote`. The budget is resolved per limit (`requests`, `rows`, `seconds`); `@remote.budget: false` on the
+  service or the entity: no budget at all. `@remote.maskBackendErrors: false` keeps the texts where the global setting
+  masks them.
+- The service must be a `@remote` service, the outermost one of the request: the layers below it (here
+  `CatalogService`) count against its budget and keep their own annotations for requests sent to them directly. The
+  apps reading `CatalogService` are not limited.
+- The 502 names the annotation: `more than @remote.budget.requests of AgentService (50) allows`.
+- An annotation on an entity is propagated to projections on it, like any annotation.
 
 ### The agent is the user
 
@@ -1378,8 +1416,8 @@ attributes, as an OData request would:
 | Invalid write settings | **500** naming the entity |
 | Deep write with failed child rows | `MULTIPLE_ERRORS` (400 when all are 4xx, else 502), `details[].target` = row path |
 | `writeSource` / `readSource` on an entity without a remote source | **501** |
-| More backend requests / rows / seconds for one incoming request than `cds.query.remote.budget` allows | **502** `REMOTE_BUDGET_EXCEEDED` naming the setting |
-| Any other backend error (read, write, operation) | Its status (502 without one), code and message; with `maskBackendErrors`: its status, code `REMOTE_SERVICE_ERROR`, a generic message with the reference |
+| More backend requests / rows / seconds for one incoming request than `cds.query.remote.budget` or `@remote.budget` allows | **502** `REMOTE_BUDGET_EXCEEDED` naming the setting or the annotation |
+| Any other backend error (read, write, operation) | Its status (502 without one), code and message; with `maskBackendErrors` (or `@remote.maskBackendErrors`): its status, code `REMOTE_SERVICE_ERROR`, a generic message with the reference |
 | SOAP returns several rows per key | One per key |
 | SOAP source with `@Soap.filterRestriction`: a mandatory filter field missing; a refusal of the SOAP adapter | **400** `MISSING_MANDATORY_FILTER` before any call; the adapter's code (never retried without the filter) |
 
@@ -1449,7 +1487,8 @@ attributes, as an OData request would:
 | 501 "cannot be served generically" after `@remote.cache` | `@remote: { cache: true }` is `@remote.cache` only: write `@remote` and `@remote.cache: true` as two annotations (the plugin logs a warning). |
 | A cached answer looks stale | Entries live until their time to live and are per process; check `X-Cache` (`HIT; age=..`). A write through the adapter drops them in that process only. |
 | One row makes a full read fail (backend 500 for one value of a column) | The adapter cannot skip a column: select the other columns, or correct the data. GROUP BY / DISTINCT read only the columns they use. |
-| 502 `REMOTE_BUDGET_EXCEEDED` "Request budget exceeded ... cds.query.remote.budget.<limit>" | One incoming request needed more backend requests / rows / time than the opt-in budget: narrow it (a selective filter, fewer `$expand`, a smaller page) or raise that limit. |
+| 502 `REMOTE_BUDGET_EXCEEDED` "Request budget exceeded ... cds.query.remote.budget.<limit>" (or "@remote.budget.<limit> of <service or entity>") | One incoming request needed more backend requests / rows / time than the opt-in budget: narrow it (a selective filter, fewer `$expand`, a smaller page) or raise that limit where the message names it. |
+| `near "COMMENT": syntax error` at the deployment with `agentHints` (1.0.3 and earlier) | SQLite compiled with the SQL dialect `hana` (`cds.sql.dialect` or the `dialect` of the database) got the hints of a database projection of a `@remote` service as a view comment. Later versions never put the hints into the SQL: update the package. |
 | "The backend system could not process the request (reference ...)" | `maskBackendErrors` is on: the backend's message is in the log, `cds.log('remote')` error line `Backend error (reference ...)`. |
 | 502 "More than N source rows (cds.query.remote.aggregate.maxRows)" | A query's own GROUP BY / aggregates matched more rows than the limit: add a `$filter`, raise the setting, or model the aggregation as a `group by` entity (read in pages). |
 | Nothing in the log | `DEBUG` must contain `remote-service`; check `LOG_LEVEL`, the sinks, `NODE_ENV=production` (no file), and the boot line "Registering READ and write handlers". |
