@@ -186,7 +186,8 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
 | `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#-caching) |
-| `@remote.warmUp`, `@remote.warmUp: { where, every, limit, enabled, search }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. `search: 'read'` / `'push'`: keep a copy of the rows for a case-insensitive `$search` on a backend without `tolower`. | [Warm-up](#warm-up-remotewarmup) |
+| `@remote.cache.invalidates: [Orders, Items]` (`@remote.cache: { invalidates: [...] }`) | action / function | What a forwarded call drops from the caches and search copies: exactly these entities (`[]`: nothing). Without it a function drops nothing and an action drops its entity (unbound: every cache). | [Actions and functions](#️-actions-and-functions) |
+| `@remote.warmUp`, `@remote.warmUp: { where, every, retry, limit, enabled, search }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. `search: 'read'` / `'push'`: keep a copy of the rows for a case-insensitive `$search` on a backend without `tolower`. | [Warm-up](#warm-up-remotewarmup) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
 | `@remote.budget: { requests, rows, seconds }` (`@remote.budget.rows: <n>`), `@remote.budget: false` | service / entity | The request budget of a request the client sends to this service (entity: to this entity), as `cds.query.remote.budget`, which fills the limits it leaves open; `false`: no budget. | [Per service and entity](#per-service-and-entity) |
 | `@remote.maskBackendErrors: true` / `false` | service / entity | Backend error texts masked (or not) for a request the client sends to this service or entity, as `cds.query.remote.maskBackendErrors`. | [Per service and entity](#per-service-and-entity) |
@@ -807,8 +808,10 @@ request, or one after the stale time too, reads the backend. A write through the
 A refresh that fails is logged on `cds.log('remote')` and the old entry is answered until its stale time ends.
 
 **Always:** every answer is a copy; an error or an empty answer is not kept; identical reads that arrive while one is
-running wait for it (one backend read); a write, an action or a function through the adapter drops what is cached from the
-entity (an unbound operation clears the cache); a read that started before a write does not store its answer.
+running wait for it (one backend read); a write or an action through the adapter drops what is cached from the entity
+(an unbound action clears the cache; `@remote.cache.invalidates` names the entities instead, see
+[Actions and functions](#️-actions-and-functions)); a function drops nothing; a read that started before a write does
+not store its answer.
 
 **`X-Cache` response header:** `HIT; age=<seconds>`, `MISS`, or `PARTIAL; hits=<n>; misses=<m>; age=<seconds>` when one HTTP
 response needed several lookups (the age is the oldest hit). Without a cached entity involved there is no header.
@@ -840,6 +843,7 @@ entity Customers as projection on ...;
 | --- | --- | --- |
 | `where` | Filter of the read: a CDS expression `(...)` (checked by the compiler) or a string in CDS expression syntax (parsed when the server starts; a string that does not parse is logged as an error and that read left out). | none |
 | `every` | Seconds between the end of one read and the next. | 90 % of the shortest time to live of the caches the read went through, less the time the read took. A read that went through no cache runs once (logged). |
+| `retry` | Seconds after a failed read before the next attempt, for a long `every` (a daily refresh need not wait a day after a failure). A successful read still follows `every`. | `every`, else 300 |
 | `limit` | Rows read. A key set or an aggregate is cached whole, whatever the page. | 1 |
 | `enabled` | `false` switches the record (or `@remote.warmUp.enabled: false` the entity) off, e.g. in a profile. | `true` |
 | `search` | `'read'` (or `true`) / `'push'`: keep a copy of the rows for `$search` (see below). | none |
@@ -854,7 +858,8 @@ How it reads:
   enabled warm-up is read; a projection above it would fill the same caches. An expression that names an element a
   projection above does not have stops the compiler ("Assign a value for @remote.warmUp.where"): write the `where` as a
   string then.
-- A failed read is logged as a warning and tried again after `every`, else after 300 seconds. Nothing is warmed with
+- A failed read is logged as a warning and tried again after `retry`, else after `every`, else after 300 seconds; a search copy it holds
+  keeps answering until shortly after that attempt (see below). Nothing is warmed with
   `cds.query.remote.cache.perUser` (no user would find the privileged user's entries). An annotation on an entity that
   no `RemoteApplicationService` serves is ignored with a warning.
 
@@ -870,7 +875,7 @@ the page only.
 entity ActiveCustomers as projection on Customers { key Customer, Name, Country, case when exists _Orders then true else false end as HasOrders : Boolean };
 ```
 
-| `search` | While no copy is held (before the first warm-up, after a write through the service, after it expired) |
+| `search` | While no copy is held (before the first warm-up, after a write or action through the service that drops it, after it expired) |
 | --- | --- |
 | `'read'` | The first `$search` reads the copy (every row in pages, can take long on a large set), then matches it. |
 | `'push'` | `$search` goes to the backend as without the option (case-sensitive) until the warm-up filled the copy. |
@@ -881,10 +886,17 @@ entity ActiveCustomers as projection on Customers { key Customer, Name, Country,
   and the `exists` flags join on elements of the copy. Otherwise the search goes to the backend.
 - A backend that searches ignoring case itself (OData V4 with `tolower`) is searched as before; a copy that is held
   answers there too.
-- Cost: memory for every row of the copy per process and tenant, and one full read per warm-up run. The copy lives until
-  shortly after the next run (`every` + 10 %, else the cache's time to live), is dropped by a write or an operation through
-  the adapter (an unbound operation drops every cache),
-  and is not kept above `cds.query.remote.cache.maxRows` rows (100000; logged). A copy that can not be read is logged
+- Lifetime: the copy lives until shortly after the next run (`every` + 10 %, else the cache's time to live), whatever
+  `cds.query.remote.cache.ttl` says. A run replaces it only when the new copy is complete: searches during the run are
+  answered from the old copy. A run that fails keeps the old copy until shortly after the next attempt (`retry` + 10 %,
+  else `every` + 10 %; logged), so failing retries never leave searches without it. Copies
+  do not count against `cds.query.remote.cache.maxEntries` and are never dropped to make room for other entries.
+- What drops it: a write through the adapter on the entity (or a projection sharing its source), and an action: bound
+  to the entity, unbound without `@remote.cache.invalidates`, or one whose `@remote.cache.invalidates` names the entity. Functions do
+  not. For a copy refreshed once a day (`every: 86400`), annotate the actions that change other entities with
+  `@remote.cache.invalidates`, see [Actions and functions](#️-actions-and-functions).
+- Cost: memory for every row of the copy per process and tenant, and one full read per warm-up run. A copy above
+  `cds.query.remote.cache.maxRows` rows (100000; logged) is not kept. A copy that can not be read is logged
   and the search goes to the backend. More than 5000 matches of an entity with an `exists` flag and no page are a 502.
 - The copy is read as the privileged user: rows a user may not see are removed by the request's `@restrict ... where`,
   which must be evaluable on the copy (else the search goes to the backend).
@@ -1037,6 +1049,30 @@ action setStatus(DocNo : String(10), Status : String(20)) returns Statuses;
   (calculated columns included). Other answers are returned as they come.
 - A handler you register before `super.init()` wins. `@remote.operation` naming no existing operation fails `init()`.
 - Backend errors keep their status (502 without one) and message.
+
+Caches after a call ([Caching](#-caching), search copies of [Warm-up](#warm-up-remotewarmup)), also after a failed call:
+
+| Operation | Drops |
+| --- | --- |
+| function (bound or unbound) | nothing: an OData function has no side effects |
+| bound action | what is cached from its entity and the entity's sources |
+| unbound action | every cache and search copy |
+| `@remote.cache.invalidates: [Orders, Items]` (action or function) | what is cached from exactly these entities and their sources; `[]`: nothing |
+
+```cds
+@remote.operation: 'Remote.postEntries'
+@remote.cache.invalidates: [Entries, EntryTotals]     // the customer value help keeps its search copy
+action postEntries(Data : LargeString) returns Integer;
+
+@remote.operation: 'Remote.calculate'
+@remote.cache.invalidates: [Prices]                   // a function that does change data in the backend
+function calculate(Order : String(10)) returns Decimal;
+```
+
+Names are entities of the service (or fully qualified); one that names no entity fails `init()`. The record form
+`@remote.cache: { invalidates: [...] }` is the same annotation. A function whose
+backend operation changes data needs `@remote.cache.invalidates`, else the caches keep the old data until their time to live
+ends.
 
 ---
 
@@ -1198,7 +1234,7 @@ shown are the defaults, except `search.maxRows` and `budget`, which have none (t
 | `cds.query.remote.cache.ttl: <seconds>` | Time to live of cache entries when no annotation gives one (default 300). |
 | `cds.query.remote.cache.staleWhileRevalidate: <seconds>` | An expired entry is still answered this long while a background read refreshes it (default 0: off), see [Caching](#-caching). |
 | `cds.query.remote.cache.perUser: true` | Keep entries per user (needed when the destination propagates the user to the backend; default: shared). |
-| `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first) / rows an aggregate entry may hold (default 100000, a larger answer is not kept). |
+| `cds.query.remote.cache.maxEntries` / `.maxRows` | Entries kept (default 500, least recently used go first; search copies do not count) / rows an aggregate entry or a search copy may hold (default 100000, a larger answer is not kept). |
 | `cds.query.remote.warmUp.enabled` | Run the `@remote.warmUp` reads (default: in Cloud Foundry or with the `production` profile), see [Warm-up](#warm-up-remotewarmup). |
 | `cds.query.remote.warmUp.await: true` / `<seconds>` | The server listens only after the first warm-up reads, at most 45 seconds / that long (default: it does not wait). |
 | `cds.query.remote.warmUp.concurrency` / `.tenants` | Warm-up reads at the same time (default 1) / tenants to warm (default: the one without tenant). |
