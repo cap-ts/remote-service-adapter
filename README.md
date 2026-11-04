@@ -184,14 +184,14 @@ Every annotation goes on the definition it describes, in the local (projection) 
 | `@remote` | service | Makes `RemoteApplicationService` the service's implementation (CAP plugin). | [CAP plugin](#-cap-plugin-the-remote-annotation) |
 | `@response.data: [ {...} ]` | entity | Static rows: returned as they are, no backend call. Not writable. | [Static data](#static-data) |
 | `@remote.paging: false` | entity / service | A read of every row of a remote source (in-memory filter, no limit) is one request, as before this package paged such reads. For a backend that can not page. | [Reading data](#-reading-data) |
-| `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field is `@sap.filterable: 'false'`; `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
+| `@remote.filter.local` | element / entity | Request `$filter` and `$search` on the element run in memory. On the entity: every element whose source field the backend declares not filterable (OData V2 `@sap.filterable: 'false'`, OData V4 `Capabilities.FilterRestrictions.NonFilterableProperties`); `@remote.filter.local: false` on an element opts it out. | [Fields the backend cannot filter](#fields-the-backend-cannot-filter) |
 | `@remote.cache: true` / `false`, `@remote.cache.ttl: <seconds>` (`@remote.cache: { ttl: 60 }`) | entity / service | Opt-in cache of reads by key of the entity (service: all its entities); `false` on an entity opts out. For a GROUP BY / DISTINCT entity it also enables the aggregate cache. | [Caching](#-caching) |
 | `@remote.cache.invalidates: [Orders, Items]` (`@remote.cache: { invalidates: [...] }`) | action / function | What a forwarded call drops from the caches and search copies: exactly these entities (`[]`: nothing). Without it a function drops nothing and an action drops its entity (unbound: every cache). | [Actions and functions](#️-actions-and-functions) |
 | `@remote.warmUp`, `@remote.warmUp: { where, every, retry, limit, enabled, search }`, `@remote.warmUp: [ {...}, ... ]` | entity | Read the entity when the server starts and again before the caches the read filled expire, so users find them filled. `where`: a CDS expression or a string; one read per record. `search: 'read'` / `'push'`: keep a copy of the rows for a case-insensitive `$search` on a backend without `tolower`. | [Warm-up](#warm-up-remotewarmup) |
 | `@remote.search.maxRows: <n>` | entity | Opt-in: a `$search` that matched more than `n` rows of this entity, whose association paths must be resolved, is refused (502) instead of read. | [Reading data](#-reading-data) |
 | `@remote.budget: { requests, rows, seconds }` (`@remote.budget.rows: <n>`), `@remote.budget: false` | service / entity | The request budget of a request the client sends to this service (entity: to this entity), as `cds.query.remote.budget`, which fills the limits it leaves open; `false`: no budget. | [Per service and entity](#per-service-and-entity) |
 | `@remote.maskBackendErrors: true` / `false` | service / entity | Backend error texts masked (or not) for a request the client sends to this service or entity, as `cds.query.remote.maskBackendErrors`. | [Per service and entity](#per-service-and-entity) |
-| `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). | [Calculated columns](#calculated-columns) |
+| `@remote.pushdown: false` | calculated element | Filters on the element stay in memory (no boolean-flag push-down). For a plain element use `@remote.filter.local`. | [Calculated columns](#calculated-columns) |
 | `@remote.operation: 'Name'` / `'<Service>.<Name>'` | action / function | Forwards to the bound operation `Name` of the source entity, or to the unbound operation of another service. | [Actions and functions](#️-actions-and-functions) |
 | `@remote.write.asInsert: ['UPDATE', 'DELETE']` | entity | Sends these events as `INSERT` (POST) with the source keys in the body. | [Non-CRUD backends](#non-crud-backends) |
 | `@remote.write.operation: { field, CREATE, UPDATE, DELETE }` | entity | Sets the source field `field` to the event's code in the body. | [Non-CRUD backends](#non-crud-backends) |
@@ -209,6 +209,7 @@ Standard annotations the service reads:
 | `@cds.search: false` / `true` (element), `@cds.search: { A, B }` (entity) | Which columns `$search` uses. |
 | `@cds.query.limit: { default, max }` (source entity or its service) | Page size when every source row is read (GROUP BY, DISTINCT, association fetches). |
 | `@sap.filterable: 'false'` (source element, from the EDMX) | Terms of the projection's own `where` on it are evaluated in memory; request filters with `@remote.filter.local`. |
+| `@Capabilities.FilterRestrictions.NonFilterableProperties` (source entity, OData V4 EDMX) | The same for the listed properties. |
 | `@odata.Type: 'Edm.Date'` (local element) | A date-time source value is delivered as a date, date literals are compared as days. |
 | `@mandatory` (child element) | Checked on every child row of a deep write (CAP checks the root only). |
 | `@readonly` | CAP drops client values; your handler may set them (backend-only values). |
@@ -351,10 +352,11 @@ A projection on an entity of another service of this package (a layered model) m
 ### Fields the backend cannot filter
 
 OData V2 services declare some fields `sap:filterable="false"` and ignore a `$filter` on them without an error (every
-row comes back). Opt in to in-memory evaluation:
+row comes back); OData V4 services list them in `Capabilities.FilterRestrictions.NonFilterableProperties`. Opt in to
+in-memory evaluation:
 
 ```cds
-@remote.filter.local                                   // every sap:filterable=false field of the source
+@remote.filter.local                                   // every field the source declares not filterable
 entity Entries as projection on Remote.Entries {
     *,
     @remote.filter.local: false Note                   // ...except this one: pushed
@@ -368,7 +370,10 @@ entity Tasks as projection on Remote.Tasks {
 
 The read then fetches every row the rest of the filter leaves, so opt in where that set is small (for example when
 another pushed term restricts it to one user's rows). Terms of the projection's own `where` on such fields are always
-evaluated in memory, without annotation.
+evaluated in memory, without annotation. `$count`, paging and sorting are applied after the in-memory filter.
+
+The V4 list names the fields of the entity it is on. CDS copies it unchanged to projections above, so on a layer that
+renames such a field annotate the layer whose source is the external entity, or the element itself.
 
 ### The projection's own WHERE
 
@@ -1506,7 +1511,7 @@ attributes, as an OData request would:
 | Symptom | Cause and fix |
 | --- | --- |
 | A filter is not pushed | The term reads a virtual, calculated, path, structured or unmapped field (or a function on SOAP). Map the field 1:1, or accept the in-memory evaluation. |
-| A filter is ignored (every row comes back) | The backend cannot filter that field (`sap:filterable="false"`). Add `@remote.filter.local`. |
+| A filter is ignored (every row comes back) | The backend cannot filter that field (`sap:filterable="false"`, V4 `NonFilterableProperties`). Add `@remote.filter.local`. |
 | A filter through an association is slow | More than 5000 matching keys, or a hop without key join: the filter runs on expands. Check the `path-semijoin` log line ("Target read for a path filter"). |
 | A boolean flag filter stalls the backend | The backend mishandles `Field != 'v'`: `@remote.pushdown: false` on the flag. |
 | A date filter is rejected ("Invalid token") | A `Date` element over a date-time source without the date type: declare the element `Date` or `@odata.Type: 'Edm.Date'`. |
